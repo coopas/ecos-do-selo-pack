@@ -1,0 +1,1 @@
+{"gates": [{"id": "ecos:gate/x", "output": "minecraft:white_bed", "count": 1, "pattern": ["AB"], "key": {"A": "create:precision_mechanism", "B": "#minecraft:planks"}, "replace_output": true}], "cross": [], "late": []}

@@ -1,0 +1,6 @@
+[
+  {"id": "minecraft:white_bed", "type": "minecraft:crafting_shaped", "outputs": ["minecraft:white_bed"],
+   "inputs": [["minecraft:white_wool"], ["#minecraft:planks"]]},
+  {"id": "ecos:gate/twilight_key", "type": "minecraft:crafting_shaped", "outputs": ["ecos:chave_crepuscular"],
+   "inputs": [["create:precision_mechanism"], ["minecraft:diamond"]]}
+]

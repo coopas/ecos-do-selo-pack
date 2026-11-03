@@ -31,3 +31,10 @@ def test_fluid_and_entity():
     r = reg()
     assert r.has_fluid("minecraft:water") and r.has_entity("minecraft:zombie")
     assert not r.has_fluid("minecraft:lava_x")
+
+
+def test_block_tag_lookup():
+    r = reg()
+    assert r.has_block_tag("#aether:aether_portal_blocks")
+    assert r.block_tag_blocks("aether:aether_portal_blocks") == {"minecraft:glowstone"}
+    assert not r.has_block_tag("x:y")

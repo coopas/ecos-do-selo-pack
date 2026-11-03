@@ -24,14 +24,31 @@ def _pump(stream, q):
     q.put(None)
 
 
+LAST_CONSOLE: list[str] = []
+
+
+def drain(q, seconds: float) -> list[str]:
+    """Coleta linhas da fila até ficar `seconds` sem novidades."""
+    out = []
+    while True:
+        try:
+            line = q.get(timeout=seconds)
+        except queue.Empty:
+            return out
+        if line is None:
+            return out
+        out.append(line.rstrip("\n"))
+
+
 def server(server_dir: Path = BUILD / "server", timeout_s: int = 900, dev: bool = False,
-           after_done=None) -> list[str]:
+           after_done=None, console: list[str] | tuple = ()) -> list[str]:
     """after_done(q) roda com o servidor no ar (q = fila de linhas do console) e retorna problemas."""
     with build_server.eula_accepted(server_dir):  # EULA aceita só durante o teste; arquivo restaurado depois
-        return _server(server_dir, timeout_s, dev, after_done)
+        return _server(server_dir, timeout_s, dev, after_done, console)
 
 
-def _server(server_dir: Path, timeout_s: int, dev: bool, after_done=None) -> list[str]:
+def _server(server_dir: Path, timeout_s: int, dev: bool, after_done=None, console=()) -> list[str]:
+    LAST_CONSOLE.clear()
     flag = server_dir / "kubejs" / "config" / "dev.json"
     if dev:
         flag.parent.mkdir(parents=True, exist_ok=True)
@@ -57,6 +74,10 @@ def _server(server_dir: Path, timeout_s: int, dev: bool, after_done=None) -> lis
             print(f"servidor subiu em {time.time() - start:.0f}s")
             if dev:
                 time.sleep(20)  # deixa o dump do registro terminar
+            for cmd in console:
+                proc.stdin.write(cmd + "\n")
+                proc.stdin.flush()
+                LAST_CONSOLE.extend(drain(q, 2))
             if after_done:
                 problems += after_done(q)
             proc.stdin.write("stop\n")
@@ -74,6 +95,11 @@ def _server(server_dir: Path, timeout_s: int, dev: bool, after_done=None) -> lis
         if dump.exists() and dump.stat().st_mtime >= start:
             import shutil
             shutil.copy2(dump, BUILD / "registry_dump.json")
+            rdump = dump.with_name("recipe_dump.json")
+            if rdump.exists() and rdump.stat().st_mtime >= start:
+                shutil.copy2(rdump, BUILD / "recipe_dump.json")
+            else:
+                problems.append("recipe_dump.json não foi gerado")
         else:
             problems.append("registry_dump.json não foi gerado")
     for log in (server_dir / "logs" / "latest.log", server_dir / "logs" / "kubejs" / "server.log",

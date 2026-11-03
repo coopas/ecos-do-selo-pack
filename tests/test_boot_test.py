@@ -42,3 +42,11 @@ def test_client_launch_args_join_server_and_instance():
 def test_joined_line_detection():
     assert boot_test.player_joined("[19:00:00] [Server thread/INFO] [minecraft/MinecraftServer]: c9pas joined the game")
     assert not boot_test.player_joined("[19:00:00] [Server thread/INFO]: Done (2.0s)!")
+
+
+def test_drain_collects_lines_until_quiet():
+    import queue as _q
+    q = _q.Queue()
+    for line in ("a\n", "b\n"):
+        q.put(line)
+    assert boot_test.drain(q, seconds=0.2) == ["a", "b"]
