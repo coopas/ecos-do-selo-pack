@@ -1,0 +1,87 @@
+# Itens obtidos SEM receita (mundo, mobs, loot). O validador aceita um item de task se ele tem receita no dump,
+# está aqui, é drop de chefe (boss_drops.json) ou é recompensa de uma quest anterior. "#tag" expande a tag inteira.
+terreno:
+  - minecraft:dirt
+  - minecraft:grass_block
+  - minecraft:sand
+  - minecraft:red_sand
+  - minecraft:gravel
+  - minecraft:clay_ball
+  - minecraft:cobblestone
+  - minecraft:cobbled_deepslate
+  - minecraft:stone
+  - minecraft:deepslate
+  - minecraft:netherrack
+  - minecraft:obsidian
+  - minecraft:flint
+  - minecraft:ice
+  - minecraft:snowball
+  - minecraft:end_stone
+plantas:
+  - "#minecraft:logs"
+  - "#minecraft:saplings"
+  - "#minecraft:leaves"
+  - "#minecraft:flowers"
+  - minecraft:wheat_seeds
+  - minecraft:wheat
+  - minecraft:sugar_cane
+  - minecraft:pumpkin
+  - minecraft:melon_slice
+  - minecraft:carrot
+  - minecraft:potato
+  - minecraft:beetroot
+  - minecraft:apple
+  - minecraft:sweet_berries
+  - minecraft:kelp
+  - minecraft:bamboo
+  - minecraft:cactus
+  - minecraft:vine
+  - minecraft:red_mushroom
+  - minecraft:brown_mushroom
+  - minecraft:nether_wart
+  - minecraft:chorus_fruit
+minerios:
+  - "#forge:raw_materials"
+  - "#forge:ores"
+  - "#forge:gems"
+  - minecraft:coal
+  - minecraft:diamond
+  - minecraft:emerald
+  - minecraft:redstone
+  - minecraft:lapis_lazuli
+  - minecraft:quartz
+  - minecraft:amethyst_shard
+  - minecraft:ancient_debris
+mob_drops:
+  - minecraft:rotten_flesh
+  - minecraft:bone
+  - minecraft:string
+  - minecraft:spider_eye
+  - minecraft:gunpowder
+  - minecraft:ender_pearl
+  - minecraft:leather
+  - minecraft:feather
+  - minecraft:egg
+  - minecraft:beef
+  - minecraft:porkchop
+  - minecraft:chicken
+  - minecraft:mutton
+  - minecraft:cod
+  - minecraft:salmon
+  - minecraft:ink_sac
+  - minecraft:slime_ball
+  - minecraft:blaze_rod
+  - minecraft:ghast_tear
+  - minecraft:magma_cream
+  - minecraft:phantom_membrane
+  - minecraft:wither_skeleton_skull
+  - minecraft:nether_star
+  - minecraft:echo_shard
+  - minecraft:shulker_shell
+  - minecraft:dragon_breath
+  - minecraft:white_wool
+  - deeperdarker:heart_of_the_deep
+baldes:
+  - minecraft:water_bucket
+  - minecraft:lava_bucket
+  - minecraft:milk_bucket

@@ -15,6 +15,7 @@ class Registry:
     entities: set[str] = field(default_factory=set)
     item_tags: dict[str, set[str]] = field(default_factory=dict)
     block_tags: dict[str, set[str]] = field(default_factory=dict)
+    dimensions: set[str] = field(default_factory=set)
 
     def has_item(self, id_: str) -> bool:
         return id_ in self.items
@@ -42,4 +43,5 @@ def load(path: Path | str) -> Registry:
     d = json.loads(Path(path).read_text(encoding="utf-8"))
     return Registry(set(d["items"]), set(d["fluids"]), set(d["entities"]),
                     {k: set(v) for k, v in d["item_tags"].items()},
-                    {k: set(v) for k, v in d.get("block_tags", {}).items()})
+                    {k: set(v) for k, v in d.get("block_tags", {}).items()},
+                    set(d.get("dimensions", [])))

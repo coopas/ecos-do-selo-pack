@@ -1,9 +1,10 @@
 {
  "items": [
-  "minecraft:red_bed",
-  "minecraft:white_bed",
+  "create:mechanical_press",
+  "minecraft:crafting_table",
   "minecraft:oak_log",
-  "create:mechanical_press"
+  "minecraft:red_bed",
+  "minecraft:white_bed"
  ],
  "fluids": [
   "minecraft:water"
@@ -24,5 +25,8 @@
   "aether:aether_portal_blocks": [
    "minecraft:glowstone"
   ]
- }
+ },
+ "dimensions": [
+  "minecraft:overworld"
+ ]
 }

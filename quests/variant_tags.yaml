@@ -1,0 +1,20 @@
+# Se um item pertence a uma destas tags, a task deve usar a TAG (pedido do usuário: "qualquer cama",
+# não "cama vermelha"). Exceção só com `allow_exact: "<motivo>"` na quest.
+- minecraft:beds
+- minecraft:logs
+- minecraft:planks
+- minecraft:wool
+- minecraft:saplings
+- minecraft:leaves
+- minecraft:wooden_slabs
+- minecraft:wooden_stairs
+- minecraft:wooden_doors
+- minecraft:boats
+- minecraft:banners
+- minecraft:candles
+- minecraft:terracotta
+- minecraft:wool_carpets
+- forge:glass
+- forge:glass_panes
+- forge:dyes
+- forge:chests/wooden

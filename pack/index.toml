@@ -83,7 +83,7 @@ hash = "cda5d776ff262489fe979a7367c83a68fb6b09d935a2f01de2cbb6a36bf1dafa"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
-hash = "f627f1b618e33c78965faeb5b6ddd1eb539cb3ceddd69bade0d99ace3cfda58c"
+hash = "ded72d751775124c7b1a88d2ec8e9b70f8e6a7cdd41168676027961f388c9b11"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_items.js"

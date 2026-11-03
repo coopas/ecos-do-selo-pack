@@ -1,6 +1,12 @@
 // Ecos do Selo — DEV ONLY. Só roda se kubejs/config/dev.json existir (o script vai no pack, a flag não).
 // Gera kubejs/exported/registry_dump.json e recipe_dump.json para os validadores (tools/registry.py, tools/recipes.py).
 // Roda em ServerEvents.loaded: as receitas já incluem as mudanças feitas pelos scripts do pack.
+let ecosDimensions = server => {
+  let out = []
+  server.levelKeys().forEach(k => out.push(String(k.location())))
+  return out
+}
+
 ServerEvents.loaded(event => {
   const flag = JsonIO.read('kubejs/config/dev.json')
   if (!flag) return
@@ -33,6 +39,7 @@ ServerEvents.loaded(event => {
     fluids: ids(R.FLUID),
     entities: ids(R.ENTITY_TYPE),
     item_tags: itemTags,
+    dimensions: ecosDimensions(event.server),
     block_tags: tagsOf(R.BLOCK),
     emc_gtceu_nonzero: emcGtNonzero,
     emc_sanity_dirt: Number(emcProxy['getValue(net.minecraft.world.item.ItemStack)'](Item.of('minecraft:dirt')))
@@ -42,6 +49,7 @@ ServerEvents.loaded(event => {
   const access = server.registryAccess()
   let recipes = []
   let errors = []
+  let gtDebug = []
   server.getRecipeManager().getRecipes().forEach(r => {
     let outputs = []
     try {
@@ -49,6 +57,31 @@ ServerEvents.loaded(event => {
       if (stack && !stack.isEmpty()) outputs.push(String(R.ITEM.getKey(stack.getItem())))
     } catch (e) {
       if (errors.length < 5) errors.push('output ' + r.getId() + ': ' + e)
+    }
+    if (outputs.length === 0 && r.outputs) {
+      // GregTech (GTRecipe.outputs: Map<Cap, List<Content>>) e Ars (CrushRecipe.outputs: List<CrushOutput>).
+      // Em subclasses de Ingredient o Rhino não traduz getItems: no GT usa getInner() (Ingredient vanilla).
+      let pushStacks = stacks => { for (let i = 0; i < stacks.length; i++) outputs.push(String(R.ITEM.getKey(stacks[i].getItem()))) }
+      try {
+        let outs = r.outputs
+        let lists = outs.values ? outs.values() : [outs]
+        lists.forEach(list => list.forEach(c => {
+          let obj = c.content !== undefined ? c.content : c
+          try {
+            if (obj.stack !== undefined) { pushStacks([obj.stack]); return }
+            if (obj.getInner) {  // GT SizedIngredient: lê o JSON do Ingredient interno (getItems não é exposto ao Rhino)
+              let parsed = JSON.parse(String(obj.getInner().toJson().toString()))
+              if (!Array.isArray(parsed)) parsed = [parsed]
+              parsed.forEach(o => { if (o.item) outputs.push(String(o.item)); else if (o.tag) outputs.push('#' + o.tag) })
+              return
+            }
+          } catch (e2) {
+            if (gtDebug.length < 3) gtDebug.push(String(r.getId()) + ' ' + obj.getClass().getName() + ': ' + e2)
+          }
+        }))
+      } catch (e) {
+        if (errors.length < 5) errors.push('machine output ' + r.getId() + ': ' + e)
+      }
     }
     let inputs = []
     try {
@@ -68,6 +101,6 @@ ServerEvents.loaded(event => {
     }
     recipes.push({ id: String(r.getId()), type: String(r.getType()), outputs: outputs, inputs: inputs })
   })
-  JsonIO.write('kubejs/exported/recipe_dump.json', { recipes: recipes, errors: errors }) // JsonIO ignora array na raiz
+  JsonIO.write('kubejs/exported/recipe_dump.json', { recipes: recipes, errors: errors, gt_debug: gtDebug }) // JsonIO ignora array na raiz
   console.info(`[ecos] dumps escritos: ${Object.keys(itemTags).length} item tags, ${recipes.length} receitas`)
 })
