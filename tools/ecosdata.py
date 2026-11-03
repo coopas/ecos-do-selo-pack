@@ -50,7 +50,7 @@ class EcosData:
 
 
 def load(directory: Path = ECOS_DIR) -> EcosData:
-    return EcosData(_read(directory / "items.json", []),
+    return EcosData(_read(directory / "items.json", {"items": []})["items"],
                     _read(directory / "recipes.json", {"gates": [], "cross": [], "late": []}),
                     _read(directory / "tags.json", {}),
                     _read(directory / "boss_drops.json", {}))

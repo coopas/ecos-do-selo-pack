@@ -1,1 +1,1 @@
-[{"id": "ecos:fragmento_eco", "kind": "item", "pt": "Fragmento de Eco", "en": "Echo Fragment", "texture": "minecraft:item/gold_nugget", "rarity": "uncommon", "max_stack": 64, "glow": false}]
+{"items": [{"id": "ecos:fragmento_eco", "kind": "item", "pt": "Fragmento de Eco", "en": "Echo Fragment", "texture": "minecraft:item/gold_nugget", "rarity": "uncommon", "max_stack": 64, "glow": false}]}

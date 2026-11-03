@@ -18,12 +18,20 @@ file = "defaultconfigs/ftbultimine/ftbultimine-server.snbt"
 hash = "dbfbcbb8171a96b671076a2727b71a36e5e38adc568088295d275d236e384a2f"
 
 [[files]]
+file = "kubejs/assets/ecos/lang/en_us.json"
+hash = "04aed25ba97ad1177551e62352446d1ada0c7375639fa9ae26f74bd0d3445ed7"
+
+[[files]]
+file = "kubejs/assets/ecos/lang/pt_br.json"
+hash = "138ff28de95c957a609311721ea4a206a79bec9006249c8703d75e1c03f14d98"
+
+[[files]]
 file = "kubejs/ecos/boss_drops.json"
 hash = "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
 
 [[files]]
 file = "kubejs/ecos/items.json"
-hash = "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+hash = "f0eaa3fcde70e487043af4524d4d26f9fc4640866a7b31af9f0f6e8a5d3cc47c"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
@@ -40,6 +48,10 @@ hash = "06566245c5172752f33e3fee185b0917158a527d696743d4b4334da0dd2b147f"
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
 hash = "a7d6718d0413503bed68ad5be08c772ec66a06ff90d44d243ceb8a7e1554f4c7"
+
+[[files]]
+file = "kubejs/startup_scripts/ecos_items.js"
+hash = "c4b4fd303b6e64de33386ddc070c6081cc76edca6b63385589aedea383aaab72"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
