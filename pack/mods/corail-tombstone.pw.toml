@@ -1,0 +1,13 @@
+name = "Corail Tombstone"
+filename = "tombstone-1.20.1-9.1.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/YT5K34AB/versions/nTAliy2r/tombstone-1.20.1-9.1.5.jar"
+hash-format = "sha512"
+hash = "57283c5dce944a4eaec4240a0d2bb33d5c6f009a5b6a7a7334f48c286aa17ecd794e7025ff87e61b5555ce29667eb2ad336d92e4235d1384e0172b485e23338a"
+
+[update]
+[update.modrinth]
+mod-id = "YT5K34AB"
+version = "nTAliy2r"
