@@ -25,7 +25,11 @@ def _pump(stream, q):
 
 
 def server(server_dir: Path = BUILD / "server", timeout_s: int = 900, dev: bool = False) -> list[str]:
-    (server_dir / "eula.txt").write_text("eula=true\n")  # só no build local de teste
+    with build_server.eula_accepted(server_dir):  # EULA aceita só durante o teste; arquivo restaurado depois
+        return _server(server_dir, timeout_s, dev)
+
+
+def _server(server_dir: Path, timeout_s: int, dev: bool) -> list[str]:
     flag = server_dir / "kubejs" / "config" / "dev.json"
     if dev:
         flag.parent.mkdir(parents=True, exist_ok=True)

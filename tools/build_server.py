@@ -32,6 +32,21 @@ def copy_template(out: Path, forge_version: str) -> None:
         dest.write_text(text, encoding="utf-8", newline="\r\n" if src.suffix == ".bat" else "\n")
 
 
+@contextlib.contextmanager
+def eula_accepted(server_dir: Path):
+    """Aceita a EULA só durante o teste local e restaura o arquivo original depois."""
+    eula = server_dir / "eula.txt"
+    original = eula.read_text() if eula.exists() else None
+    eula.write_text("eula=true\n")
+    try:
+        yield
+    finally:
+        if original is None:
+            eula.unlink(missing_ok=True)
+        else:
+            eula.write_text(original)
+
+
 def prune_client_mods(out: Path, pack_dir: Path = PACK) -> list[str]:
     removed = []
     for meta in (pack_dir / "mods").glob("*.pw.toml"):
@@ -104,6 +119,8 @@ def build(out: Path = BUILD / "server", pack_url: str | None = None) -> Path:
     if removed:
         print("removidos (client-only):", removed)
     copy_template(out, version)
+    if pack_url:
+        (out / "pack-url.txt").write_text(pack_url + "\n")
     print(f"servidor pronto em {out}")
     return out
 
