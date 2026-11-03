@@ -27,7 +27,7 @@ hash = "138ff28de95c957a609311721ea4a206a79bec9006249c8703d75e1c03f14d98"
 
 [[files]]
 file = "kubejs/ecos/boss_drops.json"
-hash = "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+hash = "9690d73a987dd7e5e8fb14d69f800541ef38f52a87ebef3e5813d57eb9230615"
 
 [[files]]
 file = "kubejs/ecos/items.json"
@@ -44,6 +44,10 @@ hash = "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
 [[files]]
 file = "kubejs/server_scripts/00_projecte_lock.js"
 hash = "06566245c5172752f33e3fee185b0917158a527d696743d4b4334da0dd2b147f"
+
+[[files]]
+file = "kubejs/server_scripts/30_ecos_boss_drops.js"
+hash = "06b08344d6c5fb6066a0ec0c29db68db20eaf97ee349cd06ef4365d2fb233c21"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"

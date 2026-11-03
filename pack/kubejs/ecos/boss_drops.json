@@ -1,1 +1,6 @@
-{}
+{
+  "twilightforest:lich": "ecos:fragmento_selo_floresta",
+  "minecraft:warden": "ecos:fragmento_selo_profundezas",
+  "aether:sun_spirit": "ecos:fragmento_selo_ceus",
+  "cataclysm:ignis": "ecos:fragmento_selo_estrelas"
+}
