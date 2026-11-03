@@ -1,0 +1,44 @@
+# Loja: quests repetíveis que CONSOMEM Fragmentos de Eco. `tier` = ato a partir do qual faz sentido comprar.
+# Itens de trava e ProjectE nunca são vendidos (tests/test_rewards.py). Deps para marcos de cada ato entram nas Tasks 5–9.
+chapter: loja
+title: "A Banca do Eco"
+icon: ecos:fragmento_eco
+group: loja
+act: 5
+quests:
+  - slug: balcao
+    title: "A Banca do Eco"
+    desc: ["Alguém deixou uma banca montada entre as ruínas.", "Ela aceita ecos. Só ecos."]
+    x: 0
+    y: 0
+    deps: [prologo/despertar]
+    tasks: [{checkmark: true}]
+    rewards: [{xp_levels: 1}]
+  - {slug: provisoes, title: "Provisões", desc: ["Carne seca de um tempo melhor."], x: -3, y: 2, deps: [balcao], tier: 0, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 3, consume: true}], rewards: [{item: minecraft:cooked_beef, count: 16}]}
+  - {slug: ferro, title: "Lingotes Esquecidos", desc: ["Ferro de Aurend, ainda sem ferrugem."], x: -2, y: 2, deps: [balcao], tier: 0, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 5, consume: true}], rewards: [{item: minecraft:iron_ingot, count: 16}]}
+  - {slug: mochila, title: "Mochila de Viajante", desc: ["Para quem vai longe."], x: -1, y: 2, deps: [balcao], tier: 0, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 8, consume: true}], rewards: [{item: sophisticatedbackpacks:backpack, count: 1}]}
+  - {slug: experiencia, title: "Memória Engarrafada", desc: ["Lembranças que não são suas."], x: 0, y: 2, deps: [balcao], tier: 1, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 8, consume: true}], rewards: [{item: minecraft:experience_bottle, count: 16}]}
+  - {slug: diamantes, title: "Diamantes Lapidados", desc: ["Pedras que já foram engrenagens."], x: 1, y: 2, deps: [balcao], tier: 1, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 12, consume: true}], rewards: [{item: minecraft:diamond, count: 2}]}
+  - {slug: caixa_rara, title: "Caixa Rara", desc: ["O que tem dentro? A banca não diz."], x: 2, y: 2, deps: [balcao], tier: 1, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 12, consume: true}], rewards: [{crate: rara}]}
+  - {slug: fonte, title: "Gemas de Fonte", desc: ["Mana cristalizado, ainda morno."], x: -2, y: 4, deps: [balcao], tier: 2, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 15, consume: true}], rewards: [{item: ars_nouveau:source_gem, count: 8}]}
+  - {slug: perolas, title: "Pérolas do Vazio", desc: ["Elas ainda lembram para onde ir."], x: -1, y: 4, deps: [balcao], tier: 2, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 12, consume: true}], rewards: [{item: minecraft:ender_pearl, count: 8}]}
+  - {slug: totem, title: "Totem da Segunda Chance", desc: ["Alguém morreu para que você não morra."], x: 0, y: 4, deps: [balcao], tier: 3, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 25, consume: true}], rewards: [{item: minecraft:totem_of_undying, count: 1}]}
+  - {slug: sucata, title: "Sucata Antiga", desc: ["Do fundo das forjas de Ignaz."], x: 1, y: 4, deps: [balcao], tier: 3, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 30, consume: true}], rewards: [{item: minecraft:netherite_scrap, count: 2}]}
+  - {slug: caixa_epica, title: "Caixa Épica", desc: ["Pesada. Algo se mexe lá dentro."], x: 2, y: 4, deps: [balcao], tier: 3, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 30, consume: true}], rewards: [{crate: epica}]}
+  - {slug: estrela, title: "Estrela Abissal", desc: ["Brilha sem fazer barulho."], x: 0, y: 6, deps: [balcao], tier: 4, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 60, consume: true}], rewards: [{item: minecraft:nether_star, count: 1}]}
+  - {slug: netherita, title: "Lingote de Netherita", desc: ["O metal que nem a Ruptura derreteu."], x: 1, y: 6, deps: [balcao], tier: 5, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 50, consume: true}], rewards: [{item: minecraft:netherite_ingot, count: 1}]}
+  - {slug: caixa_lendaria, title: "Caixa Lendária", desc: ["A banca hesita antes de entregar."], x: 2, y: 6, deps: [balcao], tier: 5, repeatable: true,
+     tasks: [{item: ecos:fragmento_eco, count: 80, consume: true}], rewards: [{crate: lendaria}]}

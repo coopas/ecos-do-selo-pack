@@ -1,0 +1,92 @@
+{
+	empty_weight: 0.0f
+	filename: "comum"
+	icon: "ftbquests:lootcrate"
+	id: "427FDA1DDFA285B8"
+	loot_crate: {
+		color: 10133670
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: false
+		item_name: "Caixa Comum"
+		string_id: "comum"
+	}
+	loot_size: 2
+	rewards: [
+		{
+			count: 8
+			id: "64E6EE122C7A6F30"
+			item: {
+				Count: 1b
+				id: "minecraft:bread"
+			}
+			type: "item"
+			weight: 20.0f
+		}
+		{
+			count: 32
+			id: "3B0D41BDFBB20F76"
+			item: {
+				Count: 1b
+				id: "minecraft:torch"
+			}
+			type: "item"
+			weight: 20.0f
+		}
+		{
+			count: 16
+			id: "1F8FF49914DFF916"
+			item: {
+				Count: 1b
+				id: "minecraft:coal"
+			}
+			type: "item"
+			weight: 15.0f
+		}
+		{
+			count: 6
+			id: "046FC232835E0A07"
+			item: {
+				Count: 1b
+				id: "minecraft:iron_ingot"
+			}
+			type: "item"
+			weight: 12.0f
+		}
+		{
+			count: 4
+			id: "6D36EFD3D2A637BE"
+			item: {
+				Count: 1b
+				id: "minecraft:experience_bottle"
+			}
+			type: "item"
+			weight: 10.0f
+		}
+		{
+			count: 8
+			id: "7EECFA0D51211DB9"
+			item: {
+				Count: 1b
+				id: "create:andesite_alloy"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 2
+			id: "250B56D8E659D3B9"
+			item: {
+				Count: 1b
+				id: "ecos:fragmento_eco"
+			}
+			type: "item"
+			weight: 5.0f
+		}
+	]
+	title: "Caixa Comum"
+	use_title: true
+}

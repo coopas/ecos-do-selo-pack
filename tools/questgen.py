@@ -17,6 +17,9 @@ from paths import PACK, ROOT
 SRC = ROOT / "quests" / "src"
 OUT = PACK / "config" / "ftbquests" / "quests"
 QUEST_TAGS = PACK / "kubejs" / "ecos" / "quest_tags.json"
+TABLES_SRC = ROOT / "quests" / "reward_tables.yaml"
+LORE = ROOT / "docs" / "lore.md"
+BOOK_PAGE_CHARS = 230
 COIN = "ecos:fragmento_eco"
 GROUPS = {"atos": "Atos", "caminhos": "Caminhos", "loja": "Loja", "diario": "Diário"}
 
@@ -52,8 +55,57 @@ def load_sources(directory: Path = SRC) -> list[Chapter]:
     return [Chapter.from_dict(yaml.safe_load(f.read_text(encoding="utf-8")), i) for i, f in enumerate(files)]
 
 
-def item_stack(item_id: str) -> dict:
-    return {"Count": snbt.Byte(1), "id": item_id}
+def item_stack(item_id: str, tag: dict | None = None) -> dict:
+    stack = {"Count": snbt.Byte(1), "id": item_id}
+    if tag:
+        stack["tag"] = tag
+    return stack
+
+
+def lore_pages() -> dict[int, str]:
+    import re
+    parts = re.split(r"^### Página (\d+)[^\n]*\n", LORE.read_text(encoding="utf-8"), flags=re.M)
+    pages = {}
+    for i in range(1, len(parts), 2):
+        body = parts[i + 1].split("\n## ")[0].strip()
+        pages[int(parts[i])] = body
+    return pages
+
+
+def diary_book(n: int) -> dict:
+    """Página n da lore (docs/lore.md) como livro escrito de Ilse Varrow."""
+    text = lore_pages()[n]
+    chunks, current = [], ""
+    for line in text.splitlines():
+        if current and len(current) + len(line) + 1 > BOOK_PAGE_CHARS:
+            chunks.append(current)
+            current = line
+        else:
+            current = f"{current}\n{line}" if current else line
+    chunks.append(current)
+    return item_stack("minecraft:written_book", {
+        "title": f"Diário — Página {n}", "author": "Ilse Varrow", "generation": 0,
+        "pages": [json.dumps({"text": c}, ensure_ascii=False) for c in chunks]})
+
+
+def crate_stack(table_slug: str) -> dict:
+    return item_stack("ftbquests:lootcrate", {"type": table_slug})
+
+
+def load_tables(path: Path = TABLES_SRC) -> dict:
+    return yaml.safe_load(path.read_text(encoding="utf-8")) if path.exists() else {}
+
+
+def build_table(slug: str, t: dict) -> dict:
+    return {
+        "id": quest_id(f"table:{slug}"), "title": t["title"], "filename": slug, "icon": "ftbquests:lootcrate",
+        "loot_size": int(t.get("loot_size", 1)), "empty_weight": snbt.Float(0.0), "use_title": True,
+        "rewards": [{"id": quest_id(f"table:{slug}#e{i}"), "type": "item", "item": item_stack(e["item"]),
+                     "count": int(e.get("count", 1)), "weight": snbt.Float(float(e["weight"]))}
+                    for i, e in enumerate(t["entries"])],
+        "loot_crate": {"string_id": slug, "item_name": t["title"], "color": int(t["color"]), "glow": slug != "comum",
+                       "drops": {"passive": 0, "monster": 0, "boss": 0}},
+    }
 
 
 def tag_filter_stack(tag: str) -> dict:
@@ -63,7 +115,10 @@ def tag_filter_stack(tag: str) -> dict:
 
 def _task(t: dict, tid: str) -> dict:
     if "item" in t:
-        return {"id": tid, "type": "item", "item": item_stack(t["item"]), "count": snbt.Long(t.get("count", 1))}
+        task = {"id": tid, "type": "item", "item": item_stack(t["item"]), "count": snbt.Long(t.get("count", 1))}
+        if t.get("consume"):
+            task["consume_items"] = True
+        return task
     if "tag" in t:
         return {"id": tid, "type": "item", "item": tag_filter_stack(t["tag"]), "count": snbt.Long(t.get("count", 1))}
     if "kill" in t:
@@ -86,6 +141,12 @@ def _reward(r: dict, rid: str, tables: dict) -> dict:
         return {"id": rid, "type": "item", "item": item_stack(r["item"]), "count": int(r.get("count", 1))}
     if "xp_levels" in r:
         return {"id": rid, "type": "xp_levels", "xp_levels": int(r["xp_levels"])}
+    if "crate" in r:
+        if r["crate"] not in tables:
+            raise QuestError(f"caixa desconhecida: {r['crate']}")
+        return {"id": rid, "type": "item", "item": crate_stack(r["crate"]), "count": int(r.get("count", 1))}
+    if "page" in r:
+        return {"id": rid, "type": "item", "item": diary_book(int(r["page"])), "count": 1}
     if "loot" in r:
         if r["loot"] not in tables:
             raise QuestError(f"reward table desconhecida: {r['loot']}")
@@ -119,6 +180,8 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
         "default_reward_team": False, "default_consume_items": False, "default_quest_shape": "circle",
         "progression_mode": "linear", "show_lock_icons": True, "drop_loot_crates": False,
     }) + "\n"
+    for slug, t in tables.items():
+        files[f"reward_tables/{slug}.snbt"] = snbt.dumps(build_table(slug, t)) + "\n"
     for c in chapters:
         quests = []
         for q in c.quests:
@@ -147,7 +210,7 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
 
 def write(out: Path = OUT, chapters: list[Chapter] | None = None, tables: dict | None = None) -> int:
     chapters = load_sources() if chapters is None else chapters
-    files = build(chapters, tables or {})
+    files = build(chapters, load_tables() if tables is None else tables)
     if out.exists():
         shutil.rmtree(out)
     for rel, text in files.items():

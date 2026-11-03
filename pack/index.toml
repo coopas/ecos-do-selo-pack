@@ -6,15 +6,35 @@ hash = "c85df8d1c893cd5a11f6e0f3f5f6bafac66feb29bea6e062b9345f623abb1848"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "e8a5668f332c44e9ccb74568452122fbd8b4810c77ec44ee3b5eed25a10ca162"
+hash = "60912cef60789f11afe3e48405c98d92d75156b1ad3e407f5630f6b661530a70"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/loja.snbt"
+hash = "53d4b8f842bd197b80f785302412561b6f2fe261a14e6d189cc6c9ec5c45a61c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
-hash = "f7d66abcc0e87a71bc60ba788e67de50f4c88baa6780e21ccbb0bd3e8159b29e"
+hash = "1e437b81cf8096681dab02a91deecc97daa73d7b7f5b211bc342ebfa5e1f9346"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e1262bfd258de38a6ba4545ab2989286949097063bd3ebf215a47b516a0744f2"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/comum.snbt"
+hash = "777cdbba99874194de3e9461559f4bd49de64146269e28b8555a927430d6b706"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/epica.snbt"
+hash = "9ae7ac2ed832453ac8840cb29a1a40741d4ec8bd4db80feff5eb2db3017d196f"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/lendaria.snbt"
+hash = "02c217ecf42dcf42da84f90ec5ff563b1a006c806f5642d204e419ecf7c41502"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/rara.snbt"
+hash = "021c495b9d22c121fee1f695dbe76a05b1b102cf60e46c92d2f32b3db93fc605"
 
 [[files]]
 file = "config/improvedmobs/common.toml"
@@ -79,7 +99,7 @@ hash = "e3fee437349f7fa327ca810f498d33bb9d1ddd2ee7e978c3ecbf2498cafab43a"
 
 [[files]]
 file = "kubejs/server_scripts/dev/quest_selftest.js"
-hash = "cda5d776ff262489fe979a7367c83a68fb6b09d935a2f01de2cbb6a36bf1dafa"
+hash = "3c8358dcb62b231846c7a628175ba28e6d31ceceeb0912712aba036a031e0841"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"

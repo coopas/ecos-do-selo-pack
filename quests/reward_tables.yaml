@@ -1,0 +1,50 @@
+# Caixas de loot (FTB Quests loot crates). tier: 1 (comum) .. 4 (lendário) — usado no teste de raridade crescente.
+# Nunca colocar itens de trava (fragmentos do selo, chaves, catalisador, acendedor, bancada NASA, Pedra) nem ProjectE.
+comum:
+  title: "Caixa Comum"
+  color: 0x9AA0A6
+  loot_size: 2
+  entries:
+    - {item: minecraft:bread, count: 8, weight: 20, tier: 1}
+    - {item: minecraft:torch, count: 32, weight: 20, tier: 1}
+    - {item: minecraft:coal, count: 16, weight: 15, tier: 1}
+    - {item: minecraft:iron_ingot, count: 6, weight: 12, tier: 2}
+    - {item: minecraft:experience_bottle, count: 4, weight: 10, tier: 2}
+    - {item: create:andesite_alloy, count: 8, weight: 8, tier: 2}
+    - {item: ecos:fragmento_eco, count: 2, weight: 5, tier: 3}
+rara:
+  title: "Caixa Rara"
+  color: 0x3E8EDE
+  loot_size: 2
+  entries:
+    - {item: minecraft:iron_ingot, count: 16, weight: 10, tier: 2}
+    - {item: minecraft:gold_ingot, count: 12, weight: 10, tier: 2}
+    - {item: minecraft:experience_bottle, count: 12, weight: 10, tier: 2}
+    - {item: minecraft:diamond, count: 2, weight: 10, tier: 3}
+    - {item: minecraft:ender_pearl, count: 4, weight: 8, tier: 3}
+    - {item: ars_nouveau:source_gem, count: 6, weight: 8, tier: 3}
+    - {item: ecos:fragmento_eco, count: 5, weight: 6, tier: 3}
+    - {item: minecraft:golden_apple, count: 2, weight: 4, tier: 4}
+epica:
+  title: "Caixa Épica"
+  color: 0xA44BDB
+  loot_size: 2
+  entries:
+    - {item: minecraft:diamond, count: 6, weight: 10, tier: 3}
+    - {item: minecraft:emerald, count: 12, weight: 8, tier: 3}
+    - {item: ars_nouveau:source_gem_block, count: 2, weight: 8, tier: 3}
+    - {item: ecos:fragmento_eco, count: 12, weight: 8, tier: 4}
+    - {item: minecraft:netherite_scrap, count: 2, weight: 6, tier: 4}
+    - {item: minecraft:totem_of_undying, count: 1, weight: 5, tier: 4}
+    - {item: minecraft:enchanted_golden_apple, count: 1, weight: 3, tier: 4}
+lendaria:
+  title: "Caixa Lendária"
+  color: 0xF2B233
+  loot_size: 3
+  entries:
+    - {item: minecraft:netherite_ingot, count: 1, weight: 8, tier: 4}
+    - {item: ecos:fragmento_eco, count: 32, weight: 8, tier: 4}
+    - {item: minecraft:enchanted_golden_apple, count: 2, weight: 6, tier: 4}
+    - {item: minecraft:totem_of_undying, count: 2, weight: 6, tier: 4}
+    - {item: minecraft:nether_star, count: 1, weight: 4, tier: 4}
+    - {item: minecraft:diamond_block, count: 2, weight: 6, tier: 4}

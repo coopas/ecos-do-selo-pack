@@ -17,9 +17,13 @@
 			id: "371D1803502A61B1"
 			rewards: [
 				{
+					count: 2
 					id: "662525C04C9779C5"
-					type: "xp_levels"
-					xp_levels: 1
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -42,9 +46,13 @@
 			id: "55949ECDE7D7BC77"
 			rewards: [
 				{
+					count: 3
 					id: "3D227790FE426C95"
-					type: "xp_levels"
-					xp_levels: 1
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -72,11 +80,40 @@
 			id: "2C3AA7D00409E54F"
 			rewards: [
 				{
-					count: 2
+					count: 3
 					id: "2CBD2886C6088EB3"
 					item: {
 						Count: 1b
 						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "1F1DAB6D96C63316"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "117563A59081FFA1"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Não durma ao relento. As noites estão mais longas.\\nOs mortos que andam aqui não andavam assim antes.\\nEles param, inclinam a cabeça e escutam.\\nFaça uma cama. Qualquer cama. Feche a porta.\"}"
+							]
+							title: "Diário — Página 3"
+						}
 					}
 					type: "item"
 				}

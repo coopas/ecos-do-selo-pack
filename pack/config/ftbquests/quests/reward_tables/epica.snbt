@@ -1,0 +1,92 @@
+{
+	empty_weight: 0.0f
+	filename: "epica"
+	icon: "ftbquests:lootcrate"
+	id: "2EE85FF6F3AEB593"
+	loot_crate: {
+		color: 10767323
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: true
+		item_name: "Caixa Épica"
+		string_id: "epica"
+	}
+	loot_size: 2
+	rewards: [
+		{
+			count: 6
+			id: "26F1D597FCB94601"
+			item: {
+				Count: 1b
+				id: "minecraft:diamond"
+			}
+			type: "item"
+			weight: 10.0f
+		}
+		{
+			count: 12
+			id: "60527E8C85FCC9A5"
+			item: {
+				Count: 1b
+				id: "minecraft:emerald"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 2
+			id: "5B30A8E8732AD7BF"
+			item: {
+				Count: 1b
+				id: "ars_nouveau:source_gem_block"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 12
+			id: "0ACAC7311811602D"
+			item: {
+				Count: 1b
+				id: "ecos:fragmento_eco"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 2
+			id: "316E5C389FAAAF97"
+			item: {
+				Count: 1b
+				id: "minecraft:netherite_scrap"
+			}
+			type: "item"
+			weight: 6.0f
+		}
+		{
+			count: 1
+			id: "0BF63D9F5CA4DDC8"
+			item: {
+				Count: 1b
+				id: "minecraft:totem_of_undying"
+			}
+			type: "item"
+			weight: 5.0f
+		}
+		{
+			count: 1
+			id: "5DC1AA71ADB5CE4A"
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_golden_apple"
+			}
+			type: "item"
+			weight: 3.0f
+		}
+	]
+	title: "Caixa Épica"
+	use_title: true
+}

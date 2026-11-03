@@ -65,8 +65,24 @@ function ecosQuestSelftest() {
     quests = { error: String(e) }
   }
 
+  let tables = {}
+  try {
+    let file = Java.loadClass('dev.ftb.mods.ftbquests.quest.ServerQuestFile').INSTANCE
+    file.getRewardTables().forEach(t => {
+      let crate = t.getLootCrate()
+      let n = 0
+      let weight = 0
+      t.getWeightedRewards().forEach(wr => { n++; weight += wr.getWeight() })
+      tables[crate ? String(crate.getStringID()) : String(t.getFilename())] = {
+        rewards: n, total_weight: weight, crate: crate ? String(crate.getStringID()) : null
+      }
+    })
+  } catch (e) {
+    tables = { error: String(e) }
+  }
+
   JsonIO.write('kubejs/exported/quest_selftest.json', {
-    filter_sample: sample, filters: filters, chapters: chapters, quests: quests
+    filter_sample: sample, filters: filters, chapters: chapters, quests: quests, tables: tables
   })
   console.info(`[ecos] quest_selftest: ${Object.keys(filters).length} filtros, ${chapters} capítulos`)
 }

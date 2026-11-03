@@ -12,6 +12,10 @@ class Byte(int):
     """Inteiro serializado com sufixo b."""
 
 
+class Float(float):
+    """Float serializado com sufixo f (NBT float; FTB lê pesos com getFloat)."""
+
+
 def _str(s: str) -> str:
     return '"' + s.replace("\\", "\\\\").replace('"', '\\"') + '"'
 
@@ -30,6 +34,8 @@ def dumps(value, indent: int = 0) -> str:
         return f"{int(value)}b"
     if isinstance(value, int):
         return str(value)
+    if isinstance(value, Float):
+        return f"{float(value)!r}f"
     if isinstance(value, float):
         return f"{value!r}d"
     if isinstance(value, str):

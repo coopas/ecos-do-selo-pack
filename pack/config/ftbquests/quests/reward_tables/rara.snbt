@@ -1,0 +1,102 @@
+{
+	empty_weight: 0.0f
+	filename: "rara"
+	icon: "ftbquests:lootcrate"
+	id: "42160709186BA3FA"
+	loot_crate: {
+		color: 4099806
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: true
+		item_name: "Caixa Rara"
+		string_id: "rara"
+	}
+	loot_size: 2
+	rewards: [
+		{
+			count: 16
+			id: "1BB03A22599C6930"
+			item: {
+				Count: 1b
+				id: "minecraft:iron_ingot"
+			}
+			type: "item"
+			weight: 10.0f
+		}
+		{
+			count: 12
+			id: "27B5E5AA13DEDD64"
+			item: {
+				Count: 1b
+				id: "minecraft:gold_ingot"
+			}
+			type: "item"
+			weight: 10.0f
+		}
+		{
+			count: 12
+			id: "17172BF34BED78D1"
+			item: {
+				Count: 1b
+				id: "minecraft:experience_bottle"
+			}
+			type: "item"
+			weight: 10.0f
+		}
+		{
+			count: 2
+			id: "50A8D745FE32C67A"
+			item: {
+				Count: 1b
+				id: "minecraft:diamond"
+			}
+			type: "item"
+			weight: 10.0f
+		}
+		{
+			count: 4
+			id: "49EF23FFC96E68AA"
+			item: {
+				Count: 1b
+				id: "minecraft:ender_pearl"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 6
+			id: "49B4152D19F273FE"
+			item: {
+				Count: 1b
+				id: "ars_nouveau:source_gem"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 5
+			id: "1658698A6C177E9E"
+			item: {
+				Count: 1b
+				id: "ecos:fragmento_eco"
+			}
+			type: "item"
+			weight: 6.0f
+		}
+		{
+			count: 2
+			id: "091CEE7584FB3462"
+			item: {
+				Count: 1b
+				id: "minecraft:golden_apple"
+			}
+			type: "item"
+			weight: 4.0f
+		}
+	]
+	title: "Caixa Rara"
+	use_title: true
+}

@@ -1,0 +1,553 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "loja"
+	group: "6E393DF02F57B1F1"
+	icon: "ecos:fragmento_eco"
+	id: "641A76BC47428E9B"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"371D1803502A61B1"
+			]
+			description: [
+				"Alguém deixou uma banca montada entre as ruínas."
+				"Ela aceita ecos. Só ecos."
+			]
+			id: "3451E5FF5CC72396"
+			rewards: [
+				{
+					id: "303C66FC1A162A04"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					id: "2D42DDC450CB32E1"
+					type: "checkmark"
+				}
+			]
+			title: "A Banca do Eco"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Carne seca de um tempo melhor."
+			]
+			id: "3B3324D9D05BD410"
+			rewards: [
+				{
+					count: 16
+					id: "1B98FA20DA6A7345"
+					item: {
+						Count: 1b
+						id: "minecraft:cooked_beef"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "36BC2F0836CADF7F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Provisões"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Ferro de Aurend, ainda sem ferrugem."
+			]
+			id: "27FDC6B0B04F2B98"
+			rewards: [
+				{
+					count: 16
+					id: "07208B7D3265B20F"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 5L
+					id: "4CB74C084C96F9C6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Lingotes Esquecidos"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Para quem vai longe."
+			]
+			id: "7976E7D310087572"
+			rewards: [
+				{
+					count: 1
+					id: "6BB92DB8EFC11AA8"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "181F91348A5C1E06"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Mochila de Viajante"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Lembranças que não são suas."
+			]
+			id: "6AC317DC993F9AE4"
+			rewards: [
+				{
+					count: 16
+					id: "070EC985D38B2171"
+					item: {
+						Count: 1b
+						id: "minecraft:experience_bottle"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 8L
+					id: "3E1380087E1F4F26"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Memória Engarrafada"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Pedras que já foram engrenagens."
+			]
+			id: "3E946415D6ABF97C"
+			rewards: [
+				{
+					count: 2
+					id: "571A137AAB84D042"
+					item: {
+						Count: 1b
+						id: "minecraft:diamond"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "1FDB6B0D50B5ADEA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Diamantes Lapidados"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"O que tem dentro? A banca não diz."
+			]
+			id: "32DCAB2C09F521A2"
+			rewards: [
+				{
+					count: 1
+					id: "40BE5204132F69BE"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "3B3831DD46593413"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Caixa Rara"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Mana cristalizado, ainda morno."
+			]
+			id: "699AC79C37FACA0F"
+			rewards: [
+				{
+					count: 8
+					id: "4AC0AE8A94F1D897"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:source_gem"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 15L
+					id: "3F1733478F3B0BDE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Gemas de Fonte"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Elas ainda lembram para onde ir."
+			]
+			id: "28C51B9EE17620BD"
+			rewards: [
+				{
+					count: 8
+					id: "215C8F3F43835CFC"
+					item: {
+						Count: 1b
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 12L
+					id: "2667328A93DAAEC7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Pérolas do Vazio"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Alguém morreu para que você não morra."
+			]
+			id: "1AE855D3FC14162D"
+			rewards: [
+				{
+					count: 1
+					id: "1696EA8B6808F754"
+					item: {
+						Count: 1b
+						id: "minecraft:totem_of_undying"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 25L
+					id: "1C121AAAF4967D5B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Totem da Segunda Chance"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Do fundo das forjas de Ignaz."
+			]
+			id: "7773CA685799F914"
+			rewards: [
+				{
+					count: 2
+					id: "7A3AE4AE22140FD8"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_scrap"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 30L
+					id: "06B2D8A17E3A6118"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Sucata Antiga"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Pesada. Algo se mexe lá dentro."
+			]
+			id: "03AECB4EF34CBB19"
+			rewards: [
+				{
+					count: 1
+					id: "368AE91ACB8B0210"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 30L
+					id: "651D3D7093CD9E55"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Caixa Épica"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"Brilha sem fazer barulho."
+			]
+			id: "3DD85A1E4A54622F"
+			rewards: [
+				{
+					count: 1
+					id: "2C87D1951D17D3BB"
+					item: {
+						Count: 1b
+						id: "minecraft:nether_star"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 60L
+					id: "1CA482F318E389CE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Estrela Abissal"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"O metal que nem a Ruptura derreteu."
+			]
+			id: "59567A446B0C6344"
+			rewards: [
+				{
+					count: 1
+					id: "757EBF3CA17A215E"
+					item: {
+						Count: 1b
+						id: "minecraft:netherite_ingot"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 50L
+					id: "290F77ABEE509498"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Lingote de Netherita"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: true
+			dependencies: [
+				"3451E5FF5CC72396"
+			]
+			description: [
+				"A banca hesita antes de entregar."
+			]
+			id: "7AF1FEFEE85CD17E"
+			rewards: [
+				{
+					count: 1
+					id: "1840A28E207CAE8A"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: true
+					count: 80L
+					id: "2E359E3A6A95149A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Caixa Lendária"
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+	title: "A Banca do Eco"
+}

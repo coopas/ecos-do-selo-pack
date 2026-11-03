@@ -1,0 +1,82 @@
+{
+	empty_weight: 0.0f
+	filename: "lendaria"
+	icon: "ftbquests:lootcrate"
+	id: "65C6D605FBD7298A"
+	loot_crate: {
+		color: 15905331
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: true
+		item_name: "Caixa Lendária"
+		string_id: "lendaria"
+	}
+	loot_size: 3
+	rewards: [
+		{
+			count: 1
+			id: "274CD7E4CC9112EC"
+			item: {
+				Count: 1b
+				id: "minecraft:netherite_ingot"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 32
+			id: "7A7EF907C8AC56CE"
+			item: {
+				Count: 1b
+				id: "ecos:fragmento_eco"
+			}
+			type: "item"
+			weight: 8.0f
+		}
+		{
+			count: 2
+			id: "27310D34D225065C"
+			item: {
+				Count: 1b
+				id: "minecraft:enchanted_golden_apple"
+			}
+			type: "item"
+			weight: 6.0f
+		}
+		{
+			count: 2
+			id: "67D682868CEA6F22"
+			item: {
+				Count: 1b
+				id: "minecraft:totem_of_undying"
+			}
+			type: "item"
+			weight: 6.0f
+		}
+		{
+			count: 1
+			id: "6FB0FC7CE7158E7F"
+			item: {
+				Count: 1b
+				id: "minecraft:nether_star"
+			}
+			type: "item"
+			weight: 4.0f
+		}
+		{
+			count: 2
+			id: "214FDEEA1A6DE410"
+			item: {
+				Count: 1b
+				id: "minecraft:diamond_block"
+			}
+			type: "item"
+			weight: 6.0f
+		}
+	]
+	title: "Caixa Lendária"
+	use_title: true
+}

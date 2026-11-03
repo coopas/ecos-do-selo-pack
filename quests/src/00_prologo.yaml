@@ -13,7 +13,7 @@ quests:
     tasks:
       - checkmark: true
     rewards:
-      - xp_levels: 1
+      - coins: 2
   - slug: bancada
     title: "Mãos à obra"
     desc: ["Uma bancada de trabalho é o começo de tudo."]
@@ -23,7 +23,7 @@ quests:
     tasks:
       - item: minecraft:crafting_table
     rewards:
-      - xp_levels: 1
+      - coins: 3
   - slug: abrigo
     title: "Um lugar para dormir"
     desc: ["Qualquer cama serve. A noite aqui é longa."]
@@ -33,4 +33,6 @@ quests:
     tasks:
       - tag: minecraft:beds
     rewards:
-      - coins: 2
+      - coins: 3
+      - crate: comum
+      - page: 3
