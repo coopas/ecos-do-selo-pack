@@ -1,0 +1,7 @@
+{
+ "require": {
+  "aether:the_aether": "ecos:chave_celeste",
+  "blue_skies:everbright": "ecos:chave_celeste",
+  "blue_skies:everdawn": "ecos:chave_celeste"
+ }
+}

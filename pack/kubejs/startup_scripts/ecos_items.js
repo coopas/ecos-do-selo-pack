@@ -9,6 +9,7 @@ StartupEvents.registry('item', event => {
       .maxStackSize(def.max_stack)
       .rarity(def.rarity)
     if (def.glow) b.glow(true)
+    if (def.fire_resistant) b.fireResistant(true)
   })
 })
 

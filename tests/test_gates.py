@@ -43,12 +43,8 @@ def test_undergarden_catalyst_single_recipe_needs_floresta(rec):
     assert {"ecos:fragmento_selo_floresta", "ars_nouveau:source_gem", "gtceu:lv_electric_pump"} <= ins
 
 
-def test_aether_frame_is_pedra_celeste(reg):
-    assert reg.block_tag_blocks("aether:aether_portal_blocks") == {"ecos:pedra_celeste"}
-
-
-def test_pedra_celeste_needs_profundezas(rec):
-    ins = only_recipe(rec, "ecos:pedra_celeste")
+def test_chave_celeste_needs_profundezas(rec):
+    ins = only_recipe(rec, "ecos:chave_celeste")
     assert {"ecos:fragmento_selo_profundezas", "gtceu:mv_emitter"} <= ins
 
 

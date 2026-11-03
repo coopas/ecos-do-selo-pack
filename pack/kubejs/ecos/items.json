@@ -1,12 +1,12 @@
 {
   "items": [
     {"id": "ecos:fragmento_eco", "kind": "item", "pt": "Fragmento de Eco", "en": "Echo Fragment", "texture": "minecraft:item/amethyst_shard", "rarity": "uncommon", "max_stack": 64, "glow": false},
-    {"id": "ecos:fragmento_selo_floresta", "kind": "item", "pt": "Fragmento do Selo — Floresta", "en": "Seal Fragment — Forest", "texture": "minecraft:item/emerald", "rarity": "rare", "max_stack": 16, "glow": true},
-    {"id": "ecos:fragmento_selo_profundezas", "kind": "item", "pt": "Fragmento do Selo — Profundezas", "en": "Seal Fragment — Depths", "texture": "minecraft:item/echo_shard", "rarity": "rare", "max_stack": 16, "glow": true},
-    {"id": "ecos:fragmento_selo_ceus", "kind": "item", "pt": "Fragmento do Selo — Céus", "en": "Seal Fragment — Skies", "texture": "minecraft:item/prismarine_crystals", "rarity": "epic", "max_stack": 16, "glow": true},
-    {"id": "ecos:fragmento_selo_estrelas", "kind": "item", "pt": "Fragmento do Selo — Estrelas", "en": "Seal Fragment — Stars", "texture": "minecraft:item/nether_star", "rarity": "epic", "max_stack": 16, "glow": true},
+    {"id": "ecos:fragmento_selo_floresta", "kind": "item", "pt": "Fragmento do Selo — Floresta", "en": "Seal Fragment — Forest", "texture": "minecraft:item/emerald", "rarity": "rare", "max_stack": 16, "glow": true, "fire_resistant": true},
+    {"id": "ecos:fragmento_selo_profundezas", "kind": "item", "pt": "Fragmento do Selo — Profundezas", "en": "Seal Fragment — Depths", "texture": "minecraft:item/echo_shard", "rarity": "rare", "max_stack": 16, "glow": true, "fire_resistant": true},
+    {"id": "ecos:fragmento_selo_ceus", "kind": "item", "pt": "Fragmento do Selo — Céus", "en": "Seal Fragment — Skies", "texture": "minecraft:item/prismarine_crystals", "rarity": "epic", "max_stack": 16, "glow": true, "fire_resistant": true},
+    {"id": "ecos:fragmento_selo_estrelas", "kind": "item", "pt": "Fragmento do Selo — Estrelas", "en": "Seal Fragment — Stars", "texture": "minecraft:item/nether_star", "rarity": "epic", "max_stack": 16, "glow": true, "fire_resistant": true},
     {"id": "ecos:chave_crepuscular", "kind": "item", "pt": "Chave Crepuscular", "en": "Twilight Key", "texture": "minecraft:item/tripwire_hook", "rarity": "rare", "max_stack": 16, "glow": false},
     {"id": "ecos:artefato_selo", "kind": "item", "pt": "Artefato do Selo", "en": "Seal Artifact", "texture": "minecraft:item/heart_of_the_sea", "rarity": "epic", "max_stack": 1, "glow": true},
-    {"id": "ecos:pedra_celeste", "kind": "block", "pt": "Pedra Celeste", "en": "Celestial Stone", "texture": "minecraft:block/glowstone", "rarity": "rare", "max_stack": 64, "glow": false}
+    {"id": "ecos:chave_celeste", "kind": "item", "pt": "Chave Celeste", "en": "Celestial Key", "texture": "minecraft:item/ender_eye", "rarity": "rare", "max_stack": 16, "glow": true}
   ]
 }

@@ -10,7 +10,7 @@ CROSS = [
     ("ae2:inscriber", "gtceu:lv_electric_piston"),
     ("ae2:controller", "gtceu:mv_robot_arm"),
     ("waystones:waystone", "ars_nouveau:source_gem"),
-    ("create:mechanical_crafter", "irons_spellbooks:arcane_essence"),
+    ("create:mechanical_crafter", "ars_nouveau:source_gem"),  # arcane_essence não tem receita (só loot)
     ("sophisticatedbackpacks:backpack", "create:andesite_alloy"),
 ]
 

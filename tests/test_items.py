@@ -10,7 +10,7 @@ LANG = PACK / "kubejs" / "assets" / "ecos" / "lang"
 EXPECTED = {
     "ecos:fragmento_eco", "ecos:fragmento_selo_floresta", "ecos:fragmento_selo_profundezas",
     "ecos:fragmento_selo_ceus", "ecos:fragmento_selo_estrelas", "ecos:chave_crepuscular",
-    "ecos:artefato_selo", "ecos:pedra_celeste",
+    "ecos:artefato_selo", "ecos:chave_celeste",
 }
 
 

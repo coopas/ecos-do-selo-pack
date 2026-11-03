@@ -1,6 +1,7 @@
 // Ecos do Selo — receitas do pack (travas, cruzadas, finais). Fonte: kubejs/ecos/recipes.json
 // replace_output: remove TODAS as receitas que produzem o item antes de adicionar a nossa (sem atalho).
-let ECOS_RECIPES = JsonIO.read('kubejs/ecos/recipes.json') || {}
+let ECOS_RECIPES = JsonIO.read('kubejs/ecos/recipes.json')
+if (!ECOS_RECIPES) throw new Error('[ecos] kubejs/ecos/recipes.json ausente ou inválido: travas NÃO carregadas')
 
 ServerEvents.recipes(event => {
   ;['gates', 'cross', 'late'].forEach(section => {

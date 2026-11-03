@@ -23,11 +23,11 @@ hash = "dbfbcbb8171a96b671076a2727b71a36e5e38adc568088295d275d236e384a2f"
 
 [[files]]
 file = "kubejs/assets/ecos/lang/en_us.json"
-hash = "04aed25ba97ad1177551e62352446d1ada0c7375639fa9ae26f74bd0d3445ed7"
+hash = "99ddfa773504a4616761edf66fab598341c0dafb7c8d893a684190674e52c631"
 
 [[files]]
 file = "kubejs/assets/ecos/lang/pt_br.json"
-hash = "138ff28de95c957a609311721ea4a206a79bec9006249c8703d75e1c03f14d98"
+hash = "83188ef3e818ffaaf79c3acbcfc0e8f9de99d1816113602d94a1add04fc7527c"
 
 [[files]]
 file = "kubejs/ecos/boss_drops.json"
@@ -35,27 +35,31 @@ hash = "9690d73a987dd7e5e8fb14d69f800541ef38f52a87ebef3e5813d57eb9230615"
 
 [[files]]
 file = "kubejs/ecos/items.json"
-hash = "f0eaa3fcde70e487043af4524d4d26f9fc4640866a7b31af9f0f6e8a5d3cc47c"
+hash = "56999882f3abbfd0f3b9c94f06a402e84135eb23dc77c47b566f926216e0e498"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
-hash = "3d9be6d256256f4c86b5d1425dc075a73cfc0351035cd47797484f2b7241140e"
+hash = "904dc12542f9c8f7a24212dca1db5fb0d800bbfaccdf1440040627a58e6f536c"
 
 [[files]]
 file = "kubejs/ecos/tags.json"
-hash = "42772ed8163eb129c20971739f7b3f5fa550c1418b0636a1af9b38d6fc2a8db5"
+hash = "b53f7de8e9cf343962eb89116f0ca17ee29831e44357e611c119e9ed556e3725"
+
+[[files]]
+file = "kubejs/ecos/travel.json"
+hash = "075c6482c23fa58ce6fd82b4b17d10fe6b17b689fb03ffb5ecb9fbae73e21ea7"
 
 [[files]]
 file = "kubejs/server_scripts/10_ecos_tags.js"
-hash = "0a4325cba31b85bb6bc299496ec927d318b220cec8ce99080be78652d5e7c4ec"
+hash = "2911a2e99a424ac334f35aec3a7221d574e4bf9d0a95c0df925f6dccf25a4562"
 
 [[files]]
 file = "kubejs/server_scripts/20_ecos_recipes.js"
-hash = "519618c5cac56bb7f9938a879d3d0b3dbe7f34f3296f449b94674fea152724c4"
+hash = "9f136b7c0785c7eb03ed157ea67810def4bd47902e8d3f6a495d3f99882f7924"
 
 [[files]]
 file = "kubejs/server_scripts/30_ecos_boss_drops.js"
-hash = "06b08344d6c5fb6066a0ec0c29db68db20eaf97ee349cd06ef4365d2fb233c21"
+hash = "e3fee437349f7fa327ca810f498d33bb9d1ddd2ee7e978c3ecbf2498cafab43a"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
@@ -63,7 +67,11 @@ hash = "f627f1b618e33c78965faeb5b6ddd1eb539cb3ceddd69bade0d99ace3cfda58c"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_items.js"
-hash = "c4b4fd303b6e64de33386ddc070c6081cc76edca6b63385589aedea383aaab72"
+hash = "7a4e158f5ead8d5f4f3a29e3b92e509858f237436e007d300c428c914130693f"
+
+[[files]]
+file = "kubejs/startup_scripts/ecos_travel_gate.js"
+hash = "05b691e99d59958362fa054c7d8ec9ae687a25d84adde928b4df4fd2b3c2622e"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"

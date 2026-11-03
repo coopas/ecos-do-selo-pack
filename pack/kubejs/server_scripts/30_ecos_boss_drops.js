@@ -1,6 +1,7 @@
 // Ecos do Selo — fragmentos do selo caem em TODA morte do chefe do ato (qualquer causa), sem despawn.
 // Assim um fragmento perdido sempre pode ser reobtido enfrentando o chefe de novo. Fonte: kubejs/ecos/boss_drops.json
-let ECOS_BOSS_DROPS = JsonIO.read('kubejs/ecos/boss_drops.json') || {}
+let ECOS_BOSS_DROPS = JsonIO.read('kubejs/ecos/boss_drops.json')
+if (!ECOS_BOSS_DROPS) throw new Error('[ecos] kubejs/ecos/boss_drops.json ausente ou inválido: travas NÃO carregadas')
 
 EntityEvents.death(event => {
   let entity = event.entity
