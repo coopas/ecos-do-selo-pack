@@ -1,6 +1,27 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/improvedmobs/common.toml"
+hash = "8a2ca9f8f00ed62be6e5ce4d2d21846a6e9e4b6b4ccde2ba9bd14eb3a3aae1f9"
+
+[[files]]
+file = "config/oculus.properties"
+hash = "7c502d4fdbe985a5e192e737ed29f1de131dbac30ef717109a7f05ab073c346a"
+preserve = true
+
+[[files]]
+file = "defaultconfigs/ftbchunks/ftbchunks-world.snbt"
+hash = "9f2c0329b624f5072f2a82b3f0a05fed56604ca7491af76023740b75de58ed06"
+
+[[files]]
+file = "defaultconfigs/ftbultimine/ftbultimine-server.snbt"
+hash = "dbfbcbb8171a96b671076a2727b71a36e5e38adc568088295d275d236e384a2f"
+
+[[files]]
+file = "kubejs/server_scripts/00_projecte_lock.js"
+hash = "06566245c5172752f33e3fee185b0917158a527d696743d4b4334da0dd2b147f"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "f1de5fbe9dc0647e511d2fe81e66b6177a80de691e8ce3fdca0c2edc8d793708"
 metafile = true
