@@ -191,6 +191,11 @@ hash = "b7facebae830c6ebdc630ccbb87bff02ba19d2c340e084109941efef19143876"
 metafile = true
 
 [[files]]
+file = "mods/irons-lib.pw.toml"
+hash = "d2c2a41ec478544ff5c2362f1d5163ee91dfa2f3664c95dfaacf9dbdabbb8cfa"
+metafile = true
+
+[[files]]
 file = "mods/irons-spells-n-spellbooks.pw.toml"
 hash = "1fcaffde8e1bfa0946fbc3b8454d1ffc60befcf834da4c7380eda047e8a04d5e"
 metafile = true
@@ -273,6 +278,11 @@ metafile = true
 [[files]]
 file = "mods/oculus.pw.toml"
 hash = "ea0949d24e6f1861d818def09246e20302a2ac2fa6038aa2089eea3567588956"
+metafile = true
+
+[[files]]
+file = "mods/playeranimator.pw.toml"
+hash = "aefb7caf7025ca19c5a701703155197ad62de258b1fccd214aa46c757f83779c"
 metafile = true
 
 [[files]]

@@ -1,0 +1,3 @@
+[03nov.2026 18:36:50.371] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/gui/GuiGraphics for invalid dist DEDICATED_SERVER
+[03nov.2026 18:36:50.371] [main/INFO] [STDERR/]: [dev.latvian.mods.rhino.JavaMembers:getDeclaredMethodsSafe:836]: [Rhino] Failed to get declared methods for com.lowdragmc.lowdraglib.gui.widget.DraggableScrollableWidgetGroup: java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/GuiGraphics for invalid dist DEDICATED_SERVER
+[12:01:20] [Server thread/INFO] [minecraft/DedicatedServer]: Done (12.3s)! For help, type "help"

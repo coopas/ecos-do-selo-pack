@@ -21,9 +21,19 @@ _fatal = re.compile("|".join(FATAL_PATTERNS))
 _ignore = re.compile("|".join(IGNORE_PATTERNS)) if IGNORE_PATTERNS else None
 
 
+# O KubeJS (Rhino) inspeciona classes por reflexão e captura o erro de "invalid dist";
+# o Forge loga o DISTXFORM imediatamente antes. O par é inofensivo; um DISTXFORM sozinho não é.
+_RHINO_PROBE = "getDeclaredMethodsSafe"
+
+
 def scan(text: str) -> list[str]:
     problems = []
-    for line in text.splitlines():
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        if _RHINO_PROBE in line:
+            continue
+        if "DISTXFORM" in line and i + 1 < len(lines) and _RHINO_PROBE in lines[i + 1]:
+            continue
         if _fatal.search(line) and not (_ignore and _ignore.search(line)):
             line = line.strip()
             if line not in problems:

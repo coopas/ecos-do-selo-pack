@@ -26,3 +26,12 @@ def test_kubejs_error_detected():
 
 def test_clean_log_ok():
     assert scan("log_clean.txt") == []
+
+
+def test_rhino_reflection_probe_ignored():
+    assert scan("log_rhino_probe.txt") == []
+
+
+def test_lone_distxform_still_reported():
+    text = "[x] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER\n"
+    assert len(log_scan.scan(text)) == 1
