@@ -1,0 +1,9 @@
+{
+  "items": ["minecraft:red_bed", "minecraft:white_bed", "minecraft:oak_log", "create:mechanical_press"],
+  "fluids": ["minecraft:water"],
+  "entities": ["minecraft:zombie"],
+  "item_tags": {
+    "minecraft:beds": ["minecraft:red_bed", "minecraft:white_bed"],
+    "minecraft:logs": ["minecraft:oak_log"]
+  }
+}

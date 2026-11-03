@@ -22,6 +22,10 @@ file = "kubejs/server_scripts/00_projecte_lock.js"
 hash = "06566245c5172752f33e3fee185b0917158a527d696743d4b4334da0dd2b147f"
 
 [[files]]
+file = "kubejs/server_scripts/dev/registry_dump.js"
+hash = "83ad641fa37eee026372448ba5552122c4b00e96baf445a96bd30e9d8e293cfe"
+
+[[files]]
 file = "mods/ad-astra.pw.toml"
 hash = "f1de5fbe9dc0647e511d2fe81e66b6177a80de691e8ce3fdca0c2edc8d793708"
 metafile = true
@@ -194,11 +198,6 @@ metafile = true
 [[files]]
 file = "mods/guideme.pw.toml"
 hash = "7cbc557e23729a2ab1a0dfa8832359edb640a9c4b2f1919e7c43cd5c7ccfdf3c"
-metafile = true
-
-[[files]]
-file = "mods/immediatelyfast.pw.toml"
-hash = "8b168077f6f086a8395ebc710def89498258e128fdea2e3be57c1face6568e36"
 metafile = true
 
 [[files]]

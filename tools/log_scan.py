@@ -12,6 +12,7 @@ FATAL_PATTERNS = [
     r"Encountered an unexpected exception",
     r"---- Minecraft Crash Report ----",
     r"Failed to load datapacks, can't proceed with server load",
+    r"^\[[\d:]+\] \[ERROR\] ! (?!  at )",  # logs/kubejs/*.log (ignora linhas de stacktrace)
 ]
 
 # Ruído conhecido e inofensivo. Cada entrada precisa de comentário com o porquê.

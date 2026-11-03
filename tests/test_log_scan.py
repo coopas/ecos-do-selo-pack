@@ -35,3 +35,13 @@ def test_rhino_reflection_probe_ignored():
 def test_lone_distxform_still_reported():
     text = "[x] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/Minecraft for invalid dist DEDICATED_SERVER\n"
     assert len(log_scan.scan(text)) == 1
+
+
+def test_kubejs_own_log_error_detected():
+    problems = scan("kubejs_server_error.txt")
+    assert any("Error in 'ServerEvents.loaded'" in p for p in problems)
+
+
+def test_kubejs_stacktrace_lines_not_repeated():
+    text = "[18:43:04] [ERROR] ! Error in 'X': boom\n[18:43:04] [ERROR] !   at foo.Bar(Bar.java:1)\n"
+    assert log_scan.scan(text) == ["[18:43:04] [ERROR] ! Error in 'X': boom"]

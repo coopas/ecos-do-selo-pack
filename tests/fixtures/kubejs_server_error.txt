@@ -1,0 +1,3 @@
+[18:43:04] [ERROR] ! Error in 'ServerEvents.loaded': C:\modpack-svers\build\server\kubejs\exported\registry_dump.json
+[18:43:04] [ERROR] ! java.nio.file.NoSuchFileException: C:\modpack-svers\build\server\kubejs\exported\registry_dump.json
+[18:43:04] [ERROR] !   at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)

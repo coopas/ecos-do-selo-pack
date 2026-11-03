@@ -36,7 +36,6 @@ modernfix,mr,modernfix,both,perf
 ferritecore,mr,ferrite-core,both,perf
 embeddium,mr,embeddium,client,perf
 oculus,mr,oculus,client,perf
-immediatelyfast,mr,immediatelyfast,client,perf
 entityculling,mr,entityculling,client,perf
 entity_model_features,mr,entity-model-features,client,visual
 entity_texture_features,mr,entitytexturefeatures,client,visual
