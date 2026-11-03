@@ -42,8 +42,3 @@ def test_improved_mobs_scaling_is_gentle():
     assert general["Difficulty Delay"] == 72000
     assert general["Difficulty Increase"] == ["0.0-0.03", "250.0-0.0"]
     assert general["Ignore Players"] is False
-
-
-def test_projecte_locked():
-    text = (PACK / "kubejs" / "server_scripts" / "00_projecte_lock.js").read_text()
-    assert "remove({ mod: 'projecte' })" in text

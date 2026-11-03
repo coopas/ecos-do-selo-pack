@@ -20,12 +20,22 @@ ServerEvents.loaded(event => {
     return tags
   }
   const itemTags = tagsOf(R.ITEM)
+  // EMC real do ProjectE: nenhum item do GregTech pode ter valor (trava da alquimia proibida)
+  const emcProxy = Java.loadClass('moze_intel.projecte.api.ProjectEAPI').getEMCProxy()
+  let emcGtNonzero = []
+  R.ITEM.keySet().forEach(key => {
+    if (String(key.getNamespace()) !== 'gtceu') return
+    let v = emcProxy['getValue(net.minecraft.world.item.ItemStack)'](Item.of(String(key)))
+    if (v > 0) emcGtNonzero.push(String(key))
+  })
   JsonIO.write('kubejs/exported/registry_dump.json', {
     items: ids(R.ITEM),
     fluids: ids(R.FLUID),
     entities: ids(R.ENTITY_TYPE),
     item_tags: itemTags,
-    block_tags: tagsOf(R.BLOCK)
+    block_tags: tagsOf(R.BLOCK),
+    emc_gtceu_nonzero: emcGtNonzero,
+    emc_sanity_dirt: Number(emcProxy['getValue(net.minecraft.world.item.ItemStack)'](Item.of('minecraft:dirt')))
   })
 
   const server = event.server

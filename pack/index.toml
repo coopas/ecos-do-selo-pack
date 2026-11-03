@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ProjectE/custom_emc.json"
+hash = "c85df8d1c893cd5a11f6e0f3f5f6bafac66feb29bea6e062b9345f623abb1848"
+
+[[files]]
 file = "config/improvedmobs/common.toml"
 hash = "8a2ca9f8f00ed62be6e5ce4d2d21846a6e9e4b6b4ccde2ba9bd14eb3a3aae1f9"
 
@@ -35,15 +39,11 @@ hash = "f0eaa3fcde70e487043af4524d4d26f9fc4640866a7b31af9f0f6e8a5d3cc47c"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
-hash = "eb81a3588b3082ed3f5d3d65e990ea01f724fde4516fe33feff24f77fc872a8b"
+hash = "3467ae94640038695be04deb7d50a893d5bbd05343274238323370238b32fe68"
 
 [[files]]
 file = "kubejs/ecos/tags.json"
 hash = "42772ed8163eb129c20971739f7b3f5fa550c1418b0636a1af9b38d6fc2a8db5"
-
-[[files]]
-file = "kubejs/server_scripts/00_projecte_lock.js"
-hash = "06566245c5172752f33e3fee185b0917158a527d696743d4b4334da0dd2b147f"
 
 [[files]]
 file = "kubejs/server_scripts/10_ecos_tags.js"
@@ -59,7 +59,7 @@ hash = "06b08344d6c5fb6066a0ec0c29db68db20eaf97ee349cd06ef4365d2fb233c21"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
-hash = "a7d6718d0413503bed68ad5be08c772ec66a06ff90d44d243ceb8a7e1554f4c7"
+hash = "f627f1b618e33c78965faeb5b6ddd1eb539cb3ceddd69bade0d99ace3cfda58c"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_items.js"
