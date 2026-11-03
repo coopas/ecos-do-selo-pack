@@ -95,6 +95,9 @@ def _server(server_dir: Path, timeout_s: int, dev: bool, after_done=None, consol
         if dump.exists() and dump.stat().st_mtime >= start:
             import shutil
             shutil.copy2(dump, BUILD / "registry_dump.json")
+            qdump = dump.with_name("quest_selftest.json")
+            if qdump.exists() and qdump.stat().st_mtime >= start:
+                shutil.copy2(qdump, BUILD / "quest_selftest.json")
             rdump = dump.with_name("recipe_dump.json")
             if rdump.exists() and rdump.stat().st_mtime >= start:
                 shutil.copy2(rdump, BUILD / "recipe_dump.json")

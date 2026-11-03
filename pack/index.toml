@@ -5,6 +5,18 @@ file = "config/ProjectE/custom_emc.json"
 hash = "c85df8d1c893cd5a11f6e0f3f5f6bafac66feb29bea6e062b9345f623abb1848"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e8a5668f332c44e9ccb74568452122fbd8b4810c77ec44ee3b5eed25a10ca162"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/prologo.snbt"
+hash = "f7d66abcc0e87a71bc60ba788e67de50f4c88baa6780e21ccbb0bd3e8159b29e"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "e1262bfd258de38a6ba4545ab2989286949097063bd3ebf215a47b516a0744f2"
+
+[[files]]
 file = "config/improvedmobs/common.toml"
 hash = "8a2ca9f8f00ed62be6e5ce4d2d21846a6e9e4b6b4ccde2ba9bd14eb3a3aae1f9"
 
@@ -38,6 +50,10 @@ file = "kubejs/ecos/items.json"
 hash = "56999882f3abbfd0f3b9c94f06a402e84135eb23dc77c47b566f926216e0e498"
 
 [[files]]
+file = "kubejs/ecos/quest_tags.json"
+hash = "8071b74fd4d3dae107f6556cab1886e4cec2d3f97e149af11d3af31e4025f512"
+
+[[files]]
 file = "kubejs/ecos/recipes.json"
 hash = "78e071e636852fa316901eed512e5ceaf9844fa55d230470e11631b4e77826f8"
 
@@ -60,6 +76,10 @@ hash = "9f136b7c0785c7eb03ed157ea67810def4bd47902e8d3f6a495d3f99882f7924"
 [[files]]
 file = "kubejs/server_scripts/30_ecos_boss_drops.js"
 hash = "e3fee437349f7fa327ca810f498d33bb9d1ddd2ee7e978c3ecbf2498cafab43a"
+
+[[files]]
+file = "kubejs/server_scripts/dev/quest_selftest.js"
+hash = "cda5d776ff262489fe979a7367c83a68fb6b09d935a2f01de2cbb6a36bf1dafa"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"

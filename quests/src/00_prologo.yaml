@@ -1,0 +1,36 @@
+# Esqueleto da Task 1 (será reescrito na Task 5 seguindo a lore aprovada)
+chapter: prologo
+title: "Prólogo — O Despertar"
+icon: minecraft:oak_sapling
+group: atos
+act: 0
+quests:
+  - slug: despertar
+    title: "O Despertar"
+    desc: ["Você acorda entre ruínas. Nada aqui parece novo."]
+    x: 0
+    y: 0
+    tasks:
+      - checkmark: true
+    rewards:
+      - xp_levels: 1
+  - slug: bancada
+    title: "Mãos à obra"
+    desc: ["Uma bancada de trabalho é o começo de tudo."]
+    x: 2
+    y: 0
+    deps: [despertar]
+    tasks:
+      - item: minecraft:crafting_table
+    rewards:
+      - xp_levels: 1
+  - slug: abrigo
+    title: "Um lugar para dormir"
+    desc: ["Qualquer cama serve. A noite aqui é longa."]
+    x: 4
+    y: 0
+    deps: [bancada]
+    tasks:
+      - tag: minecraft:beds
+    rewards:
+      - coins: 2

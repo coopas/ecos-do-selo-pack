@@ -1,0 +1,104 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "prologo"
+	group: "5395DF7F49D69073"
+	icon: "minecraft:oak_sapling"
+	id: "7504450DA60854BE"
+	images: [ ]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [ ]
+			description: [
+				"Você acorda entre ruínas. Nada aqui parece novo."
+			]
+			id: "371D1803502A61B1"
+			rewards: [
+				{
+					id: "662525C04C9779C5"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					id: "3FF940029D36B9C1"
+					type: "checkmark"
+				}
+			]
+			title: "O Despertar"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"371D1803502A61B1"
+			]
+			description: [
+				"Uma bancada de trabalho é o começo de tudo."
+			]
+			id: "55949ECDE7D7BC77"
+			rewards: [
+				{
+					id: "3D227790FE426C95"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4ECCE351BE456000"
+					item: {
+						Count: 1b
+						id: "minecraft:crafting_table"
+					}
+					type: "item"
+				}
+			]
+			title: "Mãos à obra"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"55949ECDE7D7BC77"
+			]
+			description: [
+				"Qualquer cama serve. A noite aqui é longa."
+			]
+			id: "2C3AA7D00409E54F"
+			rewards: [
+				{
+					count: 2
+					id: "2CBD2886C6088EB3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7BEEABDEED8B923F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:beds)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Um lugar para dormir"
+			x: 4.0d
+			y: 0.0d
+		}
+	]
+	title: "Prólogo — O Despertar"
+}
