@@ -39,14 +39,15 @@
    "output": "ecos:chave_celeste",
    "count": 1,
    "pattern": [
-    "GGG",
+    "GWG",
     "FEG",
     "GGG"
    ],
    "key": {
     "G": "minecraft:glowstone",
     "F": "ecos:fragmento_selo_profundezas",
-    "E": "gtceu:mv_emitter"
+    "E": "gtceu:mv_emitter",
+    "W": "ecos:fragmento_selo_floresta"
    },
    "replace_output": true
   },

@@ -45,7 +45,8 @@ def test_undergarden_catalyst_single_recipe_needs_floresta(rec):
 
 def test_chave_celeste_needs_profundezas(rec):
     ins = only_recipe(rec, "ecos:chave_celeste")
-    assert {"ecos:fragmento_selo_profundezas", "gtceu:mv_emitter"} <= ins
+    # ordem dos atos: exige o fragmento do Ato I (Lich) além do Ato II (Warden) — não dá para pular Twilight/Undergarden
+    assert {"ecos:fragmento_selo_floresta", "ecos:fragmento_selo_profundezas", "gtceu:mv_emitter"} <= ins
 
 
 def test_zeal_lighter_single_recipe_needs_profundezas(rec):

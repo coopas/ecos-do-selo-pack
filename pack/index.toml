@@ -39,7 +39,7 @@ hash = "56999882f3abbfd0f3b9c94f06a402e84135eb23dc77c47b566f926216e0e498"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
-hash = "904dc12542f9c8f7a24212dca1db5fb0d800bbfaccdf1440040627a58e6f536c"
+hash = "78e071e636852fa316901eed512e5ceaf9844fa55d230470e11631b4e77826f8"
 
 [[files]]
 file = "kubejs/ecos/tags.json"
