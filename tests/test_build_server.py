@@ -9,7 +9,7 @@ BOTH_META = 'name = "Create"\nfilename = "create-6.jar"\nside = "both"\n[downloa
 def test_template_props(tmp_path):
     build_server.copy_template(tmp_path, forge_version="47.4.28")
     props = (tmp_path / "server.properties").read_text()
-    assert "max-players=7" in props
+    assert "max-players=15" in props
     assert "allow-flight=true" in props
 
 

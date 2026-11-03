@@ -32,3 +32,13 @@ def test_client_died_when_log_exists_and_no_java():
 def test_client_not_died_before_log_or_while_running():
     assert not boot_test.client_died(log_started=False, java_running=False)
     assert not boot_test.client_died(log_started=True, java_running=True)
+
+
+def test_client_launch_args_join_server_and_instance():
+    args = boot_test.client_launch_args("c9pas", instance="EcosDoSelo-release", server="localhost")
+    assert args[1:] == ["--launch", "EcosDoSelo-release", "--profile", "c9pas", "--server", "localhost"]
+
+
+def test_joined_line_detection():
+    assert boot_test.player_joined("[19:00:00] [Server thread/INFO] [minecraft/MinecraftServer]: c9pas joined the game")
+    assert not boot_test.player_joined("[19:00:00] [Server thread/INFO]: Done (2.0s)!")

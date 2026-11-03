@@ -2,7 +2,7 @@
 
 ## Requisitos
 - Java 17 (Temurin 17 recomendado). Se tiver outro Java instalado, defina `JAVA17_HOME`.
-- 10 GB de RAM livres para o servidor (ajuste `-Xmx` em `user_jvm_args.txt`).
+- 10 GB de RAM livres para o servidor (12 GB se passar de 8 jogadores) (ajuste `-Xmx` em `user_jvm_args.txt`).
 
 ## Primeira vez
 1. Leia a EULA do Minecraft (https://aka.ms/MinecraftEULA) e troque `eula=false` por `eula=true` em `eula.txt`.
