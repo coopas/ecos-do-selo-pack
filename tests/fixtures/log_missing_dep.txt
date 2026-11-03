@@ -1,0 +1,3 @@
+[12:00:01] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running
+[12:00:03] [main/ERROR] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Missing or unsupported mandatory dependencies:
+	Mod ID: 'botarium', Requested by: 'ad_astra', Expected range: '[2.3,)', Actual version: '[MISSING]'

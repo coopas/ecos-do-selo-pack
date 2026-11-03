@@ -1,0 +1,2 @@
+[12:00:30] [Server thread/ERROR] [KubeJS Server/]: server_scripts:00_projecte_lock.js#3: Error in 'ServerEvents.recipes': ReferenceError: "foo" is not defined.
+[12:01:20] [Server thread/INFO] [minecraft/DedicatedServer]: Done (12.3s)! For help, type "help"

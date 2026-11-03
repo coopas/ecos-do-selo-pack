@@ -1,0 +1,4 @@
+[12:00:01] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running
+[12:00:40] [Server thread/INFO] [minecraft/DedicatedServer]: Preparing level "world"
+[12:01:10] [Server thread/WARN] [minecraft/RecipeManager]: Parsing error loading recipe somemod:foo
+[12:01:20] [Server thread/INFO] [minecraft/DedicatedServer]: Done (12.3s)! For help, type "help"
