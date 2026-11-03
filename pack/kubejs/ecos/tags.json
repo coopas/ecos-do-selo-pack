@@ -1,1 +1,8 @@
-{}
+{
+  "item": {
+    "twilightforest:portal/activator": {"set": ["ecos:chave_crepuscular"]}
+  },
+  "block": {
+    "aether:aether_portal_blocks": {"set": ["ecos:pedra_celeste"]}
+  }
+}

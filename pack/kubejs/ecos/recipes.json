@@ -1,1 +1,22 @@
-{"gates": [], "cross": [], "late": []}
+{
+  "gates": [
+    {"id": "ecos:gate/twilight_key", "output": "ecos:chave_crepuscular", "count": 1,
+     "pattern": ["SPS", "BDB", "S S"],
+     "key": {"S": "#minecraft:saplings", "P": "create:precision_mechanism", "B": "#forge:ingots/brass", "D": "minecraft:diamond"},
+     "replace_output": true},
+    {"id": "ecos:gate/undergarden_catalyst", "output": "undergarden:catalyst", "count": 1,
+     "pattern": ["GFG", "SPS", "GGG"],
+     "key": {"G": "#forge:ingots/gold", "F": "ecos:fragmento_selo_floresta", "S": "ars_nouveau:source_gem", "P": "gtceu:lv_electric_pump"},
+     "replace_output": true},
+    {"id": "ecos:gate/pedra_celeste", "output": "ecos:pedra_celeste", "count": 12,
+     "pattern": ["GGG", "FEG", "GGG"],
+     "key": {"G": "minecraft:glowstone", "F": "ecos:fragmento_selo_profundezas", "E": "gtceu:mv_emitter"},
+     "replace_output": true},
+    {"id": "ecos:gate/zeal_lighter", "output": "blue_skies:zeal_lighter", "count": 1,
+     "pattern": ["FE", "L "],
+     "key": {"F": "ecos:fragmento_selo_profundezas", "E": "gtceu:mv_emitter", "L": "minecraft:flint_and_steel"},
+     "replace_output": true}
+  ],
+  "cross": [],
+  "late": []
+}
