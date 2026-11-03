@@ -66,7 +66,138 @@
    "replace_output": true
   }
  ],
- "cross": [],
+ "cross": [
+  {
+   "id": "ecos:cross/inscription_table",
+   "output": "irons_spellbooks:inscription_table",
+   "count": 1,
+   "pattern": [
+    "SBS",
+    "FPF"
+   ],
+   "key": {
+    "S": "#minecraft:wooden_slabs",
+    "B": "minecraft:book",
+    "F": "#minecraft:wooden_fences",
+    "P": "#forge:plates/steel"
+   },
+   "replace_output": true
+  },
+  {
+   "id": "ecos:cross/imbuement_chamber",
+   "output": "ars_nouveau:imbuement_chamber",
+   "count": 1,
+   "pattern": [
+    "PGP",
+    "PAP",
+    "PGP"
+   ],
+   "key": {
+    "P": "ars_nouveau:archwood_planks",
+    "G": "#forge:ingots/gold",
+    "A": "create:andesite_alloy"
+   },
+   "replace_output": true
+  },
+  {
+   "id": "ecos:cross/sacrificial_bowl",
+   "output": "occultism:sacrificial_bowl",
+   "count": 1,
+   "pattern": [
+    "O O",
+    "OBO"
+   ],
+   "key": {
+    "O": "occultism:otherstone",
+    "B": "#forge:ingots/brass"
+   },
+   "replace_output": true
+  },
+  {
+   "id": "ecos:cross/inscriber",
+   "output": "ae2:inscriber",
+   "count": 1,
+   "pattern": [
+    "IPI",
+    "C I",
+    "IPI"
+   ],
+   "key": {
+    "I": "#forge:ingots/iron",
+    "P": "gtceu:lv_electric_piston",
+    "C": "#forge:ingots/copper"
+   },
+   "replace_output": true
+  },
+  {
+   "id": "ecos:cross/controller",
+   "output": "ae2:controller",
+   "count": 1,
+   "pattern": [
+    "SFS",
+    "FER",
+    "SFS"
+   ],
+   "key": {
+    "S": "ae2:smooth_sky_stone_block",
+    "F": "ae2:fluix_crystal",
+    "E": "ae2:engineering_processor",
+    "R": "gtceu:mv_robot_arm"
+   },
+   "replace_output": true
+  },
+  {
+   "id": "ecos:cross/waystone",
+   "output": "waystones:waystone",
+   "count": 1,
+   "pattern": [
+    "BSB",
+    "BWB",
+    "OOO"
+   ],
+   "key": {
+    "B": "minecraft:stone_bricks",
+    "S": "ars_nouveau:source_gem",
+    "W": "waystones:warp_stone",
+    "O": "minecraft:obsidian"
+   },
+   "replace_output": true
+  },
+  {
+   "id": "ecos:cross/mechanical_crafter",
+   "output": "create:mechanical_crafter",
+   "count": 3,
+   "pattern": [
+    " E ",
+    "AXA",
+    " C "
+   ],
+   "key": {
+    "E": "create:electron_tube",
+    "A": "irons_spellbooks:arcane_essence",
+    "X": "create:brass_casing",
+    "C": "minecraft:crafting_table"
+   },
+   "replace_output": true
+  },
+  {
+   "id": "ecos:cross/backpack",
+   "output": "sophisticatedbackpacks:backpack",
+   "count": 1,
+   "pattern": [
+    "SLS",
+    "SCS",
+    "LAL"
+   ],
+   "key": {
+    "S": "#forge:string",
+    "L": "#forge:leather",
+    "C": "#forge:chests/wooden",
+    "A": "create:andesite_alloy"
+   },
+   "replace_output": true
+  }
+ ],
  "late": [
   {
    "id": "ecos:late/nasa_workbench",
