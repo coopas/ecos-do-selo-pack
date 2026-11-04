@@ -1,0 +1,102 @@
+chapter: ato1
+title: "Ato I — Ferrugem e Engrenagens"
+icon: create:cogwheel
+group: atos
+act: 1
+quests:
+  - {slug: inicio, title: "A Ciência Perdida", deps: [prologo/fim_prologo], shape: gear, icon: create:cogwheel,
+     desc: ["Vapor e mana, eixo e runa.", "As máquinas de Aurend esperam por alguém que as lembre."],
+     tasks: [{checkmark: true}], rewards: [{page: 5}, {coins: 3}]}
+  - {slug: maquinas_lembram, title: "As Máquinas Lembram", deps: [inicio, side_create/engrenagem, side_gt_steam_lv/bronze],
+     desc: ["Engrenagem e bronze. Dois caminhos, uma só ciência."], tasks: [{checkmark: true}], rewards: [{coins: 3}, {crate: comum}]}
+  - {slug: noites, title: "Noites Mais Fortes", deps: [inicio],
+     desc: ["A cada dia que passa, os mobs ficam mais fortes.", "Prepare-se antes de ficar para trás."],
+     tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
+  - {slug: obsidiana, title: "Pedra de Lava Fria", deps: [inicio], desc: ["Obsidiana e fogo: uma porta para baixo."],
+     tasks: [{item: minecraft:obsidian, count: 10}, {item: minecraft:flint_and_steel}], rewards: [{coins: 2}]}
+  - {slug: nether, title: "O Andar de Baixo", deps: [obsidiana], icon: minecraft:netherrack,
+     desc: ["O Nether ainda queima. Ninguém apagou o fogo de Aurend."], tasks: [{dimension: minecraft:the_nether}], rewards: [{coins: 3}]}
+  - {slug: quartzo, title: "Quartzo", deps: [nether], desc: ["Cristais que vibram quando tocados."],
+     tasks: [{item: minecraft:quartz, count: 16}], rewards: [{coins: 1}]}
+  - {slug: verruga, title: "Verruga do Nether", deps: [nether], desc: ["Cresce em fortalezas abandonadas."],
+     tasks: [{item: minecraft:nether_wart, count: 8}], rewards: [{coins: 1}]}
+  - {slug: blaze, title: "Fogo Vivo", deps: [nether], desc: ["Blazes guardam as fortalezas. Seu fogo aquece a bacia do Create."],
+     tasks: [{item: minecraft:blaze_rod, count: 6}], rewards: [{coins: 3}]}
+  - {slug: ouro, title: "Ouro", deps: [nether], desc: ["Ouro do Nether ou da superfície, tanto faz."],
+     tasks: [{tag: forge:ingots/gold, count: 16}], rewards: [{coins: 2}]}
+  - {slug: perolas, title: "Pérolas do Fim", deps: [noites], desc: ["Endermen carregam pérolas que lembram onde estiveram."],
+     tasks: [{item: minecraft:ender_pearl, count: 4}], rewards: [{coins: 2}]}
+  - {slug: ferro_em_massa, title: "Ferro em Dobro", deps: [side_create/rodas_trituradoras],
+     desc: ["Com as rodas trituradoras, cada minério rende mais."], tasks: [{tag: forge:ingots/iron, count: 128}], rewards: [{coins: 4}]}
+  - {slug: estoque_aco, title: "Estoque de Aço", deps: [side_gt_steam_lv/aco], desc: ["Aço para as máquinas que virão."],
+     tasks: [{tag: forge:ingots/steel, count: 64}], rewards: [{coins: 4}]}
+  - {slug: floresta_selada, title: "A Floresta que Não Fica", deps: [maquinas_lembram],
+     desc: ["Há uma floresta que não fica em lugar nenhum.", "Ilse fala dela como quem fala de um túmulo."],
+     tasks: [{checkmark: true}], rewards: [{page: 7}, {coins: 2}]}
+  - {slug: mudas, title: "Sementes Vivas", deps: [floresta_selada], desc: ["Qualquer muda. A floresta precisa reconhecer vida."],
+     tasks: [{tag: minecraft:saplings, count: 16}], rewards: [{coins: 1}]}
+  - {slug: flores, title: "Flores para o Lago", deps: [floresta_selada], desc: ["O portal pede flores em volta da água."],
+     tasks: [{tag: minecraft:small_flowers, count: 12}], rewards: [{coins: 1}]}
+  - {slug: chave, title: "A Chave Crepuscular", deps: [mudas, side_create/mecanismo, side_create/latao], shape: gear,
+     icon: ecos:chave_crepuscular, desc: ["Precisão de Aurend e semente viva.", "Só ela abre o caminho. O diamante não serve mais."],
+     tasks: [{item: ecos:chave_crepuscular}], rewards: [{page: 8}, {coins: 5}]}
+  - {slug: portal, title: "O Lago e as Flores", deps: [chave, flores],
+     desc: ["Faça um lago 2×2 cercado de flores.", "Jogue a Chave Crepuscular na água."], tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
+  - {slug: twilight, title: "Crepúsculo Eterno", deps: [portal], shape: gear, icon: twilightforest:twilight_oak_sapling,
+     desc: ["Aqui é sempre fim de tarde.", "As árvores lembram de você antes de você chegar."],
+     tasks: [{dimension: twilightforest:twilight_forest}], rewards: [{crate: rara}, {coins: 5}]}
+  - {slug: raizviva, title: "Raiz Viva", deps: [twilight], desc: ["Raízes que se mexem quando você não olha."],
+     tasks: [{item: twilightforest:liveroot, count: 8}], rewards: [{coins: 1}]}
+  - {slug: torchberries, title: "Frutos que Brilham", deps: [twilight], desc: ["Pendem das cavernas como lanternas."],
+     tasks: [{item: twilightforest:torchberries, count: 8}], rewards: [{coins: 1}]}
+  - {slug: corvo, title: "Penas de Corvo", deps: [twilight], desc: ["Os corvos daqui guardam segredos."],
+     tasks: [{item: twilightforest:raven_feather, count: 4}], rewards: [{coins: 1}]}
+  - {slug: mapa_magico, title: "Mapa Mágico", deps: [raizviva, torchberries, corvo], desc: ["Um mapa que mostra o que a floresta esconde."],
+     tasks: [{item: twilightforest:magic_map}], rewards: [{coins: 3}]}
+  - {slug: ferro_madeira, title: "Ferro-Madeira", deps: [raizviva], desc: ["Madeira que aprendeu a ser metal."],
+     tasks: [{item: twilightforest:ironwood_ingot, count: 8}], rewards: [{coins: 2}]}
+  - {slug: folha_aco, title: "Folha de Aço", deps: [twilight], desc: ["Folhas tão duras quanto lâminas."],
+     tasks: [{item: twilightforest:steeleaf_ingot, count: 8}], rewards: [{coins: 2}]}
+  - {slug: arena_naga, title: "O Pátio da Serpente", deps: [mapa_magico], desc: ["Um pátio cercado de sebes. Algo se enrola lá dentro."],
+     tasks: [{checkmark: true}], rewards: [{xp_levels: 1}]}
+  - {slug: naga, title: "A Naga", deps: [arena_naga], shape: gear, icon: twilightforest:naga_trophy,
+     desc: ["A primeira guardiã da floresta. Rápida, cega de raiva."], tasks: [{kill: twilightforest:naga}],
+     rewards: [{crate: epica}, {coins: 6}]}
+  - {slug: escamas, title: "Escamas da Naga", deps: [naga], desc: ["Escamas que ainda se mexem."],
+     tasks: [{item: twilightforest:naga_scale, count: 6}], rewards: [{coins: 2}]}
+  - {slug: couraca_naga, title: "Couraça de Escamas", deps: [escamas], desc: ["Proteção feita da própria guardiã."],
+     tasks: [{item: twilightforest:naga_chestplate}], rewards: [{coins: 2}]}
+  - {slug: trofeu_naga, title: "Troféu da Naga", deps: [naga], desc: ["Para lembrar que ela caiu."],
+     tasks: [{item: twilightforest:naga_trophy}], rewards: [{coins: 2}]}
+  - {slug: po_transformacao, title: "Pó de Transformação", deps: [naga], desc: ["Encontrado em ruínas. Transforma criaturas."],
+     tasks: [{item: twilightforest:transformation_powder, count: 4}], rewards: [{coins: 2}]}
+  - {slug: amuleto, title: "Amuleto da Vida", deps: [naga], desc: ["Um amuleto que recusa a morte uma vez."],
+     tasks: [{item: twilightforest:charm_of_life_1}], rewards: [{coins: 3}]}
+  - {slug: torre_lich, title: "A Torre Pálida", deps: [naga, ferro_madeira, folha_aco],
+     desc: ["Uma torre de pedra branca. Os cristais lá dentro não refletem nada."], tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
+  - {slug: morvane, title: "Morvane, o Guardião Pálido", deps: [torre_lich], shape: gear, icon: twilightforest:lich_trophy,
+     desc: ["Ele escutou a floresta tempo demais.", "Não acredite em tudo o que ele disser."], tasks: [{kill: twilightforest:lich}],
+     rewards: [{page: 9}, {crate: epica}, {coins: 8}]}
+  - {slug: trofeu_lich, title: "Troféu de Morvane", deps: [morvane], desc: ["Uma coroa de ossos pálidos."],
+     tasks: [{item: twilightforest:lich_trophy}], rewards: [{coins: 3}]}
+  - {slug: fragmento, title: "O Fragmento da Floresta", deps: [morvane], shape: gear, icon: ecos:fragmento_selo_floresta,
+     desc: ["O primeiro pedaço do Selo.", "Pesa mais do que deveria."], tasks: [{item: ecos:fragmento_selo_floresta}],
+     rewards: [{page: 10}, {coins: 10}]}
+  - {slug: catalisador_dica, title: "Uma Escada Mais Funda", deps: [fragmento],
+     desc: ["O Fragmento da Floresta abre o caminho para baixo.", "No Ato II, ele vira parte do Catalisador."], tasks: [{checkmark: true}],
+     rewards: [{xp_levels: 2}]}
+  - {slug: aurend_vapor, title: "Vapor Sobre a Floresta", deps: [side_gt_steam_lv/caldeira, twilight],
+     desc: ["Leve uma caldeira para a Twilight. As árvores se afastam do vapor."], tasks: [{checkmark: true}], rewards: [{coins: 3}]}
+  - {slug: trilhos_floresta, title: "Trens Entre Mundos", deps: [side_create/trilhos, twilight],
+     desc: ["Trilhos de Aurend levam carga até o portal."], tasks: [{checkmark: true}], rewards: [{coins: 3}]}
+  - {slug: alto_forno_estoque, title: "Coque para o Inverno", deps: [side_gt_steam_lv/coque], desc: ["O alto-forno come coque sem parar."],
+     tasks: [{item: gtceu:coke_gem, count: 64}], rewards: [{coins: 3}]}
+  - {slug: bronze_estoque, title: "Bronze de Sobra", deps: [side_gt_steam_lv/bronze], desc: ["Toda máquina a vapor pede bronze."],
+     tasks: [{tag: forge:ingots/bronze, count: 64}], rewards: [{coins: 3}]}
+  - {slug: latao_estoque, title: "Latão de Sobra", deps: [side_create/latao], desc: ["Latão para os mecanismos finos."],
+     tasks: [{tag: forge:ingots/brass, count: 32}], rewards: [{coins: 3}]}
+  - {slug: circuitos_estoque, title: "Pensamento em Série", deps: [side_gt_steam_lv/circuito], desc: ["Mais circuitos, mais máquinas."],
+     tasks: [{item: gtceu:basic_electronic_circuit, count: 16}], rewards: [{coins: 4}]}
+  - {slug: fim_ato1, title: "Ferrugem Vencida", deps: [fragmento, side_gt_steam_lv/era_lv], shape: gear, icon: gtceu:lv_machine_hull,
+     desc: ["A floresta está calada. A corrente corre de novo.", "Mas embaixo da terra, algo continua acordado."],
+     tasks: [{checkmark: true}], rewards: [{crate: epica}, {coins: 10}, {xp_levels: 5}]}

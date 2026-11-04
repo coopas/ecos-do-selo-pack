@@ -99,3 +99,19 @@ def test_tag_filters_match_ingame():
     for tag in used:
         f = d["filters"][tag]
         assert f["members_fail"] == [] and f["members_ok"] > 0 and f["outsider_matches"] is False, tag
+
+
+def test_auto_layout_by_dependency_depth():
+    c = chapter([q("a"), q("b", deps=["a"]), q("c", deps=["a"]), q("d", deps=["b", "c"])], slug="l")
+    del c.quests[0]["x"], c.quests[0]["y"]
+    for quest in c.quests:
+        quest.pop("x", None)
+        quest.pop("y", None)
+    pos = questgen.layout(c)
+    assert pos["a"][0] < pos["b"][0] == pos["c"][0] < pos["d"][0]
+    assert pos["b"][1] != pos["c"][1]
+
+
+def test_explicit_position_wins():
+    c = chapter([q("a", x=7, y=-3)], slug="l")
+    assert questgen.layout(c)["a"] == (7.0, -3.0)

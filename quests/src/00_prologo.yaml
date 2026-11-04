@@ -1,38 +1,77 @@
-# Esqueleto da Task 1 (será reescrito na Task 5 seguindo a lore aprovada)
 chapter: prologo
 title: "Prólogo — O Despertar"
 icon: minecraft:oak_sapling
 group: atos
 act: 0
 quests:
-  - slug: despertar
-    title: "O Despertar"
-    desc: ["Você acorda entre ruínas. Nada aqui parece novo."]
-    x: 0
-    y: 0
-    tasks:
-      - checkmark: true
-    rewards:
-      - coins: 2
-  - slug: bancada
-    title: "Mãos à obra"
-    desc: ["Uma bancada de trabalho é o começo de tudo."]
-    x: 2
-    y: 0
-    deps: [despertar]
-    tasks:
-      - item: minecraft:crafting_table
-    rewards:
-      - coins: 3
-  - slug: abrigo
-    title: "Um lugar para dormir"
-    desc: ["Qualquer cama serve. A noite aqui é longa."]
-    x: 4
-    y: 0
-    deps: [bancada]
-    tasks:
-      - tag: minecraft:beds
-    rewards:
-      - coins: 3
-      - crate: comum
-      - page: 3
+  - {slug: despertar, title: "O Despertar", icon: minecraft:written_book, shape: gear,
+     desc: ["Você acorda entre ruínas. Nada aqui parece novo.", "Há um diário rasgado a seus pés."],
+     tasks: [{checkmark: true}], rewards: [{page: 1}, {coins: 2}]}
+  - {slug: madeira, title: "Árvores Tortas", deps: [despertar],
+     desc: ["As árvores daqui crescem desviando de algo.", "Qualquer tronco serve."],
+     tasks: [{tag: minecraft:logs, count: 16}], rewards: [{page: 2}, {coins: 1}]}
+  - {slug: tabuas, title: "Tábuas", deps: [madeira], desc: ["Madeira trabalhada lembra que você ainda tem mãos."],
+     tasks: [{tag: minecraft:planks, count: 32}], rewards: [{xp_levels: 1}, {coins: 1}]}
+  - {slug: bancada, title: "Mãos à Obra", deps: [tabuas], desc: ["Uma bancada de trabalho é o começo de tudo."],
+     tasks: [{item: minecraft:crafting_table}], rewards: [{coins: 2}]}
+  - {slug: livro_quests, title: "O Livro que Responde", deps: [bancada],
+     desc: ["Este livro se reescreve conforme você avança.", "Ninguém em Aurend sabia quem o escrevia."],
+     tasks: [{checkmark: true}], rewards: [{coins: 1}]}
+  - {slug: jei, title: "Saber o que se Faz", deps: [livro_quests],
+     desc: ["Abra o inventário e use o JEI (tecla R/U) para ver receitas.", "Até os Confluentes anotavam tudo."],
+     tasks: [{checkmark: true}], rewards: [{xp_levels: 1}]}
+  - {slug: pedra, title: "Pedra Fria", deps: [bancada], desc: ["Cave. A pedra daqui é mais escura do que deveria."],
+     tasks: [{item: minecraft:cobblestone, count: 64}], rewards: [{coins: 1}]}
+  - {slug: picareta_pedra, title: "Primeira Ferramenta", deps: [pedra], desc: ["Uma picareta de pedra. Humilde, mas sua."],
+     tasks: [{item: minecraft:stone_pickaxe}], rewards: [{coins: 1}]}
+  - {slug: ultimine, title: "Veios Inteiros", deps: [picareta_pedra],
+     desc: ["Segure a tecla do FTB Ultimine (padrão: `) para quebrar um veio inteiro.", "Economiza noites."],
+     tasks: [{checkmark: true}], rewards: [{xp_levels: 1}]}
+  - {slug: fornalha, title: "Fogo Contido", deps: [pedra], desc: ["O fogo aqui demora a acender. Como se escutasse."],
+     tasks: [{item: minecraft:furnace}], rewards: [{coins: 1}]}
+  - {slug: carvao, title: "Combustível", deps: [fornalha], desc: ["Carvão ou carvão vegetal."],
+     tasks: [{tag: minecraft:coals, count: 16}], rewards: [{coins: 1}]}
+  - {slug: tochas, title: "Luz Contra o Silêncio", deps: [carvao], desc: ["Os mortos daqui odeiam a luz."],
+     tasks: [{item: minecraft:torch, count: 32}], rewards: [{coins: 1}]}
+  - {slug: abrigo, title: "Um Lugar para Dormir", deps: [tabuas], icon: minecraft:red_bed,
+     desc: ["Qualquer cama serve. A noite aqui é longa."],
+     tasks: [{tag: minecraft:beds}], rewards: [{page: 3}, {coins: 3}, {crate: comum}]}
+  - {slug: bau, title: "Guardar o que Sobrou", deps: [tabuas], desc: ["Um baú. O mundo leva o que fica no chão."],
+     tasks: [{tag: forge:chests/wooden}], rewards: [{coins: 1}]}
+  - {slug: tumba, title: "Se Você Morrer", deps: [abrigo],
+     desc: ["Ao morrer, seus itens ficam numa tumba no local.", "Volte lá. Ninguém mais pode abri-la."],
+     tasks: [{checkmark: true}], rewards: [{xp_levels: 1}]}
+  - {slug: minerio_ferro, title: "Ferro Bruto", deps: [picareta_pedra], desc: ["Minério de ferro, de qualquer tipo."],
+     tasks: [{tag: forge:raw_materials/iron, count: 16}], rewards: [{coins: 2}]}
+  - {slug: ferro, title: "Lingotes", deps: [minerio_ferro, fornalha], desc: ["Derreta o ferro. Ele ainda lembra de ser engrenagem."],
+     tasks: [{tag: forge:ingots/iron, count: 16}], rewards: [{coins: 2}]}
+  - {slug: picareta_ferro, title: "Ferro na Mão", deps: [ferro], desc: ["Agora a pedra cede."],
+     tasks: [{item: minecraft:iron_pickaxe}], rewards: [{coins: 1}]}
+  - {slug: armadura, title: "Couraça", deps: [ferro], desc: ["As noites ficam mais duras a cada dia que passa."],
+     tasks: [{item: minecraft:iron_chestplate}], rewards: [{coins: 2}]}
+  - {slug: escudo, title: "Escudo", deps: [ferro], desc: ["Algumas flechas daqui não erram."],
+     tasks: [{item: minecraft:shield}], rewards: [{coins: 1}]}
+  - {slug: balde, title: "Balde", deps: [ferro], desc: ["Água apaga fogo. Lava apaga o resto."],
+     tasks: [{item: minecraft:bucket}], rewards: [{coins: 1}]}
+  - {slug: comida, title: "Pão de Cada Dia", deps: [bancada], desc: ["Fome é o primeiro inimigo."],
+     tasks: [{item: minecraft:bread, count: 16}], rewards: [{coins: 1}]}
+  - {slug: lavoura, title: "Lavoura", deps: [comida], desc: ["Plante. O solo ainda responde."],
+     tasks: [{item: minecraft:wheat, count: 32}], rewards: [{coins: 1}]}
+  - {slug: mochila, title: "Mochila", deps: [bau], desc: ["Uma mochila leva mais do que os bolsos."],
+     tasks: [{item: sophisticatedbackpacks:backpack}], rewards: [{coins: 2}]}
+  - {slug: mapa, title: "Onde Estou?", deps: [ferro],
+     desc: ["O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho.", "Faça uma bússola."],
+     tasks: [{item: minecraft:compass}], rewards: [{coins: 1}]}
+  - {slug: diamante, title: "Pedras que Brilham", deps: [picareta_ferro], desc: ["Diamantes. Os Confluentes os usavam como rolamentos."],
+     tasks: [{tag: forge:gems/diamond, count: 3}], rewards: [{coins: 3}]}
+  - {slug: encantamento, title: "Palavras Antigas", deps: [diamante], desc: ["A mesa de encantamento fala uma língua que você quase entende."],
+     tasks: [{item: minecraft:enchanting_table}], rewards: [{coins: 2}]}
+  - {slug: ecos, title: "Fragmentos de Eco", deps: [abrigo], icon: ecos:fragmento_eco,
+     desc: ["Cristais de som endurecido. São a moeda daqui.", "Junte cinco."],
+     tasks: [{item: ecos:fragmento_eco, count: 5}], rewards: [{page: 4}, {xp_levels: 2}]}
+  - {slug: banca, title: "A Banca do Eco", deps: [ecos], desc: ["Há uma banca que aceita ecos. Veja o capítulo da loja."],
+     tasks: [{checkmark: true}], rewards: [{coins: 2}]}
+  - {slug: fim_prologo, title: "Algo Está Ouvindo", shape: gear, icon: minecraft:sculk_sensor,
+     deps: [ultimine, tochas, tumba, picareta_ferro, armadura, escudo, balde, lavoura, mochila, mapa, encantamento, banca, jei],
+     desc: ["Você sobreviveu aos primeiros dias.", "Mas à noite, quando tudo se cala, algo responde."],
+     tasks: [{checkmark: true}], rewards: [{crate: rara}, {coins: 5}, {xp_levels: 3}]}

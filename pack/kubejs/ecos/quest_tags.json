@@ -1,5 +1,23 @@
 {
  "tags": [
-  "minecraft:beds"
+  "forge:chests/wooden",
+  "forge:gems/diamond",
+  "forge:ingots/brass",
+  "forge:ingots/bronze",
+  "forge:ingots/copper",
+  "forge:ingots/gold",
+  "forge:ingots/iron",
+  "forge:ingots/red_alloy",
+  "forge:ingots/steel",
+  "forge:ingots/tin",
+  "forge:ingots/wrought_iron",
+  "forge:ingots/zinc",
+  "forge:raw_materials/iron",
+  "minecraft:beds",
+  "minecraft:coals",
+  "minecraft:logs",
+  "minecraft:planks",
+  "minecraft:saplings",
+  "minecraft:small_flowers"
  ]
 }

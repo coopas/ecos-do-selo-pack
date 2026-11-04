@@ -1,0 +1,1333 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_create"
+	group: "30D1DA93FF981B37"
+	icon: "create:cogwheel"
+	id: "7E7749AF5C83CB1C"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"Andesito e ferro: a liga que movia Aurend."
+			]
+			icon: "create:andesite_alloy"
+			id: "6674C095D3FDA103"
+			rewards: [
+				{
+					count: 2
+					id: "2860602D0EFA9079"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 16L
+					id: "7423A4BA724124D2"
+					item: {
+						Count: 1b
+						id: "create:andesite_alloy"
+					}
+					type: "item"
+				}
+			]
+			title: "Liga de Andesito"
+			x: 0.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"6674C095D3FDA103"
+			]
+			description: [
+				"Toda força começa girando."
+			]
+			id: "6537293187BC0DCE"
+			rewards: [
+				{
+					count: 1
+					id: "4656A75C6414DFAB"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "29C4B6A7EC7806F1"
+					item: {
+						Count: 1b
+						id: "create:shaft"
+					}
+					type: "item"
+				}
+			]
+			title: "Eixo"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6537293187BC0DCE"
+			]
+			description: [
+				"Engrenagens transmitem o giro. E o silêncio."
+			]
+			id: "2BB6A1E58AAABE2A"
+			rewards: [
+				{
+					count: 1
+					id: "14E765AA0010720C"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"O primeiro motor que construímos não movia nada.\\nEle só girava, girava, e no quarto em volta não se ouvia nem a respiração.\\nFoi o primeiro pedaço do Selo.\\nOs conselheiros choraram de alegria. Eu tive medo.\"}"
+							]
+							title: "Diário — Página 6"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "093AC0C8B290FA59"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "787E39700A27A3C5"
+					item: {
+						Count: 1b
+						id: "create:cogwheel"
+					}
+					type: "item"
+				}
+			]
+			title: "A Primeira Engrenagem"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"2BB6A1E58AAABE2A"
+			]
+			description: [
+				"Grande e pequena trocam velocidade por força."
+			]
+			id: "7878208019894910"
+			rewards: [
+				{
+					count: 1
+					id: "25F450188FC99575"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "228F18D6EE1E4900"
+					item: {
+						Count: 1b
+						id: "create:large_cogwheel"
+					}
+					type: "item"
+				}
+			]
+			title: "Engrenagem Grande"
+			x: 4.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"2BB6A1E58AAABE2A"
+			]
+			description: [
+				"Água corrente, força constante."
+			]
+			id: "1272ADF45F717D47"
+			rewards: [
+				{
+					count: 2
+					id: "7993B18177353288"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3B7C716CC5A25771"
+					item: {
+						Count: 1b
+						id: "create:water_wheel"
+					}
+					type: "item"
+				}
+			]
+			title: "Roda de Água"
+			x: 4.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"7878208019894910"
+			]
+			description: [
+				"Rolamento de moinho e velas: o vento também trabalha."
+			]
+			id: "67FC6989E2E1E1B0"
+			rewards: [
+				{
+					count: 3
+					id: "713573F956F6581B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4E557EA4AAB1C538"
+					item: {
+						Count: 1b
+						id: "create:windmill_bearing"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "37E582CE9C6A3579"
+					item: {
+						Count: 1b
+						id: "create:white_sail"
+					}
+					type: "item"
+				}
+			]
+			title: "Moinho de Vento"
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"2BB6A1E58AAABE2A"
+			]
+			description: [
+				"Veja estresse e rotação com os óculos."
+			]
+			id: "3AD381CAF52EF738"
+			rewards: [
+				{
+					count: 1
+					id: "666275FC12593D38"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "52E42FB5FE92EF16"
+					item: {
+						Count: 1b
+						id: "create:goggles"
+					}
+					type: "item"
+				}
+			]
+			title: "Óculos do Engenheiro"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"2BB6A1E58AAABE2A"
+			]
+			description: [
+				"Gire, desmonte, ajuste."
+			]
+			id: "2FE0E16380AC783D"
+			rewards: [
+				{
+					count: 1
+					id: "4D49B73B7F1AAD81"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2B1F7AC1CB1E00D3"
+					item: {
+						Count: 1b
+						id: "create:wrench"
+					}
+					type: "item"
+				}
+			]
+			title: "Chave Inglesa"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"7878208019894910"
+			]
+			description: [
+				"Mude a direção do giro."
+			]
+			id: "1E8F1F1339572113"
+			rewards: [
+				{
+					count: 1
+					id: "663EC0C69E6A228F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "017BB2EAFA22AFD7"
+					item: {
+						Count: 1b
+						id: "create:gearbox"
+					}
+					type: "item"
+				}
+			]
+			title: "Caixa de Engrenagens"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"6537293187BC0DCE"
+			]
+			description: [
+				"Esteiras levam itens sem mãos."
+			]
+			id: "1473ADCD0FF2C78A"
+			rewards: [
+				{
+					count: 2
+					id: "6F1FCE5FE385D8FA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "45899115EFC6A7E0"
+					item: {
+						Count: 1b
+						id: "create:belt_connector"
+					}
+					type: "item"
+				}
+			]
+			title: "Esteira"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"1272ADF45F717D47"
+			]
+			description: [
+				"Moer é o primeiro passo para multiplicar minério."
+			]
+			id: "4246EE9437D05F92"
+			rewards: [
+				{
+					count: 2
+					id: "42A946A618536357"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "636BC77F8B22E69A"
+					item: {
+						Count: 1b
+						id: "create:millstone"
+					}
+					type: "item"
+				}
+			]
+			title: "Mó"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"1272ADF45F717D47"
+				"1E8F1F1339572113"
+			]
+			description: [
+				"Prense lingotes em chapas."
+			]
+			id: "550B9A5AAB235931"
+			rewards: [
+				{
+					count: 3
+					id: "5A06E1772BDB26AF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7D89954CE35A4E8A"
+					item: {
+						Count: 1b
+						id: "create:mechanical_press"
+					}
+					type: "item"
+				}
+			]
+			title: "Prensa Mecânica"
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"550B9A5AAB235931"
+			]
+			description: [
+				"Chapas. O esqueleto de qualquer máquina."
+			]
+			id: "18B35E3145DA8813"
+			rewards: [
+				{
+					count: 2
+					id: "676C9D561AF87BB6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "035377B12D6B2CE9"
+					item: {
+						Count: 1b
+						id: "create:iron_sheet"
+					}
+					type: "item"
+				}
+			]
+			title: "Chapas de Ferro"
+			x: 9.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"550B9A5AAB235931"
+			]
+			description: [
+				"Misture o que não se mistura."
+			]
+			id: "15BBFE01306B3D3B"
+			rewards: [
+				{
+					count: 3
+					id: "4547D96AFCD10697"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "355B481F42067008"
+					item: {
+						Count: 1b
+						id: "create:mechanical_mixer"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "4B5DFEDE30285E77"
+					item: {
+						Count: 1b
+						id: "create:basin"
+					}
+					type: "item"
+				}
+			]
+			title: "Misturador e Bacia"
+			x: 9.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"1E8F1F1339572113"
+			]
+			description: [
+				"Vento sobre água lava; sobre fogo, cozinha."
+			]
+			id: "4109E51EFC57ADB5"
+			rewards: [
+				{
+					count: 2
+					id: "7A335E99AEF06F54"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "72FA2686DEFF69B4"
+					item: {
+						Count: 1b
+						id: "create:encased_fan"
+					}
+					type: "item"
+				}
+			]
+			title: "Ventilador Encapsulado"
+			x: 7.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"1473ADCD0FF2C78A"
+			]
+			description: [
+				"Um lugar para as máquinas trabalharem."
+			]
+			id: "18F7F2960346FFEB"
+			rewards: [
+				{
+					count: 1
+					id: "3CAE64DCAF076C1F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "62E8061BFCFEA725"
+					item: {
+						Count: 1b
+						id: "create:depot"
+					}
+					type: "item"
+				}
+			]
+			title: "Depósito"
+			x: 4.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"1473ADCD0FF2C78A"
+			]
+			description: [
+				"Pegue e solte itens nas esteiras."
+			]
+			id: "7361BB52A603356C"
+			rewards: [
+				{
+					count: 2
+					id: "7CAEEF2A73D6EA5F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "761B8568A1D2F4CF"
+					item: {
+						Count: 1b
+						id: "create:andesite_funnel"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "358DB4D1478F6BC0"
+					item: {
+						Count: 1b
+						id: "create:chute"
+					}
+					type: "item"
+				}
+			]
+			title: "Funil e Calha"
+			x: 4.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"18B35E3145DA8813"
+			]
+			description: [
+				"Pedra para sempre, sem picareta."
+			]
+			id: "3A6C48799352A651"
+			rewards: [
+				{
+					count: 2
+					id: "323561EBC816B1D3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4FC04A0AF71324A6"
+					item: {
+						Count: 1b
+						id: "create:mechanical_drill"
+					}
+					type: "item"
+				}
+			]
+			title: "Furadeira Mecânica"
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"18B35E3145DA8813"
+			]
+			description: [
+				"Corte troncos em tábuas, sem fim."
+			]
+			id: "67CFAC7F2A43BE41"
+			rewards: [
+				{
+					count: 2
+					id: "44B7DEAB525D2987"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2E62979AC9D9C6CC"
+					item: {
+						Count: 1b
+						id: "create:mechanical_saw"
+					}
+					type: "item"
+				}
+			]
+			title: "Serra Mecânica"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2E750308942DCE2F"
+			]
+			description: [
+				"Um metal que Aurend usava no lugar do ouro."
+			]
+			id: "300958F98DE1B773"
+			rewards: [
+				{
+					count: 2
+					id: "29A0777AE49E388A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "7311B2E7FB5A9148"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/zinc)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Zinco"
+			x: 0.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"15BBFE01306B3D3B"
+			]
+			description: [
+				"Capture um blaze com o Queimador Vazio."
+				"Fogo vivo aquece a bacia."
+			]
+			id: "063672E4C3E067CD"
+			rewards: [
+				{
+					count: 4
+					id: "205ECE7E3A0758F1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4F5A03C17E039F39"
+					item: {
+						Count: 1b
+						id: "create:empty_blaze_burner"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "091D89C25964E13D"
+					item: {
+						Count: 1b
+						id: "create:blaze_burner"
+					}
+					type: "item"
+				}
+			]
+			title: "Queimador de Blaze"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"300958F98DE1B773"
+				"15BBFE01306B3D3B"
+			]
+			description: [
+				"Cobre e zinco, misturados com calor."
+			]
+			icon: "create:brass_ingot"
+			id: "6E250F6F5A1780D8"
+			rewards: [
+				{
+					count: 3
+					id: "4F946BEDAFC52786"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "006E99718C472E0D"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/brass)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Latão"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6E250F6F5A1780D8"
+			]
+			description: [
+				"O revestimento das máquinas finas."
+			]
+			id: "6766E2322F14357C"
+			rewards: [
+				{
+					count: 2
+					id: "6E445517CA7422F8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "40EDB67A56F77A5D"
+					item: {
+						Count: 1b
+						id: "create:brass_casing"
+					}
+					type: "item"
+				}
+			]
+			title: "Invólucro de Latão"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6E250F6F5A1780D8"
+			]
+			description: [
+				"Uma pequena luz que controla grandes máquinas."
+			]
+			id: "55FEE44615029307"
+			rewards: [
+				{
+					count: 2
+					id: "25B58A137E860F3F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1B8152E5AF43A836"
+					item: {
+						Count: 1b
+						id: "create:electron_tube"
+					}
+					type: "item"
+				}
+			]
+			title: "Válvula Eletrônica"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"55FEE44615029307"
+			]
+			description: [
+				"Uma mão que nunca cansa."
+			]
+			id: "2F7E461EB9F81983"
+			rewards: [
+				{
+					count: 3
+					id: "30881500EE7F688F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "40A859BF1EC112B3"
+					item: {
+						Count: 1b
+						id: "create:deployer"
+					}
+					type: "item"
+				}
+			]
+			title: "Aplicador Mecânico"
+			x: 13.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2F7E461EB9F81983"
+				"6766E2322F14357C"
+			]
+			description: [
+				"A montagem em sequência: prensa, aplicador e paciência."
+				"Sem ele, a floresta não se abre."
+			]
+			icon: "create:precision_mechanism"
+			id: "6B6F85E4DE2AE207"
+			rewards: [
+				{
+					count: 1
+					id: "5DCB91EBE6984EB4"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "401C6563742D251A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 2L
+					id: "5A0680918B9061C6"
+					item: {
+						Count: 1b
+						id: "create:precision_mechanism"
+					}
+					type: "item"
+				}
+			]
+			title: "Mecanismo de Precisão"
+			x: 15.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"55FEE44615029307"
+				"6766E2322F14357C"
+			]
+			description: [
+				"Receitas grandes demais para uma bancada."
+			]
+			id: "4F329F50CE4C69EC"
+			rewards: [
+				{
+					count: 3
+					id: "33FA057A1A48FBC9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 9L
+					id: "534705D45E5E361E"
+					item: {
+						Count: 1b
+						id: "create:mechanical_crafter"
+					}
+					type: "item"
+				}
+			]
+			title: "Montador Mecânico"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4F329F50CE4C69EC"
+			]
+			description: [
+				"Minério vira pó, pó vira lingote em dobro."
+			]
+			id: "5B4F5D477D2FC3E2"
+			rewards: [
+				{
+					count: 4
+					id: "64039E186EDD907A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5EDE13505DE03A00"
+					item: {
+						Count: 1b
+						id: "create:crushing_wheel"
+					}
+					type: "item"
+				}
+			]
+			title: "Rodas Trituradoras"
+			x: 15.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"6B6F85E4DE2AE207"
+			]
+			description: [
+				"Ele escolhe sozinho de onde pegar e onde soltar."
+			]
+			id: "13295D1B147A6A73"
+			rewards: [
+				{
+					count: 3
+					id: "47D2331125728419"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "00B265CBE0898CCF"
+					item: {
+						Count: 1b
+						id: "create:mechanical_arm"
+					}
+					type: "item"
+				}
+			]
+			title: "Braço Mecânico"
+			x: 16.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"18B35E3145DA8813"
+			]
+			description: [
+				"Líquidos também se movem por engrenagens."
+			]
+			id: "777328CE766F3F5E"
+			rewards: [
+				{
+					count: 3
+					id: "5B4CE50729D37F9B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2BDC4D9861A53EBC"
+					item: {
+						Count: 1b
+						id: "create:fluid_pipe"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "176C76EBD8A9C331"
+					item: {
+						Count: 1b
+						id: "create:mechanical_pump"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6E5E6E29D16D1BE2"
+					item: {
+						Count: 1b
+						id: "create:fluid_tank"
+					}
+					type: "item"
+				}
+			]
+			title: "Canos, Bomba e Tanque"
+			x: 10.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"777328CE766F3F5E"
+				"063672E4C3E067CD"
+			]
+			description: [
+				"Vapor de Aurend, de novo girando o mundo."
+			]
+			id: "23E2955E42132CDE"
+			rewards: [
+				{
+					count: 1
+					id: "3A328A4CF655A71C"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5904CED100753DBB"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "56329DDB7CBD27CF"
+					item: {
+						Count: 1b
+						id: "create:steam_engine"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor a Vapor"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3AD381CAF52EF738"
+			]
+			description: [
+				"Velocímetro e medidor de estresse."
+			]
+			id: "3937502C51A08829"
+			rewards: [
+				{
+					count: 2
+					id: "4B4908C58EE769C0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "03A8CA06A8325613"
+					item: {
+						Count: 1b
+						id: "create:speedometer"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "040395E123721BE1"
+					item: {
+						Count: 1b
+						id: "create:stressometer"
+					}
+					type: "item"
+				}
+			]
+			title: "Medir Antes de Quebrar"
+			x: 6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"6B6F85E4DE2AE207"
+			]
+			description: [
+				"Mesa e canhão de esquemas imprimem construções (.nbt)."
+				"Coloque esquemas em schematics/. A Litematica (M) projeta."
+			]
+			id: "073516F0B31377D0"
+			rewards: [
+				{
+					count: 4
+					id: "57D055DDAE2A631E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1BB2313385E5FE96"
+					item: {
+						Count: 1b
+						id: "create:schematic_table"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "3AA8C2003269A454"
+					item: {
+						Count: 1b
+						id: "create:schematicannon"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2C9DBA2960842D64"
+					item: {
+						Count: 1b
+						id: "create:empty_schematic"
+					}
+					type: "item"
+				}
+			]
+			title: "Construções Lembradas"
+			x: 16.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"23E2955E42132CDE"
+			]
+			description: [
+				"Os trens de Aurend voltam a correr."
+			]
+			id: "63F1DEC986A71F87"
+			rewards: [
+				{
+					count: 1
+					id: "5DEE9B75DD18526D"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "507ACEBD3B5BB282"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 64L
+					id: "5306282CF38D67EC"
+					item: {
+						Count: 1b
+						id: "create:track"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "7DD2710B3A8D46BA"
+					item: {
+						Count: 1b
+						id: "create:track_station"
+					}
+					type: "item"
+				}
+			]
+			title: "Trilhos de Aurend"
+			x: 13.5d
+			y: 1.5d
+		}
+	]
+	title: "Caminho — Engrenagens de Aurend"
+}

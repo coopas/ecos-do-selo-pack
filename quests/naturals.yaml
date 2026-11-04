@@ -85,3 +85,20 @@ baldes:
   - minecraft:water_bucket
   - minecraft:lava_bucket
   - minecraft:milk_bucket
+twilight:
+  - twilightforest:naga_scale        # drop da Naga
+  - twilightforest:naga_trophy
+  - twilightforest:lich_trophy
+  - twilightforest:liveroot          # raízes da Twilight
+  - twilightforest:torchberries
+  - twilightforest:raven_feather
+  - twilightforest:transformation_powder   # loot da Twilight
+  - twilightforest:charm_of_life_1
+  - "#minecraft:saplings"
+gregtech_mundo:
+  - gtceu:rubber_log                 # seringueira (worldgen do GT)
+  - gtceu:rubber_sapling
+  - gtceu:sticky_resin               # extraída da seringueira
+create_mundo:
+  - create:blaze_burner              # blaze capturado com o Queimador Vazio
+  - create:raw_zinc

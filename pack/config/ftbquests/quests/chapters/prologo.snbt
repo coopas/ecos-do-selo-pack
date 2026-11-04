@@ -13,12 +13,32 @@
 			dependencies: [ ]
 			description: [
 				"Você acorda entre ruínas. Nada aqui parece novo."
+				"Há um diário rasgado a seus pés."
 			]
+			icon: "minecraft:written_book"
 			id: "371D1803502A61B1"
 			rewards: [
 				{
-					count: 2
+					count: 1
 					id: "662525C04C9779C5"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Se alguém encontrar isto, saiba que não foi a guerra.\\nFoi o silêncio que acabou. Nós o fabricávamos, como quem fabrica pão.\\nDurante séculos ninguém precisou ouvir o que havia do outro lado.\\nAgora tudo faz barulho de novo.\"}"
+								"{\"text\": \"— I.V., arquivista de Aurend\"}"
+							]
+							title: "Diário — Página 1"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "279F1265462379A5"
 					item: {
 						Count: 1b
 						id: "ecos:fragmento_eco"
@@ -26,6 +46,7 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
 			tasks: [
 				{
 					id: "3FF940029D36B9C1"
@@ -41,12 +62,109 @@
 				"371D1803502A61B1"
 			]
 			description: [
+				"As árvores daqui crescem desviando de algo."
+				"Qualquer tronco serve."
+			]
+			id: "4552131B5B86F670"
+			rewards: [
+				{
+					count: 1
+					id: "21F052CF05D68551"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"As árvores daqui crescem tortas, como se desviassem de algo.\\nEncontrei engrenagens de bronze presas nas raízes.\\nOs conselheiros diziam que madeira e metal eram irmãos.\\nEu nunca acreditei. Até ver uma árvore sangrar óleo.\"}"
+							]
+							title: "Diário — Página 2"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "282F7B7335D952C0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "52BBCA51C2FB331D"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Árvores Tortas"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4552131B5B86F670"
+			]
+			description: [
+				"Madeira trabalhada lembra que você ainda tem mãos."
+			]
+			id: "0E83B34BEC713029"
+			rewards: [
+				{
+					id: "521D3894852D77CE"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					count: 1
+					id: "11128472B60CDFE6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1F2F3920AED34A97"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:planks)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tábuas"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E83B34BEC713029"
+			]
+			description: [
 				"Uma bancada de trabalho é o começo de tudo."
 			]
 			id: "55949ECDE7D7BC77"
 			rewards: [
 				{
-					count: 3
+					count: 2
 					id: "3D227790FE426C95"
 					item: {
 						Count: 1b
@@ -66,43 +184,278 @@
 					type: "item"
 				}
 			]
-			title: "Mãos à obra"
-			x: 2.0d
-			y: 0.0d
+			title: "Mãos à Obra"
+			x: 4.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
 				"55949ECDE7D7BC77"
 			]
 			description: [
-				"Qualquer cama serve. A noite aqui é longa."
+				"Este livro se reescreve conforme você avança."
+				"Ninguém em Aurend sabia quem o escrevia."
 			]
-			id: "2C3AA7D00409E54F"
+			id: "1B30AF5E3529C008"
 			rewards: [
 				{
-					count: 3
-					id: "2CBD2886C6088EB3"
+					count: 1
+					id: "1C999AB9B2E5B0BC"
 					item: {
 						Count: 1b
 						id: "ecos:fragmento_eco"
 					}
 					type: "item"
 				}
+			]
+			tasks: [
+				{
+					id: "32A40E371D2B7825"
+					type: "checkmark"
+				}
+			]
+			title: "O Livro que Responde"
+			x: 6.0d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"1B30AF5E3529C008"
+			]
+			description: [
+				"Abra o inventário e use o JEI (tecla R/U) para ver receitas."
+				"Até os Confluentes anotavam tudo."
+			]
+			id: "3C7320410AAD851E"
+			rewards: [
+				{
+					id: "4F5016AF60E96653"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					id: "2FD86735A9ABE7F6"
+					type: "checkmark"
+				}
+			]
+			title: "Saber o que se Faz"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"55949ECDE7D7BC77"
+			]
+			description: [
+				"Cave. A pedra daqui é mais escura do que deveria."
+			]
+			id: "2D696F3422C997B1"
+			rewards: [
 				{
 					count: 1
-					id: "1F1DAB6D96C63316"
+					id: "19FD8205AC481A8C"
 					item: {
 						Count: 1b
-						id: "ftbquests:lootcrate"
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "10E013539E45D681"
+					item: {
+						Count: 1b
+						id: "minecraft:cobblestone"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra Fria"
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"2D696F3422C997B1"
+			]
+			description: [
+				"Uma picareta de pedra. Humilde, mas sua."
+			]
+			id: "0A9D713559C32AF2"
+			rewards: [
+				{
+					count: 1
+					id: "294269CE0347D0E7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1578B27DB3C9A754"
+					item: {
+						Count: 1b
+						id: "minecraft:stone_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			title: "Primeira Ferramenta"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0A9D713559C32AF2"
+			]
+			description: [
+				"Segure a tecla do FTB Ultimine (padrão: `) para quebrar um veio inteiro."
+				"Economiza noites."
+			]
+			id: "6408DE4648BD826E"
+			rewards: [
+				{
+					id: "308E51CF51D9D329"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					id: "226535C654D35C0F"
+					type: "checkmark"
+				}
+			]
+			title: "Veios Inteiros"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2D696F3422C997B1"
+			]
+			description: [
+				"O fogo aqui demora a acender. Como se escutasse."
+			]
+			id: "65F6C50B0425D91B"
+			rewards: [
+				{
+					count: 1
+					id: "4AC24ADF598A818D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "03374280FA461AF8"
+					item: {
+						Count: 1b
+						id: "minecraft:furnace"
+					}
+					type: "item"
+				}
+			]
+			title: "Fogo Contido"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"65F6C50B0425D91B"
+			]
+			description: [
+				"Carvão ou carvão vegetal."
+			]
+			id: "310AA3BEE035453D"
+			rewards: [
+				{
+					count: 1
+					id: "63AAEF28E16DFADA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "488FA0A39605719F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							type: "comum"
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:coals)"
 						}
 					}
 					type: "item"
 				}
+			]
+			title: "Combustível"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"310AA3BEE035453D"
+			]
+			description: [
+				"Os mortos daqui odeiam a luz."
+			]
+			id: "3BD883EE6AF2365A"
+			rewards: [
 				{
 					count: 1
-					id: "117563A59081FFA1"
+					id: "397D9BCAC99CF1C4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "740088F689F6F9C7"
+					item: {
+						Count: 1b
+						id: "minecraft:torch"
+					}
+					type: "item"
+				}
+			]
+			title: "Luz Contra o Silêncio"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"0E83B34BEC713029"
+			]
+			description: [
+				"Qualquer cama serve. A noite aqui é longa."
+			]
+			icon: "minecraft:red_bed"
+			id: "2C3AA7D00409E54F"
+			rewards: [
+				{
+					count: 1
+					id: "2CBD2886C6088EB3"
 					item: {
 						Count: 1b
 						id: "minecraft:written_book"
@@ -113,6 +466,27 @@
 								"{\"text\": \"Não durma ao relento. As noites estão mais longas.\\nOs mortos que andam aqui não andavam assim antes.\\nEles param, inclinam a cabeça e escutam.\\nFaça uma cama. Qualquer cama. Feche a porta.\"}"
 							]
 							title: "Diário — Página 3"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "1F1DAB6D96C63316"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "117563A59081FFA1"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
 						}
 					}
 					type: "item"
@@ -132,8 +506,629 @@
 					type: "item"
 				}
 			]
-			title: "Um lugar para dormir"
-			x: 4.0d
+			title: "Um Lugar para Dormir"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0E83B34BEC713029"
+			]
+			description: [
+				"Um baú. O mundo leva o que fica no chão."
+			]
+			id: "3B57B4A34DC11F53"
+			rewards: [
+				{
+					count: 1
+					id: "7B3D4AC366F6D8F1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1CA17DF13EC0C3D8"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:chests/wooden)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Guardar o que Sobrou"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2C3AA7D00409E54F"
+			]
+			description: [
+				"Ao morrer, seus itens ficam numa tumba no local."
+				"Volte lá. Ninguém mais pode abri-la."
+			]
+			id: "27C8673F78707885"
+			rewards: [
+				{
+					id: "6B4511CEBB3182FC"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					id: "2782945E3AAA5CAE"
+					type: "checkmark"
+				}
+			]
+			title: "Se Você Morrer"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"0A9D713559C32AF2"
+			]
+			description: [
+				"Minério de ferro, de qualquer tipo."
+			]
+			id: "0396222AD85BF798"
+			rewards: [
+				{
+					count: 2
+					id: "17C4E9662CA867BA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5A9A294B5521DD6A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:raw_materials/iron)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ferro Bruto"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0396222AD85BF798"
+				"65F6C50B0425D91B"
+			]
+			description: [
+				"Derreta o ferro. Ele ainda lembra de ser engrenagem."
+			]
+			id: "25CFDEF4C125AB6E"
+			rewards: [
+				{
+					count: 2
+					id: "0FE035C0D90B9082"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5FB1BD316864AEF1"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/iron)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Lingotes"
+			x: 10.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"Agora a pedra cede."
+			]
+			id: "2E750308942DCE2F"
+			rewards: [
+				{
+					count: 1
+					id: "51616C582D78C230"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "445FB89D8D37D9D7"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			title: "Ferro na Mão"
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"As noites ficam mais duras a cada dia que passa."
+			]
+			id: "3C15E09CFEAD31E1"
+			rewards: [
+				{
+					count: 2
+					id: "58367312E314EDCC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7FBC5B8ABEF90E1B"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_chestplate"
+					}
+					type: "item"
+				}
+			]
+			title: "Couraça"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"Algumas flechas daqui não erram."
+			]
+			id: "5E7B8362CB69834E"
+			rewards: [
+				{
+					count: 1
+					id: "1E3EB51ADFB8917A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "29704311C4061D77"
+					item: {
+						Count: 1b
+						id: "minecraft:shield"
+					}
+					type: "item"
+				}
+			]
+			title: "Escudo"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"Água apaga fogo. Lava apaga o resto."
+			]
+			id: "3CF154EC0E39A69A"
+			rewards: [
+				{
+					count: 1
+					id: "366A44FC442E8DB0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "217AA069E1347DDA"
+					item: {
+						Count: 1b
+						id: "minecraft:bucket"
+					}
+					type: "item"
+				}
+			]
+			title: "Balde"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"55949ECDE7D7BC77"
+			]
+			description: [
+				"Fome é o primeiro inimigo."
+			]
+			id: "7880C8E3C2D396DC"
+			rewards: [
+				{
+					count: 1
+					id: "11E28D7127433DE0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "791BB15EB1214EC3"
+					item: {
+						Count: 1b
+						id: "minecraft:bread"
+					}
+					type: "item"
+				}
+			]
+			title: "Pão de Cada Dia"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"7880C8E3C2D396DC"
+			]
+			description: [
+				"Plante. O solo ainda responde."
+			]
+			id: "262E4CA8A9D31297"
+			rewards: [
+				{
+					count: 1
+					id: "58AEF2D876662AB8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "20391B94C203B77E"
+					item: {
+						Count: 1b
+						id: "minecraft:wheat"
+					}
+					type: "item"
+				}
+			]
+			title: "Lavoura"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3B57B4A34DC11F53"
+			]
+			description: [
+				"Uma mochila leva mais do que os bolsos."
+			]
+			id: "25383A7A9F297BF8"
+			rewards: [
+				{
+					count: 2
+					id: "0EFDFD38EC5FAF10"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "666D38638515AE73"
+					item: {
+						Count: 1b
+						id: "sophisticatedbackpacks:backpack"
+					}
+					type: "item"
+				}
+			]
+			title: "Mochila"
+			x: 6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho."
+				"Faça uma bússola."
+			]
+			id: "73534827338C81F9"
+			rewards: [
+				{
+					count: 1
+					id: "321F6E2FF5CA35C1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5CFFE67BBAAC5CDE"
+					item: {
+						Count: 1b
+						id: "minecraft:compass"
+					}
+					type: "item"
+				}
+			]
+			title: "Onde Estou?"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"2E750308942DCE2F"
+			]
+			description: [
+				"Diamantes. Os Confluentes os usavam como rolamentos."
+			]
+			id: "5BE14EC2E28E8A76"
+			rewards: [
+				{
+					count: 3
+					id: "2F0B8C0AD5FB3361"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "7DF57BDE079FCABD"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:gems/diamond)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Pedras que Brilham"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BE14EC2E28E8A76"
+			]
+			description: [
+				"A mesa de encantamento fala uma língua que você quase entende."
+			]
+			id: "5670724EE7F5E85B"
+			rewards: [
+				{
+					count: 2
+					id: "2DBF0340CEBA7703"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "743006E0180F7B3F"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanting_table"
+					}
+					type: "item"
+				}
+			]
+			title: "Palavras Antigas"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2C3AA7D00409E54F"
+			]
+			description: [
+				"Cristais de som endurecido. São a moeda daqui."
+				"Junte cinco."
+			]
+			icon: "ecos:fragmento_eco"
+			id: "21E6F3E5A4FCEBE8"
+			rewards: [
+				{
+					count: 1
+					id: "28B20850046F35B4"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Pequenos cristais estão brotando onde antes havia silêncio.\\nNós os chamávamos de Fragmentos de Eco: som que endureceu.\\nAceite-os como moeda. Eles são a única coisa que ainda vale algo.\\nMas não segure muitos perto do ouvido.\"}"
+							]
+							title: "Diário — Página 4"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F6C9EA36796F3CC"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "0AD458A316751FD5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			title: "Fragmentos de Eco"
+			x: 6.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"21E6F3E5A4FCEBE8"
+			]
+			description: [
+				"Há uma banca que aceita ecos. Veja o capítulo da loja."
+			]
+			id: "1D15FE73D2EC2EE1"
+			rewards: [
+				{
+					count: 2
+					id: "3BD9DC5317BE988F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "55F6B2CB0A3485D0"
+					type: "checkmark"
+				}
+			]
+			title: "A Banca do Eco"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6408DE4648BD826E"
+				"3BD883EE6AF2365A"
+				"27C8673F78707885"
+				"2E750308942DCE2F"
+				"3C15E09CFEAD31E1"
+				"5E7B8362CB69834E"
+				"3CF154EC0E39A69A"
+				"262E4CA8A9D31297"
+				"25383A7A9F297BF8"
+				"73534827338C81F9"
+				"5670724EE7F5E85B"
+				"1D15FE73D2EC2EE1"
+				"3C7320410AAD851E"
+			]
+			description: [
+				"Você sobreviveu aos primeiros dias."
+				"Mas à noite, quando tudo se cala, algo responde."
+			]
+			icon: "minecraft:sculk_sensor"
+			id: "1EF81770020C14AA"
+			rewards: [
+				{
+					count: 1
+					id: "71CFB2E20C1195DA"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5295871C2FA5327A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "0341751621E64954"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "0D0CDC2F36A8B039"
+					type: "checkmark"
+				}
+			]
+			title: "Algo Está Ouvindo"
+			x: 16.5d
 			y: 0.0d
 		}
 	]

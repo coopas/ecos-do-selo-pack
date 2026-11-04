@@ -6,15 +6,27 @@ hash = "c85df8d1c893cd5a11f6e0f3f5f6bafac66feb29bea6e062b9345f623abb1848"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "60912cef60789f11afe3e48405c98d92d75156b1ad3e407f5630f6b661530a70"
+hash = "4e97c3c14365097666dda0fb39294bf5517877de45bde79b9d7c11b0c8558092"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ato1.snbt"
+hash = "362f681b6bece540f68a6c240d6e7faca2a29fb8bffba9c1e50da08b563eb4d0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/loja.snbt"
-hash = "53d4b8f842bd197b80f785302412561b6f2fe261a14e6d189cc6c9ec5c45a61c"
+hash = "7fb03b56ff3e778c6243c1137987e6ec65c30b14ca0bfce4f9fa44a5eaa52eef"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
-hash = "1e437b81cf8096681dab02a91deecc97daa73d7b7f5b211bc342ebfa5e1f9346"
+hash = "95659bf7f47e39509be6b1a9c09dafffa311696a3e53ab4958293d0a31446f85"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_create.snbt"
+hash = "ba6166a5095baf8709cc32ef729f98ec32d8c391dd3d5268d9e94ff1aac1fa66"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_gt_steam_lv.snbt"
+hash = "676e937bc7d13e2a8d1c153179729805e3ecc452fdc247f44e5e5b5cf4f3709f"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -71,7 +83,7 @@ hash = "56999882f3abbfd0f3b9c94f06a402e84135eb23dc77c47b566f926216e0e498"
 
 [[files]]
 file = "kubejs/ecos/quest_tags.json"
-hash = "8071b74fd4d3dae107f6556cab1886e4cec2d3f97e149af11d3af31e4025f512"
+hash = "fad8ff32fd3ee9d573341d0d03a0cf6d7acc38c42311216a286fee17e203ca31"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"

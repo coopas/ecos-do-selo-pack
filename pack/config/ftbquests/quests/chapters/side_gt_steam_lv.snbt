@@ -1,0 +1,1534 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_gt_steam_lv"
+	group: "30D1DA93FF981B37"
+	icon: "gtceu:lp_steam_solid_boiler"
+	id: "7D7DD4FDA0AECE7C"
+	images: [ ]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"Há árvores que sangram resina."
+				"Os Confluentes as plantavam perto das oficinas."
+			]
+			icon: "gtceu:rubber_log"
+			id: "7523EE75771E33A0"
+			rewards: [
+				{
+					count: 2
+					id: "3F0D205642004873"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 8L
+					id: "38FDCEC7D371CF1C"
+					item: {
+						Count: 1b
+						id: "gtceu:rubber_log"
+					}
+					type: "item"
+				}
+			]
+			title: "Árvores que Sangram"
+			x: 0.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"7523EE75771E33A0"
+			]
+			description: [
+				"Resina: a matéria-prima da borracha."
+			]
+			id: "322AA6F7177A070B"
+			rewards: [
+				{
+					count: 1
+					id: "4AECB2D31B8B18A5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "205055E2DDC8B6EE"
+					item: {
+						Count: 1b
+						id: "gtceu:sticky_resin"
+					}
+					type: "item"
+				}
+			]
+			title: "Resina Pegajosa"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"25CFDEF4C125AB6E"
+			]
+			description: [
+				"Martelo, chave e lima: no GregTech, ferramentas viram ingredientes."
+			]
+			icon: "gtceu:iron_hammer"
+			id: "79811DF8051FF307"
+			rewards: [
+				{
+					count: 3
+					id: "1ED035988AE6CB9C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "70F546188EC04FF8"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_hammer"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2931A5C13B612620"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_wrench"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "35150C874C3DF5DF"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_file"
+					}
+					type: "item"
+				}
+			]
+			title: "Ferramentas do Ofício"
+			x: 0.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"79811DF8051FF307"
+			]
+			description: [
+				"Serra, chave de fenda, alicate e pilão."
+			]
+			id: "2D91A802A8D702AA"
+			rewards: [
+				{
+					count: 3
+					id: "2001AD7E663B66B0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5AA5267B01A63DAF"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_saw"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "3FC5C18A3B0ED1EB"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_screwdriver"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "6713470319BC0443"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_wire_cutter"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2969438E37C622ED"
+					item: {
+						Count: 1b
+						id: "gtceu:iron_mortar"
+					}
+					type: "item"
+				}
+			]
+			title: "Mais Ferramentas"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2E750308942DCE2F"
+			]
+			description: [
+				"O metal que conduz. Aurend era toda fiada em cobre."
+			]
+			id: "1467B2C3F3ED0F32"
+			rewards: [
+				{
+					count: 2
+					id: "2848F0399F9FD178"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "4C9DCC3C3155B1D0"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/copper)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cobre"
+			x: 0.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"2E750308942DCE2F"
+			]
+			description: [
+				"Mole, mas indispensável."
+			]
+			id: "00CBFADA64B60352"
+			rewards: [
+				{
+					count: 2
+					id: "25C18C5BE6653BBC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "63F04575BC9E3D26"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/tin)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Estanho"
+			x: 0.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"1467B2C3F3ED0F32"
+				"00CBFADA64B60352"
+				"2D91A802A8D702AA"
+			]
+			description: [
+				"Três de cobre, um de estanho. A primeira liga da era do vapor."
+			]
+			icon: "gtceu:bronze_ingot"
+			id: "343D72679F96C842"
+			rewards: [
+				{
+					count: 3
+					id: "799AB4F9436A16F2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "0CCB00BE037CD0F0"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/bronze)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bronze"
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"79811DF8051FF307"
+			]
+			description: [
+				"Argila e areia moldadas em tijolos resistentes."
+			]
+			id: "5CAEEE4123B872EF"
+			rewards: [
+				{
+					count: 2
+					id: "1E9179712A83DBE6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 26L
+					id: "79C44E059273A4D3"
+					item: {
+						Count: 1b
+						id: "gtceu:coke_oven_bricks"
+					}
+					type: "item"
+				}
+			]
+			title: "Tijolos de Coque"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5CAEEE4123B872EF"
+			]
+			description: [
+				"Um forno de várias peças. Monte a estrutura 3×3×3."
+			]
+			id: "252D603078189971"
+			rewards: [
+				{
+					count: 3
+					id: "0A91EE318B1B5C0C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "72DB35107013963A"
+					item: {
+						Count: 1b
+						id: "gtceu:coke_oven"
+					}
+					type: "item"
+				}
+			]
+			title: "Forno de Coque"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"252D603078189971"
+			]
+			description: [
+				"Carvão purificado: queima mais quente e por mais tempo."
+			]
+			id: "44F5BA504FFC19E1"
+			rewards: [
+				{
+					count: 2
+					id: "09F19E00D1324DCE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "12B57235CF65C2CD"
+					item: {
+						Count: 1b
+						id: "gtceu:coke_gem"
+					}
+					type: "item"
+				}
+			]
+			title: "Coque"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"252D603078189971"
+			]
+			description: [
+				"O forno de coque também solta creosoto. Trate a madeira."
+			]
+			id: "588DDA3B2A7F4A7F"
+			rewards: [
+				{
+					count: 1
+					id: "3C7851CD8CCFF084"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "35676013C20C4670"
+					item: {
+						Count: 1b
+						id: "gtceu:treated_wood_planks"
+					}
+					type: "item"
+				}
+			]
+			title: "Madeira Tratada"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5CAEEE4123B872EF"
+			]
+			description: [
+				"Para conter um fogo ainda maior."
+			]
+			id: "668995E91AA5DDB8"
+			rewards: [
+				{
+					count: 2
+					id: "407D56527EC1D563"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 24L
+					id: "3B32D5090805E536"
+					item: {
+						Count: 1b
+						id: "gtceu:firebricks"
+					}
+					type: "item"
+				}
+			]
+			title: "Tijolos Refratários"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"668995E91AA5DDB8"
+				"44F5BA504FFC19E1"
+			]
+			description: [
+				"Ferro e coque, horas de espera, e aço."
+			]
+			id: "566E404A524131BD"
+			rewards: [
+				{
+					count: 3
+					id: "400F7A266F3AA62F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "50DBC245756A461E"
+					item: {
+						Count: 1b
+						id: "gtceu:primitive_blast_furnace"
+					}
+					type: "item"
+				}
+			]
+			title: "Alto-Forno Primitivo"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"566E404A524131BD"
+			]
+			description: [
+				"O primeiro aço de verdade em séculos."
+			]
+			icon: "gtceu:steel_ingot"
+			id: "4BB930D6A6439C1E"
+			rewards: [
+				{
+					count: 1
+					id: "630E7E4F1FCD8CD3"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6372E941AAEF216F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 16L
+					id: "184D30E1BFDB8674"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/steel)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Aço"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"2D91A802A8D702AA"
+			]
+			description: [
+				"Ferro martelado até perder as impurezas."
+			]
+			id: "7F8A656586D183AE"
+			rewards: [
+				{
+					count: 2
+					id: "66AC92163A8D2DE3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "58F701BC00BFA9E7"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/wrought_iron)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ferro Forjado"
+			x: 3.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"343D72679F96C842"
+			]
+			description: [
+				"Todas as máquinas a vapor nascem em bronze."
+			]
+			id: "4C4AE65DF85224A8"
+			rewards: [
+				{
+					count: 2
+					id: "4E565A4F2BCC74A0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "086D1D725BB7AB5B"
+					item: {
+						Count: 1b
+						id: "gtceu:bronze_machine_casing"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco de Bronze"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4C4AE65DF85224A8"
+			]
+			description: [
+				"Carvão em cima, água embaixo, vapor no meio."
+			]
+			icon: "gtceu:lp_steam_solid_boiler"
+			id: "085EAD29072E640C"
+			rewards: [
+				{
+					count: 3
+					id: "5D0C0249ED7A831C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "157E11E2DA0156F2"
+					item: {
+						Count: 1b
+						id: "gtceu:lp_steam_solid_boiler"
+					}
+					type: "item"
+				}
+			]
+			title: "Caldeira a Vapor"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+			]
+			description: [
+				"Minério em pó: mais lingotes por minério."
+			]
+			id: "7A30AF6952A3DB71"
+			rewards: [
+				{
+					count: 3
+					id: "57DF4468740F83C7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6E6080CC2748EBB2"
+					item: {
+						Count: 1b
+						id: "gtceu:lp_steam_macerator"
+					}
+					type: "item"
+				}
+			]
+			title: "Macerador a Vapor"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+			]
+			description: [
+				"Comprima pó em placas e blocos."
+			]
+			id: "59057F7C59625F28"
+			rewards: [
+				{
+					count: 2
+					id: "310F32151E9D63DF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4255596F768C1991"
+					item: {
+						Count: 1b
+						id: "gtceu:lp_steam_compressor"
+					}
+					type: "item"
+				}
+			]
+			title: "Compressor a Vapor"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+			]
+			description: [
+				"Golpes que nenhum braço aguenta."
+			]
+			id: "3341B7B4373BA09C"
+			rewards: [
+				{
+					count: 2
+					id: "7A68E0617419AE8F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3310359EE6D85281"
+					item: {
+						Count: 1b
+						id: "gtceu:lp_steam_forge_hammer"
+					}
+					type: "item"
+				}
+			]
+			title: "Martelo de Forja a Vapor"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+			]
+			description: [
+				"Ligas sem bater pó à mão."
+			]
+			id: "5C06B8BDC6D30E29"
+			rewards: [
+				{
+					count: 3
+					id: "7404FE342529FDD7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "694A8A760675DE78"
+					item: {
+						Count: 1b
+						id: "gtceu:lp_steam_alloy_smelter"
+					}
+					type: "item"
+				}
+			]
+			title: "Fundidor de Ligas a Vapor"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+			]
+			description: [
+				"Extraia borracha da resina."
+			]
+			id: "2491E2C3EEEFA3B4"
+			rewards: [
+				{
+					count: 2
+					id: "3FE2661A4928A16B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4B2DB6EE879427B3"
+					item: {
+						Count: 1b
+						id: "gtceu:lp_steam_extractor"
+					}
+					type: "item"
+				}
+			]
+			title: "Extrator a Vapor"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+			]
+			description: [
+				"Cozinha sem carvão na boca do forno."
+			]
+			id: "56ACB37DE9C29382"
+			rewards: [
+				{
+					count: 2
+					id: "45D611E06B24E38E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "388CC6364E1186DA"
+					item: {
+						Count: 1b
+						id: "gtceu:lp_steam_furnace"
+					}
+					type: "item"
+				}
+			]
+			title: "Fornalha a Vapor"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4BB930D6A6439C1E"
+				"7A30AF6952A3DB71"
+			]
+			description: [
+				"Aço segura o vapor que o bronze não segura."
+			]
+			id: "059CBB7EFBFDEADF"
+			rewards: [
+				{
+					count: 4
+					id: "444D31FA43BF110F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6E52A48F59597B86"
+					item: {
+						Count: 1b
+						id: "gtceu:steel_brick_casing"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "032016CDA377318D"
+					item: {
+						Count: 1b
+						id: "gtceu:hp_steam_macerator"
+					}
+					type: "item"
+				}
+			]
+			title: "Alta Pressão"
+			x: 9.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"322AA6F7177A070B"
+				"2491E2C3EEEFA3B4"
+			]
+			description: [
+				"Placas de borracha isolam os fios."
+			]
+			id: "2389D82AA56FE6BA"
+			rewards: [
+				{
+					count: 2
+					id: "27985EA52861162D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "537C4A4582249C8E"
+					item: {
+						Count: 1b
+						id: "gtceu:rubber_plate"
+					}
+					type: "item"
+				}
+			]
+			title: "Borracha"
+			x: 9.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"5C06B8BDC6D30E29"
+			]
+			description: [
+				"Vidro soprado, frágil e essencial."
+			]
+			id: "29B32DE68510D2A0"
+			rewards: [
+				{
+					count: 2
+					id: "18EED8FF334D0D17"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "18274C8627728D83"
+					item: {
+						Count: 1b
+						id: "gtceu:glass_tube"
+					}
+					type: "item"
+				}
+			]
+			title: "Tubo de Vidro"
+			x: 9.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"29B32DE68510D2A0"
+				"2389D82AA56FE6BA"
+			]
+			description: [
+				"A primeira lógica de Aurend era luz presa no vidro."
+			]
+			id: "39C87C5C6AD7F7BF"
+			rewards: [
+				{
+					count: 3
+					id: "6A33704799011912"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "384D2447FDEA3939"
+					item: {
+						Count: 1b
+						id: "gtceu:vacuum_tube"
+					}
+					type: "item"
+				}
+			]
+			title: "Válvula Termiônica"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2389D82AA56FE6BA"
+			]
+			description: [
+				"Segura a corrente para ela não queimar tudo."
+			]
+			id: "26FFA54C2C3695BF"
+			rewards: [
+				{
+					count: 2
+					id: "3AA572D524F7A802"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "07B3671047496488"
+					item: {
+						Count: 1b
+						id: "gtceu:resistor"
+					}
+					type: "item"
+				}
+			]
+			title: "Resistor"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5C06B8BDC6D30E29"
+				"1467B2C3F3ED0F32"
+			]
+			description: [
+				"Cobre e redstone: o metal que lembra eletricidade."
+			]
+			id: "08BAA2CBAC004C68"
+			rewards: [
+				{
+					count: 2
+					id: "5798EBF5C0F9395F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6F1EBF8ECB665C3A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/red_alloy)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Liga Vermelha"
+			x: 9.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"08BAA2CBAC004C68"
+				"2389D82AA56FE6BA"
+				"00CBFADA64B60352"
+			]
+			description: [
+				"Fio de liga vermelha e cabo de estanho isolado."
+			]
+			id: "08C5B2FE54B221EB"
+			rewards: [
+				{
+					count: 3
+					id: "7F69BCC7C8B750DB"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "55331821481F8FA9"
+					item: {
+						Count: 1b
+						id: "gtceu:red_alloy_single_wire"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2F73A460C4ACA67E"
+					item: {
+						Count: 1b
+						id: "gtceu:tin_single_cable"
+					}
+					type: "item"
+				}
+			]
+			title: "Fios e Cabos"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"39C87C5C6AD7F7BF"
+				"26FFA54C2C3695BF"
+				"08C5B2FE54B221EB"
+			]
+			description: [
+				"Seu primeiro circuito. Aurend pensava assim."
+			]
+			icon: "gtceu:basic_electronic_circuit"
+			id: "4B341E8FE1BDA218"
+			rewards: [
+				{
+					count: 1
+					id: "281FFDBECE6C757E"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7EE6BA2F89F02A87"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 4L
+					id: "2A20EBC104255F7C"
+					item: {
+						Count: 1b
+						id: "gtceu:basic_electronic_circuit"
+					}
+					type: "item"
+				}
+			]
+			title: "Circuito Básico"
+			x: 12.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"4BB930D6A6439C1E"
+				"08C5B2FE54B221EB"
+			]
+			description: [
+				"Baixa voltagem. O começo da eletricidade."
+			]
+			id: "653209CB151DAECF"
+			rewards: [
+				{
+					count: 3
+					id: "3593B89B233706B4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "62C65616D93A7F28"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_machine_hull"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco LV"
+			x: 12.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"653209CB151DAECF"
+			]
+			description: [
+				"O coração de quase toda máquina."
+			]
+			id: "12B6F7B99A52C9CC"
+			rewards: [
+				{
+					count: 3
+					id: "6060CCB410DA9B96"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "62896184ECA928EF"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_electric_motor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor Elétrico LV"
+			x: 13.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"12B6F7B99A52C9CC"
+			]
+			description: [
+				"Mover líquidos, empurrar blocos."
+			]
+			id: "5F668FC49FD2F7F8"
+			rewards: [
+				{
+					count: 3
+					id: "655A01CB89FBF9F3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "674F2BCE59B80996"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_electric_pump"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "6ECB8E6C8BFCC936"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_electric_piston"
+					}
+					type: "item"
+				}
+			]
+			title: "Bomba e Pistão LV"
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"653209CB151DAECF"
+				"059CBB7EFBFDEADF"
+			]
+			description: [
+				"O vapor das caldeiras vira corrente."
+			]
+			id: "266EACDED2D8A66A"
+			rewards: [
+				{
+					count: 4
+					id: "1E1D5B4C2536F668"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2A98BD8B5BC09DA7"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_steam_turbine"
+					}
+					type: "item"
+				}
+			]
+			title: "Turbina a Vapor LV"
+			x: 13.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"12B6F7B99A52C9CC"
+				"4B341E8FE1BDA218"
+			]
+			description: [
+				"Macerador e fornalha elétricos."
+			]
+			id: "02F4BD6EC6452232"
+			rewards: [
+				{
+					count: 4
+					id: "7D7D37AFD777587D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1837BE1A5217749F"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_macerator"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "37A093A69E0EC12E"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_electric_furnace"
+					}
+					type: "item"
+				}
+			]
+			title: "Primeiras Máquinas LV"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"02F4BD6EC6452232"
+			]
+			description: [
+				"Trefiladora, dobradeira e montadora."
+			]
+			id: "4A0E849F2FC068D9"
+			rewards: [
+				{
+					count: 1
+					id: "3CC8AE899C91010C"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "53742832A8790ED2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "36F709CD0634EA2F"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_wiremill"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "1287091C2BCFDC07"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_bender"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "270F229A352D4D19"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_assembler"
+					}
+					type: "item"
+				}
+			]
+			title: "Oficina LV"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"266EACDED2D8A66A"
+			]
+			description: [
+				"Um buffer de baterias segura a energia para a noite."
+			]
+			id: "5124E8EDE0B47D6D"
+			rewards: [
+				{
+					count: 3
+					id: "5709F114250B75C6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4325D70FE413EE95"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_battery_buffer_4x"
+					}
+					type: "item"
+				}
+			]
+			title: "Armazenar Corrente"
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4A0E849F2FC068D9"
+				"5F668FC49FD2F7F8"
+				"5124E8EDE0B47D6D"
+			]
+			description: [
+				"Vapor e corrente. A ciência perdida está de volta."
+				"Agora as máquinas de Aurend podem girar de novo."
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "0525606E8F9B7829"
+			rewards: [
+				{
+					count: 1
+					id: "178A6679D13B8682"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "460C0C08B0F30C73"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "1FBAD1F164EFE05B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "32A5FFAB283D1911"
+					type: "checkmark"
+				}
+			]
+			title: "A Era da Corrente"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	title: "Caminho — Vapor e Corrente"
+}

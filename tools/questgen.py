@@ -154,6 +154,37 @@ def _reward(r: dict, rid: str, tables: dict) -> dict:
     raise QuestError(f"recompensa desconhecida: {r}")
 
 
+GRID = 1.5
+
+
+def layout(c: "Chapter") -> dict[str, tuple[float, float]]:
+    """Posição de cada quest: x/y explícitos vencem; senão coluna = profundidade de dependência local,
+    linha = ordem dentro da coluna (centralizada)."""
+    local = {q["slug"]: [d for d in q.get("deps", []) if "/" not in d] for q in c.quests}
+    depth: dict[str, int] = {}
+
+    def d(slug: str, seen=()) -> int:
+        if slug in depth:
+            return depth[slug]
+        if slug in seen:
+            return 0
+        parents = [p for p in local.get(slug, []) if p in local]
+        depth[slug] = 0 if not parents else 1 + max(d(p, seen + (slug,)) for p in parents)
+        return depth[slug]
+
+    columns: dict[int, list[str]] = {}
+    for q in c.quests:
+        columns.setdefault(d(q["slug"]), []).append(q["slug"])
+    pos = {}
+    for col, slugs in columns.items():
+        for i, slug in enumerate(slugs):
+            pos[slug] = (col * GRID, (i - (len(slugs) - 1) / 2) * GRID)
+    for q in c.quests:
+        if "x" in q and "y" in q:
+            pos[q["slug"]] = (float(q["x"]), float(q["y"]))
+    return pos
+
+
 def resolve_dep(dep: str, chapter: str, known: set[str]) -> str:
     path = dep if "/" in dep else f"{chapter}/{dep}"
     if path not in known:
@@ -184,11 +215,12 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
         files[f"reward_tables/{slug}.snbt"] = snbt.dumps(build_table(slug, t)) + "\n"
     for c in chapters:
         quests = []
+        pos = layout(c)
         for q in c.quests:
             path = f"{c.slug}/{q['slug']}"
             quest = {
                 "id": quest_id(path), "title": q["title"], "description": list(q.get("desc", [])),
-                "x": float(q.get("x", 0)), "y": float(q.get("y", 0)),
+                "x": pos[q["slug"]][0], "y": pos[q["slug"]][1],
                 "dependencies": [quest_id(resolve_dep(d, c.slug, known)) for d in q.get("deps", [])],
                 "tasks": [_task(t, quest_id(f"{path}#t{i}")) for i, t in enumerate(q.get("tasks", []))],
                 "rewards": [_reward(r, quest_id(f"{path}#r{i}"), tables) for i, r in enumerate(q.get("rewards", []))],

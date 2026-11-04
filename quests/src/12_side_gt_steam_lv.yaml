@@ -1,0 +1,88 @@
+chapter: side_gt_steam_lv
+title: "Caminho — Vapor e Corrente"
+icon: gtceu:lp_steam_solid_boiler
+group: caminhos
+act: 1
+quests:
+  - {slug: seringueira, title: "Árvores que Sangram", deps: [prologo/ferro], icon: gtceu:rubber_log, shape: gear, allow_exact: "só a seringueira dá resina",
+     desc: ["Há árvores que sangram resina.", "Os Confluentes as plantavam perto das oficinas."], tasks: [{item: gtceu:rubber_log, count: 8}], rewards: [{coins: 2}]}
+  - {slug: resina, title: "Resina Pegajosa", deps: [seringueira], desc: ["Resina: a matéria-prima da borracha."],
+     tasks: [{item: gtceu:sticky_resin, count: 8}], rewards: [{coins: 1}]}
+  - {slug: ferramentas, title: "Ferramentas do Ofício", deps: [prologo/ferro], icon: gtceu:iron_hammer,
+     desc: ["Martelo, chave e lima: no GregTech, ferramentas viram ingredientes."],
+     tasks: [{item: gtceu:iron_hammer}, {item: gtceu:iron_wrench}, {item: gtceu:iron_file}], rewards: [{coins: 3}]}
+  - {slug: mais_ferramentas, title: "Mais Ferramentas", deps: [ferramentas], desc: ["Serra, chave de fenda, alicate e pilão."],
+     tasks: [{item: gtceu:iron_saw}, {item: gtceu:iron_screwdriver}, {item: gtceu:iron_wire_cutter}, {item: gtceu:iron_mortar}],
+     rewards: [{coins: 3}]}
+  - {slug: cobre, title: "Cobre", deps: [prologo/picareta_ferro], desc: ["O metal que conduz. Aurend era toda fiada em cobre."],
+     tasks: [{tag: forge:ingots/copper, count: 32}], rewards: [{coins: 2}]}
+  - {slug: estanho, title: "Estanho", deps: [prologo/picareta_ferro], desc: ["Mole, mas indispensável."],
+     tasks: [{tag: forge:ingots/tin, count: 16}], rewards: [{coins: 2}]}
+  - {slug: bronze, title: "Bronze", deps: [cobre, estanho, mais_ferramentas], icon: gtceu:bronze_ingot,
+     desc: ["Três de cobre, um de estanho. A primeira liga da era do vapor."], tasks: [{tag: forge:ingots/bronze, count: 32}], rewards: [{coins: 3}]}
+  - {slug: tijolos_coque, title: "Tijolos de Coque", deps: [ferramentas], desc: ["Argila e areia moldadas em tijolos resistentes."],
+     tasks: [{item: gtceu:coke_oven_bricks, count: 26}], rewards: [{coins: 2}]}
+  - {slug: forno_coque, title: "Forno de Coque", deps: [tijolos_coque], desc: ["Um forno de várias peças. Monte a estrutura 3×3×3."],
+     tasks: [{item: gtceu:coke_oven}], rewards: [{coins: 3}]}
+  - {slug: coque, title: "Coque", deps: [forno_coque], desc: ["Carvão purificado: queima mais quente e por mais tempo."],
+     tasks: [{item: gtceu:coke_gem, count: 16}], rewards: [{coins: 2}]}
+  - {slug: madeira_tratada, title: "Madeira Tratada", deps: [forno_coque], desc: ["O forno de coque também solta creosoto. Trate a madeira."],
+     tasks: [{item: gtceu:treated_wood_planks, count: 16}], rewards: [{coins: 1}]}
+  - {slug: tijolos_refratarios, title: "Tijolos Refratários", deps: [tijolos_coque], desc: ["Para conter um fogo ainda maior."],
+     tasks: [{item: gtceu:firebricks, count: 24}], rewards: [{coins: 2}]}
+  - {slug: alto_forno, title: "Alto-Forno Primitivo", deps: [tijolos_refratarios, coque], desc: ["Ferro e coque, horas de espera, e aço."],
+     tasks: [{item: gtceu:primitive_blast_furnace}], rewards: [{coins: 3}]}
+  - {slug: aco, title: "Aço", deps: [alto_forno], shape: gear, icon: gtceu:steel_ingot,
+     desc: ["O primeiro aço de verdade em séculos."], tasks: [{tag: forge:ingots/steel, count: 16}], rewards: [{crate: comum}, {coins: 4}]}
+  - {slug: ferro_forjado, title: "Ferro Forjado", deps: [mais_ferramentas], desc: ["Ferro martelado até perder as impurezas."],
+     tasks: [{tag: forge:ingots/wrought_iron, count: 8}], rewards: [{coins: 2}]}
+  - {slug: casco_bronze, title: "Casco de Bronze", deps: [bronze], desc: ["Todas as máquinas a vapor nascem em bronze."],
+     tasks: [{item: gtceu:bronze_machine_casing, count: 4}], rewards: [{coins: 2}]}
+  - {slug: caldeira, title: "Caldeira a Vapor", deps: [casco_bronze], icon: gtceu:lp_steam_solid_boiler,
+     desc: ["Carvão em cima, água embaixo, vapor no meio."], tasks: [{item: gtceu:lp_steam_solid_boiler}], rewards: [{coins: 3}]}
+  - {slug: macerador_vapor, title: "Macerador a Vapor", deps: [caldeira], desc: ["Minério em pó: mais lingotes por minério."],
+     tasks: [{item: gtceu:lp_steam_macerator}], rewards: [{coins: 3}]}
+  - {slug: compressor_vapor, title: "Compressor a Vapor", deps: [caldeira], desc: ["Comprima pó em placas e blocos."],
+     tasks: [{item: gtceu:lp_steam_compressor}], rewards: [{coins: 2}]}
+  - {slug: martelo_vapor, title: "Martelo de Forja a Vapor", deps: [caldeira], desc: ["Golpes que nenhum braço aguenta."],
+     tasks: [{item: gtceu:lp_steam_forge_hammer}], rewards: [{coins: 2}]}
+  - {slug: ligas_vapor, title: "Fundidor de Ligas a Vapor", deps: [caldeira], desc: ["Ligas sem bater pó à mão."],
+     tasks: [{item: gtceu:lp_steam_alloy_smelter}], rewards: [{coins: 3}]}
+  - {slug: extrator_vapor, title: "Extrator a Vapor", deps: [caldeira], desc: ["Extraia borracha da resina."],
+     tasks: [{item: gtceu:lp_steam_extractor}], rewards: [{coins: 2}]}
+  - {slug: fornalha_vapor, title: "Fornalha a Vapor", deps: [caldeira], desc: ["Cozinha sem carvão na boca do forno."],
+     tasks: [{item: gtceu:lp_steam_furnace}], rewards: [{coins: 2}]}
+  - {slug: alta_pressao, title: "Alta Pressão", deps: [aco, macerador_vapor], desc: ["Aço segura o vapor que o bronze não segura."],
+     tasks: [{item: gtceu:steel_brick_casing, count: 4}, {item: gtceu:hp_steam_macerator}], rewards: [{coins: 4}]}
+  - {slug: borracha, title: "Borracha", deps: [resina, extrator_vapor], desc: ["Placas de borracha isolam os fios."],
+     tasks: [{item: gtceu:rubber_plate, count: 8}], rewards: [{coins: 2}]}
+  - {slug: tubo_vidro, title: "Tubo de Vidro", deps: [ligas_vapor], desc: ["Vidro soprado, frágil e essencial."],
+     tasks: [{item: gtceu:glass_tube, count: 4}], rewards: [{coins: 2}]}
+  - {slug: valvula, title: "Válvula Termiônica", deps: [tubo_vidro, borracha], desc: ["A primeira lógica de Aurend era luz presa no vidro."],
+     tasks: [{item: gtceu:vacuum_tube, count: 8}], rewards: [{coins: 3}]}
+  - {slug: resistor, title: "Resistor", deps: [borracha], desc: ["Segura a corrente para ela não queimar tudo."],
+     tasks: [{item: gtceu:resistor, count: 8}], rewards: [{coins: 2}]}
+  - {slug: liga_vermelha, title: "Liga Vermelha", deps: [ligas_vapor, cobre], desc: ["Cobre e redstone: o metal que lembra eletricidade."],
+     tasks: [{tag: forge:ingots/red_alloy, count: 16}], rewards: [{coins: 2}]}
+  - {slug: fios, title: "Fios e Cabos", deps: [liga_vermelha, borracha, estanho], desc: ["Fio de liga vermelha e cabo de estanho isolado."],
+     tasks: [{item: gtceu:red_alloy_single_wire, count: 16}, {item: gtceu:tin_single_cable, count: 16}], rewards: [{coins: 3}]}
+  - {slug: circuito, title: "Circuito Básico", deps: [valvula, resistor, fios], shape: gear, icon: gtceu:basic_electronic_circuit,
+     desc: ["Seu primeiro circuito. Aurend pensava assim."], tasks: [{item: gtceu:basic_electronic_circuit, count: 4}],
+     rewards: [{crate: rara}, {coins: 5}]}
+  - {slug: casco_lv, title: "Casco LV", deps: [aco, fios], desc: ["Baixa voltagem. O começo da eletricidade."],
+     tasks: [{item: gtceu:lv_machine_hull, count: 2}], rewards: [{coins: 3}]}
+  - {slug: motor_lv, title: "Motor Elétrico LV", deps: [casco_lv], desc: ["O coração de quase toda máquina."],
+     tasks: [{item: gtceu:lv_electric_motor, count: 4}], rewards: [{coins: 3}]}
+  - {slug: bomba_pistao, title: "Bomba e Pistão LV", deps: [motor_lv], desc: ["Mover líquidos, empurrar blocos."],
+     tasks: [{item: gtceu:lv_electric_pump}, {item: gtceu:lv_electric_piston}], rewards: [{coins: 3}]}
+  - {slug: turbina, title: "Turbina a Vapor LV", deps: [casco_lv, alta_pressao], desc: ["O vapor das caldeiras vira corrente."],
+     tasks: [{item: gtceu:lv_steam_turbine}], rewards: [{coins: 4}]}
+  - {slug: maquinas_lv, title: "Primeiras Máquinas LV", deps: [motor_lv, circuito], desc: ["Macerador e fornalha elétricos."],
+     tasks: [{item: gtceu:lv_macerator}, {item: gtceu:lv_electric_furnace}], rewards: [{coins: 4}]}
+  - {slug: oficina_lv, title: "Oficina LV", deps: [maquinas_lv], desc: ["Trefiladora, dobradeira e montadora."],
+     tasks: [{item: gtceu:lv_wiremill}, {item: gtceu:lv_bender}, {item: gtceu:lv_assembler}], rewards: [{crate: comum}, {coins: 5}]}
+  - {slug: bateria, title: "Armazenar Corrente", deps: [turbina], desc: ["Um buffer de baterias segura a energia para a noite."],
+     tasks: [{item: gtceu:lv_battery_buffer_4x}], rewards: [{coins: 3}]}
+  - {slug: era_lv, title: "A Era da Corrente", deps: [oficina_lv, bomba_pistao, bateria], shape: gear, icon: gtceu:lv_machine_hull,
+     desc: ["Vapor e corrente. A ciência perdida está de volta.", "Agora as máquinas de Aurend podem girar de novo."],
+     tasks: [{checkmark: true}], rewards: [{crate: rara}, {coins: 6}, {xp_levels: 3}]}

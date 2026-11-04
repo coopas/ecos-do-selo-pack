@@ -1,0 +1,1604 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ato1"
+	group: "5395DF7F49D69073"
+	icon: "create:cogwheel"
+	id: "2E0466C296BA2363"
+	images: [ ]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"1EF81770020C14AA"
+			]
+			description: [
+				"Vapor e mana, eixo e runa."
+				"As máquinas de Aurend esperam por alguém que as lembre."
+			]
+			icon: "create:cogwheel"
+			id: "5DAFCE8F2DC010F7"
+			rewards: [
+				{
+					count: 1
+					id: "7D1B64B967AB1F5D"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Os Confluentes não escolhiam. Vapor e mana, eixo e runa.\\nAurend inteira girava, e cada giro abafava um pouco do mundo.\\nSe você está montando engrenagens, já está rezando à nossa maneira.\\nContinue. As máquinas lembram o caminho.\"}"
+							]
+							title: "Diário — Página 5"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "649EC7B88666D809"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "2CEC408B0C9B2782"
+					type: "checkmark"
+				}
+			]
+			title: "A Ciência Perdida"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5DAFCE8F2DC010F7"
+				"2BB6A1E58AAABE2A"
+				"343D72679F96C842"
+			]
+			description: [
+				"Engrenagem e bronze. Dois caminhos, uma só ciência."
+			]
+			id: "5CFDACFE2DECB558"
+			rewards: [
+				{
+					count: 3
+					id: "54859353A211C8E5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "2A856F5B61CF9099"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "17B129BD86E94791"
+					type: "checkmark"
+				}
+			]
+			title: "As Máquinas Lembram"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5DAFCE8F2DC010F7"
+			]
+			description: [
+				"A cada dia que passa, os mobs ficam mais fortes."
+				"Prepare-se antes de ficar para trás."
+			]
+			id: "4C5CB6B1ED7CD454"
+			rewards: [
+				{
+					id: "7D83191710A42028"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [
+				{
+					id: "464C676726C98488"
+					type: "checkmark"
+				}
+			]
+			title: "Noites Mais Fortes"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5DAFCE8F2DC010F7"
+			]
+			description: [
+				"Obsidiana e fogo: uma porta para baixo."
+			]
+			id: "538F4DEB1FD0C1F1"
+			rewards: [
+				{
+					count: 2
+					id: "4E209781E92887F0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "06B1F1F351B3302A"
+					item: {
+						Count: 1b
+						id: "minecraft:obsidian"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "14114B812BA3BD4E"
+					item: {
+						Count: 1b
+						id: "minecraft:flint_and_steel"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra de Lava Fria"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"538F4DEB1FD0C1F1"
+			]
+			description: [
+				"O Nether ainda queima. Ninguém apagou o fogo de Aurend."
+			]
+			icon: "minecraft:netherrack"
+			id: "2A1D007290D432B0"
+			rewards: [
+				{
+					count: 3
+					id: "16974298665DF582"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					id: "1BE2B8597C374DA8"
+					type: "dimension"
+				}
+			]
+			title: "O Andar de Baixo"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2A1D007290D432B0"
+			]
+			description: [
+				"Cristais que vibram quando tocados."
+			]
+			id: "5196F73D407D6130"
+			rewards: [
+				{
+					count: 1
+					id: "3BD415D25A9A71F8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1CE8563D2ACE6D63"
+					item: {
+						Count: 1b
+						id: "minecraft:quartz"
+					}
+					type: "item"
+				}
+			]
+			title: "Quartzo"
+			x: 4.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"2A1D007290D432B0"
+			]
+			description: [
+				"Cresce em fortalezas abandonadas."
+			]
+			id: "6BD2C8BE8EDEEDFC"
+			rewards: [
+				{
+					count: 1
+					id: "7B9779F3BFDC2BE4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "222B223344CED2C6"
+					item: {
+						Count: 1b
+						id: "minecraft:nether_wart"
+					}
+					type: "item"
+				}
+			]
+			title: "Verruga do Nether"
+			x: 4.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"2A1D007290D432B0"
+			]
+			description: [
+				"Blazes guardam as fortalezas. Seu fogo aquece a bacia do Create."
+			]
+			id: "5BA180480F705C08"
+			rewards: [
+				{
+					count: 3
+					id: "4A330240609A53B9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "6EFE63CAFF07CB04"
+					item: {
+						Count: 1b
+						id: "minecraft:blaze_rod"
+					}
+					type: "item"
+				}
+			]
+			title: "Fogo Vivo"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"2A1D007290D432B0"
+			]
+			description: [
+				"Ouro do Nether ou da superfície, tanto faz."
+			]
+			id: "0604B1959451B910"
+			rewards: [
+				{
+					count: 2
+					id: "75234C0C4B1122C1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "40EC3658B7F03B5B"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/gold)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ouro"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"4C5CB6B1ED7CD454"
+			]
+			description: [
+				"Endermen carregam pérolas que lembram onde estiveram."
+			]
+			id: "66343539B5689052"
+			rewards: [
+				{
+					count: 2
+					id: "2253D025D0D9402D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1B969EB4106782B8"
+					item: {
+						Count: 1b
+						id: "minecraft:ender_pearl"
+					}
+					type: "item"
+				}
+			]
+			title: "Pérolas do Fim"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B4F5D477D2FC3E2"
+			]
+			description: [
+				"Com as rodas trituradoras, cada minério rende mais."
+			]
+			id: "59A5E37C708D5158"
+			rewards: [
+				{
+					count: 4
+					id: "1E4314BD202501B9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 128L
+					id: "00413E378D85BA75"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/iron)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ferro em Dobro"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"4BB930D6A6439C1E"
+			]
+			description: [
+				"Aço para as máquinas que virão."
+			]
+			id: "268DD39316468189"
+			rewards: [
+				{
+					count: 4
+					id: "55CC9ACDCBBCC44F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "7D64242FA175F586"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/steel)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Estoque de Aço"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5CFDACFE2DECB558"
+			]
+			description: [
+				"Há uma floresta que não fica em lugar nenhum."
+				"Ilse fala dela como quem fala de um túmulo."
+			]
+			id: "736E1A3A1BFA3AED"
+			rewards: [
+				{
+					count: 1
+					id: "5B5BF8F5E1BC8989"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Há uma floresta que não fica em lugar nenhum.\\nSelamos ali o silêncio das coisas vivas, guardado por Morvane.\\nEle era nosso melhor feiticeiro. Pediu para ficar.\\nDisse que alguém precisava regar as árvores do esquecimento.\"}"
+							]
+							title: "Diário — Página 7"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "57D339BEE9432B61"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "071674EE6FE752DF"
+					type: "checkmark"
+				}
+			]
+			title: "A Floresta que Não Fica"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"736E1A3A1BFA3AED"
+			]
+			description: [
+				"Qualquer muda. A floresta precisa reconhecer vida."
+			]
+			id: "68C8AB49D4BCD2B0"
+			rewards: [
+				{
+					count: 1
+					id: "09797CEC4F0BAC08"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "602633ECA7B3FD36"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:saplings)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Sementes Vivas"
+			x: 4.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"736E1A3A1BFA3AED"
+			]
+			description: [
+				"O portal pede flores em volta da água."
+			]
+			id: "02C323756C92851D"
+			rewards: [
+				{
+					count: 1
+					id: "2CE4F685CF67D461"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 12L
+					id: "2D8BF850CB4EA340"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:small_flowers)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Flores para o Lago"
+			x: 4.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"68C8AB49D4BCD2B0"
+				"6B6F85E4DE2AE207"
+				"6E250F6F5A1780D8"
+			]
+			description: [
+				"Precisão de Aurend e semente viva."
+				"Só ela abre o caminho. O diamante não serve mais."
+			]
+			icon: "ecos:chave_crepuscular"
+			id: "5AD83C4E436BCCAA"
+			rewards: [
+				{
+					count: 1
+					id: "66E561C74B58B0A2"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Para abrir o caminho, não basta um diamante.\\nA floresta só reconhece quem traz o mecanismo e o ramo juntos:\\nprecisão de Aurend e semente viva.\\nChamávamos isso de Chave Crepuscular.\"}"
+							]
+							title: "Diário — Página 8"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "70CFEBB5FCF1BA64"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "1251E4913B55D855"
+					item: {
+						Count: 1b
+						id: "ecos:chave_crepuscular"
+					}
+					type: "item"
+				}
+			]
+			title: "A Chave Crepuscular"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5AD83C4E436BCCAA"
+				"02C323756C92851D"
+			]
+			description: [
+				"Faça um lago 2×2 cercado de flores."
+				"Jogue a Chave Crepuscular na água."
+			]
+			id: "2C316AAB687934F2"
+			rewards: [
+				{
+					id: "5240562E4340F47E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [
+				{
+					id: "39861FA3CB6F115D"
+					type: "checkmark"
+				}
+			]
+			title: "O Lago e as Flores"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2C316AAB687934F2"
+			]
+			description: [
+				"Aqui é sempre fim de tarde."
+				"As árvores lembram de você antes de você chegar."
+			]
+			icon: "twilightforest:twilight_oak_sapling"
+			id: "56EA9004828F591D"
+			rewards: [
+				{
+					count: 1
+					id: "1AFE52DE136FFC0E"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "16915FDBAE3F4404"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					dimension: "twilightforest:twilight_forest"
+					id: "6D218371413331D8"
+					type: "dimension"
+				}
+			]
+			title: "Crepúsculo Eterno"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"56EA9004828F591D"
+			]
+			description: [
+				"Raízes que se mexem quando você não olha."
+			]
+			id: "659B127364A8C9F7"
+			rewards: [
+				{
+					count: 1
+					id: "5F97640BD4ECA98A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "4C7453B53F07E3E0"
+					item: {
+						Count: 1b
+						id: "twilightforest:liveroot"
+					}
+					type: "item"
+				}
+			]
+			title: "Raiz Viva"
+			x: 10.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"56EA9004828F591D"
+			]
+			description: [
+				"Pendem das cavernas como lanternas."
+			]
+			id: "206DE3EFAFB0DD31"
+			rewards: [
+				{
+					count: 1
+					id: "74D4AF74E49C00E1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "7935716A00E7E8D4"
+					item: {
+						Count: 1b
+						id: "twilightforest:torchberries"
+					}
+					type: "item"
+				}
+			]
+			title: "Frutos que Brilham"
+			x: 10.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"56EA9004828F591D"
+			]
+			description: [
+				"Os corvos daqui guardam segredos."
+			]
+			id: "641D33A2412F1776"
+			rewards: [
+				{
+					count: 1
+					id: "35D856BBF982028F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3003B786ABE0C888"
+					item: {
+						Count: 1b
+						id: "twilightforest:raven_feather"
+					}
+					type: "item"
+				}
+			]
+			title: "Penas de Corvo"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"659B127364A8C9F7"
+				"206DE3EFAFB0DD31"
+				"641D33A2412F1776"
+			]
+			description: [
+				"Um mapa que mostra o que a floresta esconde."
+			]
+			id: "21E1D95F3DEA17E5"
+			rewards: [
+				{
+					count: 3
+					id: "738C892FCDA562C9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3F4EB7A901F444C8"
+					item: {
+						Count: 1b
+						id: "twilightforest:magic_map"
+					}
+					type: "item"
+				}
+			]
+			title: "Mapa Mágico"
+			x: 12.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"659B127364A8C9F7"
+			]
+			description: [
+				"Madeira que aprendeu a ser metal."
+			]
+			id: "732FF55941EFFB56"
+			rewards: [
+				{
+					count: 2
+					id: "20CA6A3662D41D31"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "131467EAEC70848A"
+					item: {
+						Count: 1b
+						id: "twilightforest:ironwood_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Ferro-Madeira"
+			x: 12.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"56EA9004828F591D"
+			]
+			description: [
+				"Folhas tão duras quanto lâminas."
+			]
+			id: "47D8195DEA9457E9"
+			rewards: [
+				{
+					count: 2
+					id: "63ADCC1D8D24987D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "31BD12ACA5383D8A"
+					item: {
+						Count: 1b
+						id: "twilightforest:steeleaf_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Folha de Aço"
+			x: 10.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"21E1D95F3DEA17E5"
+			]
+			description: [
+				"Um pátio cercado de sebes. Algo se enrola lá dentro."
+			]
+			id: "245E5E0BADE6C1CA"
+			rewards: [
+				{
+					id: "6BD7766D55085CD7"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					id: "7A7C48F546D3D6D9"
+					type: "checkmark"
+				}
+			]
+			title: "O Pátio da Serpente"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"245E5E0BADE6C1CA"
+			]
+			description: [
+				"A primeira guardiã da floresta. Rápida, cega de raiva."
+			]
+			icon: "twilightforest:naga_trophy"
+			id: "70CCF7344D2A7DB8"
+			rewards: [
+				{
+					count: 1
+					id: "6F049F5071765670"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "4A99C251B58E4039"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "twilightforest:naga"
+					id: "7C363FFC402C304A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "A Naga"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70CCF7344D2A7DB8"
+			]
+			description: [
+				"Escamas que ainda se mexem."
+			]
+			id: "0041824819281A4E"
+			rewards: [
+				{
+					count: 2
+					id: "6D059A3FC0DDC832"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "32A787DCED8EAF8A"
+					item: {
+						Count: 1b
+						id: "twilightforest:naga_scale"
+					}
+					type: "item"
+				}
+			]
+			title: "Escamas da Naga"
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0041824819281A4E"
+			]
+			description: [
+				"Proteção feita da própria guardiã."
+			]
+			id: "630EECEC9B95FF47"
+			rewards: [
+				{
+					count: 2
+					id: "5E01C171E6E5FF51"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6F6C409F161D6B63"
+					item: {
+						Count: 1b
+						id: "twilightforest:naga_chestplate"
+					}
+					type: "item"
+				}
+			]
+			title: "Couraça de Escamas"
+			x: 18.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"70CCF7344D2A7DB8"
+			]
+			description: [
+				"Para lembrar que ela caiu."
+			]
+			id: "41D3BA5BD80557AA"
+			rewards: [
+				{
+					count: 2
+					id: "3C8649418B34C96A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "055466A8E6BE8C96"
+					item: {
+						Count: 1b
+						id: "twilightforest:naga_trophy"
+					}
+					type: "item"
+				}
+			]
+			title: "Troféu da Naga"
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"70CCF7344D2A7DB8"
+			]
+			description: [
+				"Encontrado em ruínas. Transforma criaturas."
+			]
+			id: "47463331291D8745"
+			rewards: [
+				{
+					count: 2
+					id: "7357A727CBFB9BA8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2530B063A70EC39A"
+					item: {
+						Count: 1b
+						id: "twilightforest:transformation_powder"
+					}
+					type: "item"
+				}
+			]
+			title: "Pó de Transformação"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"70CCF7344D2A7DB8"
+			]
+			description: [
+				"Um amuleto que recusa a morte uma vez."
+			]
+			id: "21AB5673805A1F66"
+			rewards: [
+				{
+					count: 3
+					id: "1B5E2B87CAF6221A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5B1BAAF82030B5B3"
+					item: {
+						Count: 1b
+						id: "twilightforest:charm_of_life_1"
+					}
+					type: "item"
+				}
+			]
+			title: "Amuleto da Vida"
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"70CCF7344D2A7DB8"
+				"732FF55941EFFB56"
+				"47D8195DEA9457E9"
+			]
+			description: [
+				"Uma torre de pedra branca. Os cristais lá dentro não refletem nada."
+			]
+			id: "3B05B4D39EC90752"
+			rewards: [
+				{
+					id: "57243FAE8E8A32B7"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [
+				{
+					id: "6EFB96C8CA620FDA"
+					type: "checkmark"
+				}
+			]
+			title: "A Torre Pálida"
+			x: 16.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"3B05B4D39EC90752"
+			]
+			description: [
+				"Ele escutou a floresta tempo demais."
+				"Não acredite em tudo o que ele disser."
+			]
+			icon: "twilightforest:lich_trophy"
+			id: "4100162FB5D27A9F"
+			rewards: [
+				{
+					count: 1
+					id: "44DB3DEAD44B1E96"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Morvane está pálido agora. Os cristais dele não refletem nada.\\nSe ele ainda fala, não acredite em tudo.\\nEscutou a floresta tempo demais, e a floresta escuta outra coisa.\\nTraga de volta o que ele guarda.\"}"
+							]
+							title: "Diário — Página 9"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "230534D9254A1A18"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3559D5555158FAFB"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "twilightforest:lich"
+					id: "44BC4DEC7A8CF1E3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Morvane, o Guardião Pálido"
+			x: 18.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"4100162FB5D27A9F"
+			]
+			description: [
+				"Uma coroa de ossos pálidos."
+			]
+			id: "0BEA62CE57B47FF0"
+			rewards: [
+				{
+					count: 3
+					id: "08D53BA6F4B7879A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1DCC8D3B6AB5D75F"
+					item: {
+						Count: 1b
+						id: "twilightforest:lich_trophy"
+					}
+					type: "item"
+				}
+			]
+			title: "Troféu de Morvane"
+			x: 19.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"4100162FB5D27A9F"
+			]
+			description: [
+				"O primeiro pedaço do Selo."
+				"Pesa mais do que deveria."
+			]
+			icon: "ecos:fragmento_selo_floresta"
+			id: "4C75456FC2F31094"
+			rewards: [
+				{
+					count: 1
+					id: "569012108D77D9E1"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Você tem o primeiro fragmento. Sente o peso?\\nNão é o peso da pedra. É o peso do que ela cala.\\nGuarde-o longe do fogo e longe da vaidade.\\nDaqui para baixo, a escada é mais funda.\"}"
+							]
+							title: "Diário — Página 10"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "55A9A15BE456FB20"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "58F5A17F5039E908"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_floresta"
+					}
+					type: "item"
+				}
+			]
+			title: "O Fragmento da Floresta"
+			x: 19.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"4C75456FC2F31094"
+			]
+			description: [
+				"O Fragmento da Floresta abre o caminho para baixo."
+				"No Ato II, ele vira parte do Catalisador."
+			]
+			id: "48C3BE5AEC5F352A"
+			rewards: [
+				{
+					id: "71E2CFE4648C51B2"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			tasks: [
+				{
+					id: "17CBB59EBAD1A4B6"
+					type: "checkmark"
+				}
+			]
+			title: "Uma Escada Mais Funda"
+			x: 21.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+				"56EA9004828F591D"
+			]
+			description: [
+				"Leve uma caldeira para a Twilight. As árvores se afastam do vapor."
+			]
+			id: "3BE3DF40A56833A6"
+			rewards: [
+				{
+					count: 3
+					id: "416F0DA139F519AF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "79A65A51B4A8EE20"
+					type: "checkmark"
+				}
+			]
+			title: "Vapor Sobre a Floresta"
+			x: 10.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"63F1DEC986A71F87"
+				"56EA9004828F591D"
+			]
+			description: [
+				"Trilhos de Aurend levam carga até o portal."
+			]
+			id: "77555E4954A2739E"
+			rewards: [
+				{
+					count: 3
+					id: "1D100FE7D3D8380B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "337A4F70B05B0449"
+					type: "checkmark"
+				}
+			]
+			title: "Trens Entre Mundos"
+			x: 10.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"44F5BA504FFC19E1"
+			]
+			description: [
+				"O alto-forno come coque sem parar."
+			]
+			id: "34284E80D6478EAB"
+			rewards: [
+				{
+					count: 3
+					id: "77411850CD387B9B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "3C77758B78B7AA2E"
+					item: {
+						Count: 1b
+						id: "gtceu:coke_gem"
+					}
+					type: "item"
+				}
+			]
+			title: "Coque para o Inverno"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"343D72679F96C842"
+			]
+			description: [
+				"Toda máquina a vapor pede bronze."
+			]
+			id: "395CAD2C99167F66"
+			rewards: [
+				{
+					count: 3
+					id: "7FC2F6C4899873F1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "5EA34C83486B3A62"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/bronze)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bronze de Sobra"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6E250F6F5A1780D8"
+			]
+			description: [
+				"Latão para os mecanismos finos."
+			]
+			id: "18F97B1387403190"
+			rewards: [
+				{
+					count: 3
+					id: "03F315A4E1A83ABA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "6F140F99B44C9B3C"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/brass)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Latão de Sobra"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4B341E8FE1BDA218"
+			]
+			description: [
+				"Mais circuitos, mais máquinas."
+			]
+			id: "686AE461E0AC6051"
+			rewards: [
+				{
+					count: 4
+					id: "0C97F8AE83D20B67"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "24CBC75AD9E78BBF"
+					item: {
+						Count: 1b
+						id: "gtceu:basic_electronic_circuit"
+					}
+					type: "item"
+				}
+			]
+			title: "Pensamento em Série"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4C75456FC2F31094"
+				"0525606E8F9B7829"
+			]
+			description: [
+				"A floresta está calada. A corrente corre de novo."
+				"Mas embaixo da terra, algo continua acordado."
+			]
+			icon: "gtceu:lv_machine_hull"
+			id: "08582B366014332D"
+			rewards: [
+				{
+					count: 1
+					id: "2206036D281915EE"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "6A9A1BA26F9B96CE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "333404E3D75503A5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "54461642B78B23E6"
+					type: "checkmark"
+				}
+			]
+			title: "Ferrugem Vencida"
+			x: 21.0d
+			y: 0.75d
+		}
+	]
+	title: "Ato I — Ferrugem e Engrenagens"
+}
