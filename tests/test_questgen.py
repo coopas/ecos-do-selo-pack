@@ -115,3 +115,25 @@ def test_auto_layout_by_dependency_depth():
 def test_explicit_position_wins():
     c = chapter([q("a", x=7, y=-3)], slug="l")
     assert questgen.layout(c)["a"] == (7.0, -3.0)
+
+
+def test_tag_tasks_accept_members_ingame():
+    """A task do FTB Quests (ItemTask.test) aceita um membro da tag e recusa pedra.
+    Sem adaptador registrado, o FTB Quests compara com o próprio item smart_filter e nada casa."""
+    import json
+    from paths import BUILD
+    p = BUILD / "quest_selftest.json"
+    if not p.exists():
+        pytest.skip("sem build/quest_selftest.json (rode o boot dev)")
+    probes = json.loads(p.read_text(encoding="utf-8")).get("task_probes")
+    assert probes, "selftest não testou as tasks"
+    bad = {k: v for k, v in probes.items() if not v["member_ok"] or v["outsider_ok"]}
+    assert not bad, list(bad.items())[:5]
+
+
+def test_kill_tasks_map_boss_to_task_ids():
+    """Mapa entidade → ids das tasks de kill, lido pelo script que credita todos os jogadores perto do chefe."""
+    m = questgen.kill_tasks(questgen.load_sources())
+    assert questgen.quest_id("ato1/naga#t0") in m["twilightforest:naga"]
+    assert questgen.quest_id("ato2/o_cego#t0") in m["minecraft:warden"]
+    assert all(isinstance(v, list) and v for v in m.values())

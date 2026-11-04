@@ -9,8 +9,9 @@ quests:
      tasks: [{checkmark: true}], rewards: [{coins: 5}]}
   - {slug: chamado, title: "Chame o Arauto Pelo Nome", deps: [circulo], icon: ecos:artefato_selo,
      desc: ["Use o Artefato do Selo na tigela dourada.", "Ele vem. Ilse vem junto."], tasks: [{checkmark: true}], rewards: [{xp_levels: 5}]}
-  - {slug: arauto, title: "O Arauto do Eco", deps: [chamado], shape: gear, icon: ecos:eco_do_arauto,
-     desc: ["A máquina que girava o silêncio, com alguém dentro.", "Quando ele cair, o Eco é seu."], tasks: [{item: ecos:eco_do_arauto}],
+  - {slug: arauto, title: "O Arauto do Eco", deps: [ato5/artefato], shape: gear, icon: ecos:eco_do_arauto,
+     desc: ["A máquina que girava o silêncio, com alguém dentro.", "Quando ele cair, o Eco é seu.", "Se ele adormecer, acorde-o com uma estrela do Nether."],
+     tasks: [{tag: ecos:prova_arauto}],
      rewards: [{crate: lendaria}, {coins: 25}]}
   - {slug: selar, title: "Feche a Porta", deps: [arauto], shape: gear, icon: ecos:selo_restaurado,
      desc: ["Use o Eco do Arauto.", "Ilse descansa. Você nunca mais ouve o Eco."], tasks: [{item: ecos:selo_restaurado}],

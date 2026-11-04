@@ -29,6 +29,21 @@
         "ecos:selo_restaurado",
         "ecos:poder_absorvido"
       ]
+    },
+    "ecos:prova_arauto": {
+      "set": [
+        "ecos:eco_do_arauto",
+        "ecos:selo_restaurado",
+        "ecos:poder_absorvido"
+      ]
+    },
+    "ecos:prova_artefato": {
+      "set": [
+        "ecos:artefato_selo",
+        "ecos:eco_do_arauto",
+        "ecos:selo_restaurado",
+        "ecos:poder_absorvido"
+      ]
     }
   }
 }

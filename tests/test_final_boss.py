@@ -86,3 +86,15 @@ def test_final_boss_ingame():
     assert 100 - hp["C"] == pytest.approx(15, abs=0.01)   # 10 × 1,5
     assert 100 - hp["D"] == pytest.approx(10, abs=0.01)
     assert any("ECOS_FINAL_OK" in line for line in out), out[-30:]
+
+
+def test_final_chain_cannot_be_stranded():
+    """Usar o Artefato/Eco antes de abrir a quest não pode travar o final: as tasks aceitam a prova seguinte."""
+    import questgen
+    q = {f"{c.slug}/{x['slug']}": x for c in questgen.load_sources() for x in c.quests}
+    assert q["final/arauto"]["tasks"] == [{"tag": "ecos:prova_arauto"}]
+    assert q["ato5/artefato"]["tasks"] == [{"tag": "ecos:prova_artefato"}]
+    assert "final/chamado" not in q["final/arauto"]["deps"] and "chamado" not in q["final/arauto"]["deps"]
+    tags = json.loads((PACK / "kubejs/ecos/tags.json").read_text(encoding="utf-8"))["item"]
+    assert set(tags["ecos:prova_arauto"]["set"]) == {"ecos:eco_do_arauto", "ecos:selo_restaurado", "ecos:poder_absorvido"}
+    assert "ecos:artefato_selo" in tags["ecos:prova_artefato"]["set"]

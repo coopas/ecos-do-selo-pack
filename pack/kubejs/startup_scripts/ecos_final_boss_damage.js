@@ -13,6 +13,6 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', ev
     let src = event.getSource().getActual()  // DamageSourceKJS: atacante (dono do projétil, se houver)
     if (src && src.getTags().contains(ECOS_FINAL_TAG)) event.setAmount(event.getAmount() * 1.5)
   } catch (e) {
-    console.error('[ecos] reforço do Arauto falhou: ' + e)
+    console.warn('[ecos] reforço do Arauto falhou: ' + e)
   }
 })

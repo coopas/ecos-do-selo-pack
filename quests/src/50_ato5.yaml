@@ -61,15 +61,15 @@ quests:
   - {slug: estrelas_de_novo, title: "As Estrelas, de Novo", deps: [pedra],
      desc: ["A Pedra gastou um. Chame Ignaz outra vez."], tasks: [{item: ecos:fragmento_selo_estrelas}], rewards: [{coins: 6}]}
   - {slug: bloco_fonte, title: "Bloco de Fonte", deps: [inicio, side_ars/arquimago], desc: ["Mana condensada em pedra."],
-     tasks: [{item: ars_nouveau:source_gem_block, count: 2}], rewards: [{coins: 4}]}
+     tasks: [{item: ars_nouveau:source_gem_block}], rewards: [{coins: 4}]}
   - {slug: gema_espiritos, title: "Gema dos Espíritos", deps: [inicio, side_occultism/mestre_ocultista], desc: ["Para que os espíritos ouçam o Artefato."],
-     tasks: [{item: occultism:spirit_attuned_gem, count: 2}], rewards: [{coins: 4}]}
+     tasks: [{item: occultism:spirit_attuned_gem}], rewards: [{coins: 4}]}
   - {slug: quatro, title: "Os Quatro Fragmentos", deps: [floresta_de_novo, profundezas_de_novo, ceus_de_novo, estrelas_de_novo], shape: gear,
      icon: ecos:artefato_selo, desc: ["Os quatro juntos, nas suas mãos.", "O silêncio pesa nas quatro direções."],
      tasks: [{item: ecos:fragmento_selo_floresta}, {item: ecos:fragmento_selo_profundezas}, {item: ecos:fragmento_selo_ceus}, {item: ecos:fragmento_selo_estrelas}],
      rewards: [{coins: 8}]}
-  - {slug: artefato, title: "O Artefato do Selo", deps: [quatro, pedra, campo_zpm, bloco_fonte, gema_espiritos], shape: gear, icon: ecos:artefato_selo,
-     desc: ["Quatro fragmentos e a argamassa.", "Leve-o ao círculo de giz e chame o Arauto pelo nome."], tasks: [{item: ecos:artefato_selo}],
+  - {slug: artefato, title: "O Artefato do Selo", deps: [pedra, campo_zpm, bloco_fonte, gema_espiritos], shape: gear, icon: ecos:artefato_selo,
+     desc: ["Quatro fragmentos e a argamassa.", "Leve-o ao círculo de giz e chame o Arauto pelo nome."], tasks: [{tag: ecos:prova_artefato}],
      rewards: [{page: 30}, {crate: lendaria}, {coins: 20}]}
   - {slug: ultimo_trem, title: "O Último Trem", deps: [inicio, side_create/trilhos], desc: ["Leve tudo o que construiu até o círculo."],
      tasks: [{checkmark: true}], rewards: [{coins: 5}]}

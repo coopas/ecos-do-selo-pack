@@ -40,7 +40,7 @@
 			]
 			title: "O Círculo de Giz"
 			x: 0.0d
-			y: 0.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -67,15 +67,16 @@
 			]
 			title: "Chame o Arauto Pelo Nome"
 			x: 1.5d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
-				"6545FC6B6E544A21"
+				"246302F51422A41D"
 			]
 			description: [
 				"A máquina que girava o silêncio, com alguém dentro."
 				"Quando ele cair, o Eco é seu."
+				"Se ele adormecer, acorde-o com uma estrela do Nether."
 			]
 			icon: "ecos:eco_do_arauto"
 			id: "3D643E4320D6EEAF"
@@ -109,14 +110,17 @@
 					id: "592BD79573BD1D14"
 					item: {
 						Count: 1b
-						id: "ecos:eco_do_arauto"
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ecos:prova_arauto)"
+						}
 					}
 					type: "item"
 				}
 			]
 			title: "O Arauto do Eco"
-			x: 3.0d
-			y: 0.0d
+			x: 0.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -160,8 +164,8 @@
 				}
 			]
 			title: "Feche a Porta"
-			x: 4.5d
-			y: -0.75d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -205,8 +209,8 @@
 				}
 			]
 			title: "Abra a Sua"
-			x: 4.5d
-			y: 0.75d
+			x: 1.5d
+			y: 1.5d
 		}
 	]
 	title: "O Eco Final"

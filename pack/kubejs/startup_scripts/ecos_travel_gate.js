@@ -6,7 +6,7 @@ if (!ECOS_TRAVEL) throw new Error('[ecos] kubejs/ecos/travel.json ausente ou inv
 let EcosComponent = Java.loadClass('net.minecraft.network.chat.Component')
 
 ForgeEvents.onEvent('net.minecraftforge.event.entity.EntityTravelToDimensionEvent', event => {
-  try { ecosTravelGate(event) } catch (e) { console.error('[ecos] trava de viagem falhou: ' + e) }  // erro aqui derrubaria o servidor
+  try { ecosTravelGate(event) } catch (e) { console.warn('[ecos] trava de viagem falhou: ' + e) }  // erro aqui derrubaria o servidor
 })
 
 function ecosTravelGate(event) {

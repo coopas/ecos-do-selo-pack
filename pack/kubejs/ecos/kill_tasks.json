@@ -1,0 +1,34 @@
+{
+ "kills": {
+  "twilightforest:naga": [
+   "7C363FFC402C304A"
+  ],
+  "twilightforest:lich": [
+   "44BC4DEC7A8CF1E3"
+  ],
+  "undergarden:forgotten_guardian": [
+   "2F2BA093F34AF01B"
+  ],
+  "minecraft:warden": [
+   "2B0077A76AC9B6A9"
+  ],
+  "aether:slider": [
+   "1563728C5B8646B6"
+  ],
+  "aether:valkyrie_queen": [
+   "69B96F260BF5404B"
+  ],
+  "aether:sun_spirit": [
+   "26FD53BC2D338C90"
+  ],
+  "blue_skies:summoner": [
+   "098CB606B3ED178A"
+  ],
+  "blue_skies:starlit_crusher": [
+   "586EABF5787C20B3"
+  ],
+  "cataclysm:ignis": [
+   "0F85FEBE4B6CE293"
+  ]
+ }
+}

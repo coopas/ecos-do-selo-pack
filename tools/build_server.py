@@ -14,7 +14,7 @@ TEMPLATE = ROOT / "tools" / "server_template"
 BOOTSTRAP_URL = "https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar"
 FORGE_URL = "https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-{v}/forge-1.20.1-{v}-installer.jar"
 SERVE_PORT = 8089
-KEEP_IF_EXISTS = {"server.properties", "eula.txt", "user_jvm_args.txt"}
+KEEP_IF_EXISTS = {"server.properties", "user_jvm_args.txt"}  # eula.txt sempre volta a false
 UA = {"User-Agent": "ecos-do-selo-modpack-builder"}
 
 

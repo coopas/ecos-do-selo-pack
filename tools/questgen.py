@@ -17,6 +17,7 @@ from paths import PACK, ROOT
 SRC = ROOT / "quests" / "src"
 OUT = PACK / "config" / "ftbquests" / "quests"
 QUEST_TAGS = PACK / "kubejs" / "ecos" / "quest_tags.json"
+KILL_TASKS = PACK / "kubejs" / "ecos" / "kill_tasks.json"
 TABLES_SRC = ROOT / "quests" / "reward_tables.yaml"
 LORE = ROOT / "docs" / "lore.md"
 BOOK_PAGE_CHARS = 230
@@ -200,6 +201,17 @@ def used_tags(chapters: list[Chapter]) -> set[str]:
     return {t["tag"] for c in chapters for q in c.quests for t in q.get("tasks", []) if "tag" in t}
 
 
+def kill_tasks(chapters: list[Chapter]) -> dict[str, list[str]]:
+    """Entidade → ids (hex) das tasks de kill. O script 35_ecos_kill_share.js credita todo jogador perto do chefe."""
+    out: dict[str, list[str]] = {}
+    for c in chapters:
+        for q in c.quests:
+            for i, t in enumerate(q.get("tasks", [])):
+                if "kill" in t:
+                    out.setdefault(t["kill"], []).append(quest_id(f"{c.slug}/{q['slug']}#t{i}"))
+    return out
+
+
 def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
     known = all_paths(chapters)
     files: dict[str, str] = {}
@@ -250,6 +262,7 @@ def write(out: Path = OUT, chapters: list[Chapter] | None = None, tables: dict |
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(text, encoding="utf-8")
     QUEST_TAGS.write_text(json.dumps({"tags": sorted(used_tags(chapters))}, indent=1) + "\n", encoding="utf-8")
+    KILL_TASKS.write_text(json.dumps({"kills": kill_tasks(chapters)}, indent=1) + "\n", encoding="utf-8")
     return sum(len(c.quests) for c in chapters)
 
 

@@ -74,3 +74,11 @@ def test_accept_eula_temporarily_restores(tmp_path):
     with build_server.eula_accepted(tmp_path):
         assert (tmp_path / "eula.txt").read_text() == "eula=true\n"
     assert (tmp_path / "eula.txt").read_text() == "eula=false\n"
+
+
+def test_rebuild_resets_stale_eula(tmp_path):
+    """Um teste interrompido pode deixar eula=true: o rebuild sempre volta para o eula=false do template."""
+    build_server.copy_template(tmp_path, "47.4.28")
+    (tmp_path / "eula.txt").write_text("eula=true\n")
+    build_server.copy_template(tmp_path, "47.4.28")
+    assert "eula=false" in (tmp_path / "eula.txt").read_text()

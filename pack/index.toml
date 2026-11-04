@@ -26,11 +26,11 @@ hash = "5eb47a8a697ec7a28e563a4bce1273792ea4e75bf7dbdf5c44872ad0609c0ec5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato5.snbt"
-hash = "08078e204a3aac4ca2d575030b6d5520df9f69b219cbcd528ae9bf45892d62be"
+hash = "b3fc9ff253fea76d440fd217330e15e470da17ab3756df44d1353dd2ece2a56e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/final.snbt"
-hash = "81a5c4796bb541a4816e812f249761773c7330adf208ccd149bfb1f8e1861c2d"
+hash = "fea041882dc4e3cb1e5b0ac3db71ef003b36c47c177fe95f4221c490f89131b3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/loja.snbt"
@@ -134,8 +134,12 @@ file = "kubejs/ecos/items.json"
 hash = "1865b9bd9706a805e11eda282229bbefc394eb1ea2862b9d1a94d802b9a81349"
 
 [[files]]
+file = "kubejs/ecos/kill_tasks.json"
+hash = "1eb4ae14e5f16f7d2038e2e701ad54646260ba2c931283edfad0544b75c79af2"
+
+[[files]]
 file = "kubejs/ecos/quest_tags.json"
-hash = "98655d3066aec82a5f9224decb5e250d221030281b80f17a239b8ff5c94b8502"
+hash = "f403d62faddd2caea503d0d047c9679461b12aea6bd1172d8777015cb76466fa"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
@@ -143,7 +147,7 @@ hash = "78e071e636852fa316901eed512e5ceaf9844fa55d230470e11631b4e77826f8"
 
 [[files]]
 file = "kubejs/ecos/tags.json"
-hash = "9008657cd8822cb15ed085e1b1c46a2106cd41881c405f9a57be58a2d575c131"
+hash = "50a5baa6ff0eebfc3335a8b73199cc4e15c3848e001e575e12a583028ded56f2"
 
 [[files]]
 file = "kubejs/ecos/travel.json"
@@ -162,20 +166,28 @@ file = "kubejs/server_scripts/30_ecos_boss_drops.js"
 hash = "e3fee437349f7fa327ca810f498d33bb9d1ddd2ee7e978c3ecbf2498cafab43a"
 
 [[files]]
+file = "kubejs/server_scripts/35_ecos_kill_share.js"
+hash = "2f94dd2d02670031be8aaca83894131880ed5c547145c99fea0bf503d7bd9244"
+
+[[files]]
 file = "kubejs/server_scripts/40_ecos_final_boss.js"
-hash = "f6787de92d8f1ab3f386004f3c723902d7e0e26c7eec3472da69f7628bd9a65c"
+hash = "800127ec63498dcccdc206180f1d17f93117bdd3fd8fda2bb30f830767d614e7"
 
 [[files]]
 file = "kubejs/server_scripts/dev/quest_selftest.js"
-hash = "3c8358dcb62b231846c7a628175ba28e6d31ceceeb0912712aba036a031e0841"
+hash = "b381a5cb30ec8a93aa4ebd743b8d5ff3940c5f461ec478367852b8d2e2d9042d"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
 hash = "ffb012bd3a9ba99dd3a3ce4620d74973d3c7fe6e30564aa38343691e5a028f58"
 
 [[files]]
+file = "kubejs/startup_scripts/ecos_filter_adapter.js"
+hash = "2426e37a7da12683af50a488ffe0dad84565e4b021359bcb1245c05a456b4a6e"
+
+[[files]]
 file = "kubejs/startup_scripts/ecos_final_boss_damage.js"
-hash = "e7ddbec63d294ccba7830f6167d20fb1cbae4e59833ecbd5cba7a52d4955940a"
+hash = "422ad33a1a86d3befb0cbf526551fe1779630d354b2172e2796007b4b7cf4b27"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_items.js"
@@ -183,7 +195,7 @@ hash = "7a4e158f5ead8d5f4f3a29e3b92e509858f237436e007d300c428c914130693f"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_travel_gate.js"
-hash = "92bd2d8e74d8c90c0d2a82a97f941f2184cf59bd9793eeb781bae2f25f5cf02e"
+hash = "4aeb863d6be80c6cb74cc3b3e0e82d64cb8c0c197ba0828ebef64df3ce1ad876"
 
 [[files]]
 file = "mods/ad-astra.pw.toml"
