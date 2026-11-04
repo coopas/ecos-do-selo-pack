@@ -1,0 +1,18 @@
+{
+  "fluid_tags": {
+    "forge:diesel": ["gtceu:diesel"],
+    "forge:gasoline": ["gtceu:gasoline", "gtceu:high_octane_gasoline"],
+    "forge:biodiesel": ["gtceu:bio_diesel"],
+    "forge:ethanol": ["gtceu:ethanol"],
+    "forge:crude_oil": ["gtceu:oil", "ad_astra:oil"]
+  },
+  "gt_combustion_clones": {
+    "gtceu:diesel": "createdieselgenerators:diesel",
+    "gtceu:gasoline": "createdieselgenerators:gasoline",
+    "gtceu:bio_diesel": "createdieselgenerators:biodiesel",
+    "gtceu:ethanol": "createdieselgenerators:ethanol"
+  },
+  "gt_distillation_clones": {
+    "gtceu:oil": "createdieselgenerators:crude_oil"
+  }
+}

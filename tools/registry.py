@@ -16,6 +16,7 @@ class Registry:
     item_tags: dict[str, set[str]] = field(default_factory=dict)
     block_tags: dict[str, set[str]] = field(default_factory=dict)
     dimensions: set[str] = field(default_factory=set)
+    fluid_tags: dict[str, set[str]] = field(default_factory=dict)
 
     def has_item(self, id_: str) -> bool:
         return id_ in self.items
@@ -35,6 +36,12 @@ class Registry:
     def has_fluid(self, id_: str) -> bool:
         return id_ in self.fluids
 
+    def has_fluid_tag(self, tag: str) -> bool:
+        return _tag(tag) in self.fluid_tags
+
+    def fluid_tag_fluids(self, tag: str) -> set[str]:
+        return self.fluid_tags.get(_tag(tag), set())
+
     def has_entity(self, id_: str) -> bool:
         return id_ in self.entities
 
@@ -44,4 +51,5 @@ def load(path: Path | str) -> Registry:
     return Registry(set(d["items"]), set(d["fluids"]), set(d["entities"]),
                     {k: set(v) for k, v in d["item_tags"].items()},
                     {k: set(v) for k, v in d.get("block_tags", {}).items()},
-                    set(d.get("dimensions", [])))
+                    set(d.get("dimensions", [])),
+                    {k: set(v) for k, v in d.get("fluid_tags", {}).items()})

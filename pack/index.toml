@@ -326,6 +326,10 @@ file = "kubejs/ecos/boss_drops.json"
 hash = "9690d73a987dd7e5e8fb14d69f800541ef38f52a87ebef3e5813d57eb9230615"
 
 [[files]]
+file = "kubejs/ecos/fuels.json"
+hash = "eb9a342dfc7b3b1b1988e31943c958de550e5c0a3679a8ea8ebe86bb116fcf0d"
+
+[[files]]
 file = "kubejs/ecos/items.json"
 hash = "cdb9126c2fe67bbc9cb83bb1838ff95d1dd0787182831c6b6f0e126d66259073"
 
@@ -358,6 +362,10 @@ file = "kubejs/server_scripts/10_ecos_tags.js"
 hash = "2911a2e99a424ac334f35aec3a7221d574e4bf9d0a95c0df925f6dccf25a4562"
 
 [[files]]
+file = "kubejs/server_scripts/15_ecos_fuels.js"
+hash = "290a4574c51a7aaca5b9281d89b71e1b4e81b55427c3edb7ba8a624da1eef9a1"
+
+[[files]]
 file = "kubejs/server_scripts/20_ecos_recipes.js"
 hash = "9f136b7c0785c7eb03ed157ea67810def4bd47902e8d3f6a495d3f99882f7924"
 
@@ -374,6 +382,10 @@ file = "kubejs/server_scripts/40_ecos_final_boss.js"
 hash = "800127ec63498dcccdc206180f1d17f93117bdd3fd8fda2bb30f830767d614e7"
 
 [[files]]
+file = "kubejs/server_scripts/dev/fuel_check.js"
+hash = "a8c660509ded6d97bbbbc817dade3e9d1e4b67df997d99b063f1b2b30e660edd"
+
+[[files]]
 file = "kubejs/server_scripts/dev/mob_gear_check.js"
 hash = "b5311c266ed16fe44efbf534d7a4f58f91d405dee959c69ef21eefb9750b58fe"
 
@@ -383,7 +395,7 @@ hash = "ff4168826ded6dd917094d33e65dfd84a0c8ad1a3f6fc2ed716dce7348a7b9a2"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
-hash = "ffb012bd3a9ba99dd3a3ce4620d74973d3c7fe6e30564aa38343691e5a028f58"
+hash = "1d4fb4bda9be1dd56b6bee23dea0682e665ab216ae3529644848190813e3c1b3"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_final_boss_damage.js"
@@ -460,6 +472,11 @@ metafile = true
 [[files]]
 file = "mods/corail-tombstone.pw.toml"
 hash = "1c13027e001351c56add29c050f40f3bfd6ec3523f1b9ebec9e99e0d0dab310d"
+metafile = true
+
+[[files]]
+file = "mods/create-diesel-generators.pw.toml"
+hash = "a2f1254c52f3ed1efcaf0e260de426819416d0e35c840e9e8f9cb9c0fabcf4d0"
 metafile = true
 
 [[files]]

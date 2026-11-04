@@ -41,6 +41,7 @@ ServerEvents.loaded(event => {
     item_tags: itemTags,
     dimensions: ecosDimensions(event.server),
     block_tags: tagsOf(R.BLOCK),
+    fluid_tags: tagsOf(R.FLUID),
     emc_gtceu_nonzero: emcGtNonzero,
     emc_sanity_dirt: Number(emcProxy['getValue(net.minecraft.world.item.ItemStack)'](Item.of('minecraft:dirt')))
   })
