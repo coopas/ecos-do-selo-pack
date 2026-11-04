@@ -1,6 +1,6 @@
 chapter: side_projecte
 title: "Caminho — A Alquimia Proibida"
-icon: projecte:philosophers_stone
+icon: "ecos:textures/gui/chapters/side_projecte.png"
 group: caminhos
 act: 5
 quests:

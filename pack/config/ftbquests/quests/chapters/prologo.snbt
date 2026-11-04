@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "prologo"
 	group: "5395DF7F49D69073"
-	icon: "minecraft:oak_sapling"
+	icon: "ecos:textures/gui/chapters/prologo.png"
 	id: "7504450DA60854BE"
 	images: [ ]
 	order_index: 0
@@ -12,6 +12,7 @@
 		{
 			dependencies: [ ]
 			description: [
+				"{image:ecos:textures/gui/quests/despertar.png width:200 height:112 align:center}"
 				"Você acorda entre ruínas. Nada aqui parece novo."
 				"Há um diário rasgado a seus pés."
 			]

@@ -1,7 +1,7 @@
 {
 	empty_weight: 0.0f
 	filename: "lendaria"
-	icon: "ftbquests:lootcrate"
+	icon: "ecos:textures/gui/crates/lendaria.png"
 	id: "65C6D605FBD7298A"
 	loot_crate: {
 		color: 15905331

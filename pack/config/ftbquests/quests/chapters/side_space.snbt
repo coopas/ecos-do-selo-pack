@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_space"
 	group: "30D1DA93FF981B37"
-	icon: "ad_astra:tier_1_rocket"
+	icon: "ecos:textures/gui/chapters/side_space.png"
 	id: "03C95E32454BB474"
 	images: [ ]
 	order_index: 12

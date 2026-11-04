@@ -1,6 +1,6 @@
 chapter: side_gt_mv_ev
 title: "Caminho — Alta Tensão"
-icon: gtceu:hv_machine_hull
+icon: "ecos:textures/gui/chapters/side_gt_mv_ev.png"
 group: caminhos
 act: 3
 quests:

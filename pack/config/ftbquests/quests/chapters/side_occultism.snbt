@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_occultism"
 	group: "30D1DA93FF981B37"
-	icon: "occultism:chalk_white"
+	icon: "ecos:textures/gui/chapters/side_occultism.png"
 	id: "2955894FA2AFC449"
 	images: [ ]
 	order_index: 7

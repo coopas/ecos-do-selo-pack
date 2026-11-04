@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "final"
 	group: "5395DF7F49D69073"
-	icon: "ecos:eco_do_arauto"
+	icon: "ecos:textures/gui/chapters/final.png"
 	id: "652657F1AC873FF1"
 	images: [ ]
 	order_index: 15
@@ -74,6 +74,7 @@
 				"246302F51422A41D"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/arauto.png width:200 height:112 align:center}"
 				"A máquina que girava o silêncio, com alguém dentro."
 				"Quando ele cair, o Eco é seu."
 				"Se ele adormecer, acorde-o com uma estrela do Nether."

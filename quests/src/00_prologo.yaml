@@ -1,10 +1,10 @@
 chapter: prologo
 title: "Prólogo — O Despertar"
-icon: minecraft:oak_sapling
+icon: "ecos:textures/gui/chapters/prologo.png"
 group: atos
 act: 0
 quests:
-  - {slug: despertar, title: "O Despertar", icon: minecraft:written_book, shape: gear,
+  - {slug: despertar, image: "ecos:textures/gui/quests/despertar.png", title: "O Despertar", icon: minecraft:written_book, shape: gear,
      desc: ["Você acorda entre ruínas. Nada aqui parece novo.", "Há um diário rasgado a seus pés."],
      tasks: [{checkmark: true}], rewards: [{page: 1}, {coins: 2}]}
   - {slug: madeira, title: "Árvores Tortas", deps: [despertar],

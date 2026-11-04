@@ -1,10 +1,10 @@
 chapter: ato4
 title: "Ato IV — Além do Véu"
-icon: ad_astra:tier_1_rocket
+icon: "ecos:textures/gui/chapters/ato4.png"
 group: atos
 act: 4
 quests:
-  - {slug: inicio, title: "O Som Mais Perto", deps: [ato3/fim_ato3], shape: gear, icon: minecraft:bell,
+  - {slug: inicio, image: "ecos:textures/gui/quests/ato4.png", title: "O Som Mais Perto", deps: [ato3/fim_ato3], shape: gear, icon: minecraft:bell,
      desc: ["Toda noite, o mesmo som, um pouco mais perto.", "Aurend construiu foguetes para calá-lo."], tasks: [{checkmark: true}],
      rewards: [{page: 22}, {coins: 4}]}
   - {slug: tungstenio, title: "Tungstênio", deps: [inicio], desc: ["O metal mais teimoso do mundo."],
@@ -68,7 +68,7 @@ quests:
      rewards: [{xp_levels: 3}]}
   - {slug: cinzas, title: "Cinzas Ardentes", deps: [forja_nether], desc: ["Caem dos Revenants em chamas, ou se juntam de brasas morrendo."],
      tasks: [{item: cataclysm:burning_ashes}], rewards: [{coins: 4}]}
-  - {slug: ignaz, title: "Ignaz, o Fundidor", deps: [cinzas, side_irons/livro_diamante, side_ars/arquimago], shape: gear, icon: cataclysm:ignitium_ingot,
+  - {slug: ignaz, image: "ecos:textures/gui/quests/ignaz.png", title: "Ignaz, o Fundidor", deps: [cinzas, side_irons/livro_diamante, side_ars/arquimago], shape: gear, icon: cataclysm:ignitium_ingot,
      desc: ["Ele funde até hoje, sem saber para quem.", "Mate-o com piedade. Ele está cansado."], tasks: [{kill: cataclysm:ignis}],
      rewards: [{page: 25}, {crate: lendaria}, {coins: 15}]}
   - {slug: ignitio, title: "Ignítio", deps: [ignaz], desc: ["O metal que Ignaz deixou para trás."],

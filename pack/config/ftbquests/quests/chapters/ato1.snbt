@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "ato1"
 	group: "5395DF7F49D69073"
-	icon: "create:cogwheel"
+	icon: "ecos:textures/gui/chapters/ato1.png"
 	id: "2E0466C296BA2363"
 	images: [ ]
 	order_index: 1
@@ -14,6 +14,7 @@
 				"1EF81770020C14AA"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/ato1.png width:200 height:112 align:center}"
 				"Vapor e mana, eixo e runa."
 				"As máquinas de Aurend esperam por alguém que as lembre."
 			]
@@ -1175,6 +1176,7 @@
 				"3B05B4D39EC90752"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/morvane.png width:200 height:112 align:center}"
 				"Ele escutou a floresta tempo demais."
 				"Não acredite em tudo o que ele disser."
 			]

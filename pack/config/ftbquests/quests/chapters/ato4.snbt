@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "ato4"
 	group: "5395DF7F49D69073"
-	icon: "ad_astra:tier_1_rocket"
+	icon: "ecos:textures/gui/chapters/ato4.png"
 	id: "6AA9373F0A774A45"
 	images: [ ]
 	order_index: 11
@@ -14,6 +14,7 @@
 				"73C3F25D63C2625C"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/ato4.png width:200 height:112 align:center}"
 				"Toda noite, o mesmo som, um pouco mais perto."
 				"Aurend construiu foguetes para calá-lo."
 			]
@@ -1128,6 +1129,7 @@
 				"40404AD0A95B4364"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/ignaz.png width:200 height:112 align:center}"
 				"Ele funde até hoje, sem saber para quem."
 				"Mate-o com piedade. Ele está cansado."
 			]

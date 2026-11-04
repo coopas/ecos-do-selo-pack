@@ -1,6 +1,6 @@
 chapter: side_occultism
 title: "Caminho — Os que Servem"
-icon: occultism:chalk_white
+icon: "ecos:textures/gui/chapters/side_occultism.png"
 group: caminhos
 act: 2
 quests:

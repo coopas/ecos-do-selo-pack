@@ -1,7 +1,7 @@
 {
 	empty_weight: 0.0f
 	filename: "epica"
-	icon: "ftbquests:lootcrate"
+	icon: "ecos:textures/gui/crates/epica.png"
 	id: "2EE85FF6F3AEB593"
 	loot_crate: {
 		color: 10767323

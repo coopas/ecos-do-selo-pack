@@ -110,3 +110,9 @@ def test_natural_tag_entries_expand():
     chapters = [ch([start(), q("x", deps=["despertar"], tasks=[{"item": "minecraft:red_bed"}], allow_exact="t")])]
     errs = questcheck.check(chapters, REG, REC, {"plants": ["#minecraft:beds"]}, VARIANTS, boss_drops={})
     assert errs == []
+
+
+def test_missing_icon_and_image_reported():
+    errs = run([ch([start(), q("x", deps=["despertar"], icon="mod:sem_icone", image="ecos:textures/gui/quests/nada.png")])])
+    assert any("ícone mod:sem_icone" in e for e in errs)
+    assert any("imagem ecos:textures/gui/quests/nada.png" in e for e in errs)

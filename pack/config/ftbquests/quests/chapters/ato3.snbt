@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "ato3"
 	group: "5395DF7F49D69073"
-	icon: "ecos:chave_celeste"
+	icon: "ecos:textures/gui/chapters/ato3.png"
 	id: "25AAB2F034CE7B3D"
 	images: [ ]
 	order_index: 8
@@ -14,6 +14,7 @@
 				"10511E6CE35464FB"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/ato3.png width:200 height:112 align:center}"
 				"As ilhas não flutuam."
 				"Elas foram arrancadas."
 			]
@@ -865,6 +866,7 @@
 				"56D335F7D074C394"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/solenne.png width:200 height:112 align:center}"
 				"Ela prometeu que nenhuma vela se apagaria."
 				"Ela ainda vive. As velas também."
 			]

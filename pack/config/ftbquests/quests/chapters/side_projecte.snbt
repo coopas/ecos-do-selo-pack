@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_projecte"
 	group: "30D1DA93FF981B37"
-	icon: "projecte:philosophers_stone"
+	icon: "ecos:textures/gui/chapters/side_projecte.png"
 	id: "5575458632A4C744"
 	images: [ ]
 	order_index: 14

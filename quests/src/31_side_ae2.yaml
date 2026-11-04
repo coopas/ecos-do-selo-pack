@@ -1,6 +1,6 @@
 chapter: side_ae2
 title: "Caminho — A Rede Que Lembra"
-icon: ae2:controller
+icon: "ecos:textures/gui/chapters/side_ae2.png"
 group: caminhos
 act: 3
 quests:

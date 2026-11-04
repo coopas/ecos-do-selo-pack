@@ -1,6 +1,6 @@
 chapter: side_create
 title: "Caminho — Engrenagens de Aurend"
-icon: create:cogwheel
+icon: "ecos:textures/gui/chapters/side_create.png"
 group: caminhos
 act: 1
 quests:

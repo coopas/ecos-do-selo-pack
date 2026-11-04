@@ -6,9 +6,10 @@ import tomllib
 import zipfile
 from pathlib import Path
 
-from paths import BUILD, CACHE, PACK
+from paths import BUILD, CACHE, PACK, ROOT
 
 INSTANCE_NAME = "Ecos do Selo"
+ICON = ROOT / "tools" / "prism" / "ecos_do_selo.png"
 
 
 def instance_cfg(pack_url: str, name: str = INSTANCE_NAME) -> str:
@@ -17,7 +18,7 @@ def instance_cfg(pack_url: str, name: str = INSTANCE_NAME) -> str:
         "ConfigVersion=1.3",
         "InstanceType=OneSix",
         f"name={name}",
-        "iconKey=default",
+        "iconKey=ecos_do_selo",
         "AutomaticJava=true",
         "OverrideMemory=true",
         "MinMemAlloc=2048",
@@ -52,6 +53,9 @@ def build(pack_url: str, out: Path = BUILD / "prism", forge_version: str | None 
     (out / "instance.cfg").write_text(instance_cfg(pack_url, name), encoding="utf-8")
     (out / "mmc-pack.json").write_text(json.dumps(mmc_pack(forge_version), indent=2), encoding="utf-8")
     shutil.copy2(bootstrap_jar, out / "minecraft" / "packwiz-installer-bootstrap.jar")
+    icon = ICON if ICON.exists() else None
+    if icon:  # gerado por tools/integrate_images.py
+        shutil.copy2(icon, out / "ecos_do_selo.png")
     zpath = out.parent / f"EcosDoSelo-{pack_version}.zip"
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
         for f in sorted(out.rglob("*")):

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_ars"
 	group: "30D1DA93FF981B37"
-	icon: "ars_nouveau:source_gem"
+	icon: "ecos:textures/gui/chapters/side_ars.png"
 	id: "7F465A825294D3DE"
 	images: [ ]
 	order_index: 5

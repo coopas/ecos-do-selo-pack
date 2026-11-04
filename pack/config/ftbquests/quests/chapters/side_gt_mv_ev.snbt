@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_gt_mv_ev"
 	group: "30D1DA93FF981B37"
-	icon: "gtceu:hv_machine_hull"
+	icon: "ecos:textures/gui/chapters/side_gt_mv_ev.png"
 	id: "20C0BF1720F74F11"
 	images: [ ]
 	order_index: 10

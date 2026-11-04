@@ -1,10 +1,10 @@
 chapter: ato2
 title: "Ato II — Ecos Arcanos"
-icon: minecraft:echo_shard
+icon: "ecos:textures/gui/chapters/ato2.png"
 group: atos
 act: 2
 quests:
-  - {slug: inicio, title: "O Conhecimento Proibido", deps: [ato1/fim_ato1], shape: gear, icon: minecraft:echo_shard,
+  - {slug: inicio, image: "ecos:textures/gui/quests/ato2.png", title: "O Conhecimento Proibido", deps: [ato1/fim_ato1], shape: gear, icon: minecraft:echo_shard,
      desc: ["Máquinas não bastaram para Aurend.", "Eles também aprenderam a ouvir."], tasks: [{checkmark: true}],
      rewards: [{coins: 3}, {xp_levels: 2}]}
   - {slug: tres_escolas, title: "Três Escolas", deps: [inicio, side_ars/gema_fonte, side_irons/mesa, side_occultism/giz_branco],
@@ -62,7 +62,7 @@ quests:
      tasks: [{item: minecraft:recovery_compass}], rewards: [{coins: 3}]}
   - {slug: sensor_calibrado, title: "Sensor Calibrado", deps: [sensor, eco], desc: ["Ouve só o que você quer ouvir."],
      tasks: [{item: minecraft:calibrated_sculk_sensor}], rewards: [{coins: 3}]}
-  - {slug: o_cego, title: "O Cego Que Ouve", deps: [eco, catalisador_sculk, side_irons/livro_ferro], shape: gear, icon: minecraft:sculk_shrieker,
+  - {slug: o_cego, image: "ecos:textures/gui/quests/o_cego.png", title: "O Cego Que Ouve", deps: [eco, catalisador_sculk, side_irons/livro_ferro], shape: gear, icon: minecraft:sculk_shrieker,
      desc: ["Ele não vê. Ele não precisa.", "Cada passo seu é uma palavra que ele entende."], tasks: [{kill: minecraft:warden}],
      rewards: [{page: 15}, {crate: epica}, {coins: 10}]}
   - {slug: fragmento, title: "O Fragmento das Profundezas", deps: [o_cego], shape: gear, icon: ecos:fragmento_selo_profundezas,

@@ -1,10 +1,10 @@
 chapter: ato1
 title: "Ato I — Ferrugem e Engrenagens"
-icon: create:cogwheel
+icon: "ecos:textures/gui/chapters/ato1.png"
 group: atos
 act: 1
 quests:
-  - {slug: inicio, title: "A Ciência Perdida", deps: [prologo/fim_prologo], shape: gear, icon: create:cogwheel,
+  - {slug: inicio, image: "ecos:textures/gui/quests/ato1.png", title: "A Ciência Perdida", deps: [prologo/fim_prologo], shape: gear, icon: create:cogwheel,
      desc: ["Vapor e mana, eixo e runa.", "As máquinas de Aurend esperam por alguém que as lembre."],
      tasks: [{checkmark: true}], rewards: [{page: 5}, {coins: 3}]}
   - {slug: maquinas_lembram, title: "As Máquinas Lembram", deps: [inicio, side_create/engrenagem, side_gt_steam_lv/bronze],
@@ -74,7 +74,7 @@ quests:
      tasks: [{item: twilightforest:charm_of_life_1}], rewards: [{coins: 3}]}
   - {slug: torre_lich, title: "A Torre Pálida", deps: [naga, ferro_madeira, folha_aco],
      desc: ["Uma torre de pedra branca. Os cristais lá dentro não refletem nada."], tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
-  - {slug: morvane, title: "Morvane, o Guardião Pálido", deps: [torre_lich], shape: gear, icon: twilightforest:lich_trophy,
+  - {slug: morvane, image: "ecos:textures/gui/quests/morvane.png", title: "Morvane, o Guardião Pálido", deps: [torre_lich], shape: gear, icon: twilightforest:lich_trophy,
      desc: ["Ele escutou a floresta tempo demais.", "Não acredite em tudo o que ele disser."], tasks: [{kill: twilightforest:lich}],
      rewards: [{page: 9}, {crate: epica}, {coins: 8}]}
   - {slug: trofeu_lich, title: "Troféu de Morvane", deps: [morvane], desc: ["Uma coroa de ossos pálidos."],

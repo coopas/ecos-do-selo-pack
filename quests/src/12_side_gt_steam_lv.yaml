@@ -1,6 +1,6 @@
 chapter: side_gt_steam_lv
 title: "Caminho — Vapor e Corrente"
-icon: gtceu:lp_steam_solid_boiler
+icon: "ecos:textures/gui/chapters/side_gt_steam_lv.png"
 group: caminhos
 act: 1
 quests:

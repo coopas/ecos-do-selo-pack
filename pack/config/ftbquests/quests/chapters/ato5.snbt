@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "ato5"
 	group: "5395DF7F49D69073"
-	icon: "projecte:philosophers_stone"
+	icon: "ecos:textures/gui/chapters/ato5.png"
 	id: "16277CC31A41FB0F"
 	images: [ ]
 	order_index: 13
@@ -14,6 +14,7 @@
 				"40B3D210377E8831"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/ato5.png width:200 height:112 align:center}"
 				"A última confissão de Ilse Varrow."
 				"Leia antes de continuar."
 			]
@@ -806,6 +807,7 @@
 				"6DB440EEB917AE4B"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/ilse.png width:200 height:112 align:center}"
 				"Ilse está dentro da máquina que girava o silêncio."
 				"E o Ouvinte está com ela."
 			]

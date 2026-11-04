@@ -97,9 +97,14 @@ def load_tables(path: Path = TABLES_SRC) -> dict:
     return yaml.safe_load(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
+def image_line(q: dict) -> list[str]:
+    """Arte da quest (Plano 4) como primeira linha da descrição, no formato do FTB Quests."""
+    return [f"{{image:{q['image']} width:200 height:112 align:center}}"] if q.get("image") else []
+
+
 def build_table(slug: str, t: dict) -> dict:
     return {
-        "id": quest_id(f"table:{slug}"), "title": t["title"], "filename": slug, "icon": "ftbquests:lootcrate",
+        "id": quest_id(f"table:{slug}"), "title": t["title"], "filename": slug, "icon": f"ecos:textures/gui/crates/{slug}.png",
         "loot_size": int(t.get("loot_size", 1)), "empty_weight": snbt.Float(0.0), "use_title": True,
         "rewards": [{"id": quest_id(f"table:{slug}#e{i}"), "type": "item", "item": item_stack(e["item"]),
                      "count": int(e.get("count", 1)), "weight": snbt.Float(float(e["weight"]))}
@@ -231,7 +236,7 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
         for q in c.quests:
             path = f"{c.slug}/{q['slug']}"
             quest = {
-                "id": quest_id(path), "title": q["title"], "description": list(q.get("desc", [])),
+                "id": quest_id(path), "title": q["title"], "description": image_line(q) + list(q.get("desc", [])),
                 "x": pos[q["slug"]][0], "y": pos[q["slug"]][1],
                 "dependencies": [quest_id(resolve_dep(d, c.slug, known)) for d in q.get("deps", [])],
                 "tasks": [_task(t, quest_id(f"{path}#t{i}")) for i, t in enumerate(q.get("tasks", []))],

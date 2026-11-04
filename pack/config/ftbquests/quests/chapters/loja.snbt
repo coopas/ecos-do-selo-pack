@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "loja"
 	group: "6E393DF02F57B1F1"
-	icon: "ecos:fragmento_eco"
+	icon: "ecos:textures/gui/chapters/loja.png"
 	id: "641A76BC47428E9B"
 	images: [ ]
 	order_index: 16

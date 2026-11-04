@@ -50,3 +50,10 @@ def test_zip_contains_bootstrap(tmp_path):
     assert "instance.cfg" in names
     assert "mmc-pack.json" in names
     assert "minecraft/packwiz-installer-bootstrap.jar" in names
+
+
+def test_instance_uses_pack_icon(tmp_path):
+    """O Prism importa <iconKey>.png da raiz do zip como ícone da instância."""
+    z = built(tmp_path)
+    assert "iconKey=ecos_do_selo" in cfg(tmp_path)
+    assert "ecos_do_selo.png" in zipfile.ZipFile(z).namelist()

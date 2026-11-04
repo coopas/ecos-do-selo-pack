@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_create"
 	group: "30D1DA93FF981B37"
-	icon: "create:cogwheel"
+	icon: "ecos:textures/gui/chapters/side_create.png"
 	id: "7E7749AF5C83CB1C"
 	images: [ ]
 	order_index: 2

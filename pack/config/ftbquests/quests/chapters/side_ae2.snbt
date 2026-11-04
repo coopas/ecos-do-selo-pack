@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_ae2"
 	group: "30D1DA93FF981B37"
-	icon: "ae2:controller"
+	icon: "ecos:textures/gui/chapters/side_ae2.png"
 	id: "1E0B89AC4820D89D"
 	images: [ ]
 	order_index: 9

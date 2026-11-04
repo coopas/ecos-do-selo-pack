@@ -10,71 +10,71 @@ hash = "4e97c3c14365097666dda0fb39294bf5517877de45bde79b9d7c11b0c8558092"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato1.snbt"
-hash = "cac6d4c176d8a347de08ddd20583153b5d66d90e2007312caa4d2bb5f4cfbc2e"
+hash = "f8f10281f9c9a20b5a9f598dd4a3dff19a0ff4a7a6996868736beefe863ef4ee"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato2.snbt"
-hash = "3ffad602294ed54119423f7f9bbdc349d7cdf8ae7f9587fae7a95fc805dd7655"
+hash = "49bc0684f1b8edf61b9ff94621f24bd1e6a8b3ff82a59eae392fdaeeae8d37c9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato3.snbt"
-hash = "2ded383900793965a7062d9999527ab49a3f15d6555f774df87181b14a868040"
+hash = "f733696907126c0b20fc6bf46583f34261b45990cdbf5c238ece08b2a607c23a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato4.snbt"
-hash = "5eb47a8a697ec7a28e563a4bce1273792ea4e75bf7dbdf5c44872ad0609c0ec5"
+hash = "3f594973226ebf2c70324e793c48a73451f451b42d73b5e852d691f16b667903"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato5.snbt"
-hash = "b3fc9ff253fea76d440fd217330e15e470da17ab3756df44d1353dd2ece2a56e"
+hash = "f2b5c66bc48ca6359d03d4aef9ba83cbc0ef4536e8c4fe094cf455740346d90d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/final.snbt"
-hash = "fea041882dc4e3cb1e5b0ac3db71ef003b36c47c177fe95f4221c490f89131b3"
+hash = "f4b6c740a47b62e6b3ddca3e922e14ba7183e228ab52c400f36b5e02973c44bd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/loja.snbt"
-hash = "a2d4a2f0c61d94150f0c55d0edce4b5b92c7541105741382a85625c0e9c3c463"
+hash = "ac7ef35eafe0d7f5e1af000f754b07ed1dd76612249aa690c5af0908d0f79afb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
-hash = "95659bf7f47e39509be6b1a9c09dafffa311696a3e53ab4958293d0a31446f85"
+hash = "4ccac14b278abd5ad8608ee94f470e442d656758ebf457b44c5b52ffeff1d4a0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_ae2.snbt"
-hash = "0cb3906d14b3220309cd0fc46453b1bf44b3b685bf941bb6eb5ecd08009ed42f"
+hash = "dd8db48763436e07ae570d3453e0621725b68d48161885c5fef10eb7c36303ed"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_ars.snbt"
-hash = "51ee83d282159374433d6ecee4bbdb81adc62a6e613c5779542bf1b1391ef593"
+hash = "ee49acf8ca2dd80429273b89ed7851eb4c0d07356b6acdf972dc126ddc952285"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_create.snbt"
-hash = "ba6166a5095baf8709cc32ef729f98ec32d8c391dd3d5268d9e94ff1aac1fa66"
+hash = "58dafa1cbc917e04febea5c14c040cce9ddf099d5ccb63abfbf890c456ceba2e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_mv_ev.snbt"
-hash = "908eb0ba4c17e89eb631b5f4ebc01d35eb87debb016a817b63f71c6268100a2b"
+hash = "d6e7216a287c8ef7ef8b1f964c1ed33037cd7351efc8a57c305e15c6abf8c25a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_steam_lv.snbt"
-hash = "676e937bc7d13e2a8d1c153179729805e3ecc452fdc247f44e5e5b5cf4f3709f"
+hash = "a790dec2bc75f78de3aa1cfb9b26ac5127dbf1b4bbd89a34184b09e27b448510"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_irons.snbt"
-hash = "7b29a73bb0cfa3e392f01158fba19572d57d73f072f7d0810a933acb882495e8"
+hash = "2d3eb69739504a60a462872a536a5a5d7ec2a22ab0a0d837f415e932c94d956e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_occultism.snbt"
-hash = "5705c57bee56a0b7c034d96722867580ee41b7527b8ae794f2fd24d08d8654b2"
+hash = "63ca803663e6d32e78de93e1b21f39490328a385f1be6e8eee270dc6df4475b7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_projecte.snbt"
-hash = "05ef7ce633865f8977d0874beca83d7bae706fde4aa9fb440be5f8f711ff042f"
+hash = "d08193d6b6b50b0ba5ab166ff57ba46c7238fae969eac9875b2783fb4d569ea2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_space.snbt"
-hash = "b50691d03569e3c7848a1555142a6b21bc00ba7fef1ec257d39c2e6dbb5e3d96"
+hash = "46efd788a68f0ff12a0eac57becac02d1267d91292b6cea4cf44412ca794d421"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -82,19 +82,19 @@ hash = "e1262bfd258de38a6ba4545ab2989286949097063bd3ebf215a47b516a0744f2"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/comum.snbt"
-hash = "777cdbba99874194de3e9461559f4bd49de64146269e28b8555a927430d6b706"
+hash = "adb8be1842f31acc4d87906a5fb7a33f520c1d1838108062805c522332714a20"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/epica.snbt"
-hash = "9ae7ac2ed832453ac8840cb29a1a40741d4ec8bd4db80feff5eb2db3017d196f"
+hash = "61fa92d602456e2e2ea8fe40a0ded2e7e3e0b5411a447eab65c9e8b92e88085d"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/lendaria.snbt"
-hash = "02c217ecf42dcf42da84f90ec5ff563b1a006c806f5642d204e419ecf7c41502"
+hash = "d86fa14e76a36f403091da7d9b100b492ca46c6d5fcafb041e479cddab53b942"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/rara.snbt"
-hash = "021c495b9d22c121fee1f695dbe76a05b1b102cf60e46c92d2f32b3db93fc605"
+hash = "5c54ca523d951028585b61915a12c189e368a2393a1e089722d1039ed2074882"
 
 [[files]]
 file = "config/improvedmobs/common.toml"
@@ -122,6 +122,190 @@ file = "kubejs/assets/ecos/lang/pt_br.json"
 hash = "0cdfa357722dafc40c25a4cb19846d7883c1f2f9c8f5bced18c16d976c84c134"
 
 [[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/ato1.png"
+hash = "b675c08c2f78f3d6d244bcc987393106c3555250483053ec3514da6556f305c5"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/ato2.png"
+hash = "c36b2fab042e3ed927e6545898fb9e3c5e17dea6486cc2224f7a4d40016c90f5"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/ato3.png"
+hash = "c6cffa0cd310fdb672979646e8c7cc9c7b4b44d164e9bcd282923c7c1e27858b"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/ato4.png"
+hash = "a492c79943c2f567a56296055768413dd4a709f8b21f4ca18144d3d12ea7fb8b"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/ato5.png"
+hash = "22c079502eb776f6c75188bc916428df59bb4de3422d6fa79339bc19c7affe0d"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/final.png"
+hash = "746d34d46c14f8c8cfa5781d525c246a482c267d0c32a9b86d102916e3a9777a"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/loja.png"
+hash = "f77aa977d36d85557f1aa9bdd7bb1dcc41c8efcf1ec4a76fc750ef44a84759d3"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/prologo.png"
+hash = "d5cc1c6710141ffc53a4038fe03b060f10b9f6a70801dc116243f8a02b319c1b"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_ae2.png"
+hash = "bd9eca7c4be583cdc4641f9826ee53add5a9d313c0e8b8362b2b45b33ffb9e4e"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_ars.png"
+hash = "5153571bcb41f5f179d22816d6b3752bc2c6edb8ffeeb1226b11516ec49aeb4d"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_create.png"
+hash = "094f058adf29af00779e7dbc5ba3dc862ea478b7ba5f9c220650169c89356230"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_gt_mv_ev.png"
+hash = "6eb5b6a794ed4be201b44d23744aaeb49a38f2792d23ec85d8fab884e26d9984"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_gt_steam_lv.png"
+hash = "ce8e98f30ce3be4e59ddb41ec9324eb6623ed9fed36753689b3b22e49b9ef0f1"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_irons.png"
+hash = "f50b213570d7966156a49c152f1455d8a25b3b5bd952a2a594650a65f2fbbaf2"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_occultism.png"
+hash = "49930b8c87b0d4297096651c5ad152d87b41c8462a86e75b2b4e8a1fb209d0c0"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_projecte.png"
+hash = "b5c8e078eec9670fb47e6a469b3aa1eba7fc887d397fe76ffe3637ca42f05601"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/chapters/side_space.png"
+hash = "49c4827253187a3c8a5e7533c08d9e873fd3e25bfc7c8223f088bd0e51fca272"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/crates/comum.png"
+hash = "ec611f75c375b34262a0b688e8f24ae6b19a942a6389781d966b3a0549412672"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/crates/epica.png"
+hash = "d66ef9de09a4faf8d8aab0fb01448f9b68bcbfa3277f10dcb3ec9e4e9ee2e833"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/crates/lendaria.png"
+hash = "daece37a8f3a19148c5cb9e0c2e46144ddf979019575e5520b6bfaa40f664935"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/crates/rara.png"
+hash = "97a848f58184a37a32e92cda0ab90597a1fdce6d60319d034fccfac28817b705"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/arauto.png"
+hash = "36b5da58484b22bd98e10c10f5f6a5d69b8c7511d7b896791639508466ee7abf"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/ato1.png"
+hash = "28db3d2f90784b5e4907b57b8836fd895aeaac883a68b72a5973a66e7edc819d"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/ato2.png"
+hash = "3cb6b816e05d91360ccb03c1c3a099955d57c10126d31c24170645a7748a9e05"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/ato3.png"
+hash = "fea17c60b8127db69e64ce65ae9adea287d508c4149b8fd01d6a66320f8a4349"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/ato4.png"
+hash = "8bc59f4ae4930ac7a510b5af3c802d41987a0170ce2b5bf348079222c78c4c60"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/ato5.png"
+hash = "ba15a381105b593bd901cb36829fbd86322e6670deb545db8f0f6e578270e379"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/despertar.png"
+hash = "230bc74808dc9183dc01492478d86b8006001239da286a46547290c74a91ac7c"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/ignaz.png"
+hash = "d4d1f7d2f249cbc687a06cafcf0ba008fb80755cd9fe5dc2e29a6fd55d673efa"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/ilse.png"
+hash = "213504f604e711aca44cd34eecf844d5d41dada815acab8f586dcb34107a969f"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/morvane.png"
+hash = "b4e1e490045a22dfda8d7a303b45c93183b5d513aa6a14dadfba7fd4e100c938"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/o_cego.png"
+hash = "ef8689d17701232ad35b5bd7de6cdf2ac434c89e5ffcb85b814b404b7a6260e8"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/gui/quests/solenne.png"
+hash = "7e44b12f5c72a26b4c67789e02a835720af26a8cfacb5a57467f391f152a4d9b"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/artefato_selo.png"
+hash = "92207c6914a5cabf7eb4e7efbc697cf8c36da820259a42ed7256f4e718279442"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/chave_celeste.png"
+hash = "2c1295acbb53812ff9ebb19e995a167052d7aaf77d601a681a24bebd5d695d9b"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/chave_crepuscular.png"
+hash = "afc636947d5a81d8bee6bee6a22e4b846d12297f200ecd1a807cc0c0819cfb7c"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/eco_do_arauto.png"
+hash = "82aa7b8cdf2a26b43da4c1c8c046180515e9d895fdb51c6518ac917ddd4fd796"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/fragmento_eco.png"
+hash = "05ae3085cdfb5ed77a7fef4a082d5e4b7dc6d635a7ce870223a2f4bdce9e575c"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/fragmento_selo_ceus.png"
+hash = "c20f08dcd0846f0dcc30742e35dd844d6964f2a4bfa03d6e563252c709949e33"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/fragmento_selo_estrelas.png"
+hash = "780a7d40e7126d393eb352388edfd2fc127a9c6b202be80ba80a61dbcf7e8bbc"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/fragmento_selo_floresta.png"
+hash = "53f12dc18cbe3f78e6747b78498fffaf39de9ed6139bcbdae4700c84e293e810"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/fragmento_selo_profundezas.png"
+hash = "4bba1026a7496ddfaec7ebe099c634bc416c51b3d52210701d97bd93dfa0b964"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/poder_absorvido.png"
+hash = "cec8fc4363a50b66e6cec64b7e4758818d94efcedaeeac2d7e56dd1c0c446589"
+
+[[files]]
+file = "kubejs/assets/ecos/textures/item/selo_restaurado.png"
+hash = "296f7d909a3dadca7c6745546250c1b75e5842bf4594d98d4800be59b1873faa"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/edition.png"
+hash = "9b3aafb3483c36fd159f91577ee02916b606546c39285d8e7eef0e86ed7c33d3"
+
+[[files]]
+file = "kubejs/assets/minecraft/textures/gui/title/minecraft.png"
+hash = "b43a66f6c3d16eaeaa1708299da07f57f5507d792aaadb57c84a4755eba81e08"
+
+[[files]]
 file = "kubejs/data/ecos/recipes/ritual_entidade.json"
 hash = "d00d4847f42482e6969d1a4e397a211f1455d651c53377009791f8219b262295"
 
@@ -131,7 +315,7 @@ hash = "9690d73a987dd7e5e8fb14d69f800541ef38f52a87ebef3e5813d57eb9230615"
 
 [[files]]
 file = "kubejs/ecos/items.json"
-hash = "1865b9bd9706a805e11eda282229bbefc394eb1ea2862b9d1a94d802b9a81349"
+hash = "cdb9126c2fe67bbc9cb83bb1838ff95d1dd0787182831c6b6f0e126d66259073"
 
 [[files]]
 file = "kubejs/ecos/kill_tasks.json"

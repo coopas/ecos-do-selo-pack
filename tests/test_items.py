@@ -28,9 +28,10 @@ def test_no_duplicate_ids():
     assert len(ids) == len(set(ids))
 
 
-def test_placeholder_textures_are_vanilla():
+def test_textures_point_to_pack_art():
+    """Plano 4 trocou os placeholders vanilla pela arte própria (detalhes em tests/test_images.py)."""
     for i in items():
-        assert i["texture"].startswith("minecraft:"), i["id"]
+        assert i["texture"].startswith("ecos:item/"), i["id"]
 
 
 def lang_key(item):

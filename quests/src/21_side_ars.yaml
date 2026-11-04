@@ -1,6 +1,6 @@
 chapter: side_ars
 title: "Caminho — A Fonte"
-icon: ars_nouveau:source_gem
+icon: "ecos:textures/gui/chapters/side_ars.png"
 group: caminhos
 act: 2
 quests:

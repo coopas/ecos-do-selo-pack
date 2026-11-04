@@ -2,7 +2,7 @@
 # Itens de trava e ProjectE nunca são vendidos (tests/test_rewards.py). Cada item de tier N > 0 depende do início do Ato N.
 chapter: loja
 title: "A Banca do Eco"
-icon: ecos:fragmento_eco
+icon: "ecos:textures/gui/chapters/loja.png"
 group: loja
 act: 5
 quests:

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "side_irons"
 	group: "30D1DA93FF981B37"
-	icon: "irons_spellbooks:copper_spell_book"
+	icon: "ecos:textures/gui/chapters/side_irons.png"
 	id: "1CA24D1ABDE2A634"
 	images: [ ]
 	order_index: 6

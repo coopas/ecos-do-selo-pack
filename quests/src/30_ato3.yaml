@@ -1,10 +1,10 @@
 chapter: ato3
 title: "Ato III — Os Céus Partidos"
-icon: ecos:chave_celeste
+icon: "ecos:textures/gui/chapters/ato3.png"
 group: atos
 act: 3
 quests:
-  - {slug: inicio, title: "Olhe Para Cima", deps: [ato2/fim_ato2], shape: gear, icon: minecraft:glowstone,
+  - {slug: inicio, image: "ecos:textures/gui/quests/ato3.png", title: "Olhe Para Cima", deps: [ato2/fim_ato2], shape: gear, icon: minecraft:glowstone,
      desc: ["As ilhas não flutuam.", "Elas foram arrancadas."], tasks: [{checkmark: true}], rewards: [{page: 17}, {coins: 3}]}
   - {slug: pedra_luz, title: "Pedra de Luz", deps: [inicio], desc: ["O portal do céu é feito de luz presa em pedra."],
      tasks: [{item: minecraft:glowstone, count: 24}], rewards: [{coins: 2}]}
@@ -51,7 +51,7 @@ quests:
      desc: ["Ela só luta com quem provou valor."], tasks: [{kill: aether:valkyrie_queen}], rewards: [{crate: epica}, {coins: 8}]}
   - {slug: chave_prata, title: "Chave de Prata", deps: [rainha], desc: ["Abre o tesouro da Rainha."],
      tasks: [{item: aether:silver_dungeon_key}], rewards: [{coins: 3}]}
-  - {slug: solenne, title: "Solenne, a Chama Votiva", deps: [rainha, picareta_gravitita, side_irons/livro_ouro], shape: gear,
+  - {slug: solenne, image: "ecos:textures/gui/quests/solenne.png", title: "Solenne, a Chama Votiva", deps: [rainha, picareta_gravitita, side_irons/livro_ouro], shape: gear,
      icon: aether:gold_dungeon_key, desc: ["Ela prometeu que nenhuma vela se apagaria.", "Ela ainda vive. As velas também."],
      tasks: [{kill: aether:sun_spirit}], rewards: [{page: 20}, {crate: epica}, {coins: 12}]}
   - {slug: chave_ouro, title: "Chave de Ouro", deps: [solenne], desc: ["Abre o tesouro de Solenne."],

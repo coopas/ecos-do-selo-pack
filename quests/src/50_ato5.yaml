@@ -1,10 +1,10 @@
 chapter: ato5
 title: "Ato V — A Heresia"
-icon: projecte:philosophers_stone
+icon: "ecos:textures/gui/chapters/ato5.png"
 group: atos
 act: 5
 quests:
-  - {slug: inicio, title: "Fui Eu", deps: [ato4/fim_ato4], shape: gear, icon: minecraft:written_book,
+  - {slug: inicio, image: "ecos:textures/gui/quests/ato5.png", title: "Fui Eu", deps: [ato4/fim_ato4], shape: gear, icon: minecraft:written_book,
      desc: ["A última confissão de Ilse Varrow.", "Leia antes de continuar."], tasks: [{checkmark: true}],
      rewards: [{page: 27}, {coins: 5}]}
   - {slug: platina, title: "Platina e Paládio", deps: [inicio], desc: ["Metais nobres para a ultimíssima voltagem."],
@@ -48,7 +48,7 @@ quests:
      rewards: [{page: 28}, {coins: 5}]}
   - {slug: pedra, title: "A Pedra Filosofal", deps: [receita_pedra], shape: gear, icon: projecte:philosophers_stone,
      desc: ["Ela não cria nada. Ela troca."], tasks: [{item: projecte:philosophers_stone}], rewards: [{crate: lendaria}, {coins: 10}]}
-  - {slug: o_arauto, title: "Dentro do Arauto", deps: [pedra, side_projecte/mesa], icon: minecraft:bell,
+  - {slug: o_arauto, image: "ecos:textures/gui/quests/ilse.png", title: "Dentro do Arauto", deps: [pedra, side_projecte/mesa], icon: minecraft:bell,
      desc: ["Ilse está dentro da máquina que girava o silêncio.", "E o Ouvinte está com ela."], tasks: [{checkmark: true}],
      rewards: [{page: 29}, {coins: 6}]}
   - {slug: floresta_de_novo, title: "A Floresta, de Novo", deps: [inicio, ato1/fragmento],

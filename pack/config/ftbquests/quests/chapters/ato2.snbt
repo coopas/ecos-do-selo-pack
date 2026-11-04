@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "ato2"
 	group: "5395DF7F49D69073"
-	icon: "minecraft:echo_shard"
+	icon: "ecos:textures/gui/chapters/ato2.png"
 	id: "67C2BAB2D313D60C"
 	images: [ ]
 	order_index: 4
@@ -14,6 +14,7 @@
 				"08582B366014332D"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/ato2.png width:200 height:112 align:center}"
 				"Máquinas não bastaram para Aurend."
 				"Eles também aprenderam a ouvir."
 			]
@@ -953,6 +954,7 @@
 				"7C42FC541D8FD555"
 			]
 			description: [
+				"{image:ecos:textures/gui/quests/o_cego.png width:200 height:112 align:center}"
 				"Ele não vê. Ele não precisa."
 				"Cada passo seu é uma palavra que ele entende."
 			]

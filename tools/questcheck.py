@@ -39,11 +39,35 @@ def _reward_items(quest: dict) -> set[str]:
     return out
 
 
+def _texture_exists(rl: str) -> bool:
+    from paths import PACK
+    ns, path = rl.split(":", 1)
+    return (PACK / "kubejs" / "assets" / ns / path).exists()
+
+
+def _icon_errors(chapters, reg) -> list[str]:
+    """Ícones de capítulo/quest e artes: item que existe no registro ou imagem que existe no resource pack."""
+    errs = []
+    def ok(icon: str) -> bool:
+        return _texture_exists(icon) if icon.endswith(".png") else icon in reg.items
+    for c in chapters:
+        if not ok(c.icon):
+            errs.append(f"{c.slug}: ícone do capítulo {c.icon} não existe")
+        for q in c.quests:
+            if q.get("icon") and not ok(q["icon"]):
+                errs.append(f"{c.slug}/{q['slug']}: ícone {q['icon']} não existe")
+            if q.get("image") and not _texture_exists(q["image"]):
+                errs.append(f"{c.slug}/{q['slug']}: imagem {q['image']} não existe")
+    return errs
+
+
 def check(chapters, reg, rec, naturals: dict, variant_tags: list[str], boss_drops: dict) -> list[str]:
     errs: list[str] = []
     natural = _flatten(naturals, reg) | set(boss_drops.values())
     quests = {f"{c.slug}/{q['slug']}": (c, q) for c in chapters for q in c.quests}
     known = set(quests)
+
+    errs += _icon_errors(chapters, reg)
 
     deps: dict[str, list[str]] = {}
     for path, (c, q) in quests.items():

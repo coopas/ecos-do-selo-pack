@@ -1,6 +1,6 @@
 chapter: side_irons
 title: "Caminho — Pergaminhos e Runas"
-icon: irons_spellbooks:copper_spell_book
+icon: "ecos:textures/gui/chapters/side_irons.png"
 group: caminhos
 act: 2
 quests:

@@ -1,7 +1,7 @@
 {
 	empty_weight: 0.0f
 	filename: "comum"
-	icon: "ftbquests:lootcrate"
+	icon: "ecos:textures/gui/crates/comum.png"
 	id: "427FDA1DDFA285B8"
 	loot_crate: {
 		color: 10133670
