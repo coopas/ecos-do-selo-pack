@@ -52,6 +52,17 @@ def test_lang_pt():
         assert lang.get("block." + id_.replace(":", ".")), id_
 
 
+def test_lang_en():
+    """en_us: mesmas chaves do pt_br, texto em inglês (não uma cópia do português)."""
+    with _jar() as z:
+        pt = json.loads(z.read("assets/ecosmaquinas/lang/pt_br.json").decode("utf-8"))
+        en = json.loads(z.read("assets/ecosmaquinas/lang/en_us.json").decode("utf-8"))
+    assert set(en) == set(pt)
+    for k in pt:
+        assert en[k] and en[k] != pt[k], k
+        assert en[k].isascii(), en[k]
+
+
 def test_recipes_era():
     rs = _receitas()
     saidas = {r["result"]["item"] for r in rs.values()}

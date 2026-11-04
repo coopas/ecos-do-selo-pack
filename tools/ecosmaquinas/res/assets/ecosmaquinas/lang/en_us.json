@@ -1,6 +1,6 @@
 {
-  "block.ecosmaquinas.motor_vapor": "Motor a Vapor do Eco",
-  "block.ecosmaquinas.dinamo_cinetico_ulv": "Dínamo Cinético (ULV)",
-  "block.ecosmaquinas.dinamo_cinetico_lv": "Dínamo Cinético (LV)",
-  "block.ecosmaquinas.saida_vapor": "Saída de Vapor"
+  "block.ecosmaquinas.motor_vapor": "Echo Steam Engine",
+  "block.ecosmaquinas.dinamo_cinetico_ulv": "Kinetic Dynamo (ULV)",
+  "block.ecosmaquinas.dinamo_cinetico_lv": "Kinetic Dynamo (LV)",
+  "block.ecosmaquinas.saida_vapor": "Steam Outlet"
 }
