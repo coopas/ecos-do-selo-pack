@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "ato4"
 	group: "5395DF7F49D69073"
-	icon: "ecos:textures/gui/chapters/ato4.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/ato4.png"
+		}
+	}
 	id: "6AA9373F0A774A45"
 	images: [ ]
 	order_index: 11
@@ -18,7 +24,10 @@
 				"Toda noite, o mesmo som, um pouco mais perto."
 				"Aurend construiu foguetes para calá-lo."
 			]
-			icon: "minecraft:bell"
+			icon: {
+				Count: 1b
+				id: "minecraft:bell"
+			}
 			id: "381B0CB7049598AF"
 			rewards: [
 				{
@@ -103,7 +112,10 @@
 			description: [
 				"A liga da Insana Voltagem."
 			]
-			icon: "gtceu:tungsten_steel_ingot"
+			icon: {
+				Count: 1b
+				id: "gtceu:tungsten_steel_ingot"
+			}
 			id: "5A0DE326E2FFC83E"
 			rewards: [
 				{
@@ -360,7 +372,10 @@
 			description: [
 				"Pensa em duas coisas ao mesmo tempo. Como Ilse."
 			]
-			icon: "gtceu:quantum_processor"
+			icon: {
+				Count: 1b
+				id: "gtceu:quantum_processor"
+			}
 			id: "07A10DA118625290"
 			rewards: [
 				{
@@ -515,7 +530,10 @@
 				"Máquinas maiores que casas."
 				"Engenharia é a única oração que funciona no vácuo."
 			]
-			icon: "gtceu:assembly_line"
+			icon: {
+				Count: 1b
+				id: "gtceu:assembly_line"
+			}
 			id: "338A1131E9248243"
 			rewards: [
 				{
@@ -902,7 +920,10 @@
 			description: [
 				"Ludicrous Voltage. Até o nome é absurdo."
 			]
-			icon: "gtceu:luv_machine_hull"
+			icon: {
+				Count: 1b
+				id: "gtceu:luv_machine_hull"
+			}
 			id: "25BAC2245AB259B8"
 			rewards: [
 				{
@@ -1021,7 +1042,10 @@
 				"Alguém de Aurend chegou a Marte antes de você."
 				"Ilse reconhece os sinos."
 			]
-			icon: "minecraft:bell"
+			icon: {
+				Count: 1b
+				id: "minecraft:bell"
+			}
 			id: "08E8D787F3A6ACF9"
 			rewards: [
 				{
@@ -1069,7 +1093,10 @@
 				"No fundo do Nether há uma arena que ainda queima."
 				"Um altar de fogo espera cinzas ardentes."
 			]
-			icon: "cataclysm:altar_of_fire"
+			icon: {
+				Count: 1b
+				id: "cataclysm:altar_of_fire"
+			}
 			id: "5DF2D041099B4BC7"
 			rewards: [
 				{
@@ -1133,7 +1160,10 @@
 				"Ele funde até hoje, sem saber para quem."
 				"Mate-o com piedade. Ele está cansado."
 			]
-			icon: "cataclysm:ignitium_ingot"
+			icon: {
+				Count: 1b
+				id: "cataclysm:ignitium_ingot"
+			}
 			id: "38A50CEBCCC4B4BE"
 			rewards: [
 				{
@@ -1230,7 +1260,10 @@
 				"O quarto pedaço do Selo."
 				"Queima sem fogo."
 			]
-			icon: "ecos:fragmento_selo_estrelas"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_estrelas"
+			}
 			id: "1A6F45F683CB29FE"
 			rewards: [
 				{
@@ -1267,7 +1300,10 @@
 				"Quatro fragmentos. Falta o que os unia."
 				"Você sabe o que é. Ilse sabe o que é."
 			]
-			icon: "ecos:fragmento_selo_floresta"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_floresta"
+			}
 			id: "56CACA22B80D3980"
 			rewards: [
 				{
@@ -1379,7 +1415,10 @@
 				"Quatro fragmentos nas mãos."
 				"As estrelas é que estão dentro dele."
 			]
-			icon: "ecos:fragmento_selo_estrelas"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_estrelas"
+			}
 			id: "40B3D210377E8831"
 			rewards: [
 				{

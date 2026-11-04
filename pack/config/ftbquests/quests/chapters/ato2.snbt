@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "ato2"
 	group: "5395DF7F49D69073"
-	icon: "ecos:textures/gui/chapters/ato2.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/ato2.png"
+		}
+	}
 	id: "67C2BAB2D313D60C"
 	images: [ ]
 	order_index: 4
@@ -18,7 +24,10 @@
 				"Máquinas não bastaram para Aurend."
 				"Eles também aprenderam a ouvir."
 			]
-			icon: "minecraft:echo_shard"
+			icon: {
+				Count: 1b
+				id: "minecraft:echo_shard"
+			}
 			id: "5B2472E6D301448E"
 			rewards: [
 				{
@@ -150,7 +159,10 @@
 				"Um coração de pedra que bate devagar."
 				"Acenda um portal de pedra-de-profundeza com ele."
 			]
-			icon: "undergarden:catalyst"
+			icon: {
+				Count: 1b
+				id: "undergarden:catalyst"
+			}
 			id: "5B198A883DD695FC"
 			rewards: [
 				{
@@ -187,7 +199,10 @@
 				"Aqui embaixo, ninguém nunca viu o sol."
 				"As plantas brilham para não esquecer como é a luz."
 			]
-			icon: "undergarden:depthrock"
+			icon: {
+				Count: 1b
+				id: "undergarden:depthrock"
+			}
 			id: "1CE412B49BFC1ACD"
 			rewards: [
 				{
@@ -699,7 +714,10 @@
 				"As Cidades Antigas não são ruínas de outro povo."
 				"São Aurend. Sempre foram."
 			]
-			icon: "minecraft:sculk_catalyst"
+			icon: {
+				Count: 1b
+				id: "minecraft:sculk_catalyst"
+			}
 			id: "2C46E5C42C8CDBB4"
 			rewards: [
 				{
@@ -850,7 +868,10 @@
 				"Pedaços de som que ficaram presos."
 				"Ilse dizia que dá para ouvir vozes dentro deles."
 			]
-			icon: "minecraft:echo_shard"
+			icon: {
+				Count: 1b
+				id: "minecraft:echo_shard"
+			}
 			id: "52A3270F735000A1"
 			rewards: [
 				{
@@ -958,7 +979,10 @@
 				"Ele não vê. Ele não precisa."
 				"Cada passo seu é uma palavra que ele entende."
 			]
-			icon: "minecraft:sculk_shrieker"
+			icon: {
+				Count: 1b
+				id: "minecraft:sculk_shrieker"
+			}
 			id: "450FE7E71DBEBBF7"
 			rewards: [
 				{
@@ -1021,7 +1045,10 @@
 				"O segundo pedaço do Selo."
 				"Está frio, e ainda vibra."
 			]
-			icon: "ecos:fragmento_selo_profundezas"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_profundezas"
+			}
 			id: "3BCA350B588D9B72"
 			rewards: [
 				{
@@ -1109,7 +1136,10 @@
 				"Use o coração num portal de sculk numa Cidade Antiga."
 				"Do outro lado, o eco nunca para."
 			]
-			icon: "deeperdarker:echo_log"
+			icon: {
+				Count: 1b
+				id: "deeperdarker:echo_log"
+			}
 			id: "2BD513D9BC46C9A1"
 			rewards: [
 				{
@@ -1325,7 +1355,10 @@
 			description: [
 				"Para ir além do aço, é preciso mais calor."
 			]
-			icon: "gtceu:electric_blast_furnace"
+			icon: {
+				Count: 1b
+				id: "gtceu:electric_blast_furnace"
+			}
 			id: "086CC0B8A904A09A"
 			rewards: [
 				{
@@ -1395,7 +1428,10 @@
 			description: [
 				"Leve e forte. O metal da média voltagem."
 			]
-			icon: "gtceu:aluminium_ingot"
+			icon: {
+				Count: 1b
+				id: "gtceu:aluminium_ingot"
+			}
 			id: "372598F23FB8DBB2"
 			rewards: [
 				{
@@ -1656,7 +1692,10 @@
 			description: [
 				"Aurend pensava mais rápido do que você."
 			]
-			icon: "gtceu:good_electronic_circuit"
+			icon: {
+				Count: 1b
+				id: "gtceu:good_electronic_circuit"
+			}
 			id: "6F9A1B14EA7A1243"
 			rewards: [
 				{
@@ -1779,7 +1818,10 @@
 				"Dois fragmentos. O Selo pesa mais em suas mãos."
 				"E lá em cima, o céu começa a rachar."
 			]
-			icon: "ecos:fragmento_selo_profundezas"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_profundezas"
+			}
 			id: "10511E6CE35464FB"
 			rewards: [
 				{

@@ -1,7 +1,13 @@
 {
 	empty_weight: 0.0f
 	filename: "epica"
-	icon: "ecos:textures/gui/crates/epica.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/crates/epica.png"
+		}
+	}
 	id: "2EE85FF6F3AEB593"
 	loot_crate: {
 		color: 10767323

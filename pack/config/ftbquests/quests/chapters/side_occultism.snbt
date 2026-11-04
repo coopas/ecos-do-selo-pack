@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_occultism"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_occultism.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_occultism.png"
+		}
+	}
 	id: "2955894FA2AFC449"
 	images: [ ]
 	order_index: 7
@@ -16,7 +22,10 @@
 			description: [
 				"Uma flor que mostra o que os olhos não veem."
 			]
-			icon: "occultism:datura"
+			icon: {
+				Count: 1b
+				id: "occultism:datura"
+			}
 			id: "5BD9F3E14A814792"
 			rewards: [
 				{
@@ -980,7 +989,10 @@
 				"Quatro gizes, quatro círculos."
 				"Um dia, um deles vai chamar o Arauto."
 			]
-			icon: "occultism:chalk_red"
+			icon: {
+				Count: 1b
+				id: "occultism:chalk_red"
+			}
 			id: "34E1E0F89E050F84"
 			rewards: [
 				{

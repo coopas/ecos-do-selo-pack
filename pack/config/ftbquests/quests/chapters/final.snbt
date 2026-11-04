@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "final"
 	group: "5395DF7F49D69073"
-	icon: "ecos:textures/gui/chapters/final.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/final.png"
+		}
+	}
 	id: "652657F1AC873FF1"
 	images: [ ]
 	order_index: 15
@@ -18,7 +24,10 @@
 				"Pentáculo de espírito maior: giz branco e roxo, crânios, tigela dourada."
 				"Na tigela, ecos, um sino e eco reforçado."
 			]
-			icon: "occultism:chalk_purple"
+			icon: {
+				Count: 1b
+				id: "occultism:chalk_purple"
+			}
 			id: "66646285C66571D6"
 			rewards: [
 				{
@@ -50,7 +59,10 @@
 				"Use o Artefato do Selo na tigela dourada."
 				"Ele vem. Ilse vem junto."
 			]
-			icon: "ecos:artefato_selo"
+			icon: {
+				Count: 1b
+				id: "ecos:artefato_selo"
+			}
 			id: "6545FC6B6E544A21"
 			rewards: [
 				{
@@ -79,7 +91,10 @@
 				"Quando ele cair, o Eco é seu."
 				"Se ele adormecer, acorde-o com uma estrela do Nether."
 			]
-			icon: "ecos:eco_do_arauto"
+			icon: {
+				Count: 1b
+				id: "ecos:eco_do_arauto"
+			}
 			id: "3D643E4320D6EEAF"
 			rewards: [
 				{
@@ -131,7 +146,10 @@
 				"Use o Eco do Arauto."
 				"Ilse descansa. Você nunca mais ouve o Eco."
 			]
-			icon: "ecos:selo_restaurado"
+			icon: {
+				Count: 1b
+				id: "ecos:selo_restaurado"
+			}
 			id: "5396C9D215437657"
 			rewards: [
 				{
@@ -176,7 +194,10 @@
 				"Use o Eco do Arauto agachado."
 				"Uma nova arquivista começa um diário. A primeira linha é o seu nome."
 			]
-			icon: "ecos:poder_absorvido"
+			icon: {
+				Count: 1b
+				id: "ecos:poder_absorvido"
+			}
 			id: "231DDD3B4032B19C"
 			rewards: [
 				{

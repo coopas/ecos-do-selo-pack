@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "ato3"
 	group: "5395DF7F49D69073"
-	icon: "ecos:textures/gui/chapters/ato3.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/ato3.png"
+		}
+	}
 	id: "25AAB2F034CE7B3D"
 	images: [ ]
 	order_index: 8
@@ -18,7 +24,10 @@
 				"As ilhas não flutuam."
 				"Elas foram arrancadas."
 			]
-			icon: "minecraft:glowstone"
+			icon: {
+				Count: 1b
+				id: "minecraft:glowstone"
+			}
 			id: "56E08ACA02ABFC45"
 			rewards: [
 				{
@@ -104,7 +113,10 @@
 				"A floresta e a profundeza, unidas por luz."
 				"Sem ela no bolso, o céu te devolve ao chão."
 			]
-			icon: "ecos:chave_celeste"
+			icon: {
+				Count: 1b
+				id: "ecos:chave_celeste"
+			}
 			id: "28BBF0587F7F1B9D"
 			rewards: [
 				{
@@ -158,7 +170,10 @@
 				"Um quadro de pedra de luz e um balde de água."
 				"Do outro lado, o chão é nuvem."
 			]
-			icon: "aether:skyroot_log"
+			icon: {
+				Count: 1b
+				id: "aether:skyroot_log"
+			}
 			id: "56C75B138804C946"
 			rewards: [
 				{
@@ -596,7 +611,10 @@
 				"Um bloco que se move quando você não olha."
 				"Ele guarda a masmorra de bronze."
 			]
-			icon: "aether:bronze_dungeon_key"
+			icon: {
+				Count: 1b
+				id: "aether:bronze_dungeon_key"
+			}
 			id: "09A794340D49D417"
 			rewards: [
 				{
@@ -787,7 +805,10 @@
 			description: [
 				"Ela só luta com quem provou valor."
 			]
-			icon: "aether:silver_dungeon_key"
+			icon: {
+				Count: 1b
+				id: "aether:silver_dungeon_key"
+			}
 			id: "12B4CA39E71B9F51"
 			rewards: [
 				{
@@ -870,7 +891,10 @@
 				"Ela prometeu que nenhuma vela se apagaria."
 				"Ela ainda vive. As velas também."
 			]
-			icon: "aether:gold_dungeon_key"
+			icon: {
+				Count: 1b
+				id: "aether:gold_dungeon_key"
+			}
 			id: "3E849629036066EC"
 			rewards: [
 				{
@@ -967,7 +991,10 @@
 				"O terceiro pedaço do Selo."
 				"Ele não pesa para baixo. Empurra para cima."
 			]
-			icon: "ecos:fragmento_selo_ceus"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_ceus"
+			}
 			id: "31D1A2A997A019CA"
 			rewards: [
 				{
@@ -1022,7 +1049,10 @@
 				"O fogo do porteiro não abre o que a chave tranca."
 				"O isqueiro pede outro Fragmento das Profundezas: o Cego sempre deixa um."
 			]
-			icon: "blue_skies:zeal_lighter"
+			icon: {
+				Count: 1b
+				id: "blue_skies:zeal_lighter"
+			}
 			id: "1078C3332EF0DB79"
 			rewards: [
 				{
@@ -1074,7 +1104,10 @@
 			description: [
 				"Neve e luz sem fim. Um portal de pedra-de-neve aceso pelo isqueiro."
 			]
-			icon: "blue_skies:turquoise_stone"
+			icon: {
+				Count: 1b
+				id: "blue_skies:turquoise_stone"
+			}
 			id: "1E22ABC5CFCCDD27"
 			rewards: [
 				{
@@ -1118,7 +1151,10 @@
 			description: [
 				"Um céu que nunca termina de amanhecer."
 			]
-			icon: "blue_skies:lunar_stone"
+			icon: {
+				Count: 1b
+				id: "blue_skies:lunar_stone"
+			}
 			id: "0DAA0FE245D8B5A2"
 			rewards: [
 				{
@@ -1540,7 +1576,10 @@
 			description: [
 				"Ele chama coisas de longe. Uma vez, chamou algo grande demais."
 			]
-			icon: "blue_skies:summoner_trophy"
+			icon: {
+				Count: 1b
+				id: "blue_skies:summoner_trophy"
+			}
 			id: "5EE8684DE54AE10A"
 			rewards: [
 				{
@@ -1585,7 +1624,10 @@
 			description: [
 				"Uma árvore que aprendeu a lutar."
 			]
-			icon: "blue_skies:starlit_crusher_trophy"
+			icon: {
+				Count: 1b
+				id: "blue_skies:starlit_crusher_trophy"
+			}
 			id: "1B0489AA68AB2BA0"
 			rewards: [
 				{
@@ -1728,7 +1770,10 @@
 				"Três fragmentos."
 				"O som que o Selo abafa não vem das profundezas. Vem das estrelas."
 			]
-			icon: "ecos:fragmento_selo_ceus"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_ceus"
+			}
 			id: "73C3F25D63C2625C"
 			rewards: [
 				{

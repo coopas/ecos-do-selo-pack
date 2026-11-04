@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_ars"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_ars.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_ars.png"
+		}
+	}
 	id: "7F465A825294D3DE"
 	images: [ ]
 	order_index: 5
@@ -16,7 +22,10 @@
 			description: [
 				"Magia é música, e este livro é sua primeira partitura."
 			]
-			icon: "ars_nouveau:novice_spell_book"
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:novice_spell_book"
+			}
 			id: "06D3DE2C75E8EE1B"
 			rewards: [
 				{
@@ -213,7 +222,10 @@
 				"Ametista mergulhada em mana."
 				"Também abre o caminho para o Undergarden."
 			]
-			icon: "ars_nouveau:source_gem"
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:source_gem"
+			}
 			id: "0FC08236B408EDF0"
 			rewards: [
 				{
@@ -1026,7 +1038,10 @@
 				"Todos os glifos que Aurend conheceu."
 				"Toque baixo. Sempre baixo."
 			]
-			icon: "ars_nouveau:archmage_spell_book"
+			icon: {
+				Count: 1b
+				id: "ars_nouveau:archmage_spell_book"
+			}
 			id: "40404AD0A95B4364"
 			rewards: [
 				{

@@ -51,7 +51,7 @@ def test_quest_image_goes_first_in_description():
 def test_reward_table_icons_are_crate_images():
     built = questgen.build(questgen.load_sources(), questgen.load_tables())
     for rarity in ("comum", "rara", "epica", "lendaria"):
-        assert f'icon: "ecos:textures/gui/crates/{rarity}.png"' in built[f"reward_tables/{rarity}.snbt"]
+        assert f'Icon: "ecos:textures/gui/crates/{rarity}.png"' in built[f"reward_tables/{rarity}.snbt"]
         assert Image.open(ASSETS / "ecos/textures/gui/crates" / f"{rarity}.png").size == (64, 64)
 
 
@@ -60,3 +60,18 @@ def test_title_logo_replaces_minecraft_logo():
     assert im.size == (1024, 256) and im.mode == "RGBA"
     edition = Image.open(ASSETS / "minecraft/textures/gui/title/edition.png")
     assert edition.getchannel("A").getextrema() == (0, 0), "o 'Java Edition' some atrás do logo"
+
+
+def test_image_icons_use_ftbquests_custom_icon():
+    """O FTB Quests só aceita item como ícone: imagem vai como ftbquests:custom_icon com NBT Icon (senão aparece '?')."""
+    built = questgen.build(questgen.load_sources(), questgen.load_tables())
+    ch = built["chapters/ato1.snbt"]
+    assert 'id: "ftbquests:custom_icon"' in ch
+    assert 'Icon: "ecos:textures/gui/chapters/ato1.png"' in ch
+    assert 'icon: "ecos:textures/' not in ch
+    assert 'Icon: "ecos:textures/gui/crates/comum.png"' in built["reward_tables/comum.snbt"]
+
+
+def test_fancymenu_overlay_hidden_for_players():
+    opts = (PACK / "config/fancymenu/options.txt").read_text(encoding="utf-8")
+    assert "B:show_customization_overlay = 'false';" in opts

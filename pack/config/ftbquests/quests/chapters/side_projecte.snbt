@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_projecte"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_projecte.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_projecte.png"
+		}
+	}
 	id: "5575458632A4C744"
 	images: [ ]
 	order_index: 14
@@ -17,7 +23,10 @@
 				"Aprenda um item e ele vira número."
 				"Ilse aprendeu Aurend inteira assim."
 			]
-			icon: "projecte:transmutation_table"
+			icon: {
+				Count: 1b
+				id: "projecte:transmutation_table"
+			}
 			id: "6DB440EEB917AE4B"
 			rewards: [
 				{
@@ -391,7 +400,10 @@
 			description: [
 				"O que sobra quando a luz desiste."
 			]
-			icon: "projecte:dark_matter"
+			icon: {
+				Count: 1b
+				id: "projecte:dark_matter"
+			}
 			id: "5119B138BB31253A"
 			rewards: [
 				{
@@ -509,7 +521,10 @@
 			description: [
 				"Ainda mais densa. Ainda mais errada."
 			]
-			icon: "projecte:red_matter"
+			icon: {
+				Count: 1b
+				id: "projecte:red_matter"
+			}
 			id: "5E6ABC0DC016A8D1"
 			rewards: [
 				{
@@ -662,7 +677,10 @@
 				"Conte o que perdeu a cada troca."
 				"Ilse parou de contar."
 			]
-			icon: "projecte:red_matter"
+			icon: {
+				Count: 1b
+				id: "projecte:red_matter"
+			}
 			id: "6C2169C0CF332643"
 			rewards: [
 				{

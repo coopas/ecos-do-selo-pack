@@ -3,7 +3,10 @@
 	default_quest_shape: "circle"
 	default_reward_team: false
 	drop_loot_crates: false
-	icon: "ecos:artefato_selo"
+	icon: {
+		Count: 1b
+		id: "ecos:artefato_selo"
+	}
 	progression_mode: "linear"
 	show_lock_icons: true
 	title: "Ecos do Selo"

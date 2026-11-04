@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_ae2"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_ae2.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_ae2.png"
+		}
+	}
 	id: "1E0B89AC4820D89D"
 	images: [ ]
 	order_index: 9
@@ -17,7 +23,10 @@
 				"Meteoritos guardam cristais de certus."
 				"Use uma bússola de meteorito para achar um."
 			]
-			icon: "ae2:sky_stone_block"
+			icon: {
+				Count: 1b
+				id: "ae2:sky_stone_block"
+			}
 			id: "063D01D25FD3801C"
 			rewards: [
 				{
@@ -206,7 +215,10 @@
 				"Pede um pistão LV do GregTech."
 				"A rede de Aurend corria sobre máquinas."
 			]
-			icon: "ae2:inscriber"
+			icon: {
+				Count: 1b
+				id: "ae2:inscriber"
+			}
 			id: "338797CE271D1DF9"
 			rewards: [
 				{
@@ -412,7 +424,10 @@
 				"Pede um braço robótico MV."
 				"O coração da rede: tudo passa por ele."
 			]
-			icon: "ae2:controller"
+			icon: {
+				Count: 1b
+				id: "ae2:controller"
+			}
 			id: "2447F245EE8C517A"
 			rewards: [
 				{
@@ -884,7 +899,10 @@
 				"Aurend guardava tudo assim."
 				"Até o que deveria ter esquecido."
 			]
-			icon: "ae2:controller"
+			icon: {
+				Count: 1b
+				id: "ae2:controller"
+			}
 			id: "4DCC07AD6E9AEA86"
 			rewards: [
 				{

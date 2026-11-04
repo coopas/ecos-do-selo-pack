@@ -38,11 +38,15 @@ function ecosQuestSelftest() {
 
   let quests = {}
   let taskProbes = {}
+  let chapterData = {}
   let chapters = 0
   try {
     let file = Java.loadClass('dev.ftb.mods.ftbquests.quest.ServerQuestFile').INSTANCE
     file.getAllChapters().forEach(ch => {
       chapters++
+      let cn = new CompoundTag()
+      ch.writeData(cn)
+      chapterData[String(ch.getFilename())] = String(cn.toString())
       ch.getQuests().forEach(q => {
         let nbt = new CompoundTag()
         q.writeData(nbt)
@@ -85,7 +89,7 @@ function ecosQuestSelftest() {
   }
 
   JsonIO.write('kubejs/exported/quest_selftest.json', {
-    filter_sample: sample, filters: filters, task_probes: taskProbes, chapters: chapters, quests: quests, tables: tables
+    filter_sample: sample, filters: filters, task_probes: taskProbes, chapter_data: chapterData, chapters: chapters, quests: quests, tables: tables
   })
   console.info(`[ecos] quest_selftest: ${Object.keys(filters).length} filtros, ${chapters} capítulos`)
 }

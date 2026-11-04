@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "prologo"
 	group: "5395DF7F49D69073"
-	icon: "ecos:textures/gui/chapters/prologo.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/prologo.png"
+		}
+	}
 	id: "7504450DA60854BE"
 	images: [ ]
 	order_index: 0
@@ -16,7 +22,10 @@
 				"Você acorda entre ruínas. Nada aqui parece novo."
 				"Há um diário rasgado a seus pés."
 			]
-			icon: "minecraft:written_book"
+			icon: {
+				Count: 1b
+				id: "minecraft:written_book"
+			}
 			id: "371D1803502A61B1"
 			rewards: [
 				{
@@ -451,7 +460,10 @@
 			description: [
 				"Qualquer cama serve. A noite aqui é longa."
 			]
-			icon: "minecraft:red_bed"
+			icon: {
+				Count: 1b
+				id: "minecraft:red_bed"
+			}
 			id: "2C3AA7D00409E54F"
 			rewards: [
 				{
@@ -1001,7 +1013,10 @@
 				"Cristais de som endurecido. São a moeda daqui."
 				"Junte cinco."
 			]
-			icon: "ecos:fragmento_eco"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_eco"
+			}
 			id: "21E6F3E5A4FCEBE8"
 			rewards: [
 				{
@@ -1091,7 +1106,10 @@
 				"Você sobreviveu aos primeiros dias."
 				"Mas à noite, quando tudo se cala, algo responde."
 			]
-			icon: "minecraft:sculk_sensor"
+			icon: {
+				Count: 1b
+				id: "minecraft:sculk_sensor"
+			}
 			id: "1EF81770020C14AA"
 			rewards: [
 				{

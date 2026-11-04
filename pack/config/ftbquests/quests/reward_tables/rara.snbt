@@ -1,7 +1,13 @@
 {
 	empty_weight: 0.0f
 	filename: "rara"
-	icon: "ecos:textures/gui/crates/rara.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/crates/rara.png"
+		}
+	}
 	id: "42160709186BA3FA"
 	loot_crate: {
 		color: 4099806

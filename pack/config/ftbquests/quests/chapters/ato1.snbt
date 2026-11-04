@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "ato1"
 	group: "5395DF7F49D69073"
-	icon: "ecos:textures/gui/chapters/ato1.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/ato1.png"
+		}
+	}
 	id: "2E0466C296BA2363"
 	images: [ ]
 	order_index: 1
@@ -18,7 +24,10 @@
 				"Vapor e mana, eixo e runa."
 				"As máquinas de Aurend esperam por alguém que as lembre."
 			]
-			icon: "create:cogwheel"
+			icon: {
+				Count: 1b
+				id: "create:cogwheel"
+			}
 			id: "5DAFCE8F2DC010F7"
 			rewards: [
 				{
@@ -178,7 +187,10 @@
 			description: [
 				"O Nether ainda queima. Ninguém apagou o fogo de Aurend."
 			]
-			icon: "minecraft:netherrack"
+			icon: {
+				Count: 1b
+				id: "minecraft:netherrack"
+			}
 			id: "2A1D007290D432B0"
 			rewards: [
 				{
@@ -580,7 +592,10 @@
 				"Precisão de Aurend e semente viva."
 				"Só ela abre o caminho. O diamante não serve mais."
 			]
-			icon: "ecos:chave_crepuscular"
+			icon: {
+				Count: 1b
+				id: "ecos:chave_crepuscular"
+			}
 			id: "5AD83C4E436BCCAA"
 			rewards: [
 				{
@@ -661,7 +676,10 @@
 				"Aqui é sempre fim de tarde."
 				"As árvores lembram de você antes de você chegar."
 			]
-			icon: "twilightforest:twilight_oak_sapling"
+			icon: {
+				Count: 1b
+				id: "twilightforest:twilight_oak_sapling"
+			}
 			id: "56EA9004828F591D"
 			rewards: [
 				{
@@ -936,7 +954,10 @@
 			description: [
 				"A primeira guardiã da floresta. Rápida, cega de raiva."
 			]
-			icon: "twilightforest:naga_trophy"
+			icon: {
+				Count: 1b
+				id: "twilightforest:naga_trophy"
+			}
 			id: "70CCF7344D2A7DB8"
 			rewards: [
 				{
@@ -1180,7 +1201,10 @@
 				"Ele escutou a floresta tempo demais."
 				"Não acredite em tudo o que ele disser."
 			]
-			icon: "twilightforest:lich_trophy"
+			icon: {
+				Count: 1b
+				id: "twilightforest:lich_trophy"
+			}
 			id: "4100162FB5D27A9F"
 			rewards: [
 				{
@@ -1277,7 +1301,10 @@
 				"O primeiro pedaço do Selo."
 				"Pesa mais do que deveria."
 			]
-			icon: "ecos:fragmento_selo_floresta"
+			icon: {
+				Count: 1b
+				id: "ecos:fragmento_selo_floresta"
+			}
 			id: "4C75456FC2F31094"
 			rewards: [
 				{
@@ -1560,7 +1587,10 @@
 				"A floresta está calada. A corrente corre de novo."
 				"Mas embaixo da terra, algo continua acordado."
 			]
-			icon: "gtceu:lv_machine_hull"
+			icon: {
+				Count: 1b
+				id: "gtceu:lv_machine_hull"
+			}
 			id: "08582B366014332D"
 			rewards: [
 				{

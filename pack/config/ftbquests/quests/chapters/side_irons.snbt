@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_irons"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_irons.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_irons.png"
+		}
+	}
 	id: "1CA24D1ABDE2A634"
 	images: [ ]
 	order_index: 6
@@ -17,7 +23,10 @@
 				"Pó que brilha em ruínas e em magos caídos."
 				"Os magos de Aurend a chamavam de sobra do silêncio."
 			]
-			icon: "irons_spellbooks:arcane_essence"
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:arcane_essence"
+			}
 			id: "6EBEA948615C81F4"
 			rewards: [
 				{
@@ -818,7 +827,10 @@
 			description: [
 				"O livro dos magos que ainda moravam em Aurend."
 			]
-			icon: "irons_spellbooks:diamond_spell_book"
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:diamond_spell_book"
+			}
 			id: "6E9E82E2F6B6F3A8"
 			rewards: [
 				{

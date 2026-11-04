@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "ato5"
 	group: "5395DF7F49D69073"
-	icon: "ecos:textures/gui/chapters/ato5.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/ato5.png"
+		}
+	}
 	id: "16277CC31A41FB0F"
 	images: [ ]
 	order_index: 13
@@ -18,7 +24,10 @@
 				"A última confissão de Ilse Varrow."
 				"Leia antes de continuar."
 			]
-			icon: "minecraft:written_book"
+			icon: {
+				Count: 1b
+				id: "minecraft:written_book"
+			}
 			id: "510678CE973F7EEE"
 			rewards: [
 				{
@@ -202,7 +211,10 @@
 				"Um metal que não deveria existir neste mundo."
 				"Aurend o trouxe das estrelas."
 			]
-			icon: "gtceu:naquadah_ingot"
+			icon: {
+				Count: 1b
+				id: "gtceu:naquadah_ingot"
+			}
 			id: "4CD1F28B5FA8AD23"
 			rewards: [
 				{
@@ -427,7 +439,10 @@
 			description: [
 				"Um pensamento preso em cristal, como o eco preso no fragmento."
 			]
-			icon: "gtceu:crystal_processor"
+			icon: {
+				Count: 1b
+				id: "gtceu:crystal_processor"
+			}
 			id: "311B4677495DEB8D"
 			rewards: [
 				{
@@ -511,7 +526,10 @@
 				"Uma estrela dentro de uma caixa."
 				"Aurend fazia isso para não ouvir o céu."
 			]
-			icon: "gtceu:luv_fusion_reactor"
+			icon: {
+				Count: 1b
+				id: "gtceu:luv_fusion_reactor"
+			}
 			id: "32753FABD87AB783"
 			rewards: [
 				{
@@ -663,7 +681,10 @@
 				"O campo mais forte que Aurend construiu."
 				"Ele vai segurar o Artefato inteiro."
 			]
-			icon: "gtceu:zpm_field_generator"
+			icon: {
+				Count: 1b
+				id: "gtceu:zpm_field_generator"
+			}
 			id: "1FA0F2DB04E1EFBC"
 			rewards: [
 				{
@@ -760,7 +781,10 @@
 			description: [
 				"Ela não cria nada. Ela troca."
 			]
-			icon: "projecte:philosophers_stone"
+			icon: {
+				Count: 1b
+				id: "projecte:philosophers_stone"
+			}
 			id: "276DC4514394B5DD"
 			rewards: [
 				{
@@ -811,7 +835,10 @@
 				"Ilse está dentro da máquina que girava o silêncio."
 				"E o Ouvinte está com ela."
 			]
-			icon: "minecraft:bell"
+			icon: {
+				Count: 1b
+				id: "minecraft:bell"
+			}
 			id: "16B09022606A2A68"
 			rewards: [
 				{
@@ -1072,7 +1099,10 @@
 				"Os quatro juntos, nas suas mãos."
 				"O silêncio pesa nas quatro direções."
 			]
-			icon: "ecos:artefato_selo"
+			icon: {
+				Count: 1b
+				id: "ecos:artefato_selo"
+			}
 			id: "4274E0686517CD6C"
 			rewards: [
 				{
@@ -1139,7 +1169,10 @@
 				"Quatro fragmentos e a argamassa."
 				"Leve-o ao círculo de giz e chame o Arauto pelo nome."
 			]
-			icon: "ecos:artefato_selo"
+			icon: {
+				Count: 1b
+				id: "ecos:artefato_selo"
+			}
 			id: "246302F51422A41D"
 			rewards: [
 				{
@@ -1268,7 +1301,10 @@
 			description: [
 				"Feche a porta. Ou abra a sua."
 			]
-			icon: "ecos:artefato_selo"
+			icon: {
+				Count: 1b
+				id: "ecos:artefato_selo"
+			}
 			id: "72CD6573F7C96467"
 			rewards: [
 				{

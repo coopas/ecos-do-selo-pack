@@ -146,3 +146,17 @@ def test_filter_adapter_is_java_not_kubejs():
     assert (PACK / "mods/ecosbridge-1.0.0.jar").exists()
     for js in (PACK / "kubejs").rglob("*.js"):
         assert "registerFilterAdapter" not in js.read_text(encoding="utf-8"), js
+
+
+def test_icons_survive_ftbquests_load_ingame():
+    """Depois de carregado pelo FTB Quests, o capítulo ainda tem o custom_icon com a imagem, e a quest o item."""
+    import json
+    from paths import BUILD
+    p = BUILD / "quest_selftest.json"
+    if not p.exists():
+        pytest.skip("sem build/quest_selftest.json (rode o boot dev)")
+    d = json.loads(p.read_text(encoding="utf-8"))
+    ch = d["chapter_data"]["ato1"]
+    assert "ftbquests:custom_icon" in ch and "ecos:textures/gui/chapters/ato1.png" in ch, ch[:300]
+    q = d["quests"][questgen.quest_id("ato1/inicio")]["quest"]
+    assert '"create:cogwheel"' in q, q[:300]

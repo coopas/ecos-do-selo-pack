@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_create"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_create.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_create.png"
+		}
+	}
 	id: "7E7749AF5C83CB1C"
 	images: [ ]
 	order_index: 2
@@ -16,7 +22,10 @@
 			description: [
 				"Andesito e ferro: a liga que movia Aurend."
 			]
-			icon: "create:andesite_alloy"
+			icon: {
+				Count: 1b
+				id: "create:andesite_alloy"
+			}
 			id: "6674C095D3FDA103"
 			rewards: [
 				{
@@ -791,7 +800,10 @@
 			description: [
 				"Cobre e zinco, misturados com calor."
 			]
-			icon: "create:brass_ingot"
+			icon: {
+				Count: 1b
+				id: "create:brass_ingot"
+			}
 			id: "6E250F6F5A1780D8"
 			rewards: [
 				{
@@ -933,7 +945,10 @@
 				"A montagem em sequência: prensa, aplicador e paciência."
 				"Sem ele, a floresta não se abre."
 			]
-			icon: "create:precision_mechanism"
+			icon: {
+				Count: 1b
+				id: "create:precision_mechanism"
+			}
 			id: "6B6F85E4DE2AE207"
 			rewards: [
 				{

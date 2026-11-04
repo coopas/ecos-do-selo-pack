@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_gt_mv_ev"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_gt_mv_ev.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_gt_mv_ev.png"
+		}
+	}
 	id: "20C0BF1720F74F11"
 	images: [ ]
 	order_index: 10
@@ -16,7 +22,10 @@
 			description: [
 				"Uma voltagem nova, uma linha de máquinas nova."
 			]
-			icon: "gtceu:mv_machine_hull"
+			icon: {
+				Count: 1b
+				id: "gtceu:mv_machine_hull"
+			}
 			id: "52433F8D4CA697D6"
 			rewards: [
 				{
@@ -217,7 +226,10 @@
 			description: [
 				"O primeiro plástico. Aurend embrulhava tudo nele."
 			]
-			icon: "gtceu:polyethylene_plate"
+			icon: {
+				Count: 1b
+				id: "gtceu:polyethylene_plate"
+			}
 			id: "18F0D3033C66E03B"
 			rewards: [
 				{
@@ -473,7 +485,10 @@
 			description: [
 				"Não enferruja. Nunca."
 			]
-			icon: "gtceu:stainless_steel_ingot"
+			icon: {
+				Count: 1b
+				id: "gtceu:stainless_steel_ingot"
+			}
 			id: "58B582486F8B57DE"
 			rewards: [
 				{
@@ -732,7 +747,10 @@
 			description: [
 				"O circuito da alta tensão."
 			]
-			icon: "gtceu:advanced_integrated_circuit"
+			icon: {
+				Count: 1b
+				id: "gtceu:advanced_integrated_circuit"
+			}
 			id: "2A81AB63F1340C62"
 			rewards: [
 				{
@@ -1261,7 +1279,10 @@
 			description: [
 				"O metal das naves. Aurend olhava para cima."
 			]
-			icon: "gtceu:titanium_ingot"
+			icon: {
+				Count: 1b
+				id: "gtceu:titanium_ingot"
+			}
 			id: "6567303B4DC3A09F"
 			rewards: [
 				{
@@ -1488,7 +1509,10 @@
 				"As máquinas de Aurend nunca chegaram tão longe."
 				"Ou chegaram, e foram embora."
 			]
-			icon: "gtceu:ev_machine_hull"
+			icon: {
+				Count: 1b
+				id: "gtceu:ev_machine_hull"
+			}
 			id: "4B640214EE912855"
 			rewards: [
 				{

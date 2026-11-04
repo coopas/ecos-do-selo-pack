@@ -1,7 +1,13 @@
 {
 	empty_weight: 0.0f
 	filename: "comum"
-	icon: "ecos:textures/gui/crates/comum.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/crates/comum.png"
+		}
+	}
 	id: "427FDA1DDFA285B8"
 	loot_crate: {
 		color: 10133670

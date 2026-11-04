@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_gt_steam_lv"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_gt_steam_lv.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_gt_steam_lv.png"
+		}
+	}
 	id: "7D7DD4FDA0AECE7C"
 	images: [ ]
 	order_index: 3
@@ -17,7 +23,10 @@
 				"Há árvores que sangram resina."
 				"Os Confluentes as plantavam perto das oficinas."
 			]
-			icon: "gtceu:rubber_log"
+			icon: {
+				Count: 1b
+				id: "gtceu:rubber_log"
+			}
 			id: "7523EE75771E33A0"
 			rewards: [
 				{
@@ -87,7 +96,10 @@
 			description: [
 				"Martelo, chave e lima: no GregTech, ferramentas viram ingredientes."
 			]
-			icon: "gtceu:iron_hammer"
+			icon: {
+				Count: 1b
+				id: "gtceu:iron_hammer"
+			}
 			id: "79811DF8051FF307"
 			rewards: [
 				{
@@ -277,7 +289,10 @@
 			description: [
 				"Três de cobre, um de estanho. A primeira liga da era do vapor."
 			]
-			icon: "gtceu:bronze_ingot"
+			icon: {
+				Count: 1b
+				id: "gtceu:bronze_ingot"
+			}
 			id: "343D72679F96C842"
 			rewards: [
 				{
@@ -520,7 +535,10 @@
 			description: [
 				"O primeiro aço de verdade em séculos."
 			]
-			icon: "gtceu:steel_ingot"
+			icon: {
+				Count: 1b
+				id: "gtceu:steel_ingot"
+			}
 			id: "4BB930D6A6439C1E"
 			rewards: [
 				{
@@ -642,7 +660,10 @@
 			description: [
 				"Carvão em cima, água embaixo, vapor no meio."
 			]
-			icon: "gtceu:lp_steam_solid_boiler"
+			icon: {
+				Count: 1b
+				id: "gtceu:lp_steam_solid_boiler"
+			}
 			id: "085EAD29072E640C"
 			rewards: [
 				{
@@ -1148,7 +1169,10 @@
 			description: [
 				"Seu primeiro circuito. Aurend pensava assim."
 			]
-			icon: "gtceu:basic_electronic_circuit"
+			icon: {
+				Count: 1b
+				id: "gtceu:basic_electronic_circuit"
+			}
 			id: "4B341E8FE1BDA218"
 			rewards: [
 				{
@@ -1488,7 +1512,10 @@
 				"Vapor e corrente. A ciência perdida está de volta."
 				"Agora as máquinas de Aurend podem girar de novo."
 			]
-			icon: "gtceu:lv_machine_hull"
+			icon: {
+				Count: 1b
+				id: "gtceu:lv_machine_hull"
+			}
 			id: "0525606E8F9B7829"
 			rewards: [
 				{

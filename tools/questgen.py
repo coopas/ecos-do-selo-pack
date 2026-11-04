@@ -56,6 +56,13 @@ def load_sources(directory: Path = SRC) -> list[Chapter]:
     return [Chapter.from_dict(yaml.safe_load(f.read_text(encoding="utf-8")), i) for i, f in enumerate(files)]
 
 
+def icon_value(icon: str) -> dict:
+    """Ícone no formato do FTB Quests 2001 (sempre item): imagem .png vira ftbquests:custom_icon com NBT Icon."""
+    if icon.endswith(".png"):
+        return item_stack("ftbquests:custom_icon", {"Icon": icon})
+    return item_stack(icon)
+
+
 def item_stack(item_id: str, tag: dict | None = None) -> dict:
     stack = {"Count": snbt.Byte(1), "id": item_id}
     if tag:
@@ -104,7 +111,7 @@ def image_line(q: dict) -> list[str]:
 
 def build_table(slug: str, t: dict) -> dict:
     return {
-        "id": quest_id(f"table:{slug}"), "title": t["title"], "filename": slug, "icon": f"ecos:textures/gui/crates/{slug}.png",
+        "id": quest_id(f"table:{slug}"), "title": t["title"], "filename": slug, "icon": icon_value(f"ecos:textures/gui/crates/{slug}.png"),
         "loot_size": int(t.get("loot_size", 1)), "empty_weight": snbt.Float(0.0), "use_title": True,
         "rewards": [{"id": quest_id(f"table:{slug}#e{i}"), "type": "item", "item": item_stack(e["item"]),
                      "count": int(e.get("count", 1)), "weight": snbt.Float(float(e["weight"]))}
@@ -224,7 +231,7 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
     files["chapter_groups.snbt"] = snbt.dumps({"chapter_groups": [
         {"id": quest_id(f"group:{g}"), "title": GROUPS.get(g, g)} for g in groups]}) + "\n"
     files["data.snbt"] = snbt.dumps({
-        "version": 13, "title": "Ecos do Selo", "icon": "ecos:artefato_selo",
+        "version": 13, "title": "Ecos do Selo", "icon": icon_value("ecos:artefato_selo"),
         "default_reward_team": False, "default_consume_items": False, "default_quest_shape": "circle",
         "progression_mode": "linear", "show_lock_icons": True, "drop_loot_crates": False,
     }) + "\n"
@@ -245,13 +252,13 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
             if q.get("shape"):
                 quest["shape"] = q["shape"]
             if q.get("icon"):
-                quest["icon"] = q["icon"]
+                quest["icon"] = icon_value(q["icon"])
             if q.get("repeatable"):
                 quest["can_repeat"] = True
             quests.append(quest)
         files[f"chapters/{c.slug}.snbt"] = snbt.dumps({
             "id": quest_id(f"chapter:{c.slug}"), "group": quest_id(f"group:{c.group}"), "order_index": c.order,
-            "filename": c.slug, "title": c.title, "icon": c.icon, "default_quest_shape": "",
+            "filename": c.slug, "title": c.title, "icon": icon_value(c.icon), "default_quest_shape": "",
             "default_hide_dependency_lines": False, "quests": quests, "quest_links": [], "images": [],
         }) + "\n"
     return files

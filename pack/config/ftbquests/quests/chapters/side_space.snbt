@@ -3,7 +3,13 @@
 	default_quest_shape: ""
 	filename: "side_space"
 	group: "30D1DA93FF981B37"
-	icon: "ecos:textures/gui/chapters/side_space.png"
+	icon: {
+		Count: 1b
+		id: "ftbquests:custom_icon"
+		tag: {
+			Icon: "ecos:textures/gui/chapters/side_space.png"
+		}
+	}
 	id: "03C95E32454BB474"
 	images: [ ]
 	order_index: 12
@@ -19,7 +25,10 @@
 				"Pede um Fragmento dos Céus, braço e emissor EV e titânio."
 				"Outra masmorra de ouro guarda outra Solenne."
 			]
-			icon: "ad_astra:nasa_workbench"
+			icon: {
+				Count: 1b
+				id: "ad_astra:nasa_workbench"
+			}
 			id: "5A0D08BE5F08F9E8"
 			rewards: [
 				{
@@ -333,7 +342,10 @@
 			description: [
 				"Os foguetes de Aurend voltaram. Os pilotos, não."
 			]
-			icon: "ad_astra:tier_1_rocket"
+			icon: {
+				Count: 1b
+				id: "ad_astra:tier_1_rocket"
+			}
 			id: "1405C0E41B4087FE"
 			rewards: [
 				{
@@ -413,7 +425,10 @@
 			description: [
 				"A Lua não é morta. Está prendendo a respiração."
 			]
-			icon: "ad_astra:moon_stone"
+			icon: {
+				Count: 1b
+				id: "ad_astra:moon_stone"
+			}
 			id: "543F11CAF616C6F6"
 			rewards: [
 				{
@@ -581,7 +596,10 @@
 				"Sinos de cobre enterrados na poeira vermelha."
 				"São nossos."
 			]
-			icon: "ad_astra:mars_stone"
+			icon: {
+				Count: 1b
+				id: "ad_astra:mars_stone"
+			}
 			id: "3B45723920C85A8C"
 			rewards: [
 				{
@@ -898,7 +916,10 @@
 				"Um planeta em outra estrela."
 				"O som dos sinos é mais alto aqui."
 			]
-			icon: "ad_astra:glacio_stone"
+			icon: {
+				Count: 1b
+				id: "ad_astra:glacio_stone"
+			}
 			id: "498CD015D66F0E7C"
 			rewards: [
 				{
