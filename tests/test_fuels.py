@@ -48,6 +48,14 @@ def test_fuel_tags_merged():
         assert gt in members and cdg in members, (tag, members)
 
 
+def test_high_octane_fora_da_gasolina():
+    """O GT consome fluido por tag: gasolina de alta octanagem em forge:gasoline viraria gasolina comum (laço e queima
+    mais barata). Ela fica só na tag dela."""
+    assert "gtceu:high_octane_gasoline" not in _fuels()["fluid_tags"]["forge:gasoline"]
+    reg = _reg()
+    assert "gtceu:high_octane_gasoline" not in reg.fluid_tag_fluids("forge:gasoline")
+
+
 @pytest.mark.ingame
 def test_fuel_crossing_ingame():
     import boot_test

@@ -34,6 +34,9 @@ ServerEvents.recipes(event => {
   for (let m in ECOS_CREATE_GT.splashing) add('create:splashing', 'splashing/' + m, ECOS_CREATE_GT.splashing[m])
   for (let m in ECOS_CREATE_GT.pressing) add('create:pressing', 'pressing/' + m, ECOS_CREATE_GT.pressing[m])
   for (let m in ECOS_CREATE_GT.mixing) add('create:mixing', 'mixing/' + m, ECOS_CREATE_GT.mixing[m])
+  // moagens de compat do Create que pegam o mesmo minério bruto que as nossas (raw_tin, raw_lead...): fica só a nossa
+  if (!ECOS_CREATE_GT.remove) throw new Error('[ecos] create_gt.json sem "remove": rode tools/gen_create_gt.py')
+  ECOS_CREATE_GT.remove.forEach(id => event.remove({ id: String(id) }))
   // cascalho: troca a receita do Create (mantém areia/sílex/argila e acrescenta redstone)
   event.remove({ id: 'create:crushing/gravel' })
   add('create:crushing', 'gravel', ECOS_CREATE_GT.gravel)

@@ -35,15 +35,19 @@ public final class EcosMaquinas {
     public static final String MODID = "ecosmaquinas";
     private static final Logger LOG = LoggerFactory.getLogger(MODID);
 
-    /** Balanço do ciclo vapor -> rotação -> EU. GregTech: 2 mB de vapor = 1 EU; aqui 2 mB -> 48 SU -> 0,75 EU (perda 25 %). */
+    /**
+     * Balanço do ciclo vapor -> rotação -> EU. GregTech: 2 mB de vapor = 1 EU; aqui 2 mB -> 48 SU -> 0,1875 EU
+     * (perda de 81 %). Dínamo a 64 RPM: ULV pede 32 x 64 = 2048 SU por 8 EU/t, LV pede 128 x 64 = 8192 SU por 32 EU/t,
+     * ou seja 256 SU por EU/t (moinho de 8 velas, 512 SU -> 2 EU/t; motor a vapor do Create com blaze, 16384 SU -> 64).
+     */
     public static final class Constantes {
         public static final int SU_POR_MB_VAPOR = 24;
-        public static final int SU_POR_EU = 64;
+        public static final int SU_POR_EU = 256;
         public static final int MOTOR_RPM = 32;
         public static final int MOTOR_MAX_MB_T = 80;
         public static final int SAIDA_MB_T_POR_NIVEL = 6;
-        public static final int DINAMO_ULV_IMPACTO = 8;
-        public static final int DINAMO_LV_IMPACTO = 32;
+        public static final int DINAMO_ULV_IMPACTO = 32;
+        public static final int DINAMO_LV_IMPACTO = 128;
     }
 
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);

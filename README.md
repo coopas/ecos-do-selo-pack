@@ -27,16 +27,20 @@ Três blocos ligam o vapor do GregTech, a rotação do Create e a energia (EU) d
   queimando **80 mB/t** (menos vapor = menos SU). **Ele queima vapor mesmo sem nada ligado no eixo.**
 - **Dínamo Cinético (ULV / LV)**: recebe rotação e solta EU na face oposta ao eixo: **ULV 8 EU/t**, **LV 32 EU/t**.
   Conta a velocidade em módulo (qualquer sentido serve); a produção cheia vem a partir de **64 RPM**
-  (a 32 RPM, metade). Ele pesa na rede: ULV 8 SU e LV 32 SU por RPM (LV a 64 RPM = 2048 SU, mais que um motor;
-  use dois). Regra do GregTech: o dínamo **LV** encostado numa máquina **ULV** dá sobretensão e a máquina explode.
+  (a 32 RPM, metade). Ele pesa bastante na rede: ULV 32 SU e LV 128 SU por RPM, ou seja, a 64 RPM o **ULV pede
+  2048 SU** e o **LV pede 8192 SU** (256 SU para cada EU/t). Exemplos: um moinho pequeno (8 velas, 512 SU) dá
+  **≈ 2 EU/t**; um motor a vapor do Create numa caldeira com blaze (16384 SU) dá **≈ 64 EU/t**. Um Motor a Vapor do
+  Eco dá no máximo 1920 SU, então um dínamo LV cheio só com eles precisa de **vários motores** (5 ou mais).
+  Regra do GregTech: o dínamo **LV** encostado numa máquina **ULV** dá sobretensão e a máquina explode.
 - **Saída de Vapor**: encoste num tanque de uma caldeira do Create com queimador. Ela entrega **6 mB/t de vapor por
-  nível da caldeira** e gasta a água da caldeira. Só funciona **sem motores a vapor do Create** na mesma caldeira
-  (ou vapor, ou rotação).
+  nível da caldeira** e gasta a água da caldeira. **Caldeira com motor a vapor do Create ou com apito não solta vapor
+  pela Saída** (ou a caldeira é do Create, ou é da Saída).
 
-O ciclo vapor → rotação → EU sempre perde energia: não existe moto-contínuo.
+O ciclo vapor → rotação → EU **perde energia**: o vapor rende bem menos EU passando pelo motor e pelo dínamo do que
+queimado direto numa máquina a vapor do GregTech.
 
 Também:
-- **Diesel e gasolina** servem nos dois mods: os motores do Create: Diesel Generators queimam os do GregTech, e os
+- **Diesel e gasolina** servem nos dois mods: os motores do mod Create: Diesel Generators queimam os do GregTech, e os
   geradores de combustão do GregTech queimam os do Diesel Generators.
 - O Create **mói e lava os minérios do GregTech**, mas rende **menos** que as máquinas do GregTech (é o atalho sem
   energia elétrica).

@@ -32,14 +32,14 @@ import java.util.WeakHashMap;
  * gtceu:steam por nível aos vizinhos com FLUID_HANDLER (menos tanques do Create).
  *
  * Nível = min(activeHeat, getMaxHeatLevelForBoilerSize(tamanho), limite de água): o mesmo limite que o Create aplica
- * aos motores. Modo exclusivo: com qualquer motor a vapor do Create acoplado (attachedEngines > 0) a saída dá 0.
+ * aos motores. Modo exclusivo: com qualquer motor a vapor do Create acoplado (attachedEngines > 0) ou qualquer apito
+ * (attachedWhistles > 0) a saída dá 0. O apito também liga a caldeira no Create (que passa a sumir com a água
+ * bombeada): ou o Create usa a caldeira, ou a saída.
  *
  * Água: sem motor nem apito a caldeira do Create fica inativa (BoilerData.isActive() == false): não atualiza o calor,
  * não mede a água e o tanque é um tanque comum. Então a saída refaz o calor com BoilerData.updateTemperature e gasta
  * a água do próprio tanque: AGUA_MB_POR_NIVEL (10 mB, o waterSupplyPerLevel do Create) por nível por tick, na
  * proporção do vapor de fato entregue (10 mB de água -> 6 mB de vapor). Sem água no tanque: 0.
- * Com apito (caldeira ativa sem motor) o Create já consome a água bombeada e mede waterSupply: aí o limite de água é
- * o getMaxHeatLevelForWaterSupply() do Create e a saída não drena o tanque.
  *
  * Várias saídas na mesma caldeira dividem um orçamento por tick (6 x nível mB): mais saídas não multiplicam o vapor.
  *
@@ -53,7 +53,7 @@ public class SaidaVaporBlockEntity extends SmartBlockEntity implements IHaveGogg
     private static final int TICKS_CALOR = 10;
 
     static final int SEM_CALDEIRA = 0, MOTOR_ACOPLADO = 1, SEM_CALOR = 2, SEM_AGUA = 3, SEM_DESTINO = 4,
-            ESGOTADA = 5, PRODUZINDO = 6;
+            ESGOTADA = 5, PRODUZINDO = 6, APITO_ACOPLADO = 7;
 
     /** Vapor já entregue neste tick por caldeira (controlador): {tick do jogo, mB}. Só no servidor. */
     private static final Map<FluidTankBlockEntity, long[]> USO = new WeakHashMap<>();
@@ -69,9 +69,14 @@ public class SaidaVaporBlockEntity extends SmartBlockEntity implements IHaveGogg
     public void addBehaviours(List<BlockEntityBehaviour> behaviours) {
     }
 
-    /** Nível da caldeira que a saída está usando (0 sem caldeira, com motor, sem calor ou sem água). */
+    /** Nível da caldeira que a saída está usando (0 sem caldeira, com motor ou apito, sem calor ou sem água). */
     public int getNivel() {
         return nivel;
+    }
+
+    /** Motivo do tooltip (SEM_CALDEIRA ... APITO_ACOPLADO); lido pelo teste em jogo. */
+    public int getEstado() {
+        return estado;
     }
 
     /** mB de vapor entregues no último tick. */
@@ -93,8 +98,8 @@ public class SaidaVaporBlockEntity extends SmartBlockEntity implements IHaveGogg
         if (c == null) { estado = SEM_CALDEIRA; return; }
         BoilerData b = c.boiler;
         if (b.attachedEngines > 0) { estado = MOTOR_ACOPLADO; return; }  // ou rotação, ou vapor
-        boolean createMedeAgua = b.isActive();  // só apitos: o Create já some com a água e mede waterSupply
-        if (!createMedeAgua && --ticksCalor <= 0) {
+        if (b.attachedWhistles > 0) { estado = APITO_ACOPLADO; return; }  // apito: a caldeira é do Create
+        if (--ticksCalor <= 0) {
             ticksCalor = TICKS_CALOR;
             b.updateTemperature(c);  // caldeira inativa: o Create não atualiza o calor sozinho
         }
@@ -103,8 +108,7 @@ public class SaidaVaporBlockEntity extends SmartBlockEntity implements IHaveGogg
         FluidTank tanque = c.getTankInventory();
         FluidStack agua = tanque.getFluid();
         boolean temAgua = !agua.isEmpty() && FluidHelper.isWater(agua.getFluid());
-        if (createMedeAgua) n = Math.min(n, b.getMaxHeatLevelForWaterSupply());
-        else n = Math.min(n, temAgua ? agua.getAmount() / AGUA_MB_POR_NIVEL : 0);
+        n = Math.min(n, temAgua ? agua.getAmount() / AGUA_MB_POR_NIVEL : 0);
         n = Math.min(n, NIVEL_MAX);
         if (n <= 0) { estado = SEM_AGUA; return; }
         nivel = n;
@@ -120,10 +124,9 @@ public class SaidaVaporBlockEntity extends SmartBlockEntity implements IHaveGogg
         uso[1] += entregue;
         producao = entregue;
         estado = PRODUZINDO;
-        if (!createMedeAgua) {  // 10 mB de água para cada 6 mB de vapor entregue, arredondando contra o jogador
-            int gasto = (entregue * AGUA_MB_POR_NIVEL + Constantes.SAIDA_MB_T_POR_NIVEL - 1) / Constantes.SAIDA_MB_T_POR_NIVEL;
-            tanque.drain(new FluidStack(agua.getFluid(), gasto), IFluidHandler.FluidAction.EXECUTE);
-        }
+        // 10 mB de água para cada 6 mB de vapor entregue, arredondando contra o jogador
+        int gasto = (entregue * AGUA_MB_POR_NIVEL + Constantes.SAIDA_MB_T_POR_NIVEL - 1) / Constantes.SAIDA_MB_T_POR_NIVEL;
+        tanque.drain(new FluidStack(agua.getFluid(), gasto), IFluidHandler.FluidAction.EXECUTE);
     }
 
     /** Controlador da caldeira encostada (o primeiro tanque do Create vizinho), ou null. */
@@ -188,7 +191,7 @@ public class SaidaVaporBlockEntity extends SmartBlockEntity implements IHaveGogg
         producao = limitar(tag.m_128425_("Producao", 99) ? tag.m_128451_("Producao") : 0, 0,
                 NIVEL_MAX * Constantes.SAIDA_MB_T_POR_NIVEL);
         int e = tag.m_128425_("Estado", 99) ? tag.m_128451_("Estado") : SEM_CALDEIRA;
-        estado = e >= SEM_CALDEIRA && e <= PRODUZINDO ? e : SEM_CALDEIRA;
+        estado = e >= SEM_CALDEIRA && e <= APITO_ACOPLADO ? e : SEM_CALDEIRA;
     }
 
     private static int limitar(int v, int min, int max) {
@@ -204,6 +207,7 @@ public class SaidaVaporBlockEntity extends SmartBlockEntity implements IHaveGogg
         String aviso = switch (estado) {
             case SEM_CALDEIRA -> "Encoste num tanque do Create com queimador embaixo";
             case MOTOR_ACOPLADO -> "Motor a vapor do Create na caldeira: saída desligada";
+            case APITO_ACOPLADO -> "Apito do Create na caldeira: saída desligada";
             case SEM_CALOR -> "Caldeira sem calor (ou pequena demais)";
             case SEM_AGUA -> "Caldeira sem água";
             case SEM_DESTINO -> "Nada recebendo o vapor";

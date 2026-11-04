@@ -1,7 +1,7 @@
 {
   "fluid_tags": {
     "forge:diesel": ["gtceu:diesel"],
-    "forge:gasoline": ["gtceu:gasoline", "gtceu:high_octane_gasoline"],
+    "forge:gasoline": ["gtceu:gasoline"],
     "forge:biodiesel": ["gtceu:bio_diesel"],
     "forge:ethanol": ["gtceu:ethanol"],
     "forge:crude_oil": ["gtceu:oil", "ad_astra:oil"]

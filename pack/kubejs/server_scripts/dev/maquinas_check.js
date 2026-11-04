@@ -21,7 +21,9 @@ const ECOS_MAQ_POS = {
   caldeira_seca: [2, 301, 9], saida_seca: [3, 302, 9], tambor_seca: [4, 302, 9],
   caldeira_reserva: [7, 301, 9], saida_reserva: [8, 302, 9], tambor_reserva: [9, 302, 9],
   saida_nbt_ruim: [12, 302, 9],  // NBT adulterado, sem caldeira
-  // Task 7: caldeira 2x2x8 (x 8..9, z 2..3, y 301..308) com 4 queimadores; Saída -> Motor -> Dínamo LV -> buffer
+  // caldeira com apito do Create em cima (y=309): a caldeira é do Create, a saída dá 0
+  caldeira_apito: [12, 301, 11], saida_apito: [13, 302, 11], tambor_apito: [14, 302, 11],
+  // Task 7: caldeira 2x2x8 (x 8..9, z 2..3, y 301..308) com 4 queimadores; Saída -> Motor -> Dínamo ULV -> buffer
   ciclo_caldeira: [8, 301, 2], ciclo_saida: [10, 302, 2], ciclo_motor: [11, 302, 2],
   ciclo_dinamo: [11, 303, 2], ciclo_buffer: [11, 304, 2],
 }
@@ -139,7 +141,7 @@ ServerEvents.customCommand('ecos_dinamo_check', event => {
 ServerEvents.customCommand('ecos_saida_check', event => {
   if (!EcosMaq.dev()) return
   const server = event.server, D = EcosMaq.Direction, EXEC = EcosMaq.Acao.EXECUTE
-  const casos = ['quente', 'motores', 'fria', 'seca', 'reserva']
+  const casos = ['quente', 'motores', 'fria', 'seca', 'reserva', 'apito']
   let saidas = {}, tambores = {}, caldeiras = {}
   for (let n of casos) {
     saidas[n] = EcosMaq.be(server, 'saida_' + n)
@@ -165,7 +167,7 @@ ServerEvents.customCommand('ecos_saida_check', event => {
     server.scheduleInTicks(100, () => {
       let mbt = {}
       for (let n of casos) mbt[n] = (vapor(n) - antes[n]) / 100
-      let q = saidas.quente, bm = caldeiras.motores.getControllerBE().boiler
+      let q = saidas.quente, bm = caldeiras.motores.getControllerBE().boiler, ba = caldeiras.apito.getControllerBE().boiler
       let ruim = EcosMaq.be(server, 'saida_nbt_ruim')
       EcosMaq.diga(server, `ECOS_SAIDA nivel=${q.getNivel()} mb_t=${mbt.quente} com_motores_mb_t=${mbt.motores} fria_mb_t=${mbt.fria}`)
       EcosMaq.diga(server, `ECOS_SAIDA_EXTRA seca_mb_t=${mbt.seca} calc_quente=${q.getProducaoMbT()}` +
@@ -173,14 +175,18 @@ ServerEvents.customCommand('ecos_saida_check', event => {
         ` motores_calor=${bm.activeHeat} motores_nivel=${saidas.motores.getNivel()}` +
         ` vapor_quente=${vapor('quente')} agua_fria=${aguaFria} agua_fria_resta=${agua('fria')}` +
         ` reserva_agua_entrou=${aguaReserva} reserva_vapor=${vapor('reserva')} reserva_agua_resta=${agua('reserva')}` +
-        ` reserva_mb_t=${mbt.reserva} ruim_nivel=${ruim ? ruim.getNivel() : -1} ruim_mb_t=${ruim ? ruim.getProducaoMbT() : -1}`)
+        ` reserva_mb_t=${mbt.reserva} ruim_nivel=${ruim ? ruim.getNivel() : -1} ruim_mb_t=${ruim ? ruim.getProducaoMbT() : -1}` +
+        ` apito_mb_t=${mbt.apito} apito_calc=${saidas.apito.getProducaoMbT()} apito_estado=${saidas.apito.getEstado()}` +
+        ` apito_apitos=${ba.attachedWhistles} apito_motores=${ba.attachedEngines} apito_calor=${ba.activeHeat}` +
+        ` quente_estado=${q.getEstado()} motores_estado=${saidas.motores.getEstado()}`)
     })
   })
 })
 
 // --- Task 7: o ciclo vapor -> rotação -> EU perde energia ----------------------------------------------------------
 // Caldeira 2x2x8 com 4 queimadores superaquecidos (nível 8) e 200 000 mB de água guardada -> Saída de Vapor (48 mB/t)
-// -> Motor a Vapor (eixo em cima) -> Dínamo LV (eixo embaixo, EU em cima) -> gtceu:lv_battery_buffer_4x com bateria.
+// -> Motor a Vapor (eixo em cima) -> Dínamo ULV (eixo embaixo, EU em cima) -> gtceu:lv_battery_buffer_4x com bateria.
+// Um motor só (1152 SU a 32 RPM com 48 mB/t) não segura um dínamo LV a 32 RPM (4096 SU); o ULV pede 1024 SU.
 // Espera 200 ticks e mede, nos 600 ticks seguintes: o vapor que a Saída entregou (somado tick a tick), o vapor que o
 // motor de fato queimou (entregue menos o que sobrou a mais no tanque dele), a água que a caldeira perdeu e o EU que
 // entrou no buffer.

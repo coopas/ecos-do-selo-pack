@@ -327,11 +327,11 @@ hash = "9690d73a987dd7e5e8fb14d69f800541ef38f52a87ebef3e5813d57eb9230615"
 
 [[files]]
 file = "kubejs/ecos/create_gt.json"
-hash = "6b4571030bdefd747d498cf09864b2aab8d6b1a55719d00b88f281fdab6e9bc8"
+hash = "0575370a2746e4c15ada5dd9c2bee33217bf55f794e14950034af3a186ad8f0c"
 
 [[files]]
 file = "kubejs/ecos/fuels.json"
-hash = "eb9a342dfc7b3b1b1988e31943c958de550e5c0a3679a8ea8ebe86bb116fcf0d"
+hash = "a278ae343fad13fa041de8f1fc39bf39d5e27775d2264eb70a6e2c13d1430b91"
 
 [[files]]
 file = "kubejs/ecos/items.json"
@@ -375,7 +375,7 @@ hash = "9f136b7c0785c7eb03ed157ea67810def4bd47902e8d3f6a495d3f99882f7924"
 
 [[files]]
 file = "kubejs/server_scripts/25_ecos_create_gt.js"
-hash = "235dab88a42d02de6bc952ecfd82da43f14da322743f33babc584b92c2b40422"
+hash = "84b9b064a9ceb2b8441a54b4629291a0dad6b2518cc99bc437147e310dfeec0f"
 
 [[files]]
 file = "kubejs/server_scripts/30_ecos_boss_drops.js"
@@ -395,7 +395,7 @@ hash = "5eaac6495ff579721a8007345d5e6d5bc64e8cda2d6a1e4f9dfbf8504bba4348"
 
 [[files]]
 file = "kubejs/server_scripts/dev/maquinas_check.js"
-hash = "f9f86bf15ac0636ea58a4e851be49ca86eb0cc7ffd91ed1dfd69fd98fb77c9ee"
+hash = "ecf7ac5bf5ee19c829122f3ee293d5856e1cd9c418be7ec28d1a340c80dd6ac6"
 
 [[files]]
 file = "kubejs/server_scripts/dev/mob_gear_check.js"
@@ -522,7 +522,7 @@ hash = "eb85430e20ac0dd2b66d63f02729ff2fcaacc2dacaba1d6dbed49cfd9e669072"
 
 [[files]]
 file = "mods/ecosmaquinas-1.0.0.jar"
-hash = "a9f3b7ea43b2359fdc0f3ac09ff31b799edf0bd3842d9d40af21a02ed3c99d16"
+hash = "a68c7773b90f80c214e2692d51acd2ba36248c0936e6005335de0128c7528f49"
 
 [[files]]
 file = "mods/embeddium.pw.toml"

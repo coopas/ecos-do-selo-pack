@@ -1,6 +1,7 @@
 """Gera pack/kubejs/ecos/create_gt.json: minério do GregTech no Create, ligas na batedeira e redstone do cascalho.
 
-Lê build/registry_dump.json (e build/recipe_dump.json, para não duplicar prensas do Create)."""
+Lê build/registry_dump.json (e build/recipe_dump.json, para não duplicar prensas do Create e para achar as moagens
+de compat do Create que pegam o mesmo minério bruto que as nossas: essas vão em "remove")."""
 import json
 import re
 import sys
@@ -29,13 +30,26 @@ ALLOYS = {  # nome: (saída, quantidade, [(tag, quantidade)])
 
 
 def _pressed_inputs(reg, recipes) -> set[str]:
-    """Itens aceitos por alguma receita create:pressing (tags expandidas)."""
+    """Itens aceitos por alguma receita create:pressing que não seja nossa (tags expandidas)."""
     out = set()
     for r in recipes or []:
-        if r.get("type") == "create:pressing":
+        if r.get("type") == "create:pressing" and not r.get("id", "").startswith("ecos:"):
             for slot in r.get("inputs", []):
                 for s in slot:
                     out |= reg.tag_items(s) if s.startswith("#") else {s}
+    return out
+
+
+def _crushing_dupes(recipes, materials) -> set[str]:
+    """Receitas create:crushing que não são nossas e pegam #forge:raw_materials/<m> de um material que geramos
+    (ex.: create:crushing/raw_tin, compat do Create): duas moagens para o mesmo item no JEI e no moedor."""
+    out = set()
+    for r in recipes or []:
+        if r.get("type") != "create:crushing" or r.get("id", "").startswith("ecos:"):
+            continue
+        tags = {s[1:] for slot in r.get("inputs", []) for s in slot if s.startswith("#")}
+        if any(f"forge:raw_materials/{m}" in tags for m in materials):
+            out.add(r["id"])
     return out
 
 
@@ -43,7 +57,9 @@ def _ingredient(reg, tag: str, item: str) -> dict:
     return {"tag": tag} if reg.has_tag(tag) else {"item": item}
 
 
-def build(reg, recipes=None) -> dict:
+def build(reg, recipes=None, keep_remove=()) -> dict:
+    """keep_remove: o "remove" do create_gt.json anterior. Depois de removidas, as receitas somem do recipe_dump;
+    sem isso, regenerar com o dump novo devolveria a duplicata. Só fica o que ainda é de um material gerado."""
     crushing, splashing, pressing, mixing = {}, {}, {}, {}
     for raw in sorted(i for i in reg.items if i.startswith("gtceu:raw_")):
         m = raw[len("gtceu:raw_"):]
@@ -74,12 +90,16 @@ def build(reg, recipes=None) -> dict:
                         "heatRequirement": "heated"}
     gravel = {"ingredients": [{"item": "minecraft:gravel"}],
               "results": GRAVEL_KEEP + [GRAVEL_EXTRA], "processingTime": 250}
+    remove = _crushing_dupes(recipes, crushing)
+    pre = "create:crushing/raw_"
+    remove |= {i for i in keep_remove if i.startswith(pre) and i[len(pre):] in crushing}
     return {"crushing": crushing, "splashing": splashing, "pressing": pressing,
-            "mixing": mixing, "gravel": gravel}
+            "mixing": mixing, "gravel": gravel, "remove": sorted(remove)}
 
 
 def write(reg, out: Path, recipes=None) -> int:
-    d = build(reg, recipes)
+    old = json.loads(out.read_text(encoding="utf-8")).get("remove", []) if out.exists() else []
+    d = build(reg, recipes, old)
     out.write_text(json.dumps(d, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return sum(len(d[k]) for k in ("crushing", "splashing", "pressing", "mixing")) + 1
 
@@ -88,13 +108,17 @@ def main() -> int:
     reg = registry.load(BUILD / "registry_dump.json")
     rd = json.loads((BUILD / "recipe_dump.json").read_text(encoding="utf-8"))["recipes"]
     gravel = [r for r in rd if r["id"] == "create:crushing/gravel"]
+    # dump feito com o 25_ecos_create_gt.js já ativo: a original foi trocada pela ecos:create_gt/gravel
+    if not gravel and any(r["id"] == "ecos:create_gt/gravel" for r in rd):
+        gravel = [r for r in rd if r["id"] == "ecos:create_gt/gravel"]
     if not gravel:
         raise SystemExit("create:crushing/gravel ausente do recipe_dump.json")
     for o in gravel[0]["outputs"]:  # o dump só traz as saídas sem chance: devem estar entre as mantidas
         if o not in {k["item"] for k in GRAVEL_KEEP}:
             raise SystemExit(f"saída nova do cascalho no dump: {o}")
     n = write(reg, OUT, rd)
-    print(f"{n} receitas -> {OUT}")
+    rm = json.loads(OUT.read_text(encoding="utf-8"))["remove"]
+    print(f"{n} receitas -> {OUT}; {len(rm)} moagens do Create removidas: {', '.join(rm)}")
     return 0
 
 

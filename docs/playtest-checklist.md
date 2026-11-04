@@ -52,21 +52,24 @@ O que **só uma pessoa jogando** confirma. Use um mundo de teste em modo criativ
 - [ ] Morte: a tumba guarda os itens e o dono consegue recuperá-los.
 
 ## 7. Vapor, rotação e energia (GregTech × Create)
-Os testes já mediram: motor a 32 RPM / 1920 SU com 80 mB/t; dínamo ULV 8 e LV 32 EU/t; Saída 6 mB/t por nível;
-o ciclo Saída → Motor → Dínamo LV entregou 9 600 EU com 28 800 mB de vapor (perda de 33 %). Falta o que só o olho vê:
+Os testes já mediram: motor a 32 RPM / 1920 SU com 80 mB/t; dínamo ULV 8 e LV 32 EU/t a 64 RPM (pedindo 2048 e
+8192 SU); Saída 6 mB/t por nível, e 0 com motor ou apito do Create na caldeira; o ciclo Saída → Motor → Dínamo ULV
+entregou 2 400 EU com 28 800 mB de vapor (perda de 83 %). Falta o que só o olho vê:
 - [ ] Motor a Vapor com vapor (cano do GregTech ligado): o **eixo gira visivelmente** no motor e no eixo encostado.
 - [ ] Dínamo ligado a um eixo girando: o **meio-eixo do dínamo gira** junto.
 - [ ] Óculos de engenheiro no motor: mostra "Motor a Vapor do Eco", o vapor no tanque e o consumo; a capacidade (SU) bate.
 - [ ] Óculos no dínamo: "Dínamo Cinético (LV)", "Tier: LV (32 V, 1 A)", a geração em EU/t e a energia guardada;
       parado aparece "Sem rotação: dínamo parado" em vermelho.
-- [ ] Óculos na Saída de Vapor: nível da caldeira, mB/t de vapor; sem queimador, sem água ou com motor do Create na
-      caldeira aparece o motivo em vermelho.
+- [ ] Óculos na Saída de Vapor: nível da caldeira, mB/t de vapor; sem queimador, sem água, com motor do Create ou
+      com apito na caldeira aparece o motivo em vermelho ("Apito do Create na caldeira: saída desligada").
+- [ ] Dínamo ULV num moinho pequeno (8 velas): uns 2 EU/t; dínamo LV num motor a vapor do Create com blaze: 32 EU/t
+      (o máximo do LV) sem sobrecarregar a rede.
 - [ ] Um **cabo do GregTech** encostado na face de saída do dínamo (oposta ao eixo) leva energia até uma máquina LV
       (ou um buffer de bateria) e a máquina trabalha.
 - [ ] Dínamo LV encostado numa máquina ULV: ela explode (regra do GregTech; só para conferir que o aviso é verdade).
 - [ ] Motor sem nada no eixo: o vapor do tanque continua baixando (gasta mesmo sem carga).
-- [ ] Encha o **motor do Create: Diesel Generators** com **diesel do GregTech** (balde ou cano): ele gira.
-      Gasolina do GregTech também.
+- [ ] Encha o **motor do mod Create: Diesel Generators** com **diesel do GregTech** (balde ou cano): ele gira.
+      Gasolina do GregTech também (a de alta octanagem não: ela não conta como gasolina comum).
 - [ ] Gerador de combustão do GregTech com diesel do Diesel Generators: gera EU.
 - [ ] Rodas de moer do Create com minério bruto do GregTech dão minério moído; a lavagem (ventilador + água) dá o
       purificado. No JEI, o rendimento do Create é menor que o do macerador do GregTech.

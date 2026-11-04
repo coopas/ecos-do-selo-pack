@@ -9,6 +9,9 @@ import re
 
 import pytest
 
+from test_ecosmaquinas import _constantes  # números lidos do EcosMaquinas.java (Constantes)
+
+C = _constantes()
 AREA = ["forceload add 0 0"]
 FIM = ["forceload remove 0 0"]
 
@@ -52,7 +55,7 @@ MOTOR_CHEIO, MOTOR_VAZIO, MOTOR_AGUA = "2 300 2", "6 300 2", "10 300 2"
 
 @pytest.mark.ingame
 def test_motor_vapor_ingame():
-    """Motor com 8 000 mB de gtceu:steam gira a 32 RPM e dá 24 SU/mB x 80 mB/t = 1920 SU; o motor sem vapor
+    """Motor com 8 000 mB de gtceu:steam gira a MOTOR_RPM e dá SU_POR_MB_VAPOR x MOTOR_MAX_MB_T SU; o motor sem vapor
     (colocado com NBT vazio, como os que já estão no mundo dos amigos) fica parado e recusa água."""
     montar = [f"setblock {MOTOR_CHEIO} ecosmaquinas:motor_vapor[facing=up]",
               "setblock 2 301 2 create:shaft[axis=y]",
@@ -62,9 +65,9 @@ def test_motor_vapor_ingame():
     limpar = [f"setblock {p} minecraft:air" for p in ("2 301 2", MOTOR_CHEIO, MOTOR_VAZIO, MOTOR_AGUA)]
     console = _rodar(AREA + montar + ["kubejs custom_command ecos_motor_check"] + _esperar(4) + limpar + FIM)
     c = _campos(_linha(console, "ECOS_MOTOR"))
-    assert c["cheio_rpm"] == 32, c
-    assert c["su"] == 24 * 80, c
-    assert c["mb_t"] == 80, c
+    assert c["cheio_rpm"] == C["MOTOR_RPM"], c
+    assert c["su"] == C["SU_POR_MB_VAPOR"] * C["MOTOR_MAX_MB_T"], c
+    assert c["mb_t"] == C["MOTOR_MAX_MB_T"], c
     assert c["vazio_rpm"] == 0, c
     assert c["agua_recusada"] is True, c
     extra = _campos(_linha(console, "ECOS_MOTOR_EXTRA"))
@@ -83,15 +86,21 @@ def test_motor_vapor_ingame():
 DINAMOS = {  # x: (tier, RPM do motor criativo, NBT do dínamo)
     2: ("ulv", 64, "{}"),  # NBT vazio, como os dínamos que já estão no mundo dos amigos
     4: ("lv", 64, ""), 6: ("lv", 0, ""), 8: ("lv", -64, ""),
-    10: ("ulv", 32, ""),  # lento: 8 SU/RPM x 32 / 64 = 4 EU/t (meio ampere em média)
-    12: ("lv", 256, ""),  # rápido: 32 x 256 / 64 = 128 EU/t teóricos, mas no máximo 1 A de 32 V
+    10: ("ulv", 32, ""),  # lento: impacto ULV x 32 / SU_POR_EU = 4 EU/t (meio ampere em média)
+    12: ("lv", 256, ""),  # rápido: impacto LV x 256 / SU_POR_EU = 128 EU/t teóricos, mas no máximo 1 A de 32 V
 }
 DINAMO_Z = 6
+VOLT = {"ulv": 8, "lv": 32}
+
+
+def _eu_t(tier: str, rpm: int) -> float:
+    """EU/t esperado do dínamo, das constantes do Java: min(voltagem, impacto x |RPM| / SU_POR_EU)."""
+    return min(VOLT[tier], C[f"DINAMO_{tier.upper()}_IMPACTO"] * abs(rpm) / C["SU_POR_EU"])
 
 
 @pytest.mark.ingame
 def test_dinamo_ingame():
-    """Rotação do Create vira EU do GregTech: EU/t = min(voltagem, impacto x |RPM| / 64), 1 A na voltagem da tier."""
+    """Rotação do Create vira EU do GregTech: EU/t = min(voltagem, impacto x |RPM| / SU_POR_EU), 1 A na voltagem."""
     montar, limpar = [], []
     for x, (tier, rpm, nbt) in DINAMOS.items():
         montar += [f"setblock {x} 300 {DINAMO_Z} create:creative_motor[facing=up]{{ScrollValue:{rpm}}}",
@@ -104,15 +113,16 @@ def test_dinamo_ingame():
     limpar += ["setblock 2 301 10 minecraft:air", "setblock 4 301 10 minecraft:air"]
     console = _rodar(AREA + montar + ["kubejs custom_command ecos_dinamo_check"] + _esperar(14) + limpar + FIM)
     c = _campos(_linha(console, "ECOS_DINAMO"))
-    assert c["ulv_eu_t"] == 8, c
-    assert c["lv_eu_t"] == 32, c
+    assert _eu_t("ulv", 64) == 8 and _eu_t("lv", 64) == 32 and _eu_t("ulv", 32) == 4  # a 64 RPM, 1 A cheio
+    assert c["ulv_eu_t"] == _eu_t("ulv", 64), c
+    assert c["lv_eu_t"] == _eu_t("lv", 64), c
     assert c["parado_eu_t"] == 0, c
-    assert c["reverso_eu_t"] == 32, c
+    assert c["reverso_eu_t"] == _eu_t("lv", -64), c
     e = _campos(_linha(console, "ECOS_DINAMO_EXTRA"))
     assert e["reverso_rpm"] < 0, e  # o reverso gira mesmo ao contrário
-    assert e["lento_eu_t"] == 4, e  # fração acumulada no buffer e entregue em pacotes de 8 V
-    assert e["rapido_eu_t"] == 32 and e["rapido_calc"] == 32, e  # nunca mais que 1 A na voltagem da tier
-    assert (e["ulv_calc"], e["lv_calc"], e["reverso_calc"]) == (8, 32, 32), e
+    assert e["lento_eu_t"] == _eu_t("ulv", 32), e  # fração acumulada no buffer e entregue em pacotes de 8 V
+    assert e["rapido_eu_t"] == 32 and e["rapido_calc"] == _eu_t("lv", 256) == 32, e  # nunca mais que 1 A na tier
+    assert (e["ulv_calc"], e["lv_calc"], e["reverso_calc"]) == (_eu_t("ulv", 64), _eu_t("lv", 64), _eu_t("lv", -64)), e
     assert (e["ulv_v"], e["lv_v"]) == (8, 32), e
     assert e["saida_cap"] is True and e["eixo_sem_cap"] is True, e  # IEnergyContainer só na face de saída
     assert e["saida_out"] is True and e["saida_nao_aceita"] is True and e["saida_recusa"] is True, e
@@ -124,22 +134,26 @@ def test_dinamo_ingame():
 # Posições = ECOS_MAQ_POS.caldeira_* / saida_* / tambor_* em maquinas_check.js. Caldeira = torre 1x1x8 de
 # create:fluid_tank (y 301..308): tamanho 8 -> nível máximo 2 pelo tamanho; queimador superaquecido = calor 2.
 QUEIMADOR = "create:blaze_burner[blaze=seething]{fuelLevel:2,burnTimeRemaining:20000}"
-CALDEIRAS = {  # nome: (x, z, queimador?, bomba?, motor do Create?)
-    "quente": (2, 13, True, True, False),
-    "motores": (8, 13, True, True, True),
-    "fria": (13, 13, False, False, False),
-    "seca": (2, 9, True, False, False),
-    "reserva": (7, 9, True, False, False),
+CALDEIRAS = {  # nome: (x, z, queimador?, bomba?, motor do Create?, apito do Create?)
+    "quente": (2, 13, True, True, False, False),
+    "motores": (8, 13, True, True, True, False),
+    "fria": (13, 13, False, False, False, False),
+    "seca": (2, 9, True, False, False, False),
+    "reserva": (7, 9, True, False, False, False),
+    "apito": (12, 11, True, False, False, True),
 }
+# Estados de SaidaVaporBlockEntity (motivo do tooltip)
+MOTOR_ACOPLADO, PRODUZINDO, APITO_ACOPLADO = 1, 6, 7
 
 
 @pytest.mark.ingame
 def test_saida_vapor_ingame():
     """Caldeira do Create sem motor: a Saída entrega 6 mB/t de gtceu:steam por nível de calor (o mesmo limite de calor,
     tamanho e água que o Create usa para os motores) e gasta 10 mB de água por nível; com um motor a vapor do Create
-    acoplado dá 0 (ou rotação, ou vapor); sem queimador ou sem água, 0."""
+    acoplado dá 0 (ou rotação, ou vapor), e com um apito do Create também (a caldeira fica ativa no Create); sem
+    queimador ou sem água, 0."""
     montar, limpar = [], []
-    for nome, (x, z, queimador, bomba, motor) in CALDEIRAS.items():
+    for nome, (x, z, queimador, bomba, motor, apito) in CALDEIRAS.items():
         if queimador:
             montar.append(f"setblock {x} 300 {z} {QUEIMADOR}")
         montar.append(f"fill {x} 301 {z} {x} 308 {z} create:fluid_tank")
@@ -153,6 +167,9 @@ def test_saida_vapor_ingame():
         if motor:
             montar.append(f"setblock {x} 304 {z - 1} create:steam_engine[face=wall,facing=north]")
             limpar.append(f"setblock {x} 304 {z - 1} minecraft:air")
+        if apito:  # em cima da torre (wall=false: preso no tanque de baixo)
+            montar.append(f"setblock {x} 309 {z} create:steam_whistle[wall=false]")
+            limpar.append(f"setblock {x} 309 {z} minecraft:air")
         # a saída da quente entra com NBT vazio, como as saídas que já estão no mundo dos amigos
         nbt = "{}" if nome == "quente" else ""
         montar += [f"setblock {x + 1} 302 {z} ecosmaquinas:saida_vapor{nbt}",
@@ -164,12 +181,12 @@ def test_saida_vapor_ingame():
     console = _rodar(AREA + montar + ["kubejs custom_command ecos_saida_check"] + _esperar(20) + limpar + FIM)
     c = _campos(_linha(console, "ECOS_SAIDA"))
     assert c["nivel"] == 2, c  # min(calor 2, tamanho 8/4, água bombeada)
-    assert c["mb_t"] == 6 * c["nivel"], c
+    assert c["mb_t"] == C["SAIDA_MB_T_POR_NIVEL"] * c["nivel"], c
     assert c["com_motores_mb_t"] == 0, c
     assert c["fria_mb_t"] == 0, c
     e = _campos(_linha(console, "ECOS_SAIDA_EXTRA"))
     assert e["seca_mb_t"] == 0, e
-    assert e["calc_quente"] == 12 and e["calc_motores"] == 0, e
+    assert e["calc_quente"] == C["SAIDA_MB_T_POR_NIVEL"] * 2 and e["calc_motores"] == 0, e
     # a caldeira com motor estava viva (motor contado, com calor): o 0 é o modo exclusivo, não falta de calor
     assert e["motores_engines"] == 1 and e["motores_calor"] >= 1, e
     assert e["agua_fria"] == 8000 and e["agua_fria_resta"] == 8000, e  # sem calor não gasta água
@@ -177,24 +194,29 @@ def test_saida_vapor_ingame():
     assert e["reserva_agua_entrou"] == 1000, e
     assert e["reserva_vapor"] == 600 and e["reserva_agua_resta"] == 0 and e["reserva_mb_t"] == 0, e
     assert e["ruim_nivel"] == 0 and e["ruim_mb_t"] == 0, e
+    # apito do Create na caldeira: 0, pelo motivo do apito (não por falta de calor), e a caldeira tem o apito contado
+    assert e["apito_mb_t"] == 0 and e["apito_calc"] == 0, e
+    assert e["apito_apitos"] >= 1 and e["apito_motores"] == 0 and e["apito_estado"] == APITO_ACOPLADO, e
+    assert e["quente_estado"] == PRODUZINDO and e["motores_estado"] == MOTOR_ACOPLADO, e
 
 
 # --- Task 7: o ciclo inteiro perde energia ------------------------------------------------------------------------
 # Posições = ECOS_MAQ_POS.ciclo_* em maquinas_check.js. Caldeira 2x2x8 (x 8..9, z 2..3, y 301..308): tamanho 32 ->
 # nível máximo 8; quatro queimadores superaquecidos = calor 8 -> a Saída dá 48 mB/t. O motor queima os 48 mB/t e dá
-# 24 x 48 = 1152 SU a 32 RPM; o dínamo LV pede 32 SU/RPM x 32 = 1024 SU e gera 32 x 32 / 64 = 16 EU/t.
+# 24 x 48 = 1152 SU a 32 RPM; o dínamo ULV pede 32 SU/RPM x 32 = 1024 SU e gera 1024 / 256 = 4 EU/t. Um dínamo LV
+# a 32 RPM pediria 4096 SU: um motor só não segura.
 CICLO_SAIDA, CICLO_MOTOR, CICLO_DINAMO, CICLO_BUFFER = "10 302 2", "11 302 2", "11 303 2", "11 304 2"
 
 
 @pytest.mark.ingame
 def test_ciclo_perde_energia_ingame():
-    """Saída de Vapor -> Motor a Vapor -> Dínamo LV -> buffer do GregTech: em 600 ticks, o EU entregue no buffer é no
-    máximo 75 % do que o vapor consumido valeria numa máquina do GregTech (2 mB de vapor = 1 EU). Não há moto-contínuo."""
+    """Saída de Vapor -> Motor a Vapor -> Dínamo ULV -> buffer do GregTech: em 600 ticks, o EU entregue no buffer é no
+    máximo 75 % do que o vapor consumido valeria numa máquina do GregTech (2 mB de vapor = 1 EU): o ciclo perde."""
     montar = [f"setblock {x} 300 {z} {QUEIMADOR}" for x in (8, 9) for z in (2, 3)]
     montar += ["fill 8 301 2 9 308 3 create:fluid_tank",
                f"setblock {CICLO_SAIDA} ecosmaquinas:saida_vapor",
                f"setblock {CICLO_MOTOR} ecosmaquinas:motor_vapor[facing=up]",
-               f"setblock {CICLO_DINAMO} ecosmaquinas:dinamo_cinetico_lv[facing=down]",
+               f"setblock {CICLO_DINAMO} ecosmaquinas:dinamo_cinetico_ulv[facing=down]",
                f"setblock {CICLO_BUFFER} gtceu:lv_battery_buffer_4x[facing=north]"]
     limpar = [f"setblock {p} minecraft:air" for p in (CICLO_BUFFER, CICLO_DINAMO, CICLO_MOTOR, CICLO_SAIDA)]
     limpar += ["fill 8 301 2 9 308 3 minecraft:air", "fill 8 300 2 9 300 3 minecraft:air"]
@@ -205,7 +227,9 @@ def test_ciclo_perde_energia_ingame():
     assert c["eu"] > 0, (c, e)  # a corrente funciona de ponta a ponta (sem isso o <= passaria com tudo parado)
     assert c["vapor_mb"] > 0, (c, e)
     assert c["eu"] <= 0.75 * c["vapor_mb"] / 2, (c, e)  # perde pelo menos 25 %
-    # a medição é a do circuito esperado: nível 8, motor a 32 RPM, dínamo LV sem sobrecarga
-    assert e["nivel"] == 8 and e["rpm"] == 32 and e["sobrecarga"] is False, e
+    # a medição é a do circuito esperado: nível 8, motor a MOTOR_RPM, dínamo ULV sem sobrecarga
+    assert e["nivel"] == 8 and e["rpm"] == C["MOTOR_RPM"] and e["sobrecarga"] is False, e
+    assert e["dinamo_eu_t"] == C["DINAMO_ULV_IMPACTO"] * C["MOTOR_RPM"] / C["SU_POR_EU"], e
+    assert e["su_rede"] >= C["DINAMO_ULV_IMPACTO"] * C["MOTOR_RPM"], e
     # o vapor somado tick a tick bate com a água que a caldeira perdeu (10 mB de água por 6 mB de vapor)
     assert abs(e["agua_gasta"] * 6 / 10 - e["vapor_entregue"]) <= 6, e

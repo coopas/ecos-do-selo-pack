@@ -4843,5 +4843,12 @@
    }
   ],
   "processingTime": 250
- }
+ },
+ "remove": [
+  "create:crushing/raw_lead",
+  "create:crushing/raw_nickel",
+  "create:crushing/raw_platinum",
+  "create:crushing/raw_silver",
+  "create:crushing/raw_tin"
+ ]
 }

@@ -73,6 +73,47 @@ def test_gravel_keeps_original_outputs_and_adds_redstone():
     assert g["ingredients"] == [{"item": "minecraft:gravel"}]
 
 
+def test_remove_create_crushing_duplicates():
+    """create:crushing/raw_<m> do Create pega o mesmo #forge:raw_materials/<m> que a nossa: vai para "remove"."""
+    reg = _fixture_reg()
+    recipes = [{"id": "create:crushing/raw_hematite", "type": "create:crushing",
+                "outputs": ["create:crushed_raw_iron"], "inputs": [["#forge:raw_materials/hematite"]]},
+               {"id": "create:crushing/raw_zinc", "type": "create:crushing",  # material que não geramos: fica
+                "outputs": ["create:crushed_raw_zinc"], "inputs": [["#forge:raw_materials/zinc"]]},
+               {"id": "ecos:create_gt/crushing/hematite", "type": "create:crushing",  # a nossa nunca sai
+                "outputs": ["gtceu:crushed_hematite_ore"], "inputs": [["#forge:raw_materials/hematite"]]}]
+    assert gen_create_gt.build(reg, recipes)["remove"] == ["create:crushing/raw_hematite"]
+    # depois de removida ela some do recipe_dump: o "remove" anterior é mantido se o material ainda é gerado
+    assert gen_create_gt.build(reg, [], ["create:crushing/raw_hematite", "create:crushing/raw_zinc"])["remove"]         == ["create:crushing/raw_hematite"]
+
+
+def test_remove_list_in_json():
+    d = json.loads(CREATE_GT.read_text(encoding="utf-8"))
+    assert d["remove"], "create_gt.json sem moagens do Create a remover"
+    for rid in d["remove"]:
+        assert rid.startswith("create:crushing/raw_") and rid[len("create:crushing/raw_"):] in d["crushing"], rid
+    for m in ("tin", "lead", "silver", "nickel", "platinum"):
+        assert f"create:crushing/raw_{m}" in d["remove"], m
+
+
+def test_one_crushing_per_raw_material():
+    """No recipe_dump (servidor com os scripts), nenhum #forge:raw_materials/<m> tem duas moagens no Create."""
+    dump = BUILD / "recipe_dump.json"
+    if not dump.exists():
+        pytest.skip("sem build/recipe_dump.json (rode boot_test.py server --dev)")
+    por_tag = {}
+    for r in json.loads(dump.read_text(encoding="utf-8"))["recipes"]:
+        if r.get("type") != "create:crushing":
+            continue
+        for slot in r.get("inputs", []):
+            for s in slot:
+                if s.startswith("#forge:raw_materials/"):
+                    por_tag.setdefault(s, []).append(r["id"])
+    assert len(por_tag) >= 100, len(por_tag)
+    dup = {k: v for k, v in por_tag.items() if len(set(v)) > 1}
+    assert dup == {}, dup
+
+
 def _reg():
     dump = BUILD / "registry_dump.json"
     if not dump.exists():
@@ -117,6 +158,8 @@ def test_create_gt_in_recipe_dump():
     # o recipe_dump só lista saídas sem chance: a redstone do cascalho (chance 0.1) não aparece nele,
     # então confere-se que a receita nova existe, a original sumiu e o JSON carrega a redstone
     assert "create:crushing/gravel" not in R
+    for rid in d["remove"]:  # moagens duplicadas do Create (raw_tin, raw_lead...) saíram
+        assert rid not in R, rid
     assert R["ecos:create_gt/gravel"]["outputs"] == ["minecraft:sand"]
     assert {"item": "minecraft:redstone", "chance": 0.1} in d["gravel"]["results"]
     assert R["ecos:create_gt/mixing/bronze"]["type"] == "create:mixing"

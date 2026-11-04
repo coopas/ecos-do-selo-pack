@@ -24,10 +24,13 @@
 O pack traz três blocos que ligam GregTech e Create (detalhes no README):
 - **Motor a Vapor do Eco**: vapor do GregTech → rotação (32 RPM, até 1920 SU com 80 mB/t; gasta vapor mesmo sem
   carga no eixo).
-- **Dínamo Cinético**: rotação → EU (ULV 8 EU/t, LV 32 EU/t a 64 RPM). LV ligado direto em máquina ULV explode.
+- **Dínamo Cinético**: rotação → EU (ULV 8 EU/t, LV 32 EU/t a 64 RPM). Pede muita rotação: a 64 RPM o ULV pede
+  2048 SU e o LV 8192 SU (moinho pequeno ≈ 2 EU/t; motor a vapor do Create com blaze ≈ 64 EU/t; um LV cheio com
+  Motores a Vapor do Eco precisa de vários motores). LV ligado direto em máquina ULV explode.
 - **Saída de Vapor**: caldeira do Create → vapor do GregTech (6 mB/t por nível, gasta a água da caldeira; não
-  funciona se a caldeira tiver motor a vapor do Create).
-Diesel e gasolina servem no Create: Diesel Generators e no GregTech.
+  solta vapor se a caldeira tiver motor a vapor ou apito do Create).
+- O ciclo vapor → rotação → EU perde energia.
+Diesel e gasolina servem no mod Create: Diesel Generators e no GregTech.
 
 ## Backup
 Copie a pasta `world` com o servidor desligado. Faça antes de qualquer atualização do pack.
