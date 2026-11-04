@@ -20,5 +20,14 @@
 - `whitelist on` + `whitelist add <nick>` — só amigos entram.
 - `stop` — desliga salvando o mundo. Nunca feche a janela sem `stop`.
 
+## Vapor, rotação e energia
+O pack traz três blocos que ligam GregTech e Create (detalhes no README):
+- **Motor a Vapor do Eco**: vapor do GregTech → rotação (32 RPM, até 1920 SU com 80 mB/t; gasta vapor mesmo sem
+  carga no eixo).
+- **Dínamo Cinético**: rotação → EU (ULV 8 EU/t, LV 32 EU/t a 64 RPM). LV ligado direto em máquina ULV explode.
+- **Saída de Vapor**: caldeira do Create → vapor do GregTech (6 mB/t por nível, gasta a água da caldeira; não
+  funciona se a caldeira tiver motor a vapor do Create).
+Diesel e gasolina servem no Create: Diesel Generators e no GregTech.
+
 ## Backup
 Copie a pasta `world` com o servidor desligado. Faça antes de qualquer atualização do pack.

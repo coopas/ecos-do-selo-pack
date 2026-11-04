@@ -177,3 +177,35 @@ def test_saida_vapor_ingame():
     assert e["reserva_agua_entrou"] == 1000, e
     assert e["reserva_vapor"] == 600 and e["reserva_agua_resta"] == 0 and e["reserva_mb_t"] == 0, e
     assert e["ruim_nivel"] == 0 and e["ruim_mb_t"] == 0, e
+
+
+# --- Task 7: o ciclo inteiro perde energia ------------------------------------------------------------------------
+# Posições = ECOS_MAQ_POS.ciclo_* em maquinas_check.js. Caldeira 2x2x8 (x 8..9, z 2..3, y 301..308): tamanho 32 ->
+# nível máximo 8; quatro queimadores superaquecidos = calor 8 -> a Saída dá 48 mB/t. O motor queima os 48 mB/t e dá
+# 24 x 48 = 1152 SU a 32 RPM; o dínamo LV pede 32 SU/RPM x 32 = 1024 SU e gera 32 x 32 / 64 = 16 EU/t.
+CICLO_SAIDA, CICLO_MOTOR, CICLO_DINAMO, CICLO_BUFFER = "10 302 2", "11 302 2", "11 303 2", "11 304 2"
+
+
+@pytest.mark.ingame
+def test_ciclo_perde_energia_ingame():
+    """Saída de Vapor -> Motor a Vapor -> Dínamo LV -> buffer do GregTech: em 600 ticks, o EU entregue no buffer é no
+    máximo 75 % do que o vapor consumido valeria numa máquina do GregTech (2 mB de vapor = 1 EU). Não há moto-contínuo."""
+    montar = [f"setblock {x} 300 {z} {QUEIMADOR}" for x in (8, 9) for z in (2, 3)]
+    montar += ["fill 8 301 2 9 308 3 create:fluid_tank",
+               f"setblock {CICLO_SAIDA} ecosmaquinas:saida_vapor",
+               f"setblock {CICLO_MOTOR} ecosmaquinas:motor_vapor[facing=up]",
+               f"setblock {CICLO_DINAMO} ecosmaquinas:dinamo_cinetico_lv[facing=down]",
+               f"setblock {CICLO_BUFFER} gtceu:lv_battery_buffer_4x[facing=north]"]
+    limpar = [f"setblock {p} minecraft:air" for p in (CICLO_BUFFER, CICLO_DINAMO, CICLO_MOTOR, CICLO_SAIDA)]
+    limpar += ["fill 8 301 2 9 308 3 minecraft:air", "fill 8 300 2 9 300 3 minecraft:air"]
+    console = _rodar(AREA + montar + ["kubejs custom_command ecos_ciclo_check"] + _esperar(50) + limpar + FIM)
+    c = _campos(_linha(console, "ECOS_CICLO"))
+    e = _campos(_linha(console, "ECOS_CICLO_EXTRA"))
+    assert c["ticks"] == 600, c
+    assert c["eu"] > 0, (c, e)  # a corrente funciona de ponta a ponta (sem isso o <= passaria com tudo parado)
+    assert c["vapor_mb"] > 0, (c, e)
+    assert c["eu"] <= 0.75 * c["vapor_mb"] / 2, (c, e)  # perde pelo menos 25 %
+    # a medição é a do circuito esperado: nível 8, motor a 32 RPM, dínamo LV sem sobrecarga
+    assert e["nivel"] == 8 and e["rpm"] == 32 and e["sobrecarga"] is False, e
+    # o vapor somado tick a tick bate com a água que a caldeira perdeu (10 mB de água por 6 mB de vapor)
+    assert abs(e["agua_gasta"] * 6 / 10 - e["vapor_entregue"]) <= 6, e

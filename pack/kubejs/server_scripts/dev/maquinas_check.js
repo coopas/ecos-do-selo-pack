@@ -21,6 +21,9 @@ const ECOS_MAQ_POS = {
   caldeira_seca: [2, 301, 9], saida_seca: [3, 302, 9], tambor_seca: [4, 302, 9],
   caldeira_reserva: [7, 301, 9], saida_reserva: [8, 302, 9], tambor_reserva: [9, 302, 9],
   saida_nbt_ruim: [12, 302, 9],  // NBT adulterado, sem caldeira
+  // Task 7: caldeira 2x2x8 (x 8..9, z 2..3, y 301..308) com 4 queimadores; Saída -> Motor -> Dínamo LV -> buffer
+  ciclo_caldeira: [8, 301, 2], ciclo_saida: [10, 302, 2], ciclo_motor: [11, 302, 2],
+  ciclo_dinamo: [11, 303, 2], ciclo_buffer: [11, 304, 2],
 }
 
 const EcosMaq = {
@@ -172,5 +175,57 @@ ServerEvents.customCommand('ecos_saida_check', event => {
         ` reserva_agua_entrou=${aguaReserva} reserva_vapor=${vapor('reserva')} reserva_agua_resta=${agua('reserva')}` +
         ` reserva_mb_t=${mbt.reserva} ruim_nivel=${ruim ? ruim.getNivel() : -1} ruim_mb_t=${ruim ? ruim.getProducaoMbT() : -1}`)
     })
+  })
+})
+
+// --- Task 7: o ciclo vapor -> rotação -> EU perde energia ----------------------------------------------------------
+// Caldeira 2x2x8 com 4 queimadores superaquecidos (nível 8) e 200 000 mB de água guardada -> Saída de Vapor (48 mB/t)
+// -> Motor a Vapor (eixo em cima) -> Dínamo LV (eixo embaixo, EU em cima) -> gtceu:lv_battery_buffer_4x com bateria.
+// Espera 200 ticks e mede, nos 600 ticks seguintes: o vapor que a Saída entregou (somado tick a tick), o vapor que o
+// motor de fato queimou (entregue menos o que sobrou a mais no tanque dele), a água que a caldeira perdeu e o EU que
+// entrou no buffer.
+ServerEvents.customCommand('ecos_ciclo_check', event => {
+  if (!EcosMaq.dev()) return
+  const server = event.server, D = EcosMaq.Direction, EXEC = EcosMaq.Acao.EXECUTE, JANELA = 600
+  const GTCap = Java.loadClass('com.gregtechceu.gtceu.api.capability.forge.GTCapability')
+  let caldeira = EcosMaq.be(server, 'ciclo_caldeira'), saida = EcosMaq.be(server, 'ciclo_saida')
+  let motor = EcosMaq.be(server, 'ciclo_motor'), dinamo = EcosMaq.be(server, 'ciclo_dinamo')
+  let buf = EcosMaq.be(server, 'ciclo_buffer')
+  let maq = buf && buf.getMetaMachine ? buf.getMetaMachine() : null
+  let lo = buf ? buf.getCapability(GTCap.CAPABILITY_ENERGY_CONTAINER, D.DOWN) : null
+  let energia = lo && lo.isPresent() ? lo.resolve().get() : null
+  let falta = !caldeira || !caldeira.getControllerBE ? 'caldeira' : !saida ? 'saida' : !motor ? 'motor'
+    : !dinamo ? 'dinamo' : !maq || !maq.getBatteryInventory || !energia ? 'buffer' : null
+  if (falta) { EcosMaq.diga(server, `ECOS_CICLO erro=sem_${falta}`); return }
+  if (!maq.getBatteryInventory().insertItem(0, Item.of('gtceu:lv_sodium_battery'), false).isEmpty()) {
+    EcosMaq.diga(server, 'ECOS_CICLO erro=bateria_recusada'); return
+  }
+  // sem motor do Create a caldeira é um tanque comum: a água entra pela capability do tanque
+  let aguaEntrou = EcosMaq.fluidos(caldeira, D.UP).fill(EcosMaq.fluido('minecraft:water', 200000), EXEC)
+  const agua = () => caldeira.getControllerBE().getTankInventory().getFluidAmount()
+  // relógio do servidor, para provar que a janela teve 600 ticks (Level.getGameTime não é achado pelo Rhino aqui)
+  const tempo = () => {
+    try { return server.getTickCount() } catch (e) {}
+    try { return server.tickCount } catch (e) {}
+    return -1
+  }
+  server.scheduleInTicks(200, () => {
+    let t0 = tempo(), eu0 = energia.getEnergyStored(), motor0 = motor.getVapor(), agua0 = agua()
+    let entregue = 0, n = 0
+    const passo = () => {
+      entregue += saida.getProducaoMbT()
+      if (++n < JANELA) { server.scheduleInTicks(1, passo); return }
+      let eu = energia.getEnergyStored() - eu0
+      let consumido = entregue - (motor.getVapor() - motor0)
+      let ctrl = caldeira.getControllerBE()
+      EcosMaq.diga(server, `ECOS_CICLO ticks=${tempo() - t0} vapor_mb=${consumido} eu=${eu}` +
+        ` razao=${consumido > 0 ? (eu / (consumido / 2)).toFixed(3) : -1}`)
+      EcosMaq.diga(server, `ECOS_CICLO_EXTRA vapor_entregue=${entregue} agua_gasta=${agua0 - agua()}` +
+        ` agua_entrou=${aguaEntrou} nivel=${saida.getNivel()} saida_mb_t=${saida.getProducaoMbT()}` +
+        ` motor_mb_t=${motor.getConsumoMbT()} motor_tanque=${motor.getVapor()} rpm=${Math.abs(dinamo.getSpeed())}` +
+        ` sobrecarga=${dinamo.isOverStressed()} su_rede=${EcosMaq.suRede(motor)} dinamo_eu_t=${dinamo.getEuT()}` +
+        ` caldeira_tamanho=${ctrl.getTotalTankSize()} calor=${ctrl.boiler.activeHeat}`)
+    }
+    server.scheduleInTicks(1, passo)
   })
 })

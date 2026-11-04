@@ -50,3 +50,12 @@ def test_improved_mobs_difficulty_hud_hidden():
     assert cfg["gui"]["Show Difficulty"] is False
     entry = index_entry("config/improvedmobs/client.toml")
     assert entry is not None and not entry.get("preserve")
+
+
+def test_pack_toml_hash_bate_com_index():
+    # packwiz guarda no pack.toml o sha256 do index.toml; hash velho = erro de hash para os jogadores
+    import hashlib
+    pack = tomllib.loads((PACK / "pack.toml").read_text())
+    assert pack["index"]["hash-format"] == "sha256"
+    esperado = hashlib.sha256((PACK / "index.toml").read_bytes()).hexdigest()
+    assert pack["index"]["hash"] == esperado, "rode packwiz refresh e commite pack.toml junto com index.toml"

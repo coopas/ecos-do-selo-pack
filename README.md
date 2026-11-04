@@ -21,6 +21,27 @@ Atualizações do pack são baixadas sozinhas toda vez que você abre o jogo.
 ### Litematica (construções)
 Coloque arquivos `.litematic` em `.minecraft/schematics` (pasta da instância → `minecraft/schematics`). Abra o menu com a tecla **M**. No survival, o **Schematicannon** do Create imprime construções `.nbt`.
 
+## Vapor, rotação e energia (GregTech × Create)
+Três blocos ligam o vapor do GregTech, a rotação do Create e a energia (EU) do GregTech:
+- **Motor a Vapor do Eco**: recebe vapor do GregTech por cano e gira o Create a **32 RPM**, com até **1920 SU**
+  queimando **80 mB/t** (menos vapor = menos SU). **Ele queima vapor mesmo sem nada ligado no eixo.**
+- **Dínamo Cinético (ULV / LV)**: recebe rotação e solta EU na face oposta ao eixo: **ULV 8 EU/t**, **LV 32 EU/t**.
+  Conta a velocidade em módulo (qualquer sentido serve); a produção cheia vem a partir de **64 RPM**
+  (a 32 RPM, metade). Ele pesa na rede: ULV 8 SU e LV 32 SU por RPM (LV a 64 RPM = 2048 SU, mais que um motor;
+  use dois). Regra do GregTech: o dínamo **LV** encostado numa máquina **ULV** dá sobretensão e a máquina explode.
+- **Saída de Vapor**: encoste num tanque de uma caldeira do Create com queimador. Ela entrega **6 mB/t de vapor por
+  nível da caldeira** e gasta a água da caldeira. Só funciona **sem motores a vapor do Create** na mesma caldeira
+  (ou vapor, ou rotação).
+
+O ciclo vapor → rotação → EU sempre perde energia: não existe moto-contínuo.
+
+Também:
+- **Diesel e gasolina** servem nos dois mods: os motores do Create: Diesel Generators queimam os do GregTech, e os
+  geradores de combustão do GregTech queimam os do Diesel Generators.
+- O Create **mói e lava os minérios do GregTech**, mas rende **menos** que as máquinas do GregTech (é o atalho sem
+  energia elétrica).
+- **Redstone cedo**: moer cascalho no Create às vezes dá pó de redstone (10 %).
+
 ## Servidor
 Veja `tools/server_template/LEIA-ME-SERVIDOR.md` (vai junto no pacote do servidor).
 

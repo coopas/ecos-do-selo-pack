@@ -51,4 +51,25 @@ O que **só uma pessoa jogando** confirma. Use um mundo de teste em modo criativ
 - [ ] Dois jogadores perto de um chefe (ex.: a Naga): só um dá o golpe final, e a quest de matar completa para os **dois**.
 - [ ] Morte: a tumba guarda os itens e o dono consegue recuperá-los.
 
+## 7. Vapor, rotação e energia (GregTech × Create)
+Os testes já mediram: motor a 32 RPM / 1920 SU com 80 mB/t; dínamo ULV 8 e LV 32 EU/t; Saída 6 mB/t por nível;
+o ciclo Saída → Motor → Dínamo LV entregou 9 600 EU com 28 800 mB de vapor (perda de 33 %). Falta o que só o olho vê:
+- [ ] Motor a Vapor com vapor (cano do GregTech ligado): o **eixo gira visivelmente** no motor e no eixo encostado.
+- [ ] Dínamo ligado a um eixo girando: o **meio-eixo do dínamo gira** junto.
+- [ ] Óculos de engenheiro no motor: mostra "Motor a Vapor do Eco", o vapor no tanque e o consumo; a capacidade (SU) bate.
+- [ ] Óculos no dínamo: "Dínamo Cinético (LV)", "Tier: LV (32 V, 1 A)", a geração em EU/t e a energia guardada;
+      parado aparece "Sem rotação: dínamo parado" em vermelho.
+- [ ] Óculos na Saída de Vapor: nível da caldeira, mB/t de vapor; sem queimador, sem água ou com motor do Create na
+      caldeira aparece o motivo em vermelho.
+- [ ] Um **cabo do GregTech** encostado na face de saída do dínamo (oposta ao eixo) leva energia até uma máquina LV
+      (ou um buffer de bateria) e a máquina trabalha.
+- [ ] Dínamo LV encostado numa máquina ULV: ela explode (regra do GregTech; só para conferir que o aviso é verdade).
+- [ ] Motor sem nada no eixo: o vapor do tanque continua baixando (gasta mesmo sem carga).
+- [ ] Encha o **motor do Create: Diesel Generators** com **diesel do GregTech** (balde ou cano): ele gira.
+      Gasolina do GregTech também.
+- [ ] Gerador de combustão do GregTech com diesel do Diesel Generators: gera EU.
+- [ ] Rodas de moer do Create com minério bruto do GregTech dão minério moído; a lavagem (ventilador + água) dá o
+      purificado. No JEI, o rendimento do Create é menor que o do macerador do GregTech.
+- [ ] Rodas de moer com cascalho: de vez em quando sai pó de redstone.
+
 Anote qualquer falha com o nome da quest (aparece no topo da janela da quest) e me mande.
