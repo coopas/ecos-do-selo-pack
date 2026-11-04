@@ -1,0 +1,925 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_ae2"
+	group: "30D1DA93FF981B37"
+	icon: "ae2:controller"
+	id: "1E0B89AC4820D89D"
+	images: [ ]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"10511E6CE35464FB"
+			]
+			description: [
+				"Meteoritos guardam cristais de certus."
+				"Use uma bússola de meteorito para achar um."
+			]
+			icon: "ae2:sky_stone_block"
+			id: "063D01D25FD3801C"
+			rewards: [
+				{
+					count: 3
+					id: "47B2B634FCB53B5F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 16L
+					id: "441B75FB3BF70433"
+					item: {
+						Count: 1b
+						id: "ae2:sky_stone_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedras Que Caíram"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"063D01D25FD3801C"
+			]
+			description: [
+				"Cristais que guardam informação como a pedra guarda calor."
+			]
+			id: "07F1EB75D51A6B7C"
+			rewards: [
+				{
+					count: 2
+					id: "292FD7A6339EE5BA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "037CB2F9E5C05F14"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:gems/certus_quartz)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Quartzo Certus"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"07F1EB75D51A6B7C"
+			]
+			description: [
+				"Um bloco de quartzo que cresce sozinho. Leve um para casa."
+			]
+			id: "33F1D54D48B45E6E"
+			rewards: [
+				{
+					count: 3
+					id: "25124E71CD42D39F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "77C337A5DC10F15A"
+					item: {
+						Count: 1b
+						id: "ae2:flawed_budding_quartz"
+					}
+					type: "item"
+				}
+			]
+			title: "Brotos de Quartzo"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"07F1EB75D51A6B7C"
+			]
+			description: [
+				"Energia transforma certus em cristal carregado."
+			]
+			id: "7346935E51033470"
+			rewards: [
+				{
+					count: 3
+					id: "6EADBE6BF3833E08"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6B92B085D7F526C8"
+					item: {
+						Count: 1b
+						id: "ae2:charger"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "43CAB38B14EF256D"
+					item: {
+						Count: 1b
+						id: "ae2:charged_certus_quartz_crystal"
+					}
+					type: "item"
+				}
+			]
+			title: "O Carregador"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7346935E51033470"
+			]
+			description: [
+				"Certus carregado, redstone e quartzo na água."
+			]
+			id: "61FBD0C901E75CED"
+			rewards: [
+				{
+					count: 3
+					id: "6F31B212CC2214A8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "779AB3938B090AC5"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:gems/fluix)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cristal Fluix"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"07F1EB75D51A6B7C"
+				"5F668FC49FD2F7F8"
+			]
+			description: [
+				"Pede um pistão LV do GregTech."
+				"A rede de Aurend corria sobre máquinas."
+			]
+			icon: "ae2:inscriber"
+			id: "338797CE271D1DF9"
+			rewards: [
+				{
+					count: 4
+					id: "2928E0E2E7E50E6C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "44B060FDC6D3B319"
+					item: {
+						Count: 1b
+						id: "ae2:inscriber"
+					}
+					type: "item"
+				}
+			]
+			title: "A Prensa"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"338797CE271D1DF9"
+			]
+			description: [
+				"O primeiro molde da rede."
+			]
+			id: "45406AC334162D1B"
+			rewards: [
+				{
+					count: 2
+					id: "20BAA44E1D21E144"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "3509AD2FA5867D7B"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:silicon)"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1D67860F3CD92B5D"
+					item: {
+						Count: 1b
+						id: "ae2:printed_silicon"
+					}
+					type: "item"
+				}
+			]
+			title: "Silício Impresso"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"45406AC334162D1B"
+				"61FBD0C901E75CED"
+			]
+			description: [
+				"Lógico, de cálculo e de engenharia."
+			]
+			id: "336BC093555598BC"
+			rewards: [
+				{
+					count: 5
+					id: "7357B34BAE76C7E1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3F721F685D0FEC5C"
+					item: {
+						Count: 1b
+						id: "ae2:logic_processor"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "11BD211854B94F3D"
+					item: {
+						Count: 1b
+						id: "ae2:calculation_processor"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3504694C6D2FFC04"
+					item: {
+						Count: 1b
+						id: "ae2:engineering_processor"
+					}
+					type: "item"
+				}
+			]
+			title: "Três Processadores"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"61FBD0C901E75CED"
+			]
+			description: [
+				"Fios que carregam itens como se fossem pensamentos."
+			]
+			id: "4A8B99F4C2B1E3BB"
+			rewards: [
+				{
+					count: 2
+					id: "161C25C7202898A1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "366B303968DBF77F"
+					item: {
+						Count: 1b
+						id: "ae2:fluix_glass_cable"
+					}
+					type: "item"
+				}
+			]
+			title: "Cabos de Fluix"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"4A8B99F4C2B1E3BB"
+			]
+			description: [
+				"Converte a energia das suas máquinas para a rede."
+			]
+			id: "528A15FFE03D96A6"
+			rewards: [
+				{
+					count: 2
+					id: "6FFE1084B57495B8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "102575C6B88CAA77"
+					item: {
+						Count: 1b
+						id: "ae2:energy_acceptor"
+					}
+					type: "item"
+				}
+			]
+			title: "Aceitador de Energia"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"336BC093555598BC"
+				"528A15FFE03D96A6"
+				"1616FA87D3E4FAC3"
+			]
+			description: [
+				"Pede um braço robótico MV."
+				"O coração da rede: tudo passa por ele."
+			]
+			icon: "ae2:controller"
+			id: "2447F245EE8C517A"
+			rewards: [
+				{
+					count: 1
+					id: "244CF05002C8C447"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "708DE015373DE761"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "7A9D91D51133F1FA"
+					item: {
+						Count: 1b
+						id: "ae2:controller"
+					}
+					type: "item"
+				}
+			]
+			title: "O Controlador"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2447F245EE8C517A"
+			]
+			description: [
+				"Onde as células moram."
+			]
+			id: "60B20AC8C4E60B20"
+			rewards: [
+				{
+					count: 3
+					id: "7E85572AAA0B4BA9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "73830DA7D924E3D3"
+					item: {
+						Count: 1b
+						id: "ae2:drive"
+					}
+					type: "item"
+				}
+			]
+			title: "Unidade de Armazenamento"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2447F245EE8C517A"
+			]
+			description: [
+				"Uma janela para tudo o que você guardou."
+			]
+			id: "7258BB445A5A6FAD"
+			rewards: [
+				{
+					count: 3
+					id: "6FE6DCE30C84209B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "58C9A23865BBF1CF"
+					item: {
+						Count: 1b
+						id: "ae2:terminal"
+					}
+					type: "item"
+				}
+			]
+			title: "Terminal"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"60B20AC8C4E60B20"
+			]
+			description: [
+				"A primeira memória da rede."
+			]
+			id: "17E1D6B21E865F7B"
+			rewards: [
+				{
+					count: 3
+					id: "1DE06D295CC8D9AC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "541348B8E0A9A2CE"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_1k"
+					}
+					type: "item"
+				}
+			]
+			title: "Célula 1k"
+			x: 12.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"17E1D6B21E865F7B"
+			]
+			description: [
+				"Mais espaço."
+			]
+			id: "3D185E4A40AEF5E7"
+			rewards: [
+				{
+					count: 4
+					id: "6B7B9605F5E1DE51"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "520A508D830DA6C4"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_4k"
+					}
+					type: "item"
+				}
+			]
+			title: "Célula 4k"
+			x: 13.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"3D185E4A40AEF5E7"
+			]
+			description: [
+				"Uma biblioteca inteira."
+			]
+			id: "3940FA0FD147BE96"
+			rewards: [
+				{
+					count: 5
+					id: "422A0E8974E54111"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2ABA145F4863E83A"
+					item: {
+						Count: 1b
+						id: "ae2:item_storage_cell_16k"
+					}
+					type: "item"
+				}
+			]
+			title: "Célula 16k"
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2447F245EE8C517A"
+			]
+			description: [
+				"Importe e exporte sem tocar em nada."
+			]
+			id: "5EAE5C0D2D6B9FB5"
+			rewards: [
+				{
+					count: 4
+					id: "5C343DA573A47378"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "62E8B7279D5DBB4F"
+					item: {
+						Count: 1b
+						id: "ae2:import_bus"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "42DFF56B0D894B11"
+					item: {
+						Count: 1b
+						id: "ae2:export_bus"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "16354C81D40DEFB9"
+					item: {
+						Count: 1b
+						id: "ae2:storage_bus"
+					}
+					type: "item"
+				}
+			]
+			title: "Barramentos"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7258BB445A5A6FAD"
+			]
+			description: [
+				"Crie direto da rede."
+			]
+			id: "2013809C1D7A1A49"
+			rewards: [
+				{
+					count: 3
+					id: "3AAF0AC5C28F69C1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3CB7739B480567D1"
+					item: {
+						Count: 1b
+						id: "ae2:crafting_terminal"
+					}
+					type: "item"
+				}
+			]
+			title: "Terminal de Criação"
+			x: 12.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"2013809C1D7A1A49"
+			]
+			description: [
+				"Ensine a rede a criar sozinha."
+			]
+			id: "53DC73A51AF5E33D"
+			rewards: [
+				{
+					count: 3
+					id: "35A5772FFAE0F8AE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "227D4C4E01CDEFE7"
+					item: {
+						Count: 1b
+						id: "ae2:pattern_encoding_terminal"
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4879FA93AF1C596C"
+					item: {
+						Count: 1b
+						id: "ae2:blank_pattern"
+					}
+					type: "item"
+				}
+			]
+			title: "Padrões"
+			x: 13.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"53DC73A51AF5E33D"
+			]
+			description: [
+				"Uma bancada que trabalha sem mãos."
+			]
+			id: "2C3936DD8904EC3E"
+			rewards: [
+				{
+					count: 5
+					id: "458A55607F2B58FB"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7E7B98AAC3E2B8FB"
+					item: {
+						Count: 1b
+						id: "ae2:pattern_provider"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "0BF88C5D6E5592EA"
+					item: {
+						Count: 1b
+						id: "ae2:molecular_assembler"
+					}
+					type: "item"
+				}
+			]
+			title: "Montador Molecular"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2C3936DD8904EC3E"
+			]
+			description: [
+				"A rede passa a planejar."
+			]
+			id: "0D51F2F3BF0484BE"
+			rewards: [
+				{
+					count: 5
+					id: "72CDF3E1A71BD3B6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6712A16D4AB21C51"
+					item: {
+						Count: 1b
+						id: "ae2:crafting_unit"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "6657BE699F83FE4C"
+					item: {
+						Count: 1b
+						id: "ae2:1k_crafting_storage"
+					}
+					type: "item"
+				}
+			]
+			title: "CPU de Criação"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7258BB445A5A6FAD"
+				"3D185E4A40AEF5E7"
+			]
+			description: [
+				"Leve a rede no bolso."
+			]
+			id: "5340D771FE4C6F6E"
+			rewards: [
+				{
+					count: 4
+					id: "4AFC02FDE9F0CD57"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0285BB7B55D1BD66"
+					item: {
+						Count: 1b
+						id: "ae2:wireless_terminal"
+					}
+					type: "item"
+				}
+			]
+			title: "Terminal Sem Fio"
+			x: 15.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0D51F2F3BF0484BE"
+				"3940FA0FD147BE96"
+				"5EAE5C0D2D6B9FB5"
+				"5340D771FE4C6F6E"
+			]
+			description: [
+				"Aurend guardava tudo assim."
+				"Até o que deveria ter esquecido."
+			]
+			icon: "ae2:controller"
+			id: "4DCC07AD6E9AEA86"
+			rewards: [
+				{
+					count: 1
+					id: "62904873E8601A13"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "10973B19B88156D9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "4E1750FD0C547A25"
+					type: "checkmark"
+				}
+			]
+			title: "A Rede Que Lembra"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	title: "Caminho — A Rede Que Lembra"
+}

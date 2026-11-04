@@ -1,0 +1,1534 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_gt_mv_ev"
+	group: "30D1DA93FF981B37"
+	icon: "gtceu:hv_machine_hull"
+	id: "20C0BF1720F74F11"
+	images: [ ]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"07A0216AB2D4EDF7"
+			]
+			description: [
+				"Uma voltagem nova, uma linha de máquinas nova."
+			]
+			icon: "gtceu:mv_machine_hull"
+			id: "52433F8D4CA697D6"
+			rewards: [
+				{
+					count: 2
+					id: "0A6A487C1B095F7F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "594125FAC101EB7F"
+					type: "checkmark"
+				}
+			]
+			title: "Mais Voltagem"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"52433F8D4CA697D6"
+			]
+			description: [
+				"Mais subprodutos por minério."
+			]
+			id: "480D7A7FDD1183EC"
+			rewards: [
+				{
+					count: 3
+					id: "48A41F0128E5FC24"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "653A53B9E4BAD0B2"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_macerator"
+					}
+					type: "item"
+				}
+			]
+			title: "Macerador MV"
+			x: 1.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"52433F8D4CA697D6"
+			]
+			description: [
+				"Água limpa o pó e revela o que estava escondido."
+			]
+			id: "1264CD903D3146E3"
+			rewards: [
+				{
+					count: 3
+					id: "2813598A35FCEEBE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1829E3B4ACBA4754"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_ore_washer"
+					}
+					type: "item"
+				}
+			]
+			title: "Lavadora de Minério"
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"1264CD903D3146E3"
+			]
+			description: [
+				"Calor separa o que a água não separou."
+			]
+			id: "007AF4C9B109DE75"
+			rewards: [
+				{
+					count: 3
+					id: "689517D029ACC97B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "264DA7DB293C600A"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_thermal_centrifuge"
+					}
+					type: "item"
+				}
+			]
+			title: "Centrífuga Térmica"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1264CD903D3146E3"
+			]
+			description: [
+				"Mergulhe o minério em ácido."
+			]
+			id: "2525C9A5C8747F74"
+			rewards: [
+				{
+					count: 3
+					id: "311A7FF2C2838FFA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4708C9F4F8548D6F"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_chemical_bath"
+					}
+					type: "item"
+				}
+			]
+			title: "Banho Químico"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"52433F8D4CA697D6"
+			]
+			description: [
+				"Reações mais rápidas."
+			]
+			id: "3C420E452991D5C4"
+			rewards: [
+				{
+					count: 3
+					id: "4ED6CF22ECD24709"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "239D970F9B26D928"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_chemical_reactor"
+					}
+					type: "item"
+				}
+			]
+			title: "Reator Químico MV"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"3C420E452991D5C4"
+			]
+			description: [
+				"O primeiro plástico. Aurend embrulhava tudo nele."
+			]
+			icon: "gtceu:polyethylene_plate"
+			id: "18F0D3033C66E03B"
+			rewards: [
+				{
+					count: 1
+					id: "0D0F5DB2381B062D"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B6317D850AD6A37"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 16L
+					id: "18796DAF262485B8"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:plates/polyethylene)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Polietileno"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"52433F8D4CA697D6"
+			]
+			description: [
+				"Madeira e carvão viram gases úteis."
+			]
+			id: "7452DEEC31FF3367"
+			rewards: [
+				{
+					count: 4
+					id: "5095483E5307EDA7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6488465107A6F39D"
+					item: {
+						Count: 1b
+						id: "gtceu:pyrolyse_oven"
+					}
+					type: "item"
+				}
+			]
+			title: "Forno de Pirólise"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"7452DEEC31FF3367"
+				"3C420E452991D5C4"
+			]
+			description: [
+				"Separe o petróleo em mil coisas."
+			]
+			id: "320F3BBB1E6BB300"
+			rewards: [
+				{
+					count: 5
+					id: "2ED9FB421BBD29BA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "356209529030F56F"
+					item: {
+						Count: 1b
+						id: "gtceu:distillation_tower"
+					}
+					type: "item"
+				}
+			]
+			title: "Torre de Destilação"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"320F3BBB1E6BB300"
+			]
+			description: [
+				"Quebre moléculas grandes em pequenas."
+			]
+			id: "45A038A74326EBA4"
+			rewards: [
+				{
+					count: 4
+					id: "2E761795337D66BC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0A9442C425D51D8A"
+					item: {
+						Count: 1b
+						id: "gtceu:cracker"
+					}
+					type: "item"
+				}
+			]
+			title: "Unidade de Craqueamento"
+			x: 4.5d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"320F3BBB1E6BB300"
+			]
+			description: [
+				"Queime o que a refinaria sobra."
+			]
+			id: "3F10FA70C7418A12"
+			rewards: [
+				{
+					count: 3
+					id: "0859C0D4CA66BEFF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "79C66D863D0FA46D"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_gas_turbine"
+					}
+					type: "item"
+				}
+			]
+			title: "Turbina a Gás MV"
+			x: 4.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"52433F8D4CA697D6"
+			]
+			description: [
+				"Luz que escreve em cristal."
+			]
+			id: "2FD08345A18467D6"
+			rewards: [
+				{
+					count: 4
+					id: "68C94B497B90B7C6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "60D8166F3CA6DFBA"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_laser_engraver"
+					}
+					type: "item"
+				}
+			]
+			title: "Gravador a Laser"
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"52433F8D4CA697D6"
+			]
+			description: [
+				"Mais calor para o alto-forno."
+			]
+			id: "4135848180A1AFF7"
+			rewards: [
+				{
+					count: 4
+					id: "419AA8BED5D3C1D6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "718AF0A312354BC4"
+					item: {
+						Count: 1b
+						id: "gtceu:kanthal_coil_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Bobinas de Kanthal"
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"4135848180A1AFF7"
+			]
+			description: [
+				"Não enferruja. Nunca."
+			]
+			icon: "gtceu:stainless_steel_ingot"
+			id: "58B582486F8B57DE"
+			rewards: [
+				{
+					count: 1
+					id: "6BAFFE3F881AA0A1"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "507DDC331828FA93"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 32L
+					id: "4C48CB00ABFA684D"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/stainless_steel)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Aço Inoxidável"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"58B582486F8B57DE"
+				"18F0D3033C66E03B"
+			]
+			description: [
+				"Alta voltagem."
+			]
+			id: "2EBA76DAA7D05C80"
+			rewards: [
+				{
+					count: 4
+					id: "2C9987006195FAE0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "592DE31494F8940C"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_machine_hull"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco HV"
+			x: 4.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"2EBA76DAA7D05C80"
+			]
+			description: [
+				"O motor da alta tensão."
+			]
+			id: "4DE2CC7B35A822DE"
+			rewards: [
+				{
+					count: 4
+					id: "2EE263C2CBFA6704"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3EC711970017B376"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_electric_motor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor HV"
+			x: 6.0d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"4135848180A1AFF7"
+			]
+			description: [
+				"Um cristal só, puro, para cortar em lâminas."
+			]
+			id: "0DDDF4134C827922"
+			rewards: [
+				{
+					count: 4
+					id: "48727317D8FE9D66"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "723C72DD33EB8547"
+					item: {
+						Count: 1b
+						id: "gtceu:silicon_boule"
+					}
+					type: "item"
+				}
+			]
+			title: "Monocristal de Silício"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"18F0D3033C66E03B"
+			]
+			description: [
+				"A base dos circuitos avançados."
+			]
+			id: "7F0CB2474259A8DA"
+			rewards: [
+				{
+					count: 3
+					id: "68E2636463FE7EBD"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2145E7E1BDFD03D0"
+					item: {
+						Count: 1b
+						id: "gtceu:plastic_printed_circuit_board"
+					}
+					type: "item"
+				}
+			]
+			title: "Placa de Circuito de Plástico"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"4DE2CC7B35A822DE"
+			]
+			description: [
+				"Monte circuitos sem errar uma solda."
+			]
+			id: "5673BD23150D24B1"
+			rewards: [
+				{
+					count: 5
+					id: "4E5797EAB47173F2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "68CFCA08D42A16A3"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_circuit_assembler"
+					}
+					type: "item"
+				}
+			]
+			title: "Montadora de Circuitos HV"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0DDDF4134C827922"
+				"2FD08345A18467D6"
+				"7F0CB2474259A8DA"
+			]
+			description: [
+				"Um pensamento do tamanho de uma unha."
+			]
+			id: "6168813CAC00B0B5"
+			rewards: [
+				{
+					count: 4
+					id: "60937E9410BCD12B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "49B9AB48FB6336F1"
+					item: {
+						Count: 1b
+						id: "gtceu:micro_processor"
+					}
+					type: "item"
+				}
+			]
+			title: "Microprocessador"
+			x: 6.0d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"6168813CAC00B0B5"
+				"5673BD23150D24B1"
+			]
+			description: [
+				"O circuito da alta tensão."
+			]
+			icon: "gtceu:advanced_integrated_circuit"
+			id: "2A81AB63F1340C62"
+			rewards: [
+				{
+					count: 1
+					id: "74AFFF650710C29C"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "34CE85E500CAA8E6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 4L
+					id: "02588D76EE8B6B4C"
+					item: {
+						Count: 1b
+						id: "gtceu:advanced_integrated_circuit"
+					}
+					type: "item"
+				}
+			]
+			title: "Circuito Integrado Avançado"
+			x: 9.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"4DE2CC7B35A822DE"
+				"2A81AB63F1340C62"
+			]
+			description: [
+				"Uma luz mais forte."
+			]
+			id: "6C3450C699EA1C82"
+			rewards: [
+				{
+					count: 4
+					id: "24C6631CA072CCC0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3268980899C502DB"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_emitter"
+					}
+					type: "item"
+				}
+			]
+			title: "Emissor HV"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6C3450C699EA1C82"
+			]
+			description: [
+				"Um campo invisível, como o Selo."
+			]
+			id: "6839F0B805BF3150"
+			rewards: [
+				{
+					count: 5
+					id: "4357D16B037A81B6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "74FCE5587181B8BB"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_field_generator"
+					}
+					type: "item"
+				}
+			]
+			title: "Gerador de Campo HV"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"58B582486F8B57DE"
+			]
+			description: [
+				"Calor para o titânio."
+			]
+			id: "76F660B4641967AB"
+			rewards: [
+				{
+					count: 5
+					id: "019A79CB8000C9DA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "7A1EE5241FF850A2"
+					item: {
+						Count: 1b
+						id: "gtceu:nichrome_coil_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Bobinas de Nicromo"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"4135848180A1AFF7"
+			]
+			description: [
+				"Cozinhe em massa."
+			]
+			id: "5763DA191BCB4A61"
+			rewards: [
+				{
+					count: 4
+					id: "6CE4BAA6A150F46A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "083395C26EB0D07E"
+					item: {
+						Count: 1b
+						id: "gtceu:multi_smelter"
+					}
+					type: "item"
+				}
+			]
+			title: "Multi-Fornalha"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"58B582486F8B57DE"
+			]
+			description: [
+				"Esfrie lingotes quentes demais para tocar."
+			]
+			id: "02C93324FCEF7ABA"
+			rewards: [
+				{
+					count: 5
+					id: "0FE8848DC8492352"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "794CAD0ECBCDB211"
+					item: {
+						Count: 1b
+						id: "gtceu:vacuum_freezer"
+					}
+					type: "item"
+				}
+			]
+			title: "Congelador a Vácuo"
+			x: 4.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"2EBA76DAA7D05C80"
+			]
+			description: [
+				"Circuitos finos não suportam poeira."
+			]
+			id: "7411626F2F0248E0"
+			rewards: [
+				{
+					count: 5
+					id: "2FF559199A822CA3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "48DA29665DA308EC"
+					item: {
+						Count: 1b
+						id: "gtceu:cleanroom"
+					}
+					type: "item"
+				}
+			]
+			title: "Sala Limpa"
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"58B582486F8B57DE"
+				"3C420E452991D5C4"
+			]
+			description: [
+				"Química em escala industrial."
+			]
+			id: "0E9FA3DF1BFC242A"
+			rewards: [
+				{
+					count: 5
+					id: "0933855E7A897893"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4D2FE562F35BAD94"
+					item: {
+						Count: 1b
+						id: "gtceu:large_chemical_reactor"
+					}
+					type: "item"
+				}
+			]
+			title: "Reator Químico Grande"
+			x: 4.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"0E9FA3DF1BFC242A"
+			]
+			description: [
+				"Um plástico mais resistente."
+			]
+			id: "6D0DB1C96A7839CB"
+			rewards: [
+				{
+					count: 3
+					id: "4705383151919DD3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "393EFD1219B8F884"
+					item: {
+						Count: 1b
+						id: "gtceu:polyvinyl_chloride_plate"
+					}
+					type: "item"
+				}
+			]
+			title: "PVC"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"0E9FA3DF1BFC242A"
+			]
+			description: [
+				"Nada gruda nele."
+			]
+			id: "2CC3C02EB62D4C13"
+			rewards: [
+				{
+					count: 4
+					id: "17A41A6B95B03667"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "69A79D2BD2B154AC"
+					item: {
+						Count: 1b
+						id: "gtceu:polytetrafluoroethylene_plate"
+					}
+					type: "item"
+				}
+			]
+			title: "PTFE"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"58B582486F8B57DE"
+			]
+			description: [
+				"Pressione até virar gema."
+			]
+			id: "3D28381FBA3A8A9B"
+			rewards: [
+				{
+					count: 4
+					id: "0FE7BED83E771F1C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2D59FC8BB420831C"
+					item: {
+						Count: 1b
+						id: "gtceu:implosion_compressor"
+					}
+					type: "item"
+				}
+			]
+			title: "Compressor de Implosão"
+			x: 4.5d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"3F10FA70C7418A12"
+				"2EBA76DAA7D05C80"
+			]
+			description: [
+				"Mais gás, mais corrente."
+			]
+			id: "4BF15E1D2E7514C8"
+			rewards: [
+				{
+					count: 4
+					id: "3918958B568B44E2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5A49811035D5E13B"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_gas_turbine"
+					}
+					type: "item"
+				}
+			]
+			title: "Turbina a Gás HV"
+			x: 6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"2EBA76DAA7D05C80"
+			]
+			description: [
+				"Guarde a alta tensão."
+			]
+			id: "391064FE54A70009"
+			rewards: [
+				{
+					count: 3
+					id: "60EDC8EC9BCEF972"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "152C4B856D543431"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_battery_buffer_4x"
+					}
+					type: "item"
+				}
+			]
+			title: "Buffer de Baterias HV"
+			x: 6.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"2EBA76DAA7D05C80"
+			]
+			description: [
+				"Alimente multiblocos em alta tensão."
+			]
+			id: "5B35F978F4F65FA1"
+			rewards: [
+				{
+					count: 3
+					id: "024EB59718760A96"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "73350CF7B84C0F94"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_energy_input_hatch"
+					}
+					type: "item"
+				}
+			]
+			title: "Escotilha de Energia HV"
+			x: 6.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"4DE2CC7B35A822DE"
+			]
+			description: [
+				"Uma máquina que cava por você."
+			]
+			id: "32138F355C9C2A19"
+			rewards: [
+				{
+					count: 4
+					id: "1836247EB04CC742"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5D440EBFE6ECA448"
+					item: {
+						Count: 1b
+						id: "gtceu:hv_miner"
+					}
+					type: "item"
+				}
+			]
+			title: "Mineradora HV"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"76F660B4641967AB"
+				"02C93324FCEF7ABA"
+				"5B35F978F4F65FA1"
+			]
+			description: [
+				"O metal das naves. Aurend olhava para cima."
+			]
+			icon: "gtceu:titanium_ingot"
+			id: "6567303B4DC3A09F"
+			rewards: [
+				{
+					count: 1
+					id: "774ED80508A1FF95"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "30A54B825D4DCD62"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 32L
+					id: "33E20B316EF22984"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/titanium)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Titânio"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6567303B4DC3A09F"
+			]
+			description: [
+				"Extrema voltagem."
+			]
+			id: "538290BD00840C93"
+			rewards: [
+				{
+					count: 5
+					id: "0A05D7EE632079C5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3D62FF98C0CBA597"
+					item: {
+						Count: 1b
+						id: "gtceu:ev_machine_hull"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco EV"
+			x: 9.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"538290BD00840C93"
+			]
+			description: [
+				"Rápido como um pensamento."
+			]
+			id: "5DCADBCAAFB7BC55"
+			rewards: [
+				{
+					count: 5
+					id: "592BF80E67F24B88"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5F70E1AEFEDF2251"
+					item: {
+						Count: 1b
+						id: "gtceu:ev_electric_motor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor EV"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2A81AB63F1340C62"
+				"7411626F2F0248E0"
+			]
+			description: [
+				"Circuitos que só se veem no microscópio."
+			]
+			id: "02D8BBC9D945596E"
+			rewards: [
+				{
+					count: 6
+					id: "148AA6E36C79275F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1057D4063D4C611C"
+					item: {
+						Count: 1b
+						id: "gtceu:nano_processor"
+					}
+					type: "item"
+				}
+			]
+			title: "Nanoprocessador"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5DCADBCAAFB7BC55"
+				"02D8BBC9D945596E"
+			]
+			description: [
+				"Também é parte da Bancada da NASA."
+			]
+			id: "23F53B04682CA0E5"
+			rewards: [
+				{
+					count: 5
+					id: "44FB1A4EFBAA2F2B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "2416F195ACDB681F"
+					item: {
+						Count: 1b
+						id: "gtceu:ev_emitter"
+					}
+					type: "item"
+				}
+			]
+			title: "Emissor EV"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5DCADBCAAFB7BC55"
+				"02D8BBC9D945596E"
+			]
+			description: [
+				"Uma mão que monta foguetes."
+			]
+			id: "5602E440E458D2A0"
+			rewards: [
+				{
+					count: 5
+					id: "33C68C1180477629"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5E860A5BF51091F9"
+					item: {
+						Count: 1b
+						id: "gtceu:ev_robot_arm"
+					}
+					type: "item"
+				}
+			]
+			title: "Braço Robótico EV"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"23F53B04682CA0E5"
+				"5602E440E458D2A0"
+				"6839F0B805BF3150"
+			]
+			description: [
+				"As máquinas de Aurend nunca chegaram tão longe."
+				"Ou chegaram, e foram embora."
+			]
+			icon: "gtceu:ev_machine_hull"
+			id: "4B640214EE912855"
+			rewards: [
+				{
+					count: 1
+					id: "207B12F73D5EEDDF"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "76AC26CCD7FE8CC4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "449F5E09A454A525"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "2F6EC52077F969BD"
+					type: "checkmark"
+				}
+			]
+			title: "A Era da Extrema Tensão"
+			x: 13.5d
+			y: 0.0d
+		}
+	]
+	title: "Caminho — Alta Tensão"
+}

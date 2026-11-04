@@ -77,7 +77,7 @@
 			]
 			title: "Faca de Açougueiro"
 			x: 1.5d
-			y: -2.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -111,15 +111,15 @@
 			]
 			title: "Sebo"
 			x: 3.0d
-			y: -2.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
-				"5BD9F3E14A814792"
+				"4C3F7314E4111016"
 				"6E250F6F5A1780D8"
 			]
 			description: [
-				"O Occultism agora pede latão do Create. Aurend misturava tudo."
+				"Pedra de outro mundo e latão do Create. Aurend misturava tudo."
 			]
 			id: "679EA94D2D6CBCBA"
 			rewards: [
@@ -145,7 +145,7 @@
 				}
 			]
 			title: "Tigela Sacrificial"
-			x: 1.5d
+			x: 4.5d
 			y: -0.75d
 		}
 		{
@@ -179,7 +179,7 @@
 				}
 			]
 			title: "Tigela Dourada"
-			x: 3.0d
+			x: 6.0d
 			y: -0.75d
 		}
 		{
@@ -231,7 +231,7 @@
 			]
 			title: "Giz Branco"
 			x: 4.5d
-			y: 0.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -265,7 +265,7 @@
 			]
 			title: "Óculos do Outro Mundo"
 			x: 1.5d
-			y: 0.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -299,7 +299,7 @@
 			]
 			title: "Varinha de Adivinhação"
 			x: 3.0d
-			y: 0.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -333,7 +333,7 @@
 			]
 			title: "Pedra de Outro Mundo"
 			x: 3.0d
-			y: 2.25d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -370,7 +370,7 @@
 			]
 			title: "Prata"
 			x: 1.5d
-			y: 2.25d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -404,7 +404,7 @@
 				}
 			]
 			title: "Gema Sintonizada"
-			x: 6.0d
+			x: 7.5d
 			y: -0.75d
 		}
 		{
@@ -469,7 +469,7 @@
 			]
 			title: "Lanterna Espiritual"
 			x: 7.5d
-			y: -1.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -502,8 +502,8 @@
 				}
 			]
 			title: "Livro de Vínculo"
-			x: 7.5d
-			y: 0.0d
+			x: 9.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -536,7 +536,7 @@
 				}
 			]
 			title: "Um Foliot Vinculado"
-			x: 9.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -570,7 +570,7 @@
 				}
 			]
 			title: "Minerador Espiritual"
-			x: 10.5d
+			x: 12.0d
 			y: -0.75d
 		}
 		{
@@ -605,7 +605,7 @@
 				}
 			]
 			title: "Giz Dourado"
-			x: 10.5d
+			x: 12.0d
 			y: 0.75d
 		}
 		{
@@ -639,7 +639,7 @@
 				}
 			]
 			title: "Livro do Djinni"
-			x: 12.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -674,7 +674,7 @@
 				}
 			]
 			title: "Iésnio"
-			x: 13.5d
+			x: 15.0d
 			y: -0.75d
 		}
 		{
@@ -708,8 +708,8 @@
 				}
 			]
 			title: "Picareta Infundida"
-			x: 7.5d
-			y: 1.5d
+			x: 9.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -742,7 +742,7 @@
 				}
 			]
 			title: "Picareta de Iésnio"
-			x: 15.0d
+			x: 16.5d
 			y: -2.25d
 		}
 		{
@@ -776,7 +776,7 @@
 				}
 			]
 			title: "Giz Roxo"
-			x: 13.5d
+			x: 15.0d
 			y: 0.75d
 		}
 		{
@@ -810,7 +810,7 @@
 				}
 			]
 			title: "Matriz Dimensional"
-			x: 15.0d
+			x: 16.5d
 			y: -0.75d
 		}
 		{
@@ -853,7 +853,7 @@
 				}
 			]
 			title: "Controlador de Armazenamento"
-			x: 16.5d
+			x: 18.0d
 			y: -0.75d
 		}
 		{
@@ -887,7 +887,7 @@
 				}
 			]
 			title: "Anel de Familiar"
-			x: 15.0d
+			x: 16.5d
 			y: 0.75d
 		}
 		{
@@ -921,7 +921,7 @@
 				}
 			]
 			title: "Giz Vermelho"
-			x: 15.0d
+			x: 16.5d
 			y: 2.25d
 		}
 		{
@@ -967,7 +967,7 @@
 				}
 			]
 			title: "O Afrit"
-			x: 16.5d
+			x: 18.0d
 			y: 0.75d
 		}
 		{
@@ -1013,7 +1013,7 @@
 				}
 			]
 			title: "Mestre do Pentáculo"
-			x: 18.0d
+			x: 19.5d
 			y: 0.0d
 		}
 	]

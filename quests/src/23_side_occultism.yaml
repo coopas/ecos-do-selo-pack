@@ -10,8 +10,8 @@ quests:
      tasks: [{item: occultism:butcher_knife}], rewards: [{coins: 2}]}
   - {slug: sebo, title: "Sebo", deps: [faca], desc: ["Gordura animal, base para velas e giz."],
      tasks: [{item: occultism:tallow, count: 8}], rewards: [{coins: 1}]}
-  - {slug: tigela, title: "Tigela Sacrificial", deps: [datura, side_create/latao],
-     desc: ["O Occultism agora pede latão do Create. Aurend misturava tudo."], tasks: [{item: occultism:sacrificial_bowl, count: 4}],
+  - {slug: tigela, title: "Tigela Sacrificial", deps: [pedra_outra, side_create/latao],
+     desc: ["Pedra de outro mundo e latão do Create. Aurend misturava tudo."], tasks: [{item: occultism:sacrificial_bowl, count: 4}],
      rewards: [{coins: 2}]}
   - {slug: tigela_dourada, title: "Tigela Dourada", deps: [tigela], desc: ["O centro de todo ritual."],
      tasks: [{item: occultism:golden_sacrificial_bowl}], rewards: [{coins: 3}]}

@@ -1,0 +1,56 @@
+chapter: side_ae2
+title: "Caminho — A Rede Que Lembra"
+icon: ae2:controller
+group: caminhos
+act: 3
+quests:
+  - {slug: meteorito, title: "Pedras Que Caíram", deps: [ato2/fim_ato2], shape: gear, icon: ae2:sky_stone_block,
+     desc: ["Meteoritos guardam cristais de certus.", "Use uma bússola de meteorito para achar um."], tasks: [{item: ae2:sky_stone_block, count: 16}],
+     rewards: [{coins: 3}]}
+  - {slug: certus, title: "Quartzo Certus", deps: [meteorito], desc: ["Cristais que guardam informação como a pedra guarda calor."],
+     tasks: [{tag: forge:gems/certus_quartz, count: 16}], rewards: [{coins: 2}]}
+  - {slug: brotos, title: "Brotos de Quartzo", deps: [certus], desc: ["Um bloco de quartzo que cresce sozinho. Leve um para casa."],
+     tasks: [{item: ae2:flawed_budding_quartz}], rewards: [{coins: 3}]}
+  - {slug: carregador, title: "O Carregador", deps: [certus], desc: ["Energia transforma certus em cristal carregado."],
+     tasks: [{item: ae2:charger}, {item: ae2:charged_certus_quartz_crystal, count: 4}], rewards: [{coins: 3}]}
+  - {slug: fluix, title: "Cristal Fluix", deps: [carregador], desc: ["Certus carregado, redstone e quartzo na água."],
+     tasks: [{tag: forge:gems/fluix, count: 16}], rewards: [{coins: 3}]}
+  - {slug: prensa, title: "A Prensa", deps: [certus, side_gt_steam_lv/bomba_pistao], shape: gear, icon: ae2:inscriber,
+     desc: ["Pede um pistão LV do GregTech.", "A rede de Aurend corria sobre máquinas."], tasks: [{item: ae2:inscriber}], rewards: [{coins: 4}]}
+  - {slug: silicio, title: "Silício Impresso", deps: [prensa], desc: ["O primeiro molde da rede."],
+     tasks: [{tag: forge:silicon, count: 8}, {item: ae2:printed_silicon, count: 4}], rewards: [{coins: 2}]}
+  - {slug: processadores, title: "Três Processadores", deps: [silicio, fluix], desc: ["Lógico, de cálculo e de engenharia."],
+     tasks: [{item: ae2:logic_processor, count: 4}, {item: ae2:calculation_processor, count: 4}, {item: ae2:engineering_processor, count: 4}],
+     rewards: [{coins: 5}]}
+  - {slug: cabos, title: "Cabos de Fluix", deps: [fluix], desc: ["Fios que carregam itens como se fossem pensamentos."],
+     tasks: [{item: ae2:fluix_glass_cable, count: 32}], rewards: [{coins: 2}]}
+  - {slug: aceitador, title: "Aceitador de Energia", deps: [cabos], desc: ["Converte a energia das suas máquinas para a rede."],
+     tasks: [{item: ae2:energy_acceptor}], rewards: [{coins: 2}]}
+  - {slug: controlador, title: "O Controlador", deps: [processadores, aceitador, ato2/braco_mv], shape: gear, icon: ae2:controller,
+     desc: ["Pede um braço robótico MV.", "O coração da rede: tudo passa por ele."], tasks: [{item: ae2:controller}],
+     rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: drive, title: "Unidade de Armazenamento", deps: [controlador], desc: ["Onde as células moram."],
+     tasks: [{item: ae2:drive}], rewards: [{coins: 3}]}
+  - {slug: terminal, title: "Terminal", deps: [controlador], desc: ["Uma janela para tudo o que você guardou."],
+     tasks: [{item: ae2:terminal}], rewards: [{coins: 3}]}
+  - {slug: celula_1k, title: "Célula 1k", deps: [drive], desc: ["A primeira memória da rede."],
+     tasks: [{item: ae2:item_storage_cell_1k, count: 2}], rewards: [{coins: 3}]}
+  - {slug: celula_4k, title: "Célula 4k", deps: [celula_1k], desc: ["Mais espaço."],
+     tasks: [{item: ae2:item_storage_cell_4k, count: 2}], rewards: [{coins: 4}]}
+  - {slug: celula_16k, title: "Célula 16k", deps: [celula_4k], desc: ["Uma biblioteca inteira."],
+     tasks: [{item: ae2:item_storage_cell_16k}], rewards: [{coins: 5}]}
+  - {slug: barramentos, title: "Barramentos", deps: [controlador], desc: ["Importe e exporte sem tocar em nada."],
+     tasks: [{item: ae2:import_bus, count: 2}, {item: ae2:export_bus, count: 2}, {item: ae2:storage_bus}], rewards: [{coins: 4}]}
+  - {slug: terminal_criacao, title: "Terminal de Criação", deps: [terminal], desc: ["Crie direto da rede."],
+     tasks: [{item: ae2:crafting_terminal}], rewards: [{coins: 3}]}
+  - {slug: padroes, title: "Padrões", deps: [terminal_criacao], desc: ["Ensine a rede a criar sozinha."],
+     tasks: [{item: ae2:pattern_encoding_terminal}, {item: ae2:blank_pattern, count: 16}], rewards: [{coins: 3}]}
+  - {slug: montador, title: "Montador Molecular", deps: [padroes], desc: ["Uma bancada que trabalha sem mãos."],
+     tasks: [{item: ae2:pattern_provider}, {item: ae2:molecular_assembler}], rewards: [{coins: 5}]}
+  - {slug: cpu, title: "CPU de Criação", deps: [montador], desc: ["A rede passa a planejar."],
+     tasks: [{item: ae2:crafting_unit, count: 4}, {item: ae2:1k_crafting_storage}], rewards: [{coins: 5}]}
+  - {slug: sem_fio, title: "Terminal Sem Fio", deps: [terminal, celula_4k], desc: ["Leve a rede no bolso."],
+     tasks: [{item: ae2:wireless_terminal}], rewards: [{coins: 4}]}
+  - {slug: rede_viva, title: "A Rede Que Lembra", deps: [cpu, celula_16k, barramentos, sem_fio], shape: gear, icon: ae2:controller,
+     desc: ["Aurend guardava tudo assim.", "Até o que deveria ter esquecido."], tasks: [{checkmark: true}],
+     rewards: [{crate: epica}, {coins: 8}]}

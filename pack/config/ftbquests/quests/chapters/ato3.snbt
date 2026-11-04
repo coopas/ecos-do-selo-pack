@@ -1,0 +1,1772 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ato3"
+	group: "5395DF7F49D69073"
+	icon: "ecos:chave_celeste"
+	id: "25AAB2F034CE7B3D"
+	images: [ ]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"10511E6CE35464FB"
+			]
+			description: [
+				"As ilhas não flutuam."
+				"Elas foram arrancadas."
+			]
+			icon: "minecraft:glowstone"
+			id: "56E08ACA02ABFC45"
+			rewards: [
+				{
+					count: 1
+					id: "4111A44345A12499"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Olhe para cima. As ilhas não flutuam: elas foram arrancadas.\\nQuando o Selo rompeu, as câmaras de luz subiram como bolhas.\\nOs conselheiros chamaram isso de milagre.\\nEu chamei de ferida aberta.\"}"
+							]
+							title: "Diário — Página 17"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0B52D03A38425C95"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "62D827B73299CD74"
+					type: "checkmark"
+				}
+			]
+			title: "Olhe Para Cima"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"56E08ACA02ABFC45"
+			]
+			description: [
+				"O portal do céu é feito de luz presa em pedra."
+			]
+			id: "4CA52A99CE75BE0A"
+			rewards: [
+				{
+					count: 2
+					id: "64772B4F634EB77C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 24L
+					id: "28347AA996FADF87"
+					item: {
+						Count: 1b
+						id: "minecraft:glowstone"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra de Luz"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4CA52A99CE75BE0A"
+				"4C75456FC2F31094"
+				"3BCA350B588D9B72"
+				"1111F3F552161AE3"
+			]
+			description: [
+				"A floresta e a profundeza, unidas por luz."
+				"Sem ela no bolso, o céu te devolve ao chão."
+			]
+			icon: "ecos:chave_celeste"
+			id: "28BBF0587F7F1B9D"
+			rewards: [
+				{
+					count: 1
+					id: "4C794BB9BC142B99"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"O céu não aceita visitantes sem uma chave.\\nA Chave Celeste carrega a floresta e a profundeza.\\nQuem a leva no bolso passa. Quem não leva é devolvido ao chão.\\nNão a empreste a quem você não confia.\"}"
+							]
+							title: "Diário — Página 18"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "3ECC0463E9DCEF29"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "6C8843006F44E761"
+					item: {
+						Count: 1b
+						id: "ecos:chave_celeste"
+					}
+					type: "item"
+				}
+			]
+			title: "A Chave Celeste"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"28BBF0587F7F1B9D"
+			]
+			description: [
+				"Um quadro de pedra de luz e um balde de água."
+				"Do outro lado, o chão é nuvem."
+			]
+			icon: "aether:skyroot_log"
+			id: "56C75B138804C946"
+			rewards: [
+				{
+					count: 1
+					id: "5259EE5D7F82016E"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "5A882E18AAD9EB2B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					dimension: "aether:the_aether"
+					id: "37FE2EE1786844B2"
+					type: "dimension"
+				}
+			]
+			title: "O Aether"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"56C75B138804C946"
+			]
+			description: [
+				"Árvores que crescem sobre o nada."
+			]
+			id: "5FDC9D6912BCAA83"
+			rewards: [
+				{
+					count: 1
+					id: "3C810816DA2A795C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "438CEC771644F38D"
+					item: {
+						Count: 1b
+						id: "aether:skyroot_log"
+					}
+					type: "item"
+				}
+			]
+			title: "Raiz do Céu"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"56C75B138804C946"
+			]
+			description: [
+				"A pedra das ilhas."
+			]
+			id: "34D5BAE60A757371"
+			rewards: [
+				{
+					count: 1
+					id: "19EDF2BB186E334C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "2AA77A660BE70D57"
+					item: {
+						Count: 1b
+						id: "aether:holystone"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra Sagrada"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"34D5BAE60A757371"
+			]
+			description: [
+				"Combustível e cura."
+			]
+			id: "3FC8F59060B22649"
+			rewards: [
+				{
+					count: 2
+					id: "49B260ED6B9CE4F2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "22464229D2CEAB87"
+					item: {
+						Count: 1b
+						id: "aether:ambrosium_shard"
+					}
+					type: "item"
+				}
+			]
+			title: "Ambrósio"
+			x: 7.5d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"34D5BAE60A757371"
+			]
+			description: [
+				"Uma gema que fica mais forte quanto mais gasta."
+			]
+			id: "2658A610C4BFA432"
+			rewards: [
+				{
+					count: 2
+					id: "19FF4FA7995C50AC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5D03473640C754D5"
+					item: {
+						Count: 1b
+						id: "aether:zanite_gemstone"
+					}
+					type: "item"
+				}
+			]
+			title: "Zanita"
+			x: 7.5d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"2658A610C4BFA432"
+			]
+			description: [
+				"Para quebrar o que vem depois."
+			]
+			id: "1FE5B4BAC7BAFFB1"
+			rewards: [
+				{
+					count: 2
+					id: "0C84AFA45EE72660"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6DC7D2B47A273936"
+					item: {
+						Count: 1b
+						id: "aether:zanite_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			title: "Picareta de Zanita"
+			x: 9.0d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"3FC8F59060B22649"
+				"2658A610C4BFA432"
+			]
+			description: [
+				"Encante itens com ambrósio."
+			]
+			id: "1202B78353A761E8"
+			rewards: [
+				{
+					count: 3
+					id: "4E4569CBBEAD4F24"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "23576036ED5FA42A"
+					item: {
+						Count: 1b
+						id: "aether:altar"
+					}
+					type: "item"
+				}
+			]
+			title: "Altar"
+			x: 9.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"3FC8F59060B22649"
+			]
+			description: [
+				"Gelo e vida, movidos a ambrósio."
+			]
+			id: "53D3AA2EA1033DF0"
+			rewards: [
+				{
+					count: 3
+					id: "572A2071A577894D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0A2B88E8F0A88410"
+					item: {
+						Count: 1b
+						id: "aether:freezer"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "3014411C24D058BD"
+					item: {
+						Count: 1b
+						id: "aether:incubator"
+					}
+					type: "item"
+				}
+			]
+			title: "Congelador e Incubadora"
+			x: 9.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"56C75B138804C946"
+			]
+			description: [
+				"Nuvens que seguram seu peso."
+			]
+			id: "632D6F51350E9C0C"
+			rewards: [
+				{
+					count: 2
+					id: "30F86241C999D09B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5637BBB389DDD1E1"
+					item: {
+						Count: 1b
+						id: "aether:cold_aercloud"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1FF27E5F680191E1"
+					item: {
+						Count: 1b
+						id: "aether:blue_aercloud"
+					}
+					type: "item"
+				}
+			]
+			title: "Nuvens Sólidas"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"632D6F51350E9C0C"
+			]
+			description: [
+				"Cair daqui é cair para sempre."
+			]
+			id: "204CBEF1487DB4EB"
+			rewards: [
+				{
+					count: 2
+					id: "1F73E1846E65538D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6E4B5C0299E313D8"
+					item: {
+						Count: 1b
+						id: "aether:golden_parachute"
+					}
+					type: "item"
+				}
+			]
+			title: "Paraquedas Dourado"
+			x: 7.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"2658A610C4BFA432"
+			]
+			description: [
+				"Aurend gostava de adornos úteis."
+			]
+			id: "5B484A919662BFC2"
+			rewards: [
+				{
+					count: 3
+					id: "2E7850E7C24EA004"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4C079F72A845717B"
+					item: {
+						Count: 1b
+						id: "aether:zanite_ring"
+					}
+					type: "item"
+				}
+			]
+			title: "Anel de Zanita"
+			x: 9.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"56C75B138804C946"
+			]
+			description: [
+				"Gelatinas que engolem quem chega perto."
+			]
+			id: "1C16F7E6E2750C55"
+			rewards: [
+				{
+					count: 2
+					id: "718C9BFF36D73FF4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1A326EA030B49501"
+					item: {
+						Count: 1b
+						id: "aether:swet_ball"
+					}
+					type: "item"
+				}
+			]
+			title: "Os Swets"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1FE5B4BAC7BAFFB1"
+			]
+			description: [
+				"Um bloco que se move quando você não olha."
+				"Ele guarda a masmorra de bronze."
+			]
+			icon: "aether:bronze_dungeon_key"
+			id: "09A794340D49D417"
+			rewards: [
+				{
+					count: 1
+					id: "75CDC3B243C32F20"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "561028FECDF4F6BC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "aether:slider"
+					id: "1563728C5B8646B6"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "O Deslizador"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"09A794340D49D417"
+			]
+			description: [
+				"Abre o tesouro do Deslizador."
+			]
+			id: "2B8B12C2B16A57B9"
+			rewards: [
+				{
+					count: 3
+					id: "243C27252569063C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5055E740CC4A6FC8"
+					item: {
+						Count: 1b
+						id: "aether:bronze_dungeon_key"
+					}
+					type: "item"
+				}
+			]
+			title: "Chave de Bronze"
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1FE5B4BAC7BAFFB1"
+				"1202B78353A761E8"
+			]
+			description: [
+				"Um minério que cai para cima."
+			]
+			id: "62E5FCBEA70ADC21"
+			rewards: [
+				{
+					count: 4
+					id: "04E527A6CA6B69A7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1A5293D2E1BCE51A"
+					item: {
+						Count: 1b
+						id: "aether:gravitite_ore"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "65D30917B204288A"
+					item: {
+						Count: 1b
+						id: "aether:enchanted_gravitite"
+					}
+					type: "item"
+				}
+			]
+			title: "Gravitita"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"62E5FCBEA70ADC21"
+			]
+			description: [
+				"Puxe blocos sem quebrá-los."
+			]
+			id: "2448AE0FB22966CB"
+			rewards: [
+				{
+					count: 3
+					id: "72A84A4A3EDBE4A3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5079655E3089A59D"
+					item: {
+						Count: 1b
+						id: "aether:gravitite_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			title: "Picareta de Gravitita"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"09A794340D49D417"
+			]
+			description: [
+				"Guerreiras que testam quem chega ao templo."
+			]
+			id: "7D2BC31DA9E0724A"
+			rewards: [
+				{
+					count: 4
+					id: "75B004CDF20C6556"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "7A143342E9CCB1C4"
+					item: {
+						Count: 1b
+						id: "aether:victory_medal"
+					}
+					type: "item"
+				}
+			]
+			title: "As Valquírias"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D2BC31DA9E0724A"
+			]
+			description: [
+				"Ela só luta com quem provou valor."
+			]
+			icon: "aether:silver_dungeon_key"
+			id: "12B4CA39E71B9F51"
+			rewards: [
+				{
+					count: 1
+					id: "1A33AB845DDF5EC3"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2B00355FC5DF7164"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "aether:valkyrie_queen"
+					id: "69B96F260BF5404B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "A Rainha Valquíria"
+			x: 13.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"12B4CA39E71B9F51"
+			]
+			description: [
+				"Abre o tesouro da Rainha."
+			]
+			id: "22E370D59306B499"
+			rewards: [
+				{
+					count: 3
+					id: "005F4085FE65B19F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0EC27B96EA2B9E6D"
+					item: {
+						Count: 1b
+						id: "aether:silver_dungeon_key"
+					}
+					type: "item"
+				}
+			]
+			title: "Chave de Prata"
+			x: 15.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"12B4CA39E71B9F51"
+				"2448AE0FB22966CB"
+				"56D335F7D074C394"
+			]
+			description: [
+				"Ela prometeu que nenhuma vela se apagaria."
+				"Ela ainda vive. As velas também."
+			]
+			icon: "aether:gold_dungeon_key"
+			id: "3E849629036066EC"
+			rewards: [
+				{
+					count: 1
+					id: "5526CFF0D797C617"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Solenne acendia as velas da câmara de luz.\\nPrometeu que nenhuma se apagaria enquanto vivesse.\\nEla ainda vive. As velas também.\\nEla só esqueceu por que as acendia.\"}"
+							]
+							title: "Diário — Página 20"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "7C99152A14EE7F80"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "1FDE3194FFF074A9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "aether:sun_spirit"
+					id: "26FD53BC2D338C90"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Solenne, a Chama Votiva"
+			x: 15.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"3E849629036066EC"
+			]
+			description: [
+				"Abre o tesouro de Solenne."
+			]
+			id: "191BFE923D163BEC"
+			rewards: [
+				{
+					count: 4
+					id: "1080FACBEC80F08B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2035C7FF4A66A37C"
+					item: {
+						Count: 1b
+						id: "aether:gold_dungeon_key"
+					}
+					type: "item"
+				}
+			]
+			title: "Chave de Ouro"
+			x: 16.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3E849629036066EC"
+			]
+			description: [
+				"O terceiro pedaço do Selo."
+				"Ele não pesa para baixo. Empurra para cima."
+			]
+			icon: "ecos:fragmento_selo_ceus"
+			id: "31D1A2A997A019CA"
+			rewards: [
+				{
+					count: 1
+					id: "583C6D94CD96C855"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Terceiro fragmento. Agora você sente o silêncio pesar diferente:\\nele empurra para cima, não para baixo.\\nO som que o Selo abafa não vem das profundezas.\\nEu menti nas primeiras páginas. Desculpe.\"}"
+							]
+							title: "Diário — Página 21"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "3D581F68949FB091"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "749090FF1871E23B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_ceus"
+					}
+					type: "item"
+				}
+			]
+			title: "O Fragmento dos Céus"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"28BBF0587F7F1B9D"
+			]
+			description: [
+				"Um de manhã eterna, outro de crepúsculo eterno."
+				"O fogo do porteiro não abre o que a chave tranca."
+				"O isqueiro pede outro Fragmento das Profundezas: o Cego sempre deixa um."
+			]
+			icon: "blue_skies:zeal_lighter"
+			id: "1078C3332EF0DB79"
+			rewards: [
+				{
+					count: 1
+					id: "14D8DEC14CCEA45F"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Há outros dois céus: um de manhã eterna, um de crepúsculo eterno.\\nAli vive um porteiro que vende fogo a quem paga.\\nNão confie no fogo dele. O fogo não abre o que a chave tranca.\\nA luz, lá em cima, também escuta.\"}"
+							]
+							title: "Diário — Página 19"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "39F07101CB5360A1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "045A8891B98CF5B8"
+					item: {
+						Count: 1b
+						id: "blue_skies:zeal_lighter"
+					}
+					type: "item"
+				}
+			]
+			title: "Os Outros Dois Céus"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"1078C3332EF0DB79"
+			]
+			description: [
+				"Neve e luz sem fim. Um portal de pedra-de-neve aceso pelo isqueiro."
+			]
+			icon: "blue_skies:turquoise_stone"
+			id: "1E22ABC5CFCCDD27"
+			rewards: [
+				{
+					count: 1
+					id: "4BEBD063700B38E2"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "74899551582FB592"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					dimension: "blue_skies:everbright"
+					id: "368E467AF96C31EA"
+					type: "dimension"
+				}
+			]
+			title: "Everbright"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1078C3332EF0DB79"
+			]
+			description: [
+				"Um céu que nunca termina de amanhecer."
+			]
+			icon: "blue_skies:lunar_stone"
+			id: "0DAA0FE245D8B5A2"
+			rewards: [
+				{
+					count: 1
+					id: "008E7DEFF23D12A0"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "089FA60B37EC4C5A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					dimension: "blue_skies:everdawn"
+					id: "7FC6AA058D6088CA"
+					type: "dimension"
+				}
+			]
+			title: "Everdawn"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1E22ABC5CFCCDD27"
+				"0DAA0FE245D8B5A2"
+			]
+			description: [
+				"Uma de cada céu."
+			]
+			id: "0F2950DD81F75F95"
+			rewards: [
+				{
+					count: 2
+					id: "57C9C13A51BBDF42"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "72E0DF42DE5D1AEC"
+					item: {
+						Count: 1b
+						id: "blue_skies:bluebright_log"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3FD0F2243E62578F"
+					item: {
+						Count: 1b
+						id: "blue_skies:lunar_log"
+					}
+					type: "item"
+				}
+			]
+			title: "Madeiras dos Céus"
+			x: 7.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"1E22ABC5CFCCDD27"
+			]
+			description: [
+				"A pedra do Everbright."
+			]
+			id: "4C320ED45EFF7BC8"
+			rewards: [
+				{
+					count: 1
+					id: "1D3A1EC04A0A0BDC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "13AD65F784489EC4"
+					item: {
+						Count: 1b
+						id: "blue_skies:turquoise_stone"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra Turquesa"
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"1E22ABC5CFCCDD27"
+			]
+			description: [
+				"Um metal quente como o horizonte."
+			]
+			id: "213F02B345CE22E7"
+			rewards: [
+				{
+					count: 3
+					id: "4767D4F82C6C2423"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "03F8706F71482EE2"
+					item: {
+						Count: 1b
+						id: "blue_skies:horizonite_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Horizonita"
+			x: 7.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"213F02B345CE22E7"
+			]
+			description: [
+				"Uma forja que não precisa de carvão."
+			]
+			id: "05BF2E8462665D37"
+			rewards: [
+				{
+					count: 3
+					id: "458A08FF2E07A720"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1193216CB86298F7"
+					item: {
+						Count: 1b
+						id: "blue_skies:horizonite_forge"
+					}
+					type: "item"
+				}
+			]
+			title: "Forja do Horizonte"
+			x: 9.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"1E22ABC5CFCCDD27"
+			]
+			description: [
+				"Gemas vermelhas, cortantes."
+			]
+			id: "652B73B7B228C8B1"
+			rewards: [
+				{
+					count: 3
+					id: "37DD270BAE1CCD54"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "5CCB9439D1EAF2F1"
+					item: {
+						Count: 1b
+						id: "blue_skies:pyrope_gem"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "4C0CD1CDEDA79F3F"
+					item: {
+						Count: 1b
+						id: "blue_skies:pyrope_sword"
+					}
+					type: "item"
+				}
+			]
+			title: "Piropo"
+			x: 7.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"652B73B7B228C8B1"
+			]
+			description: [
+				"Pedra azul que lembra água parada."
+			]
+			id: "4B4351E8C52B25F7"
+			rewards: [
+				{
+					count: 3
+					id: "65B07FB7741D3931"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "70F37B6CCA761A30"
+					item: {
+						Count: 1b
+						id: "blue_skies:aquite"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "13725546C7A2D852"
+					item: {
+						Count: 1b
+						id: "blue_skies:aquite_chestplate"
+					}
+					type: "item"
+				}
+			]
+			title: "Aquita"
+			x: 9.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"0DAA0FE245D8B5A2"
+			]
+			description: [
+				"Um metal que mente sobre o próprio peso."
+			]
+			id: "76E5ECC8494D91EB"
+			rewards: [
+				{
+					count: 3
+					id: "65EDA181B8550BFA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "2772698D508C5F0A"
+					item: {
+						Count: 1b
+						id: "blue_skies:falsite_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Falsita"
+			x: 7.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"0DAA0FE245D8B5A2"
+			]
+			description: [
+				"Leve como ar. Faz baldes que não pesam."
+			]
+			id: "72D0E0366B8D1D44"
+			rewards: [
+				{
+					count: 3
+					id: "1B77794B06DCAED9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "35ECB645F146E411"
+					item: {
+						Count: 1b
+						id: "blue_skies:ventium_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Vêntio"
+			x: 7.5d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"0DAA0FE245D8B5A2"
+			]
+			description: [
+				"Brilha mesmo no escuro do crepúsculo."
+			]
+			id: "56F5C7064DFEE97B"
+			rewards: [
+				{
+					count: 3
+					id: "7B389C66D2965568"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "32513BDF5F9FCB24"
+					item: {
+						Count: 1b
+						id: "blue_skies:moonstone"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra da Lua"
+			x: 7.5d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"4B4351E8C52B25F7"
+				"76E5ECC8494D91EB"
+			]
+			description: [
+				"As gemas mais fundas dos céus."
+			]
+			id: "4C1CB04196A87EAF"
+			rewards: [
+				{
+					count: 4
+					id: "7BBF32F6F848D63A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5520B421346849F2"
+					item: {
+						Count: 1b
+						id: "blue_skies:diopside_gem"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "03DD0DE84F123273"
+					item: {
+						Count: 1b
+						id: "blue_skies:charoite"
+					}
+					type: "item"
+				}
+			]
+			title: "Diopsídio e Charoíta"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4C1CB04196A87EAF"
+			]
+			description: [
+				"Ele chama coisas de longe. Uma vez, chamou algo grande demais."
+			]
+			icon: "blue_skies:summoner_trophy"
+			id: "5EE8684DE54AE10A"
+			rewards: [
+				{
+					count: 1
+					id: "6374460F56A7B88F"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4569E4BD6D677D24"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "blue_skies:summoner"
+					id: "098CB606B3ED178A"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "O Invocador"
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4C1CB04196A87EAF"
+			]
+			description: [
+				"Uma árvore que aprendeu a lutar."
+			]
+			icon: "blue_skies:starlit_crusher_trophy"
+			id: "1B0489AA68AB2BA0"
+			rewards: [
+				{
+					count: 1
+					id: "4AEE71D8F9E95A59"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3BB8492FC3BB89A1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "blue_skies:starlit_crusher"
+					id: "586EABF5787C20B3"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "O Esmagador Estelar"
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5EE8684DE54AE10A"
+			]
+			description: [
+				"O que sobra dos que ele chamou."
+			]
+			id: "7F83E3195756D907"
+			rewards: [
+				{
+					count: 3
+					id: "79F5142BB875C7FA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6825CB40A72781B8"
+					item: {
+						Count: 1b
+						id: "blue_skies:soul_fragment"
+					}
+					type: "item"
+				}
+			]
+			title: "Fragmentos de Alma"
+			x: 13.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"56C75B138804C946"
+				"2447F245EE8C517A"
+			]
+			description: [
+				"Leve sua rede até as ilhas. Aurend guardava tudo lá em cima."
+			]
+			id: "087A86502D3BC154"
+			rewards: [
+				{
+					count: 4
+					id: "095C5D104F35E28E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6506B8BAA69D7DC6"
+					type: "checkmark"
+				}
+			]
+			title: "A Rede no Céu"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3E849629036066EC"
+				"6567303B4DC3A09F"
+			]
+			description: [
+				"O metal das naves, forjado sob o sol eterno."
+			]
+			id: "71802257DFB66771"
+			rewards: [
+				{
+					count: 5
+					id: "7BCDB6034074F9AF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3D48A8EC73705178"
+					type: "checkmark"
+				}
+			]
+			title: "Titânio Sob o Sol"
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"31D1A2A997A019CA"
+				"5EE8684DE54AE10A"
+				"4B640214EE912855"
+				"4DCC07AD6E9AEA86"
+			]
+			description: [
+				"Três fragmentos."
+				"O som que o Selo abafa não vem das profundezas. Vem das estrelas."
+			]
+			icon: "ecos:fragmento_selo_ceus"
+			id: "73C3F25D63C2625C"
+			rewards: [
+				{
+					count: 1
+					id: "23F8765DD16B6DD6"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 14
+					id: "7E7ACB99F482164B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "6DD2536A523C520B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "34C62D81EF15E9E9"
+					type: "checkmark"
+				}
+			]
+			title: "O Silêncio Empurra Para Cima"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	title: "Ato III — Os Céus Partidos"
+}

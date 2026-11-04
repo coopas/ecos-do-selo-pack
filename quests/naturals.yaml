@@ -143,3 +143,45 @@ otherside_mundo:
   - deeperdarker:sculk_bone
   - deeperdarker:soul_dust
   - deeperdarker:soul_crystal
+aether_mundo:
+  - aether:skyroot_log
+  - aether:holystone
+  - aether:ambrosium_shard
+  - aether:zanite_gemstone
+  - aether:gravitite_ore
+  - aether:aerogel                       # lava + ar do Aether
+  - aether:swet_ball                     # drop dos Swets
+  - aether:victory_medal                 # drop das Valquírias
+  - aether:bronze_dungeon_key            # drop do Slider
+  - aether:silver_dungeon_key            # drop da Rainha Valquíria
+  - aether:gold_dungeon_key              # drop do Sun Spirit
+  - aether:blue_aercloud
+  - aether:cold_aercloud
+  - aether:golden_aercloud
+blue_skies_mundo:
+  - blue_skies:lunar_log
+  - blue_skies:bluebright_log
+  - blue_skies:starlit_log
+  - blue_skies:frostbright_log
+  - blue_skies:dusk_log
+  - blue_skies:maple_log
+  - blue_skies:turquoise_stone
+  - blue_skies:lunar_stone
+  - blue_skies:raw_horizonite
+  - blue_skies:pyrope_gem
+  - blue_skies:aquite
+  - blue_skies:diopside_gem
+  - blue_skies:charoite
+  - blue_skies:moonstone
+  - blue_skies:raw_falsite
+  - blue_skies:raw_ventium
+  - blue_skies:soul_fragment
+  - blue_skies:summoner_trophy           # drop do Invocador
+  - blue_skies:starlit_crusher_trophy    # drop do Esmagador Estelar
+  - blue_skies:loot_bag_summoner
+  - blue_skies:loot_bag_starlit_crusher
+ae2_mundo:
+  - ae2:certus_quartz_crystal            # brotos de certus em meteoritos
+  - ae2:sky_stone_block
+  - ae2:flawed_budding_quartz
+  - ae2:meteorite_compass
