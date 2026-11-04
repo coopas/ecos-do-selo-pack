@@ -4,6 +4,8 @@
 let ECOS_KILLS = JsonIO.read('kubejs/ecos/kill_tasks.json')
 if (!ECOS_KILLS) throw new Error('[ecos] kubejs/ecos/kill_tasks.json ausente ou inválido: kills compartilhados NÃO carregados')
 let ecosTaskCache = null
+// Progressão da Twilight também é por jogador: quem estava na luta ganha o avanço do chefe.
+const ECOS_TF_PROGRESS = { 'twilightforest:naga': 'twilightforest:progress_naga', 'twilightforest:lich': 'twilightforest:progress_lich' }
 
 function ecosFindTasks(file) {
   // ids de 64 bits não cabem num número JS: compara pela string hex
@@ -22,11 +24,14 @@ EntityEvents.death(event => {
     let boss = event.entity
     let ids = ECOS_KILLS.kills[String(boss.type)]
     if (!ids) return
+    try { let n = boss.getNbt(); if (n != null && n.getBoolean('ShadowClone')) return } catch (e2) { /* sem nbt */ }
     let file = Java.loadClass('dev.ftb.mods.ftbquests.quest.ServerQuestFile').INSTANCE
     let tasks = ecosFindTasks(file)
     event.server.players.forEach(p => {
       if (!p.isAlive() || p.isSpectator()) return
       if (p.level.dimension != boss.level.dimension || p.distanceToEntity(boss) > 64) return
+      let adv = ECOS_TF_PROGRESS[String(boss.type)]
+      if (adv) event.server.runCommandSilent(`advancement grant ${p.username} only ${adv}`)
       let data = file.getOrCreateTeamData(p)
       ids.forEach(id => {
         let t = tasks[String(id).toUpperCase()]

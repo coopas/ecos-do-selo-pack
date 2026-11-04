@@ -10,7 +10,7 @@ hash = "4e97c3c14365097666dda0fb39294bf5517877de45bde79b9d7c11b0c8558092"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato1.snbt"
-hash = "362f681b6bece540f68a6c240d6e7faca2a29fb8bffba9c1e50da08b563eb4d0"
+hash = "cac6d4c176d8a347de08ddd20583153b5d66d90e2007312caa4d2bb5f4cfbc2e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato2.snbt"
@@ -163,11 +163,11 @@ hash = "9f136b7c0785c7eb03ed157ea67810def4bd47902e8d3f6a495d3f99882f7924"
 
 [[files]]
 file = "kubejs/server_scripts/30_ecos_boss_drops.js"
-hash = "e3fee437349f7fa327ca810f498d33bb9d1ddd2ee7e978c3ecbf2498cafab43a"
+hash = "207b080a531b2d985a2f1b55df0d3be53bd78f7dbba09404bc78301ffb94411a"
 
 [[files]]
 file = "kubejs/server_scripts/35_ecos_kill_share.js"
-hash = "2f94dd2d02670031be8aaca83894131880ed5c547145c99fea0bf503d7bd9244"
+hash = "5da9617f9b0d26ea39cdfcd28c09de877d0f0222d5ee60dd97baa4b94a646345"
 
 [[files]]
 file = "kubejs/server_scripts/40_ecos_final_boss.js"

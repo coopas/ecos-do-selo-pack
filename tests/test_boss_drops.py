@@ -40,3 +40,19 @@ def test_lich_drop_ingame():
     ])
     assert problems == []
     assert any("ECOS_DROP_OK" in line for line in boot_test.LAST_CONSOLE), boot_test.LAST_CONSOLE[-20:]
+
+
+@pytest.mark.ingame
+def test_lich_shadow_clone_drops_nothing_ingame():
+    """Clones do Lich (ShadowClone) não são o chefe: não derrubam fragmento."""
+    import boot_test
+    problems = boot_test.server(console=[
+        "forceload add 0 0",
+        "kill @e[type=minecraft:item]",
+        "summon twilightforest:lich 0 200 0 {NoAI:1b,NoGravity:1b,ShadowClone:1b}",
+        "kill @e[type=twilightforest:lich]",
+        "say aguardando",
+        'execute unless entity @e[type=item,nbt={Item:{id:"ecos:fragmento_selo_floresta"}}] run say ECOS_CLONE_OK',
+    ])
+    assert problems == []
+    assert any("ECOS_CLONE_OK" in line for line in boot_test.LAST_CONSOLE), boot_test.LAST_CONSOLE[-20:]

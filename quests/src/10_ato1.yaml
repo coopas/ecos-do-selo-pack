@@ -42,7 +42,7 @@ quests:
      tasks: [{item: ecos:chave_crepuscular}], rewards: [{page: 8}, {coins: 5}]}
   - {slug: portal, title: "O Lago e as Flores", deps: [chave, flores],
      desc: ["Faça um lago 2×2 cercado de flores.", "Jogue a Chave Crepuscular na água."], tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
-  - {slug: twilight, title: "Crepúsculo Eterno", deps: [portal], shape: gear, icon: twilightforest:twilight_oak_sapling,
+  - {slug: twilight, title: "Crepúsculo Eterno", deps: [floresta_selada], shape: gear, icon: twilightforest:twilight_oak_sapling,
      desc: ["Aqui é sempre fim de tarde.", "As árvores lembram de você antes de você chegar."],
      tasks: [{dimension: twilightforest:twilight_forest}], rewards: [{crate: rara}, {coins: 5}]}
   - {slug: raizviva, title: "Raiz Viva", deps: [twilight], desc: ["Raízes que se mexem quando você não olha."],
