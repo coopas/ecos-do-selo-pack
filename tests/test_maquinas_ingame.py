@@ -118,3 +118,62 @@ def test_dinamo_ingame():
     assert e["saida_out"] is True and e["saida_nao_aceita"] is True and e["saida_recusa"] is True, e
     assert e["buffer_max_lv"] == 16 * 32, e
     assert e["buffer_alto"] == 16 * 32 and e["buffer_neg"] == 0, e
+
+
+# --- Task 6: Saída de Vapor da caldeira do Create ------------------------------------------------------------------
+# Posições = ECOS_MAQ_POS.caldeira_* / saida_* / tambor_* em maquinas_check.js. Caldeira = torre 1x1x8 de
+# create:fluid_tank (y 301..308): tamanho 8 -> nível máximo 2 pelo tamanho; queimador superaquecido = calor 2.
+QUEIMADOR = "create:blaze_burner[blaze=seething]{fuelLevel:2,burnTimeRemaining:20000}"
+CALDEIRAS = {  # nome: (x, z, queimador?, bomba?, motor do Create?)
+    "quente": (2, 13, True, True, False),
+    "motores": (8, 13, True, True, True),
+    "fria": (13, 13, False, False, False),
+    "seca": (2, 9, True, False, False),
+    "reserva": (7, 9, True, False, False),
+}
+
+
+@pytest.mark.ingame
+def test_saida_vapor_ingame():
+    """Caldeira do Create sem motor: a Saída entrega 6 mB/t de gtceu:steam por nível de calor (o mesmo limite de calor,
+    tamanho e água que o Create usa para os motores) e gasta 10 mB de água por nível; com um motor a vapor do Create
+    acoplado dá 0 (ou rotação, ou vapor); sem queimador ou sem água, 0."""
+    montar, limpar = [], []
+    for nome, (x, z, queimador, bomba, motor) in CALDEIRAS.items():
+        if queimador:
+            montar.append(f"setblock {x} 300 {z} {QUEIMADOR}")
+        montar.append(f"fill {x} 301 {z} {x} 308 {z} create:fluid_tank")
+        if bomba:  # tanque criativo -> bomba (gira por uma engrenagem ao lado, motor criativo) -> caldeira
+            montar += [f"setblock {x - 2} 301 {z} create:creative_fluid_tank",
+                       f"setblock {x - 1} 301 {z} create:mechanical_pump[facing=east]",
+                       f"setblock {x - 2} 301 {z + 1} create:creative_motor[facing=east]{{ScrollValue:256}}",
+                       f"setblock {x - 1} 301 {z + 1} create:cogwheel[axis=x]"]
+            limpar += [f"setblock {x - 1} 301 {z + 1} minecraft:air", f"setblock {x - 2} 301 {z + 1} minecraft:air",
+                       f"setblock {x - 1} 301 {z} minecraft:air", f"setblock {x - 2} 301 {z} minecraft:air"]
+        if motor:
+            montar.append(f"setblock {x} 304 {z - 1} create:steam_engine[face=wall,facing=north]")
+            limpar.append(f"setblock {x} 304 {z - 1} minecraft:air")
+        # a saída da quente entra com NBT vazio, como as saídas que já estão no mundo dos amigos
+        nbt = "{}" if nome == "quente" else ""
+        montar += [f"setblock {x + 1} 302 {z} ecosmaquinas:saida_vapor{nbt}",
+                   f"setblock {x + 2} 302 {z} gtceu:steel_drum"]
+        limpar += [f"setblock {x + 2} 302 {z} minecraft:air", f"setblock {x + 1} 302 {z} minecraft:air",
+                   f"fill {x} 301 {z} {x} 308 {z} minecraft:air", f"setblock {x} 300 {z} minecraft:air"]
+    montar.append("setblock 12 302 9 ecosmaquinas:saida_vapor{Nivel:99,Producao:-5,Estado:42}")  # NBT adulterado
+    limpar.append("setblock 12 302 9 minecraft:air")
+    console = _rodar(AREA + montar + ["kubejs custom_command ecos_saida_check"] + _esperar(20) + limpar + FIM)
+    c = _campos(_linha(console, "ECOS_SAIDA"))
+    assert c["nivel"] == 2, c  # min(calor 2, tamanho 8/4, água bombeada)
+    assert c["mb_t"] == 6 * c["nivel"], c
+    assert c["com_motores_mb_t"] == 0, c
+    assert c["fria_mb_t"] == 0, c
+    e = _campos(_linha(console, "ECOS_SAIDA_EXTRA"))
+    assert e["seca_mb_t"] == 0, e
+    assert e["calc_quente"] == 12 and e["calc_motores"] == 0, e
+    # a caldeira com motor estava viva (motor contado, com calor): o 0 é o modo exclusivo, não falta de calor
+    assert e["motores_engines"] == 1 and e["motores_calor"] >= 1, e
+    assert e["agua_fria"] == 8000 and e["agua_fria_resta"] == 8000, e  # sem calor não gasta água
+    # 1 000 mB de água = 100 níveis-tick = 600 mB de vapor, e depois para
+    assert e["reserva_agua_entrou"] == 1000, e
+    assert e["reserva_vapor"] == 600 and e["reserva_agua_resta"] == 0 and e["reserva_mb_t"] == 0, e
+    assert e["ruim_nivel"] == 0 and e["ruim_mb_t"] == 0, e

@@ -11,6 +11,16 @@ const ECOS_MAQ_POS = {
   buffer_ulv: [2, 302, 6], buffer_lv: [4, 302, 6], buffer_parado: [6, 302, 6], buffer_reverso: [8, 302, 6],
   buffer_lento: [10, 302, 6], buffer_rapido: [12, 302, 6],
   dinamo_nbt_alto: [2, 301, 10], dinamo_nbt_neg: [4, 301, 10],  // NBT adulterado, sem rotação nem vizinho
+  // Task 6: caldeira = torre 1x1x8 de create:fluid_tank (y 301..308) com o queimador embaixo (y=300);
+  // saída encostada no 2º tanque (y=302, x+1) e tambor de aço logo depois (x+2). caldeira_* = tanque de baixo.
+  caldeira_quente: [2, 301, 13], saida_quente: [3, 302, 13], tambor_quente: [4, 302, 13],
+  tanque_criativo_quente: [0, 301, 13],
+  caldeira_motores: [8, 301, 13], saida_motores: [9, 302, 13], tambor_motores: [10, 302, 13],
+  tanque_criativo_motores: [6, 301, 13],
+  caldeira_fria: [13, 301, 13], saida_fria: [14, 302, 13], tambor_fria: [15, 302, 13],
+  caldeira_seca: [2, 301, 9], saida_seca: [3, 302, 9], tambor_seca: [4, 302, 9],
+  caldeira_reserva: [7, 301, 9], saida_reserva: [8, 302, 9], tambor_reserva: [9, 302, 9],
+  saida_nbt_ruim: [12, 302, 9],  // NBT adulterado, sem caldeira
 }
 
 const EcosMaq = {
@@ -111,6 +121,56 @@ ServerEvents.customCommand('ecos_dinamo_check', event => {
         ` saida_recusa=${saida != null ? saida.acceptEnergyFromNetwork(D.UP, 32, 1) == 0 : false}` +
         ` buffer_alto=${alto ? alto.getBuffer() : -1} buffer_neg=${neg ? neg.getBuffer() : -1}` +
         ` buffer_max_lv=${lv.getBufferMax()}`)
+    })
+  })
+})
+
+// --- Task 6: Saída de Vapor da caldeira do Create ------------------------------------------------------------------
+// Cinco caldeiras 1x1x8 (tamanho 8 -> nível máx. 2 pelo tamanho), cada uma com uma Saída e um gtceu:steel_drum:
+//  quente:   queimador superaquecido (calor 2) + água por tanque criativo e bomba -> nível 2, 12 mB/t
+//  motores:  igual à quente, com um create:steam_engine acoplado -> modo exclusivo: 0
+//  fria:     8 000 mB de água, sem queimador -> 0
+//  seca:     queimador superaquecido, sem água -> 0
+//  reserva:  queimador superaquecido e só 1 000 mB de água, sem bomba -> 10 mB de água por nível: 600 mB de vapor e para
+// Espera 200 ticks e mede o vapor que de fato entrou em cada tambor nos 100 ticks seguintes: mb_t = delta / 100.
+ServerEvents.customCommand('ecos_saida_check', event => {
+  if (!EcosMaq.dev()) return
+  const server = event.server, D = EcosMaq.Direction, EXEC = EcosMaq.Acao.EXECUTE
+  const casos = ['quente', 'motores', 'fria', 'seca', 'reserva']
+  let saidas = {}, tambores = {}, caldeiras = {}
+  for (let n of casos) {
+    saidas[n] = EcosMaq.be(server, 'saida_' + n)
+    caldeiras[n] = EcosMaq.be(server, 'caldeira_' + n)
+    let t = EcosMaq.be(server, 'tambor_' + n)
+    tambores[n] = t ? EcosMaq.fluidos(t, D.WEST) : null
+    let falta = !saidas[n] ? 'saida' : !caldeiras[n] || !caldeiras[n].getControllerBE ? 'caldeira' : !tambores[n] ? 'tambor' : null
+    if (falta) { EcosMaq.diga(server, `ECOS_SAIDA erro=sem_${falta}_${n}`); return }
+  }
+  for (let n of ['quente', 'motores']) {
+    let ct = EcosMaq.be(server, 'tanque_criativo_' + n)
+    if (!ct || !ct.getTankInventory) { EcosMaq.diga(server, `ECOS_SAIDA erro=sem_tanque_criativo_${n}`); return }
+    ct.getTankInventory().setContainedFluid(EcosMaq.fluido('minecraft:water', 1000))
+  }
+  // caldeira sem motor é um tanque comum: a água entra pela capability do tanque
+  let aguaFria = EcosMaq.fluidos(caldeiras.fria, D.UP).fill(EcosMaq.fluido('minecraft:water', 8000), EXEC)
+  let aguaReserva = EcosMaq.fluidos(caldeiras.reserva, D.UP).fill(EcosMaq.fluido('minecraft:water', 1000), EXEC)
+  const vapor = n => tambores[n].getFluidInTank(0).getAmount()
+  const agua = n => caldeiras[n].getControllerBE().getTankInventory().getFluidAmount()
+  server.scheduleInTicks(200, () => {
+    let antes = {}
+    for (let n of casos) antes[n] = vapor(n)
+    server.scheduleInTicks(100, () => {
+      let mbt = {}
+      for (let n of casos) mbt[n] = (vapor(n) - antes[n]) / 100
+      let q = saidas.quente, bm = caldeiras.motores.getControllerBE().boiler
+      let ruim = EcosMaq.be(server, 'saida_nbt_ruim')
+      EcosMaq.diga(server, `ECOS_SAIDA nivel=${q.getNivel()} mb_t=${mbt.quente} com_motores_mb_t=${mbt.motores} fria_mb_t=${mbt.fria}`)
+      EcosMaq.diga(server, `ECOS_SAIDA_EXTRA seca_mb_t=${mbt.seca} calc_quente=${q.getProducaoMbT()}` +
+        ` calc_motores=${saidas.motores.getProducaoMbT()} motores_engines=${bm.attachedEngines}` +
+        ` motores_calor=${bm.activeHeat} motores_nivel=${saidas.motores.getNivel()}` +
+        ` vapor_quente=${vapor('quente')} agua_fria=${aguaFria} agua_fria_resta=${agua('fria')}` +
+        ` reserva_agua_entrou=${aguaReserva} reserva_vapor=${vapor('reserva')} reserva_agua_resta=${agua('reserva')}` +
+        ` reserva_mb_t=${mbt.reserva} ruim_nivel=${ruim ? ruim.getNivel() : -1} ruim_mb_t=${ruim ? ruim.getProducaoMbT() : -1}`)
     })
   })
 })

@@ -395,7 +395,7 @@ hash = "5eaac6495ff579721a8007345d5e6d5bc64e8cda2d6a1e4f9dfbf8504bba4348"
 
 [[files]]
 file = "kubejs/server_scripts/dev/maquinas_check.js"
-hash = "2709851333b49d864db082e104c8d2584b310a582b1a3dae6d2c4fe5b22d360f"
+hash = "48752c1f5f6a3adb942fd80d365fa0cf1cd5ed4d92408bb99ae06622a662166d"
 
 [[files]]
 file = "kubejs/server_scripts/dev/mob_gear_check.js"
@@ -522,7 +522,7 @@ hash = "eb85430e20ac0dd2b66d63f02729ff2fcaacc2dacaba1d6dbed49cfd9e669072"
 
 [[files]]
 file = "mods/ecosmaquinas-1.0.0.jar"
-hash = "f97ae9a335b264161d7a27f5b7bd96ce2b43f985dd207ea65ecee69a02959801"
+hash = "a9f3b7ea43b2359fdc0f3ac09ff31b799edf0bd3842d9d40af21a02ed3c99d16"
 
 [[files]]
 file = "mods/embeddium.pw.toml"
