@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "WBW",
+    "SHB",
+    "WBW"
+  ],
+  "key": {
+    "W": {
+      "tag": "forge:plates/wrought_iron"
+    },
+    "B": {
+      "item": "gtceu:copper_single_wire"
+    },
+    "H": {
+      "item": "gtceu:ulv_machine_hull"
+    },
+    "S": {
+      "item": "create:shaft"
+    }
+  },
+  "result": {
+    "item": "ecosmaquinas:dinamo_cinetico_ulv",
+    "count": 1
+  }
+}

@@ -517,6 +517,10 @@ file = "mods/ecosbridge-1.0.0.jar"
 hash = "eb85430e20ac0dd2b66d63f02729ff2fcaacc2dacaba1d6dbed49cfd9e669072"
 
 [[files]]
+file = "mods/ecosmaquinas-1.0.0.jar"
+hash = "8827389ab3686e539342046c41055a7d122f627a5c93f1629c287ca22690d549"
+
+[[files]]
 file = "mods/embeddium.pw.toml"
 hash = "9ddb37809dbf50f17ccfca4039149524ec0ed8f5838441a94fbb1de3a780c9b5"
 metafile = true

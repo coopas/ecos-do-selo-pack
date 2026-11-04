@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "ecosmaquinas:block/motor_vapor_frente",
+    "side": "ecosmaquinas:block/motor_vapor_lado",
+    "top": "ecosmaquinas:block/motor_vapor_topo"
+  }
+}

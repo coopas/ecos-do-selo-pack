@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ecosmaquinas:motor_vapor",
+    "ecosmaquinas:dinamo_cinetico_ulv",
+    "ecosmaquinas:dinamo_cinetico_lv",
+    "ecosmaquinas:saida_vapor"
+  ]
+}

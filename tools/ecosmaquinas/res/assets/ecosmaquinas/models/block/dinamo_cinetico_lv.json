@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "ecosmaquinas:block/dinamo_cinetico_lv_frente",
+    "side": "ecosmaquinas:block/dinamo_cinetico_lv_lado",
+    "top": "ecosmaquinas:block/dinamo_cinetico_lv_topo"
+  }
+}

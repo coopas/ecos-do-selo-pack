@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "PFP",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/copper"
+    },
+    "F": {
+      "item": "create:fluid_pipe"
+    }
+  },
+  "result": {
+    "item": "ecosmaquinas:saida_vapor",
+    "count": 1
+  }
+}

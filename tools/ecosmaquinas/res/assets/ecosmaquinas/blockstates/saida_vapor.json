@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ecosmaquinas:block/saida_vapor"
+    }
+  }
+}

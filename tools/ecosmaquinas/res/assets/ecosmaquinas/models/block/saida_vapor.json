@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "ecosmaquinas:block/saida_vapor_lado",
+    "top": "ecosmaquinas:block/saida_vapor_topo",
+    "bottom": "ecosmaquinas:block/saida_vapor_topo"
+  }
+}

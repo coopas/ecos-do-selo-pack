@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ecosmaquinas:block/motor_vapor"
+    },
+    "facing=south": {
+      "model": "ecosmaquinas:block/motor_vapor",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "ecosmaquinas:block/motor_vapor",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "ecosmaquinas:block/motor_vapor",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ecosmaquinas:block/motor_vapor",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ecosmaquinas:block/motor_vapor",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "ecosmaquinas:block/dinamo_cinetico_lv"
+    },
+    "facing=south": {
+      "model": "ecosmaquinas:block/dinamo_cinetico_lv",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "ecosmaquinas:block/dinamo_cinetico_lv",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "ecosmaquinas:block/dinamo_cinetico_lv",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "ecosmaquinas:block/dinamo_cinetico_lv",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "ecosmaquinas:block/dinamo_cinetico_lv",
+      "x": 90
+    }
+  }
+}

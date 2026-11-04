@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PPP",
+    "FCS",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/bronze"
+    },
+    "F": {
+      "item": "create:fluid_pipe"
+    },
+    "C": {
+      "item": "gtceu:bronze_machine_casing"
+    },
+    "S": {
+      "item": "create:shaft"
+    }
+  },
+  "result": {
+    "item": "ecosmaquinas:motor_vapor",
+    "count": 1
+  }
+}

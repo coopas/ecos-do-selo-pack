@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PMP",
+    "SHC",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "tag": "forge:plates/steel"
+    },
+    "M": {
+      "item": "gtceu:lv_electric_motor"
+    },
+    "H": {
+      "item": "gtceu:lv_machine_hull"
+    },
+    "C": {
+      "item": "gtceu:tin_single_cable"
+    },
+    "S": {
+      "item": "create:shaft"
+    }
+  },
+  "result": {
+    "item": "ecosmaquinas:dinamo_cinetico_lv",
+    "count": 1
+  }
+}
