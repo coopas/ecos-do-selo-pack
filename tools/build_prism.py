@@ -31,7 +31,9 @@ def instance_cfg(pack_url: str, name: str = INSTANCE_NAME) -> str:
 
 
 def mmc_pack(forge_version: str) -> dict:
+    # LWJGL explícito: sem ele, uma instância trocada com o Prism aberto lança sem GLFW (NoClassDefFoundError)
     return {"formatVersion": 1, "components": [
+        {"uid": "org.lwjgl3", "version": "3.3.1", "dependencyOnly": True},
         {"uid": "net.minecraft", "version": "1.20.1", "important": True},
         {"uid": "net.minecraftforge", "version": forge_version},
     ]}

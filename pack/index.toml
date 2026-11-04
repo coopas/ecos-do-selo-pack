@@ -101,6 +101,10 @@ file = "config/ftbquests/quests/reward_tables/rara.snbt"
 hash = "5c0c232f0a0c9c4e5ed8523a06140c5a5e1940028ba4adf22e9d8e67536c86b7"
 
 [[files]]
+file = "config/improvedmobs/client.toml"
+hash = "e50bf332bc481209263202adedb9a2f2d2f0c9b97e2132183ed7ed1a1b8d4a0f"
+
+[[files]]
 file = "config/improvedmobs/common.toml"
 hash = "8a2ca9f8f00ed62be6e5ce4d2d21846a6e9e4b6b4ccde2ba9bd14eb3a3aae1f9"
 

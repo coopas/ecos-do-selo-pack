@@ -42,3 +42,11 @@ def test_improved_mobs_scaling_is_gentle():
     assert general["Difficulty Delay"] == 72000
     assert general["Difficulty Increase"] == ["0.0-0.03", "250.0-0.0"]
     assert general["Ignore Players"] is False
+
+
+def test_improved_mobs_difficulty_hud_hidden():
+    # o HUD "Difficulty 0.0" no canto da tela fica escondido; sem preserve para corrigir instalações antigas
+    cfg = tomllib.loads((PACK / "config" / "improvedmobs" / "client.toml").read_text())
+    assert cfg["gui"]["Show Difficulty"] is False
+    entry = index_entry("config/improvedmobs/client.toml")
+    assert entry is not None and not entry.get("preserve")

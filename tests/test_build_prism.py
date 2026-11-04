@@ -41,6 +41,7 @@ def test_mmc_pack_versions(tmp_path):
     versions = {c["uid"]: c["version"] for c in comps}
     assert versions["net.minecraft"] == "1.20.1"
     assert versions["net.minecraftforge"] == "47.4.28"
+    assert comps[0]["uid"] == "org.lwjgl3" and versions["org.lwjgl3"] == "3.3.1"
 
 
 def test_zip_contains_bootstrap(tmp_path):
