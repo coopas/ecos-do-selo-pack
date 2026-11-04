@@ -7,11 +7,17 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -74,6 +80,20 @@ public final class EcosMaquinas {
         BLOCK_ENTITIES.register(bus);
         bus.addListener(this::setup);
         bus.addListener(this::abaCriativa);
+        MinecraftForge.EVENT_BUS.addGenericListener(BlockEntity.class, EcosMaquinas::anexarCaps);
+        // Renderização (eixo girando) só no cliente: o servidor dedicado nunca carrega ecos.maquinas.cliente.
+        if (FMLEnvironment.dist == Dist.CLIENT) ecos.maquinas.cliente.MaquinasCliente.registrar(bus);
+    }
+
+    private static final ResourceLocation CAP_TANQUE = new ResourceLocation(MODID, "tanque_vapor");
+
+    /** Tanque do motor exposto como FLUID_HANDLER (veja MotorVaporBlockEntity.Caps). */
+    private static void anexarCaps(AttachCapabilitiesEvent<BlockEntity> event) {
+        if (event.getObject() instanceof MotorVaporBlockEntity motor) {
+            MotorVaporBlockEntity.Caps caps = new MotorVaporBlockEntity.Caps(motor);
+            event.addCapability(CAP_TANQUE, caps);
+            event.addListener(caps::invalidar);
+        }
     }
 
     /** Metal: dureza 3,5 / resistência 6, som de metal (SoundType.METAL = f_56743_ em SRG). */
