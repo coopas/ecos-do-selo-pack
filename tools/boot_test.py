@@ -47,8 +47,21 @@ def server(server_dir: Path = BUILD / "server", timeout_s: int = 900, dev: bool 
         return _server(server_dir, timeout_s, dev, after_done, console)
 
 
+TEST_PORT = 25570  # o servidor de verdade pode estar no ar nesta máquina na 25565
+
+
+def use_test_port(server_dir: Path, port: int = TEST_PORT) -> None:
+    props = server_dir / "server.properties"
+    if not props.exists():
+        return
+    lines = props.read_text(encoding="utf-8").splitlines()
+    lines = [l for l in lines if not l.startswith("server-port=")] + [f"server-port={port}"]
+    props.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def _server(server_dir: Path, timeout_s: int, dev: bool, after_done=None, console=()) -> list[str]:
     LAST_CONSOLE.clear()
+    use_test_port(server_dir)
     flag = server_dir / "kubejs" / "config" / "dev.json"
     if dev:
         flag.parent.mkdir(parents=True, exist_ok=True)
@@ -174,7 +187,7 @@ def join(pack_url: str, profile: str, timeout_s: int = 1200) -> list[str]:
     def after_done(q) -> list[str]:
         shutil.copytree(BUILD / "prism", inst, dirs_exist_ok=True)
         start = time.time()
-        subprocess.Popen(client_launch_args(profile, RELEASE_INSTANCE, "localhost"))
+        subprocess.Popen(client_launch_args(profile, RELEASE_INSTANCE, f"localhost:{TEST_PORT}"))
         joined = False
         while time.time() - start < timeout_s and not joined:
             try:

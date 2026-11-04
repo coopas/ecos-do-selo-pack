@@ -50,3 +50,10 @@ def test_drain_collects_lines_until_quiet():
     for line in ("a\n", "b\n"):
         q.put(line)
     assert boot_test.drain(q, seconds=0.2) == ["a", "b"]
+
+
+def test_test_server_uses_own_port(tmp_path):
+    (tmp_path / "server.properties").write_text("motd=x\nserver-port=25565\n", encoding="utf-8")
+    boot_test.use_test_port(tmp_path)
+    text = (tmp_path / "server.properties").read_text(encoding="utf-8")
+    assert "server-port=25570" in text and "server-port=25565" not in text and "motd=x" in text

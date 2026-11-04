@@ -109,6 +109,10 @@ file = "config/improvedmobs/common.toml"
 hash = "8a2ca9f8f00ed62be6e5ce4d2d21846a6e9e4b6b4ccde2ba9bd14eb3a3aae1f9"
 
 [[files]]
+file = "config/improvedmobs/equipment.json"
+hash = "c13b03fcc7ccdbfb29152d907bbfd4327d0d5fce281c6d9ccaaeb088d90eed02"
+
+[[files]]
 file = "config/oculus.properties"
 hash = "7c502d4fdbe985a5e192e737ed29f1de131dbac30ef717109a7f05ab073c346a"
 preserve = true
@@ -346,6 +350,10 @@ file = "kubejs/ecos/travel.json"
 hash = "075c6482c23fa58ce6fd82b4b17d10fe6b17b689fb03ffb5ecb9fbae73e21ea7"
 
 [[files]]
+file = "kubejs/server_scripts/05_ecos_mob_gear.js"
+hash = "f08a4a584670770f0578ba0c5ca9118b6925380bc48152278daa610178981a2f"
+
+[[files]]
 file = "kubejs/server_scripts/10_ecos_tags.js"
 hash = "2911a2e99a424ac334f35aec3a7221d574e4bf9d0a95c0df925f6dccf25a4562"
 
@@ -364,6 +372,10 @@ hash = "5da9617f9b0d26ea39cdfcd28c09de877d0f0222d5ee60dd97baa4b94a646345"
 [[files]]
 file = "kubejs/server_scripts/40_ecos_final_boss.js"
 hash = "800127ec63498dcccdc206180f1d17f93117bdd3fd8fda2bb30f830767d614e7"
+
+[[files]]
+file = "kubejs/server_scripts/dev/mob_gear_check.js"
+hash = "a138d15fd512fbec9f4e4ed57b191de9c08500bb249cb18c214ee39842e9d3d1"
 
 [[files]]
 file = "kubejs/server_scripts/dev/quest_selftest.js"
