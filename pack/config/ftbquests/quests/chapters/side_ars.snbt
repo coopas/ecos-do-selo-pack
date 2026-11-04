@@ -1,0 +1,1072 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_ars"
+	group: "30D1DA93FF981B37"
+	icon: "ars_nouveau:source_gem"
+	id: "7F465A825294D3DE"
+	images: [ ]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"08582B366014332D"
+			]
+			description: [
+				"Magia é música, e este livro é sua primeira partitura."
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "06D3DE2C75E8EE1B"
+			rewards: [
+				{
+					count: 1
+					id: "661619D3636D9D93"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"A magia não é nossa. Nós apenas a afinávamos.\\nCada feitiço é um instrumento, cada fonte é uma nota.\\nOs arcanistas de Aurend tocavam baixo, sempre baixo.\\nQuem toca alto demais é ouvido.\"}"
+							]
+							title: "Diário — Página 11"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7292DC7ABAFB6FF8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "77E0E48AA0D80949"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:novice_spell_book"
+					}
+					type: "item"
+				}
+			]
+			title: "O Livro do Aprendiz"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"06D3DE2C75E8EE1B"
+			]
+			description: [
+				"Árvores de archwood crescem onde a fonte é forte."
+			]
+			id: "138BE1AB47F022AF"
+			rewards: [
+				{
+					count: 2
+					id: "799A092649F58F29"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "339B256F1D51817A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:logs/archwood)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Madeira Arcana"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"138BE1AB47F022AF"
+			]
+			description: [
+				"Madeira que guarda mana."
+			]
+			id: "3E755EB76BAF07A1"
+			rewards: [
+				{
+					count: 1
+					id: "707039B2325B3944"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1E64D725B070E3FA"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:planks/archwood)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tábuas de Archwood"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3E755EB76BAF07A1"
+			]
+			description: [
+				"Inscreva glifos no seu livro."
+			]
+			id: "4A7C1090571E0870"
+			rewards: [
+				{
+					count: 2
+					id: "12B4B878A3E7B46A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "628DC67161EAD799"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:scribes_table"
+					}
+					type: "item"
+				}
+			]
+			title: "Mesa do Escriba"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"3E755EB76BAF07A1"
+				"6674C095D3FDA103"
+			]
+			description: [
+				"Pede liga de andesito: Aurend misturava tudo."
+			]
+			id: "70E2C4D64C2270B6"
+			rewards: [
+				{
+					count: 3
+					id: "227706BAEEAA40ED"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "399D1CE39837F781"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:imbuement_chamber"
+					}
+					type: "item"
+				}
+			]
+			title: "Câmara de Imbuição"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"70E2C4D64C2270B6"
+			]
+			description: [
+				"Ametista mergulhada em mana."
+				"Também abre o caminho para o Undergarden."
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "0FC08236B408EDF0"
+			rewards: [
+				{
+					count: 3
+					id: "7C9FC7E22C477BEE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 16L
+					id: "59FD533640C2C393"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:source_gem"
+					}
+					type: "item"
+				}
+			]
+			title: "Gemas de Fonte"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0FC08236B408EDF0"
+			]
+			description: [
+				"Guarde mana como quem guarda água."
+			]
+			id: "65C8838C014075FF"
+			rewards: [
+				{
+					count: 2
+					id: "1CD4E640EBF25A0A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "19089B659878D724"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:source_jar"
+					}
+					type: "item"
+				}
+			]
+			title: "Jarro de Fonte"
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"65C8838C014075FF"
+			]
+			description: [
+				"Plantas crescendo geram fonte."
+			]
+			id: "42B99261A58C3083"
+			rewards: [
+				{
+					count: 2
+					id: "58039917CC1C52A0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0DEECE1E12E910BD"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:agronomic_sourcelink"
+					}
+					type: "item"
+				}
+			]
+			title: "Elo Agronômico"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"65C8838C014075FF"
+			]
+			description: [
+				"Fogo queimando também gera fonte."
+			]
+			id: "68CE1BBD5885122C"
+			rewards: [
+				{
+					count: 2
+					id: "3AAA337A1ED176E8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3A6609A3A9E60884"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:volcanic_sourcelink"
+					}
+					type: "item"
+				}
+			]
+			title: "Elo Vulcânico"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4A7C1090571E0870"
+			]
+			description: [
+				"A forma mais simples de lançar um feitiço."
+			]
+			id: "1C77F090719FAA43"
+			rewards: [
+				{
+					count: 1
+					id: "019CE3A48BC0E7D1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "328CDAAC3E40753A"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:glyph_projectile"
+					}
+					type: "item"
+				}
+			]
+			title: "Glifo: Projétil"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A7C1090571E0870"
+			]
+			description: [
+				"Feitiços que agem onde você toca."
+			]
+			id: "20CAA2E85C5212EB"
+			rewards: [
+				{
+					count: 1
+					id: "19A0E6503EF421DA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "19B3375BBA275821"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:glyph_touch"
+					}
+					type: "item"
+				}
+			]
+			title: "Glifo: Toque"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"20CAA2E85C5212EB"
+			]
+			description: [
+				"Magia também minera."
+			]
+			id: "4F8ED2D793738A4D"
+			rewards: [
+				{
+					count: 1
+					id: "216EEAB976F63ED3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "460622D554728426"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:glyph_break"
+					}
+					type: "item"
+				}
+			]
+			title: "Glifo: Quebrar"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1C77F090719FAA43"
+			]
+			description: [
+				"O primeiro feitiço de combate."
+			]
+			id: "6D7E4DF824119D06"
+			rewards: [
+				{
+					count: 1
+					id: "29E7946C21CA0DB1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3ABF84D560F560BD"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:glyph_harm"
+					}
+					type: "item"
+				}
+			]
+			title: "Glifo: Ferir"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"6D7E4DF824119D06"
+			]
+			description: [
+				"Mais forte. Mais alto. Mais ouvido."
+			]
+			id: "5A0F1AD0FF8AB949"
+			rewards: [
+				{
+					count: 2
+					id: "0FAA5B7EB2431486"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3D40383FFB67AF95"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:glyph_amplify"
+					}
+					type: "item"
+				}
+			]
+			title: "Glifo: Amplificar"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1C77F090719FAA43"
+			]
+			description: [
+				"Luz mágica contra o escuro."
+			]
+			id: "5BB3CC36FB8C2201"
+			rewards: [
+				{
+					count: 1
+					id: "3B30FF7BB052A115"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4B6F6229A0AEE44D"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:glyph_light"
+					}
+					type: "item"
+				}
+			]
+			title: "Glifo: Luz"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"20CAA2E85C5212EB"
+			]
+			description: [
+				"Magia que fecha feridas."
+			]
+			id: "6E87A011813ADB98"
+			rewards: [
+				{
+					count: 2
+					id: "5E1A4206A7FF9F97"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "02A694D095E0271C"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:glyph_heal"
+					}
+					type: "item"
+				}
+			]
+			title: "Glifo: Curar"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0FC08236B408EDF0"
+			]
+			description: [
+				"A câmara destila essências de fogo, abjuração e manipulação."
+			]
+			id: "30303AD17F22B8CF"
+			rewards: [
+				{
+					count: 4
+					id: "6F27DC4CEE9EEA09"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "10D12DBC1AFCA6CB"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:fire_essence"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "066D36D5A51D6DC0"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:abjuration_essence"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "2C8BE72C0C6A5D30"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:manipulation_essence"
+					}
+					type: "item"
+				}
+			]
+			title: "Essências"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"06D3DE2C75E8EE1B"
+			]
+			description: [
+				"Criaturas da floresta selvagem. Seus restos são reagentes."
+			]
+			id: "1D47418567BDC827"
+			rewards: [
+				{
+					count: 3
+					id: "1123BBF176CACB81"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "03F647EE00E4207F"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:wilden_horn"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "0D2F2AFEF342EDB6"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:wilden_wing"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "4436A36B9B42B71A"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:wilden_spike"
+					}
+					type: "item"
+				}
+			]
+			title: "Os Wilden"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"1D47418567BDC827"
+				"0FC08236B408EDF0"
+			]
+			description: [
+				"Mais páginas, mais glifos."
+			]
+			id: "6D1D9092BF22B345"
+			rewards: [
+				{
+					count: 1
+					id: "219DBB603B9211B5"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "57D3360FD7F76C92"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1CDE549320A61018"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:apprentice_spell_book"
+					}
+					type: "item"
+				}
+			]
+			title: "Livro do Aprendiz Avançado"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0FC08236B408EDF0"
+			]
+			description: [
+				"Rodeie o núcleo com pedestais."
+			]
+			id: "2652E73A164C1D64"
+			rewards: [
+				{
+					count: 2
+					id: "7DEED51AC529E2D7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3E84B200F92C258F"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:arcane_pedestal"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedestais Arcanos"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"2652E73A164C1D64"
+				"30303AD17F22B8CF"
+			]
+			description: [
+				"O altar dos arcanistas de Aurend."
+			]
+			id: "656BB2D858B153F2"
+			rewards: [
+				{
+					count: 5
+					id: "14F3BBA19101B3A1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "473E916F1582E78C"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:enchanting_apparatus"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "344DC6BF843F877E"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:arcane_core"
+					}
+					type: "item"
+				}
+			]
+			title: "Aparato de Encantamento"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"656BB2D858B153F2"
+			]
+			description: [
+				"Uma luz que nunca se apaga."
+			]
+			id: "43DC2ABEFCFD34D5"
+			rewards: [
+				{
+					count: 2
+					id: "14E4075167D89F24"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6FAD3DDF9341256D"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:jar_of_light"
+					}
+					type: "item"
+				}
+			]
+			title: "Jarro de Luz"
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"656BB2D858B153F2"
+			]
+			description: [
+				"Flutuar sobre o Undergarden."
+			]
+			id: "631205B9F4B9FBE7"
+			rewards: [
+				{
+					count: 4
+					id: "57E6B169D42DECB8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "37B5A9F4FC139A7A"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:belt_of_levitation"
+					}
+					type: "item"
+				}
+			]
+			title: "Cinto de Levitação"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"656BB2D858B153F2"
+			]
+			description: [
+				"Mais mana para quem toca alto."
+			]
+			id: "696C11EB0017061B"
+			rewards: [
+				{
+					count: 3
+					id: "4454F7A73240494B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3AD24E990448D4C9"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:ring_of_potential"
+					}
+					type: "item"
+				}
+			]
+			title: "Anel de Potencial"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6D1D9092BF22B345"
+			]
+			description: [
+				"Dê uma pepita de ouro a um starbuncle. Ele carrega itens para você."
+			]
+			id: "4E702F1EBC01FE4B"
+			rewards: [
+				{
+					count: 3
+					id: "50925BEC35BF5E2C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6C81AEA50B7893AD"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:starbuncle_charm"
+					}
+					type: "item"
+				}
+			]
+			title: "Um Starbuncle"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"0FC08236B408EDF0"
+				"6674C095D3FDA103"
+			]
+			description: [
+				"Waystones exigem gema de fonte: viajar também é magia."
+			]
+			id: "56599B9C4E618B26"
+			rewards: [
+				{
+					count: 4
+					id: "4FB4CF5F7B9C00BF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6E4B5B30847D856B"
+					item: {
+						Count: 1b
+						id: "waystones:waystone"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra-Portal"
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"656BB2D858B153F2"
+			]
+			description: [
+				"Roupas que carregam glifos."
+			]
+			id: "3DD3A77927A3DB47"
+			rewards: [
+				{
+					count: 3
+					id: "44B08E38E21CE4B9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3EAF33184218B123"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:arcanist_robes"
+					}
+					type: "item"
+				}
+			]
+			title: "Túnica Arcana"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"656BB2D858B153F2"
+				"6D1D9092BF22B345"
+			]
+			description: [
+				"Todos os glifos que Aurend conheceu."
+				"Toque baixo. Sempre baixo."
+			]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "40404AD0A95B4364"
+			rewards: [
+				{
+					count: 1
+					id: "600ED0EDA7E2AC5A"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "44DB41517C1A1D02"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "191DE0271F5FB7D9"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:archmage_spell_book"
+					}
+					type: "item"
+				}
+			]
+			title: "O Livro do Arquimago"
+			x: 10.5d
+			y: 3.0d
+		}
+	]
+	title: "Caminho — A Fonte"
+}

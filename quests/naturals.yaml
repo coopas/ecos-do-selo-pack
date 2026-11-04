@@ -81,6 +81,7 @@ mob_drops:
   - minecraft:dragon_breath
   - minecraft:white_wool
   - deeperdarker:heart_of_the_deep
+  - deeperdarker:warden_carapace         # drop do Warden (Deeper and Darker)
 baldes:
   - minecraft:water_bucket
   - minecraft:lava_bucket
@@ -102,3 +103,43 @@ gregtech_mundo:
 create_mundo:
   - create:blaze_burner              # blaze capturado com o Queimador Vazio
   - create:raw_zinc
+magia_mundo:
+  - irons_spellbooks:arcane_essence      # loot de estruturas e mobs do Iron's
+  - occultism:datura_seeds
+  - occultism:datura
+  - occultism:iesnium_ore_natural        # Otherworld (visto com óculos)
+  - occultism:otherstone_natural
+  - ars_nouveau:magebloom
+  - "#forge:logs/archwood"
+profundezas:
+  - minecraft:sculk
+  - minecraft:sculk_sensor
+  - minecraft:sculk_catalyst
+  - minecraft:sculk_shrieker
+  - deeperdarker:resonarium
+  - deeperdarker:echo_log
+  - deeperdarker:heart_of_the_deep
+  - deeperdarker:warden_carapace         # drop do Warden (Deeper and Darker)
+magia_criaturas:
+  - ars_nouveau:wilden_horn              # drops dos Wilden
+  - ars_nouveau:wilden_spike
+  - ars_nouveau:wilden_wing
+  - ars_nouveau:starbuncle_charm         # criaturas capturadas
+  - ars_nouveau:whirlisprig_charm
+  - ars_nouveau:wixie_charm
+  - irons_spellbooks:raw_mithril         # minério de mitril
+  - irons_spellbooks:arcane_debris
+  - irons_spellbooks:scroll              # loot
+  - occultism:tallow                     # faca de açougueiro
+undergarden_mundo:
+  - undergarden:gloomgourd
+  - undergarden:ditchbulb
+  - undergarden:smogstem_log
+  - undergarden:wigglewood_log
+  - undergarden:depthrock
+  - undergarden:underbeans               # arbusto de underbean
+  - undergarden:blisterberry             # arbusto de blisterberry
+otherside_mundo:
+  - deeperdarker:sculk_bone
+  - deeperdarker:soul_dust
+  - deeperdarker:soul_crystal

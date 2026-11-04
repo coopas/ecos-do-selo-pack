@@ -1,0 +1,57 @@
+chapter: side_irons
+title: "Caminho — Pergaminhos e Runas"
+icon: irons_spellbooks:copper_spell_book
+group: caminhos
+act: 2
+quests:
+  - {slug: essencia, title: "Essência Arcana", deps: [ato1/fim_ato1], shape: gear, icon: irons_spellbooks:arcane_essence,
+     desc: ["Pó que brilha em ruínas e em magos caídos.", "Os magos de Aurend a chamavam de sobra do silêncio."],
+     tasks: [{item: irons_spellbooks:arcane_essence, count: 8}], rewards: [{coins: 3}]}
+  - {slug: mesa, title: "Mesa de Inscrição", deps: [essencia, side_gt_steam_lv/aco],
+     desc: ["Pede uma placa de aço do GregTech. A magia se apoia na máquina."], tasks: [{item: irons_spellbooks:inscription_table}],
+     rewards: [{coins: 3}]}
+  - {slug: livro_cobre, title: "Livro de Cobre", deps: [mesa], desc: ["Um livro simples, poucos espaços."],
+     tasks: [{item: irons_spellbooks:copper_spell_book}], rewards: [{coins: 2}]}
+  - {slug: pergaminho, title: "Pergaminhos Encontrados", deps: [essencia], desc: ["Pergaminhos de feitiço aparecem em ruínas. Inscreva-os no livro."],
+     tasks: [{item: irons_spellbooks:scroll}], rewards: [{coins: 2}]}
+  - {slug: forja, title: "Forja de Pergaminhos", deps: [mesa], desc: ["Crie seus próprios pergaminhos."],
+     tasks: [{item: irons_spellbooks:scroll_forge}], rewards: [{coins: 3}]}
+  - {slug: pedestal, title: "Pedestal", deps: [mesa], desc: ["Para exibir o que você aprendeu."],
+     tasks: [{item: irons_spellbooks:pedestal}], rewards: [{coins: 1}]}
+  - {slug: caldeirao, title: "Caldeirão do Alquimista", deps: [mesa], desc: ["Tintas e poções, misturadas em fogo baixo."],
+     tasks: [{item: irons_spellbooks:alchemist_cauldron}], rewards: [{coins: 3}]}
+  - {slug: livro_ferro, title: "Livro de Ferro", deps: [livro_cobre], desc: ["Mais páginas, mais feitiços."],
+     tasks: [{item: irons_spellbooks:iron_spell_book}], rewards: [{coins: 3}]}
+  - {slug: runa_vazia, title: "Runa Vazia", deps: [mesa], desc: ["Pedra pronta para receber uma escola de magia."],
+     tasks: [{item: irons_spellbooks:blank_rune, count: 4}], rewards: [{coins: 2}]}
+  - {slug: runa_fogo, title: "Runa de Fogo", deps: [runa_vazia], desc: ["A escola do fogo."],
+     tasks: [{item: irons_spellbooks:fire_rune}], rewards: [{coins: 2}]}
+  - {slug: runa_gelo, title: "Runa de Gelo", deps: [runa_vazia], desc: ["A escola do gelo."],
+     tasks: [{item: irons_spellbooks:ice_rune}], rewards: [{coins: 2}]}
+  - {slug: runa_sagrada, title: "Runa Sagrada", deps: [runa_vazia], desc: ["A escola da luz."],
+     tasks: [{item: irons_spellbooks:holy_rune}], rewards: [{coins: 2}]}
+  - {slug: runa_ender, title: "Runa do Fim", deps: [runa_vazia], desc: ["A escola do vazio."],
+     tasks: [{item: irons_spellbooks:ender_rune}], rewards: [{coins: 2}]}
+  - {slug: mitril, title: "Mitril", deps: [essencia], desc: ["Um metal que só aparece muito fundo."],
+     tasks: [{item: irons_spellbooks:raw_mithril, count: 4}], rewards: [{coins: 3}]}
+  - {slug: lingote_mitril, title: "Lingote de Mitril", deps: [mitril], desc: ["Refine o mitril. Ele quase não pesa."],
+     tasks: [{item: irons_spellbooks:mithril_ingot, count: 2}], rewards: [{coins: 3}]}
+  - {slug: orbe, title: "Orbe de Aprimoramento", deps: [lingote_mitril], desc: ["Aprimore armaduras com o poder de uma escola."],
+     tasks: [{item: irons_spellbooks:upgrade_orb}], rewards: [{coins: 3}]}
+  - {slug: orbe_fogo, title: "Orbe do Fogo", deps: [orbe, runa_fogo], desc: ["Mais força para feitiços de fogo."],
+     tasks: [{item: irons_spellbooks:fire_upgrade_orb}], rewards: [{coins: 3}]}
+  - {slug: orbe_mana, title: "Orbe de Mana", deps: [orbe], desc: ["Mais mana para tudo."],
+     tasks: [{item: irons_spellbooks:mana_upgrade_orb}], rewards: [{coins: 3}]}
+  - {slug: bigorna, title: "Bigorna Arcana", deps: [lingote_mitril], desc: ["Una feitiços a armas e aprimore livros."],
+     tasks: [{item: irons_spellbooks:arcane_anvil}], rewards: [{coins: 4}]}
+  - {slug: tecido, title: "Tecido Mágico", deps: [essencia], desc: ["Tecido que guarda mana nas fibras."],
+     tasks: [{item: irons_spellbooks:magic_cloth, count: 4}], rewards: [{coins: 2}]}
+  - {slug: piromante, title: "Vestes do Piromante", deps: [tecido, runa_fogo], desc: ["Para quem conversa com o fogo."],
+     tasks: [{item: irons_spellbooks:pyromancer_chestplate}], rewards: [{coins: 4}]}
+  - {slug: anel_mana, title: "Anel de Mana", deps: [lingote_mitril], desc: ["Um anel que respira mana."],
+     tasks: [{item: irons_spellbooks:mana_ring}], rewards: [{coins: 3}]}
+  - {slug: livro_ouro, title: "Livro de Ouro", deps: [livro_ferro, lingote_mitril], desc: ["Um livro digno de um arquimago."],
+     tasks: [{item: irons_spellbooks:gold_spell_book}], rewards: [{crate: comum}, {coins: 5}]}
+  - {slug: livro_diamante, title: "Livro de Diamante", deps: [livro_ouro, bigorna], shape: gear, icon: irons_spellbooks:diamond_spell_book,
+     desc: ["O livro dos magos que ainda moravam em Aurend."], tasks: [{item: irons_spellbooks:diamond_spell_book}],
+     rewards: [{crate: epica}, {coins: 8}]}

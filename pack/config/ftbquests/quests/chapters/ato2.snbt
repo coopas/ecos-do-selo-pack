@@ -1,0 +1,1823 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ato2"
+	group: "5395DF7F49D69073"
+	icon: "minecraft:echo_shard"
+	id: "67C2BAB2D313D60C"
+	images: [ ]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"08582B366014332D"
+			]
+			description: [
+				"Máquinas não bastaram para Aurend."
+				"Eles também aprenderam a ouvir."
+			]
+			icon: "minecraft:echo_shard"
+			id: "5B2472E6D301448E"
+			rewards: [
+				{
+					count: 3
+					id: "56F95612CB7E8F81"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "441C00E769830A83"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1C50CCE02BA2C2D8"
+					type: "checkmark"
+				}
+			]
+			title: "O Conhecimento Proibido"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5B2472E6D301448E"
+				"0FC08236B408EDF0"
+				"1FC9B61516AB0B9D"
+				"46370BFBC3FBED09"
+			]
+			description: [
+				"Fonte, runa e pentáculo."
+				"Três jeitos de dizer a mesma palavra."
+			]
+			id: "5CFE176E5BB23506"
+			rewards: [
+				{
+					count: 1
+					id: "147C9512696EC826"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48A2CF09FBEF93D5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6047FA5CD1F3F8FF"
+					type: "checkmark"
+				}
+			]
+			title: "Três Escolas"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5B2472E6D301448E"
+				"4C75456FC2F31094"
+				"0FC08236B408EDF0"
+				"5F668FC49FD2F7F8"
+			]
+			description: [
+				"O Fragmento da Floresta, uma gema de fonte e uma bomba LV."
+				"Juntos, abrem o chão."
+			]
+			id: "0763CF975856C52E"
+			rewards: [
+				{
+					count: 1
+					id: "13C35D1F45EC3B27"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Há um mundo embaixo do mundo, úmido e sem sol.\\nO catalisador abre o caminho, mas só para quem já carrega a floresta.\\nAli crescem coisas que nunca ouviram uma voz.\\nTalvez por isso estejam tão famintas.\"}"
+							]
+							title: "Diário — Página 13"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "14EAD6A3ABFA0075"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "152AD319E08052FC"
+					type: "checkmark"
+				}
+			]
+			title: "A Escada Para Baixo"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0763CF975856C52E"
+			]
+			description: [
+				"Um coração de pedra que bate devagar."
+				"Acenda um portal de pedra-de-profundeza com ele."
+			]
+			icon: "undergarden:catalyst"
+			id: "5B198A883DD695FC"
+			rewards: [
+				{
+					count: 5
+					id: "15B556A7213EED99"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "42ECE148F5154C0E"
+					item: {
+						Count: 1b
+						id: "undergarden:catalyst"
+					}
+					type: "item"
+				}
+			]
+			title: "O Catalisador"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5B198A883DD695FC"
+			]
+			description: [
+				"Aqui embaixo, ninguém nunca viu o sol."
+				"As plantas brilham para não esquecer como é a luz."
+			]
+			icon: "undergarden:depthrock"
+			id: "1CE412B49BFC1ACD"
+			rewards: [
+				{
+					count: 1
+					id: "3EF9370CFFD4C6BE"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "628E955D9944A187"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					dimension: "undergarden:undergarden"
+					id: "739533DAED0E0BC0"
+					type: "dimension"
+				}
+			]
+			title: "O Jardim de Baixo"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"1CE412B49BFC1ACD"
+			]
+			description: [
+				"A pedra do fundo do mundo."
+			]
+			id: "105D395FB683FDEC"
+			rewards: [
+				{
+					count: 1
+					id: "386AD4A2F3230845"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 64L
+					id: "7256A58CD1B36E99"
+					item: {
+						Count: 1b
+						id: "undergarden:depthrock"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra-de-Profundeza"
+			x: 6.0d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"1CE412B49BFC1ACD"
+			]
+			description: [
+				"Árvores que respiram fumaça."
+			]
+			id: "60D8506DDF47F4F2"
+			rewards: [
+				{
+					count: 1
+					id: "7ABCC4C50621D02D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1597FED39A796FDD"
+					item: {
+						Count: 1b
+						id: "undergarden:smogstem_log"
+					}
+					type: "item"
+				}
+			]
+			title: "Madeira de Fumaça"
+			x: 6.0d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"1CE412B49BFC1ACD"
+			]
+			description: [
+				"Feijões e bagas que crescem sem sol."
+			]
+			id: "1E098B0BD03665D6"
+			rewards: [
+				{
+					count: 2
+					id: "5CB7A53BF0FA439A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "0839C440EC231306"
+					item: {
+						Count: 1b
+						id: "undergarden:underbeans"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "30475C4EE99946FE"
+					item: {
+						Count: 1b
+						id: "undergarden:blisterberry"
+					}
+					type: "item"
+				}
+			]
+			title: "Frutos do Escuro"
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"1CE412B49BFC1ACD"
+			]
+			description: [
+				"Luz que nasce do chão."
+			]
+			id: "1CC25AC4E291EEFC"
+			rewards: [
+				{
+					count: 1
+					id: "23599E484988E8E1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "6A1BEA693FF5740B"
+					item: {
+						Count: 1b
+						id: "undergarden:ditchbulb"
+					}
+					type: "item"
+				}
+			]
+			title: "Bulbos de Vala"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"1CC25AC4E291EEFC"
+			]
+			description: [
+				"Feitas com os cristais do fundo."
+			]
+			id: "1B693F69CCD654BB"
+			rewards: [
+				{
+					count: 1
+					id: "177E36C081B79BD0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2947B924F262C65F"
+					item: {
+						Count: 1b
+						id: "undergarden:shard_torch"
+					}
+					type: "item"
+				}
+			]
+			title: "Tochas de Cristal"
+			x: 7.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"105D395FB683FDEC"
+			]
+			description: [
+				"Um metal pesado e opaco. Os Confluentes o usavam em portões."
+			]
+			id: "041E63F6BC23C674"
+			rewards: [
+				{
+					count: 3
+					id: "58233F88C646994A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "7C164CB652303F6A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/cloggrum)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Cloggrum"
+			x: 7.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"041E63F6BC23C674"
+			]
+			description: [
+				"Lenta, mas não perdoa."
+			]
+			id: "4AB066F28C84A0F1"
+			rewards: [
+				{
+					count: 2
+					id: "00B760902C34A6B8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "12663933DC13AC0D"
+					item: {
+						Count: 1b
+						id: "undergarden:cloggrum_sword"
+					}
+					type: "item"
+				}
+			]
+			title: "Lâmina Pesada"
+			x: 9.0d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"041E63F6BC23C674"
+			]
+			description: [
+				"Proteção para as profundezas."
+			]
+			id: "78ADC9344DC9A8BA"
+			rewards: [
+				{
+					count: 2
+					id: "23CB8BD7E26E4294"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "42D74696E7F9E3EB"
+					item: {
+						Count: 1b
+						id: "undergarden:cloggrum_chestplate"
+					}
+					type: "item"
+				}
+			]
+			title: "Couraça de Cloggrum"
+			x: 9.0d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"1CE412B49BFC1ACD"
+			]
+			description: [
+				"Cristais vermelhos que vibram perto de criaturas corrompidas."
+			]
+			id: "7A67ECE156DA5DE7"
+			rewards: [
+				{
+					count: 3
+					id: "7BD94DB017B2C110"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "31636181138970A0"
+					item: {
+						Count: 1b
+						id: "undergarden:utherium_crystal"
+					}
+					type: "item"
+				}
+			]
+			title: "Cristal de Utério"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"041E63F6BC23C674"
+			]
+			description: [
+				"Metal que congela o que toca."
+			]
+			id: "4CEEC8AB8A1E1738"
+			rewards: [
+				{
+					count: 3
+					id: "6C9C5F2BF59700A5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "69D05C9C96958F07"
+					item: {
+						Count: 1b
+						id: "undergarden:froststeel_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Aço-Gelo"
+			x: 9.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"4CEEC8AB8A1E1738"
+			]
+			description: [
+				"Fria por dentro e por fora."
+			]
+			id: "789D0DF69CB34FE4"
+			rewards: [
+				{
+					count: 3
+					id: "7B72307207134CC4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0AF8E71E1C6FAA8B"
+					item: {
+						Count: 1b
+						id: "undergarden:froststeel_chestplate"
+					}
+					type: "item"
+				}
+			]
+			title: "Couraça de Aço-Gelo"
+			x: 10.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"78ADC9344DC9A8BA"
+				"7A67ECE156DA5DE7"
+			]
+			description: [
+				"Uma estátua que ainda guarda as catacumbas."
+				"Ninguém lembra mais o que ela protege."
+			]
+			id: "56554FB61657D0ED"
+			rewards: [
+				{
+					count: 1
+					id: "120380A023B5AFE2"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "4F77CFADE5C2A989"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "undergarden:forgotten_guardian"
+					id: "2F2BA093F34AF01B"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "O Guardião Esquecido"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"56554FB61657D0ED"
+			]
+			description: [
+				"Forjado por gente cujo nome sumiu."
+			]
+			id: "4C16EC0C377EE6C4"
+			rewards: [
+				{
+					count: 4
+					id: "5D2A489D69FF0A86"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1DDB04D7C59F7E94"
+					item: {
+						Count: 1b
+						id: "undergarden:forgotten_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Metal Esquecido"
+			x: 12.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"1CE412B49BFC1ACD"
+				"5CFE176E5BB23506"
+			]
+			description: [
+				"As Cidades Antigas não são ruínas de outro povo."
+				"São Aurend. Sempre foram."
+			]
+			icon: "minecraft:sculk_catalyst"
+			id: "2C46E5C42C8CDBB4"
+			rewards: [
+				{
+					count: 1
+					id: "1F906BBA9877BDC9"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Desci até as cidades de pedra negra e reconheci as ruas.\\nA praça do mercado. A torre dos sinos de ressonância.\\nAurend não caiu. Aurend afundou.\\nE alguém deixou as luzes de sculk acesas.\"}"
+							]
+							title: "Diário — Página 14"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "56D756B7C8FE69F5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "35E134066C14A47F"
+					type: "checkmark"
+				}
+			]
+			title: "As Cidades de Aurend"
+			x: 6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"2C46E5C42C8CDBB4"
+			]
+			description: [
+				"Um tapete vivo que escuta cada passo."
+			]
+			id: "18CB62FF3CDB70EC"
+			rewards: [
+				{
+					count: 2
+					id: "4B46A97C0914458C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "76DFACEC366CAFC3"
+					item: {
+						Count: 1b
+						id: "minecraft:sculk"
+					}
+					type: "item"
+				}
+			]
+			title: "Sculk"
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"18CB62FF3CDB70EC"
+			]
+			description: [
+				"Pegue um sensor sem acordar o que dorme."
+			]
+			id: "0AF13E2FE6A13B11"
+			rewards: [
+				{
+					count: 2
+					id: "07C26E2D4E285511"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3D6CB2D87E43B366"
+					item: {
+						Count: 1b
+						id: "minecraft:sculk_sensor"
+					}
+					type: "item"
+				}
+			]
+			title: "Sensores"
+			x: 9.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"18CB62FF3CDB70EC"
+			]
+			description: [
+				"Onde algo morre, o sculk floresce."
+			]
+			id: "0C606643D691F8A4"
+			rewards: [
+				{
+					count: 3
+					id: "685F8BD478C4948B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "295D09507E48A434"
+					item: {
+						Count: 1b
+						id: "minecraft:sculk_catalyst"
+					}
+					type: "item"
+				}
+			]
+			title: "Catalisador de Sculk"
+			x: 9.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"2C46E5C42C8CDBB4"
+			]
+			description: [
+				"Pedaços de som que ficaram presos."
+				"Ilse dizia que dá para ouvir vozes dentro deles."
+			]
+			icon: "minecraft:echo_shard"
+			id: "52A3270F735000A1"
+			rewards: [
+				{
+					count: 4
+					id: "298783F566CEDB45"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "11457D46D90A32A2"
+					item: {
+						Count: 1b
+						id: "minecraft:echo_shard"
+					}
+					type: "item"
+				}
+			]
+			title: "Fragmentos de Eco"
+			x: 7.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"52A3270F735000A1"
+			]
+			description: [
+				"Aponta para onde você morreu pela última vez."
+			]
+			id: "0662CDD1B994704D"
+			rewards: [
+				{
+					count: 3
+					id: "5EC6603007266486"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "58840FB77330C77A"
+					item: {
+						Count: 1b
+						id: "minecraft:recovery_compass"
+					}
+					type: "item"
+				}
+			]
+			title: "Bússola da Recuperação"
+			x: 9.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"0AF13E2FE6A13B11"
+				"52A3270F735000A1"
+			]
+			description: [
+				"Ouve só o que você quer ouvir."
+			]
+			id: "5584E6FFF8B183C2"
+			rewards: [
+				{
+					count: 3
+					id: "2110F13460BAA36C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2A4511117514C907"
+					item: {
+						Count: 1b
+						id: "minecraft:calibrated_sculk_sensor"
+					}
+					type: "item"
+				}
+			]
+			title: "Sensor Calibrado"
+			x: 10.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"52A3270F735000A1"
+				"0C606643D691F8A4"
+				"7C42FC541D8FD555"
+			]
+			description: [
+				"Ele não vê. Ele não precisa."
+				"Cada passo seu é uma palavra que ele entende."
+			]
+			icon: "minecraft:sculk_shrieker"
+			id: "450FE7E71DBEBBF7"
+			rewards: [
+				{
+					count: 1
+					id: "3BDA0A654B9A25DB"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"O guardião das profundezas era um homem.\\nOuviu o Selo por quarenta anos sem dormir.\\nArrancou os próprios olhos para ouvir melhor.\\nAgora ele é só ouvido. Não faça barulho. Nem respire alto.\"}"
+							]
+							title: "Diário — Página 15"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "645C4583DA0F5503"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "623824E7CAAAA6B0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "2B0077A76AC9B6A9"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "O Cego Que Ouve"
+			x: 10.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"450FE7E71DBEBBF7"
+			]
+			description: [
+				"O segundo pedaço do Selo."
+				"Está frio, e ainda vibra."
+			]
+			icon: "ecos:fragmento_selo_profundezas"
+			id: "3BCA350B588D9B72"
+			rewards: [
+				{
+					count: 1
+					id: "2BA448037488F8FF"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"O coração dele é uma porta. O fragmento dele é uma promessa.\\nCom os dois, você atravessa para o lado onde o eco nasce.\\nEu fiz essa travessia uma vez.\\nVoltei com algo que ainda canta dentro do meu peito.\"}"
+							]
+							title: "Diário — Página 16"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "18C142F64C6CD97B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "4E786FC45FB5D09A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_profundezas"
+					}
+					type: "item"
+				}
+			]
+			title: "O Fragmento das Profundezas"
+			x: 12.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"450FE7E71DBEBBF7"
+			]
+			description: [
+				"O que o Cego guardava no peito."
+			]
+			id: "63DFE2DADC4684FB"
+			rewards: [
+				{
+					count: 5
+					id: "670E7EB21022D58A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1D1E8975129345D1"
+					item: {
+						Count: 1b
+						id: "deeperdarker:heart_of_the_deep"
+					}
+					type: "item"
+				}
+			]
+			title: "Coração das Profundezas"
+			x: 12.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"63DFE2DADC4684FB"
+			]
+			description: [
+				"Use o coração num portal de sculk numa Cidade Antiga."
+				"Do outro lado, o eco nunca para."
+			]
+			icon: "deeperdarker:echo_log"
+			id: "2BD513D9BC46C9A1"
+			rewards: [
+				{
+					count: 1
+					id: "04E0F98123D11E5A"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "4B009ED3A2E51947"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					dimension: "deeperdarker:otherside"
+					id: "41350A0E3A6574AD"
+					type: "dimension"
+				}
+			]
+			title: "O Outro Lado"
+			x: 13.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"2BD513D9BC46C9A1"
+			]
+			description: [
+				"Árvores que cresceram ouvindo."
+			]
+			id: "597E8D9BDC9E0BF2"
+			rewards: [
+				{
+					count: 2
+					id: "1F18A72ECE8DEA4B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6132DF289E4B72CA"
+					item: {
+						Count: 1b
+						id: "deeperdarker:echo_log"
+					}
+					type: "item"
+				}
+			]
+			title: "Madeira de Eco"
+			x: 15.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"2BD513D9BC46C9A1"
+			]
+			description: [
+				"O que sobra quando o eco vai embora."
+			]
+			id: "29FCCD933FC5F101"
+			rewards: [
+				{
+					count: 2
+					id: "12EA0D7F25194FEF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "02A78806A43F398B"
+					item: {
+						Count: 1b
+						id: "deeperdarker:soul_dust"
+					}
+					type: "item"
+				}
+			]
+			title: "Pó de Alma"
+			x: 15.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"2BD513D9BC46C9A1"
+			]
+			description: [
+				"Um mineral que repete tudo o que ouve."
+			]
+			id: "606CEFC916131BAF"
+			rewards: [
+				{
+					count: 4
+					id: "4ED5869BFEBEF85D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "098F59D4E8E1F505"
+					item: {
+						Count: 1b
+						id: "deeperdarker:resonarium"
+					}
+					type: "item"
+				}
+			]
+			title: "Ressonário"
+			x: 15.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"30B614E5849517C7"
+				"2BD513D9BC46C9A1"
+			]
+			description: [
+				"Eco preso em metal, para durar."
+			]
+			id: "02F2A9370F73872B"
+			rewards: [
+				{
+					count: 5
+					id: "38D359A406C56D3A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "51A0E1A7E1366D7A"
+					item: {
+						Count: 1b
+						id: "deeperdarker:reinforced_echo_shard"
+					}
+					type: "item"
+				}
+			]
+			title: "Eco Reforçado"
+			x: 15.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"450FE7E71DBEBBF7"
+			]
+			description: [
+				"A casca dele. Ainda morna."
+			]
+			id: "30B614E5849517C7"
+			rewards: [
+				{
+					count: 4
+					id: "2F84261DF9BF521E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3EE3C88B08C003C7"
+					item: {
+						Count: 1b
+						id: "deeperdarker:warden_carapace"
+					}
+					type: "item"
+				}
+			]
+			title: "Carapaça do Cego"
+			x: 12.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"5B2472E6D301448E"
+				"0525606E8F9B7829"
+			]
+			description: [
+				"Para ir além do aço, é preciso mais calor."
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "086CC0B8A904A09A"
+			rewards: [
+				{
+					count: 5
+					id: "0232E06D2408A6AA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "029B8230AB6A3829"
+					item: {
+						Count: 1b
+						id: "gtceu:electric_blast_furnace"
+					}
+					type: "item"
+				}
+			]
+			title: "Alto-Forno Elétrico"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"086CC0B8A904A09A"
+			]
+			description: [
+				"Dezesseis bobinas aquecem o forno."
+			]
+			id: "018EE1FA7EDF76F3"
+			rewards: [
+				{
+					count: 4
+					id: "20C519089E7D5D53"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "3D6BB30B0A2A9C45"
+					item: {
+						Count: 1b
+						id: "gtceu:cupronickel_coil_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Bobinas de Cuproníquel"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"018EE1FA7EDF76F3"
+			]
+			description: [
+				"Leve e forte. O metal da média voltagem."
+			]
+			icon: "gtceu:aluminium_ingot"
+			id: "372598F23FB8DBB2"
+			rewards: [
+				{
+					count: 1
+					id: "66D285BD44467F32"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "09430556EC7EAA94"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 32L
+					id: "2F3693B4D74E1ADD"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/aluminium)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Alumínio"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"086CC0B8A904A09A"
+			]
+			description: [
+				"Reator químico, eletrolisador e centrífuga."
+			]
+			id: "7F0B9C8F1F3B54CE"
+			rewards: [
+				{
+					count: 5
+					id: "6ED16AA9B00EF6BE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "32BFC9812F8FE5B1"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_chemical_reactor"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "7D8E582BA1B40CBA"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_electrolyzer"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "278BF261DCA9946D"
+					item: {
+						Count: 1b
+						id: "gtceu:lv_centrifuge"
+					}
+					type: "item"
+				}
+			]
+			title: "Química LV"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7F0B9C8F1F3B54CE"
+			]
+			description: [
+				"A pedra que pensa."
+			]
+			id: "2DE6B6E5660EF87A"
+			rewards: [
+				{
+					count: 3
+					id: "15E37451EAF623CF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "563E70101C7C331D"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/silicon)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Silício"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2DE6B6E5660EF87A"
+			]
+			description: [
+				"Transistor, capacitor e diodo."
+			]
+			id: "584200AF8EE66089"
+			rewards: [
+				{
+					count: 4
+					id: "78FC3DC00A3706CC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "068E9FA19EE6128F"
+					item: {
+						Count: 1b
+						id: "gtceu:transistor"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "43E83C064092C89B"
+					item: {
+						Count: 1b
+						id: "gtceu:capacitor"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2327C5158E85CFE9"
+					item: {
+						Count: 1b
+						id: "gtceu:diode"
+					}
+					type: "item"
+				}
+			]
+			title: "Componentes Finos"
+			x: 6.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"372598F23FB8DBB2"
+			]
+			description: [
+				"Média voltagem: as máquinas crescem."
+			]
+			id: "07A0216AB2D4EDF7"
+			rewards: [
+				{
+					count: 4
+					id: "077CA3501A042556"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5244B041486DEFCD"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_machine_hull"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco MV"
+			x: 6.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"07A0216AB2D4EDF7"
+			]
+			description: [
+				"Mais força, mais velocidade."
+			]
+			id: "6C57FEFEAAAB86E9"
+			rewards: [
+				{
+					count: 4
+					id: "19D995E95F673A64"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "21D42857018D4FF5"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_electric_motor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor MV"
+			x: 7.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"584200AF8EE66089"
+				"07A0216AB2D4EDF7"
+			]
+			description: [
+				"Aurend pensava mais rápido do que você."
+			]
+			icon: "gtceu:good_electronic_circuit"
+			id: "6F9A1B14EA7A1243"
+			rewards: [
+				{
+					count: 1
+					id: "646FA259B3B517BE"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "17AEC10C991F0C24"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 4L
+					id: "5D224385BE95B282"
+					item: {
+						Count: 1b
+						id: "gtceu:good_electronic_circuit"
+					}
+					type: "item"
+				}
+			]
+			title: "Circuito Eletrônico Bom"
+			x: 7.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"6F9A1B14EA7A1243"
+				"6C57FEFEAAAB86E9"
+			]
+			description: [
+				"Também é parte da Chave Celeste."
+			]
+			id: "1111F3F552161AE3"
+			rewards: [
+				{
+					count: 5
+					id: "7BFA426C79C5B79E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3E0FFD1EF436FBD7"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_emitter"
+					}
+					type: "item"
+				}
+			]
+			title: "Emissor MV"
+			x: 9.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"6F9A1B14EA7A1243"
+				"6C57FEFEAAAB86E9"
+			]
+			description: [
+				"Uma mão que não cansa."
+			]
+			id: "1616FA87D3E4FAC3"
+			rewards: [
+				{
+					count: 5
+					id: "6240502873C06209"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "64E61940AF8F132C"
+					item: {
+						Count: 1b
+						id: "gtceu:mv_robot_arm"
+					}
+					type: "item"
+				}
+			]
+			title: "Braço Robótico MV"
+			x: 9.0d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"3BCA350B588D9B72"
+				"1111F3F552161AE3"
+				"1616FA87D3E4FAC3"
+				"656BB2D858B153F2"
+				"7CD72555BD67895F"
+			]
+			description: [
+				"Dois fragmentos. O Selo pesa mais em suas mãos."
+				"E lá em cima, o céu começa a rachar."
+			]
+			icon: "ecos:fragmento_selo_profundezas"
+			id: "10511E6CE35464FB"
+			rewards: [
+				{
+					count: 1
+					id: "6466653B6FB274EA"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "044F490A03924EA7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "5A43EC4DAB4407F0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "1A097DBF4DE0FBF3"
+					type: "checkmark"
+				}
+			]
+			title: "O Eco Responde"
+			x: 13.5d
+			y: 0.75d
+		}
+	]
+	title: "Ato II — Ecos Arcanos"
+}

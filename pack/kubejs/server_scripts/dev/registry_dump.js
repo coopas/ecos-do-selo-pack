@@ -83,6 +83,15 @@ ServerEvents.loaded(event => {
         if (errors.length < 5) errors.push('machine output ' + r.getId() + ': ' + e)
       }
     }
+    if (outputs.length === 0) {
+      // Ars Nouveau (imbuement, enchanting_apparatus...) guarda o resultado em campos próprios
+      ;['result', 'output', 'outputStack'].forEach(name => {
+        try {
+          let st = r[name]
+          if (st && st.getItem && !st.isEmpty()) outputs.push(String(R.ITEM.getKey(st.getItem())))
+        } catch (e) { /* campo inexistente */ }
+      })
+    }
     let inputs = []
     try {
       r.getIngredients().forEach(ing => {

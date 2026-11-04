@@ -1,0 +1,1021 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_occultism"
+	group: "30D1DA93FF981B37"
+	icon: "occultism:chalk_white"
+	id: "2955894FA2AFC449"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"08582B366014332D"
+			]
+			description: [
+				"Uma flor que mostra o que os olhos não veem."
+			]
+			icon: "occultism:datura"
+			id: "5BD9F3E14A814792"
+			rewards: [
+				{
+					count: 2
+					id: "2D746A0B1DE6B2D5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 4L
+					id: "301C834B3FA56962"
+					item: {
+						Count: 1b
+						id: "occultism:datura_seeds"
+					}
+					type: "item"
+				}
+			]
+			title: "Sementes de Datura"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BD9F3E14A814792"
+			]
+			description: [
+				"Ocultistas não desperdiçam nada."
+			]
+			id: "5D2D713F1544A4A9"
+			rewards: [
+				{
+					count: 2
+					id: "480043E8786511FA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "756B3FB5C37BA854"
+					item: {
+						Count: 1b
+						id: "occultism:butcher_knife"
+					}
+					type: "item"
+				}
+			]
+			title: "Faca de Açougueiro"
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"5D2D713F1544A4A9"
+			]
+			description: [
+				"Gordura animal, base para velas e giz."
+			]
+			id: "328F84D4DA34E824"
+			rewards: [
+				{
+					count: 1
+					id: "1E37CCEAC87A27B3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "1F98231DED16F784"
+					item: {
+						Count: 1b
+						id: "occultism:tallow"
+					}
+					type: "item"
+				}
+			]
+			title: "Sebo"
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"5BD9F3E14A814792"
+				"6E250F6F5A1780D8"
+			]
+			description: [
+				"O Occultism agora pede latão do Create. Aurend misturava tudo."
+			]
+			id: "679EA94D2D6CBCBA"
+			rewards: [
+				{
+					count: 2
+					id: "10F9AC30D2199AE5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7BCBE44234B58336"
+					item: {
+						Count: 1b
+						id: "occultism:sacrificial_bowl"
+					}
+					type: "item"
+				}
+			]
+			title: "Tigela Sacrificial"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"679EA94D2D6CBCBA"
+			]
+			description: [
+				"O centro de todo ritual."
+			]
+			id: "01A7F33C8EB9A78D"
+			rewards: [
+				{
+					count: 3
+					id: "6104330D0AB9A8B3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "06A95FD8C4F7D746"
+					item: {
+						Count: 1b
+						id: "occultism:golden_sacrificial_bowl"
+					}
+					type: "item"
+				}
+			]
+			title: "Tigela Dourada"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"328F84D4DA34E824"
+			]
+			description: [
+				"Desenhe o primeiro pentáculo."
+			]
+			id: "46370BFBC3FBED09"
+			rewards: [
+				{
+					count: 1
+					id: "05B4DB0F564F73AB"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Encontrei espíritos que aceitam servir em troca de nomes.\\nOs ocultistas os prendiam em pentáculos de giz e sangue.\\nEles nunca mentem, mas sempre omitem.\\nPergunte a eles por Aurend e veja-os se calar.\"}"
+							]
+							title: "Diário — Página 12"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4B384AF1DB805673"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "07CA8DEDE65A7DA7"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_white"
+					}
+					type: "item"
+				}
+			]
+			title: "Giz Branco"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5BD9F3E14A814792"
+			]
+			description: [
+				"Com eles você vê minérios que não existem para os outros."
+			]
+			id: "7BA69E0E68364464"
+			rewards: [
+				{
+					count: 3
+					id: "51D77EAE334E2CC9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3549784323022166"
+					item: {
+						Count: 1b
+						id: "occultism:otherworld_goggles"
+					}
+					type: "item"
+				}
+			]
+			title: "Óculos do Outro Mundo"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"7BA69E0E68364464"
+			]
+			description: [
+				"Ela aponta para o que está escondido."
+			]
+			id: "0FB122B758F830B4"
+			rewards: [
+				{
+					count: 2
+					id: "5BFCEE869CF3CE24"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "018CDDA8CE9347E7"
+					item: {
+						Count: 1b
+						id: "occultism:divination_rod"
+					}
+					type: "item"
+				}
+			]
+			title: "Varinha de Adivinhação"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"7BA69E0E68364464"
+			]
+			description: [
+				"Pedra que só existe quando é olhada do jeito certo."
+			]
+			id: "4C3F7314E4111016"
+			rewards: [
+				{
+					count: 2
+					id: "60955DD4CE0A4068"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "533C51F3C3331454"
+					item: {
+						Count: 1b
+						id: "occultism:otherstone"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedra de Outro Mundo"
+			x: 3.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"5BD9F3E14A814792"
+			]
+			description: [
+				"Espíritos não gostam de prata. Ainda assim, precisam dela."
+			]
+			id: "5CDFCEBDC36C737C"
+			rewards: [
+				{
+					count: 2
+					id: "0A68AA0F25886CF8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "0779DA5B4BB7225A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/silver)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Prata"
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"46370BFBC3FBED09"
+				"01A7F33C8EB9A78D"
+			]
+			description: [
+				"Uma gema que ouve espíritos."
+			]
+			id: "03240576CD0B1809"
+			rewards: [
+				{
+					count: 3
+					id: "033E358C320F49A2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "5CF7AE56842EA264"
+					item: {
+						Count: 1b
+						id: "occultism:spirit_attuned_gem"
+					}
+					type: "item"
+				}
+			]
+			title: "Gema Sintonizada"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"46370BFBC3FBED09"
+			]
+			description: [
+				"Fogo que queima do outro lado."
+				"Acenda datura no chão e jogue itens nele para transmutá-los."
+			]
+			id: "2FF25458F69734E3"
+			rewards: [
+				{
+					count: 2
+					id: "5E5BC4632237A3B4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7BE5F63AF809B7FE"
+					type: "checkmark"
+				}
+			]
+			title: "Fogo Espiritual"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"2FF25458F69734E3"
+			]
+			description: [
+				"Luz que só os espíritos veem bem."
+			]
+			id: "03263A1D4689691F"
+			rewards: [
+				{
+					count: 1
+					id: "42A1339BCF401971"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2D477525FCFC142C"
+					item: {
+						Count: 1b
+						id: "occultism:spirit_lantern"
+					}
+					type: "item"
+				}
+			]
+			title: "Lanterna Espiritual"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"03240576CD0B1809"
+			]
+			description: [
+				"O nome de um espírito, preso em papel."
+			]
+			id: "599339FC38991F62"
+			rewards: [
+				{
+					count: 3
+					id: "658B022A573BF274"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "79C236BB01F2D142"
+					item: {
+						Count: 1b
+						id: "occultism:book_of_binding_foliot"
+					}
+					type: "item"
+				}
+			]
+			title: "Livro de Vínculo"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"599339FC38991F62"
+			]
+			description: [
+				"O espírito mais fraco. Mas ele aceita servir."
+			]
+			id: "7CD72555BD67895F"
+			rewards: [
+				{
+					count: 3
+					id: "5F6AD63A4426A238"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "038F4F8CEE7B3CE2"
+					item: {
+						Count: 1b
+						id: "occultism:book_of_binding_bound_foliot"
+					}
+					type: "item"
+				}
+			]
+			title: "Um Foliot Vinculado"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7CD72555BD67895F"
+			]
+			description: [
+				"Um foliot que cava por você, dentro de uma bolsa dimensional."
+			]
+			id: "40B596C9D381932B"
+			rewards: [
+				{
+					count: 4
+					id: "55D1AD50A25DB668"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "6D3D894DA6BD2233"
+					item: {
+						Count: 1b
+						id: "occultism:miner_foliot_unspecialized"
+					}
+					type: "item"
+				}
+			]
+			title: "Minerador Espiritual"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"7CD72555BD67895F"
+				"0FC08236B408EDF0"
+			]
+			description: [
+				"Para espíritos mais exigentes."
+			]
+			id: "7EECB0C0CEE2CA6D"
+			rewards: [
+				{
+					count: 3
+					id: "2292121590051FE8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "25393161EA99D589"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_gold"
+					}
+					type: "item"
+				}
+			]
+			title: "Giz Dourado"
+			x: 10.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"7EECB0C0CEE2CA6D"
+			]
+			description: [
+				"Um djinni sabe mais do que diz."
+			]
+			id: "120C316A55649298"
+			rewards: [
+				{
+					count: 4
+					id: "2899EB99EAAE5FF4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2CCA9792E14C31B2"
+					item: {
+						Count: 1b
+						id: "occultism:book_of_binding_djinni"
+					}
+					type: "item"
+				}
+			]
+			title: "Livro do Djinni"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7BA69E0E68364464"
+				"120C316A55649298"
+			]
+			description: [
+				"Um metal que só se vê com os óculos."
+			]
+			id: "774C96877571D7E3"
+			rewards: [
+				{
+					count: 4
+					id: "6DA808D02321D9FF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "40815FAA15173DE0"
+					item: {
+						Count: 1b
+						id: "occultism:iesnium_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Iésnio"
+			x: 13.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"03240576CD0B1809"
+			]
+			description: [
+				"Uma picareta que alcança o outro mundo."
+			]
+			id: "0273FC36A9B8620B"
+			rewards: [
+				{
+					count: 3
+					id: "00B28738F39FA2E5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7162D2464D3124B1"
+					item: {
+						Count: 1b
+						id: "occultism:infused_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			title: "Picareta Infundida"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"774C96877571D7E3"
+			]
+			description: [
+				"Minera o que a infundida não alcança."
+			]
+			id: "2C2866E244F85734"
+			rewards: [
+				{
+					count: 4
+					id: "2EAB490D9257F2D5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "46F13562FFFD89B3"
+					item: {
+						Count: 1b
+						id: "occultism:iesnium_pickaxe"
+					}
+					type: "item"
+				}
+			]
+			title: "Picareta de Iésnio"
+			x: 15.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"120C316A55649298"
+			]
+			description: [
+				"Pentáculos de invocação."
+			]
+			id: "4D84903DAEE12A8F"
+			rewards: [
+				{
+					count: 3
+					id: "030D8F51F6B16869"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4E3413FA983D1E9F"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_purple"
+					}
+					type: "item"
+				}
+			]
+			title: "Giz Roxo"
+			x: 13.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"774C96877571D7E3"
+			]
+			description: [
+				"O coração de um armazém que não ocupa espaço."
+			]
+			id: "0DA6A21651109FD4"
+			rewards: [
+				{
+					count: 4
+					id: "51C65B51E9656D80"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5C7C7A28C7A8E343"
+					item: {
+						Count: 1b
+						id: "occultism:dimensional_matrix"
+					}
+					type: "item"
+				}
+			]
+			title: "Matriz Dimensional"
+			x: 15.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"0DA6A21651109FD4"
+			]
+			description: [
+				"Guarde tudo do outro lado."
+			]
+			id: "239D6FA89E1D4CFE"
+			rewards: [
+				{
+					count: 5
+					id: "62B1B7671BE6EB8F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3D03D3516335C6E0"
+					item: {
+						Count: 1b
+						id: "occultism:storage_controller"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5DAB5DA645CC2BE5"
+					item: {
+						Count: 1b
+						id: "occultism:storage_stabilizer_tier1"
+					}
+					type: "item"
+				}
+			]
+			title: "Controlador de Armazenamento"
+			x: 16.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"4D84903DAEE12A8F"
+			]
+			description: [
+				"Um familiar te acompanha. Não pergunte o nome dele."
+			]
+			id: "187E512914636B84"
+			rewards: [
+				{
+					count: 4
+					id: "4022D615E8A3928A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2E4CBEAB1AB6421F"
+					item: {
+						Count: 1b
+						id: "occultism:familiar_ring"
+					}
+					type: "item"
+				}
+			]
+			title: "Anel de Familiar"
+			x: 15.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"4D84903DAEE12A8F"
+			]
+			description: [
+				"Para os espíritos perigosos."
+			]
+			id: "7561DD39B06C1276"
+			rewards: [
+				{
+					count: 4
+					id: "33029687913AD609"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5AF547E9CEE64A02"
+					item: {
+						Count: 1b
+						id: "occultism:chalk_red"
+					}
+					type: "item"
+				}
+			]
+			title: "Giz Vermelho"
+			x: 15.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"7561DD39B06C1276"
+			]
+			description: [
+				"Um espírito de fogo e orgulho."
+			]
+			id: "6523E1B8ECF806AA"
+			rewards: [
+				{
+					count: 1
+					id: "7C07A6F8B25E3D26"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "7F85D4B47B05A184"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "67415A78646833F0"
+					item: {
+						Count: 1b
+						id: "occultism:book_of_binding_afrit"
+					}
+					type: "item"
+				}
+			]
+			title: "O Afrit"
+			x: 16.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"6523E1B8ECF806AA"
+				"239D6FA89E1D4CFE"
+				"187E512914636B84"
+			]
+			description: [
+				"Quatro gizes, quatro círculos."
+				"Um dia, um deles vai chamar o Arauto."
+			]
+			icon: "occultism:chalk_red"
+			id: "34E1E0F89E050F84"
+			rewards: [
+				{
+					count: 1
+					id: "27A1A43B7B6740ED"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "47ABE4290833AEA9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "5F15A71C53086FBE"
+					type: "checkmark"
+				}
+			]
+			title: "Mestre do Pentáculo"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	title: "Caminho — Os que Servem"
+}

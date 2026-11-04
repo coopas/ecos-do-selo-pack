@@ -1,0 +1,864 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_irons"
+	group: "30D1DA93FF981B37"
+	icon: "irons_spellbooks:copper_spell_book"
+	id: "1CA24D1ABDE2A634"
+	images: [ ]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"08582B366014332D"
+			]
+			description: [
+				"Pó que brilha em ruínas e em magos caídos."
+				"Os magos de Aurend a chamavam de sobra do silêncio."
+			]
+			icon: "irons_spellbooks:arcane_essence"
+			id: "6EBEA948615C81F4"
+			rewards: [
+				{
+					count: 3
+					id: "3EC197A483F8C040"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 8L
+					id: "45F1C7E6BCB58071"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:arcane_essence"
+					}
+					type: "item"
+				}
+			]
+			title: "Essência Arcana"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6EBEA948615C81F4"
+				"4BB930D6A6439C1E"
+			]
+			description: [
+				"Pede uma placa de aço do GregTech. A magia se apoia na máquina."
+			]
+			id: "1FC9B61516AB0B9D"
+			rewards: [
+				{
+					count: 3
+					id: "289696C5E75866F2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "57D30339434A9591"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:inscription_table"
+					}
+					type: "item"
+				}
+			]
+			title: "Mesa de Inscrição"
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"1FC9B61516AB0B9D"
+			]
+			description: [
+				"Um livro simples, poucos espaços."
+			]
+			id: "05D8981FF583777A"
+			rewards: [
+				{
+					count: 2
+					id: "19CCEA16D9D895E0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5D826971D7CF33A0"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:copper_spell_book"
+					}
+					type: "item"
+				}
+			]
+			title: "Livro de Cobre"
+			x: 3.0d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"6EBEA948615C81F4"
+			]
+			description: [
+				"Pergaminhos de feitiço aparecem em ruínas. Inscreva-os no livro."
+			]
+			id: "63B93BEB5730228F"
+			rewards: [
+				{
+					count: 2
+					id: "01879A75362ACA1E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "27B0FB949A9CA499"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+					}
+					type: "item"
+				}
+			]
+			title: "Pergaminhos Encontrados"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"1FC9B61516AB0B9D"
+			]
+			description: [
+				"Crie seus próprios pergaminhos."
+			]
+			id: "7F493C84F09E679B"
+			rewards: [
+				{
+					count: 3
+					id: "00313D1F054ACCE4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0BD72EE3F80D8712"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll_forge"
+					}
+					type: "item"
+				}
+			]
+			title: "Forja de Pergaminhos"
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"1FC9B61516AB0B9D"
+			]
+			description: [
+				"Para exibir o que você aprendeu."
+			]
+			id: "006FBB5154268C71"
+			rewards: [
+				{
+					count: 1
+					id: "2367300E69F3EFE8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4D3713E47C6ACC81"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pedestal"
+					}
+					type: "item"
+				}
+			]
+			title: "Pedestal"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"1FC9B61516AB0B9D"
+			]
+			description: [
+				"Tintas e poções, misturadas em fogo baixo."
+			]
+			id: "726D372C9690B602"
+			rewards: [
+				{
+					count: 3
+					id: "46B25AB984FAB158"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4C5A8306F7FDD6DE"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:alchemist_cauldron"
+					}
+					type: "item"
+				}
+			]
+			title: "Caldeirão do Alquimista"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"05D8981FF583777A"
+			]
+			description: [
+				"Mais páginas, mais feitiços."
+			]
+			id: "7C42FC541D8FD555"
+			rewards: [
+				{
+					count: 3
+					id: "3484CF6789BAC28E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7A2079AA0CA55F2A"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:iron_spell_book"
+					}
+					type: "item"
+				}
+			]
+			title: "Livro de Ferro"
+			x: 4.5d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"1FC9B61516AB0B9D"
+			]
+			description: [
+				"Pedra pronta para receber uma escola de magia."
+			]
+			id: "7EA77CB540D9AC54"
+			rewards: [
+				{
+					count: 2
+					id: "333ED72C1961093E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "79498C51C1390B29"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:blank_rune"
+					}
+					type: "item"
+				}
+			]
+			title: "Runa Vazia"
+			x: 3.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"7EA77CB540D9AC54"
+			]
+			description: [
+				"A escola do fogo."
+			]
+			id: "601CD3A2C6BCE68C"
+			rewards: [
+				{
+					count: 2
+					id: "7B37089AAA7D55AB"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7FA1414E9A5FCAC5"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:fire_rune"
+					}
+					type: "item"
+				}
+			]
+			title: "Runa de Fogo"
+			x: 4.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"7EA77CB540D9AC54"
+			]
+			description: [
+				"A escola do gelo."
+			]
+			id: "03C0DDBC43DF6606"
+			rewards: [
+				{
+					count: 2
+					id: "328365517D6805F9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2C2F0B8CB7A4717B"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:ice_rune"
+					}
+					type: "item"
+				}
+			]
+			title: "Runa de Gelo"
+			x: 4.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"7EA77CB540D9AC54"
+			]
+			description: [
+				"A escola da luz."
+			]
+			id: "26E11A8565EEC301"
+			rewards: [
+				{
+					count: 2
+					id: "795831E1A370E4C0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "101919175C9DA70E"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:holy_rune"
+					}
+					type: "item"
+				}
+			]
+			title: "Runa Sagrada"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"7EA77CB540D9AC54"
+			]
+			description: [
+				"A escola do vazio."
+			]
+			id: "4D33498F2A728654"
+			rewards: [
+				{
+					count: 2
+					id: "6076AA51B636F186"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4BFF67B83A58F423"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:ender_rune"
+					}
+					type: "item"
+				}
+			]
+			title: "Runa do Fim"
+			x: 4.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"6EBEA948615C81F4"
+			]
+			description: [
+				"Um metal que só aparece muito fundo."
+			]
+			id: "5A87C3A5D1D04BB2"
+			rewards: [
+				{
+					count: 3
+					id: "2839CD4235848AF4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "525D9F33523DBBBD"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:raw_mithril"
+					}
+					type: "item"
+				}
+			]
+			title: "Mitril"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"5A87C3A5D1D04BB2"
+			]
+			description: [
+				"Refine o mitril. Ele quase não pesa."
+			]
+			id: "221969A82F098527"
+			rewards: [
+				{
+					count: 3
+					id: "406AA33D3D195BE1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "60ACF79DF423D8BB"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:mithril_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Lingote de Mitril"
+			x: 3.0d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"221969A82F098527"
+			]
+			description: [
+				"Aprimore armaduras com o poder de uma escola."
+			]
+			id: "324B284C2CE17C0C"
+			rewards: [
+				{
+					count: 3
+					id: "4F7F77DA2707D03A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "32B650A617F9B7C4"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:upgrade_orb"
+					}
+					type: "item"
+				}
+			]
+			title: "Orbe de Aprimoramento"
+			x: 4.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"324B284C2CE17C0C"
+				"601CD3A2C6BCE68C"
+			]
+			description: [
+				"Mais força para feitiços de fogo."
+			]
+			id: "2C9DB2035BABBCD5"
+			rewards: [
+				{
+					count: 3
+					id: "57FE0F35E9B9B9A4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "569189927160FEB9"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:fire_upgrade_orb"
+					}
+					type: "item"
+				}
+			]
+			title: "Orbe do Fogo"
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"324B284C2CE17C0C"
+			]
+			description: [
+				"Mais mana para tudo."
+			]
+			id: "71928D8630DEDF61"
+			rewards: [
+				{
+					count: 3
+					id: "3A83BC8177C5CF3A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "205171BB073EB34A"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:mana_upgrade_orb"
+					}
+					type: "item"
+				}
+			]
+			title: "Orbe de Mana"
+			x: 6.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"221969A82F098527"
+			]
+			description: [
+				"Una feitiços a armas e aprimore livros."
+			]
+			id: "4D83276C595E3E40"
+			rewards: [
+				{
+					count: 4
+					id: "6D75D815C2EA3633"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "337257E07E489EC0"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:arcane_anvil"
+					}
+					type: "item"
+				}
+			]
+			title: "Bigorna Arcana"
+			x: 4.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"6EBEA948615C81F4"
+			]
+			description: [
+				"Tecido que guarda mana nas fibras."
+			]
+			id: "189A16C8514D7506"
+			rewards: [
+				{
+					count: 2
+					id: "5069487C45BDF331"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "2975475321C58585"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:magic_cloth"
+					}
+					type: "item"
+				}
+			]
+			title: "Tecido Mágico"
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"189A16C8514D7506"
+				"601CD3A2C6BCE68C"
+			]
+			description: [
+				"Para quem conversa com o fogo."
+			]
+			id: "6C7633E497BB5F3F"
+			rewards: [
+				{
+					count: 4
+					id: "028CDF264638DED1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2917E61DBEB1C234"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pyromancer_chestplate"
+					}
+					type: "item"
+				}
+			]
+			title: "Vestes do Piromante"
+			x: 6.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"221969A82F098527"
+			]
+			description: [
+				"Um anel que respira mana."
+			]
+			id: "07BCBD99D38C6B72"
+			rewards: [
+				{
+					count: 3
+					id: "469519432B16B5EC"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "268F1C3388A7F939"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:mana_ring"
+					}
+					type: "item"
+				}
+			]
+			title: "Anel de Mana"
+			x: 4.5d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"7C42FC541D8FD555"
+				"221969A82F098527"
+			]
+			description: [
+				"Um livro digno de um arquimago."
+			]
+			id: "56D335F7D074C394"
+			rewards: [
+				{
+					count: 1
+					id: "033FCBA390865EE1"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "comum"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "64B163B5974B6A41"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7126DA09DBB413C7"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:gold_spell_book"
+					}
+					type: "item"
+				}
+			]
+			title: "Livro de Ouro"
+			x: 6.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"56D335F7D074C394"
+				"4D83276C595E3E40"
+			]
+			description: [
+				"O livro dos magos que ainda moravam em Aurend."
+			]
+			icon: "irons_spellbooks:diamond_spell_book"
+			id: "6E9E82E2F6B6F3A8"
+			rewards: [
+				{
+					count: 1
+					id: "1AEEC2A127B93C09"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4BA34C7A840D8D41"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "1102CE5E0018B006"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:diamond_spell_book"
+					}
+					type: "item"
+				}
+			]
+			title: "Livro de Diamante"
+			x: 7.5d
+			y: 0.0d
+		}
+	]
+	title: "Caminho — Pergaminhos e Runas"
+}

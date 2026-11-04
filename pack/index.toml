@@ -13,12 +13,20 @@ file = "config/ftbquests/quests/chapters/ato1.snbt"
 hash = "362f681b6bece540f68a6c240d6e7faca2a29fb8bffba9c1e50da08b563eb4d0"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/ato2.snbt"
+hash = "3ffad602294ed54119423f7f9bbdc349d7cdf8ae7f9587fae7a95fc805dd7655"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/loja.snbt"
-hash = "7fb03b56ff3e778c6243c1137987e6ec65c30b14ca0bfce4f9fa44a5eaa52eef"
+hash = "4b900b405dee7e89832f9d538fb3d73e7bb8ea8abdcfd672b76842332915ea53"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
 hash = "95659bf7f47e39509be6b1a9c09dafffa311696a3e53ab4958293d0a31446f85"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_ars.snbt"
+hash = "51ee83d282159374433d6ecee4bbdb81adc62a6e613c5779542bf1b1391ef593"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_create.snbt"
@@ -27,6 +35,14 @@ hash = "ba6166a5095baf8709cc32ef729f98ec32d8c391dd3d5268d9e94ff1aac1fa66"
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_steam_lv.snbt"
 hash = "676e937bc7d13e2a8d1c153179729805e3ecc452fdc247f44e5e5b5cf4f3709f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_irons.snbt"
+hash = "7b29a73bb0cfa3e392f01158fba19572d57d73f072f7d0810a933acb882495e8"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_occultism.snbt"
+hash = "6bbe3d7afd28bca1886f43fc04c135942559e50e090ee4f621234b547c07726c"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -83,7 +99,7 @@ hash = "56999882f3abbfd0f3b9c94f06a402e84135eb23dc77c47b566f926216e0e498"
 
 [[files]]
 file = "kubejs/ecos/quest_tags.json"
-hash = "fad8ff32fd3ee9d573341d0d03a0cf6d7acc38c42311216a286fee17e203ca31"
+hash = "b3a8a85fe754b7935835d69d4ad91aacce7efcdd005b9c9dea1e2d1459c9824b"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
@@ -115,7 +131,7 @@ hash = "3c8358dcb62b231846c7a628175ba28e6d31ceceeb0912712aba036a031e0841"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
-hash = "ded72d751775124c7b1a88d2ec8e9b70f8e6a7cdd41168676027961f388c9b11"
+hash = "8025b9797ca55e8d5bce481df31006029af6e93f5f51446ea1adbe15fa17e231"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_items.js"

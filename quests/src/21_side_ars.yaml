@@ -1,0 +1,67 @@
+chapter: side_ars
+title: "Caminho — A Fonte"
+icon: ars_nouveau:source_gem
+group: caminhos
+act: 2
+quests:
+  - {slug: livro_novato, title: "O Livro do Aprendiz", deps: [ato1/fim_ato1], shape: gear, icon: ars_nouveau:novice_spell_book,
+     desc: ["Magia é música, e este livro é sua primeira partitura."], tasks: [{item: ars_nouveau:novice_spell_book}],
+     rewards: [{page: 11}, {coins: 3}]}
+  - {slug: madeira_arcana, title: "Madeira Arcana", deps: [livro_novato], desc: ["Árvores de archwood crescem onde a fonte é forte."],
+     tasks: [{tag: forge:logs/archwood, count: 16}], rewards: [{coins: 2}]}
+  - {slug: tabuas_arcanas, title: "Tábuas de Archwood", deps: [madeira_arcana], desc: ["Madeira que guarda mana."],
+     tasks: [{tag: forge:planks/archwood, count: 32}], rewards: [{coins: 1}]}
+  - {slug: mesa_escriba, title: "Mesa do Escriba", deps: [tabuas_arcanas], desc: ["Inscreva glifos no seu livro."],
+     tasks: [{item: ars_nouveau:scribes_table}], rewards: [{coins: 2}]}
+  - {slug: camara, title: "Câmara de Imbuição", deps: [tabuas_arcanas, side_create/liga], desc: ["Pede liga de andesito: Aurend misturava tudo."],
+     tasks: [{item: ars_nouveau:imbuement_chamber}], rewards: [{coins: 3}]}
+  - {slug: gema_fonte, title: "Gemas de Fonte", deps: [camara], shape: gear, icon: ars_nouveau:source_gem,
+     desc: ["Ametista mergulhada em mana.", "Também abre o caminho para o Undergarden."], tasks: [{item: ars_nouveau:source_gem, count: 16}],
+     rewards: [{coins: 3}]}
+  - {slug: jarro, title: "Jarro de Fonte", deps: [gema_fonte], desc: ["Guarde mana como quem guarda água."],
+     tasks: [{item: ars_nouveau:source_jar, count: 2}], rewards: [{coins: 2}]}
+  - {slug: elo_agronomico, title: "Elo Agronômico", deps: [jarro], desc: ["Plantas crescendo geram fonte."],
+     tasks: [{item: ars_nouveau:agronomic_sourcelink}], rewards: [{coins: 2}]}
+  - {slug: elo_vulcanico, title: "Elo Vulcânico", deps: [jarro], desc: ["Fogo queimando também gera fonte."],
+     tasks: [{item: ars_nouveau:volcanic_sourcelink}], rewards: [{coins: 2}]}
+  - {slug: projetil, title: "Glifo: Projétil", deps: [mesa_escriba], desc: ["A forma mais simples de lançar um feitiço."],
+     tasks: [{item: ars_nouveau:glyph_projectile}], rewards: [{coins: 1}]}
+  - {slug: toque, title: "Glifo: Toque", deps: [mesa_escriba], desc: ["Feitiços que agem onde você toca."],
+     tasks: [{item: ars_nouveau:glyph_touch}], rewards: [{coins: 1}]}
+  - {slug: quebrar, title: "Glifo: Quebrar", deps: [toque], desc: ["Magia também minera."],
+     tasks: [{item: ars_nouveau:glyph_break}], rewards: [{coins: 1}]}
+  - {slug: dano, title: "Glifo: Ferir", deps: [projetil], desc: ["O primeiro feitiço de combate."],
+     tasks: [{item: ars_nouveau:glyph_harm}], rewards: [{coins: 1}]}
+  - {slug: amplificar, title: "Glifo: Amplificar", deps: [dano], desc: ["Mais forte. Mais alto. Mais ouvido."],
+     tasks: [{item: ars_nouveau:glyph_amplify}], rewards: [{coins: 2}]}
+  - {slug: luz, title: "Glifo: Luz", deps: [projetil], desc: ["Luz mágica contra o escuro."],
+     tasks: [{item: ars_nouveau:glyph_light}], rewards: [{coins: 1}]}
+  - {slug: curar, title: "Glifo: Curar", deps: [toque], desc: ["Magia que fecha feridas."],
+     tasks: [{item: ars_nouveau:glyph_heal}], rewards: [{coins: 2}]}
+  - {slug: essencias, title: "Essências", deps: [gema_fonte], desc: ["A câmara destila essências de fogo, abjuração e manipulação."],
+     tasks: [{item: ars_nouveau:fire_essence}, {item: ars_nouveau:abjuration_essence}, {item: ars_nouveau:manipulation_essence}],
+     rewards: [{coins: 4}]}
+  - {slug: wilden, title: "Os Wilden", deps: [livro_novato], desc: ["Criaturas da floresta selvagem. Seus restos são reagentes."],
+     tasks: [{item: ars_nouveau:wilden_horn}, {item: ars_nouveau:wilden_wing}, {item: ars_nouveau:wilden_spike}], rewards: [{coins: 3}]}
+  - {slug: livro_aprendiz, title: "Livro do Aprendiz Avançado", deps: [wilden, gema_fonte], desc: ["Mais páginas, mais glifos."],
+     tasks: [{item: ars_nouveau:apprentice_spell_book}], rewards: [{crate: comum}, {coins: 4}]}
+  - {slug: pedestal, title: "Pedestais Arcanos", deps: [gema_fonte], desc: ["Rodeie o núcleo com pedestais."],
+     tasks: [{item: ars_nouveau:arcane_pedestal, count: 4}], rewards: [{coins: 2}]}
+  - {slug: aparato, title: "Aparato de Encantamento", deps: [pedestal, essencias], shape: gear,
+     desc: ["O altar dos arcanistas de Aurend."], tasks: [{item: ars_nouveau:enchanting_apparatus}, {item: ars_nouveau:arcane_core}],
+     rewards: [{coins: 5}]}
+  - {slug: jarro_luz, title: "Jarro de Luz", deps: [aparato], desc: ["Uma luz que nunca se apaga."],
+     tasks: [{item: ars_nouveau:jar_of_light}], rewards: [{coins: 2}]}
+  - {slug: cinto, title: "Cinto de Levitação", deps: [aparato], desc: ["Flutuar sobre o Undergarden."],
+     tasks: [{item: ars_nouveau:belt_of_levitation}], rewards: [{coins: 4}]}
+  - {slug: anel, title: "Anel de Potencial", deps: [aparato], desc: ["Mais mana para quem toca alto."],
+     tasks: [{item: ars_nouveau:ring_of_potential}], rewards: [{coins: 3}]}
+  - {slug: starbuncle, title: "Um Starbuncle", deps: [livro_aprendiz], desc: ["Dê uma pepita de ouro a um starbuncle. Ele carrega itens para você."],
+     tasks: [{item: ars_nouveau:starbuncle_charm}], rewards: [{coins: 3}]}
+  - {slug: pedra_portal, title: "Pedra-Portal", deps: [gema_fonte, side_create/liga],
+     desc: ["Waystones exigem gema de fonte: viajar também é magia."], tasks: [{item: waystones:waystone}], rewards: [{coins: 4}]}
+  - {slug: tunica, title: "Túnica Arcana", deps: [aparato], desc: ["Roupas que carregam glifos."],
+     tasks: [{item: ars_nouveau:arcanist_robes}], rewards: [{coins: 3}]}
+  - {slug: arquimago, title: "O Livro do Arquimago", deps: [aparato, livro_aprendiz], shape: gear, icon: ars_nouveau:archmage_spell_book,
+     desc: ["Todos os glifos que Aurend conheceu.", "Toque baixo. Sempre baixo."], tasks: [{item: ars_nouveau:archmage_spell_book}],
+     rewards: [{crate: epica}, {coins: 8}]}
