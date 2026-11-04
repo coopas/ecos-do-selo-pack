@@ -53,3 +53,25 @@ def test_act_delivers_its_lore_pages(act):
 
 def test_task5_chapters_exist():
     assert {"prologo", "ato1", "side_create", "side_gt_steam_lv"} <= WRITTEN
+
+
+def test_every_diary_page_delivered_once():
+    """As 30 páginas da lore aparecem exatamente uma vez em todo o livro de quests (nenhuma repetível)."""
+    pages = []
+    for c in questgen.load_sources():
+        for q in c.quests:
+            for r in q["rewards"]:
+                if "page" in r:
+                    assert not q.get("repeatable"), f"{c.slug}/{q['slug']} repetível entrega página"
+                    pages.append(r["page"])
+    assert sorted(pages) == list(range(1, 31))
+    assert set(questgen.lore_pages()) == set(range(1, 31))
+
+
+def test_quest_total_in_range():
+    total = sum(len(c.quests) for c in questgen.load_sources())
+    assert 400 <= total <= 600, total
+
+
+def test_all_planned_chapters_exist():
+    assert set(SIZES) | {"loja", "final"} == WRITTEN
