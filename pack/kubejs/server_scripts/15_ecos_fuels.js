@@ -38,7 +38,9 @@ let ecosSwapFluid = (node, from, to) => {
 global.ecosFuelExpected = 0
 
 ServerEvents.recipes(event => {
-  let clone = (machine, map, label) => {
+  // devolve quantas receitas clonou; sem receita de origem só falha se `required` (qualquer outro erro propaga)
+  let clone = (machine, map, label, required) => {
+    let total = 0
     for (let src in map) {
       let dst = map[src]
       let found = []
@@ -48,22 +50,21 @@ ServerEvents.recipes(event => {
           found.push({ id: String(r.getId()), json: json })
         }
       })
+      if (found.length == 0 && !required) continue
       if (found.length == 0) throw new Error(`[ecos] fuels: nenhuma receita ${machine} com entrada ${src} para clonar (${label})`)
       found.forEach(f => {
         let name = f.id.replace(':', '_').replace(/\//g, '_')
         let rec = event.custom(f.json)
         ecosSetRecipeId(rec, `ecos:fuel/${name}_${dst.replace(":", "_")}`)
         global.ecosFuelExpected++
+        total++
       })
     }
+    return total
   }
-  clone('gtceu:combustion_generator', ECOS_FUELS.gt_combustion_clones, 'combustão')
-  for (let machine of ['gtceu:distillation_tower', 'gtceu:distillery']) {
-    // nem toda máquina destila óleo: só falha se NENHUMA tiver receita de origem
-    try { clone(machine, ECOS_FUELS.gt_distillation_clones, 'destilação') } catch (e) {
-      if (machine == 'gtceu:distillation_tower') throw e
-      console.info(`[ecos] fuels: ${machine} sem receita de origem (ok): ${e}`)
-    }
-  }
+  clone('gtceu:combustion_generator', ECOS_FUELS.gt_combustion_clones, 'combustão', true)
+  clone('gtceu:distillation_tower', ECOS_FUELS.gt_distillation_clones, 'destilação', true)
+  // nem toda destilaria destila óleo cru: sem origem não é erro
+  clone('gtceu:distillery', ECOS_FUELS.gt_distillation_clones, 'destilação', false)
   console.info(`[ecos] fuels: ${global.ecosFuelExpected} receitas ecos:fuel/* criadas`)
 })

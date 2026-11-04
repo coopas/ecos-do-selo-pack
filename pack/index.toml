@@ -363,7 +363,7 @@ hash = "2911a2e99a424ac334f35aec3a7221d574e4bf9d0a95c0df925f6dccf25a4562"
 
 [[files]]
 file = "kubejs/server_scripts/15_ecos_fuels.js"
-hash = "290a4574c51a7aaca5b9281d89b71e1b4e81b55427c3edb7ba8a624da1eef9a1"
+hash = "d41d4968818d50b5c974c2a0056202b1b11c0d707ed6183451dd0328615ee1be"
 
 [[files]]
 file = "kubejs/server_scripts/20_ecos_recipes.js"
@@ -383,7 +383,7 @@ hash = "800127ec63498dcccdc206180f1d17f93117bdd3fd8fda2bb30f830767d614e7"
 
 [[files]]
 file = "kubejs/server_scripts/dev/fuel_check.js"
-hash = "a8c660509ded6d97bbbbc817dade3e9d1e4b67df997d99b063f1b2b30e660edd"
+hash = "5eaac6495ff579721a8007345d5e6d5bc64e8cda2d6a1e4f9dfbf8504bba4348"
 
 [[files]]
 file = "kubejs/server_scripts/dev/mob_gear_check.js"

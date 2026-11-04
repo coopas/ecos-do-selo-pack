@@ -55,9 +55,13 @@ def test_fuel_crossing_ingame():
     assert problems == [], problems
     lines = [l for l in boot_test.LAST_CONSOLE if "ECOS_FUEL " in l]
     assert lines, boot_test.LAST_CONSOLE[-15:]
-    m = re.search(r"ECOS_FUEL receitas=(\d+) esperadas=(\d+) tags_ok=(\w+) missing=\[(.*?)\]", lines[-1])
+    m = re.search(r"ECOS_FUEL receitas=(\d+) comb=(\d+) torre=(\d+) esperadas=(\d+) tags_ok=(\w+) missing=\[(.*?)\]", lines[-1])
     assert m, lines[-1]
-    n, expected = int(m[1]), int(m[2])
+    n, comb, torre, expected = int(m[1]), int(m[2]), int(m[3]), int(m[4])
     assert expected >= len(_fuels()["gt_combustion_clones"]), lines[-1]  # 4 de combustão + destilação clonada
     assert n == expected, lines[-1]
-    assert m[3] == "true" and m[4] == "", lines[-1]
+    # checagem independente do contador do script: cada clone de combustão + ao menos um da torre de destilação
+    assert comb == len(_fuels()["gt_combustion_clones"]), lines[-1]
+    assert torre >= 1, lines[-1]
+    assert n >= comb + torre, lines[-1]
+    assert m[5] == "true" and m[6] == "", lines[-1]

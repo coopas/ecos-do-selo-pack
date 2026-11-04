@@ -4,8 +4,12 @@ ServerEvents.customCommand('ecos_fuel_check', event => {
   if (!JsonIO.read('kubejs/config/dev.json')) return
   const R = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
   const fuels = JsonIO.read('kubejs/ecos/fuels.json')
-  let receitas = 0
-  event.server.getRecipeManager().getRecipes().forEach(r => { if (String(r.getId()).startsWith('ecos:') && String(r.getId()).indexOf('/fuel/') > 0) receitas++ })
+  let receitas = 0, comb = 0, torre = 0
+  event.server.getRecipeManager().getRecipes().forEach(r => { if (String(r.getId()).startsWith('ecos:') && String(r.getId()).indexOf('/fuel/') > 0) receitas++
+    let id = String(r.getId())
+    if (id.startsWith('ecos:combustion_generator/fuel/')) comb++
+    if (id.startsWith('ecos:distillation_tower/fuel/')) torre++
+  })
   // membros reais de cada tag de fluido no registro (a mesma tag que o CDG lê em fuel_type/*.json)
   let members = {}
   R.FLUID.getTags().forEach(pair => {
@@ -20,7 +24,7 @@ ServerEvents.customCommand('ecos_fuel_check', event => {
     })
   }
   let tagsOk = missing.length == 0
-  let line = `ECOS_FUEL receitas=${receitas} esperadas=${global.ecosFuelExpected} tags_ok=${tagsOk} missing=[${missing.join(',')}]`
+  let line = `ECOS_FUEL receitas=${receitas} comb=${comb} torre=${torre} esperadas=${global.ecosFuelExpected} tags_ok=${tagsOk} missing=[${missing.join(',')}]`
   event.server.tell(line)
   console.info(line)
 })
