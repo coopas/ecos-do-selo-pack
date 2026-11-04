@@ -39,3 +39,17 @@ def test_real_recipe_dump_is_complete():
     assert d["errors"] == []
     assert len(d["recipes"]) > 40000
     assert recipes.load(p).for_output("ad_astra:nasa_workbench")
+
+
+def test_real_dump_reads_record_recipes():
+    """Receitas em record (Ad Astra nasa_workbench) expõem resultado/ingredientes como métodos."""
+    import pytest
+    from paths import BUILD
+    p = BUILD / "recipe_dump.json"
+    if not p.exists():
+        pytest.skip("sem build/recipe_dump.json")
+    rec = recipes.load(p)
+    for tier in range(1, 5):
+        found = rec.for_output(f"ad_astra:tier_{tier}_rocket")
+        assert found, f"foguete T{tier} sem receita no dump"
+        assert any(r["inputs"] for r in found), f"foguete T{tier} sem ingredientes"

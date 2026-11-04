@@ -21,8 +21,12 @@ file = "config/ftbquests/quests/chapters/ato3.snbt"
 hash = "2ded383900793965a7062d9999527ab49a3f15d6555f774df87181b14a868040"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/ato4.snbt"
+hash = "5eb47a8a697ec7a28e563a4bce1273792ea4e75bf7dbdf5c44872ad0609c0ec5"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/loja.snbt"
-hash = "df3caf538c125f7d1fa2076196f03691b9923651bcd05900c7b57a276c0f46e9"
+hash = "78c182d0fac3cb4c82b4e125f96bda5ebaffb95089ec46710dd36d7f338b4e74"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
@@ -55,6 +59,10 @@ hash = "7b29a73bb0cfa3e392f01158fba19572d57d73f072f7d0810a933acb882495e8"
 [[files]]
 file = "config/ftbquests/quests/chapters/side_occultism.snbt"
 hash = "5705c57bee56a0b7c034d96722867580ee41b7527b8ae794f2fd24d08d8654b2"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/side_space.snbt"
+hash = "b50691d03569e3c7848a1555142a6b21bc00ba7fef1ec257d39c2e6dbb5e3d96"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -111,7 +119,7 @@ hash = "56999882f3abbfd0f3b9c94f06a402e84135eb23dc77c47b566f926216e0e498"
 
 [[files]]
 file = "kubejs/ecos/quest_tags.json"
-hash = "5e6cf6957427d2eca902d877ca38fdb82415128e60725400dccf012922629f4f"
+hash = "cb6b6007a67efd838b5cca439143b7871278df738504b708487076019106dd5e"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
@@ -143,7 +151,7 @@ hash = "3c8358dcb62b231846c7a628175ba28e6d31ceceeb0912712aba036a031e0841"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
-hash = "8025b9797ca55e8d5bce481df31006029af6e93f5f51446ea1adbe15fa17e231"
+hash = "ffb012bd3a9ba99dd3a3ce4620d74973d3c7fe6e30564aa38343691e5a028f58"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_items.js"

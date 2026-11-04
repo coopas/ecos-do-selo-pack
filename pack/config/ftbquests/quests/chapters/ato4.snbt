@@ -1,0 +1,1423 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ato4"
+	group: "5395DF7F49D69073"
+	icon: "ad_astra:tier_1_rocket"
+	id: "6AA9373F0A774A45"
+	images: [ ]
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"73C3F25D63C2625C"
+			]
+			description: [
+				"Toda noite, o mesmo som, um pouco mais perto."
+				"Aurend construiu foguetes para calá-lo."
+			]
+			icon: "minecraft:bell"
+			id: "381B0CB7049598AF"
+			rewards: [
+				{
+					count: 1
+					id: "10E9D433ABAA5FB8"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Os astrônomos de Aurend apontavam os sinos para o céu noturno.\\nToda noite, o mesmo som, um pouco mais perto.\\nConstruíram foguetes para ir até lá e calá-lo na fonte.\\nNenhum voltou. Os foguetes, sim.\"}"
+							]
+							title: "Diário — Página 22"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "285E9BE9C8321EE2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "759C504D98B59824"
+					type: "checkmark"
+				}
+			]
+			title: "O Som Mais Perto"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"381B0CB7049598AF"
+			]
+			description: [
+				"O metal mais teimoso do mundo."
+			]
+			id: "20962B29BEC81D62"
+			rewards: [
+				{
+					count: 5
+					id: "770C5F260622658F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2C9FD2813402B52E"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/tungsten)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Tungstênio"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"20962B29BEC81D62"
+			]
+			description: [
+				"A liga da Insana Voltagem."
+			]
+			icon: "gtceu:tungsten_steel_ingot"
+			id: "5A0DE326E2FFC83E"
+			rewards: [
+				{
+					count: 1
+					id: "61E6F0616E64B184"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "2C2F542BA925C216"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 32L
+					id: "20A4CCBB5C3CA74E"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/tungsten_steel)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Aço de Tungstênio"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"5A0DE326E2FFC83E"
+			]
+			description: [
+				"Rutênio, tungstênio e molibdênio. Mais calor."
+			]
+			id: "4521D6EB73C98E0B"
+			rewards: [
+				{
+					count: 5
+					id: "421E3CF21E4F7D39"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5190947C3B514CA0"
+					item: {
+						Count: 1b
+						id: "gtceu:rtm_alloy_coil_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Bobinas de RTM"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"5A0DE326E2FFC83E"
+			]
+			description: [
+				"Insana voltagem."
+			]
+			id: "37EC086C30CDD440"
+			rewards: [
+				{
+					count: 5
+					id: "41CD96686211301A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "789EAB93DEABEA0C"
+					item: {
+						Count: 1b
+						id: "gtceu:iv_machine_hull"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco IV"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"37EC086C30CDD440"
+			]
+			description: [
+				"Um motor que pesa mais que você."
+			]
+			id: "3428767E7299C6AD"
+			rewards: [
+				{
+					count: 5
+					id: "07C39978AC55195A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "216747B973C4CF9B"
+					item: {
+						Count: 1b
+						id: "gtceu:iv_electric_motor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor IV"
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"37EC086C30CDD440"
+			]
+			description: [
+				"Componentes cada vez menores."
+			]
+			id: "502DD15A9BAFC0B2"
+			rewards: [
+				{
+					count: 5
+					id: "39846BA4C3C1336A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "2FAC767B56B9DFE4"
+					item: {
+						Count: 1b
+						id: "gtceu:advanced_smd_transistor"
+					}
+					type: "item"
+				}
+			]
+			title: "SMD Avançado"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"381B0CB7049598AF"
+			]
+			description: [
+				"Monte circuitos mais finos."
+			]
+			id: "01A4DA49124F70CC"
+			rewards: [
+				{
+					count: 5
+					id: "19702D822D770FB0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5E687F8860EEE011"
+					item: {
+						Count: 1b
+						id: "gtceu:ev_circuit_assembler"
+					}
+					type: "item"
+				}
+			]
+			title: "Montadora de Circuitos EV"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"01A4DA49124F70CC"
+				"3428767E7299C6AD"
+			]
+			description: [
+				"E mais finos ainda."
+			]
+			id: "11B8AA4E5B51C0D1"
+			rewards: [
+				{
+					count: 6
+					id: "221D14E8B46449A7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3204D1AA64C8C1E3"
+					item: {
+						Count: 1b
+						id: "gtceu:iv_circuit_assembler"
+					}
+					type: "item"
+				}
+			]
+			title: "Montadora de Circuitos IV"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"11B8AA4E5B51C0D1"
+				"502DD15A9BAFC0B2"
+			]
+			description: [
+				"Pensa em duas coisas ao mesmo tempo. Como Ilse."
+			]
+			icon: "gtceu:quantum_processor"
+			id: "07A10DA118625290"
+			rewards: [
+				{
+					count: 1
+					id: "1CFB370D21D561A4"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rara"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "51314DB3B241AEFE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 4L
+					id: "5D23A979632D9DBD"
+					item: {
+						Count: 1b
+						id: "gtceu:quantum_processor"
+					}
+					type: "item"
+				}
+			]
+			title: "Processador Quântico"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3428767E7299C6AD"
+				"07A10DA118625290"
+			]
+			description: [
+				"Luz que corta metal."
+			]
+			id: "5FA4860F03BD7396"
+			rewards: [
+				{
+					count: 5
+					id: "5C2B8E7C1E3E5577"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5612D90675546B67"
+					item: {
+						Count: 1b
+						id: "gtceu:iv_emitter"
+					}
+					type: "item"
+				}
+			]
+			title: "Emissor IV"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"3428767E7299C6AD"
+				"07A10DA118625290"
+			]
+			description: [
+				"Precisão de relojoeiro, força de guindaste."
+			]
+			id: "0092331F3CDA6B3B"
+			rewards: [
+				{
+					count: 5
+					id: "1F1DFFE6A3AF594A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "5B35A1839AF9F124"
+					item: {
+						Count: 1b
+						id: "gtceu:iv_robot_arm"
+					}
+					type: "item"
+				}
+			]
+			title: "Braço Robótico IV"
+			x: 10.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"5FA4860F03BD7396"
+			]
+			description: [
+				"Um campo forte o bastante para segurar algo grande."
+			]
+			id: "4775B419FE97E0AD"
+			rewards: [
+				{
+					count: 6
+					id: "6418A4DA6712F102"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7D2C1A2CBF00364D"
+					item: {
+						Count: 1b
+						id: "gtceu:iv_field_generator"
+					}
+					type: "item"
+				}
+			]
+			title: "Gerador de Campo IV"
+			x: 12.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"0092331F3CDA6B3B"
+				"5FA4860F03BD7396"
+				"4521D6EB73C98E0B"
+			]
+			description: [
+				"Máquinas maiores que casas."
+				"Engenharia é a única oração que funciona no vácuo."
+			]
+			icon: "gtceu:assembly_line"
+			id: "338A1131E9248243"
+			rewards: [
+				{
+					count: 1
+					id: "4D8EF5D231536404"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"As máquinas que você constrói agora são maiores que casas.\\nIsso é bom. O que você vai encontrar lá fora é maior que mundos.\\nEngenharia é a única oração que funciona no vácuo.\\nLeve oxigênio. Leve coragem. Leve a bancada.\"}"
+							]
+							title: "Diário — Página 23"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "6AEAA8A516D3D4FA"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "0AD6E0C258F961B2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "7B0D7C49078BA869"
+					item: {
+						Count: 1b
+						id: "gtceu:assembly_line"
+					}
+					type: "item"
+				}
+			]
+			title: "A Linha de Montagem"
+			x: 12.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"37EC086C30CDD440"
+			]
+			description: [
+				"Uma fábrica dentro da fábrica."
+			]
+			id: "7C4123E87BA8C8CF"
+			rewards: [
+				{
+					count: 5
+					id: "30DA48CF91E479F0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2A945CC316B31F15"
+					item: {
+						Count: 1b
+						id: "gtceu:large_assembler"
+					}
+					type: "item"
+				}
+			]
+			title: "Montadora Grande"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"37EC086C30CDD440"
+			]
+			description: [
+				"Gire tudo de uma vez."
+			]
+			id: "1FA1662304CD07A9"
+			rewards: [
+				{
+					count: 5
+					id: "72C181A84F4D155B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "09C18602B6E398CF"
+					item: {
+						Count: 1b
+						id: "gtceu:large_centrifuge"
+					}
+					type: "item"
+				}
+			]
+			title: "Centrífuga Grande"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"381B0CB7049598AF"
+			]
+			description: [
+				"Bombeie fluidos do fundo do mundo."
+			]
+			id: "6CD2545B7E0882D2"
+			rewards: [
+				{
+					count: 5
+					id: "01812029CA432B93"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1851264A5DEFB11D"
+					item: {
+						Count: 1b
+						id: "gtceu:ev_fluid_drilling_rig"
+					}
+					type: "item"
+				}
+			]
+			title: "Plataforma de Perfuração"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"381B0CB7049598AF"
+			]
+			description: [
+				"Cave chunks inteiros."
+			]
+			id: "5DC7055CBE8C2853"
+			rewards: [
+				{
+					count: 5
+					id: "710E125C31CA90B0"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "033BF24FABA65243"
+					item: {
+						Count: 1b
+						id: "gtceu:ev_large_miner"
+					}
+					type: "item"
+				}
+			]
+			title: "Mineradora Grande EV"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"381B0CB7049598AF"
+			]
+			description: [
+				"Energia para a era espacial."
+			]
+			id: "267E71920F5725D2"
+			rewards: [
+				{
+					count: 6
+					id: "3F68D743BE36E713"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "12E0DE9CC2943C04"
+					item: {
+						Count: 1b
+						id: "gtceu:gas_large_turbine"
+					}
+					type: "item"
+				}
+			]
+			title: "Turbina a Gás Grande"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"37EC086C30CDD440"
+			]
+			description: [
+				"Uma bateria que parece uma joia."
+			]
+			id: "5A29146BA4EDBD10"
+			rewards: [
+				{
+					count: 5
+					id: "29D5F5E8454AAD9D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "7B7E83191B465404"
+					item: {
+						Count: 1b
+						id: "gtceu:lapotron_crystal"
+					}
+					type: "item"
+				}
+			]
+			title: "Cristal de Lapotron"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5A29146BA4EDBD10"
+			]
+			description: [
+				"Guarde energia de uma cidade inteira."
+			]
+			id: "59C74B5D7D9DF7DE"
+			rewards: [
+				{
+					count: 6
+					id: "2463A535C72DC2FD"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "34118532049EA366"
+					item: {
+						Count: 1b
+						id: "gtceu:power_substation"
+					}
+					type: "item"
+				}
+			]
+			title: "Subestação de Energia"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5A0DE326E2FFC83E"
+			]
+			description: [
+				"O metal dos cascos LuV."
+			]
+			id: "5F4B7E4C13719047"
+			rewards: [
+				{
+					count: 6
+					id: "163E3B8D5601035A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "1514E58AE1A298FF"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/rhodium_plated_palladium)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Paládio Banhado em Ródio"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5A0DE326E2FFC83E"
+			]
+			description: [
+				"Aço rápido, para bobinas mais quentes."
+			]
+			id: "499913AEB3FD9688"
+			rewards: [
+				{
+					count: 6
+					id: "2047B065E0E41D7B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "3096FAEBA495DC79"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/hssg)"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "62247D82E4D7810D"
+					item: {
+						Count: 1b
+						id: "gtceu:hssg_coil_block"
+					}
+					type: "item"
+				}
+			]
+			title: "HSS-G"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5F4B7E4C13719047"
+				"338A1131E9248243"
+			]
+			description: [
+				"Ludicrous Voltage. Até o nome é absurdo."
+			]
+			icon: "gtceu:luv_machine_hull"
+			id: "25BAC2245AB259B8"
+			rewards: [
+				{
+					count: 1
+					id: "37AA913F7976F03E"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "396A24CB4A505CD9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 2L
+					id: "28CC67F451472355"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_machine_hull"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco LuV"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"25BAC2245AB259B8"
+			]
+			description: [
+				"Feito na linha de montagem."
+			]
+			id: "1E205253D9667FDB"
+			rewards: [
+				{
+					count: 6
+					id: "00796D47A784F351"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "0037487AF1659764"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_electric_motor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor LuV"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E205253D9667FDB"
+				"4775B419FE97E0AD"
+			]
+			description: [
+				"Faz parte da Pedra Filosofal."
+			]
+			id: "58A5FA59878BA1AF"
+			rewards: [
+				{
+					count: 8
+					id: "3AAAB4F0E2C619D9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1C5E2D8065955906"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_field_generator"
+					}
+					type: "item"
+				}
+			]
+			title: "Gerador de Campo LuV"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"381B0CB7049598AF"
+				"3B45723920C85A8C"
+			]
+			description: [
+				"Alguém de Aurend chegou a Marte antes de você."
+				"Ilse reconhece os sinos."
+			]
+			icon: "minecraft:bell"
+			id: "08E8D787F3A6ACF9"
+			rewards: [
+				{
+					count: 1
+					id: "097B83B41320B408"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"A Lua não é morta. Ela está prendendo a respiração.\\nMarte guarda sinos de cobre enterrados na poeira.\\nEu os reconheço: são nossos.\\nAlguém de Aurend chegou aqui antes de mim.\"}"
+							]
+							title: "Diário — Página 24"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "31C981C73B58BAAA"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0EDDE9B3CB158BF9"
+					type: "checkmark"
+				}
+			]
+			title: "Os Sinos São Nossos"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"381B0CB7049598AF"
+			]
+			description: [
+				"No fundo do Nether há uma arena que ainda queima."
+				"Um altar de fogo espera cinzas ardentes."
+			]
+			icon: "cataclysm:altar_of_fire"
+			id: "5DF2D041099B4BC7"
+			rewards: [
+				{
+					id: "304E7E4151FD97B3"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			tasks: [
+				{
+					id: "3C8741EF7FF3135A"
+					type: "checkmark"
+				}
+			]
+			title: "A Forja do Nether"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5DF2D041099B4BC7"
+			]
+			description: [
+				"Caem dos Revenants em chamas, ou se juntam de brasas morrendo."
+			]
+			id: "5A6597C24B29CF97"
+			rewards: [
+				{
+					count: 4
+					id: "6B4D2111948A6690"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "4D1EF7723F713C13"
+					item: {
+						Count: 1b
+						id: "cataclysm:burning_ashes"
+					}
+					type: "item"
+				}
+			]
+			title: "Cinzas Ardentes"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"5A6597C24B29CF97"
+				"6E9E82E2F6B6F3A8"
+				"40404AD0A95B4364"
+			]
+			description: [
+				"Ele funde até hoje, sem saber para quem."
+				"Mate-o com piedade. Ele está cansado."
+			]
+			icon: "cataclysm:ignitium_ingot"
+			id: "38A50CEBCCC4B4BE"
+			rewards: [
+				{
+					count: 1
+					id: "0DDEC1ADEC81FA70"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Ignaz fundia o metal das estrelas para as engrenagens do Selo.\\nQuando o Selo caiu, ele não parou de fundir.\\nFunde até hoje, no fundo do Nether, sem saber para quem.\\nMate-o com piedade. Ele está cansado.\"}"
+							]
+							title: "Diário — Página 25"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "013226DAA1F9BC66"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 15
+					id: "2A85DB6E2ABFD47B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					entity: "cataclysm:ignis"
+					id: "0F85FEBE4B6CE293"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Ignaz, o Fundidor"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"38A50CEBCCC4B4BE"
+			]
+			description: [
+				"O metal que Ignaz deixou para trás."
+			]
+			id: "1D5CBA097F4E2186"
+			rewards: [
+				{
+					count: 6
+					id: "7562EA0CF814C89B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "236463DFE5FFADEA"
+					item: {
+						Count: 1b
+						id: "cataclysm:ignitium_ingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Ignítio"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"38A50CEBCCC4B4BE"
+			]
+			description: [
+				"O quarto pedaço do Selo."
+				"Queima sem fogo."
+			]
+			icon: "ecos:fragmento_selo_estrelas"
+			id: "1A6F45F683CB29FE"
+			rewards: [
+				{
+					count: 15
+					id: "0969EBDBE850DEE4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "60F7B1CC97E4976A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_estrelas"
+					}
+					type: "item"
+				}
+			]
+			title: "O Fragmento das Estrelas"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"1A6F45F683CB29FE"
+			]
+			description: [
+				"Quatro fragmentos. Falta o que os unia."
+				"Você sabe o que é. Ilse sabe o que é."
+			]
+			icon: "ecos:fragmento_selo_floresta"
+			id: "56CACA22B80D3980"
+			rewards: [
+				{
+					count: 1
+					id: "0D450A0CF2A90DEF"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Quatro fragmentos. O Selo poderia se fechar.\\nMas falta a argamassa, aquilo que os unia.\\nVocê sabe o que é. Eu sei o que é.\\nEu fui a última pessoa a fazê-la.\"}"
+							]
+							title: "Diário — Página 26"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "21A8467BEFFAE088"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0BAA4987C9BF52EC"
+					type: "checkmark"
+				}
+			]
+			title: "A Argamassa"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4DCC07AD6E9AEA86"
+				"543F11CAF616C6F6"
+			]
+			description: [
+				"Leve a rede para a Lua. Aurend fazia isso."
+			]
+			id: "3B4EFD12F9632E7B"
+			rewards: [
+				{
+					count: 5
+					id: "302C6A146D88A972"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "1625A46013492E5F"
+					type: "checkmark"
+				}
+			]
+			title: "Uma Rede Entre Mundos"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"34E1E0F89E050F84"
+				"543F11CAF616C6F6"
+			]
+			description: [
+				"Um familiar te acompanha até a Lua."
+				"Ele não respira. Não precisa."
+			]
+			id: "35DBE3FF421FB660"
+			rewards: [
+				{
+					count: 5
+					id: "654E042698B86BB8"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "621111B73BDAC7A6"
+					type: "checkmark"
+				}
+			]
+			title: "Espíritos no Vácuo"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"56CACA22B80D3980"
+				"58A5FA59878BA1AF"
+				"498CD015D66F0E7C"
+				"59C74B5D7D9DF7DE"
+			]
+			description: [
+				"Quatro fragmentos nas mãos."
+				"As estrelas é que estão dentro dele."
+			]
+			icon: "ecos:fragmento_selo_estrelas"
+			id: "40B3D210377E8831"
+			rewards: [
+				{
+					count: 1
+					id: "3FA164007B462679"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "04D016A63277DAFD"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "764AB4739EC96C73"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "0A44865CE0AB0CD0"
+					type: "checkmark"
+				}
+			]
+			title: "Além do Véu"
+			x: 18.0d
+			y: 0.0d
+		}
+	]
+	title: "Ato IV — Além do Véu"
+}

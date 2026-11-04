@@ -1,0 +1,88 @@
+chapter: ato4
+title: "Ato IV — Além do Véu"
+icon: ad_astra:tier_1_rocket
+group: atos
+act: 4
+quests:
+  - {slug: inicio, title: "O Som Mais Perto", deps: [ato3/fim_ato3], shape: gear, icon: minecraft:bell,
+     desc: ["Toda noite, o mesmo som, um pouco mais perto.", "Aurend construiu foguetes para calá-lo."], tasks: [{checkmark: true}],
+     rewards: [{page: 22}, {coins: 4}]}
+  - {slug: tungstenio, title: "Tungstênio", deps: [inicio], desc: ["O metal mais teimoso do mundo."],
+     tasks: [{tag: forge:ingots/tungsten, count: 16}], rewards: [{coins: 5}]}
+  - {slug: aco_tungstenio, title: "Aço de Tungstênio", deps: [tungstenio], shape: gear, icon: gtceu:tungsten_steel_ingot,
+     desc: ["A liga da Insana Voltagem."], tasks: [{tag: forge:ingots/tungsten_steel, count: 32}], rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: bobina_rtm, title: "Bobinas de RTM", deps: [aco_tungstenio], desc: ["Rutênio, tungstênio e molibdênio. Mais calor."],
+     tasks: [{item: gtceu:rtm_alloy_coil_block, count: 16}], rewards: [{coins: 5}]}
+  - {slug: casco_iv, title: "Casco IV", deps: [aco_tungstenio], desc: ["Insana voltagem."],
+     tasks: [{item: gtceu:iv_machine_hull, count: 2}], rewards: [{coins: 5}]}
+  - {slug: motor_iv, title: "Motor IV", deps: [casco_iv], desc: ["Um motor que pesa mais que você."],
+     tasks: [{item: gtceu:iv_electric_motor, count: 4}], rewards: [{coins: 5}]}
+  - {slug: smd_avancado, title: "SMD Avançado", deps: [casco_iv], desc: ["Componentes cada vez menores."],
+     tasks: [{item: gtceu:advanced_smd_transistor, count: 16}], rewards: [{coins: 5}]}
+  - {slug: montadora_ev, title: "Montadora de Circuitos EV", deps: [inicio], desc: ["Monte circuitos mais finos."],
+     tasks: [{item: gtceu:ev_circuit_assembler}], rewards: [{coins: 5}]}
+  - {slug: montadora_iv, title: "Montadora de Circuitos IV", deps: [montadora_ev, motor_iv], desc: ["E mais finos ainda."],
+     tasks: [{item: gtceu:iv_circuit_assembler}], rewards: [{coins: 6}]}
+  - {slug: quantico, title: "Processador Quântico", deps: [montadora_iv, smd_avancado], shape: gear, icon: gtceu:quantum_processor,
+     desc: ["Pensa em duas coisas ao mesmo tempo. Como Ilse."], tasks: [{item: gtceu:quantum_processor, count: 4}],
+     rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: emissor_iv, title: "Emissor IV", deps: [motor_iv, quantico], desc: ["Luz que corta metal."],
+     tasks: [{item: gtceu:iv_emitter, count: 2}], rewards: [{coins: 5}]}
+  - {slug: braco_iv, title: "Braço Robótico IV", deps: [motor_iv, quantico], desc: ["Precisão de relojoeiro, força de guindaste."],
+     tasks: [{item: gtceu:iv_robot_arm, count: 2}], rewards: [{coins: 5}]}
+  - {slug: campo_iv, title: "Gerador de Campo IV", deps: [emissor_iv], desc: ["Um campo forte o bastante para segurar algo grande."],
+     tasks: [{item: gtceu:iv_field_generator}], rewards: [{coins: 6}]}
+  - {slug: linha_montagem, title: "A Linha de Montagem", deps: [braco_iv, emissor_iv, bobina_rtm], shape: gear, icon: gtceu:assembly_line,
+     desc: ["Máquinas maiores que casas.", "Engenharia é a única oração que funciona no vácuo."], tasks: [{item: gtceu:assembly_line}],
+     rewards: [{page: 23}, {crate: epica}, {coins: 10}]}
+  - {slug: montadora_grande, title: "Montadora Grande", deps: [casco_iv], desc: ["Uma fábrica dentro da fábrica."],
+     tasks: [{item: gtceu:large_assembler}], rewards: [{coins: 5}]}
+  - {slug: centrifuga_grande, title: "Centrífuga Grande", deps: [casco_iv], desc: ["Gire tudo de uma vez."],
+     tasks: [{item: gtceu:large_centrifuge}], rewards: [{coins: 5}]}
+  - {slug: perfuratriz, title: "Plataforma de Perfuração", deps: [inicio], desc: ["Bombeie fluidos do fundo do mundo."],
+     tasks: [{item: gtceu:ev_fluid_drilling_rig}], rewards: [{coins: 5}]}
+  - {slug: mineradora_grande, title: "Mineradora Grande EV", deps: [inicio], desc: ["Cave chunks inteiros."],
+     tasks: [{item: gtceu:ev_large_miner}], rewards: [{coins: 5}]}
+  - {slug: turbina_grande, title: "Turbina a Gás Grande", deps: [inicio], desc: ["Energia para a era espacial."],
+     tasks: [{item: gtceu:gas_large_turbine}], rewards: [{coins: 6}]}
+  - {slug: lapotron, title: "Cristal de Lapotron", deps: [casco_iv], desc: ["Uma bateria que parece uma joia."],
+     tasks: [{item: gtceu:lapotron_crystal, count: 4}], rewards: [{coins: 5}]}
+  - {slug: subestacao, title: "Subestação de Energia", deps: [lapotron], desc: ["Guarde energia de uma cidade inteira."],
+     tasks: [{item: gtceu:power_substation}], rewards: [{coins: 6}]}
+  - {slug: rodio, title: "Paládio Banhado em Ródio", deps: [aco_tungstenio], desc: ["O metal dos cascos LuV."],
+     tasks: [{tag: forge:ingots/rhodium_plated_palladium, count: 16}], rewards: [{coins: 6}]}
+  - {slug: hssg, title: "HSS-G", deps: [aco_tungstenio], desc: ["Aço rápido, para bobinas mais quentes."],
+     tasks: [{tag: forge:ingots/hssg, count: 16}, {item: gtceu:hssg_coil_block, count: 16}], rewards: [{coins: 6}]}
+  - {slug: casco_luv, title: "Casco LuV", deps: [rodio, linha_montagem], shape: gear, icon: gtceu:luv_machine_hull,
+     desc: ["Ludicrous Voltage. Até o nome é absurdo."], tasks: [{item: gtceu:luv_machine_hull, count: 2}],
+     rewards: [{crate: epica}, {coins: 10}]}
+  - {slug: motor_luv, title: "Motor LuV", deps: [casco_luv], desc: ["Feito na linha de montagem."],
+     tasks: [{item: gtceu:luv_electric_motor, count: 4}], rewards: [{coins: 6}]}
+  - {slug: campo_luv, title: "Gerador de Campo LuV", deps: [motor_luv, campo_iv], desc: ["Faz parte da Pedra Filosofal."],
+     tasks: [{item: gtceu:luv_field_generator}], rewards: [{coins: 8}]}
+  - {slug: sinos, title: "Os Sinos São Nossos", deps: [inicio, side_space/marte], icon: minecraft:bell,
+     desc: ["Alguém de Aurend chegou a Marte antes de você.", "Ilse reconhece os sinos."], tasks: [{checkmark: true}],
+     rewards: [{page: 24}, {coins: 5}]}
+  - {slug: forja_nether, title: "A Forja do Nether", deps: [inicio], icon: cataclysm:altar_of_fire,
+     desc: ["No fundo do Nether há uma arena que ainda queima.", "Um altar de fogo espera cinzas ardentes."], tasks: [{checkmark: true}],
+     rewards: [{xp_levels: 3}]}
+  - {slug: cinzas, title: "Cinzas Ardentes", deps: [forja_nether], desc: ["Caem dos Revenants em chamas, ou se juntam de brasas morrendo."],
+     tasks: [{item: cataclysm:burning_ashes}], rewards: [{coins: 4}]}
+  - {slug: ignaz, title: "Ignaz, o Fundidor", deps: [cinzas, side_irons/livro_diamante, side_ars/arquimago], shape: gear, icon: cataclysm:ignitium_ingot,
+     desc: ["Ele funde até hoje, sem saber para quem.", "Mate-o com piedade. Ele está cansado."], tasks: [{kill: cataclysm:ignis}],
+     rewards: [{page: 25}, {crate: lendaria}, {coins: 15}]}
+  - {slug: ignitio, title: "Ignítio", deps: [ignaz], desc: ["O metal que Ignaz deixou para trás."],
+     tasks: [{item: cataclysm:ignitium_ingot, count: 3}], rewards: [{coins: 6}]}
+  - {slug: fragmento, title: "O Fragmento das Estrelas", deps: [ignaz], shape: gear, icon: ecos:fragmento_selo_estrelas,
+     desc: ["O quarto pedaço do Selo.", "Queima sem fogo."], tasks: [{item: ecos:fragmento_selo_estrelas}],
+     rewards: [{coins: 15}]}
+  - {slug: argamassa, title: "A Argamassa", deps: [fragmento], icon: ecos:fragmento_selo_floresta,
+     desc: ["Quatro fragmentos. Falta o que os unia.", "Você sabe o que é. Ilse sabe o que é."], tasks: [{checkmark: true}],
+     rewards: [{page: 26}, {coins: 5}]}
+  - {slug: rede_estrelas, title: "Uma Rede Entre Mundos", deps: [side_ae2/rede_viva, side_space/lua],
+     desc: ["Leve a rede para a Lua. Aurend fazia isso."], tasks: [{checkmark: true}], rewards: [{coins: 5}]}
+  - {slug: espiritos_vacuo, title: "Espíritos no Vácuo", deps: [side_occultism/mestre_ocultista, side_space/lua],
+     desc: ["Um familiar te acompanha até a Lua.", "Ele não respira. Não precisa."], tasks: [{checkmark: true}], rewards: [{coins: 5}]}
+  - {slug: fim_ato4, title: "Além do Véu", deps: [argamassa, campo_luv, side_space/glacio, subestacao], shape: gear,
+     icon: ecos:fragmento_selo_estrelas, desc: ["Quatro fragmentos nas mãos.", "As estrelas é que estão dentro dele."],
+     tasks: [{checkmark: true}], rewards: [{crate: lendaria}, {coins: 16}, {xp_levels: 6}]}

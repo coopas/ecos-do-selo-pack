@@ -88,13 +88,17 @@ ServerEvents.loaded(event => {
       ;['result', 'output', 'outputStack'].forEach(name => {
         try {
           let st = r[name]
+          if (typeof st === 'function') st = r[name]()  // records (Ad Astra): result() é método
           if (st && st.getItem && !st.isEmpty()) outputs.push(String(R.ITEM.getKey(st.getItem())))
         } catch (e) { /* campo inexistente */ }
       })
     }
     let inputs = []
     try {
-      r.getIngredients().forEach(ing => {
+      let ings = r.getIngredients()
+      if (ings.isEmpty() && typeof r.ingredients === 'function') ings = r.ingredients()  // records (Ad Astra)
+      ings.forEach(ing => {
+        if (!ing.isEmpty && typeof ing.ingredient === 'function') ing = ing.ingredient()  // IngredientHolder (Ad Astra)
         if (ing.isEmpty()) return
         let parsed = JSON.parse(String(ing.toJson().toString()))
         if (!Array.isArray(parsed)) parsed = [parsed]

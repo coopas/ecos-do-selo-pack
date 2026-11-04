@@ -185,3 +185,17 @@ ae2_mundo:
   - ae2:sky_stone_block
   - ae2:flawed_budding_quartz
   - ae2:meteorite_compass
+espaco_mundo:
+  - ad_astra:raw_desh                    # Lua
+  - ad_astra:cheese                      # Lua
+  - ad_astra:ice_shard
+  - ad_astra:moon_sand
+  - ad_astra:raw_ostrum                  # Marte
+  - ad_astra:mars_sand
+  - ad_astra:raw_calorite                # Vênus
+  - ad_astra:venus_sand
+  - ad_astra:glacio_stone
+cataclysm_mundo:
+  - cataclysm:burning_ashes              # drop do Ignited Revenant; também craftável de dying_ember
+  - cataclysm:ignitium_ingot             # drop do Ignis
+  - cataclysm:altar_of_fire              # Arena Ardente, no Nether

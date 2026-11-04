@@ -1,0 +1,59 @@
+chapter: side_space
+title: "Caminho — Os Sinos no Céu"
+icon: ad_astra:tier_1_rocket
+group: caminhos
+act: 4
+quests:
+  - {slug: bancada, title: "A Bancada da NASA", deps: [ato4/inicio, ato3/fragmento, side_gt_mv_ev/era_ev], shape: gear, icon: ad_astra:nasa_workbench,
+     desc: ["Pede um Fragmento dos Céus, braço e emissor EV e titânio.", "Outra masmorra de ouro guarda outra Solenne."],
+     tasks: [{item: ad_astra:nasa_workbench}], rewards: [{coins: 6}]}
+  - {slug: aco_espacial, title: "Aço Para Foguetes", deps: [bancada], desc: ["Placas de aço e um tanque de aço."],
+     tasks: [{item: ad_astra:steel_plate, count: 16}, {item: ad_astra:steel_tank, count: 2}], rewards: [{coins: 3}]}
+  - {slug: pecas, title: "Ponta e Aletas", deps: [aco_espacial], desc: ["Todo foguete precisa de uma ponta e três aletas."],
+     tasks: [{item: ad_astra:rocket_nose_cone}, {item: ad_astra:rocket_fin, count: 4}], rewards: [{coins: 3}]}
+  - {slug: motor, title: "Motor de Aço", deps: [aco_espacial], desc: ["O coração do primeiro foguete."],
+     tasks: [{item: ad_astra:engine_frame}, {item: ad_astra:steel_engine}], rewards: [{coins: 3}]}
+  - {slug: refinaria, title: "Refinaria de Combustível", deps: [bancada, side_gt_mv_ev/destilaria], desc: ["Petróleo vira combustível de foguete."],
+     tasks: [{item: ad_astra:fuel_refinery}], rewards: [{coins: 4}]}
+  - {slug: traje, title: "Traje Espacial", deps: [bancada], desc: ["No vácuo, o corpo é só uma ideia."],
+     tasks: [{item: ad_astra:space_suit}, {item: ad_astra:oxygen_gear}], rewards: [{coins: 4}]}
+  - {slug: oxigenio, title: "Carregador de Oxigênio", deps: [traje], desc: ["Encha o traje antes de sair."],
+     tasks: [{item: ad_astra:oxygen_loader}], rewards: [{coins: 3}]}
+  - {slug: plataforma, title: "Plataforma de Lançamento", deps: [bancada], desc: ["Onde o foguete espera."],
+     tasks: [{item: ad_astra:launch_pad}], rewards: [{coins: 2}]}
+  - {slug: foguete1, title: "Foguete T1", deps: [pecas, motor, refinaria, plataforma], shape: gear, icon: ad_astra:tier_1_rocket,
+     desc: ["Os foguetes de Aurend voltaram. Os pilotos, não."], tasks: [{item: ad_astra:tier_1_rocket}], rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: orbita, title: "Órbita", deps: [foguete1, oxigenio], desc: ["Daqui, o mundo parece pequeno o bastante para esquecer."],
+     tasks: [{dimension: ad_astra:earth_orbit}], rewards: [{coins: 4}]}
+  - {slug: lua, title: "A Lua", deps: [foguete1, oxigenio], shape: gear, icon: ad_astra:moon_stone,
+     desc: ["A Lua não é morta. Está prendendo a respiração."], tasks: [{dimension: ad_astra:moon}], rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: queijo, title: "Queijo da Lua", deps: [lua], desc: ["Sim, é queijo. Não pergunte."],
+     tasks: [{item: ad_astra:cheese, count: 8}], rewards: [{coins: 2}]}
+  - {slug: desh, title: "Desh", deps: [lua], desc: ["O metal da Lua."],
+     tasks: [{item: ad_astra:desh_ingot, count: 16}], rewards: [{coins: 4}]}
+  - {slug: foguete2, title: "Foguete T2", deps: [desh], desc: ["Blocos e tanque de desh, motor de desh."],
+     tasks: [{item: ad_astra:desh_engine}, {item: ad_astra:tier_2_rocket}], rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: marte, title: "Marte", deps: [foguete2], shape: gear, icon: ad_astra:mars_stone,
+     desc: ["Sinos de cobre enterrados na poeira vermelha.", "São nossos."], tasks: [{dimension: ad_astra:mars}],
+     rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: ostrum, title: "Ostrum", deps: [marte], desc: ["O metal de Marte."],
+     tasks: [{item: ad_astra:ostrum_ingot, count: 16}], rewards: [{coins: 4}]}
+  - {slug: foguete3, title: "Foguete T3", deps: [ostrum], desc: ["Motor de ostrum, para mais longe."],
+     tasks: [{item: ad_astra:ostrum_engine}, {item: ad_astra:tier_3_rocket}], rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: traje_netherite, title: "Traje de Netherita", deps: [foguete3], desc: ["Vênus derrete o traje comum."],
+     tasks: [{item: ad_astra:netherite_space_suit}], rewards: [{coins: 5}]}
+  - {slug: venus, title: "Vênus", deps: [traje_netherite], desc: ["Chuva de ácido, céu de fogo."],
+     tasks: [{dimension: ad_astra:venus}], rewards: [{coins: 6}]}
+  - {slug: mercurio, title: "Mercúrio", deps: [foguete3], desc: ["Perto demais do sol."],
+     tasks: [{dimension: ad_astra:mercury}], rewards: [{coins: 6}]}
+  - {slug: calorita, title: "Calorita", deps: [venus], desc: ["O metal que guarda o calor de Vênus."],
+     tasks: [{item: ad_astra:calorite_ingot, count: 16}], rewards: [{coins: 4}]}
+  - {slug: foguete4, title: "Foguete T4", deps: [calorita], desc: ["O último foguete. O mais longe que Aurend chegou."],
+     tasks: [{item: ad_astra:calorite_engine}, {item: ad_astra:tier_4_rocket}], rewards: [{crate: epica}, {coins: 8}]}
+  - {slug: glacio, title: "Glacio", deps: [foguete4], shape: gear, icon: ad_astra:glacio_stone,
+     desc: ["Um planeta em outra estrela.", "O som dos sinos é mais alto aqui."], tasks: [{dimension: ad_astra:glacio}],
+     rewards: [{crate: epica}, {coins: 10}]}
+  - {slug: gravidade, title: "Normalizador de Gravidade", deps: [marte], desc: ["Faça o chão puxar como em casa."],
+     tasks: [{item: ad_astra:gravity_normalizer}], rewards: [{coins: 4}]}
+  - {slug: distribuidor, title: "Distribuidor de Oxigênio", deps: [lua], desc: ["Uma base onde se respira sem capacete."],
+     tasks: [{item: ad_astra:oxygen_distributor}], rewards: [{coins: 4}]}
