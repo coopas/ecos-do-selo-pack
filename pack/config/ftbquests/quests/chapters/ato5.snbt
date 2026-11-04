@@ -1,0 +1,1310 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ato5"
+	group: "5395DF7F49D69073"
+	icon: "projecte:philosophers_stone"
+	id: "16277CC31A41FB0F"
+	images: [ ]
+	order_index: 13
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"40B3D210377E8831"
+			]
+			description: [
+				"A última confissão de Ilse Varrow."
+				"Leia antes de continuar."
+			]
+			icon: "minecraft:written_book"
+			id: "510678CE973F7EEE"
+			rewards: [
+				{
+					count: 1
+					id: "6CEC196945CCD1A5"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Fui eu.\\nQuando o Selo começou a falhar, os conselheiros fugiram para as torres.\\nEu abri o códice proibido e transmutei Aurend para alimentá-lo.\\nCada casa, cada rua, cada nome. Funcionou por cem anos.\"}"
+							]
+							title: "Diário — Página 27"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "44A72F6C6F20BE94"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "058BCA2DD06C0F6E"
+					type: "checkmark"
+				}
+			]
+			title: "Fui Eu"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+			]
+			description: [
+				"Metais nobres para a ultimíssima voltagem."
+			]
+			id: "7F2E52E7C032ECE7"
+			rewards: [
+				{
+					count: 5
+					id: "7C712AC08AA2C776"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "5FDF54D8F148CD6F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/platinum)"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0E80FF9D4E07A0CD"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/palladium)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Platina e Paládio"
+			x: 1.5d
+			y: -8.25d
+		}
+		{
+			dependencies: [
+				"7F2E52E7C032ECE7"
+			]
+			description: [
+				"Os metais mais densos que a terra guarda."
+			]
+			id: "11B10EA9A673A0FE"
+			rewards: [
+				{
+					count: 6
+					id: "6552FEF37E623049"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "65C140E77721F01A"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/iridium)"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "77878EA70F35E3AB"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/osmium)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Irídio e Ósmio"
+			x: 3.0d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"11B10EA9A673A0FE"
+			]
+			description: [
+				"A liga dos cascos ZPM."
+			]
+			id: "5EACB867BEBBD634"
+			rewards: [
+				{
+					count: 6
+					id: "7A2E67A7F2EA1167"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "39FF7B6AA4E7671F"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/osmiridium)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Ósmirídio"
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+			]
+			description: [
+				"Um metal que não deveria existir neste mundo."
+				"Aurend o trouxe das estrelas."
+			]
+			icon: "gtceu:naquadah_ingot"
+			id: "4CD1F28B5FA8AD23"
+			rewards: [
+				{
+					count: 1
+					id: "6A9997700AB4D02D"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "72C451A9B9C4202F"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 16L
+					id: "131745BA2BE3126C"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/naquadah)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Naquadah"
+			x: 1.5d
+			y: -6.75d
+		}
+		{
+			dependencies: [
+				"4CD1F28B5FA8AD23"
+			]
+			description: [
+				"Para bobinas que derretem tungstênio."
+			]
+			id: "708B799A406F9163"
+			rewards: [
+				{
+					count: 6
+					id: "28CB5AAFF793A35A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "735CE7C92BB7E956"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/naquadah_alloy)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Liga de Naquadah"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"708B799A406F9163"
+			]
+			description: [
+				"O alto-forno mais quente de todos."
+			]
+			id: "24A8CF6845FE0120"
+			rewards: [
+				{
+					count: 6
+					id: "07D9FD1D2C1F8AA5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "57FC5596F496ECA7"
+					item: {
+						Count: 1b
+						id: "gtceu:naquadah_coil_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Bobinas de Naquadah"
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+			]
+			description: [
+				"Luz quase sólida."
+			]
+			id: "2781A8FE911CB16E"
+			rewards: [
+				{
+					count: 6
+					id: "3D868EF162AB5583"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "207DF61484958CC1"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_emitter"
+					}
+					type: "item"
+				}
+			]
+			title: "Emissor LuV"
+			x: 1.5d
+			y: -5.25d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+			]
+			description: [
+				"Monta o que você não consegue ver."
+			]
+			id: "5D36CF61BA5CEDB6"
+			rewards: [
+				{
+					count: 6
+					id: "53611B1EA42FB4ED"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "2372E10A6181DB2F"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_robot_arm"
+					}
+					type: "item"
+				}
+			]
+			title: "Braço Robótico LuV"
+			x: 1.5d
+			y: -3.75d
+		}
+		{
+			dependencies: [
+				"2781A8FE911CB16E"
+				"5D36CF61BA5CEDB6"
+			]
+			description: [
+				"Circuitos de cristal."
+			]
+			id: "5254D1171441BFC0"
+			rewards: [
+				{
+					count: 6
+					id: "00BA14A75C6ACBA4"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7B4038D752FCA383"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_circuit_assembler"
+					}
+					type: "item"
+				}
+			]
+			title: "Montadora de Circuitos LuV"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"5254D1171441BFC0"
+			]
+			description: [
+				"Um pensamento preso em cristal, como o eco preso no fragmento."
+			]
+			icon: "gtceu:crystal_processor"
+			id: "311B4677495DEB8D"
+			rewards: [
+				{
+					count: 1
+					id: "4DAD307EFE9D533C"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "77671C8183D0C724"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 4L
+					id: "237E7A0FEEB88DA6"
+					item: {
+						Count: 1b
+						id: "gtceu:crystal_processor"
+					}
+					type: "item"
+				}
+			]
+			title: "Processador de Cristal"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"311B4677495DEB8D"
+			]
+			description: [
+				"Guarde energia de um continente."
+			]
+			id: "5CCC3C4D0B0A3585"
+			rewards: [
+				{
+					count: 6
+					id: "493EF91C86CDAFF6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "47F6A32A7E164105"
+					item: {
+						Count: 1b
+						id: "gtceu:energy_module"
+					}
+					type: "item"
+				}
+			]
+			title: "Módulo de Energia"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"311B4677495DEB8D"
+				"24A8CF6845FE0120"
+			]
+			description: [
+				"Uma estrela dentro de uma caixa."
+				"Aurend fazia isso para não ouvir o céu."
+			]
+			icon: "gtceu:luv_fusion_reactor"
+			id: "32753FABD87AB783"
+			rewards: [
+				{
+					count: 1
+					id: "479B8966EECD9E8B"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "3439700AA60E7C24"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "74688A5EA2DC440D"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_fusion_reactor"
+					}
+					type: "item"
+				}
+			]
+			title: "Reator de Fusão"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5EACB867BEBBD634"
+				"32753FABD87AB783"
+			]
+			description: [
+				"Zero Point Module. O fim da escada."
+			]
+			id: "13EB4FC30E41451C"
+			rewards: [
+				{
+					count: 8
+					id: "6FC0A0ECD19EA621"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "56C117E7A0B175A1"
+					item: {
+						Count: 1b
+						id: "gtceu:zpm_machine_hull"
+					}
+					type: "item"
+				}
+			]
+			title: "Casco ZPM"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"13EB4FC30E41451C"
+			]
+			description: [
+				"Feito na linha de montagem, com fusão."
+			]
+			id: "1F3DE6F80277F5B9"
+			rewards: [
+				{
+					count: 8
+					id: "024D162BE894CA07"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "160C39BA10BF8DDE"
+					item: {
+						Count: 1b
+						id: "gtceu:zpm_electric_motor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor ZPM"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1F3DE6F80277F5B9"
+			]
+			description: [
+				"Uma luz que atravessa o Selo."
+			]
+			id: "19674956243B3BC2"
+			rewards: [
+				{
+					count: 8
+					id: "34A4C3ADE7630AE5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "610FFA6F5754B298"
+					item: {
+						Count: 1b
+						id: "gtceu:zpm_emitter"
+					}
+					type: "item"
+				}
+			]
+			title: "Emissor ZPM"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"19674956243B3BC2"
+			]
+			description: [
+				"O campo mais forte que Aurend construiu."
+				"Ele vai segurar o Artefato inteiro."
+			]
+			icon: "gtceu:zpm_field_generator"
+			id: "1FA0F2DB04E1EFBC"
+			rewards: [
+				{
+					count: 1
+					id: "4F49C231379582F6"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 12
+					id: "0B3186F971BAB177"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "6439620E56027DB8"
+					item: {
+						Count: 1b
+						id: "gtceu:zpm_field_generator"
+					}
+					type: "item"
+				}
+			]
+			title: "Gerador de Campo ZPM"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"58A5FA59878BA1AF"
+				"1A6F45F683CB29FE"
+			]
+			description: [
+				"Um Fragmento das Estrelas, um gerador de campo LuV e diamantes."
+				"Ignaz sempre deixa outro fragmento."
+			]
+			id: "3DF0B297C20D106F"
+			rewards: [
+				{
+					count: 1
+					id: "192E7AE4CDB8E389"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"A Pedra Filosofal não cria nada. Ela troca.\\nPara fazê-la de novo, você vai precisar das estrelas e da sua melhor máquina.\\nUse-a, mas conte o que perdeu a cada troca.\\nEu parei de contar. Foi aí que eu acabei.\"}"
+							]
+							title: "Diário — Página 28"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "1C2DFF34FE3DE11C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "23E3EC6859B2BDE0"
+					type: "checkmark"
+				}
+			]
+			title: "As Estrelas e a Melhor Máquina"
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"3DF0B297C20D106F"
+			]
+			description: [
+				"Ela não cria nada. Ela troca."
+			]
+			icon: "projecte:philosophers_stone"
+			id: "276DC4514394B5DD"
+			rewards: [
+				{
+					count: 1
+					id: "453F4A46A8C13D2A"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "3BB0CAE7067A7097"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "2F6B154B5CF854E9"
+					item: {
+						Count: 1b
+						id: "projecte:philosophers_stone"
+					}
+					type: "item"
+				}
+			]
+			title: "A Pedra Filosofal"
+			x: 3.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"276DC4514394B5DD"
+				"6DB440EEB917AE4B"
+			]
+			description: [
+				"Ilse está dentro da máquina que girava o silêncio."
+				"E o Ouvinte está com ela."
+			]
+			icon: "minecraft:bell"
+			id: "16B09022606A2A68"
+			rewards: [
+				{
+					count: 1
+					id: "0FDC5762A80D9649"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Para segurar o Selo depois da Ruptura, eu entrei no Arauto.\\nA máquina que girava o silêncio agora gira comigo dentro.\\nO Ouvinte também está aqui. Ele é paciente.\\nEle me pede, todo dia, que eu solte o eixo.\"}"
+							]
+							title: "Diário — Página 29"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "283D203300518F59"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "2B2AE0A2841F0677"
+					type: "checkmark"
+				}
+			]
+			title: "Dentro do Arauto"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"4C75456FC2F31094"
+			]
+			description: [
+				"O Artefato pede os quatro fragmentos."
+				"Outras torres guardam outros Guardiões Pálidos."
+			]
+			id: "05845395E627C56E"
+			rewards: [
+				{
+					count: 6
+					id: "047526F312954C0A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3AFB2A11F660B2EF"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_floresta"
+					}
+					type: "item"
+				}
+			]
+			title: "A Floresta, de Novo"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"3BCA350B588D9B72"
+			]
+			description: [
+				"O Cego sempre volta quando o sculk grita."
+			]
+			id: "589BC7554396757F"
+			rewards: [
+				{
+					count: 6
+					id: "2F56962973CECD56"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2967EC1973180A15"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_profundezas"
+					}
+					type: "item"
+				}
+			]
+			title: "As Profundezas, de Novo"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"31D1A2A997A019CA"
+			]
+			description: [
+				"Outra masmorra de ouro, outra Solenne."
+			]
+			id: "3D2343886CC27AF3"
+			rewards: [
+				{
+					count: 6
+					id: "22A46119EC5A9C5D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "0E55C8192FF75FD6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_ceus"
+					}
+					type: "item"
+				}
+			]
+			title: "Os Céus, de Novo"
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"276DC4514394B5DD"
+			]
+			description: [
+				"A Pedra gastou um. Chame Ignaz outra vez."
+			]
+			id: "2DD9E04CC6482FE8"
+			rewards: [
+				{
+					count: 6
+					id: "040D2E8E1DDE029D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7E83E03354F927ED"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_estrelas"
+					}
+					type: "item"
+				}
+			]
+			title: "As Estrelas, de Novo"
+			x: 4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"40404AD0A95B4364"
+			]
+			description: [
+				"Mana condensada em pedra."
+			]
+			id: "5F22AF616BFCECEA"
+			rewards: [
+				{
+					count: 4
+					id: "4DA548931A4B1001"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "32CBD704A4A4F684"
+					item: {
+						Count: 1b
+						id: "ars_nouveau:source_gem_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Bloco de Fonte"
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"34E1E0F89E050F84"
+			]
+			description: [
+				"Para que os espíritos ouçam o Artefato."
+			]
+			id: "6EE9A0F06AF8A9FB"
+			rewards: [
+				{
+					count: 4
+					id: "3D4EE5E9B3296196"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3D0146C19B88C2AA"
+					item: {
+						Count: 1b
+						id: "occultism:spirit_attuned_gem"
+					}
+					type: "item"
+				}
+			]
+			title: "Gema dos Espíritos"
+			x: 1.5d
+			y: 5.25d
+		}
+		{
+			dependencies: [
+				"05845395E627C56E"
+				"589BC7554396757F"
+				"3D2343886CC27AF3"
+				"2DD9E04CC6482FE8"
+			]
+			description: [
+				"Os quatro juntos, nas suas mãos."
+				"O silêncio pesa nas quatro direções."
+			]
+			icon: "ecos:artefato_selo"
+			id: "4274E0686517CD6C"
+			rewards: [
+				{
+					count: 8
+					id: "6F01CB19CD2751C3"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "4CEFC5BE4FD69E48"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_floresta"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "011A3397E80E311A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_profundezas"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "7D42868C93CDDF1B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_ceus"
+					}
+					type: "item"
+				}
+				{
+					count: 1L
+					id: "48FD3E64E17DE615"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_selo_estrelas"
+					}
+					type: "item"
+				}
+			]
+			title: "Os Quatro Fragmentos"
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4274E0686517CD6C"
+				"276DC4514394B5DD"
+				"1FA0F2DB04E1EFBC"
+				"5F22AF616BFCECEA"
+				"6EE9A0F06AF8A9FB"
+			]
+			description: [
+				"Quatro fragmentos e a argamassa."
+				"Leve-o ao círculo de giz e chame o Arauto pelo nome."
+			]
+			icon: "ecos:artefato_selo"
+			id: "246302F51422A41D"
+			rewards: [
+				{
+					count: 1
+					id: "459828C62E3CA695"
+					item: {
+						Count: 1b
+						id: "minecraft:written_book"
+						tag: {
+							author: "Ilse Varrow"
+							generation: 0
+							pages: [
+								"{\"text\": \"Junte os quatro fragmentos e a argamassa no Artefato.\\nLeve-o ao círculo de giz e chame o Arauto pelo nome.\\nQuando ele cair, você vai poder escolher.\\nFeche a porta. Ou abra a sua.\"}"
+							]
+							title: "Diário — Página 30"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 1
+					id: "5F22DE59C723D283"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 20
+					id: "210363A77EF708BE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "73E048282A355176"
+					item: {
+						Count: 1b
+						id: "ecos:artefato_selo"
+					}
+					type: "item"
+				}
+			]
+			title: "O Artefato do Selo"
+			x: 13.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"63F1DEC986A71F87"
+			]
+			description: [
+				"Leve tudo o que construiu até o círculo."
+			]
+			id: "027815B30EBE94FC"
+			rewards: [
+				{
+					count: 5
+					id: "7FF91960295D961D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3666A126A6091AC7"
+					type: "checkmark"
+				}
+			]
+			title: "O Último Trem"
+			x: 1.5d
+			y: 6.75d
+		}
+		{
+			dependencies: [
+				"510678CE973F7EEE"
+				"4DCC07AD6E9AEA86"
+			]
+			description: [
+				"Guarde o que restar do mundo de Aurend."
+			]
+			id: "5B9A92A9409FC419"
+			rewards: [
+				{
+					count: 5
+					id: "254FD54084B33606"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "6630A1C7E92B8654"
+					type: "checkmark"
+				}
+			]
+			title: "A Última Rede"
+			x: 1.5d
+			y: 8.25d
+		}
+		{
+			dependencies: [
+				"246302F51422A41D"
+				"16B09022606A2A68"
+			]
+			description: [
+				"Feche a porta. Ou abra a sua."
+			]
+			icon: "ecos:artefato_selo"
+			id: "72CD6573F7C96467"
+			rewards: [
+				{
+					count: 1
+					id: "40E69BF99D059371"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 20
+					id: "0B42F0648A18A87A"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+				{
+					id: "29E8F8263D45CF05"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "455FCDB5A1077280"
+					type: "checkmark"
+				}
+			]
+			title: "A Porta"
+			x: 15.0d
+			y: 0.0d
+		}
+	]
+	title: "Ato V — A Heresia"
+}

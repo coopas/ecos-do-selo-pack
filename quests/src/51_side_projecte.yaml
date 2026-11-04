@@ -1,0 +1,45 @@
+chapter: side_projecte
+title: "Caminho — A Alquimia Proibida"
+icon: projecte:philosophers_stone
+group: caminhos
+act: 5
+quests:
+  - {slug: mesa, title: "Mesa de Transmutação", deps: [ato5/pedra], shape: gear, icon: projecte:transmutation_table,
+     desc: ["Aprenda um item e ele vira número.", "Ilse aprendeu Aurend inteira assim."], tasks: [{item: projecte:transmutation_table}],
+     rewards: [{coins: 5}]}
+  - {slug: covalencia, title: "Pós de Covalência", deps: [ato5/pedra], desc: ["Reparam o que a alquimia gasta."],
+     tasks: [{item: projecte:low_covalence_dust, count: 16}, {item: projecte:medium_covalence_dust, count: 8}, {item: projecte:high_covalence_dust, count: 4}],
+     rewards: [{coins: 4}]}
+  - {slug: carvao, title: "Carvão Alquímico", deps: [ato5/pedra], desc: ["Combustível que nunca existiu na natureza."],
+     tasks: [{item: projecte:alchemical_coal, count: 16}, {item: projecte:mobius_fuel, count: 4}], rewards: [{coins: 4}]}
+  - {slug: aeternalis, title: "Combustível Aeternalis", deps: [carvao], desc: ["Queima por muito mais tempo do que deveria."],
+     tasks: [{item: projecte:aeternalis_fuel, count: 4}], rewards: [{coins: 5}]}
+  - {slug: coletor, title: "Coletor de Energia", deps: [mesa], desc: ["Luz vira EMC. Devagar."],
+     tasks: [{item: projecte:collector_mk1, count: 2}], rewards: [{coins: 4}]}
+  - {slug: rele, title: "Relé de Antimatéria", deps: [coletor], desc: ["Junte o que os coletores juntaram."],
+     tasks: [{item: projecte:relay_mk1}], rewards: [{coins: 4}]}
+  - {slug: klein, title: "Estrela de Klein", deps: [mesa], desc: ["Uma bateria de EMC."],
+     tasks: [{item: projecte:klein_star_ein}], rewards: [{coins: 4}]}
+  - {slug: condensador, title: "Condensador de Energia", deps: [rele, klein], desc: ["Copia o que você colocar dentro. A que preço?"],
+     tasks: [{item: projecte:condenser_mk1}], rewards: [{coins: 6}]}
+  - {slug: bau_alquimico, title: "Baú Alquímico", deps: [covalencia], desc: ["Um baú que não pertence a este mundo."],
+     tasks: [{item: projecte:alchemical_chest}], rewards: [{coins: 3}]}
+  - {slug: bolsa, title: "Bolsa Alquímica", deps: [bau_alquimico], desc: ["O baú no bolso. Qualquer cor."],
+     tasks: [{tag: projecte:alchemical_bags}], rewards: [{coins: 4}]}
+  - {slug: materia_escura, title: "Matéria Escura", deps: [aeternalis, condensador], shape: gear, icon: projecte:dark_matter,
+     desc: ["O que sobra quando a luz desiste."], tasks: [{item: projecte:dark_matter, count: 8}], rewards: [{crate: epica}, {coins: 8}]}
+  - {slug: picareta_escura, title: "Picareta de Matéria Escura", deps: [materia_escura], desc: ["Quebra tudo. Quase tudo."],
+     tasks: [{item: projecte:dm_pick}], rewards: [{coins: 5}]}
+  - {slug: coletor2, title: "Coletor MK2", deps: [materia_escura, coletor], desc: ["Mais luz, mais EMC."],
+     tasks: [{item: projecte:collector_mk2}], rewards: [{coins: 5}]}
+  - {slug: materia_vermelha, title: "Matéria Vermelha", deps: [materia_escura, coletor2], shape: gear, icon: projecte:red_matter,
+     desc: ["Ainda mais densa. Ainda mais errada."], tasks: [{item: projecte:red_matter, count: 4}], rewards: [{crate: epica}, {coins: 10}]}
+  - {slug: anel_vazio, title: "Anel do Vazio", deps: [materia_vermelha], desc: ["Guarda e teleporta, no mesmo dedo."],
+     tasks: [{item: projecte:void_ring}], rewards: [{coins: 6}]}
+  - {slug: relogio, title: "Relógio do Tempo Fluente", deps: [materia_escura], desc: ["Acelera o mundo ao redor."],
+     tasks: [{item: projecte:watch_of_flowing_time}], rewards: [{coins: 6}]}
+  - {slug: tablete, title: "Tablete de Transmutação", deps: [materia_escura], desc: ["A mesa, no bolso."],
+     tasks: [{item: projecte:transmutation_tablet}], rewards: [{coins: 5}]}
+  - {slug: o_preco, title: "O Preço", deps: [materia_vermelha, anel_vazio, relogio], shape: gear, icon: projecte:red_matter,
+     desc: ["Conte o que perdeu a cada troca.", "Ilse parou de contar."], tasks: [{checkmark: true}],
+     rewards: [{crate: lendaria}, {coins: 10}]}

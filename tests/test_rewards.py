@@ -100,3 +100,12 @@ def test_reward_tables_loaded_ingame():
     assert set(d["tables"]) == set(ORDER)
     for slug, t in d["tables"].items():
         assert t["rewards"] == len(TABLES[slug]["entries"]) and t["crate"] == slug
+
+
+def test_shop_tier_unlocks_with_its_act():
+    """Item de tier N > 0 só aparece depois que o jogador começa o Ato N."""
+    raw = yaml.safe_load((ROOT / "quests/src/90_loja.yaml").read_text(encoding="utf-8"))
+    for q in raw["quests"]:
+        tier = q.get("tier", 0)
+        if tier > 0:
+            assert f"ato{tier}/inicio" in q["deps"], q["slug"]

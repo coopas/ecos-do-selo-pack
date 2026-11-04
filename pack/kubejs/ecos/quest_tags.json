@@ -11,7 +11,14 @@
   "forge:ingots/copper",
   "forge:ingots/gold",
   "forge:ingots/hssg",
+  "forge:ingots/iridium",
   "forge:ingots/iron",
+  "forge:ingots/naquadah",
+  "forge:ingots/naquadah_alloy",
+  "forge:ingots/osmiridium",
+  "forge:ingots/osmium",
+  "forge:ingots/palladium",
+  "forge:ingots/platinum",
   "forge:ingots/red_alloy",
   "forge:ingots/rhodium_plated_palladium",
   "forge:ingots/silicon",
@@ -34,6 +41,7 @@
   "minecraft:logs",
   "minecraft:planks",
   "minecraft:saplings",
-  "minecraft:small_flowers"
+  "minecraft:small_flowers",
+  "projecte:alchemical_bags"
  ]
 }

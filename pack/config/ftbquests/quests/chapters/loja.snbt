@@ -6,7 +6,7 @@
 	icon: "ecos:fragmento_eco"
 	id: "641A76BC47428E9B"
 	images: [ ]
-	order_index: 13
+	order_index: 15
 	quest_links: [ ]
 	quests: [
 		{
@@ -147,6 +147,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"5DAFCE8F2DC010F7"
 			]
 			description: [
 				"Lembranças que não são suas."
@@ -183,6 +184,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"5DAFCE8F2DC010F7"
 			]
 			description: [
 				"Pedras que já foram engrenagens."
@@ -219,6 +221,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"5DAFCE8F2DC010F7"
 			]
 			description: [
 				"O que tem dentro? A banca não diz."
@@ -258,6 +261,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"5B2472E6D301448E"
 			]
 			description: [
 				"Mana cristalizado, ainda morno."
@@ -294,6 +298,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"5B2472E6D301448E"
 			]
 			description: [
 				"Elas ainda lembram para onde ir."
@@ -330,6 +335,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"56E08ACA02ABFC45"
 			]
 			description: [
 				"Alguém morreu para que você não morra."
@@ -366,6 +372,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"56E08ACA02ABFC45"
 			]
 			description: [
 				"Do fundo das forjas de Ignaz."
@@ -402,6 +409,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"56E08ACA02ABFC45"
 			]
 			description: [
 				"Pesada. Algo se mexe lá dentro."
@@ -441,6 +449,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"381B0CB7049598AF"
 			]
 			description: [
 				"Brilha sem fazer barulho."
@@ -477,6 +486,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"510678CE973F7EEE"
 			]
 			description: [
 				"O metal que nem a Ruptura derreteu."
@@ -513,6 +523,7 @@
 			can_repeat: true
 			dependencies: [
 				"3451E5FF5CC72396"
+				"510678CE973F7EEE"
 			]
 			description: [
 				"A banca hesita antes de entregar."

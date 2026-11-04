@@ -1,0 +1,703 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "side_projecte"
+	group: "30D1DA93FF981B37"
+	icon: "projecte:philosophers_stone"
+	id: "5575458632A4C744"
+	images: [ ]
+	order_index: 14
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"276DC4514394B5DD"
+			]
+			description: [
+				"Aprenda um item e ele vira número."
+				"Ilse aprendeu Aurend inteira assim."
+			]
+			icon: "projecte:transmutation_table"
+			id: "6DB440EEB917AE4B"
+			rewards: [
+				{
+					count: 5
+					id: "1159E3A80286F76D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "60AC11DB8AFF5012"
+					item: {
+						Count: 1b
+						id: "projecte:transmutation_table"
+					}
+					type: "item"
+				}
+			]
+			title: "Mesa de Transmutação"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"276DC4514394B5DD"
+			]
+			description: [
+				"Reparam o que a alquimia gasta."
+			]
+			id: "5D59D14578F8D0D6"
+			rewards: [
+				{
+					count: 4
+					id: "77FB6FDC95DCF0F6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "7EA5A6735831BFE3"
+					item: {
+						Count: 1b
+						id: "projecte:low_covalence_dust"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "12EEDCE2B1F8922A"
+					item: {
+						Count: 1b
+						id: "projecte:medium_covalence_dust"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "643D3D1791DF4FDF"
+					item: {
+						Count: 1b
+						id: "projecte:high_covalence_dust"
+					}
+					type: "item"
+				}
+			]
+			title: "Pós de Covalência"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"276DC4514394B5DD"
+			]
+			description: [
+				"Combustível que nunca existiu na natureza."
+			]
+			id: "39E1F7916C93D660"
+			rewards: [
+				{
+					count: 4
+					id: "1774B8E9D332B29D"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "70FAA3ECAAE83B9E"
+					item: {
+						Count: 1b
+						id: "projecte:alchemical_coal"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "502039B080F4642C"
+					item: {
+						Count: 1b
+						id: "projecte:mobius_fuel"
+					}
+					type: "item"
+				}
+			]
+			title: "Carvão Alquímico"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"39E1F7916C93D660"
+			]
+			description: [
+				"Queima por muito mais tempo do que deveria."
+			]
+			id: "5E0C5328D66CB0B4"
+			rewards: [
+				{
+					count: 5
+					id: "3815F22F6BC6560B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6870CF4FC237314D"
+					item: {
+						Count: 1b
+						id: "projecte:aeternalis_fuel"
+					}
+					type: "item"
+				}
+			]
+			title: "Combustível Aeternalis"
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"6DB440EEB917AE4B"
+			]
+			description: [
+				"Luz vira EMC. Devagar."
+			]
+			id: "0A85D91E17A901CD"
+			rewards: [
+				{
+					count: 4
+					id: "560FCF9BD4151B11"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "1D4195E750845587"
+					item: {
+						Count: 1b
+						id: "projecte:collector_mk1"
+					}
+					type: "item"
+				}
+			]
+			title: "Coletor de Energia"
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"0A85D91E17A901CD"
+			]
+			description: [
+				"Junte o que os coletores juntaram."
+			]
+			id: "36B5B81406C932FF"
+			rewards: [
+				{
+					count: 4
+					id: "029DEDD02721183C"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "501C33508BEA81FA"
+					item: {
+						Count: 1b
+						id: "projecte:relay_mk1"
+					}
+					type: "item"
+				}
+			]
+			title: "Relé de Antimatéria"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"6DB440EEB917AE4B"
+			]
+			description: [
+				"Uma bateria de EMC."
+			]
+			id: "498F936C53531A8D"
+			rewards: [
+				{
+					count: 4
+					id: "73BBAC615B632D36"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7C32C2553DFC7BF0"
+					item: {
+						Count: 1b
+						id: "projecte:klein_star_ein"
+					}
+					type: "item"
+				}
+			]
+			title: "Estrela de Klein"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"36B5B81406C932FF"
+				"498F936C53531A8D"
+			]
+			description: [
+				"Copia o que você colocar dentro. A que preço?"
+			]
+			id: "7853F29590AB6401"
+			rewards: [
+				{
+					count: 6
+					id: "412274EEE9843AF5"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "38753B1A7EDEC585"
+					item: {
+						Count: 1b
+						id: "projecte:condenser_mk1"
+					}
+					type: "item"
+				}
+			]
+			title: "Condensador de Energia"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5D59D14578F8D0D6"
+			]
+			description: [
+				"Um baú que não pertence a este mundo."
+			]
+			id: "70A9E60D3230AE4C"
+			rewards: [
+				{
+					count: 3
+					id: "532D19B900DFA825"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "44777EC30152B645"
+					item: {
+						Count: 1b
+						id: "projecte:alchemical_chest"
+					}
+					type: "item"
+				}
+			]
+			title: "Baú Alquímico"
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"70A9E60D3230AE4C"
+			]
+			description: [
+				"O baú no bolso. Qualquer cor."
+			]
+			id: "3175552E9E9A600B"
+			rewards: [
+				{
+					count: 4
+					id: "32BEBB780FBF7423"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "5CE850B42D4803D4"
+					item: {
+						Count: 1b
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(projecte:alchemical_bags)"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bolsa Alquímica"
+			x: 3.0d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"5E0C5328D66CB0B4"
+				"7853F29590AB6401"
+			]
+			description: [
+				"O que sobra quando a luz desiste."
+			]
+			icon: "projecte:dark_matter"
+			id: "5119B138BB31253A"
+			rewards: [
+				{
+					count: 1
+					id: "71528413518B3005"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4CBB02E6B84645D7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 8L
+					id: "56BE90E710F85C3F"
+					item: {
+						Count: 1b
+						id: "projecte:dark_matter"
+					}
+					type: "item"
+				}
+			]
+			title: "Matéria Escura"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5119B138BB31253A"
+			]
+			description: [
+				"Quebra tudo. Quase tudo."
+			]
+			id: "1F71515C93A86724"
+			rewards: [
+				{
+					count: 5
+					id: "574AA4044D30A7A7"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "55E0691803791A7F"
+					item: {
+						Count: 1b
+						id: "projecte:dm_pick"
+					}
+					type: "item"
+				}
+			]
+			title: "Picareta de Matéria Escura"
+			x: 7.5d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"5119B138BB31253A"
+				"0A85D91E17A901CD"
+			]
+			description: [
+				"Mais luz, mais EMC."
+			]
+			id: "746873B2DC7325CF"
+			rewards: [
+				{
+					count: 5
+					id: "5FEDB8519CCB47E1"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "00AE3794329170F0"
+					item: {
+						Count: 1b
+						id: "projecte:collector_mk2"
+					}
+					type: "item"
+				}
+			]
+			title: "Coletor MK2"
+			x: 7.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"5119B138BB31253A"
+				"746873B2DC7325CF"
+			]
+			description: [
+				"Ainda mais densa. Ainda mais errada."
+			]
+			icon: "projecte:red_matter"
+			id: "5E6ABC0DC016A8D1"
+			rewards: [
+				{
+					count: 1
+					id: "349C7B99B4D2E667"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "epica"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "014255CBCAB39122"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 4L
+					id: "017C537E51174A86"
+					item: {
+						Count: 1b
+						id: "projecte:red_matter"
+					}
+					type: "item"
+				}
+			]
+			title: "Matéria Vermelha"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5E6ABC0DC016A8D1"
+			]
+			description: [
+				"Guarda e teleporta, no mesmo dedo."
+			]
+			id: "66B3DB267E713BCF"
+			rewards: [
+				{
+					count: 6
+					id: "23E6490E7585F1E6"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1CE9C87757078B1B"
+					item: {
+						Count: 1b
+						id: "projecte:void_ring"
+					}
+					type: "item"
+				}
+			]
+			title: "Anel do Vazio"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5119B138BB31253A"
+			]
+			description: [
+				"Acelera o mundo ao redor."
+			]
+			id: "19D97C1DA56E590F"
+			rewards: [
+				{
+					count: 6
+					id: "014F1E133282BB1B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "2C418801E276AE33"
+					item: {
+						Count: 1b
+						id: "projecte:watch_of_flowing_time"
+					}
+					type: "item"
+				}
+			]
+			title: "Relógio do Tempo Fluente"
+			x: 7.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"5119B138BB31253A"
+			]
+			description: [
+				"A mesa, no bolso."
+			]
+			id: "2405EBC065BBC996"
+			rewards: [
+				{
+					count: 5
+					id: "40A5A34875B4AD54"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "3CF5EDE6AA36E0F0"
+					item: {
+						Count: 1b
+						id: "projecte:transmutation_tablet"
+					}
+					type: "item"
+				}
+			]
+			title: "Tablete de Transmutação"
+			x: 7.5d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"5E6ABC0DC016A8D1"
+				"66B3DB267E713BCF"
+				"19D97C1DA56E590F"
+			]
+			description: [
+				"Conte o que perdeu a cada troca."
+				"Ilse parou de contar."
+			]
+			icon: "projecte:red_matter"
+			id: "6C2169C0CF332643"
+			rewards: [
+				{
+					count: 1
+					id: "33A36C82B864F408"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 10
+					id: "53355C3D80DB03B2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "408A43FA30412A2F"
+					type: "checkmark"
+				}
+			]
+			title: "O Preço"
+			x: 12.0d
+			y: 0.0d
+		}
+	]
+	title: "Caminho — A Alquimia Proibida"
+}

@@ -1,0 +1,79 @@
+chapter: ato5
+title: "Ato V — A Heresia"
+icon: projecte:philosophers_stone
+group: atos
+act: 5
+quests:
+  - {slug: inicio, title: "Fui Eu", deps: [ato4/fim_ato4], shape: gear, icon: minecraft:written_book,
+     desc: ["A última confissão de Ilse Varrow.", "Leia antes de continuar."], tasks: [{checkmark: true}],
+     rewards: [{page: 27}, {coins: 5}]}
+  - {slug: platina, title: "Platina e Paládio", deps: [inicio], desc: ["Metais nobres para a ultimíssima voltagem."],
+     tasks: [{tag: forge:ingots/platinum, count: 16}, {tag: forge:ingots/palladium, count: 16}], rewards: [{coins: 5}]}
+  - {slug: iridio, title: "Irídio e Ósmio", deps: [platina], desc: ["Os metais mais densos que a terra guarda."],
+     tasks: [{tag: forge:ingots/iridium, count: 16}, {tag: forge:ingots/osmium, count: 16}], rewards: [{coins: 6}]}
+  - {slug: osmiridio, title: "Ósmirídio", deps: [iridio], desc: ["A liga dos cascos ZPM."],
+     tasks: [{tag: forge:ingots/osmiridium, count: 16}], rewards: [{coins: 6}]}
+  - {slug: naquadah, title: "Naquadah", deps: [inicio], shape: gear, icon: gtceu:naquadah_ingot,
+     desc: ["Um metal que não deveria existir neste mundo.", "Aurend o trouxe das estrelas."], tasks: [{tag: forge:ingots/naquadah, count: 16}],
+     rewards: [{crate: epica}, {coins: 8}]}
+  - {slug: liga_naquadah, title: "Liga de Naquadah", deps: [naquadah], desc: ["Para bobinas que derretem tungstênio."],
+     tasks: [{tag: forge:ingots/naquadah_alloy, count: 16}], rewards: [{coins: 6}]}
+  - {slug: bobina_naquadah, title: "Bobinas de Naquadah", deps: [liga_naquadah], desc: ["O alto-forno mais quente de todos."],
+     tasks: [{item: gtceu:naquadah_coil_block, count: 16}], rewards: [{coins: 6}]}
+  - {slug: emissor_luv, title: "Emissor LuV", deps: [inicio], desc: ["Luz quase sólida."],
+     tasks: [{item: gtceu:luv_emitter, count: 2}], rewards: [{coins: 6}]}
+  - {slug: braco_luv, title: "Braço Robótico LuV", deps: [inicio], desc: ["Monta o que você não consegue ver."],
+     tasks: [{item: gtceu:luv_robot_arm, count: 2}], rewards: [{coins: 6}]}
+  - {slug: montadora_luv, title: "Montadora de Circuitos LuV", deps: [emissor_luv, braco_luv], desc: ["Circuitos de cristal."],
+     tasks: [{item: gtceu:luv_circuit_assembler}], rewards: [{coins: 6}]}
+  - {slug: cristal, title: "Processador de Cristal", deps: [montadora_luv], shape: gear, icon: gtceu:crystal_processor,
+     desc: ["Um pensamento preso em cristal, como o eco preso no fragmento."], tasks: [{item: gtceu:crystal_processor, count: 4}],
+     rewards: [{crate: epica}, {coins: 8}]}
+  - {slug: modulo_energia, title: "Módulo de Energia", deps: [cristal], desc: ["Guarde energia de um continente."],
+     tasks: [{item: gtceu:energy_module}], rewards: [{coins: 6}]}
+  - {slug: fusao, title: "Reator de Fusão", deps: [cristal, bobina_naquadah], shape: gear, icon: gtceu:luv_fusion_reactor,
+     desc: ["Uma estrela dentro de uma caixa.", "Aurend fazia isso para não ouvir o céu."], tasks: [{item: gtceu:luv_fusion_reactor}],
+     rewards: [{crate: lendaria}, {coins: 12}]}
+  - {slug: casco_zpm, title: "Casco ZPM", deps: [osmiridio, fusao], desc: ["Zero Point Module. O fim da escada."],
+     tasks: [{item: gtceu:zpm_machine_hull, count: 2}], rewards: [{coins: 8}]}
+  - {slug: motor_zpm, title: "Motor ZPM", deps: [casco_zpm], desc: ["Feito na linha de montagem, com fusão."],
+     tasks: [{item: gtceu:zpm_electric_motor, count: 4}], rewards: [{coins: 8}]}
+  - {slug: emissor_zpm, title: "Emissor ZPM", deps: [motor_zpm], desc: ["Uma luz que atravessa o Selo."],
+     tasks: [{item: gtceu:zpm_emitter, count: 2}], rewards: [{coins: 8}]}
+  - {slug: campo_zpm, title: "Gerador de Campo ZPM", deps: [emissor_zpm], shape: gear, icon: gtceu:zpm_field_generator,
+     desc: ["O campo mais forte que Aurend construiu.", "Ele vai segurar o Artefato inteiro."], tasks: [{item: gtceu:zpm_field_generator}],
+     rewards: [{crate: lendaria}, {coins: 12}]}
+  - {slug: receita_pedra, title: "As Estrelas e a Melhor Máquina", deps: [inicio, ato4/campo_luv, ato4/fragmento],
+     desc: ["Um Fragmento das Estrelas, um gerador de campo LuV e diamantes.", "Ignaz sempre deixa outro fragmento."], tasks: [{checkmark: true}],
+     rewards: [{page: 28}, {coins: 5}]}
+  - {slug: pedra, title: "A Pedra Filosofal", deps: [receita_pedra], shape: gear, icon: projecte:philosophers_stone,
+     desc: ["Ela não cria nada. Ela troca."], tasks: [{item: projecte:philosophers_stone}], rewards: [{crate: lendaria}, {coins: 10}]}
+  - {slug: o_arauto, title: "Dentro do Arauto", deps: [pedra, side_projecte/mesa], icon: minecraft:bell,
+     desc: ["Ilse está dentro da máquina que girava o silêncio.", "E o Ouvinte está com ela."], tasks: [{checkmark: true}],
+     rewards: [{page: 29}, {coins: 6}]}
+  - {slug: floresta_de_novo, title: "A Floresta, de Novo", deps: [inicio, ato1/fragmento],
+     desc: ["O Artefato pede os quatro fragmentos.", "Outras torres guardam outros Guardiões Pálidos."], tasks: [{item: ecos:fragmento_selo_floresta}],
+     rewards: [{coins: 6}]}
+  - {slug: profundezas_de_novo, title: "As Profundezas, de Novo", deps: [inicio, ato2/fragmento],
+     desc: ["O Cego sempre volta quando o sculk grita."], tasks: [{item: ecos:fragmento_selo_profundezas}], rewards: [{coins: 6}]}
+  - {slug: ceus_de_novo, title: "Os Céus, de Novo", deps: [inicio, ato3/fragmento],
+     desc: ["Outra masmorra de ouro, outra Solenne."], tasks: [{item: ecos:fragmento_selo_ceus}], rewards: [{coins: 6}]}
+  - {slug: estrelas_de_novo, title: "As Estrelas, de Novo", deps: [pedra],
+     desc: ["A Pedra gastou um. Chame Ignaz outra vez."], tasks: [{item: ecos:fragmento_selo_estrelas}], rewards: [{coins: 6}]}
+  - {slug: bloco_fonte, title: "Bloco de Fonte", deps: [inicio, side_ars/arquimago], desc: ["Mana condensada em pedra."],
+     tasks: [{item: ars_nouveau:source_gem_block, count: 2}], rewards: [{coins: 4}]}
+  - {slug: gema_espiritos, title: "Gema dos Espíritos", deps: [inicio, side_occultism/mestre_ocultista], desc: ["Para que os espíritos ouçam o Artefato."],
+     tasks: [{item: occultism:spirit_attuned_gem, count: 2}], rewards: [{coins: 4}]}
+  - {slug: quatro, title: "Os Quatro Fragmentos", deps: [floresta_de_novo, profundezas_de_novo, ceus_de_novo, estrelas_de_novo], shape: gear,
+     icon: ecos:artefato_selo, desc: ["Os quatro juntos, nas suas mãos.", "O silêncio pesa nas quatro direções."],
+     tasks: [{item: ecos:fragmento_selo_floresta}, {item: ecos:fragmento_selo_profundezas}, {item: ecos:fragmento_selo_ceus}, {item: ecos:fragmento_selo_estrelas}],
+     rewards: [{coins: 8}]}
+  - {slug: artefato, title: "O Artefato do Selo", deps: [quatro, pedra, campo_zpm, bloco_fonte, gema_espiritos], shape: gear, icon: ecos:artefato_selo,
+     desc: ["Quatro fragmentos e a argamassa.", "Leve-o ao círculo de giz e chame o Arauto pelo nome."], tasks: [{item: ecos:artefato_selo}],
+     rewards: [{page: 30}, {crate: lendaria}, {coins: 20}]}
+  - {slug: ultimo_trem, title: "O Último Trem", deps: [inicio, side_create/trilhos], desc: ["Leve tudo o que construiu até o círculo."],
+     tasks: [{checkmark: true}], rewards: [{coins: 5}]}
+  - {slug: ultima_rede, title: "A Última Rede", deps: [inicio, side_ae2/rede_viva], desc: ["Guarde o que restar do mundo de Aurend."],
+     tasks: [{checkmark: true}], rewards: [{coins: 5}]}
+  - {slug: fim_ato5, title: "A Porta", deps: [artefato, o_arauto], shape: gear, icon: ecos:artefato_selo,
+     desc: ["Feche a porta. Ou abra a sua."], tasks: [{checkmark: true}], rewards: [{crate: lendaria}, {coins: 20}, {xp_levels: 10}]}
