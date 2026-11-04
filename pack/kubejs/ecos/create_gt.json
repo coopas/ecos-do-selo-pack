@@ -1,0 +1,4847 @@
+{
+ "crushing": {
+  "almandine": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/almandine"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_almandine_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_almandine_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "aluminium": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/aluminium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_aluminium_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_aluminium_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "alunite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/alunite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_alunite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_alunite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "amethyst": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/amethyst"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_amethyst_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_amethyst_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "apatite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/apatite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_apatite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_apatite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "asbestos": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/asbestos"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_asbestos_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_asbestos_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "barite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/barite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_barite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_barite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "basaltic_mineral_sand": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/basaltic_mineral_sand"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_basaltic_mineral_sand_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_basaltic_mineral_sand_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "bastnasite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/bastnasite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_bastnasite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_bastnasite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "bauxite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/bauxite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_bauxite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_bauxite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "bentonite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/bentonite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_bentonite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_bentonite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "beryllium": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/beryllium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_beryllium_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_beryllium_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "blue_topaz": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/blue_topaz"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_blue_topaz_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_blue_topaz_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "bornite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/bornite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_bornite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_bornite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "calcite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/calcite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_calcite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_calcite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "cassiterite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/cassiterite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_cassiterite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_cassiterite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "cassiterite_sand": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/cassiterite_sand"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_cassiterite_sand_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_cassiterite_sand_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "certus_quartz": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/certus_quartz"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_certus_quartz_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_certus_quartz_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "chalcocite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/chalcocite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_chalcocite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_chalcocite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "chalcopyrite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/chalcopyrite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_chalcopyrite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_chalcopyrite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "chromite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/chromite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_chromite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_chromite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "cinnabar": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/cinnabar"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_cinnabar_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_cinnabar_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "coal": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/coal"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_coal_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_coal_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "cobalt": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/cobalt"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_cobalt_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_cobalt_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "cobaltite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/cobaltite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_cobaltite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_cobaltite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "cooperite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/cooperite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_cooperite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_cooperite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "diamond": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/diamond"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_diamond_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_diamond_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "diatomite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/diatomite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_diatomite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_diatomite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "electrotine": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/electrotine"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_electrotine_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_electrotine_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "emerald": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/emerald"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_emerald_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_emerald_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "fullers_earth": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/fullers_earth"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_fullers_earth_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_fullers_earth_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "galena": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/galena"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_galena_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_galena_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "garnet_sand": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/garnet_sand"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_garnet_sand_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_garnet_sand_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "garnierite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/garnierite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_garnierite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_garnierite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "glauconite_sand": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/glauconite_sand"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_glauconite_sand_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_glauconite_sand_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "goethite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/goethite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_goethite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_goethite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "granitic_mineral_sand": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/granitic_mineral_sand"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_granitic_mineral_sand_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_granitic_mineral_sand_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "graphite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/graphite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_graphite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_graphite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "green_sapphire": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/green_sapphire"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_green_sapphire_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_green_sapphire_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "grossular": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/grossular"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_grossular_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_grossular_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "gypsum": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/gypsum"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_gypsum_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_gypsum_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "hematite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/hematite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_hematite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_hematite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "ilmenite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/ilmenite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_ilmenite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_ilmenite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "kyanite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/kyanite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_kyanite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_kyanite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "lapis": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/lapis"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_lapis_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_lapis_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "lazurite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/lazurite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_lazurite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_lazurite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "lead": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/lead"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_lead_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_lead_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "lepidolite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/lepidolite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_lepidolite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_lepidolite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "lithium": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/lithium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_lithium_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_lithium_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "magnesite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/magnesite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_magnesite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_magnesite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "magnetite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/magnetite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_magnetite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_magnetite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "malachite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/malachite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_malachite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_malachite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "mica": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/mica"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_mica_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_mica_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "molybdenite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/molybdenite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_molybdenite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_molybdenite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "molybdenum": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/molybdenum"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_molybdenum_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_molybdenum_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "monazite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/monazite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_monazite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_monazite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "naquadah": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/naquadah"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_naquadah_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_naquadah_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "neodymium": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/neodymium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_neodymium_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_neodymium_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "nether_quartz": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/nether_quartz"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_nether_quartz_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_nether_quartz_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "nickel": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/nickel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_nickel_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_nickel_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "oilsands": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/oilsands"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_oilsands_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_oilsands_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "olivine": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/olivine"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_olivine_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_olivine_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "opal": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/opal"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_opal_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_opal_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "palladium": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/palladium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_palladium_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_palladium_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "pentlandite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/pentlandite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_pentlandite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_pentlandite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "pitchblende": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/pitchblende"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_pitchblende_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_pitchblende_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "platinum": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/platinum"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_platinum_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_platinum_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "plutonium": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/plutonium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_plutonium_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_plutonium_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "pollucite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/pollucite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_pollucite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_pollucite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "powellite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/powellite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_powellite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_powellite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "pyrite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/pyrite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_pyrite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_pyrite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "pyrochlore": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/pyrochlore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_pyrochlore_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_pyrochlore_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "pyrolusite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/pyrolusite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_pyrolusite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_pyrolusite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "pyrope": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/pyrope"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_pyrope_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_pyrope_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "quartzite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/quartzite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_quartzite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_quartzite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "realgar": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/realgar"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_realgar_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_realgar_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "red_garnet": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/red_garnet"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_red_garnet_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_red_garnet_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "redstone": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/redstone"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_redstone_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_redstone_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "rock_salt": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/rock_salt"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_rock_salt_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_rock_salt_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "ruby": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/ruby"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_ruby_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_ruby_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "salt": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/salt"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_salt_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_salt_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "saltpeter": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/saltpeter"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_saltpeter_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_saltpeter_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "sapphire": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/sapphire"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_sapphire_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_sapphire_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "scheelite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/scheelite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_scheelite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_scheelite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "silver": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/silver"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_silver_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_silver_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "soapstone": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/soapstone"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_soapstone_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_soapstone_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "sodalite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/sodalite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_sodalite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_sodalite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "spessartine": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/spessartine"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_spessartine_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_spessartine_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "sphalerite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/sphalerite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_sphalerite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_sphalerite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "spodumene": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/spodumene"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_spodumene_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_spodumene_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "stibnite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/stibnite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_stibnite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_stibnite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "sulfur": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/sulfur"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_sulfur_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_sulfur_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "talc": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/talc"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_talc_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_talc_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "tantalite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/tantalite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_tantalite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_tantalite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "tetrahedrite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/tetrahedrite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_tetrahedrite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_tetrahedrite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "thorium": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/thorium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_thorium_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_thorium_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "tin": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/tin"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_tin_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_tin_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "topaz": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/topaz"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_topaz_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_topaz_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "tricalcium_phosphate": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/tricalcium_phosphate"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_tricalcium_phosphate_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_tricalcium_phosphate_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "trona": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/trona"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_trona_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_trona_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "tungstate": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/tungstate"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_tungstate_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_tungstate_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "uraninite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/uraninite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_uraninite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_uraninite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "vanadium_magnetite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/vanadium_magnetite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_vanadium_magnetite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_vanadium_magnetite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "wulfenite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/wulfenite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_wulfenite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_wulfenite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "yellow_garnet": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/yellow_garnet"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_yellow_garnet_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_yellow_garnet_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "yellow_limonite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/yellow_limonite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_yellow_limonite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_yellow_limonite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  },
+  "zeolite": {
+   "ingredients": [
+    {
+     "tag": "forge:raw_materials/zeolite"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:crushed_zeolite_ore",
+     "count": 1
+    },
+    {
+     "item": "gtceu:crushed_zeolite_ore",
+     "chance": 0.3
+    }
+   ],
+   "processingTime": 200
+  }
+ },
+ "splashing": {
+  "almandine": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_almandine_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_almandine_ore",
+     "count": 1
+    }
+   ]
+  },
+  "aluminium": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_aluminium_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_aluminium_ore",
+     "count": 1
+    }
+   ]
+  },
+  "alunite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_alunite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_alunite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "amethyst": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_amethyst_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_amethyst_ore",
+     "count": 1
+    }
+   ]
+  },
+  "apatite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_apatite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_apatite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "asbestos": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_asbestos_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_asbestos_ore",
+     "count": 1
+    }
+   ]
+  },
+  "barite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_barite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_barite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "basaltic_mineral_sand": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_basaltic_mineral_sand_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_basaltic_mineral_sand_ore",
+     "count": 1
+    }
+   ]
+  },
+  "bastnasite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_bastnasite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_bastnasite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "bauxite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_bauxite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_bauxite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "bentonite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_bentonite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_bentonite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "beryllium": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_beryllium_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_beryllium_ore",
+     "count": 1
+    }
+   ]
+  },
+  "blue_topaz": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_blue_topaz_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_blue_topaz_ore",
+     "count": 1
+    }
+   ]
+  },
+  "bornite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_bornite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_bornite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "calcite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_calcite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_calcite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "cassiterite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_cassiterite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_cassiterite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "cassiterite_sand": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_cassiterite_sand_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_cassiterite_sand_ore",
+     "count": 1
+    }
+   ]
+  },
+  "certus_quartz": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_certus_quartz_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_certus_quartz_ore",
+     "count": 1
+    }
+   ]
+  },
+  "chalcocite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_chalcocite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_chalcocite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "chalcopyrite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_chalcopyrite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_chalcopyrite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "chromite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_chromite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_chromite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "cinnabar": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_cinnabar_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_cinnabar_ore",
+     "count": 1
+    }
+   ]
+  },
+  "coal": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_coal_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_coal_ore",
+     "count": 1
+    }
+   ]
+  },
+  "cobalt": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_cobalt_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_cobalt_ore",
+     "count": 1
+    }
+   ]
+  },
+  "cobaltite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_cobaltite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_cobaltite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "cooperite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_cooperite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_cooperite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "diamond": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_diamond_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_diamond_ore",
+     "count": 1
+    }
+   ]
+  },
+  "diatomite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_diatomite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_diatomite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "electrotine": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_electrotine_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_electrotine_ore",
+     "count": 1
+    }
+   ]
+  },
+  "emerald": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_emerald_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_emerald_ore",
+     "count": 1
+    }
+   ]
+  },
+  "fullers_earth": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_fullers_earth_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_fullers_earth_ore",
+     "count": 1
+    }
+   ]
+  },
+  "galena": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_galena_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_galena_ore",
+     "count": 1
+    }
+   ]
+  },
+  "garnet_sand": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_garnet_sand_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_garnet_sand_ore",
+     "count": 1
+    }
+   ]
+  },
+  "garnierite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_garnierite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_garnierite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "glauconite_sand": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_glauconite_sand_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_glauconite_sand_ore",
+     "count": 1
+    }
+   ]
+  },
+  "goethite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_goethite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_goethite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "granitic_mineral_sand": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_granitic_mineral_sand_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_granitic_mineral_sand_ore",
+     "count": 1
+    }
+   ]
+  },
+  "graphite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_graphite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_graphite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "green_sapphire": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_green_sapphire_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_green_sapphire_ore",
+     "count": 1
+    }
+   ]
+  },
+  "grossular": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_grossular_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_grossular_ore",
+     "count": 1
+    }
+   ]
+  },
+  "gypsum": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_gypsum_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_gypsum_ore",
+     "count": 1
+    }
+   ]
+  },
+  "hematite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_hematite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_hematite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "ilmenite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_ilmenite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_ilmenite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "kyanite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_kyanite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_kyanite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "lapis": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_lapis_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_lapis_ore",
+     "count": 1
+    }
+   ]
+  },
+  "lazurite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_lazurite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_lazurite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "lead": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_lead_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_lead_ore",
+     "count": 1
+    }
+   ]
+  },
+  "lepidolite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_lepidolite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_lepidolite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "lithium": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_lithium_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_lithium_ore",
+     "count": 1
+    }
+   ]
+  },
+  "magnesite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_magnesite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_magnesite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "magnetite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_magnetite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_magnetite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "malachite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_malachite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_malachite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "mica": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_mica_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_mica_ore",
+     "count": 1
+    }
+   ]
+  },
+  "molybdenite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_molybdenite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_molybdenite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "molybdenum": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_molybdenum_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_molybdenum_ore",
+     "count": 1
+    }
+   ]
+  },
+  "monazite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_monazite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_monazite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "naquadah": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_naquadah_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_naquadah_ore",
+     "count": 1
+    }
+   ]
+  },
+  "neodymium": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_neodymium_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_neodymium_ore",
+     "count": 1
+    }
+   ]
+  },
+  "nether_quartz": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_nether_quartz_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_nether_quartz_ore",
+     "count": 1
+    }
+   ]
+  },
+  "nickel": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_nickel_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_nickel_ore",
+     "count": 1
+    }
+   ]
+  },
+  "oilsands": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_oilsands_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_oilsands_ore",
+     "count": 1
+    }
+   ]
+  },
+  "olivine": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_olivine_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_olivine_ore",
+     "count": 1
+    }
+   ]
+  },
+  "opal": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_opal_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_opal_ore",
+     "count": 1
+    }
+   ]
+  },
+  "palladium": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_palladium_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_palladium_ore",
+     "count": 1
+    }
+   ]
+  },
+  "pentlandite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_pentlandite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_pentlandite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "pitchblende": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_pitchblende_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_pitchblende_ore",
+     "count": 1
+    }
+   ]
+  },
+  "platinum": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_platinum_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_platinum_ore",
+     "count": 1
+    }
+   ]
+  },
+  "plutonium": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_plutonium_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_plutonium_ore",
+     "count": 1
+    }
+   ]
+  },
+  "pollucite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_pollucite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_pollucite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "powellite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_powellite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_powellite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "pyrite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_pyrite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_pyrite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "pyrochlore": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_pyrochlore_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_pyrochlore_ore",
+     "count": 1
+    }
+   ]
+  },
+  "pyrolusite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_pyrolusite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_pyrolusite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "pyrope": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_pyrope_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_pyrope_ore",
+     "count": 1
+    }
+   ]
+  },
+  "quartzite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_quartzite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_quartzite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "realgar": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_realgar_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_realgar_ore",
+     "count": 1
+    }
+   ]
+  },
+  "red_garnet": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_red_garnet_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_red_garnet_ore",
+     "count": 1
+    }
+   ]
+  },
+  "redstone": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_redstone_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_redstone_ore",
+     "count": 1
+    }
+   ]
+  },
+  "rock_salt": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_rock_salt_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_rock_salt_ore",
+     "count": 1
+    }
+   ]
+  },
+  "ruby": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_ruby_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_ruby_ore",
+     "count": 1
+    }
+   ]
+  },
+  "salt": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_salt_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_salt_ore",
+     "count": 1
+    }
+   ]
+  },
+  "saltpeter": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_saltpeter_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_saltpeter_ore",
+     "count": 1
+    }
+   ]
+  },
+  "sapphire": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_sapphire_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_sapphire_ore",
+     "count": 1
+    }
+   ]
+  },
+  "scheelite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_scheelite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_scheelite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "silver": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_silver_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_silver_ore",
+     "count": 1
+    }
+   ]
+  },
+  "soapstone": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_soapstone_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_soapstone_ore",
+     "count": 1
+    }
+   ]
+  },
+  "sodalite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_sodalite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_sodalite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "spessartine": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_spessartine_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_spessartine_ore",
+     "count": 1
+    }
+   ]
+  },
+  "sphalerite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_sphalerite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_sphalerite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "spodumene": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_spodumene_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_spodumene_ore",
+     "count": 1
+    }
+   ]
+  },
+  "stibnite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_stibnite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_stibnite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "sulfur": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_sulfur_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_sulfur_ore",
+     "count": 1
+    }
+   ]
+  },
+  "talc": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_talc_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_talc_ore",
+     "count": 1
+    }
+   ]
+  },
+  "tantalite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_tantalite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_tantalite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "tetrahedrite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_tetrahedrite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_tetrahedrite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "thorium": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_thorium_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_thorium_ore",
+     "count": 1
+    }
+   ]
+  },
+  "tin": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_tin_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_tin_ore",
+     "count": 1
+    }
+   ]
+  },
+  "topaz": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_topaz_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_topaz_ore",
+     "count": 1
+    }
+   ]
+  },
+  "tricalcium_phosphate": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_tricalcium_phosphate_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_tricalcium_phosphate_ore",
+     "count": 1
+    }
+   ]
+  },
+  "trona": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_trona_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_trona_ore",
+     "count": 1
+    }
+   ]
+  },
+  "tungstate": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_tungstate_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_tungstate_ore",
+     "count": 1
+    }
+   ]
+  },
+  "uraninite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_uraninite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_uraninite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "vanadium_magnetite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_vanadium_magnetite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_vanadium_magnetite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "wulfenite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_wulfenite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_wulfenite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "yellow_garnet": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_yellow_garnet_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_yellow_garnet_ore",
+     "count": 1
+    }
+   ]
+  },
+  "yellow_limonite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_yellow_limonite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_yellow_limonite_ore",
+     "count": 1
+    }
+   ]
+  },
+  "zeolite": {
+   "ingredients": [
+    {
+     "item": "gtceu:crushed_zeolite_ore"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:purified_zeolite_ore",
+     "count": 1
+    }
+   ]
+  }
+ },
+ "pressing": {
+  "aluminium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/aluminium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:aluminium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "americium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/americium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:americium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "annealed_copper": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/annealed_copper"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:annealed_copper_plate",
+     "count": 1
+    }
+   ]
+  },
+  "battery_alloy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/battery_alloy"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:battery_alloy_plate",
+     "count": 1
+    }
+   ]
+  },
+  "beryllium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/beryllium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:beryllium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "bismuth_bronze": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/bismuth_bronze"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:bismuth_bronze_plate",
+     "count": 1
+    }
+   ]
+  },
+  "black_bronze": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/black_bronze"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:black_bronze_plate",
+     "count": 1
+    }
+   ]
+  },
+  "black_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/black_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:black_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "blue_alloy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/blue_alloy"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:blue_alloy_plate",
+     "count": 1
+    }
+   ]
+  },
+  "blue_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/blue_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:blue_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "bronze": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/bronze"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:bronze_plate",
+     "count": 1
+    }
+   ]
+  },
+  "chromium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/chromium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:chromium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "cobalt": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/cobalt"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:cobalt_plate",
+     "count": 1
+    }
+   ]
+  },
+  "cobalt_brass": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/cobalt_brass"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:cobalt_brass_plate",
+     "count": 1
+    }
+   ]
+  },
+  "cupronickel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/cupronickel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:cupronickel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "damascus_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/damascus_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:damascus_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "darmstadtium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/darmstadtium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:darmstadtium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "duranium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/duranium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:duranium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "electrum": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/electrum"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:electrum_plate",
+     "count": 1
+    }
+   ]
+  },
+  "enriched_naquadah": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/enriched_naquadah"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:enriched_naquadah_plate",
+     "count": 1
+    }
+   ]
+  },
+  "enriched_naquadah_trinium_europium_duranide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/enriched_naquadah_trinium_europium_duranide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:enriched_naquadah_trinium_europium_duranide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "epoxy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/epoxy"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:epoxy_plate",
+     "count": 1
+    }
+   ]
+  },
+  "europium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/europium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:europium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "gallium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/gallium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:gallium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "gallium_arsenide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/gallium_arsenide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:gallium_arsenide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "graphene": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/graphene"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:graphene_plate",
+     "count": 1
+    }
+   ]
+  },
+  "hastelloy_c_276": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/hastelloy_c_276"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:hastelloy_c_276_plate",
+     "count": 1
+    }
+   ]
+  },
+  "hastelloy_x": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/hastelloy_x"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:hastelloy_x_plate",
+     "count": 1
+    }
+   ]
+  },
+  "hsla_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/hsla_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:hsla_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "hsse": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/hsse"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:hsse_plate",
+     "count": 1
+    }
+   ]
+  },
+  "hssg": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/hssg"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:hssg_plate",
+     "count": 1
+    }
+   ]
+  },
+  "hsss": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/hsss"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:hsss_plate",
+     "count": 1
+    }
+   ]
+  },
+  "incoloy_ma_956": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/incoloy_ma_956"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:incoloy_ma_956_plate",
+     "count": 1
+    }
+   ]
+  },
+  "indium_gallium_phosphide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/indium_gallium_phosphide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:indium_gallium_phosphide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "indium_tin_barium_titanium_cuprate": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/indium_tin_barium_titanium_cuprate"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:indium_tin_barium_titanium_cuprate_plate",
+     "count": 1
+    }
+   ]
+  },
+  "invar": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/invar"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:invar_plate",
+     "count": 1
+    }
+   ]
+  },
+  "iridium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/iridium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:iridium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "kanthal": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/kanthal"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:kanthal_plate",
+     "count": 1
+    }
+   ]
+  },
+  "lead": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/lead"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:lead_plate",
+     "count": 1
+    }
+   ]
+  },
+  "magnalium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/magnalium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:magnalium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "magnetic_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/magnetic_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:magnetic_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "manganese": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/manganese"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:manganese_plate",
+     "count": 1
+    }
+   ]
+  },
+  "maraging_steel_300": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/maraging_steel_300"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:maraging_steel_300_plate",
+     "count": 1
+    }
+   ]
+  },
+  "molybdenum": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/molybdenum"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:molybdenum_plate",
+     "count": 1
+    }
+   ]
+  },
+  "molybdenum_disilicide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/molybdenum_disilicide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:molybdenum_disilicide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "naquadah": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/naquadah"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:naquadah_plate",
+     "count": 1
+    }
+   ]
+  },
+  "naquadah_alloy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/naquadah_alloy"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:naquadah_alloy_plate",
+     "count": 1
+    }
+   ]
+  },
+  "naquadria": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/naquadria"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:naquadria_plate",
+     "count": 1
+    }
+   ]
+  },
+  "neodymium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/neodymium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:neodymium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "neutronium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/neutronium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:neutronium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "nichrome": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/nichrome"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:nichrome_plate",
+     "count": 1
+    }
+   ]
+  },
+  "nickel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/nickel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:nickel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "niobium_nitride": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/niobium_nitride"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:niobium_nitride_plate",
+     "count": 1
+    }
+   ]
+  },
+  "niobium_titanium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/niobium_titanium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:niobium_titanium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "osmiridium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/osmiridium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:osmiridium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "osmium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/osmium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:osmium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "palladium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/palladium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:palladium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "platinum": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/platinum"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:platinum_plate",
+     "count": 1
+    }
+   ]
+  },
+  "plutonium_241": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/plutonium_241"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:plutonium_241_plate",
+     "count": 1
+    }
+   ]
+  },
+  "polybenzimidazole": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/polybenzimidazole"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:polybenzimidazole_plate",
+     "count": 1
+    }
+   ]
+  },
+  "polycaprolactam": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/polycaprolactam"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:polycaprolactam_plate",
+     "count": 1
+    }
+   ]
+  },
+  "polyethylene": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/polyethylene"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:polyethylene_plate",
+     "count": 1
+    }
+   ]
+  },
+  "polyphenylene_sulfide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/polyphenylene_sulfide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:polyphenylene_sulfide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "polytetrafluoroethylene": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/polytetrafluoroethylene"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:polytetrafluoroethylene_plate",
+     "count": 1
+    }
+   ]
+  },
+  "polyvinyl_butyral": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/polyvinyl_butyral"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:polyvinyl_butyral_plate",
+     "count": 1
+    }
+   ]
+  },
+  "polyvinyl_chloride": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/polyvinyl_chloride"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:polyvinyl_chloride_plate",
+     "count": 1
+    }
+   ]
+  },
+  "potin": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/potin"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:potin_plate",
+     "count": 1
+    }
+   ]
+  },
+  "red_alloy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/red_alloy"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:red_alloy_plate",
+     "count": 1
+    }
+   ]
+  },
+  "red_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/red_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:red_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "reinforced_epoxy_resin": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/reinforced_epoxy_resin"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:reinforced_epoxy_resin_plate",
+     "count": 1
+    }
+   ]
+  },
+  "rhodium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/rhodium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:rhodium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "rhodium_plated_palladium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/rhodium_plated_palladium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:rhodium_plated_palladium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "rose_gold": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/rose_gold"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:rose_gold_plate",
+     "count": 1
+    }
+   ]
+  },
+  "rubber": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/rubber"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:rubber_plate",
+     "count": 1
+    }
+   ]
+  },
+  "ruridit": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/ruridit"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:ruridit_plate",
+     "count": 1
+    }
+   ]
+  },
+  "ruthenium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/ruthenium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:ruthenium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "silicon": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/silicon"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:silicon_plate",
+     "count": 1
+    }
+   ]
+  },
+  "silicone_rubber": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/silicone_rubber"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:silicone_rubber_plate",
+     "count": 1
+    }
+   ]
+  },
+  "silver": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/silver"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:silver_plate",
+     "count": 1
+    }
+   ]
+  },
+  "stainless_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/stainless_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:stainless_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "stellite_100": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/stellite_100"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:stellite_100_plate",
+     "count": 1
+    }
+   ]
+  },
+  "sterling_silver": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/sterling_silver"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:sterling_silver_plate",
+     "count": 1
+    }
+   ]
+  },
+  "styrene_butadiene_rubber": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/styrene_butadiene_rubber"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:styrene_butadiene_rubber_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tantalum": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tantalum"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tantalum_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tantalum_carbide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tantalum_carbide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tantalum_carbide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "thorium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/thorium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:thorium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tin": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tin"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tin_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tin_alloy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tin_alloy"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tin_alloy_plate",
+     "count": 1
+    }
+   ]
+  },
+  "titanium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/titanium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:titanium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "titanium_carbide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/titanium_carbide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:titanium_carbide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "titanium_tungsten_carbide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/titanium_tungsten_carbide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:titanium_tungsten_carbide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "trinium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/trinium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:trinium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tritanium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tritanium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tritanium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tungsten": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tungsten"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tungsten_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tungsten_carbide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tungsten_carbide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tungsten_carbide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "tungsten_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/tungsten_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tungsten_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "ultimet": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/ultimet"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:ultimet_plate",
+     "count": 1
+    }
+   ]
+  },
+  "uranium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/uranium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:uranium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "uranium_235": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/uranium_235"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:uranium_235_plate",
+     "count": 1
+    }
+   ]
+  },
+  "uranium_rhodium_dinaquadide": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/uranium_rhodium_dinaquadide"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:uranium_rhodium_dinaquadide_plate",
+     "count": 1
+    }
+   ]
+  },
+  "vanadium_gallium": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/vanadium_gallium"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:vanadium_gallium_plate",
+     "count": 1
+    }
+   ]
+  },
+  "vanadium_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/vanadium_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:vanadium_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "watertight_steel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/watertight_steel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:watertight_steel_plate",
+     "count": 1
+    }
+   ]
+  },
+  "wrought_iron": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/wrought_iron"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:wrought_iron_plate",
+     "count": 1
+    }
+   ]
+  },
+  "yttrium_barium_cuprate": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/yttrium_barium_cuprate"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:yttrium_barium_cuprate_plate",
+     "count": 1
+    }
+   ]
+  },
+  "zeron_100": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/zeron_100"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:zeron_100_plate",
+     "count": 1
+    }
+   ]
+  },
+  "zinc": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/zinc"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:zinc_plate",
+     "count": 1
+    }
+   ]
+  }
+ },
+ "mixing": {
+  "bronze": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/copper"
+    },
+    {
+     "tag": "forge:ingots/copper"
+    },
+    {
+     "tag": "forge:ingots/copper"
+    },
+    {
+     "tag": "forge:ingots/tin"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:bronze_ingot",
+     "count": 4
+    }
+   ],
+   "heatRequirement": "heated"
+  },
+  "tin_alloy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/iron"
+    },
+    {
+     "tag": "forge:ingots/tin"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:tin_alloy_ingot",
+     "count": 2
+    }
+   ],
+   "heatRequirement": "heated"
+  },
+  "cupronickel": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/copper"
+    },
+    {
+     "tag": "forge:ingots/nickel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:cupronickel_ingot",
+     "count": 2
+    }
+   ],
+   "heatRequirement": "heated"
+  },
+  "invar": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/iron"
+    },
+    {
+     "tag": "forge:ingots/iron"
+    },
+    {
+     "tag": "forge:ingots/nickel"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:invar_ingot",
+     "count": 3
+    }
+   ],
+   "heatRequirement": "heated"
+  },
+  "red_alloy": {
+   "ingredients": [
+    {
+     "tag": "forge:ingots/copper"
+    },
+    {
+     "tag": "forge:dusts/redstone"
+    },
+    {
+     "tag": "forge:dusts/redstone"
+    },
+    {
+     "tag": "forge:dusts/redstone"
+    },
+    {
+     "tag": "forge:dusts/redstone"
+    }
+   ],
+   "results": [
+    {
+     "item": "gtceu:red_alloy_ingot",
+     "count": 1
+    }
+   ],
+   "heatRequirement": "heated"
+  }
+ },
+ "gravel": {
+  "ingredients": [
+   {
+    "item": "minecraft:gravel"
+   }
+  ],
+  "results": [
+   {
+    "item": "minecraft:sand",
+    "count": 1
+   },
+   {
+    "item": "minecraft:flint",
+    "chance": 0.1
+   },
+   {
+    "item": "minecraft:clay_ball",
+    "chance": 0.05
+   },
+   {
+    "item": "minecraft:redstone",
+    "chance": 0.1
+   }
+  ],
+  "processingTime": 250
+ }
+}

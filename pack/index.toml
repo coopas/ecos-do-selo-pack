@@ -326,6 +326,10 @@ file = "kubejs/ecos/boss_drops.json"
 hash = "9690d73a987dd7e5e8fb14d69f800541ef38f52a87ebef3e5813d57eb9230615"
 
 [[files]]
+file = "kubejs/ecos/create_gt.json"
+hash = "6b4571030bdefd747d498cf09864b2aab8d6b1a55719d00b88f281fdab6e9bc8"
+
+[[files]]
 file = "kubejs/ecos/fuels.json"
 hash = "eb9a342dfc7b3b1b1988e31943c958de550e5c0a3679a8ea8ebe86bb116fcf0d"
 
@@ -368,6 +372,10 @@ hash = "d41d4968818d50b5c974c2a0056202b1b11c0d707ed6183451dd0328615ee1be"
 [[files]]
 file = "kubejs/server_scripts/20_ecos_recipes.js"
 hash = "9f136b7c0785c7eb03ed157ea67810def4bd47902e8d3f6a495d3f99882f7924"
+
+[[files]]
+file = "kubejs/server_scripts/25_ecos_create_gt.js"
+hash = "235dab88a42d02de6bc952ecfd82da43f14da322743f33babc584b92c2b40422"
 
 [[files]]
 file = "kubejs/server_scripts/30_ecos_boss_drops.js"
