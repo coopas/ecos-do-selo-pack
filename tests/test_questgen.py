@@ -137,3 +137,12 @@ def test_kill_tasks_map_boss_to_task_ids():
     assert questgen.quest_id("ato1/naga#t0") in m["twilightforest:naga"]
     assert questgen.quest_id("ato2/o_cego#t0") in m["minecraft:warden"]
     assert all(isinstance(v, list) and v for v in m.values())
+
+
+
+def test_filter_adapter_is_java_not_kubejs():
+    """O adaptador de filtros roda no thread de render do cliente: em KubeJS o Rhino crashava ao abrir o livro."""
+    from paths import PACK
+    assert (PACK / "mods/ecosbridge-1.0.0.jar").exists()
+    for js in (PACK / "kubejs").rglob("*.js"):
+        assert "registerFilterAdapter" not in js.read_text(encoding="utf-8"), js

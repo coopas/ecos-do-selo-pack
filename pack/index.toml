@@ -182,10 +182,6 @@ file = "kubejs/server_scripts/dev/registry_dump.js"
 hash = "ffb012bd3a9ba99dd3a3ce4620d74973d3c7fe6e30564aa38343691e5a028f58"
 
 [[files]]
-file = "kubejs/startup_scripts/ecos_filter_adapter.js"
-hash = "2426e37a7da12683af50a488ffe0dad84565e4b021359bcb1245c05a456b4a6e"
-
-[[files]]
 file = "kubejs/startup_scripts/ecos_final_boss_damage.js"
 hash = "422ad33a1a86d3befb0cbf526551fe1779630d354b2172e2796007b4b7cf4b27"
 
@@ -286,6 +282,10 @@ metafile = true
 file = "mods/drippy-loading-screen.pw.toml"
 hash = "b87f518f4a80d0012e9e4b5c684ba7bf22fb5a4e67af1db266a8b4d39612ca4a"
 metafile = true
+
+[[files]]
+file = "mods/ecosbridge-1.0.0.jar"
+hash = "eb85430e20ac0dd2b66d63f02729ff2fcaacc2dacaba1d6dbed49cfd9e669072"
 
 [[files]]
 file = "mods/embeddium.pw.toml"
