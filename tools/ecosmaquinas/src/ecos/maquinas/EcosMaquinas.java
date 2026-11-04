@@ -86,12 +86,20 @@ public final class EcosMaquinas {
     }
 
     private static final ResourceLocation CAP_TANQUE = new ResourceLocation(MODID, "tanque_vapor");
+    private static final ResourceLocation CAP_ENERGIA = new ResourceLocation(MODID, "energia_dinamo");
 
-    /** Tanque do motor exposto como FLUID_HANDLER (veja MotorVaporBlockEntity.Caps). */
+    /**
+     * Tanque do motor exposto como FLUID_HANDLER (veja MotorVaporBlockEntity.Caps) e saída de EU do dínamo como
+     * CAPABILITY_ENERGY_CONTAINER do GregTech (veja DinamoBlockEntity.Caps).
+     */
     private static void anexarCaps(AttachCapabilitiesEvent<BlockEntity> event) {
         if (event.getObject() instanceof MotorVaporBlockEntity motor) {
             MotorVaporBlockEntity.Caps caps = new MotorVaporBlockEntity.Caps(motor);
             event.addCapability(CAP_TANQUE, caps);
+            event.addListener(caps::invalidar);
+        } else if (event.getObject() instanceof DinamoBlockEntity dinamo) {
+            DinamoBlockEntity.Caps caps = new DinamoBlockEntity.Caps(dinamo);
+            event.addCapability(CAP_ENERGIA, caps);
             event.addListener(caps::invalidar);
         }
     }

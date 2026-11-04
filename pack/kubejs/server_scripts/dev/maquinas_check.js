@@ -5,6 +5,12 @@
 
 const ECOS_MAQ_POS = {
   motor_cheio: [2, 300, 2], motor_vazio: [6, 300, 2], motor_agua: [10, 300, 2],  // Task 4 (facing=up: eixo em cima)
+  // Task 5: dínamo em y=301 (facing=down: eixo embaixo, no motor criativo em y=300); saída em cima, buffer em y=302
+  dinamo_ulv: [2, 301, 6], dinamo_lv: [4, 301, 6], dinamo_parado: [6, 301, 6], dinamo_reverso: [8, 301, 6],
+  dinamo_lento: [10, 301, 6], dinamo_rapido: [12, 301, 6],
+  buffer_ulv: [2, 302, 6], buffer_lv: [4, 302, 6], buffer_parado: [6, 302, 6], buffer_reverso: [8, 302, 6],
+  buffer_lento: [10, 302, 6], buffer_rapido: [12, 302, 6],
+  dinamo_nbt_alto: [2, 301, 10], dinamo_nbt_neg: [4, 301, 10],  // NBT adulterado, sem rotação nem vizinho
 }
 
 const EcosMaq = {
@@ -57,5 +63,54 @@ ServerEvents.customCommand('ecos_motor_check', event => {
       ` eixo_sem_cap=${eixoSemCap} dreno_recusado=${drenoRecusado}` +
       ` agua_nbt_rpm=${Math.abs(agua.getSpeed())} agua_nbt_limpa=${agua.getVapor() == 0}` +
       ` vapor_restante=${cheio.getVapor()} nbt_tanque=${nbt.contains('Tanque') && nbt.getCompound('Tanque').getInt('Amount') > 0}`)
+  })
+})
+
+// --- Task 5: Dínamo Cinético (ULV e LV) ---------------------------------------------------------------------------
+// Cada dínamo gira por um motor criativo (64 RPM; parado 0; reverso -64; lento ULV a 32; rápido LV a 256) e solta EU
+// em cima, num gtceu:lv_battery_buffer_4x com uma bateria. Põe a bateria, espera 100 ticks (rede estável) e mede a
+// energia que de fato entrou no buffer nos 100 ticks seguintes: eu_t = delta / 100.
+ServerEvents.customCommand('ecos_dinamo_check', event => {
+  if (!EcosMaq.dev()) return
+  const server = event.server, D = EcosMaq.Direction
+  const GTCap = Java.loadClass('com.gregtechceu.gtceu.api.capability.forge.GTCapability')
+  const nomes = ['ulv', 'lv', 'parado', 'reverso', 'lento', 'rapido']
+  const energia = be => {
+    let lo = be ? be.getCapability(GTCap.CAPABILITY_ENERGY_CONTAINER, D.DOWN) : null
+    return lo && lo.isPresent() ? lo.resolve().get() : null
+  }
+  let buffers = {}, dinamos = {}
+  for (let n of nomes) {
+    dinamos[n] = EcosMaq.be(server, 'dinamo_' + n)
+    let b = EcosMaq.be(server, 'buffer_' + n)
+    // o buffer do GregTech não expõe as baterias como ITEM_HANDLER: põe direto no inventário da máquina
+    let maq = b && b.getMetaMachine ? b.getMetaMachine() : null
+    let falta = !dinamos[n] ? 'dinamo' : !maq || !maq.getBatteryInventory ? 'buffer' : !energia(b) ? 'energia_buffer' : null
+    if (falta) { EcosMaq.diga(server, `ECOS_DINAMO erro=sem_${falta}_${n}`); return }
+    let sobra = maq.getBatteryInventory().insertItem(0, Item.of('gtceu:lv_sodium_battery'), false)
+    if (!sobra.isEmpty()) { EcosMaq.diga(server, `ECOS_DINAMO erro=bateria_recusada_${n}`); return }
+    buffers[n] = b
+  }
+  let lv = dinamos.lv
+  let capSaida = lv.getCapability(GTCap.CAPABILITY_ENERGY_CONTAINER, D.UP)
+  let eixoSemCap = !lv.getCapability(GTCap.CAPABILITY_ENERGY_CONTAINER, D.DOWN).isPresent()
+  let saida = capSaida.isPresent() ? capSaida.resolve().get() : null
+  let alto = EcosMaq.be(server, 'dinamo_nbt_alto'), neg = EcosMaq.be(server, 'dinamo_nbt_neg')
+  server.scheduleInTicks(100, () => {
+    let antes = {}
+    for (let n of nomes) antes[n] = energia(buffers[n]).getEnergyStored()
+    server.scheduleInTicks(100, () => {
+      let eut = {}
+      for (let n of nomes) eut[n] = (energia(buffers[n]).getEnergyStored() - antes[n]) / 100
+      EcosMaq.diga(server, `ECOS_DINAMO ulv_eu_t=${eut.ulv} lv_eu_t=${eut.lv} parado_eu_t=${eut.parado} reverso_eu_t=${eut.reverso}`)
+      EcosMaq.diga(server, `ECOS_DINAMO_EXTRA lento_eu_t=${eut.lento} rapido_eu_t=${eut.rapido}` +
+        ` ulv_calc=${dinamos.ulv.getEuT()} lv_calc=${lv.getEuT()} reverso_calc=${dinamos.reverso.getEuT()}` +
+        ` rapido_calc=${dinamos.rapido.getEuT()} ulv_v=${dinamos.ulv.getVoltagem()} lv_v=${lv.getVoltagem()}` +
+        ` reverso_rpm=${dinamos.reverso.getSpeed()} saida_cap=${saida != null} eixo_sem_cap=${eixoSemCap}` +
+        ` saida_out=${saida != null && saida.outputsEnergy(D.UP)} saida_nao_aceita=${saida != null && !saida.inputsEnergy(D.UP)}` +
+        ` saida_recusa=${saida != null ? saida.acceptEnergyFromNetwork(D.UP, 32, 1) == 0 : false}` +
+        ` buffer_alto=${alto ? alto.getBuffer() : -1} buffer_neg=${neg ? neg.getBuffer() : -1}` +
+        ` buffer_max_lv=${lv.getBufferMax()}`)
+    })
   })
 })
