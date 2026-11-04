@@ -41,8 +41,9 @@ quests:
   - {slug: tumba, title: "Se Você Morrer", deps: [abrigo],
      desc: ["Ao morrer, seus itens ficam numa tumba no local.", "Volte lá. Ninguém mais pode abri-la."],
      tasks: [{checkmark: true}], rewards: [{xp_levels: 1}]}
-  - {slug: minerio_ferro, title: "Ferro Bruto", deps: [picareta_pedra], desc: ["Minério de ferro, de qualquer tipo."],
-     tasks: [{tag: forge:raw_materials/iron, count: 16}], rewards: [{coins: 2}]}
+  - {slug: minerio_ferro, title: "Ferro Bruto", deps: [picareta_pedra],
+     desc: ["Aqui o ferro vem disfarçado: hematita, magnetita, limonita, pirita.", "Qualquer uma derrete em ferro na fornalha."],
+     tasks: [{tag: ecos:minerios_de_ferro, count: 16}], rewards: [{coins: 2}]}
   - {slug: ferro, title: "Lingotes", deps: [minerio_ferro, fornalha], desc: ["Derreta o ferro. Ele ainda lembra de ser engrenagem."],
      tasks: [{tag: forge:ingots/iron, count: 16}], rewards: [{coins: 2}]}
   - {slug: picareta_ferro, title: "Ferro na Mão", deps: [ferro], desc: ["Agora a pedra cede."],
@@ -60,7 +61,7 @@ quests:
   - {slug: mochila, title: "Mochila", deps: [bau], desc: ["Uma mochila leva mais do que os bolsos."],
      tasks: [{item: sophisticatedbackpacks:backpack}], rewards: [{coins: 2}]}
   - {slug: mapa, title: "Onde Estou?", deps: [ferro],
-     desc: ["O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho.", "Faça uma bússola."],
+     desc: ["O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho.", "Opcional: a bússola pede redstone, que aqui mora fundo."],
      tasks: [{item: minecraft:compass}], rewards: [{coins: 1}]}
   - {slug: diamante, title: "Pedras que Brilham", deps: [picareta_ferro], desc: ["Diamantes. Os Confluentes os usavam como rolamentos."],
      tasks: [{tag: forge:gems/diamond, count: 3}], rewards: [{coins: 3}]}
@@ -72,6 +73,6 @@ quests:
   - {slug: banca, title: "A Banca do Eco", deps: [ecos], desc: ["Há uma banca que aceita ecos. Veja o capítulo da loja."],
      tasks: [{checkmark: true}], rewards: [{coins: 2}]}
   - {slug: fim_prologo, title: "Algo Está Ouvindo", shape: gear, icon: minecraft:sculk_sensor,
-     deps: [ultimine, tochas, tumba, picareta_ferro, armadura, escudo, balde, lavoura, mochila, mapa, encantamento, banca, jei],
+     deps: [ultimine, tochas, tumba, picareta_ferro, armadura, escudo, balde, lavoura, mochila, encantamento, banca, jei],
      desc: ["Você sobreviveu aos primeiros dias.", "Mas à noite, quando tudo se cala, algo responde."],
      tasks: [{checkmark: true}], rewards: [{crate: rara}, {coins: 5}, {xp_levels: 3}]}

@@ -42,7 +42,7 @@ hash = "fc7389de296e83d68cf77585e8f133ba1d217f387c07935ba23f6ee975bb7b88"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
-hash = "aeca0b5bab1c60e8420c199fce7ff363fc0d7666c30d0638d6dcb855a394660a"
+hash = "43bb4971619721fad3fe278c70ce10a9fefee9c54204fb576afcda8ae2165d6b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_ae2.snbt"
@@ -335,7 +335,7 @@ hash = "1eb4ae14e5f16f7d2038e2e701ad54646260ba2c931283edfad0544b75c79af2"
 
 [[files]]
 file = "kubejs/ecos/quest_tags.json"
-hash = "f403d62faddd2caea503d0d047c9679461b12aea6bd1172d8777015cb76466fa"
+hash = "3b56c0735626594cbe6578557faf40ffe038880ccc21d792f04d42675a5af6f4"
 
 [[files]]
 file = "kubejs/ecos/recipes.json"
@@ -343,7 +343,7 @@ hash = "78e071e636852fa316901eed512e5ceaf9844fa55d230470e11631b4e77826f8"
 
 [[files]]
 file = "kubejs/ecos/tags.json"
-hash = "50a5baa6ff0eebfc3335a8b73199cc4e15c3848e001e575e12a583028ded56f2"
+hash = "010380af6bccab76dabc61824a264a44c2b4cd9e4eda82a505698651a8b8cf3a"
 
 [[files]]
 file = "kubejs/ecos/travel.json"
@@ -375,7 +375,7 @@ hash = "800127ec63498dcccdc206180f1d17f93117bdd3fd8fda2bb30f830767d614e7"
 
 [[files]]
 file = "kubejs/server_scripts/dev/mob_gear_check.js"
-hash = "a138d15fd512fbec9f4e4ed57b191de9c08500bb249cb18c214ee39842e9d3d1"
+hash = "b5311c266ed16fe44efbf534d7a4f58f91d405dee959c69ef21eefb9750b58fe"
 
 [[files]]
 file = "kubejs/server_scripts/dev/quest_selftest.js"

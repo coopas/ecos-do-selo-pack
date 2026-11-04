@@ -1,5 +1,6 @@
 {
  "tags": [
+  "ecos:minerios_de_ferro",
   "ecos:prova_arauto",
   "ecos:prova_artefato",
   "forge:chests/wooden",
@@ -36,7 +37,6 @@
   "forge:logs/archwood",
   "forge:planks/archwood",
   "forge:plates/polyethylene",
-  "forge:raw_materials/iron",
   "forge:silicon",
   "minecraft:beds",
   "minecraft:coals",

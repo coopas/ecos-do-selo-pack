@@ -591,7 +591,8 @@
 				"0A9D713559C32AF2"
 			]
 			description: [
-				"Minério de ferro, de qualquer tipo."
+				"Aqui o ferro vem disfarçado: hematita, magnetita, limonita, pirita."
+				"Qualquer uma derrete em ferro na fornalha."
 			]
 			id: "0396222AD85BF798"
 			rewards: [
@@ -613,7 +614,7 @@
 						Count: 1b
 						id: "ftbfiltersystem:smart_filter"
 						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:raw_materials/iron)"
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(ecos:minerios_de_ferro)"
 						}
 					}
 					type: "item"
@@ -905,7 +906,7 @@
 			]
 			description: [
 				"O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho."
-				"Faça uma bússola."
+				"Opcional: a bússola pede redstone, que aqui mora fundo."
 			]
 			id: "73534827338C81F9"
 			rewards: [
@@ -1097,7 +1098,6 @@
 				"3CF154EC0E39A69A"
 				"262E4CA8A9D31297"
 				"25383A7A9F297BF8"
-				"73534827338C81F9"
 				"5670724EE7F5E85B"
 				"1D15FE73D2EC2EE1"
 				"3C7320410AAD851E"

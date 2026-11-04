@@ -44,6 +44,16 @@
         "ecos:selo_restaurado",
         "ecos:poder_absorvido"
       ]
+    },
+    "ecos:minerios_de_ferro": {
+      "add": [
+        "#forge:raw_materials/iron",
+        "#forge:raw_materials/hematite",
+        "#forge:raw_materials/magnetite",
+        "#forge:raw_materials/goethite",
+        "#forge:raw_materials/yellow_limonite",
+        "#forge:raw_materials/pyrite"
+      ]
     }
   }
 }
