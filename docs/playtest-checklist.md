@@ -12,6 +12,7 @@ O que **só uma pessoa jogando** confirma. Use um mundo de teste em modo criativ
 
 ## 1. Livro de quests e tags
 - [ ] Abra o livro de quests (tecla padrão do FTB Quests). Os grupos *Atos*, *Caminhos* e *Loja* aparecem.
+- [ ] Prólogo → "Árvores Tortas": pegue troncos de qualquer árvore. A task mostra os troncos girando (não um *smart filter*) e completa.
 - [ ] Prólogo → quest da cama: faça uma cama **de cor diferente da vermelha**. A quest completa.
 - [ ] Quest de madeira/tábuas: use um tipo de madeira incomum (ex.: cerejeira). A quest completa.
 - [ ] Abra uma página do diário recebida como recompensa: o livro tem título, autora "Ilse Varrow" e texto em PT.
@@ -27,7 +28,7 @@ O que **só uma pessoa jogando** confirma. Use um mundo de teste em modo criativ
 - [ ] Aether / Everbright / Everdawn: sem a Chave Celeste, a mensagem "O portal rejeita você" aparece.
       Com a chave no inventário, você entra. A volta ao Overworld sempre funciona.
 - [ ] O Gatekeeper do Blue Skies vende o Zeal Lighter, mas sem a Chave Celeste não se entra.
-- [ ] Undergarden: o Catalisador acende o portal. **Anote se o Catalisador é gasto** (ponto em aberto do Plano 2).
+- [ ] Undergarden: o Catalisador acende o portal (o código do mod confirma que ele **não** é gasto).
 - [ ] A Pedra Filosofal não aparece no JEI como craftável antes de ter o Fragmento das Estrelas.
       Ao usá-la numa receita de pó de covalência, **ela volta para a grade?** (ponto em aberto).
 
@@ -47,6 +48,7 @@ O que **só uma pessoa jogando** confirma. Use um mundo de teste em modo criativ
 ## 6. Multijogador (servidor)
 - [ ] Dois jogadores entram no servidor; cada um tem o próprio progresso de quests.
 - [ ] Um jogador entrega itens ao outro; o outro completa a quest com eles.
+- [ ] Dois jogadores perto de um chefe (ex.: a Naga): só um dá o golpe final, e a quest de matar completa para os **dois**.
 - [ ] Morte: a tumba guarda os itens e o dono consegue recuperá-los.
 
 Anote qualquer falha com o nome da quest (aparece no topo da janela da quest) e me mande.
