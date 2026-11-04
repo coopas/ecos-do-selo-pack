@@ -199,3 +199,7 @@ cataclysm_mundo:
   - cataclysm:burning_ashes              # drop do Ignited Revenant; também craftável de dying_ember
   - cataclysm:ignitium_ingot             # drop do Ignis
   - cataclysm:altar_of_fire              # Arena Ardente, no Nether
+final:
+  - ecos:eco_do_arauto                   # morte do Arauto do Eco (40_ecos_final_boss.js)
+  - ecos:selo_restaurado                 # usar o Eco do Arauto
+  - ecos:poder_absorvido                 # usar o Eco do Arauto agachado

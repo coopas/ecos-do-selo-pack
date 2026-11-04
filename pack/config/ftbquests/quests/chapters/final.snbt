@@ -1,0 +1,213 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "final"
+	group: "5395DF7F49D69073"
+	icon: "ecos:eco_do_arauto"
+	id: "652657F1AC873FF1"
+	images: [ ]
+	order_index: 15
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"246302F51422A41D"
+				"4D84903DAEE12A8F"
+			]
+			description: [
+				"Pentáculo de espírito maior: giz branco e roxo, crânios, tigela dourada."
+				"Na tigela, ecos, um sino e eco reforçado."
+			]
+			icon: "occultism:chalk_purple"
+			id: "66646285C66571D6"
+			rewards: [
+				{
+					count: 5
+					id: "2E2FA63C749AD092"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "0F8B2FAF4C8165F8"
+					type: "checkmark"
+				}
+			]
+			title: "O Círculo de Giz"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"66646285C66571D6"
+			]
+			description: [
+				"Use o Artefato do Selo na tigela dourada."
+				"Ele vem. Ilse vem junto."
+			]
+			icon: "ecos:artefato_selo"
+			id: "6545FC6B6E544A21"
+			rewards: [
+				{
+					id: "1FFA300A241BB4DA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					id: "7605B6365A218B9F"
+					type: "checkmark"
+				}
+			]
+			title: "Chame o Arauto Pelo Nome"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6545FC6B6E544A21"
+			]
+			description: [
+				"A máquina que girava o silêncio, com alguém dentro."
+				"Quando ele cair, o Eco é seu."
+			]
+			icon: "ecos:eco_do_arauto"
+			id: "3D643E4320D6EEAF"
+			rewards: [
+				{
+					count: 1
+					id: "4F35C7D80E1BC71F"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 25
+					id: "1A18EC02957AF9BB"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "592BD79573BD1D14"
+					item: {
+						Count: 1b
+						id: "ecos:eco_do_arauto"
+					}
+					type: "item"
+				}
+			]
+			title: "O Arauto do Eco"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3D643E4320D6EEAF"
+			]
+			description: [
+				"Use o Eco do Arauto."
+				"Ilse descansa. Você nunca mais ouve o Eco."
+			]
+			icon: "ecos:selo_restaurado"
+			id: "5396C9D215437657"
+			rewards: [
+				{
+					count: 1
+					id: "49BEC12983226846"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E660FEC4ADF9DAC"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "6E7C753D8C8271AD"
+					item: {
+						Count: 1b
+						id: "ecos:selo_restaurado"
+					}
+					type: "item"
+				}
+			]
+			title: "Feche a Porta"
+			x: 4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"3D643E4320D6EEAF"
+			]
+			description: [
+				"Use o Eco do Arauto agachado."
+				"Uma nova arquivista começa um diário. A primeira linha é o seu nome."
+			]
+			icon: "ecos:poder_absorvido"
+			id: "231DDD3B4032B19C"
+			rewards: [
+				{
+					count: 1
+					id: "3E844C7C5F7446D8"
+					item: {
+						Count: 1b
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "lendaria"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E2523617EB767BE"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					count: 1L
+					id: "23692E829A351818"
+					item: {
+						Count: 1b
+						id: "ecos:poder_absorvido"
+					}
+					type: "item"
+				}
+			]
+			title: "Abra a Sua"
+			x: 4.5d
+			y: 0.75d
+		}
+	]
+	title: "O Eco Final"
+}

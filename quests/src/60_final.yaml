@@ -1,0 +1,20 @@
+chapter: final
+title: "O Eco Final"
+icon: ecos:eco_do_arauto
+group: atos
+act: 5
+quests:
+  - {slug: circulo, title: "O Círculo de Giz", deps: [ato5/artefato, side_occultism/giz_roxo], shape: gear, icon: occultism:chalk_purple,
+     desc: ["Pentáculo de espírito maior: giz branco e roxo, crânios, tigela dourada.", "Na tigela, ecos, um sino e eco reforçado."],
+     tasks: [{checkmark: true}], rewards: [{coins: 5}]}
+  - {slug: chamado, title: "Chame o Arauto Pelo Nome", deps: [circulo], icon: ecos:artefato_selo,
+     desc: ["Use o Artefato do Selo na tigela dourada.", "Ele vem. Ilse vem junto."], tasks: [{checkmark: true}], rewards: [{xp_levels: 5}]}
+  - {slug: arauto, title: "O Arauto do Eco", deps: [chamado], shape: gear, icon: ecos:eco_do_arauto,
+     desc: ["A máquina que girava o silêncio, com alguém dentro.", "Quando ele cair, o Eco é seu."], tasks: [{item: ecos:eco_do_arauto}],
+     rewards: [{crate: lendaria}, {coins: 25}]}
+  - {slug: selar, title: "Feche a Porta", deps: [arauto], shape: gear, icon: ecos:selo_restaurado,
+     desc: ["Use o Eco do Arauto.", "Ilse descansa. Você nunca mais ouve o Eco."], tasks: [{item: ecos:selo_restaurado}],
+     rewards: [{crate: lendaria}, {xp_levels: 30}]}
+  - {slug: absorver, title: "Abra a Sua", deps: [arauto], shape: gear, icon: ecos:poder_absorvido,
+     desc: ["Use o Eco do Arauto agachado.", "Uma nova arquivista começa um diário. A primeira linha é o seu nome."],
+     tasks: [{item: ecos:poder_absorvido}], rewards: [{crate: lendaria}, {xp_levels: 30}]}

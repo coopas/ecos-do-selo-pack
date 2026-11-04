@@ -6,6 +6,10 @@ if (!ECOS_TRAVEL) throw new Error('[ecos] kubejs/ecos/travel.json ausente ou inv
 let EcosComponent = Java.loadClass('net.minecraft.network.chat.Component')
 
 ForgeEvents.onEvent('net.minecraftforge.event.entity.EntityTravelToDimensionEvent', event => {
+  try { ecosTravelGate(event) } catch (e) { console.error('[ecos] trava de viagem falhou: ' + e) }  // erro aqui derrubaria o servidor
+})
+
+function ecosTravelGate(event) {
   let entity = event.getEntity()
   if (!entity.isPlayer()) return
   let key = ECOS_TRAVEL.require[String(event.getDimension().location())]
@@ -13,4 +17,4 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.EntityTravelToDimensionEven
   if (entity.getInventory().countItem(Item.of(key).getItem()) > 0) return
   event.setCanceled(true)
   entity.displayClientMessage(EcosComponent.literal('§5O portal rejeita você. §7Carregue uma §dChave Celeste§7 para atravessar.'), true)
-})
+}

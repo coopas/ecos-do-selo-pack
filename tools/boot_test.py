@@ -75,13 +75,20 @@ def _server(server_dir: Path, timeout_s: int, dev: bool, after_done=None, consol
             if dev:
                 time.sleep(20)  # deixa o dump do registro terminar
             for cmd in console:
-                proc.stdin.write(cmd + "\n")
-                proc.stdin.flush()
+                try:
+                    proc.stdin.write(cmd + "\n")
+                    proc.stdin.flush()
+                except OSError:  # servidor caiu no meio dos comandos
+                    problems.append(f"servidor morreu antes do comando: {cmd}")
+                    break
                 LAST_CONSOLE.extend(drain(q, 2))
             if after_done:
                 problems += after_done(q)
-            proc.stdin.write("stop\n")
-            proc.stdin.flush()
+            try:
+                proc.stdin.write("stop\n")
+                proc.stdin.flush()
+            except OSError:
+                pass
             break
     try:
         proc.wait(timeout=180)

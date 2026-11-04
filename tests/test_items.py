@@ -11,6 +11,7 @@ EXPECTED = {
     "ecos:fragmento_eco", "ecos:fragmento_selo_floresta", "ecos:fragmento_selo_profundezas",
     "ecos:fragmento_selo_ceus", "ecos:fragmento_selo_estrelas", "ecos:chave_crepuscular",
     "ecos:artefato_selo", "ecos:chave_celeste",
+    "ecos:eco_do_arauto", "ecos:selo_restaurado", "ecos:poder_absorvido",
 }
 
 

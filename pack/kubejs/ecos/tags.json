@@ -1,31 +1,34 @@
 {
- "item": {
-  "twilightforest:portal/activator": {
-   "set": [
-    "ecos:chave_crepuscular"
-   ]
-  },
-  "twilightforest:banned_uncraftables": {
-   "add": [
-    "projecte:philosophers_stone",
-    "projecte:transmutation_table",
-    "projecte:low_covalence_dust",
-    "projecte:medium_covalence_dust",
-    "projecte:high_covalence_dust",
-    "projecte:collector_mk1",
-    "projecte:relay_mk1",
-    "undergarden:catalyst",
-    "blue_skies:zeal_lighter",
-    "ad_astra:nasa_workbench",
-    "ecos:fragmento_eco",
-    "ecos:fragmento_selo_floresta",
-    "ecos:fragmento_selo_profundezas",
-    "ecos:fragmento_selo_ceus",
-    "ecos:fragmento_selo_estrelas",
-    "ecos:chave_crepuscular",
-    "ecos:artefato_selo",
-    "ecos:chave_celeste"
-   ]
+  "item": {
+    "twilightforest:portal/activator": {
+      "set": [
+        "ecos:chave_crepuscular"
+      ]
+    },
+    "twilightforest:banned_uncraftables": {
+      "add": [
+        "projecte:philosophers_stone",
+        "projecte:transmutation_table",
+        "projecte:low_covalence_dust",
+        "projecte:medium_covalence_dust",
+        "projecte:high_covalence_dust",
+        "projecte:collector_mk1",
+        "projecte:relay_mk1",
+        "undergarden:catalyst",
+        "blue_skies:zeal_lighter",
+        "ad_astra:nasa_workbench",
+        "ecos:fragmento_eco",
+        "ecos:fragmento_selo_floresta",
+        "ecos:fragmento_selo_profundezas",
+        "ecos:fragmento_selo_ceus",
+        "ecos:fragmento_selo_estrelas",
+        "ecos:chave_crepuscular",
+        "ecos:artefato_selo",
+        "ecos:chave_celeste",
+        "ecos:eco_do_arauto",
+        "ecos:selo_restaurado",
+        "ecos:poder_absorvido"
+      ]
+    }
   }
- }
 }
