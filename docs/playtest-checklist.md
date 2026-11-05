@@ -1,7 +1,7 @@
 # Ecos do Selo — checklist de playtest
 
 O que os testes automáticos **já provaram** (não precisa repetir):
-- O servidor sobe sem erros; o FTB Quests carrega **17 capítulos e 511 quests** e as 4 caixas de loot.
+- O servidor sobe sem erros; o FTB Quests carrega **17 capítulos e 517 quests** e as 4 caixas de loot.
 - Todo item, tag, entidade e dimensão das quests existe; toda task tem caminho de obtenção; não há ciclos.
 - As 30 páginas do diário saem uma vez cada; nenhuma quest repetível dá moeda.
 - Filtros de tag casam com todos os membros (ex.: as 17 camas).
@@ -74,5 +74,19 @@ entregou 2 400 EU com 28 800 mB de vapor (perda de 83 %). Falta o que só o olho
 - [ ] Rodas de moer do Create com minério bruto do GregTech dão minério moído; a lavagem (ventilador + água) dá o
       purificado. No JEI, o rendimento do Create é menor que o do macerador do GregTech.
 - [ ] Rodas de moer com cascalho: de vez em quando sai pó de redstone.
+
+## 8. Revisão das quests (descrições, dependências e layout)
+Mudou muita coisa nas quests; o relatório está em `docs/revisao-quests-relatorio.md`. Conferir em jogo:
+- [ ] Livro de quests: abra cada capítulo e veja se as linhas de dependência **não se cruzam** nem passam por cima de quests.
+- [ ] `ato5/campo_luv` (movida do Ato IV para o Ato V): num mundo que já tinha essa quest completa, ela **continua completa**.
+- [ ] Prólogo: diamante, bússola (mapa) e encantamento aparecem como **opcionais**; dá para terminar o Prólogo sem eles.
+- [ ] Ato I: obsidiana sai com a picareta de aço do GregTech **ou** com o ventilador do Create sobre magma (conferir se a
+      descrição bate com o que funciona).
+- [ ] Dependências novas: `queimador` só libera depois do Nether; `ferro_em_massa` não depende mais do Ato II; o cristal
+      depende da montadora LuV; os dínamos dependem do eixo do Create.
+- [ ] Occultism: a ordem das quests bate com o que o jogo pede (giz roxo: foliot triturador mói pedra do End em pó).
+- [ ] As 6 quests novas da integração aparecem e completam ao entregar o item: `motor_vapor_eco`, `dinamo_ulv`,
+      `dinamo_lv`, `saida_vapor`, `diesel`, `minerio_no_create`.
+- [ ] Textos novos (balde do GregTech, mochila, carvão, redstone do veio fundo): lê bem e a receita descrita existe no JEI.
 
 Anote qualquer falha com o nome da quest (aparece no topo da janela da quest) e me mande.

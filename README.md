@@ -44,7 +44,8 @@ Também:
   geradores de combustão do GregTech queimam os do Diesel Generators.
 - O Create **mói e lava os minérios do GregTech**, mas rende **menos** que as máquinas do GregTech (é o atalho sem
   energia elétrica).
-- **Redstone cedo**: moer cascalho no Create às vezes dá pó de redstone (10 %).
+- **Redstone pelo Create**: moer cascalho nas rodas trituradoras às vezes dá pó de redstone (10 %). Mas as rodas são
+  feitas no montador mecânico, que pede gema de fonte (Ars Nouveau), então isso só vale a partir do Ato II.
 
 ## Servidor
 Veja `tools/server_template/LEIA-ME-SERVIDOR.md` (vai junto no pacote do servidor).
