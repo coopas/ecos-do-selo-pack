@@ -9,6 +9,7 @@ de item e de fluido tem uma alternativa alcançada e a máquina está disponíve
 - máquina do GregTech precisa aguentar o `eut`: elétrica de tier T -> V[T] (e uma fonte de EU alcançada); vapor ->
   steam_max_eut; controlador de multibloco -> V[tier do hatch de energia + 1] (dois hatches sobem um tier, como no
   GTCEu) com fonte de EU; `ebf_temp` <= maior bobina alcançada.
+Montagem em sequência do Create: o item de transição não é entrada (ver _item_slots).
 Receita sem nenhuma entrada no dump (o dump não lê smithing, glifos do Ars…) nunca dispara: não é fonte grátis.
 Liberar uma picareta (ou um item de `needs`) reavalia as fontes naturais. Fluido vem de fonte natural, de receita ou
 do balde cheio alcançado; balde vazio + fluido alcançado dá o balde cheio.
@@ -133,6 +134,25 @@ def _machine_kind(m: str):
     return ("plain", None)
 
 
+SEQUENCED = "create:sequenced_assembly"
+
+
+def _item_slots(r: dict) -> list[list[str]]:
+    """Slots de item da receita. Montagem em sequência do Create: o dump traz o item de transição (o slot final, sozinho)
+    misturado aos passos; ele nasce dentro da montagem, então sai, e cada item que sobra num passo vira slot próprio."""
+    slots = r["inputs"]
+    if r["type"] != SEQUENCED or len(slots) < 2 or len(slots[-1]) != 1:
+        return slots
+    trans = slots[-1][0]
+    out = [slots[0]]
+    for slot in slots[1:]:
+        if trans in slot:
+            out += [[a] for a in slot if a != trans]
+        else:
+            out.append(slot)
+    return out
+
+
 # ---------- índice (montado uma vez por prog/rec/reg) ----------
 
 class ClosureIndex:
@@ -165,7 +185,7 @@ class ClosureIndex:
             self.r_out.append(r["outputs"]); self.r_fout.append(r.get("fluid_outputs") or [])
             self.r_eut.append(r.get("eut") or 0); self.r_ebf.append(r.get("ebf_temp") or 0)
             n = 0
-            for slot in r["inputs"]:
+            for slot in _item_slots(r):
                 alts = set()
                 for a in slot:
                     alts |= set(reg.tag_items(a)) if a.startswith("#") else {a}
@@ -239,11 +259,19 @@ def index_for(prog, rec, reg) -> ClosureIndex:
 
 # ---------- fecho ----------
 
+def max_eut_for(tier: str | None) -> float:
+    """Teto de EU/t de um tier ("none" = nenhuma receita do GregTech que gaste EU; None = sem teto)."""
+    if tier is None:
+        return INF
+    return 0 if tier == "none" else V[TIERS.index(tier)]
+
+
 def reach(seed: set[str], dims: set[str], prog, rec, reg, *, exclude_deep: bool = False,
-          index: ClosureIndex | None = None) -> Reach:
+          max_eut: float = INF, index: ClosureIndex | None = None) -> Reach:
     """Tudo o que se produz a partir da seed (itens; "fluid:<id>" para fluido) com as dimensões abertas.
 
-    exclude_deep=True ignora veios com max_y < 0 (para saber se um item depende só de veio fundo)."""
+    exclude_deep=True ignora veios com max_y < 0 (para saber se um item depende só de veio fundo);
+    max_eut corta receitas com eut acima dele (para saber se um item depende de tier alto)."""
     idx = index or index_for(prog, rec, reg)
     out = Reach()
     items, fluids, why = out.items, out.fluids, out._why
@@ -303,6 +331,8 @@ def reach(seed: set[str], dims: set[str], prog, rec, reg, *, exclude_deep: bool 
         if ebf and state["coil"] < ebf:
             return False
         eut = idx.r_eut[ri]
+        if eut > max_eut:
+            return False
         return any(m in items and eut <= cap(m, kind) for m, kind in mode)
 
     blocked: dict[str, list[int]] = {}
@@ -384,3 +414,131 @@ def deep_only(item: str, dims: set[str], prog, reg) -> bool:
     """O item só vem, direto do mundo nessas dimensões, de veio fundo (max_y < 0)? Receitas não contam."""
     srcs = [s for s in build_sources(prog, reg) if (s.dim == ANY or s.dim in dims) and item in s.items]
     return bool(srcs) and all(s.deep for s in srcs)
+
+
+# ---------- diagnóstico: o que falta para um item fora do fecho ----------
+
+def _missing_options(target: str, r: Reach, dims: set[str], idx: ClosureIndex, rec, reg,
+                     max_eut: float = INF) -> list[tuple[int, list]]:
+    """Cada jeito de obter o alvo (item, "#tag" ou "fluid:<id>") -> (custo, o que falta nele), com o que falta em
+    [("alvo", x) | ("motivo", texto)]. Receita de tipo sem máquina no modelo custa mais que qualquer outra."""
+    if target.startswith("#"):
+        return [opt for m in sorted(reg.tag_items(target)) for opt in _missing_options(m, r, dims, idx, rec, reg, max_eut)]
+    fluid = target.startswith("fluid:")
+    x = target[len("fluid:"):] if fluid else target
+    if fluid and x.startswith("#"):
+        return [opt for f in sorted(reg.fluid_tag_fluids(x))
+                for opt in _missing_options("fluid:" + f, r, dims, idx, rec, reg, max_eut)]
+    opts: list[tuple[int, list]] = []
+    pick = max((idx.pickaxe[i] for i in r.items if i in idx.pickaxe), default=-1)
+    for s in idx.sources:
+        if x not in (s.fluids if fluid else s.items):
+            continue
+        miss = []
+        if s.dim != ANY and s.dim not in dims:
+            miss.append(("motivo", f"dimensão {s.dim} fechada"))
+        if s.tier is not None and pick < s.tier:
+            miss.append(("motivo", f"picareta nível {s.tier} ({s.label})"))
+        if s.needs and s.needs.isdisjoint(r.items):
+            miss.append(("alvo", sorted(s.needs)[0]) if len(s.needs) == 1 else ("motivo", " ou ".join(sorted(s.needs))))
+        opts.append((len(miss), miss))
+    eu = not idx.eu_sources.isdisjoint(r.items)
+    hatch = max((TIERS.index(m.group(1)) for i in r.items if i.startswith("gtceu:") and (m := _HATCH_RE.match(i))),
+                default=-1)
+    coil = max((t for i, t in idx.coils.items() if i in r.items), default=0)
+    for raw in (rec.fluid_producers(x) if fluid else rec.for_output(x)):
+        if not raw["inputs"] and not raw.get("fluid_inputs"):
+            continue
+        t = raw["type"]
+        if t not in idx.type_mode:
+            idx._classify(t)
+        mode = idx.type_mode[t]
+        if mode == "none":
+            opts.append((99, [("motivo", f"receita {raw['id']}: tipo {t} sem máquina no modelo")]))
+            continue
+        miss = []
+        for slot in _item_slots(raw):
+            alts = set()
+            for a in slot:
+                alts |= set(reg.tag_items(a)) if a.startswith("#") else {a}
+            if alts.isdisjoint(r.items):
+                miss.append(("alvo", slot[0]))
+        for slot in raw.get("fluid_inputs") or []:
+            alts = set()
+            for a in slot:
+                alts |= set(reg.fluid_tag_fluids(a)) if a.startswith("#") else {a}
+            if alts.isdisjoint(r.fluids):
+                miss.append(("alvo", "fluid:" + slot[0]))
+        eut = raw.get("eut") or 0
+        if eut > max_eut:
+            need = next((TIERS[i] for i, v in enumerate(V) if v >= eut), "uhv")
+            miss.append(("motivo", f"receita {raw['id']} de {eut} EU/t ({need})"))
+        elif mode != "manual":
+            have = [(m, k) for m, k in mode if m in r.items]
+            if not have:
+                names = [m for m, _ in mode if m in reg.items] or [m for m, _ in mode]
+                miss.append(("motivo", f"máquina {names[0]} ({t})"))
+            else:
+                def cap(k):
+                    if k[0] == "plain":
+                        return INF
+                    if k[0] == "steam":
+                        return idx.prog.steam_max_eut.get(k[1], 0)
+                    if not eu:
+                        return 0
+                    return V[k[1]] if k[0] == "tier" else (V[min(hatch + 1, len(V) - 1)] if hatch >= 0 else 0)
+                if not any(eut <= cap(k) for _, k in have):
+                    need = next((TIERS[i] for i, v in enumerate(V) if v >= eut), "uhv")
+                    miss.append(("motivo", f"máquina {t} que aguente {eut} EU/t ({need})"
+                                 + ("" if eu else " e uma fonte de EU")))
+            if (raw.get("ebf_temp") or 0) > coil:
+                miss.append(("motivo", f"bobina de {raw['ebf_temp']} K"))
+        opts.append((len(miss), miss))
+    return opts
+
+
+def explain(target: str, r: Reach, dims: set[str], prog, rec, reg, *, index: ClosureIndex | None = None,
+            max_eut: float = INF, depth: int = 10, budget: int = 400) -> str:
+    """O que faltou no caminho mais curto até o alvo fora do fecho: "a → b → motivos".
+
+    Busca em largura: um jeito de obter o item em que falta UMA coisa desce para ela; um jeito em que faltam várias
+    (ou só motivos: máquina, dimensão, picareta) encerra o caminho. Vence o caminho mais curto e, nele, o jeito com
+    menos faltas distintas. Jeitos que voltam a um item da cadeia (bloco <-> lingote, desmontar a própria peça) não
+    contam. `budget` limita os nós visitados."""
+    idx = index or index_for(prog, rec, reg)
+
+    def items_of(x: str) -> set[str]:
+        if x.startswith("fluid:#"):
+            return {"fluid:" + f for f in reg.fluid_tag_fluids(x[len("fluid:"):])}
+        return set(reg.tag_items(x)) if x.startswith("#") else {x}
+
+    level = [(target, [], items_of(target) | {target})]
+    loop_reason = None
+    for _ in range(depth + 1):
+        found, nxt = [], []
+        for cur, chain, seen in level:
+            budget -= 1
+            if budget < 0:
+                break
+            opts = _missing_options(cur, r, dims, idx, rec, reg, max_eut)
+            if not opts:
+                found.append((1, chain, "nenhuma receita nem fonte natural"))
+                continue
+            for cost, miss in opts:
+                miss = list(dict.fromkeys(miss))  # 9 slots da mesma tag contam uma vez
+                if any(k == "alvo" and (v in seen or not items_of(v).isdisjoint(seen)) for k, v in miss):
+                    loop_reason = loop_reason or ", ".join(v for _, v in miss)
+                    continue
+                if len(miss) == 1 and miss[0][0] == "alvo":
+                    v = miss[0][1]
+                    nxt.append((v, chain + [v], seen | items_of(v) | {v}))
+                else:
+                    found.append((cost if cost >= 99 else len(miss), chain, ", ".join(v for _, v in miss) or "?"))
+        if found:
+            _, chain, reason = min(found, key=lambda f: f[0])
+            return " → ".join(chain + [reason])
+        if not nxt or budget < 0:
+            break
+        seen_nodes = set()
+        level = [n for n in nxt if not (n[0] in seen_nodes or seen_nodes.add(n[0]))]
+    return f"só por ciclo ({loop_reason})" if loop_reason else "caminho longo demais para explicar"

@@ -191,3 +191,13 @@ coils:
 
 # Veio com max_y < 0 antes deste ato vira aviso "difícil cedo demais" (diamante no fundo do deepslate).
 deep_ok_from_act: 1
+
+# Ato -> tier do GregTech esperado nele. Item que só sai com receita do GT acima desse tier (eut > V[tier]) vira aviso
+# "acima do esperado"; none = nenhuma receita do GT que gaste EU (crafting, forno primitivo, coque).
+act_tier: {0: none, 1: lv, 2: mv, 3: ev, 4: luv, 5: uv}
+
+# Chefe sem task de kill: quest -> itens que a luta entrega (seed da própria quest e de quem depende dela).
+# O Arauto do Eco é invocado pelo ritual ecos:ritual_entidade (Artefato do Selo na tigela dourada) e a morte dele dá o
+# Eco do Arauto (pack/kubejs/server_scripts/40_ecos_final_boss.js); a quest final/arauto pede a tag ecos:prova_arauto.
+boss_quest_drops:
+  final/arauto: [ecos:eco_do_arauto]

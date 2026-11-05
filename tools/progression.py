@@ -20,6 +20,8 @@ class Progression:
     eu_sources: list = field(default_factory=list)  # máquina elétrica só conta com uma destas no fecho
     coils: dict = field(default_factory=dict)  # item da bobina -> temperatura
     deep_ok_from_act: int = 1
+    act_tier: dict = field(default_factory=dict)  # ato -> tier do GregTech esperado ("none", "lv", "mv"...)
+    boss_quest_drops: dict = field(default_factory=dict)  # "capitulo/slug" -> itens do chefe sem task de kill
 
 
 def load(path: Path | str, naturals: Path | str | None = None) -> Progression:
@@ -54,4 +56,6 @@ def referenced_items(p: Progression) -> set[str]:
     for ms in p.machines.values():
         out |= set(ms)
     out |= set(p.eu_sources) | set(p.coils)
+    for items in p.boss_quest_drops.values():
+        out |= set(items)
     return out

@@ -18,6 +18,7 @@ qualquer:
   # (tasks de kill ancestrais). Só os itens de usar o Eco ficam aqui, travados por ele.
   - {id: ecos:selo_restaurado, needs: [ecos:eco_do_arauto]}   # usar o Eco do Arauto
   - {id: ecos:poder_absorvido, needs: [ecos:eco_do_arauto]}   # usar o Eco do Arauto agachado
+  - {id: ars_nouveau:wilden_tribute, needs: [ars_nouveau:ritual_wilden_summon]}  # Quimera Wilden (tooltip do item: Ritual of Summon Wilden)
 
 minecraft:overworld:
   # terreno
@@ -153,10 +154,21 @@ minecraft:overworld:
   - ae2:certus_quartz_crystal            # brotos de certus nos meteoritos
   - ae2:flawed_budding_quartz
   - {id: ae2:sky_stone_block, tier: 2}
-  # Otherworld do Occultism (visto com os óculos ou com o Sonho do Demônio)
-  - {id: occultism:iesnium_ore_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
-  - {id: occultism:otherstone_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
-  - {id: occultism:otherworld_log_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
+  # Otherworld do Occultism (visto com os óculos ou com o Sonho do Demônio): os blocos *_natural dropam o bloco comum
+  # (loot_tables/blocks/otherworld_log_natural e otherstone_natural); sem a visão dropam carvalho/andesito.
+  # Árvores: biome_modifier add_tree_otherworld_natural (#stronghold_biased_to); o iesnio fica no Nether.
+  - {id: occultism:otherstone, needs: [occultism:otherworld_goggles, occultism:datura]}
+  - {id: occultism:otherworld_log, needs: [occultism:otherworld_goggles, occultism:datura]}
+  # mobs, loot e trocas (conferidos nos loot tables dos jars)
+  - minecraft:emerald                    # vindicador/evocador (entities/*.json), baús e arqueologia vanilla, trocas de aldeão
+  - minecraft:totem_of_undying           # evocador (entities/evoker.json): mansões e invasões
+  - minecraft:enchanted_book             # livro com enchant_randomly nos baús (simple_dungeon, abandoned_mineshaft…)
+  - irons_spellbooks:blank_rune          # baús vanilla pelo loot modifier do Iron's (vanilla_generic_loot_modifier)
+  - irons_spellbooks:frozen_bone         # Stray (loot modifier stray_modifier), baús do ice_spider_den e mountain_tower
+  - ae2:silicon_press                    # prensas: cubo misterioso dos meteoritos (ae2guide presses.md)
+  - ae2:logic_processor_press
+  - ae2:calculation_processor_press
+  - ae2:engineering_processor_press
   - fluid:gtceu:oil_medium               # brotos de petróleo do GT (raw_oil_sprout: óleo bruto); gtceu:oil só pela sonda, não modelada
   - {id: fluid:createdieselgenerators:crude_oil, needs: [createdieselgenerators:pumpjack_head]}
 
@@ -190,6 +202,10 @@ minecraft:the_nether:
   - cataclysm:burning_ashes              # drop do Ignited Revenant; também craftável de dying_ember
   - cataclysm:ignitium_ingot             # drop do Ignis
   - cataclysm:altar_of_fire              # Arena Ardente
+  # iesnio do Occultism: biome_modifier add_ore_iesnium (#is_nether) põe iesnium_ore_natural, que dropa iesnium_ore
+  - {id: occultism:iesnium_ore, needs: [occultism:otherworld_goggles, occultism:datura]}
+  - irons_spellbooks:hogskin             # hoglin (loot modifier do Iron's hoglin_modifier)
+  - irons_spellbooks:cinder_essence      # Ancient Battleground e Citadel (biomas de bastião), Pyromancer (entities/fire_boss)
 
 minecraft:the_end:
   - {id: minecraft:end_stone, tier: 0}
@@ -222,6 +238,7 @@ twilightforest:twilight_forest:
   - twilightforest:lich_trophy
   - twilightforest:transformation_powder # loot da Twilight
   - twilightforest:charm_of_life_1
+  - twilightforest:steeleaf_ingot        # baús (chests/hill_1, hill_3, labyrinth_*, stronghold_room, darktower_*)
 
 undergarden:undergarden:
   - {id: undergarden:depthrock, tier: 0}
@@ -242,6 +259,8 @@ undergarden:undergarden:
   - undergarden:veil_mushroom
   - undergarden:brute_tusk
   - undergarden:masticator_scales
+  - undergarden:utheric_shard            # rotling/rotwalker/rotbeast (entities/*.json) e baú das catacumbas
+  - undergarden:forgotten_nugget         # Forgotten Guardian (entities/forgotten_guardian.json) e baú das catacumbas
   - minecraft:coal                       # minérios de depthrock/shiverstone (não são do GT)
   - {id: minecraft:raw_iron, tier: 1}
   - {id: minecraft:raw_gold, tier: 2}
@@ -319,6 +338,7 @@ blue_skies:everdawn:
   - blue_skies:dusk_log
   - blue_skies:maple_log
   - {id: blue_skies:lunar_stone, tier: 0}
+  - {id: blue_skies:lunar_cobblestone, tier: 0}  # a lunar_stone dropa lunar_cobblestone sem toque de seda (blocks/lunar_stone.json)
   - {id: blue_skies:pyrope_gem, tier: 1}
   - {id: blue_skies:aquite, tier: 1}
   - {id: blue_skies:diopside_gem, tier: 2}

@@ -172,6 +172,34 @@ def test_progression_load_reads_naturals(tmp_path):
     assert p.naturals == {"minecraft:overworld": ["x:a"]} and p.steam_max_eut == {"lp": 32, "hp": 32}
 
 
+SEQ = rcp("create:sequenced_assembly/pm", "create:sequenced_assembly", ["x:mechanism"],
+          [["x:sheet"], ["x:incomplete", "x:cog", "x:big_cog"], ["x:incomplete"]])
+
+
+def test_sequenced_assembly_transitional_item_is_not_an_input():
+    """O item de transição (x:incomplete) nasce dentro da própria montagem; cada passo exige o seu item."""
+    p = prog(machines={"create:sequenced_assembly": ["create:deployer"]})
+    assert "x:mechanism" in run({"x:sheet", "x:cog", "x:big_cog", "create:deployer"}, [SEQ], p).items
+    assert "x:mechanism" not in run({"x:sheet", "x:cog", "create:deployer"}, [SEQ], p).items  # falta um passo
+
+
+def test_max_eut_cuts_high_tier_recipes():
+    seed = {"x:ore", "gtceu:lv_macerator", "gtceu:lv_steam_turbine"}
+    assert "x:dust" in run(seed, GT).items
+    r = closure.reach(seed, {"minecraft:overworld"}, prog(), recipes.Recipes(GT), reg(), max_eut=8)
+    assert "x:dust" not in r.items
+    assert closure.max_eut_for("none") == 0 and closure.max_eut_for("mv") == 128
+
+
+def test_explain_follows_single_missing_input():
+    p = prog({"minecraft:the_nether": ["x:far"]})
+    recs = [rcp("x:mid", "minecraft:crafting_shaped", ["x:mid"], [["x:far"]]),
+            rcp("x:top", "minecraft:crafting_shaped", ["x:top"], [["x:mid"], ["x:mid"]])]
+    r = run(set(), recs, p)
+    why = closure.explain("x:top", r, {"minecraft:overworld"}, p, recipes.Recipes(recs), reg())
+    assert why == "x:mid → x:far → dimensão minecraft:the_nether fechada"
+
+
 # ---------- dados reais (pulam sem os dumps) ----------
 
 def _real():
