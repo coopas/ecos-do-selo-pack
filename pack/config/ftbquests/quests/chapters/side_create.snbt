@@ -22,7 +22,7 @@
 			description: [
 				"Andesito e ferro: a liga que movia Aurend."
 				"Mais fácil com zinco: lingote de zinco vira 9 pepitas à mão e serve no lugar do ferro."
-				"Pepitas de ferro só saem com a serra do GregTech."
+				"Pepitas de ferro: serra do GregTech, ou derreta uma pá de ferro na fornalha."
 			]
 			icon: {
 				Count: 1b

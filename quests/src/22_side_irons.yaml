@@ -18,7 +18,8 @@ quests:
      tasks: [{item: irons_spellbooks:scroll_forge}], rewards: [{coins: 3}]}
   - {slug: pedestal, title: "Pedestal", deps: [mesa], desc: ["Para exibir o que você aprendeu."],
      tasks: [{item: irons_spellbooks:pedestal}], rewards: [{coins: 1}]}
-  - {slug: caldeirao, title: "Caldeirão do Alquimista", deps: [mesa], desc: ["Tintas e poções, misturadas em fogo baixo.", "Pede essência de cinzas: dos Cavaleiros Antigos e do eco de Tyros, na Cidadela do Nether,", "e dos baús do Posto da Legião."],
+  - {slug: caldeirao, title: "Caldeirão do Alquimista", deps: [mesa], desc: ["Tintas e poções, misturadas em fogo baixo.", "Pede essência de cinzas: dos Cavaleiros Ancestrais (Cidadela e Posto da Legião, no Nether) e dos túmulos do Posto.",
+       "O Eco de Tyros também solta, mas só vem se chamado na runa da Cidadela com o Convocador de Almas Cinosas."],
      tasks: [{item: irons_spellbooks:alchemist_cauldron}], rewards: [{coins: 3}]}
   - {slug: livro_ferro, title: "Livro de Ferro", deps: [livro_cobre], desc: ["Mais páginas, mais feitiços."],
      tasks: [{item: irons_spellbooks:iron_spell_book}], rewards: [{coins: 3}]}

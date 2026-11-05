@@ -41,15 +41,15 @@ quests:
      desc: ["Um pensamento preso em cristal, como o eco preso no fragmento.",
        "O chip de cristal cru pede európio na autoclave, e o európio só sai do reator de fusão.",
        "Acender o európio pede 150M EU no reator: 15 escotilhas de energia LuV (10M cada).",
-       "Depois: 5000 K no alto-forno, gravador e montadora de circuitos LuV (9600 EU/t), tudo na sala limpa."], tasks: [{item: gtceu:crystal_processor, count: 4}],
+       "Depois: 5000 K no alto-forno, gravador e a Montadora de Circuitos LuV (9600 EU/t), tudo na sala limpa."], tasks: [{item: gtceu:crystal_processor, count: 4}],
      rewards: [{crate: epica}, {coins: 8}]}
   - {slug: modulo_energia, title: "Módulo de Energia", deps: [emissor_zpm], desc: ["Guarde energia de um continente.",
        "Linha de montagem em ZPM (100000 EU/t), com európio, trínio e um gerador de campo LuV.",
        "Pesquise o aglomerado de orbes lapotrônicos na Research Station."],
      tasks: [{item: gtceu:energy_module}], rewards: [{coins: 6}]}
-  - {slug: fusao, title: "Reator de Fusão", deps: [liga_naquadah, campo_luv], shape: gear, icon: gtceu:luv_fusion_reactor,
+  - {slug: fusao, title: "Reator de Fusão", deps: [liga_naquadah, ato4/campo_iv], shape: gear, icon: gtceu:luv_fusion_reactor,
      desc: ["Uma estrela dentro de uma caixa.", "Aurend fazia isso para não ouvir o céu.",
-       "Pesquise o fio de ITBTC no scanner IV. Pede circuitos ZPM, ósmirídio, plutônio-241 (centrífuga do plutônio do End)",
+       "Pesquise o fio de ITBTC no scanner IV. Pede circuitos ZPM, gerador de campo IV, ósmirídio, plutônio-241 (centrífuga do plutônio do End)",
        "e bobinas supercondutoras (ITBTC e trínio). Neodímio e hidrogênio fundidos nele dão o európio."], tasks: [{item: gtceu:luv_fusion_reactor}],
      rewards: [{crate: lendaria}, {coins: 12}]}
   - {slug: casco_zpm, title: "Casco ZPM", deps: [fusao], desc: ["Zero Point Module. O fim da escada.",
@@ -58,17 +58,18 @@ quests:
   - {slug: motor_zpm, title: "Motor ZPM", deps: [casco_zpm], desc: ["Feito na linha de montagem, com fusão.",
        "O fio de európio vem do reator. Pesquise o motor LuV no scanner IV."],
      tasks: [{item: gtceu:zpm_electric_motor, count: 4}], rewards: [{coins: 8}]}
-  - {slug: emissor_zpm, title: "Emissor ZPM", deps: [motor_zpm], desc: ["Uma luz que atravessa o Selo.",
+  - {slug: emissor_zpm, title: "Emissor ZPM", deps: [motor_zpm, campo_luv], desc: ["Uma luz que atravessa o Selo.",
        "O scanner não basta: pesquise o emissor LuV na Research Station, com computação de um HPCA (cabo óptico).",
-       "As duas saem da linha de montagem a 100000 EU/t: duas escotilhas de energia LuV dão ZPM. O Data Orb vai no Data Access Hatch."],
+       "As duas saem da linha de montagem a 100000 EU/t: duas escotilhas de energia LuV dão ZPM. O Data Orb vai no Data Access Hatch.",
+       "As duas pedem gerador de campo LuV e fio duplo de urânio-ródio-dinaquadida (9000 K: bobinas de trínio)."],
      tasks: [{item: gtceu:zpm_emitter, count: 2}], rewards: [{coins: 8}]}
   - {slug: campo_zpm, title: "Gerador de Campo ZPM", deps: [emissor_zpm], shape: gear, icon: gtceu:zpm_field_generator,
      desc: ["O campo mais forte que Aurend construiu.", "Ele vai segurar o Artefato inteiro.",
        "Pesquise o gerador LuV na Research Station. O fio de urânio-ródio-dinaquadida funde a 9000 K:",
        "bobinas de trínio, feitas na montadora (assembler) ZPM."], tasks: [{item: gtceu:zpm_field_generator}],
      rewards: [{crate: lendaria}, {coins: 12}]}
-  - {slug: campo_luv, legacy_id: ato4/campo_luv, title: "Gerador de Campo LuV", deps: [bobina_naquadah, montadora_luv],
-     desc: ["Faz parte da Pedra Filosofal.", "Linha de montagem: emissor LuV, estrela quântica, HSS-S e fio de ITBTC.",
+  - {slug: campo_luv, legacy_id: ato4/campo_luv, title: "Gerador de Campo LuV", deps: [bobina_naquadah, emissor_luv, ato4/campo_iv],
+     desc: ["Faz parte da Pedra Filosofal.", "Linha de montagem: emissor LuV, estrela quântica, HSS-S, fio de ITBTC e circuitos LuV (o mainframe nano serve).",
        "O ITBTC funde a 6000 K, só com bobinas de naquadah. Pesquise o gerador IV no scanner IV."],
      tasks: [{item: gtceu:luv_field_generator}], rewards: [{coins: 8}]}
   - {slug: receita_pedra, title: "As Estrelas e a Melhor Máquina", deps: [campo_luv, ato4/fragmento],

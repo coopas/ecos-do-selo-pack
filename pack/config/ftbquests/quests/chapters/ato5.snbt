@@ -66,7 +66,7 @@
 			]
 			title: "Fui Eu"
 			x: 0.0d
-			y: -0.75d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -115,8 +115,8 @@
 				}
 			]
 			title: "Platina e Paládio"
-			x: 3.0d
-			y: -7.5d
+			x: 1.5d
+			y: -7.25d
 		}
 		{
 			dependencies: [
@@ -166,7 +166,7 @@
 				}
 			]
 			title: "Irídio e Ósmio"
-			x: 4.5d
+			x: 3.0d
 			y: -10.0d
 		}
 		{
@@ -205,7 +205,7 @@
 			]
 			title: "Ósmirídio"
 			x: 6.0d
-			y: -9.5d
+			y: -9.75d
 		}
 		{
 			dependencies: [
@@ -261,7 +261,7 @@
 				}
 			]
 			title: "Naquadah"
-			x: 4.5d
+			x: 3.0d
 			y: -8.5d
 		}
 		{
@@ -302,7 +302,7 @@
 			]
 			title: "Liga de Naquadah"
 			x: 7.5d
-			y: -7.75d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -338,7 +338,7 @@
 			]
 			title: "Bobinas de Naquadah"
 			x: 6.0d
-			y: -8.0d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -373,7 +373,7 @@
 			]
 			title: "Emissor LuV"
 			x: 3.0d
-			y: -4.5d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -408,7 +408,7 @@
 			]
 			title: "Braço Robótico LuV"
 			x: 3.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -444,7 +444,7 @@
 			]
 			title: "Montadora de Circuitos LuV"
 			x: 4.5d
-			y: -4.0d
+			y: -5.75d
 		}
 		{
 			dependencies: [
@@ -454,7 +454,7 @@
 				"Um pensamento preso em cristal, como o eco preso no fragmento."
 				"O chip de cristal cru pede európio na autoclave, e o európio só sai do reator de fusão."
 				"Acender o európio pede 150M EU no reator: 15 escotilhas de energia LuV (10M cada)."
-				"Depois: 5000 K no alto-forno, gravador e montadora de circuitos LuV (9600 EU/t), tudo na sala limpa."
+				"Depois: 5000 K no alto-forno, gravador e a Montadora de Circuitos LuV (9600 EU/t), tudo na sala limpa."
 			]
 			icon: {
 				Count: 1b
@@ -498,7 +498,7 @@
 			]
 			title: "Processador de Cristal"
 			x: 10.5d
-			y: -5.75d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -534,17 +534,17 @@
 			]
 			title: "Módulo de Energia"
 			x: 15.0d
-			y: -0.75d
+			y: -3.25d
 		}
 		{
 			dependencies: [
 				"708B799A406F9163"
-				"58A5FA59878BA1AF"
+				"4775B419FE97E0AD"
 			]
 			description: [
 				"Uma estrela dentro de uma caixa."
 				"Aurend fazia isso para não ouvir o céu."
-				"Pesquise o fio de ITBTC no scanner IV. Pede circuitos ZPM, ósmirídio, plutônio-241 (centrífuga do plutônio do End)"
+				"Pesquise o fio de ITBTC no scanner IV. Pede circuitos ZPM, gerador de campo IV, ósmirídio, plutônio-241 (centrífuga do plutônio do End)"
 				"e bobinas supercondutoras (ITBTC e trínio). Neodímio e hidrogênio fundidos nele dão o európio."
 			]
 			icon: {
@@ -589,7 +589,7 @@
 			]
 			title: "Reator de Fusão"
 			x: 9.0d
-			y: -5.75d
+			y: -7.25d
 		}
 		{
 			dependencies: [
@@ -624,7 +624,7 @@
 			]
 			title: "Casco ZPM"
 			x: 10.5d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -659,16 +659,18 @@
 			]
 			title: "Motor ZPM"
 			x: 12.0d
-			y: -2.5d
+			y: -4.75d
 		}
 		{
 			dependencies: [
 				"1F3DE6F80277F5B9"
+				"58A5FA59878BA1AF"
 			]
 			description: [
 				"Uma luz que atravessa o Selo."
 				"O scanner não basta: pesquise o emissor LuV na Research Station, com computação de um HPCA (cabo óptico)."
 				"As duas saem da linha de montagem a 100000 EU/t: duas escotilhas de energia LuV dão ZPM. O Data Orb vai no Data Access Hatch."
+				"As duas pedem gerador de campo LuV e fio duplo de urânio-ródio-dinaquadida (9000 K: bobinas de trínio)."
 			]
 			id: "19674956243B3BC2"
 			rewards: [
@@ -695,7 +697,7 @@
 			]
 			title: "Emissor ZPM"
 			x: 13.5d
-			y: -0.75d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -749,16 +751,17 @@
 			]
 			title: "Gerador de Campo ZPM"
 			x: 15.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"24A8CF6845FE0120"
-				"5254D1171441BFC0"
+				"2781A8FE911CB16E"
+				"4775B419FE97E0AD"
 			]
 			description: [
 				"Faz parte da Pedra Filosofal."
-				"Linha de montagem: emissor LuV, estrela quântica, HSS-S e fio de ITBTC."
+				"Linha de montagem: emissor LuV, estrela quântica, HSS-S, fio de ITBTC e circuitos LuV (o mainframe nano serve)."
 				"O ITBTC funde a 6000 K, só com bobinas de naquadah. Pesquise o gerador IV no scanner IV."
 			]
 			id: "58A5FA59878BA1AF"
@@ -786,7 +789,7 @@
 			]
 			title: "Gerador de Campo LuV"
 			x: 7.5d
-			y: -5.5d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -834,7 +837,7 @@
 			]
 			title: "As Estrelas e a Melhor Máquina"
 			x: 9.0d
-			y: -3.75d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -885,7 +888,7 @@
 			]
 			title: "A Pedra Filosofal"
 			x: 10.5d
-			y: -2.0d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -937,7 +940,7 @@
 			]
 			title: "Dentro do Arauto"
 			x: 16.5d
-			y: 1.25d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -973,7 +976,7 @@
 			]
 			title: "A Floresta, de Novo"
 			x: 6.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1008,7 +1011,7 @@
 			]
 			title: "As Profundezas, de Novo"
 			x: 6.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1043,7 +1046,7 @@
 			]
 			title: "Os Céus, de Novo"
 			x: 6.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1078,7 +1081,7 @@
 			]
 			title: "As Estrelas, de Novo"
 			x: 12.0d
-			y: -0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1113,7 +1116,7 @@
 			]
 			title: "Bloco de Fonte"
 			x: 7.5d
-			y: 3.25d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -1148,7 +1151,7 @@
 			]
 			title: "Gema dos Espíritos"
 			x: 7.5d
-			y: 4.75d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -1218,7 +1221,7 @@
 			]
 			title: "Os Quatro Fragmentos"
 			x: 13.5d
-			y: 1.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1293,7 +1296,7 @@
 			]
 			title: "O Artefato do Selo"
 			x: 16.5d
-			y: 2.75d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1323,7 +1326,7 @@
 			]
 			title: "O Último Trem"
 			x: 1.5d
-			y: 1.25d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -1353,7 +1356,7 @@
 			]
 			title: "A Última Rede"
 			x: 1.5d
-			y: 3.25d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1405,7 +1408,7 @@
 			]
 			title: "A Porta"
 			x: 18.0d
-			y: 2.0d
+			y: 0.25d
 		}
 	]
 	title: "Ato V — A Heresia"
