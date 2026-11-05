@@ -81,3 +81,12 @@ quests:
   - {slug: trilhos, title: "Trilhos de Aurend", deps: [motor_vapor, aplicador], shape: gear,
      desc: ["Os trens de Aurend voltam a correr.", "Trilho sai da montagem em sequência (aplicador e prensa).", "A estação pede bússola e invólucro de trem: latão com chapa de obsidiana (GregTech)."],
      tasks: [{item: create:track, count: 64}, {item: create:track_station}], rewards: [{crate: rara}, {coins: 5}]}
+  - {slug: saida_vapor, title: "Saída de Vapor", deps: [fluidos, queimador],
+     desc: ["A caldeira do Create também alimenta as máquinas do GregTech.", "Encoste num tanque de caldeira com queimador: 6 mB/t de vapor por nível.", "Gasta a água da caldeira. Com motor a vapor ou apito do Create, a Saída fica muda."],
+     tasks: [{item: ecosmaquinas:saida_vapor}], rewards: [{coins: 3}]}
+  - {slug: diesel, title: "Motor Diesel", deps: [involucro_latao, ato1/nether],
+     desc: ["Fogo líquido gira mais que vapor.", "Queima diesel ou gasolina, do próprio mod (Create: Diesel Generators) ou do GregTech.", "Leva isqueiro (aço), bloco de latão, tanque e laje de pedra-negra polida (Nether)."],
+     tasks: [{item: createdieselgenerators:diesel_engine}], rewards: [{coins: 4}]}
+  - {slug: minerio_no_create, title: "Minério do GregTech no Create", deps: [rodas_trituradoras],
+     desc: ["As rodas moem o minério bruto do GregTech em minério triturado.", "O ventilador sobre água o lava em minério purificado.", "Rende menos que as máquinas do GregTech: é o atalho sem energia elétrica."],
+     tasks: [{item: gtceu:crushed_tin_ore, count: 16}], rewards: [{coins: 3}]}

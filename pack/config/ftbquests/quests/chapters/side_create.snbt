@@ -54,7 +54,7 @@
 			]
 			title: "Liga de Andesito"
 			x: 0.0d
-			y: -0.5d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -88,7 +88,7 @@
 			]
 			title: "Eixo"
 			x: 1.5d
-			y: -0.5d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -139,7 +139,7 @@
 			]
 			title: "A Primeira Engrenagem"
 			x: 3.0d
-			y: -2.25d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -173,7 +173,7 @@
 			]
 			title: "Engrenagem Grande"
 			x: 4.5d
-			y: -5.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -207,7 +207,7 @@
 			]
 			title: "Roda de Água"
 			x: 4.5d
-			y: -3.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -249,8 +249,8 @@
 				}
 			]
 			title: "Moinho de Vento"
-			x: 6.0d
-			y: -5.25d
+			x: 7.5d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -288,7 +288,7 @@
 			]
 			title: "Óculos do Engenheiro"
 			x: 4.5d
-			y: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -323,7 +323,7 @@
 			]
 			title: "Chave Inglesa"
 			x: 4.5d
-			y: -2.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -357,7 +357,7 @@
 			]
 			title: "Caixa de Engrenagens"
 			x: 6.0d
-			y: -3.75d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -391,7 +391,7 @@
 			]
 			title: "Esteira"
 			x: 3.0d
-			y: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -425,7 +425,7 @@
 			]
 			title: "Mó"
 			x: 6.0d
-			y: -2.25d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -463,7 +463,7 @@
 			]
 			title: "Prensa Mecânica"
 			x: 7.5d
-			y: -2.5d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -497,7 +497,7 @@
 			]
 			title: "Chapas de Ferro"
 			x: 9.0d
-			y: -2.75d
+			y: -6.25d
 		}
 		{
 			dependencies: [
@@ -540,7 +540,7 @@
 			]
 			title: "Misturador e Bacia"
 			x: 9.0d
-			y: -0.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -573,8 +573,8 @@
 				}
 			]
 			title: "Ventilador Encapsulado"
-			x: 7.5d
-			y: -4.0d
+			x: 9.0d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -608,7 +608,7 @@
 			]
 			title: "Depósito"
 			x: 4.5d
-			y: 1.0d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -650,8 +650,8 @@
 				}
 			]
 			title: "Funil e Calha"
-			x: 4.5d
-			y: 2.5d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -685,7 +685,7 @@
 			]
 			title: "Furadeira Mecânica"
 			x: 10.5d
-			y: -4.25d
+			y: -7.75d
 		}
 		{
 			dependencies: [
@@ -719,7 +719,7 @@
 			]
 			title: "Serra Mecânica"
 			x: 10.5d
-			y: -1.25d
+			y: -6.25d
 		}
 		{
 			dependencies: [
@@ -757,7 +757,7 @@
 			]
 			title: "Zinco"
 			x: 9.0d
-			y: 1.75d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -802,7 +802,7 @@
 			]
 			title: "Queimador de Blaze"
 			x: 10.5d
-			y: 0.25d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -845,7 +845,7 @@
 			]
 			title: "Latão"
 			x: 10.5d
-			y: 1.75d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -879,7 +879,7 @@
 			]
 			title: "Invólucro de Latão"
 			x: 12.0d
-			y: 2.25d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -915,7 +915,7 @@
 			]
 			title: "Válvula Eletrônica"
 			x: 12.0d
-			y: 0.75d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -948,8 +948,8 @@
 				}
 			]
 			title: "Aplicador Mecânico"
-			x: 15.0d
-			y: 0.5d
+			x: 13.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1001,8 +1001,8 @@
 				}
 			]
 			title: "Mecanismo de Precisão"
-			x: 16.5d
-			y: 3.0d
+			x: 18.0d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -1040,7 +1040,7 @@
 			]
 			title: "Montador Mecânico"
 			x: 13.5d
-			y: 1.75d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1075,7 +1075,7 @@
 			]
 			title: "Rodas Trituradoras"
 			x: 15.0d
-			y: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1108,8 +1108,8 @@
 				}
 			]
 			title: "Braço Mecânico"
-			x: 18.0d
-			y: 2.0d
+			x: 19.5d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -1161,7 +1161,7 @@
 			]
 			title: "Canos, Bomba e Tanque"
 			x: 10.5d
-			y: -2.75d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -1208,8 +1208,8 @@
 				}
 			]
 			title: "Motor a Vapor"
-			x: 12.0d
-			y: -1.0d
+			x: 13.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1253,7 +1253,7 @@
 			]
 			title: "Medir Antes de Quebrar"
 			x: 6.0d
-			y: -0.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1305,8 +1305,8 @@
 				}
 			]
 			title: "Construções Lembradas"
-			x: 18.0d
-			y: 3.5d
+			x: 19.5d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -1364,8 +1364,118 @@
 				}
 			]
 			title: "Trilhos de Aurend"
+			x: 15.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"777328CE766F3F5E"
+				"063672E4C3E067CD"
+			]
+			description: [
+				"A caldeira do Create também alimenta as máquinas do GregTech."
+				"Encoste num tanque de caldeira com queimador: 6 mB/t de vapor por nível."
+				"Gasta a água da caldeira. Com motor a vapor ou apito do Create, a Saída fica muda."
+			]
+			id: "4FB1357AE4E9719E"
+			rewards: [
+				{
+					count: 3
+					id: "303FB54E9C5BD7E2"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "193C61CB6B450B45"
+					item: {
+						Count: 1b
+						id: "ecosmaquinas:saida_vapor"
+					}
+					type: "item"
+				}
+			]
+			title: "Saída de Vapor"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6766E2322F14357C"
+				"2A1D007290D432B0"
+			]
+			description: [
+				"Fogo líquido gira mais que vapor."
+				"Queima diesel ou gasolina, do próprio mod (Create: Diesel Generators) ou do GregTech."
+				"Leva isqueiro (aço), bloco de latão, tanque e laje de pedra-negra polida (Nether)."
+			]
+			id: "44F4B9089C587067"
+			rewards: [
+				{
+					count: 4
+					id: "19C41CD1AD42D98B"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "7CC55CF303A93AE7"
+					item: {
+						Count: 1b
+						id: "createdieselgenerators:diesel_engine"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor Diesel"
+			x: 13.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"5B4F5D477D2FC3E2"
+			]
+			description: [
+				"As rodas moem o minério bruto do GregTech em minério triturado."
+				"O ventilador sobre água o lava em minério purificado."
+				"Rende menos que as máquinas do GregTech: é o atalho sem energia elétrica."
+			]
+			id: "350924021EF75473"
+			rewards: [
+				{
+					count: 3
+					id: "688445343E92A5FE"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "28CBF16E85D7CC47"
+					item: {
+						Count: 1b
+						id: "gtceu:crushed_tin_ore"
+					}
+					type: "item"
+				}
+			]
+			title: "Minério do GregTech no Create"
 			x: 16.5d
-			y: -0.25d
+			y: 5.75d
 		}
 	]
 	title: "Caminho — Engrenagens de Aurend"

@@ -53,7 +53,7 @@
 			]
 			title: "Árvores que Sangram"
 			x: 3.0d
-			y: 1.0d
+			y: -9.75d
 		}
 		{
 			dependencies: [
@@ -88,7 +88,7 @@
 			]
 			title: "Resina Pegajosa"
 			x: 4.5d
-			y: 1.0d
+			y: -9.75d
 		}
 		{
 			dependencies: [
@@ -144,7 +144,7 @@
 			]
 			title: "Ferramentas do Ofício"
 			x: 0.0d
-			y: 11.75d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -205,7 +205,7 @@
 			]
 			title: "Mais Ferramentas"
 			x: 1.5d
-			y: 10.75d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -242,7 +242,7 @@
 			]
 			title: "Cobre"
 			x: 0.0d
-			y: 10.25d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -279,7 +279,7 @@
 			]
 			title: "Estanho"
 			x: 0.0d
-			y: 8.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -322,7 +322,7 @@
 			]
 			title: "Bronze"
 			x: 3.0d
-			y: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -356,7 +356,7 @@
 			]
 			title: "Tijolos de Coque"
 			x: 1.5d
-			y: 12.25d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -390,7 +390,7 @@
 			]
 			title: "Forno de Coque"
 			x: 3.0d
-			y: 12.75d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -424,7 +424,7 @@
 			]
 			title: "Coque"
 			x: 7.5d
-			y: 11.5d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -458,7 +458,7 @@
 			]
 			title: "Madeira Tratada"
 			x: 4.5d
-			y: 13.25d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -494,7 +494,7 @@
 			]
 			title: "Tijolos Refratários"
 			x: 9.0d
-			y: 10.25d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -529,7 +529,7 @@
 			]
 			title: "Alto-Forno Primitivo"
 			x: 10.5d
-			y: 10.5d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -583,7 +583,7 @@
 			]
 			title: "Aço"
 			x: 12.0d
-			y: 9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -622,7 +622,7 @@
 			]
 			title: "Ferro Forjado"
 			x: 9.0d
-			y: 8.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -656,7 +656,7 @@
 			]
 			title: "Casco de Bronze"
 			x: 4.5d
-			y: 8.0d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -694,7 +694,7 @@
 			]
 			title: "Caldeira a Vapor"
 			x: 6.0d
-			y: 6.25d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -729,7 +729,7 @@
 			]
 			title: "Macerador a Vapor"
 			x: 10.5d
-			y: 7.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -764,7 +764,7 @@
 			]
 			title: "Compressor a Vapor"
 			x: 7.5d
-			y: 8.5d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -799,7 +799,7 @@
 			]
 			title: "Martelo de Forja a Vapor"
 			x: 10.5d
-			y: 8.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -834,7 +834,7 @@
 			]
 			title: "Fundidor de Ligas a Vapor"
 			x: 7.5d
-			y: 5.75d
+			y: -5.75d
 		}
 		{
 			dependencies: [
@@ -869,7 +869,7 @@
 			]
 			title: "Extrator a Vapor"
 			x: 7.5d
-			y: 4.25d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -903,7 +903,7 @@
 			]
 			title: "Fornalha a Vapor"
 			x: 7.5d
-			y: 2.25d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -947,7 +947,7 @@
 			]
 			title: "Alta Pressão"
 			x: 13.5d
-			y: 7.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -985,7 +985,7 @@
 			]
 			title: "Borracha"
 			x: 9.0d
-			y: 1.75d
+			y: -9.25d
 		}
 		{
 			dependencies: [
@@ -1020,7 +1020,7 @@
 			]
 			title: "Tubo de Vidro"
 			x: 9.0d
-			y: 4.25d
+			y: -7.75d
 		}
 		{
 			dependencies: [
@@ -1056,7 +1056,7 @@
 			]
 			title: "Válvula Termiônica"
 			x: 10.5d
-			y: 2.75d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -1091,7 +1091,7 @@
 			]
 			title: "Resistor"
 			x: 10.5d
-			y: 1.25d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -1129,7 +1129,7 @@
 			]
 			title: "Liga Vermelha"
 			x: 9.0d
-			y: 5.75d
+			y: -6.25d
 		}
 		{
 			dependencies: [
@@ -1173,7 +1173,7 @@
 			]
 			title: "Fios e Cabos"
 			x: 10.5d
-			y: 4.25d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1226,7 +1226,7 @@
 			]
 			title: "Circuito Básico"
 			x: 12.0d
-			y: 2.75d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -1260,7 +1260,7 @@
 			]
 			title: "Casco LV"
 			x: 12.0d
-			y: 4.25d
+			y: -5.75d
 		}
 		{
 			dependencies: [
@@ -1294,7 +1294,7 @@
 			]
 			title: "Motor Elétrico LV"
 			x: 13.5d
-			y: 3.5d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -1337,7 +1337,7 @@
 			]
 			title: "Bomba e Pistão LV"
 			x: 16.5d
-			y: 3.25d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -1372,7 +1372,7 @@
 			]
 			title: "Turbina a Vapor LV"
 			x: 15.0d
-			y: 5.75d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -1417,7 +1417,7 @@
 			]
 			title: "Primeiras Máquinas LV"
 			x: 15.0d
-			y: 2.5d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -1481,7 +1481,7 @@
 			]
 			title: "Oficina LV"
 			x: 16.5d
-			y: 1.75d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -1515,7 +1515,7 @@
 			]
 			title: "Armazenar Corrente"
 			x: 16.5d
-			y: 4.75d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -1569,7 +1569,117 @@
 			]
 			title: "A Era da Corrente"
 			x: 18.0d
-			y: 3.25d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"085EAD29072E640C"
+				"6537293187BC0DCE"
+			]
+			description: [
+				"O vapor das caldeiras de bronze volta a girar eixos."
+				"Vapor do GregTech por cano: 32 RPM, até 1920 SU queimando 80 mB/t."
+				"Ele queima vapor mesmo sem nada ligado no eixo."
+			]
+			id: "07734A8ABCA9784C"
+			rewards: [
+				{
+					count: 3
+					id: "5D7E64000B0A7276"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "67C16FF6320AC6E8"
+					item: {
+						Count: 1b
+						id: "ecosmaquinas:motor_vapor"
+					}
+					type: "item"
+				}
+			]
+			title: "Motor a Vapor do Eco"
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7F8A656586D183AE"
+				"08C5B2FE54B221EB"
+			]
+			description: [
+				"Rotação do Create vira corrente, na face oposta ao eixo."
+				"ULV: 8 EU/t a partir de 64 RPM (metade a 32 RPM), pedindo 2048 SU."
+				"O casco ULV leva ferro forjado e cabo de liga vermelha."
+			]
+			id: "75F79B1487A0A061"
+			rewards: [
+				{
+					count: 3
+					id: "342FA38585B74050"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "07AB45FBF87F279C"
+					item: {
+						Count: 1b
+						id: "ecosmaquinas:dinamo_cinetico_ulv"
+					}
+					type: "item"
+				}
+			]
+			title: "Dínamo Cinético ULV"
+			x: 12.0d
+			y: -2.75d
+		}
+		{
+			dependencies: [
+				"12B6F7B99A52C9CC"
+			]
+			description: [
+				"32 EU/t a 64 RPM, mas pede 8192 SU: força de verdade."
+				"Motor a vapor do Create em caldeira com blaze (16384 SU): ≈ 64 EU/t. Com Motores do Eco, 5 ou mais."
+				"Cuidado: dínamo LV encostado em máquina ULV explode."
+			]
+			id: "26BFD3ED2A43CE14"
+			rewards: [
+				{
+					count: 4
+					id: "6439BB1160D6536E"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "30FECD9FC93E64DB"
+					item: {
+						Count: 1b
+						id: "ecosmaquinas:dinamo_cinetico_lv"
+					}
+					type: "item"
+				}
+			]
+			title: "Dínamo Cinético LV"
+			x: 15.0d
+			y: -6.75d
 		}
 	]
 	title: "Caminho — Vapor e Corrente"

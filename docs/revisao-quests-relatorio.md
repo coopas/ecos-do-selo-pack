@@ -376,3 +376,18 @@ Revisadas sem mudança: 15 quests.
 O `questcheck` termina com "estrutural: OK; jornada: 1 erros, 3 avisos". Nenhum deles é problema para o jogador:
 - `prologo/mapa`, `prologo/diamante` e `prologo/encantamento` (aviso: veio fundo, y < 0, no Prólogo). As três são opcionais, e a descrição de cada uma diz onde achar (redstone, diamante y -55 a -30, obsidiana e papel). A banca vende diamantes a partir do Ato I.
 - `side_occultism/giz_roxo` (erro). É uma lacuna do dump: a moagem do Occultism com saída em tag aparece como `minecraft:barrier`. O caminho foi conferido à mão no jar: o foliot triturador mói pedra do End em pó, e o End abre com o Nether. A quest dá para fazer, e a descrição explica o caminho. O erro some quando o dump ler essas saídas.
+
+## Quests novas da integração
+
+Seis quests novas ensinam os blocos que ligam GregTech e Create. São só slugs novos: nenhum ID antigo mudou e nenhum progresso se perde. Os números vêm do README e do `LEIA-ME-SERVIDOR.md`. As receitas foram conferidas no dump do jogo.
+
+| Quest | Capítulo | O que pede | Por que ali |
+|---|---|---|---|
+| `motor_vapor_eco` (Motor a Vapor do Eco) | `side_gt_steam_lv` | 1 `ecosmaquinas:motor_vapor` | Depende de `caldeira`, que traz o vapor (o casco de bronze vem antes dela), e de `side_create/eixo`. A receita pede chapas de bronze, casco de bronze, cano de fluido e eixo. O slug `motor_vapor` já era o motor a vapor do Create, por isso o `_eco`. |
+| `dinamo_ulv` (Dínamo Cinético ULV) | `side_gt_steam_lv` | 1 `ecosmaquinas:dinamo_cinetico_ulv` | Depende de `ferro_forjado` (chapas e casco ULV) e de `fios` (o casco ULV pede cabo de liga vermelha, que pede borracha). |
+| `dinamo_lv` (Dínamo Cinético LV) | `side_gt_steam_lv` | 1 `ecosmaquinas:dinamo_cinetico_lv` | Depende de `motor_lv`. A receita pede motor LV, casco LV, cabo de estanho e chapas de aço. |
+| `saida_vapor` (Saída de Vapor) | `side_create` | 1 `ecosmaquinas:saida_vapor` | Depende de `fluidos` (tanque e canos) e de `queimador` (a caldeira precisa de calor). A receita pede chapas de cobre e cano. |
+| `diesel` (Motor Diesel) | `side_create` | 1 `createdieselgenerators:diesel_engine` | Depende de `involucro_latao` (latão e bloco de latão) e de `ato1/nether`. O isqueiro pede aço, e a laje de pedra-negra polida só sai do Nether. O tanque só pede chapas de cobre. Com `latao` + `fluidos` o capítulo ficava com 1 ou 2 cruzamentos. |
+| `minerio_no_create` (Minério do GregTech no Create) | `side_create` | 16 `gtceu:crushed_tin_ore` | Depende de `rodas_trituradoras`. Moer `forge:raw_materials/tin` dá 1 minério triturado mais 30 % de chance de outro (`ecos:create_gt/crushing/tin`). O estanho é um minério do Overworld que o jogador já minera em `estanho`. A descrição avisa que o Create rende menos que o GregTech. |
+
+Layout: `side_create` continua com 0 cruzamentos. `side_gt_steam_lv` foi de 1 para 2 cruzamentos, dentro do limite (2). `dinamo_ulv` com só `[fios]` dava 1 cruzamento, mas aí a quest deixava de pedir o ferro forjado, que a receita exige.
