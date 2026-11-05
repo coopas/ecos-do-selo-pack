@@ -695,8 +695,8 @@
 				}
 			]
 			title: "Os Wilden"
-			x: 6.0d
-			y: 8.0d
+			x: 4.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -958,7 +958,7 @@
 			]
 			title: "Um Starbuncle"
 			x: 9.0d
-			y: 8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [

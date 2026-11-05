@@ -41,7 +41,7 @@ quests:
      tasks: [{item: occultism:chalk_gold}], rewards: [{coins: 3}]}
   - {slug: djinni, title: "Livro do Djinni", deps: [giz_dourado], desc: ["Um djinni sabe mais do que diz."],
      tasks: [{item: occultism:book_of_binding_djinni}], rewards: [{coins: 4}]}
-  - {slug: iesnio, title: "Iésnio", deps: [oculos, djinni], desc: ["Um metal que só se vê com os óculos."],
+  - {slug: iesnio, title: "Iésnio", deps: [djinni], desc: ["Um metal que só se vê com os óculos."],
      tasks: [{item: occultism:iesnium_ingot, count: 8}], rewards: [{coins: 4}]}
   - {slug: picareta_infundida, title: "Picareta Infundida", deps: [gema_espiritual], desc: ["Uma picareta que alcança o outro mundo."],
      tasks: [{item: occultism:infused_pickaxe}], rewards: [{coins: 3}]}

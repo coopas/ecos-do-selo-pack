@@ -26,9 +26,9 @@ quests:
   - {slug: quantico, title: "Processador Quântico", deps: [montadora_iv, smd_avancado], shape: gear, icon: gtceu:quantum_processor,
      desc: ["Pensa em duas coisas ao mesmo tempo. Como Ilse."], tasks: [{item: gtceu:quantum_processor, count: 4}],
      rewards: [{crate: rara}, {coins: 6}]}
-  - {slug: emissor_iv, title: "Emissor IV", deps: [motor_iv, quantico], desc: ["Luz que corta metal."],
+  - {slug: emissor_iv, title: "Emissor IV", deps: [quantico], desc: ["Luz que corta metal."],
      tasks: [{item: gtceu:iv_emitter, count: 2}], rewards: [{coins: 5}]}
-  - {slug: braco_iv, title: "Braço Robótico IV", deps: [motor_iv, quantico], desc: ["Precisão de relojoeiro, força de guindaste."],
+  - {slug: braco_iv, title: "Braço Robótico IV", deps: [quantico], desc: ["Precisão de relojoeiro, força de guindaste."],
      tasks: [{item: gtceu:iv_robot_arm, count: 2}], rewards: [{coins: 5}]}
   - {slug: campo_iv, title: "Gerador de Campo IV", deps: [emissor_iv], desc: ["Um campo forte o bastante para segurar algo grande."],
      tasks: [{item: gtceu:iv_field_generator}], rewards: [{coins: 6}]}
@@ -60,7 +60,7 @@ quests:
      tasks: [{item: gtceu:luv_electric_motor, count: 4}], rewards: [{coins: 6}]}
   - {slug: campo_luv, title: "Gerador de Campo LuV", deps: [motor_luv, campo_iv], desc: ["Faz parte da Pedra Filosofal."],
      tasks: [{item: gtceu:luv_field_generator}], rewards: [{coins: 8}]}
-  - {slug: sinos, title: "Os Sinos São Nossos", deps: [inicio, side_space/marte], icon: minecraft:bell,
+  - {slug: sinos, title: "Os Sinos São Nossos", deps: [side_space/marte], icon: minecraft:bell,
      desc: ["Alguém de Aurend chegou a Marte antes de você.", "Ilse reconhece os sinos."], tasks: [{checkmark: true}],
      rewards: [{page: 24}, {coins: 5}]}
   - {slug: forja_nether, title: "A Forja do Nether", deps: [inicio], icon: cataclysm:altar_of_fire,

@@ -47,7 +47,7 @@
 			]
 			title: "Mais Voltagem"
 			x: 0.0d
-			y: -13.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -81,7 +81,7 @@
 			]
 			title: "Macerador MV"
 			x: 1.5d
-			y: -16.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -114,8 +114,8 @@
 				}
 			]
 			title: "Lavadora de Minério"
-			x: 3.0d
-			y: -15.5d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -148,8 +148,8 @@
 				}
 			]
 			title: "Centrífuga Térmica"
-			x: 4.5d
-			y: -15.5d
+			x: 3.0d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -182,8 +182,8 @@
 				}
 			]
 			title: "Banho Químico"
-			x: 4.5d
-			y: -17.0d
+			x: 3.0d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -217,7 +217,7 @@
 			]
 			title: "Reator Químico MV"
 			x: 3.0d
-			y: -2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -271,7 +271,7 @@
 			]
 			title: "Polietileno"
 			x: 4.5d
-			y: -8.25d
+			y: 7.75d
 		}
 		{
 			dependencies: [
@@ -304,8 +304,8 @@
 				}
 			]
 			title: "Forno de Pirólise"
-			x: 1.5d
-			y: -3.25d
+			x: 3.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -340,7 +340,7 @@
 			]
 			title: "Torre de Destilação"
 			x: 4.5d
-			y: 2.25d
+			y: 9.25d
 		}
 		{
 			dependencies: [
@@ -374,7 +374,7 @@
 			]
 			title: "Unidade de Craqueamento"
 			x: 6.0d
-			y: 4.25d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -408,7 +408,7 @@
 			]
 			title: "Turbina a Gás MV"
 			x: 6.0d
-			y: 7.25d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -441,8 +441,8 @@
 				}
 			]
 			title: "Gravador a Laser"
-			x: 6.0d
-			y: -19.5d
+			x: 4.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -476,7 +476,7 @@
 			]
 			title: "Bobinas de Kanthal"
 			x: 3.0d
-			y: -7.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -530,7 +530,7 @@
 			]
 			title: "Aço Inoxidável"
 			x: 4.5d
-			y: -4.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -565,7 +565,7 @@
 			]
 			title: "Casco HV"
 			x: 6.0d
-			y: -8.75d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -599,7 +599,7 @@
 			]
 			title: "Motor HV"
 			x: 7.5d
-			y: -16.5d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -632,8 +632,8 @@
 				}
 			]
 			title: "Monocristal de Silício"
-			x: 6.0d
-			y: -16.5d
+			x: 4.5d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -667,7 +667,7 @@
 			]
 			title: "Placa de Circuito de Plástico"
 			x: 6.0d
-			y: -14.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -701,7 +701,7 @@
 			]
 			title: "Montadora de Circuitos HV"
 			x: 9.0d
-			y: -17.75d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -736,8 +736,8 @@
 				}
 			]
 			title: "Microprocessador"
-			x: 7.5d
-			y: -19.0d
+			x: 9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -789,11 +789,10 @@
 			]
 			title: "Circuito Integrado Avançado"
 			x: 10.5d
-			y: -18.25d
+			y: 5.75d
 		}
 		{
 			dependencies: [
-				"4DE2CC7B35A822DE"
 				"2A81AB63F1340C62"
 			]
 			description: [
@@ -824,7 +823,7 @@
 			]
 			title: "Emissor HV"
 			x: 12.0d
-			y: -18.0d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -858,7 +857,7 @@
 			]
 			title: "Gerador de Campo HV"
 			x: 13.5d
-			y: -14.75d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -892,7 +891,7 @@
 			]
 			title: "Bobinas de Nicromo"
 			x: 7.5d
-			y: 2.75d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -926,7 +925,7 @@
 			]
 			title: "Multi-Fornalha"
 			x: 4.5d
-			y: -1.25d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -960,7 +959,7 @@
 			]
 			title: "Congelador a Vácuo"
 			x: 7.5d
-			y: -2.75d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -993,8 +992,8 @@
 				}
 			]
 			title: "Sala Limpa"
-			x: 9.0d
-			y: -10.25d
+			x: 10.5d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -1029,7 +1028,7 @@
 			]
 			title: "Reator Químico Grande"
 			x: 6.0d
-			y: 2.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1063,7 +1062,7 @@
 			]
 			title: "PVC"
 			x: 7.5d
-			y: 4.25d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -1097,7 +1096,7 @@
 			]
 			title: "PTFE"
 			x: 7.5d
-			y: 6.5d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -1131,7 +1130,7 @@
 			]
 			title: "Compressor de Implosão"
 			x: 6.0d
-			y: -2.75d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -1165,8 +1164,8 @@
 				}
 			]
 			title: "Turbina a Gás HV"
-			x: 12.0d
-			y: 7.25d
+			x: 7.5d
+			y: 9.75d
 		}
 		{
 			dependencies: [
@@ -1200,7 +1199,7 @@
 			]
 			title: "Buffer de Baterias HV"
 			x: 7.5d
-			y: -10.5d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -1234,7 +1233,7 @@
 			]
 			title: "Escotilha de Energia HV"
 			x: 7.5d
-			y: -6.75d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -1268,7 +1267,7 @@
 			]
 			title: "Mineradora HV"
 			x: 9.0d
-			y: -16.25d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1324,7 +1323,7 @@
 			]
 			title: "Titânio"
 			x: 9.0d
-			y: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1358,7 +1357,7 @@
 			]
 			title: "Casco EV"
 			x: 10.5d
-			y: -5.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -1392,7 +1391,7 @@
 			]
 			title: "Motor EV"
 			x: 12.0d
-			y: -8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1427,7 +1426,7 @@
 			]
 			title: "Nanoprocessador"
 			x: 12.0d
-			y: -11.75d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1462,7 +1461,7 @@
 			]
 			title: "Emissor EV"
 			x: 13.5d
-			y: -10.25d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1497,7 +1496,7 @@
 			]
 			title: "Braço Robótico EV"
 			x: 13.5d
-			y: -8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1551,7 +1550,7 @@
 			]
 			title: "A Era da Extrema Tensão"
 			x: 15.0d
-			y: -11.25d
+			y: 2.0d
 		}
 	]
 	title: "Caminho — Alta Tensão"

@@ -58,9 +58,10 @@ def test_layout_long_edge_does_not_cross_quest():
 @pytest.mark.parametrize("c", questgen.load_sources(), ids=lambda c: c.slug)
 def test_all_chapters_clean(c):
     pos = questgen.layout(c)
-    lim = LIMITES.get(c.slug, (0, 0))
+    lim = LIMITES.get(c.slug, (0, 0, 0))
     assert layoutcheck.crossings(c, pos) <= lim[0]
     assert layoutcheck.lines_over_quests(c, pos) <= lim[1]
+    assert layoutcheck.long_edges(c, pos) <= lim[2]
 
 
 @pytest.mark.parametrize("c", [c for c in questgen.load_sources() if not any("x" in q for q in c.quests)],
@@ -72,5 +73,34 @@ def test_auto_layout_reads_left_to_right(c):
         for d in q.get("deps", []):
             if d in slugs:
                 assert pos[d][0] < pos[q["slug"]][0], (d, q["slug"])
+        kids = [k["slug"] for k in c.quests if q["slug"] in k.get("deps", [])]
         if not any(d in slugs for d in q.get("deps", [])):
-            assert pos[q["slug"]][0] == 0, q["slug"]  # sem dependência local: coluna 0
+            # sem dependência local: coluna 0, ou logo antes do filho mais próximo se ele está longe
+            near_kid = min((pos[k][0] for k in kids), default=None)
+            assert pos[q["slug"]][0] == 0 or pos[q["slug"]][0] == near_kid - questgen.GRID, q["slug"]
+
+
+def test_long_edges_counter():
+    c = chapter([q("a"), q("b", ["a"]), q("c", ["a"])])
+    pos = {"a": (0, 0), "b": (3, 0), "c": (12, 0)}
+    assert layoutcheck.long_edges(c, pos, max_len=10.5) == 1
+    assert layoutcheck.long_edges(c, pos, max_len=12) == 0
+
+
+def test_no_redundant_local_dependency():
+    """Dep local D de Q é redundante se D já é ancestral de outra dep de Q (o FTB exige as deps em cadeia): só
+    desenharia mais uma linha. Ancestrais pelo grafo inteiro, deps entre capítulos incluídas."""
+    chapters = questgen.load_sources()
+    deps = {f"{c.slug}/{x['slug']}": [d if "/" in d else f"{c.slug}/{d}" for d in x.get("deps", [])]
+            for c in chapters for x in c.quests}
+    memo: dict[str, set] = {}
+
+    def anc(p):
+        if p not in memo:
+            memo[p] = set()
+            memo[p] = {a for d in deps.get(p, []) for a in {d} | anc(d)}
+        return memo[p]
+
+    bad = [(p, d) for p, ds in deps.items() for d in ds
+           if d.split("/")[0] == p.split("/")[0] and any(d in anc(e) for e in ds if e != d)]
+    assert bad == []

@@ -12,16 +12,24 @@ import sys
 from pathlib import Path
 
 
-# Capítulo -> (cruzamentos, linhas sobre quest) tolerados, com o motivo. Linha sobre quest: zero em todos.
-# Os quatro abaixo têm grafo de dependências NÃO planar (nenhum desenho, com qualquer posição, zera os cruzamentos;
-# é preciso tirar 1-2 arestas para ficar planar) e o livro ainda exige ler da esquerda para a direita (pai antes do
-# filho), o que custa mais alguns. Valor = o que questgen.layout atingiu; baixar se o layout melhorar.
-LIMITES: dict[str, tuple[int, int]] = {
-    "side_gt_steam_lv": (7, 0),  # não planar (planar sem caldeira->extrator_vapor)
-    "ato2": (2, 0),              # não planar (planar sem inicio->alto_forno_eletrico)
-    "side_gt_mv_ev": (6, 0),     # não planar (planar sem inicio->pirolise e emissor_hv->campo_hv)
-    "ato4": (3, 0),              # não planar (planar sem inicio->montadora_ev e casco_iv->motor_iv)
+# Capítulo -> (cruzamentos, linhas sobre quest, linhas longas) tolerados, com o motivo. Linha sobre quest: zero em todos.
+# Os quatro não planares: nenhum desenho, com qualquer posição, zera os cruzamentos (é preciso tirar 1-2 arestas para o
+# grafo ficar planar), e o livro ainda exige ler da esquerda para a direita. Valor = o que questgen.layout atingiu;
+# baixar se o layout melhorar.
+LIMITES: dict[str, tuple[int, int, int]] = {
+    "side_gt_steam_lv": (2, 0, 0),  # não planar (planar sem ligas_vapor->liga_vermelha)
+    "ato2": (2, 0, 0),              # não planar (planar sem inicio->alto_forno_eletrico)
+    "side_gt_mv_ev": (6, 0, 0),     # não planar (planar sem titanio->casco_ev e inox->reator_grande)
+    "ato4": (1, 0, 0),              # não planar (planar sem fragmento->argamassa)
+    # planar, mas zerar exige o K2,2 foguete1/oxigenio -> orbita/lua com orbita ~11 colunas à direita (linhas de 20)
+    "side_space": (1, 0, 0),
+    # fim_prologo (11 pais) tem de ficar à direita do ramo picareta_ferro->diamante->encantamento; o caminho
+    # livro_quests->jei->fim_prologo contorna o ramo do ferro por cima e uma das duas linhas passa de MAX_EDGE
+    "prologo": (0, 0, 1),
 }
+
+
+MAX_EDGE = 10.5  # linha mais comprida aceita (7 colunas de distância)
 
 
 def edges(c) -> list[tuple[str, str]]:
@@ -85,6 +93,15 @@ def lines_over_quests(c, pos, radius: float = 0.6) -> int:
     return n
 
 
+def edge_length(a, b) -> float:
+    return ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5
+
+
+def long_edges(c, pos, max_len: float = MAX_EDGE) -> int:
+    """Linhas de dependência local mais compridas que max_len (unidades do FTB): capítulo espalhado, quest longe do pai."""
+    return sum(1 for a, b in edges(c) if edge_length(pos[a], pos[b]) > max_len)
+
+
 def draw(c, pos, path: Path, scale: int = 40) -> None:
     from PIL import Image, ImageDraw
     xs = [p[0] for p in pos.values()] or [0]
@@ -101,7 +118,8 @@ def draw(c, pos, path: Path, scale: int = 40) -> None:
         x, y = pt(pos[q["slug"]])
         g.ellipse([x - r, y - r, x + r, y + r], fill=(70, 110, 160), outline=(220, 220, 230))
         g.text((x - r, y + r), q["slug"][:14], fill=(230, 230, 200))
-    g.text((4, 4), f"{c.slug}: {crossings(c, pos)} cruzamentos, {lines_over_quests(c, pos)} linhas sobre quest",
+    g.text((4, 4), f"{c.slug}: {crossings(c, pos)} cruzamentos, {lines_over_quests(c, pos)} linhas sobre quest, "
+                      f"{long_edges(c, pos)} linhas longas",
            fill=(255, 255, 255))
     path.parent.mkdir(parents=True, exist_ok=True)
     img.save(path)
@@ -115,13 +133,13 @@ def main(argv=None) -> int:
     bad = 0
     for c in questgen.load_sources():
         pos = questgen.layout(c)
-        x, o = crossings(c, pos), lines_over_quests(c, pos)
+        x, o, n = crossings(c, pos), lines_over_quests(c, pos), long_edges(c, pos)
         xs = [p[0] for p in pos.values()]
         ys = [p[1] for p in pos.values()]
         print(f"{c.slug:20} quests={len(c.quests):3} arestas={len(edges(c)):3} cruzamentos={x:3} "
-              f"linhas_sobre_quest={o:3} tamanho={max(xs) - min(xs):.1f}x{max(ys) - min(ys):.1f}")
-        lim = LIMITES.get(c.slug, (0, 0))
-        bad += x > lim[0] or o > lim[1]
+              f"linhas_sobre_quest={o:3} linhas_longas={n:3} tamanho={max(xs) - min(xs):.1f}x{max(ys) - min(ys):.1f}")
+        lim = LIMITES.get(c.slug, (0, 0, 0))
+        bad += x > lim[0] or o > lim[1] or n > lim[2]
         if a.png:
             draw(c, pos, a.png / f"{c.slug}.png")
     return 1 if bad else 0

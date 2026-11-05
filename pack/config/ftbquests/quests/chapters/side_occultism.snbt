@@ -52,7 +52,7 @@
 			]
 			title: "Sementes de Datura"
 			x: 0.0d
-			y: 3.25d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -86,7 +86,7 @@
 			]
 			title: "Faca de Açougueiro"
 			x: 1.5d
-			y: 1.5d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -120,7 +120,7 @@
 			]
 			title: "Sebo"
 			x: 3.0d
-			y: -0.5d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -155,7 +155,7 @@
 			]
 			title: "Tigela Sacrificial"
 			x: 4.5d
-			y: 2.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -189,7 +189,7 @@
 			]
 			title: "Tigela Dourada"
 			x: 6.0d
-			y: 1.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -240,7 +240,7 @@
 			]
 			title: "Giz Branco"
 			x: 4.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -274,7 +274,7 @@
 			]
 			title: "Óculos do Outro Mundo"
 			x: 1.5d
-			y: 3.25d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -308,7 +308,7 @@
 			]
 			title: "Varinha de Adivinhação"
 			x: 3.0d
-			y: 1.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -342,7 +342,7 @@
 			]
 			title: "Pedra de Outro Mundo"
 			x: 3.0d
-			y: 2.5d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -379,7 +379,7 @@
 			]
 			title: "Prata"
 			x: 1.5d
-			y: 4.75d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -414,7 +414,7 @@
 			]
 			title: "Gema Sintonizada"
 			x: 7.5d
-			y: 1.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -444,7 +444,7 @@
 			]
 			title: "Fogo Espiritual"
 			x: 6.0d
-			y: -0.25d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -478,7 +478,7 @@
 			]
 			title: "Lanterna Espiritual"
 			x: 7.5d
-			y: -0.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -512,7 +512,7 @@
 			]
 			title: "Livro de Vínculo"
 			x: 9.0d
-			y: 0.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -546,7 +546,7 @@
 			]
 			title: "Um Foliot Vinculado"
 			x: 10.5d
-			y: 0.75d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -580,7 +580,7 @@
 			]
 			title: "Minerador Espiritual"
 			x: 12.0d
-			y: 0.25d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -615,7 +615,7 @@
 			]
 			title: "Giz Dourado"
 			x: 12.0d
-			y: 1.75d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -649,11 +649,10 @@
 			]
 			title: "Livro do Djinni"
 			x: 13.5d
-			y: 2.0d
+			y: 1.25d
 		}
 		{
 			dependencies: [
-				"7BA69E0E68364464"
 				"120C316A55649298"
 			]
 			description: [
@@ -684,7 +683,7 @@
 			]
 			title: "Iésnio"
 			x: 15.0d
-			y: 3.0d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -718,7 +717,7 @@
 			]
 			title: "Picareta Infundida"
 			x: 9.0d
-			y: 1.5d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -752,7 +751,7 @@
 			]
 			title: "Picareta de Iésnio"
 			x: 16.5d
-			y: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -786,7 +785,7 @@
 			]
 			title: "Giz Roxo"
 			x: 15.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -820,7 +819,7 @@
 			]
 			title: "Matriz Dimensional"
 			x: 16.5d
-			y: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -863,7 +862,7 @@
 			]
 			title: "Controlador de Armazenamento"
 			x: 18.0d
-			y: 3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -897,7 +896,7 @@
 			]
 			title: "Anel de Familiar"
 			x: 18.0d
-			y: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -931,7 +930,7 @@
 			]
 			title: "Giz Vermelho"
 			x: 16.5d
-			y: 0.5d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -977,7 +976,7 @@
 			]
 			title: "O Afrit"
 			x: 18.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1026,7 +1025,7 @@
 			]
 			title: "Mestre do Pentáculo"
 			x: 19.5d
-			y: 1.5d
+			y: 2.0d
 		}
 	]
 	title: "Caminho — Os que Servem"

@@ -52,8 +52,8 @@
 				}
 			]
 			title: "Árvores que Sangram"
-			x: 0.0d
-			y: 12.75d
+			x: 3.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -87,7 +87,7 @@
 			]
 			title: "Resina Pegajosa"
 			x: 4.5d
-			y: 12.75d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -204,7 +204,7 @@
 			]
 			title: "Mais Ferramentas"
 			x: 1.5d
-			y: -0.25d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -241,7 +241,7 @@
 			]
 			title: "Cobre"
 			x: 0.0d
-			y: 9.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -278,7 +278,7 @@
 			]
 			title: "Estanho"
 			x: 0.0d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -321,7 +321,7 @@
 			]
 			title: "Bronze"
 			x: 3.0d
-			y: 3.25d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -355,7 +355,7 @@
 			]
 			title: "Tijolos de Coque"
 			x: 1.5d
-			y: -7.0d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -389,7 +389,7 @@
 			]
 			title: "Forno de Coque"
 			x: 3.0d
-			y: -7.75d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -423,7 +423,7 @@
 			]
 			title: "Coque"
 			x: 4.5d
-			y: -8.75d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -457,7 +457,7 @@
 			]
 			title: "Madeira Tratada"
 			x: 4.5d
-			y: -7.25d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -491,7 +491,7 @@
 			]
 			title: "Tijolos Refratários"
 			x: 3.0d
-			y: -9.5d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -526,7 +526,7 @@
 			]
 			title: "Alto-Forno Primitivo"
 			x: 6.0d
-			y: -9.5d
+			y: -7.75d
 		}
 		{
 			dependencies: [
@@ -579,8 +579,8 @@
 				}
 			]
 			title: "Aço"
-			x: 9.0d
-			y: -9.75d
+			x: 7.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -617,7 +617,7 @@
 			]
 			title: "Ferro Forjado"
 			x: 3.0d
-			y: -0.25d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -651,7 +651,7 @@
 			]
 			title: "Casco de Bronze"
 			x: 4.5d
-			y: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -689,7 +689,7 @@
 			]
 			title: "Caldeira a Vapor"
 			x: 6.0d
-			y: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -723,7 +723,7 @@
 			]
 			title: "Macerador a Vapor"
 			x: 7.5d
-			y: 0.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -757,7 +757,7 @@
 			]
 			title: "Compressor a Vapor"
 			x: 7.5d
-			y: 7.25d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -791,7 +791,7 @@
 			]
 			title: "Martelo de Forja a Vapor"
 			x: 7.5d
-			y: 8.75d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -825,7 +825,7 @@
 			]
 			title: "Fundidor de Ligas a Vapor"
 			x: 7.5d
-			y: 5.75d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -859,7 +859,7 @@
 			]
 			title: "Extrator a Vapor"
 			x: 7.5d
-			y: 11.5d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -893,7 +893,7 @@
 			]
 			title: "Fornalha a Vapor"
 			x: 7.5d
-			y: 4.25d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -936,8 +936,8 @@
 				}
 			]
 			title: "Alta Pressão"
-			x: 10.5d
-			y: -5.0d
+			x: 9.0d
+			y: -4.75d
 		}
 		{
 			dependencies: [
@@ -972,7 +972,7 @@
 			]
 			title: "Borracha"
 			x: 9.0d
-			y: 12.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1006,7 +1006,7 @@
 			]
 			title: "Tubo de Vidro"
 			x: 9.0d
-			y: 5.0d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -1041,7 +1041,7 @@
 			]
 			title: "Válvula Termiônica"
 			x: 10.5d
-			y: 8.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1074,13 +1074,12 @@
 				}
 			]
 			title: "Resistor"
-			x: 10.5d
-			y: 10.25d
+			x: 12.0d
+			y: 3.25d
 		}
 		{
 			dependencies: [
 				"5C06B8BDC6D30E29"
-				"1467B2C3F3ED0F32"
 			]
 			description: [
 				"Cobre e redstone: o metal que lembra eletricidade."
@@ -1113,13 +1112,12 @@
 			]
 			title: "Liga Vermelha"
 			x: 9.0d
-			y: 7.75d
+			y: 0.25d
 		}
 		{
 			dependencies: [
 				"08BAA2CBAC004C68"
 				"2389D82AA56FE6BA"
-				"00CBFADA64B60352"
 			]
 			description: [
 				"Fio de liga vermelha e cabo de estanho isolado."
@@ -1158,7 +1156,7 @@
 			]
 			title: "Fios e Cabos"
 			x: 10.5d
-			y: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1210,8 +1208,8 @@
 				}
 			]
 			title: "Circuito Básico"
-			x: 12.0d
-			y: 6.25d
+			x: 13.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1246,7 +1244,7 @@
 			]
 			title: "Casco LV"
 			x: 12.0d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1280,7 +1278,7 @@
 			]
 			title: "Motor Elétrico LV"
 			x: 13.5d
-			y: -0.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1323,7 +1321,7 @@
 			]
 			title: "Bomba e Pistão LV"
 			x: 16.5d
-			y: -0.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1358,7 +1356,7 @@
 			]
 			title: "Turbina a Vapor LV"
 			x: 13.5d
-			y: -3.75d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -1402,7 +1400,7 @@
 			]
 			title: "Primeiras Máquinas LV"
 			x: 15.0d
-			y: 2.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -1466,7 +1464,7 @@
 			]
 			title: "Oficina LV"
 			x: 16.5d
-			y: 0.75d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1500,7 +1498,7 @@
 			]
 			title: "Armazenar Corrente"
 			x: 16.5d
-			y: -2.25d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1554,7 +1552,7 @@
 			]
 			title: "A Era da Corrente"
 			x: 18.0d
-			y: -0.75d
+			y: -0.5d
 		}
 	]
 	title: "Caminho — Vapor e Corrente"

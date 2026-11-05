@@ -66,7 +66,7 @@
 			]
 			title: "O Som Mais Perto"
 			x: 0.0d
-			y: -17.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -103,7 +103,7 @@
 			]
 			title: "Tungstênio"
 			x: 3.0d
-			y: -17.75d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -157,7 +157,7 @@
 			]
 			title: "Aço de Tungstênio"
 			x: 4.5d
-			y: -18.0d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -190,8 +190,8 @@
 				}
 			]
 			title: "Bobinas de RTM"
-			x: 12.0d
-			y: -18.0d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -225,7 +225,7 @@
 			]
 			title: "Casco IV"
 			x: 6.0d
-			y: -15.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -259,7 +259,7 @@
 			]
 			title: "Motor IV"
 			x: 7.5d
-			y: -10.75d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -293,7 +293,7 @@
 			]
 			title: "SMD Avançado"
 			x: 9.0d
-			y: -17.25d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -326,8 +326,8 @@
 				}
 			]
 			title: "Montadora de Circuitos EV"
-			x: 6.0d
-			y: -9.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -362,7 +362,7 @@
 			]
 			title: "Montadora de Circuitos IV"
 			x: 9.0d
-			y: -10.75d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -414,11 +414,10 @@
 			]
 			title: "Processador Quântico"
 			x: 10.5d
-			y: -12.75d
+			y: -2.0d
 		}
 		{
 			dependencies: [
-				"3428767E7299C6AD"
 				"07A10DA118625290"
 			]
 			description: [
@@ -449,11 +448,10 @@
 			]
 			title: "Emissor IV"
 			x: 12.0d
-			y: -8.25d
+			y: -2.25d
 		}
 		{
 			dependencies: [
-				"3428767E7299C6AD"
 				"07A10DA118625290"
 			]
 			description: [
@@ -484,7 +482,7 @@
 			]
 			title: "Braço Robótico IV"
 			x: 12.0d
-			y: -15.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -518,7 +516,7 @@
 			]
 			title: "Gerador de Campo IV"
 			x: 16.5d
-			y: -9.25d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -589,7 +587,7 @@
 			]
 			title: "A Linha de Montagem"
 			x: 13.5d
-			y: -14.25d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -623,7 +621,7 @@
 			]
 			title: "Montadora Grande"
 			x: 7.5d
-			y: -15.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -657,7 +655,7 @@
 			]
 			title: "Centrífuga Grande"
 			x: 7.5d
-			y: -17.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -691,7 +689,7 @@
 			]
 			title: "Plataforma de Perfuração"
 			x: 1.5d
-			y: -18.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -724,8 +722,8 @@
 				}
 			]
 			title: "Mineradora Grande EV"
-			x: 3.0d
-			y: -10.0d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -759,7 +757,7 @@
 			]
 			title: "Turbina a Gás Grande"
 			x: 1.5d
-			y: -10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -793,7 +791,7 @@
 			]
 			title: "Cristal de Lapotron"
 			x: 7.5d
-			y: -6.25d
+			y: -5.75d
 		}
 		{
 			dependencies: [
@@ -826,8 +824,8 @@
 				}
 			]
 			title: "Subestação de Energia"
-			x: 16.5d
-			y: -7.25d
+			x: 12.0d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -863,8 +861,8 @@
 				}
 			]
 			title: "Paládio Banhado em Ródio"
-			x: 13.5d
-			y: -19.0d
+			x: 9.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -910,7 +908,7 @@
 			]
 			title: "HSS-G"
 			x: 6.0d
-			y: -19.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -962,7 +960,7 @@
 			]
 			title: "Casco LuV"
 			x: 15.0d
-			y: -15.25d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -996,7 +994,7 @@
 			]
 			title: "Motor LuV"
 			x: 16.5d
-			y: -12.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1031,11 +1029,10 @@
 			]
 			title: "Gerador de Campo LuV"
 			x: 18.0d
-			y: -10.0d
+			y: -0.25d
 		}
 		{
 			dependencies: [
-				"381B0CB7049598AF"
 				"3B45723920C85A8C"
 			]
 			description: [
@@ -1082,8 +1079,8 @@
 				}
 			]
 			title: "Os Sinos São Nossos"
-			x: 3.0d
-			y: -7.5d
+			x: 0.0d
+			y: -9.75d
 		}
 		{
 			dependencies: [
@@ -1113,7 +1110,7 @@
 			]
 			title: "A Forja do Nether"
 			x: 3.0d
-			y: -12.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1147,7 +1144,7 @@
 			]
 			title: "Cinzas Ardentes"
 			x: 4.5d
-			y: -8.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1216,7 +1213,7 @@
 			]
 			title: "Ignaz, o Fundidor"
 			x: 6.0d
-			y: -5.5d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -1250,7 +1247,7 @@
 			]
 			title: "Ignítio"
 			x: 7.5d
-			y: -3.25d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1290,7 +1287,7 @@
 			]
 			title: "O Fragmento das Estrelas"
 			x: 7.5d
-			y: -4.75d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1340,8 +1337,8 @@
 				}
 			]
 			title: "A Argamassa"
-			x: 18.0d
-			y: -6.5d
+			x: 12.0d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -1371,7 +1368,7 @@
 			]
 			title: "Uma Rede Entre Mundos"
 			x: 0.0d
-			y: -21.5d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -1402,7 +1399,7 @@
 			]
 			title: "Espíritos no Vácuo"
 			x: 0.0d
-			y: -23.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1457,7 +1454,7 @@
 			]
 			title: "Além do Véu"
 			x: 19.5d
-			y: -8.0d
+			y: -0.25d
 		}
 	]
 	title: "Ato IV — Além do Véu"

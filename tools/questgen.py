@@ -8,6 +8,7 @@ import json
 import math
 import random
 import shutil
+import sys
 import zlib
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -16,7 +17,7 @@ import yaml
 
 import layoutcheck
 import snbt
-from paths import PACK, ROOT
+from paths import BUILD, PACK, ROOT
 
 SRC = ROOT / "quests" / "src"
 OUT = PACK / "config" / "ftbquests" / "quests"
@@ -180,6 +181,8 @@ _CLEAR = 0.7          # linha a menos disso do centro de uma quest conta como "p
 _MIN_DIST = 1.4       # duas quests nunca ficam mais perto que isso
 _STEP = 0.25          # y final em múltiplos de 0.25
 _LAYOUT_CACHE: dict = {}
+LAYOUT_CACHE_DIR = BUILD / "layout_cache"
+RELAYER_MAX = 2
 
 
 def layout(c: "Chapter") -> dict[str, tuple[float, float]]:
@@ -200,8 +203,28 @@ def layout(c: "Chapter") -> dict[str, tuple[float, float]]:
     fixed = {q["slug"]: (float(q["x"]), float(q["y"])) for q in c.quests if "x" in q and "y" in q}
     key = (c.slug, tuple((s, tuple(local[s]), fixed.get(s)) for s in slugs))
     if key not in _LAYOUT_CACHE:
-        _LAYOUT_CACHE[key] = _auto_layout(zlib.crc32(c.slug.encode("utf-8")), slugs, local, fixed)
+        _LAYOUT_CACHE[key] = _disk_cached(key, lambda: _auto_layout(zlib.crc32(c.slug.encode("utf-8")), slugs, local,
+                                                                    fixed))
     return dict(_LAYOUT_CACHE[key])
+
+
+def _disk_cached(key, compute):
+    """Cache em build/layout_cache/: chave = capítulo + código do layout (questgen.py e layoutcheck.py), então mudar
+    o algoritmo ou o capítulo recalcula. Só economiza tempo; o resultado é o mesmo sem ele."""
+    code = b"".join(Path(m.__file__).read_bytes() for m in (sys.modules[__name__], layoutcheck))
+    h = hashlib.sha1(code + repr(key).encode("utf-8")).hexdigest()
+    path = LAYOUT_CACHE_DIR / f"{h}.json"
+    try:
+        return {s: tuple(p) for s, p in json.loads(path.read_text(encoding="utf-8")).items()}
+    except (OSError, ValueError):
+        pass
+    pos = compute()
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(pos), encoding="utf-8")
+    except OSError:
+        pass
+    return pos
 
 
 def _auto_layout(seed: int, slugs: list[str], local: dict, fixed: dict) -> dict[str, tuple[float, float]]:
@@ -238,13 +261,14 @@ def _columns(slugs, local, children) -> dict[str, int]:
 
     for s in slugs:
         d(s)
+    base = dict(depth)
     # quest com folga anda para a direita quando as linhas dos filhos pesam mais (filho de muitos pais = leque)
     for _ in range(len(slugs)):
         changed = False
         for s in sorted(slugs, key=lambda s: -depth[s]):
             if not local[s] or not children[s]:
                 continue
-            hi = min(depth[c] for c in children[s]) - 1
+            hi = min(min(depth[c] for c in children[s]) - 1, base[s] + 2)  # até 2 colunas: fica perto do pai
             if hi > depth[s] and sum(len(local[c]) for c in children[s]) > len(local[s]):
                 depth[s] = hi
                 changed = True
@@ -255,6 +279,10 @@ def _columns(slugs, local, children) -> dict[str, int]:
         for s in slugs:
             if local[s]:
                 depth[s] += 1
+    # fonte cujo filho mais próximo está a 3+ colunas (ex.: zinco do latão): fica logo antes dele, não na coluna 0
+    for s in slugs:
+        if not local[s] and children[s] and min(depth[c] for c in children[s]) >= 3:
+            depth[s] = min(depth[c] for c in children[s]) - 1
     return depth
 
 
@@ -353,6 +381,7 @@ def _relayer(slugs, local, children, col, seed):
     """Se a ordem ainda cruza, empurra quest para a direita dentro da folga quando isso tira cruzamento."""
     best = _order(slugs, local, col, seed)
     last = max(col.values(), default=0)
+    start = dict(col)
     improved = True
     while improved and best[0] > 0:
         improved = False
@@ -360,7 +389,7 @@ def _relayer(slugs, local, children, col, seed):
             if not local[s]:
                 continue
             hi = min((col[c] - 1 for c in children[s]), default=last + 1)
-            for x in range(col[s] + 1, hi + 1):
+            for x in range(col[s] + 1, min(hi, start[s] + RELAYER_MAX) + 1):  # poucas colunas: linha curta
                 c2 = dict(col)
                 c2[s] = x
                 r = _order(slugs, local, c2, seed, restarts=6)
@@ -494,6 +523,8 @@ def _repair(seed, slugs, local, children, pos, fixed, iters=6000, patience=4000)
         for i, (a, b) in enumerate(edges):
             out += [(a, b) + edges[j] for j in range(i + 1, len(edges)) if crosses(i, j, box)]
             out += [(a, b, s) for s in slugs if near(s, i, box)]
+            if layoutcheck.edge_length(P[a], P[b]) > layoutcheck.MAX_EDGE:
+                out.append((a, b))
         return out
 
     def local_bad(v):
@@ -503,7 +534,13 @@ def _repair(seed, slugs, local, children, pos, fixed, iters=6000, patience=4000)
         for i in mine:
             n += sum(1 for j in range(len(edges)) if crosses(i, j, box))
             n += sum(1 for s in slugs if near(s, i, box))
+            n += layoutcheck.edge_length(P[edges[i][0]], P[edges[i][1]]) > layoutcheck.MAX_EDGE
         return n + sum(1 for j in range(len(edges)) if j not in mine and near(v, j, box))
+
+    def excess(v):
+        """Quanto as linhas de v passam do comprimento máximo: guia o reparo de linha longa passo a passo."""
+        return 0.2 * sum(max(0.0, layoutcheck.edge_length(P[edges[i][0]], P[edges[i][1]]) - layoutcheck.MAX_EDGE)
+                         for i in inc[v])
 
     def free(v, p):
         return all((P[u][0] - p[0]) ** 2 + (P[u][1] - p[1]) ** 2 >= _MIN_DIST ** 2 for u in slugs if u != v)
@@ -551,10 +588,10 @@ def _repair(seed, slugs, local, children, pos, fixed, iters=6000, patience=4000)
         if not free(v, (nx, ny)):
             continue
         b0 = local_bad(v)
-        s0 = 0.03 * ((old[0] - orig[v][0]) ** 2 + (old[1] - orig[v][1]) ** 2)
+        s0 = 0.03 * ((old[0] - orig[v][0]) ** 2 + (old[1] - orig[v][1]) ** 2) + excess(v)
         P[v] = (nx, ny)
         b1 = local_bad(v)
-        s1 = 0.03 * ((nx - orig[v][0]) ** 2 + (ny - orig[v][1]) ** 2)
+        s1 = 0.03 * ((nx - orig[v][0]) ** 2 + (ny - orig[v][1]) ** 2) + excess(v)
         d = (b1 - b0) + (s1 - s0)
         temp = max(0.3 * (1 - it / iters), 1e-3)
         if d <= 0 or rnd.random() < math.exp(-d / temp):

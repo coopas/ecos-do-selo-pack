@@ -53,7 +53,7 @@
 			]
 			title: "Essência Arcana"
 			x: 0.0d
-			y: 13.25d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -88,7 +88,7 @@
 			]
 			title: "Mesa de Inscrição"
 			x: 1.5d
-			y: 13.25d
+			y: 16.25d
 		}
 		{
 			dependencies: [
@@ -122,7 +122,7 @@
 			]
 			title: "Livro de Cobre"
 			x: 3.0d
-			y: 14.75d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -156,7 +156,7 @@
 			]
 			title: "Pergaminhos Encontrados"
 			x: 1.5d
-			y: 11.5d
+			y: 14.75d
 		}
 		{
 			dependencies: [
@@ -189,8 +189,8 @@
 				}
 			]
 			title: "Forja de Pergaminhos"
-			x: 3.0d
-			y: 11.75d
+			x: 4.5d
+			y: 13.25d
 		}
 		{
 			dependencies: [
@@ -224,7 +224,7 @@
 			]
 			title: "Pedestal"
 			x: 3.0d
-			y: 13.25d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -258,7 +258,7 @@
 			]
 			title: "Caldeirão do Alquimista"
 			x: 3.0d
-			y: 10.0d
+			y: 13.75d
 		}
 		{
 			dependencies: [
@@ -292,7 +292,7 @@
 			]
 			title: "Livro de Ferro"
 			x: 4.5d
-			y: 12.0d
+			y: 14.75d
 		}
 		{
 			dependencies: [
@@ -326,7 +326,7 @@
 			]
 			title: "Runa Vazia"
 			x: 3.0d
-			y: 16.5d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -359,8 +359,8 @@
 				}
 			]
 			title: "Runa de Fogo"
-			x: 6.0d
-			y: 13.5d
+			x: 4.5d
+			y: 16.75d
 		}
 		{
 			dependencies: [
@@ -394,7 +394,7 @@
 			]
 			title: "Runa de Gelo"
 			x: 4.5d
-			y: 17.25d
+			y: 20.0d
 		}
 		{
 			dependencies: [
@@ -427,8 +427,8 @@
 				}
 			]
 			title: "Runa Sagrada"
-			x: 6.0d
-			y: 15.0d
+			x: 4.5d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -462,7 +462,7 @@
 			]
 			title: "Runa do Fim"
 			x: 6.0d
-			y: 16.5d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -496,7 +496,7 @@
 			]
 			title: "Mitril"
 			x: 1.5d
-			y: 9.5d
+			y: 12.75d
 		}
 		{
 			dependencies: [
@@ -530,7 +530,7 @@
 			]
 			title: "Lingote de Mitril"
 			x: 3.0d
-			y: 7.75d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -564,7 +564,7 @@
 			]
 			title: "Orbe de Aprimoramento"
 			x: 4.5d
-			y: 5.5d
+			y: 8.25d
 		}
 		{
 			dependencies: [
@@ -599,7 +599,7 @@
 			]
 			title: "Orbe do Fogo"
 			x: 9.0d
-			y: 9.0d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -633,7 +633,7 @@
 			]
 			title: "Orbe de Mana"
 			x: 6.0d
-			y: 5.5d
+			y: 8.25d
 		}
 		{
 			dependencies: [
@@ -667,7 +667,7 @@
 			]
 			title: "Bigorna Arcana"
 			x: 6.0d
-			y: 8.0d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -701,7 +701,7 @@
 			]
 			title: "Tecido Mágico"
 			x: 4.5d
-			y: 20.25d
+			y: 23.0d
 		}
 		{
 			dependencies: [
@@ -736,7 +736,7 @@
 			]
 			title: "Vestes do Piromante"
 			x: 7.5d
-			y: 15.75d
+			y: 19.25d
 		}
 		{
 			dependencies: [
@@ -770,7 +770,7 @@
 			]
 			title: "Anel de Mana"
 			x: 4.5d
-			y: 7.0d
+			y: 9.75d
 		}
 		{
 			dependencies: [
@@ -817,7 +817,7 @@
 			]
 			title: "Livro de Ouro"
 			x: 6.0d
-			y: 9.5d
+			y: 12.25d
 		}
 		{
 			dependencies: [
@@ -869,7 +869,7 @@
 			]
 			title: "Livro de Diamante"
 			x: 7.5d
-			y: 8.75d
+			y: 11.5d
 		}
 	]
 	title: "Caminho — Pergaminhos e Runas"

@@ -65,7 +65,7 @@
 			]
 			title: "O Despertar"
 			x: 0.0d
-			y: 3.75d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -120,7 +120,7 @@
 			]
 			title: "Árvores Tortas"
 			x: 1.5d
-			y: 3.75d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -162,7 +162,7 @@
 			]
 			title: "Tábuas"
 			x: 3.0d
-			y: 3.75d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -196,7 +196,7 @@
 			]
 			title: "Mãos à Obra"
 			x: 4.5d
-			y: -1.0d
+			y: 9.75d
 		}
 		{
 			dependencies: [
@@ -226,7 +226,7 @@
 			]
 			title: "O Livro que Responde"
 			x: 6.0d
-			y: -6.75d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -251,8 +251,8 @@
 				}
 			]
 			title: "Saber o que se Faz"
-			x: 12.0d
-			y: -13.75d
+			x: 15.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -286,7 +286,7 @@
 			]
 			title: "Pedra Fria"
 			x: 6.0d
-			y: -2.0d
+			y: 9.25d
 		}
 		{
 			dependencies: [
@@ -320,7 +320,7 @@
 			]
 			title: "Primeira Ferramenta"
 			x: 7.5d
-			y: -4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -345,8 +345,8 @@
 				}
 			]
 			title: "Veios Inteiros"
-			x: 12.0d
-			y: -12.0d
+			x: 15.0d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -380,7 +380,7 @@
 			]
 			title: "Fogo Contido"
 			x: 7.5d
-			y: -0.75d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -417,7 +417,7 @@
 			]
 			title: "Combustível"
 			x: 9.0d
-			y: 0.75d
+			y: 12.75d
 		}
 		{
 			dependencies: [
@@ -450,8 +450,8 @@
 				}
 			]
 			title: "Luz Contra o Silêncio"
-			x: 12.0d
-			y: 3.5d
+			x: 10.5d
+			y: 14.75d
 		}
 		{
 			dependencies: [
@@ -521,7 +521,7 @@
 			]
 			title: "Um Lugar para Dormir"
 			x: 4.5d
-			y: 5.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -558,7 +558,7 @@
 			]
 			title: "Guardar o que Sobrou"
 			x: 4.5d
-			y: 6.5d
+			y: 17.75d
 		}
 		{
 			dependencies: [
@@ -583,8 +583,8 @@
 				}
 			]
 			title: "Se Você Morrer"
-			x: 12.0d
-			y: 8.0d
+			x: 9.0d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -622,7 +622,7 @@
 			]
 			title: "Ferro Bruto"
 			x: 9.0d
-			y: -2.5d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -660,7 +660,7 @@
 			]
 			title: "Lingotes"
 			x: 10.5d
-			y: -0.75d
+			y: 10.25d
 		}
 		{
 			dependencies: [
@@ -694,7 +694,7 @@
 			]
 			title: "Ferro na Mão"
 			x: 12.0d
-			y: -4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -728,7 +728,7 @@
 			]
 			title: "Couraça"
 			x: 12.0d
-			y: -2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -762,7 +762,7 @@
 			]
 			title: "Escudo"
 			x: 12.0d
-			y: -1.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -796,7 +796,7 @@
 			]
 			title: "Balde"
 			x: 12.0d
-			y: 0.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -830,7 +830,7 @@
 			]
 			title: "Pão de Cada Dia"
 			x: 6.0d
-			y: 1.5d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -863,8 +863,8 @@
 				}
 			]
 			title: "Lavoura"
-			x: 12.0d
-			y: 5.0d
+			x: 9.0d
+			y: 15.75d
 		}
 		{
 			dependencies: [
@@ -897,8 +897,8 @@
 				}
 			]
 			title: "Mochila"
-			x: 12.0d
-			y: 9.5d
+			x: 9.0d
+			y: 21.0d
 		}
 		{
 			dependencies: [
@@ -933,7 +933,7 @@
 			]
 			title: "Onde Estou?"
 			x: 12.0d
-			y: 2.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -971,7 +971,7 @@
 			]
 			title: "Pedras que Brilham"
 			x: 13.5d
-			y: -4.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1006,7 +1006,7 @@
 			]
 			title: "Palavras Antigas"
 			x: 15.0d
-			y: -4.5d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1058,7 +1058,7 @@
 			]
 			title: "Fragmentos de Eco"
 			x: 6.0d
-			y: 4.75d
+			y: 16.25d
 		}
 		{
 			dependencies: [
@@ -1086,8 +1086,8 @@
 				}
 			]
 			title: "A Banca do Eco"
-			x: 12.0d
-			y: 6.5d
+			x: 10.5d
+			y: 16.75d
 		}
 		{
 			dependencies: [
@@ -1148,8 +1148,8 @@
 				}
 			]
 			title: "Algo Está Ouvindo"
-			x: 18.0d
-			y: -0.25d
+			x: 16.5d
+			y: 14.75d
 		}
 	]
 	title: "Prólogo — O Despertar"

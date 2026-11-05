@@ -52,7 +52,7 @@
 			]
 			title: "Liga de Andesito"
 			x: 0.0d
-			y: -17.5d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -86,7 +86,7 @@
 			]
 			title: "Eixo"
 			x: 1.5d
-			y: -17.5d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -137,7 +137,7 @@
 			]
 			title: "A Primeira Engrenagem"
 			x: 3.0d
-			y: -20.5d
+			y: -7.25d
 		}
 		{
 			dependencies: [
@@ -171,7 +171,7 @@
 			]
 			title: "Engrenagem Grande"
 			x: 4.5d
-			y: -23.25d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -205,7 +205,7 @@
 			]
 			title: "Roda de Água"
 			x: 4.5d
-			y: -21.75d
+			y: -8.5d
 		}
 		{
 			dependencies: [
@@ -248,7 +248,7 @@
 			]
 			title: "Moinho de Vento"
 			x: 6.0d
-			y: -25.25d
+			y: -11.25d
 		}
 		{
 			dependencies: [
@@ -282,7 +282,7 @@
 			]
 			title: "Óculos do Engenheiro"
 			x: 4.5d
-			y: -18.75d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -316,7 +316,7 @@
 			]
 			title: "Chave Inglesa"
 			x: 4.5d
-			y: -20.25d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -350,7 +350,7 @@
 			]
 			title: "Caixa de Engrenagens"
 			x: 6.0d
-			y: -23.75d
+			y: -9.75d
 		}
 		{
 			dependencies: [
@@ -384,7 +384,7 @@
 			]
 			title: "Esteira"
 			x: 3.0d
-			y: -14.25d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -418,7 +418,7 @@
 			]
 			title: "Mó"
 			x: 6.0d
-			y: -21.75d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -453,7 +453,7 @@
 			]
 			title: "Prensa Mecânica"
 			x: 7.5d
-			y: -19.75d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -487,7 +487,7 @@
 			]
 			title: "Chapas de Ferro"
 			x: 9.0d
-			y: -20.25d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -530,7 +530,7 @@
 			]
 			title: "Misturador e Bacia"
 			x: 9.0d
-			y: -13.75d
+			y: -6.25d
 		}
 		{
 			dependencies: [
@@ -564,7 +564,7 @@
 			]
 			title: "Ventilador Encapsulado"
 			x: 7.5d
-			y: -23.75d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -598,7 +598,7 @@
 			]
 			title: "Depósito"
 			x: 4.5d
-			y: -14.75d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -640,8 +640,8 @@
 				}
 			]
 			title: "Funil e Calha"
-			x: 6.0d
-			y: -13.75d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -675,7 +675,7 @@
 			]
 			title: "Furadeira Mecânica"
 			x: 10.5d
-			y: -21.75d
+			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -709,7 +709,7 @@
 			]
 			title: "Serra Mecânica"
 			x: 10.5d
-			y: -20.25d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -745,8 +745,8 @@
 				}
 			]
 			title: "Zinco"
-			x: 0.0d
-			y: -6.25d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -790,7 +790,7 @@
 			]
 			title: "Queimador de Blaze"
 			x: 10.5d
-			y: -15.25d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -832,7 +832,7 @@
 			]
 			title: "Latão"
 			x: 10.5d
-			y: -6.25d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -866,7 +866,7 @@
 			]
 			title: "Invólucro de Latão"
 			x: 12.0d
-			y: -4.25d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -900,7 +900,7 @@
 			]
 			title: "Válvula Eletrônica"
 			x: 12.0d
-			y: -2.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -934,7 +934,7 @@
 			]
 			title: "Aplicador Mecânico"
 			x: 13.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -987,7 +987,7 @@
 			]
 			title: "Mecanismo de Precisão"
 			x: 16.5d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1022,7 +1022,7 @@
 			]
 			title: "Montador Mecânico"
 			x: 13.5d
-			y: -3.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -1056,7 +1056,7 @@
 			]
 			title: "Rodas Trituradoras"
 			x: 15.0d
-			y: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1090,7 +1090,7 @@
 			]
 			title: "Braço Mecânico"
 			x: 18.0d
-			y: -4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1142,7 +1142,7 @@
 			]
 			title: "Canos, Bomba e Tanque"
 			x: 10.5d
-			y: -18.75d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -1189,7 +1189,7 @@
 			]
 			title: "Motor a Vapor"
 			x: 12.0d
-			y: -17.0d
+			y: -7.25d
 		}
 		{
 			dependencies: [
@@ -1232,7 +1232,7 @@
 			]
 			title: "Medir Antes de Quebrar"
 			x: 6.0d
-			y: -18.75d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1285,7 +1285,7 @@
 			]
 			title: "Construções Lembradas"
 			x: 18.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1341,7 +1341,7 @@
 			]
 			title: "Trilhos de Aurend"
 			x: 13.5d
-			y: -17.0d
+			y: -7.25d
 		}
 	]
 	title: "Caminho — Engrenagens de Aurend"

@@ -62,9 +62,9 @@ quests:
      tasks: [{item: gtceu:vacuum_tube, count: 8}], rewards: [{coins: 3}]}
   - {slug: resistor, title: "Resistor", deps: [borracha], desc: ["Segura a corrente para ela não queimar tudo."],
      tasks: [{item: gtceu:resistor, count: 8}], rewards: [{coins: 2}]}
-  - {slug: liga_vermelha, title: "Liga Vermelha", deps: [ligas_vapor, cobre], desc: ["Cobre e redstone: o metal que lembra eletricidade."],
+  - {slug: liga_vermelha, title: "Liga Vermelha", deps: [ligas_vapor], desc: ["Cobre e redstone: o metal que lembra eletricidade."],
      tasks: [{tag: forge:ingots/red_alloy, count: 16}], rewards: [{coins: 2}]}
-  - {slug: fios, title: "Fios e Cabos", deps: [liga_vermelha, borracha, estanho], desc: ["Fio de liga vermelha e cabo de estanho isolado."],
+  - {slug: fios, title: "Fios e Cabos", deps: [liga_vermelha, borracha], desc: ["Fio de liga vermelha e cabo de estanho isolado."],
      tasks: [{item: gtceu:red_alloy_single_wire, count: 16}, {item: gtceu:tin_single_cable, count: 16}], rewards: [{coins: 3}]}
   - {slug: circuito, title: "Circuito Básico", deps: [valvula, resistor, fios], shape: gear, icon: gtceu:basic_electronic_circuit,
      desc: ["Seu primeiro circuito. Aurend pensava assim."], tasks: [{item: gtceu:basic_electronic_circuit, count: 4}],

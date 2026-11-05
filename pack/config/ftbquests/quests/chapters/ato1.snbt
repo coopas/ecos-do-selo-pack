@@ -66,7 +66,7 @@
 			]
 			title: "A Ciência Perdida"
 			x: 0.0d
-			y: 4.75d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -109,7 +109,7 @@
 			]
 			title: "As Máquinas Lembram"
 			x: 1.5d
-			y: 3.5d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -135,7 +135,7 @@
 			]
 			title: "Noites Mais Fortes"
 			x: 1.5d
-			y: 5.0d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -178,7 +178,7 @@
 			]
 			title: "Pedra de Lava Fria"
 			x: 1.5d
-			y: 6.5d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -212,7 +212,7 @@
 			]
 			title: "O Andar de Baixo"
 			x: 3.0d
-			y: 8.0d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -246,7 +246,7 @@
 			]
 			title: "Quartzo"
 			x: 4.5d
-			y: 7.5d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -280,7 +280,7 @@
 			]
 			title: "Verruga do Nether"
 			x: 4.5d
-			y: 9.0d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -314,7 +314,7 @@
 			]
 			title: "Fogo Vivo"
 			x: 4.5d
-			y: 10.5d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -351,7 +351,7 @@
 			]
 			title: "Ouro"
 			x: 4.5d
-			y: 6.0d
+			y: 4.25d
 		}
 		{
 			dependencies: [
@@ -385,7 +385,7 @@
 			]
 			title: "Pérolas do Fim"
 			x: 3.0d
-			y: 5.0d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -422,7 +422,7 @@
 			]
 			title: "Ferro em Dobro"
 			x: 0.0d
-			y: 9.25d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -459,7 +459,7 @@
 			]
 			title: "Estoque de Aço"
 			x: 0.0d
-			y: 6.25d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -506,7 +506,7 @@
 			]
 			title: "A Floresta que Não Fica"
 			x: 3.0d
-			y: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -543,7 +543,7 @@
 			]
 			title: "Sementes Vivas"
 			x: 4.5d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -580,7 +580,7 @@
 			]
 			title: "Flores para o Lago"
 			x: 6.0d
-			y: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -639,7 +639,7 @@
 			]
 			title: "A Chave Crepuscular"
 			x: 6.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -666,7 +666,7 @@
 			]
 			title: "O Lago e as Flores"
 			x: 7.5d
-			y: 5.75d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -714,7 +714,7 @@
 			]
 			title: "Crepúsculo Eterno"
 			x: 4.5d
-			y: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -748,7 +748,7 @@
 			]
 			title: "Raiz Viva"
 			x: 6.0d
-			y: -0.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -782,7 +782,7 @@
 			]
 			title: "Frutos que Brilham"
 			x: 6.0d
-			y: -6.25d
+			y: -7.75d
 		}
 		{
 			dependencies: [
@@ -816,7 +816,7 @@
 			]
 			title: "Penas de Corvo"
 			x: 6.0d
-			y: -2.5d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -852,7 +852,7 @@
 			]
 			title: "Mapa Mágico"
 			x: 7.5d
-			y: -2.75d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -886,7 +886,7 @@
 			]
 			title: "Ferro-Madeira"
 			x: 10.5d
-			y: 1.5d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -919,8 +919,8 @@
 				}
 			]
 			title: "Folha de Aço"
-			x: 10.5d
-			y: 3.0d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -945,7 +945,7 @@
 			]
 			title: "O Pátio da Serpente"
 			x: 9.0d
-			y: -1.5d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -993,7 +993,7 @@
 			]
 			title: "A Naga"
 			x: 10.5d
-			y: -0.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -1027,7 +1027,7 @@
 			]
 			title: "Escamas da Naga"
 			x: 12.0d
-			y: -1.75d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -1061,7 +1061,7 @@
 			]
 			title: "Couraça de Escamas"
 			x: 13.5d
-			y: -1.75d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -1095,7 +1095,7 @@
 			]
 			title: "Troféu da Naga"
 			x: 12.0d
-			y: -3.25d
+			y: -4.75d
 		}
 		{
 			dependencies: [
@@ -1129,7 +1129,7 @@
 			]
 			title: "Pó de Transformação"
 			x: 12.0d
-			y: -0.25d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -1163,7 +1163,7 @@
 			]
 			title: "Amuleto da Vida"
 			x: 12.0d
-			y: 1.25d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -1190,7 +1190,7 @@
 			]
 			title: "A Torre Pálida"
 			x: 12.0d
-			y: 3.25d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -1257,7 +1257,7 @@
 			]
 			title: "Morvane, o Guardião Pálido"
 			x: 13.5d
-			y: 3.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1291,7 +1291,7 @@
 			]
 			title: "Troféu de Morvane"
 			x: 15.0d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1348,7 +1348,7 @@
 			]
 			title: "O Fragmento da Floresta"
 			x: 15.0d
-			y: 3.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1374,7 +1374,7 @@
 			]
 			title: "Uma Escada Mais Funda"
 			x: 16.5d
-			y: 3.75d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -1404,7 +1404,7 @@
 			]
 			title: "Vapor Sobre a Floresta"
 			x: 6.0d
-			y: 1.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1434,7 +1434,7 @@
 			]
 			title: "Trens Entre Mundos"
 			x: 6.0d
-			y: 2.75d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -1468,7 +1468,7 @@
 			]
 			title: "Coque para o Inverno"
 			x: 0.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -1505,7 +1505,7 @@
 			]
 			title: "Bronze de Sobra"
 			x: 0.0d
-			y: 7.75d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1542,7 +1542,7 @@
 			]
 			title: "Latão de Sobra"
 			x: 0.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1576,7 +1576,7 @@
 			]
 			title: "Pensamento em Série"
 			x: 0.0d
-			y: 10.75d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1629,7 +1629,7 @@
 			]
 			title: "Ferrugem Vencida"
 			x: 18.0d
-			y: 2.5d
+			y: 1.0d
 		}
 	]
 	title: "Ato I — Ferrugem e Engrenagens"

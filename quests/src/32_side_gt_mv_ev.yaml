@@ -48,7 +48,7 @@ quests:
   - {slug: circuito_avancado, title: "Circuito Integrado Avançado", deps: [microprocessador, montadora_circuito], shape: gear,
      icon: gtceu:advanced_integrated_circuit, desc: ["O circuito da alta tensão."],
      tasks: [{item: gtceu:advanced_integrated_circuit, count: 4}], rewards: [{crate: rara}, {coins: 6}]}
-  - {slug: emissor_hv, title: "Emissor HV", deps: [motor_hv, circuito_avancado], desc: ["Uma luz mais forte."],
+  - {slug: emissor_hv, title: "Emissor HV", deps: [circuito_avancado], desc: ["Uma luz mais forte."],
      tasks: [{item: gtceu:hv_emitter, count: 2}], rewards: [{coins: 4}]}
   - {slug: campo_hv, title: "Gerador de Campo HV", deps: [emissor_hv], desc: ["Um campo invisível, como o Selo."],
      tasks: [{item: gtceu:hv_field_generator}], rewards: [{coins: 5}]}

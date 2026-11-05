@@ -30,9 +30,9 @@ quests:
      desc: ["O que sobra quando a luz desiste."], tasks: [{item: projecte:dark_matter, count: 8}], rewards: [{crate: epica}, {coins: 8}]}
   - {slug: picareta_escura, title: "Picareta de Matéria Escura", deps: [materia_escura], desc: ["Quebra tudo. Quase tudo."],
      tasks: [{item: projecte:dm_pick}], rewards: [{coins: 5}]}
-  - {slug: coletor2, title: "Coletor MK2", deps: [materia_escura, coletor], desc: ["Mais luz, mais EMC."],
+  - {slug: coletor2, title: "Coletor MK2", deps: [materia_escura], desc: ["Mais luz, mais EMC."],
      tasks: [{item: projecte:collector_mk2}], rewards: [{coins: 5}]}
-  - {slug: materia_vermelha, title: "Matéria Vermelha", deps: [materia_escura, coletor2], shape: gear, icon: projecte:red_matter,
+  - {slug: materia_vermelha, title: "Matéria Vermelha", deps: [coletor2], shape: gear, icon: projecte:red_matter,
      desc: ["Ainda mais densa. Ainda mais errada."], tasks: [{item: projecte:red_matter, count: 4}], rewards: [{crate: epica}, {coins: 10}]}
   - {slug: anel_vazio, title: "Anel do Vazio", deps: [materia_vermelha], desc: ["Guarda e teleporta, no mesmo dedo."],
      tasks: [{item: projecte:void_ring}], rewards: [{coins: 6}]}
@@ -40,6 +40,6 @@ quests:
      tasks: [{item: projecte:watch_of_flowing_time}], rewards: [{coins: 6}]}
   - {slug: tablete, title: "Tablete de Transmutação", deps: [materia_escura], desc: ["A mesa, no bolso."],
      tasks: [{item: projecte:transmutation_tablet}], rewards: [{coins: 5}]}
-  - {slug: o_preco, title: "O Preço", deps: [materia_vermelha, anel_vazio, relogio], shape: gear, icon: projecte:red_matter,
+  - {slug: o_preco, title: "O Preço", deps: [anel_vazio, relogio], shape: gear, icon: projecte:red_matter,
      desc: ["Conte o que perdeu a cada troca.", "Ilse parou de contar."], tasks: [{checkmark: true}],
      rewards: [{crate: lendaria}, {coins: 10}]}
