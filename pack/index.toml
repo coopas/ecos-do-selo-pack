@@ -407,7 +407,7 @@ hash = "ff4168826ded6dd917094d33e65dfd84a0c8ad1a3f6fc2ed716dce7348a7b9a2"
 
 [[files]]
 file = "kubejs/server_scripts/dev/registry_dump.js"
-hash = "3496d14401b9183bd98aba5ea913f311355e6fb4812633560ca60499e308eabe"
+hash = "96810b914e5f637dfa151cc9c042a4808d2fb22649e0f8d804400c96f52d6658"
 
 [[files]]
 file = "kubejs/startup_scripts/ecos_final_boss_damage.js"

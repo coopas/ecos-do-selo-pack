@@ -3,11 +3,14 @@
 Só leem build/registry_dump.json e build/recipe_dump.json: rode antes `python tools/build_server.py` e
 `python tools/boot_test.py server --dev` (o boot dev copia os dumps frescos para build/).
 """
+from fnmatch import fnmatchcase
+
 import pytest
 
+import progression
 import recipes
 import registry
-from paths import BUILD
+from paths import BUILD, ROOT
 
 
 def _rec() -> recipes.Recipes:
@@ -70,3 +73,28 @@ def test_diamond_vein():
     veios = [v for v in _reg().gt_veins if "diamond" in v["materials"]]
     assert veios
     assert any("minecraft:overworld" in v["dims"] and v["max_y"] < 0 for v in veios), veios
+
+
+@pytest.mark.ingame
+def test_gt_chanced_outputs():
+    """Saídas com chance do GT entram em outputs. Caldeiras e geradores (ignored_types) só fazem EU: ficam de fora."""
+    ignorados = progression.load(ROOT / "quests" / "progression.yaml").ignored_types
+    gt = [r for r in _rec().all if r["id"].startswith("gtceu:")
+          and not any(fnmatchcase(r["type"], pat) for pat in ignorados)]
+    vazias = [r["id"] for r in gt if not r["outputs"] and not r["fluid_outputs"]]
+    assert len(vazias) < 50, (len(vazias), vazias[:20])
+    sifter = [r for r in gt if r["id"].startswith("gtceu:sifter/")]
+    assert any(o.startswith(("gtceu:flawless_", "gtceu:exquisite_")) for r in sifter for o in r["outputs"]),         [(r["id"], r["outputs"]) for r in sifter[:5]]
+
+
+@pytest.mark.ingame
+def test_inputs_filled_all_mods():
+    todas = _rec().all
+    vazia = lambda r: not r["inputs"] and not r["fluid_inputs"]  # noqa: E731
+    vazias = [r for r in todas if vazia(r)]
+    assert len(vazias) < 150, (len(vazias), sorted({r["type"] for r in vazias}))
+    smithing = [r["id"] for r in todas if r["type"] == "minecraft:smithing_transform" and vazia(r)]
+    assert smithing == []
+    ars = [r for r in todas if r["type"].startswith("ars_nouveau:")]
+    assert ars
+    assert sum(map(vazia, ars)) < 0.1 * len(ars), [r["id"] for r in ars if vazia(r)][:20]

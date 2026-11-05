@@ -17,15 +17,66 @@ let ecosJsonAlts = (json, key) => {
     if (o.type === 'gtceu:circuit') { out.push('gtceu:programmed_circuit'); return }
     if (typeof o[key] === 'string') out.push(String(o[key]))
     else if (typeof o.tag === 'string') out.push('#' + o.tag)
-    Object.keys(o).forEach(k => { if (k !== 'nbt' && k !== key && k !== 'tag') walk(o[k]) })
+    // o[key] objeto (pedestal do Ars: {"item": {"item": "..."}}) também é descido
+    Object.keys(o).forEach(k => { if (k !== 'nbt' && k !== 'tag' && (k !== key || typeof o[k] === 'object')) walk(o[k]) })
   }
   walk(json)
   return out.filter((v, i) => out.indexOf(v) === i)
 }
 
+// Entradas de receita a partir do JSON original (ServerEvents.recipes), para tipos cujo getIngredients() volta vazio
+// (smithing, Ars, Aether, Twilight, Iron's, Cataclysm, AE2, Ad Astra...). Cada chave do topo que não é saída vira um
+// slot; chave no plural com lista (ingredients, pedestalItems, inputs...) vira um slot por elemento. Sem item, vale
+// bloco que tem item ({"block": id} ou {"block": {"id": id}}, conversões no mundo do Aether/AE2) ou string que é item
+// ("from" do chifre do Twilight); sem nada disso, fluido ({"fluid": id}) vai para os slots de fluido.
+const ECOS_NOT_INPUT = /^(type|conditions|forge:conditions|fabric:load_conditions|group|category|.*result.*|.*output.*|to)$/i
+let ecosJsonSlots = (json, isItem) => {
+  let slots = [], fluids = []
+  let blocks = o => {
+    let out = []
+    let walk = x => {
+      if (x === null || typeof x !== 'object') return
+      if (Array.isArray(x)) { x.forEach(walk); return }
+      let b = typeof x.block === 'string' ? x.block : x.block && typeof x.block.id === 'string' ? x.block.id : null
+      if (b && isItem(b) && out.indexOf(b) < 0) out.push(b)
+      Object.keys(x).forEach(k => { if (k !== 'block') walk(x[k]) })
+    }
+    walk(o)
+    return out
+  }
+  Object.keys(json).forEach(k => {
+    if (ECOS_NOT_INPUT.test(k)) return
+    let v = json[k]
+    let parts = Array.isArray(v) && /s$/i.test(k) ? v : [v]
+    parts.forEach(p => {
+      let alts = ecosJsonAlts(p, 'item')
+      if (!alts.length) alts = blocks(p)
+      if (!alts.length && typeof p === 'string' && isItem(p)) alts = [p]
+      if (alts.length) { slots.push(alts); return }
+      let fl = ecosJsonAlts(p, 'fluid')
+      if (fl.length) fluids.push(fl)
+    })
+  })
+  return { items: slots, fluids: fluids }
+}
+
+// JSON original de cada receita, guardado no evento de receitas para o dump (só com a flag dev).
+let ecosRecipeJson = {}
+ServerEvents.recipes(event => {
+  ecosRecipeJson = {}
+  if (!JsonIO.read('kubejs/config/dev.json')) return
+  event.forEachRecipe({}, r => {
+    try {
+      // GTRecipe já tem leitor próprio; smithing do GT (gtceu:*_smithing_transform_*) entra
+      if (String(r.json.get('type').getAsString()).indexOf('gtceu:') !== 0) ecosRecipeJson[String(r.getId())] = r.json
+    } catch (e) { /* receita sem JSON */ }
+  })
+})
+
 // Entradas/saídas do GTRecipe (Map<RecipeCapability, List<Content>>): só as capacidades 'item' e 'fluid'.
-// Devolve {item: [[alts]...], fluid: [[alts]...]}; os de tick (tickInputs) entram junto.
-let ecosGtContents = maps => {
+// Devolve {item: [[alts]...], fluid: [[alts]...]}; os de tick (tickInputs) entram junto. Com `outputs`, conteúdo com
+// chance 0 (e sem bônus por tier) não sai nunca e fica de fora; qualquer chance > 0 conta.
+let ecosGtContents = (maps, outputs) => {
   let res = { item: [], fluid: [] }
   maps.forEach(map => {
     if (!map) return
@@ -33,6 +84,7 @@ let ecosGtContents = maps => {
       let name = String(cap.name)
       if (name !== 'item' && name !== 'fluid') return
       list.forEach(c => {
+        if (outputs && Number(c.chance) <= 0 && Number(c.tierChanceBoost) <= 0) return
         let obj = c.content
         let ing = obj.getInner ? obj.getInner() : obj  // SizedIngredient: o Ingredient interno tem o JSON útil
         let alts = ecosJsonAlts(JSON.parse(String(ing.toJson().toString())), name)
@@ -75,20 +127,25 @@ let ecosProgressao = (R, itemTags, blockTags) => {
   let anchorY = a => a.absolute !== undefined ? a.absolute : a.above_bottom !== undefined ? -64 + a.above_bottom
     : a.below_top !== undefined ? 319 - a.below_top : null
   let gtVeins = []
+  let veinErrors = []
   const ArrayList = Java.loadClass('java.util.ArrayList')
   let veinKeys = new ArrayList(GTR.ORE_VEINS.keys())  // keys()/entries() são vistas não modificáveis: o Rhino não itera
   for (let i = 0; i < veinKeys.size(); i++) {
     let key = veinKeys.get(i)
-    let def = GTR.ORE_VEINS.get(key)
-    let dims = []
-    def.dimensionFilter().forEach(k => dims.push(String(k.location())))
-    let materials = []
-    def.veinGenerator().getAllMaterials().forEach(m => { let n = String(m.getName()); if (materials.indexOf(n) < 0) materials.push(n) })
-    let h = JSON.parse(String(HRP.CODEC.encodeStart(JsonOps.INSTANCE, def.range()).result().get().toString())).height
-    gtVeins.push({ id: String(key), dims: dims, min_y: anchorY(h.min_inclusive), max_y: anchorY(h.max_inclusive),
-      weight: Number(def.weight()), materials: materials })
+    try {  // um veio estranho (de addon/KubeJS) não derruba os outros
+      let def = GTR.ORE_VEINS.get(key)
+      let dims = []
+      def.dimensionFilter().forEach(k => dims.push(String(k.location())))
+      let materials = []
+      def.veinGenerator().getAllMaterials().forEach(m => { let n = String(m.getName()); if (materials.indexOf(n) < 0) materials.push(n) })
+      let h = JSON.parse(String(HRP.CODEC.encodeStart(JsonOps.INSTANCE, def.range()).result().get().toString())).height
+      gtVeins.push({ id: String(key), dims: dims, min_y: anchorY(h.min_inclusive), max_y: anchorY(h.max_inclusive),
+        weight: Number(def.weight()), materials: materials })
+    } catch (e) {
+      veinErrors.push(String(key) + ': ' + e)
+    }
   }
-  return { pickaxeTiers: pickaxeTiers, blockTiers: blockTiers, gtVeins: gtVeins }
+  return { pickaxeTiers: pickaxeTiers, blockTiers: blockTiers, gtVeins: gtVeins, veinErrors: veinErrors }
 }
 
 ServerEvents.loaded(event => {
@@ -111,7 +168,7 @@ ServerEvents.loaded(event => {
   }
   const itemTags = tagsOf(R.ITEM)
   const blockTags = tagsOf(R.BLOCK)
-  let progress = { pickaxeTiers: {}, blockTiers: {}, gtVeins: [] }
+  let progress = { pickaxeTiers: {}, blockTiers: {}, gtVeins: [], veinErrors: [] }
   try {
     progress = ecosProgressao(R, itemTags, blockTags)
   } catch (e) {
@@ -137,13 +194,18 @@ ServerEvents.loaded(event => {
     emc_sanity_dirt: Number(emcProxy['getValue(net.minecraft.world.item.ItemStack)'](Item.of('minecraft:dirt'))),
     pickaxe_tiers: progress.pickaxeTiers,
     block_tiers: progress.blockTiers,
-    gt_veins: progress.gtVeins
+    gt_veins: progress.gtVeins,
+    gt_vein_errors: progress.veinErrors
   })
 
   const server = event.server
   const access = server.registryAccess()
   let recipes = []
   let errors = []
+  let itemSet = {}
+  ids(R.ITEM).forEach(i => { itemSet[i] = true })
+  itemSet['minecraft:air'] = false
+  let isItem = id => itemSet[String(id)] === true
   let gtDebug = []
   server.getRecipeManager().getRecipes().forEach(r => {
     let outputs = []
@@ -207,13 +269,29 @@ ServerEvents.loaded(event => {
     } catch (e) {
       if (errors.length < 5) errors.push('input ' + r.getId() + ': ' + e)
     }
-    let fluidInputs = [], fluidOutputs = [], eut = 0, ebfTemp = 0
+    let jsonFluidInputs = []
+    if (inputs.length === 0 && !r.getInputEUt) {  // smithing, Ars, Aether...: lê o JSON original da receita
+      try {
+        let json = ecosRecipeJson[String(r.getId())]
+        if (json) {
+          let slots = ecosJsonSlots(JSON.parse(String(json.toString())), isItem)
+          inputs = slots.items
+          jsonFluidInputs = slots.fluids
+        }
+      } catch (e) {
+        if (errors.length < 5) errors.push('json input ' + r.getId() + ': ' + e)
+      }
+    }
+    let fluidInputs = jsonFluidInputs, fluidOutputs = [], eut = 0, ebfTemp = 0
     if (r.inputs && r.getInputEUt) {  // GTRecipe: getIngredients() vem vazio, as entradas estão no mapa de capacidades
       try {
         let ins = ecosGtContents([r.inputs, r.tickInputs])
         if (inputs.length === 0) inputs = ins.item
         fluidInputs = ins.fluid
-        ecosGtContents([r.outputs, r.tickOutputs]).fluid.forEach(alts => alts.forEach(f => fluidOutputs.push(f)))
+        let outs = ecosGtContents([r.outputs, r.tickOutputs], true)
+        outs.fluid.forEach(alts => alts.forEach(f => fluidOutputs.push(f)))
+        // saídas com chance (e as que o getResultItem não mostra) entram junto; qualquer chance > 0 conta
+        outs.item.forEach(alts => alts.forEach(i => { if (outputs.indexOf(i) < 0) outputs.push(i) }))
         eut = Number(r.getInputEUt().getTotalEU())
         ebfTemp = Number(r.data.getInt('ebf_temp'))
       } catch (e) {
