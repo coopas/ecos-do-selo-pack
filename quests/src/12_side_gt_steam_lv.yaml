@@ -36,8 +36,8 @@ quests:
      tasks: [{item: gtceu:primitive_blast_furnace}], rewards: [{coins: 3}]}
   - {slug: aco, title: "Aço", deps: [alto_forno], shape: gear, icon: gtceu:steel_ingot,
      desc: ["O primeiro aço de verdade em séculos."], tasks: [{tag: forge:ingots/steel, count: 16}], rewards: [{crate: comum}, {coins: 4}]}
-  - {slug: ferro_forjado, title: "Ferro Forjado", deps: [mais_ferramentas],
-     desc: ["Ferro martelado até perder as impurezas.", "Pepita de ferro na fornalha vira pepita de ferro forjado; o fundidor de ligas,", "com molde de lingote (de aço), junta nove num lingote. A alta pressão e o casco LV pedem."],
+  - {slug: ferro_forjado, title: "Ferro Forjado", deps: [compressor_vapor],
+     desc: ["Ferro martelado até perder as impurezas.", "Pepita de ferro na fornalha vira pepita de ferro forjado;", "o compressor a vapor junta nove num lingote. A alta pressão e o casco LV pedem."],
      tasks: [{tag: forge:ingots/wrought_iron, count: 8}], rewards: [{coins: 2}]}
   - {slug: casco_bronze, title: "Casco de Bronze", deps: [bronze], desc: ["Todas as máquinas a vapor nascem em bronze."],
      tasks: [{item: gtceu:bronze_machine_casing, count: 4}], rewards: [{coins: 2}]}
@@ -49,7 +49,8 @@ quests:
   - {slug: compressor_vapor, title: "Compressor a Vapor", deps: [caldeira],
      desc: ["Comprima pó em placas e blocos. Aqui só máquina faz bloco de lingotes.", "Os pistões pedem redstone: veio fundo no deepslate (y -65 a -10)."],
      tasks: [{item: gtceu:lp_steam_compressor}], rewards: [{coins: 2}]}
-  - {slug: martelo_vapor, title: "Martelo de Forja a Vapor", deps: [caldeira], desc: ["Golpes que nenhum braço aguenta."],
+  - {slug: martelo_vapor, title: "Martelo de Forja a Vapor", deps: [ferro_forjado],
+     desc: ["Golpes que nenhum braço aguenta.", "Leva uma bigorna, e a bigorna daqui pede 5 blocos de ferro: compressor a vapor."],
      tasks: [{item: gtceu:lp_steam_forge_hammer}], rewards: [{coins: 2}]}
   - {slug: ligas_vapor, title: "Fundidor de Ligas a Vapor", deps: [caldeira],
      desc: ["Ligas sem bater pó à mão.", "Também faz vidro: pó de vidro com molde de bloco (molde vazio = chapas de aço)."],

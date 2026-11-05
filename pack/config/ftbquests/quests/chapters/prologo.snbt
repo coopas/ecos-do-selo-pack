@@ -771,7 +771,7 @@
 			]
 			description: [
 				"Água apaga fogo. Lava apaga o resto."
-				"Aqui o balde é do GregTech: três chapas de ferro e um martelo de forja."
+				"Aqui o balde é do GregTech: três chapas de ferro e o martelo do GregTech (ferramenta)."
 				"Chapa = martelo + dois lingotes. Veja no JEI."
 			]
 			id: "3CF154EC0E39A69A"
@@ -875,8 +875,9 @@
 			]
 			description: [
 				"Uma mochila leva mais do que os bolsos."
-				"A receita daqui pede liga de andesito: andesito e pepitas de ferro."
-				"Pepita: derreta uma pá de ferro na fornalha (ou corte o lingote com a serra do GregTech)."
+				"A receita daqui pede liga de andesito: andesito e pepitas de ferro ou de zinco."
+				"Lingote de zinco (minério do Create) vira 9 pepitas à mão; ou derreta uma pá de ferro."
+				"Sem paciência? A banca do eco vende mochila por 8 ecos."
 			]
 			id: "25383A7A9F297BF8"
 			rewards: [

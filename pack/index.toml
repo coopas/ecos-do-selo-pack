@@ -14,7 +14,7 @@ hash = "4e97c3c14365097666dda0fb39294bf5517877de45bde79b9d7c11b0c8558092"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato1.snbt"
-hash = "b47db7574a904529ec31dfeff0dbf6d512cc482c11348a8c5afe09f8e419f069"
+hash = "57dfefaeffac28d178e33172412b7ed4a9253f247c4aa97a56ccb915336801c6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato2.snbt"
@@ -42,7 +42,7 @@ hash = "05b12b7b9f39c1635c40ab7a6623c445821ac365fc5ba80651bb58db6a82eefd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
-hash = "32881fefd9cba3859ef97d6bfaf90e9767d7849c1cde0bdcdd0849f7db32690d"
+hash = "6b8fe2d8dba3f3baf104106dc837723e13e546adfed3361bbe356bd854a16917"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_ae2.snbt"
@@ -54,7 +54,7 @@ hash = "9e170bbea90e4308c4d6059b180260e0471f307e4b25d7343db838332199c78b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_create.snbt"
-hash = "a9199748b7b5922a809b783e8e1debd4115c911e3c62f8014abf938d165ef6a2"
+hash = "0db315b4951aefeeb2fa360ede6364de434d1f1c2031cefc1c1b67b12e0ed61a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_mv_ev.snbt"
@@ -62,7 +62,7 @@ hash = "87e2e6703a9cee1fca1cf5d043633070efdd4277364c6df7e7aa29479bba74bc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_steam_lv.snbt"
-hash = "2793bf3f85965d4e0fcc9da283df07ca9dc18c4c897410b48dfbd42c83864240"
+hash = "ed86921ef97ddabbb1541272968c5aca7f44f3b3480a2dadbe55bb6fa51cae2a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_irons.snbt"

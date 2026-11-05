@@ -21,7 +21,8 @@
 			]
 			description: [
 				"Andesito e ferro: a liga que movia Aurend."
-				"Pepitas de ferro: corte o lingote com a serra do GregTech."
+				"Mais fácil com zinco: lingote de zinco vira 9 pepitas à mão e serve no lugar do ferro."
+				"Pepitas de ferro só saem com a serra do GregTech."
 			]
 			icon: {
 				Count: 1b
@@ -1010,8 +1011,9 @@
 			]
 			description: [
 				"Receitas grandes demais para uma bancada."
-				"A receita daqui pede gemas de fonte da Ars Nouveau:"
-				"ametista na Câmara de Imbuição (veja o Caminho da Fonte)."
+				"A receita daqui pede gemas de fonte da Ars Nouveau (6 para 9 montadores)."
+				"Tábuas de archwood (árvores mágicas do Overworld), ouro e liga de andesito"
+				"fazem a Câmara de Imbuição; ametista nela vira gema de fonte."
 			]
 			id: "4F329F50CE4C69EC"
 			rewards: [

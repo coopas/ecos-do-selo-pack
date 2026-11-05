@@ -144,7 +144,7 @@
 			]
 			description: [
 				"Obsidiana e fogo: uma porta para baixo."
-				"Obsidiana só cede à picareta de aço do GregTech (ou de diamante)."
+				"Obsidiana: picareta de aço do GregTech (ou de diamante), ou lave magma com ventilador do Create."
 				"O isqueiro daqui também é de aço: engrenagem e mola pequenas de aço com sílex."
 			]
 			id: "538F4DEB1FD0C1F1"
@@ -869,6 +869,7 @@
 				"Madeira que aprendeu a ser metal."
 				"Raiz viva, pepita de ouro e ferro bruto de verdade:"
 				"o minério de ferro comum, que mora no veio de cobre (y -40 a 10)."
+				"Pepita de ouro: derreta uma pá de ouro na fornalha (lingote não vira pepita à mão)."
 			]
 			id: "732FF55941EFFB56"
 			rewards: [

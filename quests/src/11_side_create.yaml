@@ -5,7 +5,7 @@ group: caminhos
 act: 1
 quests:
   - {slug: liga, title: "Liga de Andesito", deps: [prologo/ferro], icon: create:andesite_alloy, shape: gear,
-     desc: ["Andesito e ferro: a liga que movia Aurend.", "Pepitas de ferro: corte o lingote com a serra do GregTech."], tasks: [{item: create:andesite_alloy, count: 16}], rewards: [{coins: 2}]}
+     desc: ["Andesito e ferro: a liga que movia Aurend.", "Mais fácil com zinco: lingote de zinco vira 9 pepitas à mão e serve no lugar do ferro.", "Pepitas de ferro só saem com a serra do GregTech."], tasks: [{item: create:andesite_alloy, count: 16}], rewards: [{coins: 2}]}
   - {slug: eixo, title: "Eixo", deps: [liga], desc: ["Toda força começa girando."], tasks: [{item: create:shaft, count: 8}], rewards: [{coins: 1}]}
   - {slug: engrenagem, title: "A Primeira Engrenagem", deps: [eixo], desc: ["Engrenagens transmitem o giro. E o silêncio."],
      tasks: [{item: create:cogwheel, count: 8}], rewards: [{page: 6}, {coins: 2}]}
@@ -61,7 +61,7 @@ quests:
      desc: ["A montagem em sequência: prensa, aplicador e paciência.", "Sem ele, a floresta não se abre."],
      tasks: [{item: create:precision_mechanism, count: 2}], rewards: [{crate: rara}, {coins: 5}]}
   - {slug: montador, title: "Montador Mecânico", deps: [valvula, involucro_latao],
-     desc: ["Receitas grandes demais para uma bancada.", "A receita daqui pede gemas de fonte da Ars Nouveau:", "ametista na Câmara de Imbuição (veja o Caminho da Fonte)."],
+     desc: ["Receitas grandes demais para uma bancada.", "A receita daqui pede gemas de fonte da Ars Nouveau (6 para 9 montadores).", "Tábuas de archwood (árvores mágicas do Overworld), ouro e liga de andesito", "fazem a Câmara de Imbuição; ametista nela vira gema de fonte."],
      tasks: [{item: create:mechanical_crafter, count: 9}], rewards: [{coins: 3}]}
   - {slug: rodas_trituradoras, title: "Rodas Trituradoras", deps: [montador],
      desc: ["Minério vira pó, pó vira lingote em dobro.", "Cascalho moído às vezes solta redstone."],

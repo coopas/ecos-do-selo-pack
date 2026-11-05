@@ -13,7 +13,7 @@ quests:
      desc: ["A cada dia que passa, os mobs ficam mais fortes.", "Prepare-se antes de ficar para trás."],
      tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
   - {slug: obsidiana, title: "Pedra de Lava Fria", deps: [inicio, side_gt_steam_lv/aco],
-     desc: ["Obsidiana e fogo: uma porta para baixo.", "Obsidiana só cede à picareta de aço do GregTech (ou de diamante).", "O isqueiro daqui também é de aço: engrenagem e mola pequenas de aço com sílex."],
+     desc: ["Obsidiana e fogo: uma porta para baixo.", "Obsidiana: picareta de aço do GregTech (ou de diamante), ou lave magma com ventilador do Create.", "O isqueiro daqui também é de aço: engrenagem e mola pequenas de aço com sílex."],
      tasks: [{item: minecraft:obsidian, count: 10}, {item: minecraft:flint_and_steel}], rewards: [{coins: 2}]}
   - {slug: nether, title: "O Andar de Baixo", deps: [obsidiana], icon: minecraft:netherrack,
      desc: ["O Nether ainda queima. Ninguém apagou o fogo de Aurend."], tasks: [{dimension: minecraft:the_nether}], rewards: [{coins: 3}]}
@@ -56,7 +56,7 @@ quests:
      desc: ["Um mapa que mostra o que a floresta esconde.", "O foco do mapa leva pó de glowstone, do teto do Nether.", "Papel: cana na prensa do Create (a bancada não faz mais papel)."],
      tasks: [{item: twilightforest:magic_map}], rewards: [{coins: 3}]}
   - {slug: ferro_madeira, title: "Ferro-Madeira", deps: [raizviva],
-     desc: ["Madeira que aprendeu a ser metal.", "Raiz viva, pepita de ouro e ferro bruto de verdade:", "o minério de ferro comum, que mora no veio de cobre (y -40 a 10)."],
+     desc: ["Madeira que aprendeu a ser metal.", "Raiz viva, pepita de ouro e ferro bruto de verdade:", "o minério de ferro comum, que mora no veio de cobre (y -40 a 10).", "Pepita de ouro: derreta uma pá de ouro na fornalha (lingote não vira pepita à mão)."],
      tasks: [{item: twilightforest:ironwood_ingot, count: 8}], rewards: [{coins: 2}]}
   - {slug: folha_aco, title: "Folha de Aço", deps: [twilight], desc: ["Folhas tão duras quanto lâminas.", "Achadas em baús das colinas ocas e do labirinto."],
      tasks: [{item: twilightforest:steeleaf_ingot, count: 8}], rewards: [{coins: 2}]}
