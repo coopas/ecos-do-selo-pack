@@ -100,6 +100,14 @@ def check(chapters, reg, rec, naturals: dict, variant_tags: list[str], boss_drop
     errs: list[str] = []
     errs += _icon_errors(chapters, reg)
     quests, deps = _graph(chapters, errs)
+    owners: dict[str, str] = {}
+    for c in chapters:
+        for q in c.quests:
+            p = f"{c.slug}/{q['slug']}"
+            base = questgen.id_base(c.slug, q)
+            other = owners.setdefault(questgen.quest_id(base), p)
+            if other != p:
+                errs.append(f"ID duplicado: {other} e {p}")
 
     # ciclos (DFS com cores)
     color: dict[str, int] = {}

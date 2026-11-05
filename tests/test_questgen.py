@@ -160,3 +160,18 @@ def test_icons_survive_ftbquests_load_ingame():
     assert "ftbquests:custom_icon" in ch and "ecos:textures/gui/chapters/ato1.png" in ch, ch[:300]
     q = d["quests"][questgen.quest_id("ato1/inicio")]["quest"]
     assert '"create:cogwheel"' in q, q[:300]
+
+
+def test_legacy_id_keeps_old_ids():
+    old = chapter([q("x", tasks=[{"checkmark": True}, {"kill": "minecraft:warden"}], rewards=[{"xp_levels": 1}])], slug="a")
+    old_files = questgen.build([old], {})
+    moved = chapter([q("novo", legacy_id="a/x", tasks=[{"checkmark": True}, {"kill": "minecraft:warden"}],
+                       rewards=[{"xp_levels": 1}]), q("dep", deps=["novo"])], slug="b")
+    text = questgen.build([moved], {})["chapters/b.snbt"]
+    for suffix in ("", "#t0", "#t1", "#r0"):
+        assert questgen.quest_id("a/x" + suffix) in text
+        assert questgen.quest_id("b/novo" + suffix) not in text
+    assert text.count(questgen.quest_id("a/x")) == 2  # a quest e a dependência da quest "dep"
+    assert questgen.kill_tasks([moved])["minecraft:warden"] == [questgen.quest_id("a/x#t1")]
+    assert questgen.kill_tasks([old])["minecraft:warden"] == [questgen.quest_id("a/x#t1")]
+    assert questgen.quest_id("a/x") in old_files["chapters/a.snbt"]

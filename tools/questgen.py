@@ -205,6 +205,12 @@ def resolve_dep(dep: str, chapter: str, known: set[str]) -> str:
     return path
 
 
+def id_base(chapter_slug: str, quest: dict) -> str:
+    """Base dos IDs da quest (e de `#t<i>`/`#r<i>`): `legacy_id` se houver, senão `capitulo/slug`.
+    Único ponto que decide isso: quem mover/renomear uma quest mantém o progresso dos jogadores."""
+    return quest.get("legacy_id") or f"{chapter_slug}/{quest['slug']}"
+
+
 def all_paths(chapters: list[Chapter]) -> set[str]:
     return {f"{c.slug}/{q['slug']}" for c in chapters for q in c.quests}
 
@@ -220,12 +226,13 @@ def kill_tasks(chapters: list[Chapter]) -> dict[str, list[str]]:
         for q in c.quests:
             for i, t in enumerate(q.get("tasks", [])):
                 if "kill" in t:
-                    out.setdefault(t["kill"], []).append(quest_id(f"{c.slug}/{q['slug']}#t{i}"))
+                    out.setdefault(t["kill"], []).append(quest_id(f"{id_base(c.slug, q)}#t{i}"))
     return out
 
 
 def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
     known = all_paths(chapters)
+    bases = {f"{c.slug}/{q['slug']}": id_base(c.slug, q) for c in chapters for q in c.quests}
     files: dict[str, str] = {}
     groups = sorted({c.group for c in chapters})
     files["chapter_groups.snbt"] = snbt.dumps({"chapter_groups": [
@@ -241,11 +248,11 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
         quests = []
         pos = layout(c)
         for q in c.quests:
-            path = f"{c.slug}/{q['slug']}"
+            path = id_base(c.slug, q)
             quest = {
                 "id": quest_id(path), "title": q["title"], "description": image_line(q) + list(q.get("desc", [])),
                 "x": pos[q["slug"]][0], "y": pos[q["slug"]][1],
-                "dependencies": [quest_id(resolve_dep(d, c.slug, known)) for d in q.get("deps", [])],
+                "dependencies": [quest_id(bases[resolve_dep(d, c.slug, known)]) for d in q.get("deps", [])],
                 "tasks": [_task(t, quest_id(f"{path}#t{i}")) for i, t in enumerate(q.get("tasks", []))],
                 "rewards": [_reward(r, quest_id(f"{path}#r{i}"), tables) for i, r in enumerate(q.get("rewards", []))],
             }

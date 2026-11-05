@@ -293,3 +293,11 @@ def test_earlier_act_unlock_opens_dimension():
                     q("vai", deps=["prologo/despertar"], tasks=[{"dimension": "minecraft:the_nether"}])],
                    slug="ato1", act=1)]
     assert [f.path for f in errors(jrun(chapters, p=p))] == ["prologo/mesmo_ato"]
+
+
+def test_duplicate_id_rejected():
+    errs = run([ch([start(), q("a", legacy_id="prologo/despertar")])])
+    assert any(e.startswith("ID duplicado: ") and "prologo/despertar" in e and "prologo/a" in e for e in errs)
+    errs = run([ch([start(), q("a", legacy_id="x/velho"), q("b", legacy_id="x/velho")])])
+    assert any(e.startswith("ID duplicado: ") for e in errs)
+    assert not any("ID duplicado" in e for e in run([ch([start(), q("a", legacy_id="x/velho")])]))
