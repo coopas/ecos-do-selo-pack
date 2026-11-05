@@ -184,7 +184,7 @@ Conferido nos jars do Aether 1.5.2 e do Blue Skies 1.3.31 (worldgen, loot, tags,
 | `ato3/diopsidio` | Diopsídio e charoíta pedem picareta de nível 2. Lá dentro, só a de aquita (ou melhor) serve. | Descrição. |
 | `ato3/turquesa` | Sem toque de seda, a pedra cai como pedregulho (`blocks/turquoise_stone`). | Descrição: o forno devolve a pedra. |
 | `ato3/pedra_lua` | O minério solta lascas, não a pedra. | Descrição: quatro lascas fazem uma pedra. |
-| `ato3/invocador` | Nada disso era dito: ele mora no topo da Masmorra Ofuscante, a pedra-chave pede quatro chaves dos baús da masmorra, e ele só fica vulnerável quando conjura. | Descrição. |
+| `ato3/invocador` | Nada disso era dito: ele mora no topo da Masmorra Ofuscante, a pedra-chave pede quatro chaves dos baús da masmorra, e ele só fica vulnerável quando conjura. | Descrição. A Masmorra Ofuscante tem duas versões; a do Everdawn guarda o Alquimista, não o Invocador (diário do mod), e a descrição avisa. |
 | `ato3/esmagador` | Fica na Masmorra da Natureza (Everbright), com a mesma regra das quatro chaves. Só fica vulnerável depois de perder uma parede. | Descrição. |
 | `ato3/almas` | O fragmento de alma não vem só da bolsa do Invocador: também cai de espíritos de gelo e de polargeists. | Descrição. |
 | `ato3/solenne` | Mecânica escondida: o Espírito do Sol é imune a tudo que não seja frio até ser congelado pelos próprios cristais de gelo (`SunSpirit.isInvulnerableTo`). | Descrição: rebater os cristais de gelo e golpear enquanto ele está congelado. |
@@ -201,7 +201,7 @@ Conferido no jar do AE2 15.4.12 e na config (`spawnPressesInMeteorites: true`). 
 | quest | problema | correção |
 |---|---|---|
 | `side_ae2/meteorito` | Mandava usar a bússola de meteorito, que é uma bússola carregada no carregador, e o carregador é uma quest posterior. | Descrição: o carregador leva só ferro e cobre e funciona com manivela, então dá para fazer antes. |
-| `side_ae2/silicio` | As prensas só existem no Cubo Misterioso do meteorito, e nada avisava. | Descrição. |
+| `side_ae2/silicio` | As prensas só existem no Cubo Misterioso do meteorito, e nada avisava. Com toque de seda o cubo cai inteiro, sem as prensas (`blocks/mysterious_cube`). | Descrição, com o aviso do toque de seda. |
 | `side_ae2/brotos` | Não dizia que o bloco brotante impecável, quebrado, cai como defeituoso (o item da quest). | Descrição. |
 | `side_ae2/carregador` | No começo não há energia para ele. | Descrição: manivela em cima. |
 | `side_ae2/aceitador` | Não dizia como ligar a energia do GregTech. | Descrição: basta encostar um cabo do GregTech. |
@@ -228,7 +228,7 @@ O verificador não modela sala limpa nem a voltagem real de cada momento (o teto
 | `side_gt_mv_ev/congelador` | Leva 3 circuitos EV, mas dependia só do inox. | Dependência trocada de `inox` para `sala_limpa`; descrição. |
 | `side_gt_mv_ev/destilaria` | Leva 4 circuitos EV e bombas HV, mas dependia da pirólise e do reator MV. | Dependência trocada para `sala_limpa`; descrição. |
 | `side_gt_mv_ev/montadora_circuito` | Leva 2 circuitos EV e um emissor HV, mas dependia só do motor HV. | Dependência trocada de `motor_hv` para `escotilha`, `emissor_hv`; descrição. |
-| `side_gt_mv_ev/escotilha` | É montada a 480 EU/t com chip LPIC, e esse chip só é cortado na sala limpa. | Dependência trocada de `casco_hv` para `sala_limpa`; descrição. |
+| `side_gt_mv_ev/escotilha` | É montada a 480 EU/t com chip LPIC, e esse chip só é cortado na sala limpa. Também leva sódio-potássio, que sai do reator químico comum a 30 EU/t (`chemical_reactor/sodium_potassium`), além do grande. | Dependência trocada de `casco_hv` para `sala_limpa`; a descrição diz de onde vem o sódio-potássio. |
 | `side_gt_mv_ev/titanio` | Dependia do nicromo, mas o kanthal basta. Precisa do congelador a vácuo. | Dependências trocadas de `nicromo`, `congelador`, `escotilha` para só `congelador`; descrição. |
 | `side_gt_mv_ev/nicromo` | A descrição dizia "calor para o titânio", o que é falso. Pede 1920 EU/t e o congelador. | Dependência trocada de `inox` para `congelador`, `escotilha`; descrição. |
 | `side_gt_mv_ev/campo_hv` | O fio supercondutor pede bobinas de nicromo, e o olho quântico pede radônio. | Dependência trocada de `emissor_hv` para `nicromo`, `reator_grande`; descrição. |
@@ -238,6 +238,6 @@ O verificador não modela sala limpa nem a voltagem real de cada momento (o teto
 | `side_gt_mv_ev/turbina_hv`, `mineradora` | Levam circuitos e motores HV. | Dependências trocadas para `sala_limpa` (`turbina_hv` mantém `turbina_gas`). |
 | `side_gt_mv_ev/turbina_gas` | Dependia da torre de destilação (EV), mas a turbina MV queima o gás de madeira e de carvão da pirólise. | Dependência trocada de `destilaria` para `pirolise`; descrição. |
 
-O `LIMITES` de `side_gt_mv_ev` no `layoutcheck` continua em 5 cruzamentos; só o comentário foi atualizado.
+O `LIMITES` de `side_gt_mv_ev` no `layoutcheck` continua em 5 cruzamentos; só os comentários foram atualizados (a planaridade do grafo novo não foi testada).
 
 Revisadas sem mudança: 22 quests.

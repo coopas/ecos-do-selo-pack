@@ -17,7 +17,7 @@ quests:
      tasks: [{tag: forge:gems/fluix, count: 16}], rewards: [{coins: 3}]}
   - {slug: prensa, title: "A Prensa", deps: [certus, side_gt_steam_lv/bomba_pistao], shape: gear, icon: ae2:inscriber,
      desc: ["Pede um pistão LV do GregTech.", "A rede de Aurend corria sobre máquinas."], tasks: [{item: ae2:inscriber}], rewards: [{coins: 4}]}
-  - {slug: silicio, title: "Silício Impresso", deps: [prensa], desc: ["O primeiro molde da rede.", "As quatro prensas saem do Cubo Misterioso, no centro do meteorito."],
+  - {slug: silicio, title: "Silício Impresso", deps: [prensa], desc: ["O primeiro molde da rede.", "As quatro prensas saem do Cubo Misterioso, no centro do meteorito. Sem toque de seda: com ele, cai só o cubo."],
      tasks: [{tag: forge:silicon, count: 8}, {item: ae2:printed_silicon, count: 4}], rewards: [{coins: 2}]}
   - {slug: processadores, title: "Três Processadores", deps: [silicio, fluix], desc: ["Lógico, de cálculo e de engenharia."],
      tasks: [{item: ae2:logic_processor, count: 4}, {item: ae2:calculation_processor, count: 4}, {item: ae2:engineering_processor, count: 4}],

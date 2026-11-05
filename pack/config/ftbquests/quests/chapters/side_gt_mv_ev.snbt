@@ -1225,7 +1225,7 @@
 			]
 			description: [
 				"Alimente multiblocos em alta tensão."
-				"Montada a 480 EU/t (montadora HV), com chip LPIC cortado dentro da sala limpa e sódio-potássio."
+				"Montada a 480 EU/t (montadora HV), com chip LPIC cortado dentro da sala limpa e sódio-potássio (reator químico, 30 EU/t)."
 			]
 			id: "5B35F978F4F65FA1"
 			rewards: [

@@ -94,7 +94,7 @@ quests:
      tasks: [{item: blue_skies:diopside_gem, count: 4}, {item: blue_skies:charoite, count: 4}], rewards: [{coins: 4}]}
   - {slug: invocador, title: "O Invocador", deps: [diopsidio], shape: gear, icon: blue_skies:summoner_trophy,
      desc: ["Ele chama coisas de longe. Uma vez, chamou algo grande demais.",
-            "Mora no topo da Masmorra Ofuscante do Everbright; a pedra-chave pede quatro chaves dos baús de lá.",
+            "Mora no topo da Masmorra Ofuscante do Everbright (a do Everdawn é de outro feiticeiro); a pedra-chave pede quatro chaves dos baús de lá.",
             "Golpeie quando ele parar para conjurar."], tasks: [{kill: blue_skies:summoner}],
      rewards: [{crate: epica}, {coins: 8}]}
   - {slug: esmagador, title: "O Esmagador Estelar", deps: [diopsidio], shape: gear, icon: blue_skies:starlit_crusher_trophy,

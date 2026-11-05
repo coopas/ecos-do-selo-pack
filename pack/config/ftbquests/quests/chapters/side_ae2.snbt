@@ -255,7 +255,7 @@
 			]
 			description: [
 				"O primeiro molde da rede."
-				"As quatro prensas saem do Cubo Misterioso, no centro do meteorito."
+				"As quatro prensas saem do Cubo Misterioso, no centro do meteorito. Sem toque de seda: com ele, cai só o cubo."
 			]
 			id: "45406AC334162D1B"
 			rewards: [
