@@ -371,11 +371,89 @@ Nenhuma mudança. As posições (roda de raio 4, horário por tier) continuam co
 
 Revisadas sem mudança: 15 quests.
 
+## Quests que agora abrem mais tarde
+
+Para quem já está no meio do jogo: estas 73 quests ganharam dependências, então uma quest que você já via pode aparecer travada até concluir a indicada. Ninguém perde progresso: o que já foi concluído continua concluído, e nenhuma quest foi removida.
+
+- `ato1/obsidiana` — agora depois de `side_gt_steam_lv/aco`
+- `ato1/ferro_em_massa` — agora depois de `side_gt_steam_lv/macerador_vapor`
+- `side_create/oculos` — agora depois de `side_gt_steam_lv/ligas_vapor`, `side_gt_steam_lv/aco`
+- `side_create/prensa` — agora depois de `side_gt_steam_lv/compressor_vapor`
+- `side_create/queimador` — agora depois de `ato1/nether`
+- `side_create/valvula` — agora depois de `ato1/quartzo`
+- `side_create/trilhos` — agora depois de `side_create/aplicador`
+- `side_gt_steam_lv/tijolos_refratarios` — agora depois de `side_gt_steam_lv/compressor_vapor`
+- `side_gt_steam_lv/ferro_forjado` — agora depois de `side_gt_steam_lv/compressor_vapor`
+- `side_gt_steam_lv/martelo_vapor` — agora depois de `side_gt_steam_lv/ferro_forjado`
+- `side_gt_steam_lv/borracha` — agora depois de `ato1/nether`
+- `ato2/componentes` — agora depois de `ato2/aluminio`
+- `side_ars/dano` — agora depois de `side_ars/essencias`
+- `side_ars/curar` — agora depois de `side_ars/essencias`
+- `side_ars/essencias` — agora depois de `side_ars/pedestal`
+- `side_ars/starbuncle` — agora depois de `side_ars/aparato`
+- `side_occultism/giz_branco` — agora depois de `side_occultism/pedra_outra`
+- `side_occultism/oculos` — agora depois de `side_occultism/giz_dourado`
+- `side_occultism/varinha` — agora depois de `side_occultism/gema_espiritual`
+- `side_occultism/pedra_outra` — agora depois de `side_occultism/fogo_espiritual`
+- `side_occultism/fogo_espiritual` — agora depois de `side_occultism/datura`
+- `side_occultism/minerador` — agora depois de `side_occultism/picareta_iesnio`
+- `side_occultism/iesnio` — agora depois de `side_occultism/picareta_infundida`
+- `side_occultism/picareta_infundida` — agora depois de `side_occultism/giz_roxo`
+- `side_occultism/giz_vermelho` — agora depois de `side_occultism/afrit`
+- `side_occultism/afrit` — agora depois de `side_occultism/giz_roxo`
+- `side_occultism/mestre_ocultista` — agora depois de `side_occultism/giz_vermelho`
+- `ato3/horizonita` — agora depois de `ato3/everdawn`
+- `ato3/falsita` — agora depois de `ato3/everbright`
+- `ato3/ventio` — agora depois de `ato3/everbright`
+- `side_gt_mv_ev/destilaria` — agora depois de `side_gt_mv_ev/sala_limpa`
+- `side_gt_mv_ev/turbina_gas` — agora depois de `side_gt_mv_ev/pirolise`
+- `side_gt_mv_ev/kanthal` — agora depois de `side_gt_mv_ev/banho`
+- `side_gt_mv_ev/montadora_circuito` — agora depois de `side_gt_mv_ev/escotilha`, `side_gt_mv_ev/emissor_hv`
+- `side_gt_mv_ev/microprocessador` — agora depois de `side_gt_mv_ev/circuito_avancado`
+- `side_gt_mv_ev/circuito_avancado` — agora depois de `side_gt_mv_ev/boule`, `side_gt_mv_ev/gravador`
+- `side_gt_mv_ev/campo_hv` — agora depois de `side_gt_mv_ev/nicromo`, `side_gt_mv_ev/reator_grande`
+- `side_gt_mv_ev/nicromo` — agora depois de `side_gt_mv_ev/congelador`, `side_gt_mv_ev/escotilha`
+- `side_gt_mv_ev/multi_fornalha` — agora depois de `side_gt_mv_ev/circuito_avancado`
+- `side_gt_mv_ev/congelador` — agora depois de `side_gt_mv_ev/sala_limpa`
+- `side_gt_mv_ev/sala_limpa` — agora depois de `side_gt_mv_ev/motor_hv`, `side_gt_mv_ev/microprocessador`
+- `side_gt_mv_ev/reator_grande` — agora depois de `side_gt_mv_ev/ptfe`
+- `side_gt_mv_ev/ptfe` — agora depois de `side_gt_mv_ev/sala_limpa`
+- `side_gt_mv_ev/implosao` — agora depois de `side_gt_mv_ev/circuito_avancado`
+- `side_gt_mv_ev/turbina_hv` — agora depois de `side_gt_mv_ev/sala_limpa`
+- `side_gt_mv_ev/escotilha` — agora depois de `side_gt_mv_ev/sala_limpa`
+- `side_gt_mv_ev/mineradora` — agora depois de `side_gt_mv_ev/sala_limpa`
+- `side_gt_mv_ev/nano` — agora depois de `side_gt_mv_ev/montadora_circuito`, `side_gt_mv_ev/reator_grande`
+- `ato4/casco_iv` — agora depois de `ato4/bobina_rtm`
+- `ato4/smd_avancado` — agora depois de `ato4/hssg`
+- `ato4/montadora_iv` — agora depois de `ato4/emissor_iv`, `ato4/braco_iv`
+- `ato4/emissor_iv` — agora depois de `ato4/casco_iv`
+- `ato4/campo_iv` — agora depois de `ato4/quantico`
+- `ato4/linha_montagem` — agora depois de `ato4/montadora_iv`
+- `ato4/montadora_grande` — agora depois de `ato4/braco_iv`
+- `ato4/centrifuga_grande` — agora depois de `ato4/motor_iv`
+- `ato4/perfuratriz` — agora depois de `ato4/tungstenio`
+- `ato4/mineradora_grande` — agora depois de `ato4/tungstenio`
+- `ato4/lapotron` — agora depois de `ato4/montadora_iv`
+- `ato4/rodio` — agora depois de `ato4/hssg`
+- `ato4/hssg` — agora depois de `ato4/casco_iv`
+- `ato4/fim_ato4` — agora depois de `ato4/motor_luv`
+- `side_space/mercurio` — agora depois de `side_space/traje_netherite`
+- `ato5/liga_naquadah` — agora depois de `ato5/bobina_naquadah`, `ato5/osmiridio`
+- `ato5/bobina_naquadah` — agora depois de `ato5/naquadah`, `ato5/iridio`
+- `ato5/cristal` — agora depois de `ato5/fusao`
+- `ato5/modulo_energia` — agora depois de `ato5/emissor_zpm`
+- `ato5/fusao` — agora depois de `ato5/liga_naquadah`, `ato4/campo_iv`
+- `ato5/emissor_zpm` — agora depois de `ato5/campo_luv`
+- `ato5/receita_pedra` — agora depois de `ato5/campo_luv`
+- `ato5/artefato` — agora depois de `ato5/quatro`
+- `side_projecte/klein` — agora depois de `side_projecte/carvao`
+- `side_projecte/condensador` — agora depois de `side_projecte/bau_alquimico`
+
 ## Avisos que ficaram
 
-O `questcheck` termina com "estrutural: OK; jornada: 1 erros, 3 avisos". Nenhum deles é problema para o jogador:
+O `questcheck` termina com "estrutural: OK; jornada: 0 erros, 3 avisos". Nenhum deles é problema para o jogador:
 - `prologo/mapa`, `prologo/diamante` e `prologo/encantamento` (aviso: veio fundo, y < 0, no Prólogo). As três são opcionais, e a descrição de cada uma diz onde achar (redstone, diamante y -55 a -30, obsidiana e papel). A banca vende diamantes a partir do Ato I.
-- `side_occultism/giz_roxo` (erro). É uma lacuna do dump: a moagem do Occultism com saída em tag aparece como `minecraft:barrier`. O caminho foi conferido à mão no jar: o foliot triturador mói pedra do End em pó, e o End abre com o Nether. A quest dá para fazer, e a descrição explica o caminho. O erro some quando o dump ler essas saídas.
+- `side_occultism/giz_roxo` já não dá erro: o dump traz a moagem do Occultism com saída em tag como `minecraft:barrier`, então o pó de pedra do End (`occultism:crushing/end_stone_dust`, foliot triturador) entrou em `quests/naturals.yaml` como fonte do End, travada pela tigela dourada e pelo giz branco.
 
 ## Quests novas da integração
 

@@ -73,7 +73,7 @@ entregou 2 400 EU com 28 800 mB de vapor (perda de 83 %). Falta o que só o olho
 - [ ] Gerador de combustão do GregTech com diesel do Diesel Generators: gera EU.
 - [ ] Rodas de moer do Create com minério bruto do GregTech dão minério moído; a lavagem (ventilador + água) dá o
       purificado. No JEI, o rendimento do Create é menor que o do macerador do GregTech.
-- [ ] Rodas de moer com cascalho: de vez em quando sai pó de redstone.
+- [ ] Rodas de moer com cascalho (a partir do Ato II: as rodas pedem a montadora mecânica, que pede gemas de fonte do Ars): de vez em quando sai pó de redstone.
 
 ## 8. Revisão das quests (descrições, dependências e layout)
 Mudou muita coisa nas quests; o relatório está em `docs/revisao-quests-relatorio.md`. Conferir em jogo:
