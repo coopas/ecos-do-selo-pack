@@ -18,8 +18,19 @@ Atualizações do pack são baixadas sozinhas toda vez que você abre o jogo.
 - **Shaders** vêm instalados, mas desligados: *Opções → Vídeo → Shader Packs* (Complementary ou BSL).
 - **Fresh Animations** (animações de mobs) também vem desligado: *Opções → Pacotes de recursos*.
 
+### Mapa, zoom e distância de visão
+- **Mapa:** Xaero's Minimap + World Map. O FTB Chunks fica só para reivindicar e manter chunks carregados
+  (o minimapa dele vem desligado; o mapa dele ainda abre para clicar nos chunks).
+- **Zoom:** Just Zoom (tecla em *Opções → Controles*).
+- **Distant Horizons:** mostra terreno muito além da distância de renderização, só no cliente.
+  Se pesar no seu PC, diminua a qualidade no botão dele em *Opções → Vídeo*.
+- **Lixeira no inventário:** Trash Slot (o espaço de lixo fica ao lado do inventário).
+- **Loot de baús por jogador:** Lootr. Cada baú de estrutura (dungeon, templo, Twilight etc.) tem um loot
+  separado para cada amigo: quem abre primeiro não leva o de todo mundo. Para quebrar um baú desses, agache.
+
 ### Litematica (construções)
-Coloque arquivos `.litematic` em `.minecraft/schematics` (pasta da instância → `minecraft/schematics`). Abra o menu com a tecla **M**. No survival, o **Schematicannon** do Create imprime construções `.nbt`.
+O Litematica original é só para Fabric; aqui ele vem como **Forgematica** (o mesmo mod adaptado para Forge,
+com a biblioteca MaFgLib). Coloque arquivos `.litematic` em `.minecraft/schematics` (pasta da instância → `minecraft/schematics`). Abra o menu com a tecla **M**. No survival, o **Schematicannon** do Create imprime construções `.nbt`.
 
 ## Vapor, rotação e energia (GregTech × Create)
 Três blocos ligam o vapor do GregTech, a rotação do Create e a energia (EU) do GregTech:

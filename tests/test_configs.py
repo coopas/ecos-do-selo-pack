@@ -31,6 +31,12 @@ def test_chunk_limits():
     assert re.search(r"max_claimed_chunks: 500\b", text)
 
 
+def test_ftb_chunks_minimap_off():
+    """O mapa do pack é o Xaero's; o FTB Chunks fica só para claim e chunk loading (senão aparecem dois minimapas)."""
+    text = (PACK / "defaultconfigs" / "ftbchunks" / "ftbchunks-world.snbt").read_text()
+    assert re.search(r"force_disable_minimap: true\b", text)
+
+
 def test_ultimine_limit():
     text = (PACK / "defaultconfigs" / "ftbultimine" / "ftbultimine-server.snbt").read_text()
     assert re.search(r"max_blocks: 64\b", text)
