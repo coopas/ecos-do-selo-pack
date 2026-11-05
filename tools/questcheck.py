@@ -4,8 +4,8 @@ Estrutural (check/main_check): IDs existem; task não exige variante específica
 "qualquer cama"); grafo sem ciclo e tudo alcançável a partir do Prólogo; ordem dos atos; recompensa e texto curto.
 
 Jornada (check_progress/main_progress): cada quest é julgada no ponto em que o jogador está, com o motor de fecho
-(tools/closure.py). Dimensões abertas = Overworld + as de dimension_unlocks cuja quest é ancestral (ou a própria
-quest); seed = itens de task e recompensas dos ancestrais + drops de chefe das tasks de kill ancestrais +
+(tools/closure.py). Dimensões abertas = Overworld + as de dimension_unlocks cuja quest é ancestral, a própria quest
+ou de um capítulo de ato menor (nada trava a dimensão; ramo de ato anterior já pode ter sido feito); seed = itens de task e recompensas dos ancestrais + drops de chefe das tasks de kill ancestrais +
 boss_quest_drops. Erro: item/tag fora do fecho. Aviso: só por veio fundo antes de deep_ok_from_act, ou só por receita
 do GregTech acima do act_tier do ato.
 
@@ -220,6 +220,8 @@ def check_progress(chapters, reg, rec, prog, naturals: dict | None = None,
     opens: dict[str, set[str]] = {}
     for dim, qpath in unlock_of.items():
         opens.setdefault(qpath, set()).add(dim)
+    # nada no jogo trava a dimensão além da própria quest: um ramo de ato anterior já pode ter sido feito
+    unlock_act = {d: quests[qp][0].act for d, qp in unlock_of.items() if qp in quests}
 
     gains: dict[str, set[str]] = {}  # o que a quest deixa na mão de quem vem depois
     gdims: dict[str, set[str]] = {}  # dimensões que ela abre
@@ -263,7 +265,8 @@ def check_progress(chapters, reg, rec, prog, naturals: dict | None = None,
     for path in order:
         c, q = quests[path]
         here = anc[path] | {path}
-        dims = frozenset({OVERWORLD} | {d for a in here for d in gdims[a]})
+        dims = frozenset({OVERWORLD} | {d for a in here for d in gdims[a]}
+                         | {d for d, act in unlock_act.items() if act < c.act})
         seed = set(prog.boss_quest_drops.get(path, []))
         for a in anc[path]:
             seed |= gains[a]
@@ -274,7 +277,7 @@ def check_progress(chapters, reg, rec, prog, naturals: dict | None = None,
         for t in q.get("tasks", []):
             if "dimension" in t:
                 d = t["dimension"]
-                if d in unlock_of and unlock_of[d] not in here:
+                if d in unlock_of and d not in dims:
                     out.append(Finding(path, "erro", f"dimensão {d} ainda fechada neste ponto (abre em {unlock_of[d]})"))
                 continue
             if "item" in t:

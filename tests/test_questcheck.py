@@ -281,3 +281,15 @@ def test_real_progression_quests_exist():
     assert set(p.dimension_unlocks.values()) <= paths
     assert set(p.boss_quest_drops) <= paths
     assert set(p.act_tier) == {c.act for c in questgen.load_sources()}
+
+
+def test_earlier_act_unlock_opens_dimension():
+    """Quest que libera a dimensão num ato anterior abre a dimensão mesmo fora da cadeia; no mesmo ato, não."""
+    p = jprog({OW: ["x:a"], "minecraft:the_nether": ["x:nether_thing"]})
+    task = [{"item": "x:nether_thing"}]
+    chapters = [ch([start(), q("nether", deps=["despertar"], tasks=[{"dimension": "minecraft:the_nether"}]),
+                    q("mesmo_ato", deps=["despertar"], tasks=task)]),
+                ch([q("depois", deps=["prologo/despertar"], tasks=task),
+                    q("vai", deps=["prologo/despertar"], tasks=[{"dimension": "minecraft:the_nether"}])],
+                   slug="ato1", act=1)]
+    assert [f.path for f in errors(jrun(chapters, p=p))] == ["prologo/mesmo_ato"]
