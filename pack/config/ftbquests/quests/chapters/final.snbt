@@ -24,6 +24,7 @@
 				"Pentáculo de espírito maior: giz branco e roxo, quatro crânios de esqueleto, tigela dourada."
 				"Nas tigelas de sacrifício: dois fragmentos de eco, um sino e um eco reforçado."
 				"O sino não tem receita: tire-o de uma vila. Os crânios saem do ritual do esqueleto possuído."
+				"Antes, conclua: «O Artefato do Selo» (Ato V — A Heresia), «Giz Roxo» (Caminho — Os que Servem)"
 			]
 			icon: {
 				Count: 1b
@@ -59,6 +60,7 @@
 			description: [
 				"Use o Artefato do Selo na tigela dourada."
 				"Ele vem. Ilse vem junto."
+				"Antes, conclua: «O Círculo de Giz»"
 			]
 			icon: {
 				Count: 1b
@@ -91,6 +93,7 @@
 				"A máquina que girava o silêncio, com alguém dentro."
 				"Quando ele cair, o Eco é seu."
 				"Se ele adormecer, acorde-o com uma estrela do Nether."
+				"Antes, conclua: «O Artefato do Selo» (Ato V — A Heresia)"
 			]
 			icon: {
 				Count: 1b
@@ -146,6 +149,7 @@
 			description: [
 				"Use o Eco do Arauto."
 				"Ilse descansa. Você nunca mais ouve o Eco."
+				"Antes, conclua: «O Arauto do Eco»"
 			]
 			icon: {
 				Count: 1b
@@ -194,6 +198,7 @@
 			description: [
 				"Use o Eco do Arauto agachado."
 				"Uma nova arquivista começa um diário. A primeira linha é o seu nome."
+				"Antes, conclua: «O Arauto do Eco»"
 			]
 			icon: {
 				Count: 1b

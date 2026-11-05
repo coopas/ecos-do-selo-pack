@@ -703,8 +703,20 @@ def kill_tasks(chapters: list[Chapter]) -> dict[str, list[str]]:
     return out
 
 
+def deps_line(q: dict, chapter: str, info: dict[str, tuple[str, str]]) -> list[str]:
+    """Nomeia o que falta: o FTB só diz "uncompleted dependencies" e não desenha a linha entre capítulos.
+    Dependência de outro capítulo leva o nome do capítulo junto."""
+    names = []
+    for d in q.get("deps", []):
+        path = d if "/" in d else f"{chapter}/{d}"
+        title, chap = info.get(path, (d, "?"))
+        names.append(f"«{title}»" if path.startswith(f"{chapter}/") else f"«{title}» ({chap})")
+    return ["Antes, conclua: " + ", ".join(names)] if names else []
+
+
 def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
     known = all_paths(chapters)
+    info = {f"{c.slug}/{q['slug']}": (q["title"], c.title) for c in chapters for q in c.quests}
     bases = {f"{c.slug}/{q['slug']}": id_base(c.slug, q) for c in chapters for q in c.quests}
     files: dict[str, str] = {}
     groups = sorted({c.group for c in chapters})
@@ -723,7 +735,7 @@ def build(chapters: list[Chapter], tables: dict) -> dict[str, str]:
         for q in c.quests:
             path = id_base(c.slug, q)
             quest = {
-                "id": quest_id(path), "title": q["title"], "description": image_line(q) + list(q.get("desc", [])),
+                "id": quest_id(path), "title": q["title"], "description": image_line(q) + list(q.get("desc", [])) + deps_line(q, c.slug, info),
                 "x": pos[q["slug"]][0], "y": pos[q["slug"]][1],
                 "dependencies": [quest_id(bases[resolve_dep(d, c.slug, known)]) for d in q.get("deps", [])],
                 "tasks": [_task(t, quest_id(f"{path}#t{i}")) for i, t in enumerate(q.get("tasks", []))],

@@ -23,6 +23,7 @@
 				"{image:ecos:textures/gui/quests/ato5.png width:200 height:112 align:center}"
 				"A última confissão de Ilse Varrow."
 				"Leia antes de continuar."
+				"Antes, conclua: «Além do Véu» (Ato IV — Além do Véu)"
 			]
 			icon: {
 				Count: 1b
@@ -75,6 +76,7 @@
 			description: [
 				"Metais nobres para a ultimíssima voltagem."
 				"Veio de sheldonita no End (y 5 a 50), ou o Platinum Group Sludge na centrífuga com água-régia."
+				"Antes, conclua: «Fui Eu»"
 			]
 			id: "7F2E52E7C032ECE7"
 			rewards: [
@@ -126,6 +128,7 @@
 				"Os metais mais densos que a terra guarda."
 				"Saem da mistura de metais raros do Platinum Group Sludge (reator químico grande, 7680 EU/t)."
 				"Os dois fundem a 4500 K; o ósmio pede alto-forno em LuV (30720 EU/t)."
+				"Antes, conclua: «Platina e Paládio»"
 			]
 			id: "11B10EA9A673A0FE"
 			rewards: [
@@ -176,6 +179,7 @@
 			description: [
 				"A liga dos motores ZPM."
 				"Misturador LuV e 4500 K no alto-forno em LuV."
+				"Antes, conclua: «Irídio e Ósmio»"
 			]
 			id: "5EACB867BEBBD634"
 			rewards: [
@@ -216,6 +220,7 @@
 				"Aurend o trouxe das estrelas."
 				"Hoje ele está no End: veio de naquadah (y 10 a 90), junto do plutônio. Picareta de diamante."
 				"Funde a 5000 K (bobinas de HSS-G) e sai quente."
+				"Antes, conclua: «Fui Eu»"
 			]
 			icon: {
 				Count: 1b
@@ -273,6 +278,7 @@
 				"O metal dos cascos ZPM."
 				"Naquadah, ósmirídio e trínio; funde a 7200 K, só com bobinas de naquadah."
 				"Trínio: do processamento da naquadah enriquecida (centrífuga), também a 7200 K."
+				"Antes, conclua: «Bobinas de Naquadah», «Ósmirídio»"
 			]
 			id: "708B799A406F9163"
 			rewards: [
@@ -312,6 +318,7 @@
 			description: [
 				"Um alto-forno a 7200 K."
 				"Fio duplo de naquadah e folha de ósmio, na montadora (assembler) LuV, 30720 EU/t."
+				"Antes, conclua: «Naquadah», «Irídio e Ósmio»"
 			]
 			id: "24A8CF6845FE0120"
 			rewards: [
@@ -347,6 +354,7 @@
 			description: [
 				"Luz quase sólida."
 				"Linha de montagem. Pesquise o emissor IV no scanner IV (Data Stick no Data Access Hatch)."
+				"Antes, conclua: «Fui Eu»"
 			]
 			id: "2781A8FE911CB16E"
 			rewards: [
@@ -382,6 +390,7 @@
 			description: [
 				"Monta o que você não consegue ver."
 				"Linha de montagem. Pesquise o braço IV no scanner (Data Stick no Data Access Hatch)."
+				"Antes, conclua: «Fui Eu»"
 			]
 			id: "5D36CF61BA5CEDB6"
 			rewards: [
@@ -418,6 +427,7 @@
 			description: [
 				"Circuitos de cristal."
 				"Pede circuitos ZPM: o mainframe quântico sai da montadora de circuitos IV (7680 EU/t, na sala limpa)."
+				"Antes, conclua: «Emissor LuV», «Braço Robótico LuV»"
 			]
 			id: "5254D1171441BFC0"
 			rewards: [
@@ -456,6 +466,7 @@
 				"O chip de cristal cru pede európio na autoclave, e o európio só sai do reator de fusão."
 				"Acender o európio pede 150M EU no reator: 15 escotilhas de energia LuV (10M cada)."
 				"Depois: 5000 K no alto-forno, gravador e a Montadora de Circuitos LuV (9600 EU/t), tudo na sala limpa."
+				"Antes, conclua: «Reator de Fusão», «Montadora de Circuitos LuV»"
 			]
 			icon: {
 				Count: 1b
@@ -509,6 +520,7 @@
 				"Guarde energia de um continente."
 				"Linha de montagem em ZPM (100000 EU/t), com európio, trínio e um gerador de campo LuV."
 				"Pesquise o aglomerado de orbes lapotrônicos na Research Station."
+				"Antes, conclua: «Emissor ZPM»"
 			]
 			id: "5CCC3C4D0B0A3585"
 			rewards: [
@@ -547,6 +559,7 @@
 				"Aurend fazia isso para não ouvir o céu."
 				"Pesquise o fio de ITBTC no scanner IV. Pede circuitos ZPM, gerador de campo IV, ósmirídio, plutônio-241 (centrífuga do plutônio do End)"
 				"e bobinas supercondutoras (ITBTC e trínio). Neodímio e hidrogênio fundidos nele dão o európio."
+				"Antes, conclua: «Liga de Naquadah», «Gerador de Campo IV» (Ato IV — Além do Véu)"
 			]
 			icon: {
 				Count: 1b
@@ -599,6 +612,7 @@
 			description: [
 				"Zero Point Module. O fim da escada."
 				"Chapas de liga de naquadah, cabo de vanádio-gálio e polibenzimidazol."
+				"Antes, conclua: «Reator de Fusão»"
 			]
 			id: "13EB4FC30E41451C"
 			rewards: [
@@ -634,6 +648,7 @@
 			description: [
 				"Feito na linha de montagem, com fusão."
 				"O fio de európio vem do reator. Pesquise o motor LuV no scanner IV."
+				"Antes, conclua: «Casco ZPM»"
 			]
 			id: "1F3DE6F80277F5B9"
 			rewards: [
@@ -672,6 +687,7 @@
 				"O scanner não basta: pesquise o emissor LuV na Research Station, com computação de um HPCA (cabo óptico)."
 				"As duas saem da linha de montagem a 100000 EU/t: duas escotilhas de energia LuV dão ZPM. O Data Orb vai no Data Access Hatch."
 				"As duas pedem gerador de campo LuV e fio duplo de urânio-ródio-dinaquadida (9000 K: bobinas de trínio)."
+				"Antes, conclua: «Motor ZPM», «Gerador de Campo LuV»"
 			]
 			id: "19674956243B3BC2"
 			rewards: [
@@ -709,6 +725,7 @@
 				"Ele vai segurar o Artefato inteiro."
 				"Pesquise o gerador LuV na Research Station. O fio de urânio-ródio-dinaquadida funde a 9000 K:"
 				"bobinas de trínio, feitas na montadora (assembler) ZPM."
+				"Antes, conclua: «Emissor ZPM»"
 			]
 			icon: {
 				Count: 1b
@@ -764,6 +781,7 @@
 				"Faz parte da Pedra Filosofal."
 				"Linha de montagem: emissor LuV, estrela quântica, HSS-S, fio de ITBTC e circuitos LuV (o mainframe nano serve)."
 				"O ITBTC funde a 6000 K, só com bobinas de naquadah. Pesquise o gerador IV no scanner IV."
+				"Antes, conclua: «Bobinas de Naquadah», «Emissor LuV», «Gerador de Campo IV» (Ato IV — Além do Véu)"
 			]
 			id: "58A5FA59878BA1AF"
 			rewards: [
@@ -800,6 +818,7 @@
 			description: [
 				"Um Fragmento das Estrelas, um gerador de campo LuV e diamantes."
 				"Ignaz sempre deixa outro fragmento."
+				"Antes, conclua: «Gerador de Campo LuV», «O Fragmento das Estrelas» (Ato IV — Além do Véu)"
 			]
 			id: "3DF0B297C20D106F"
 			rewards: [
@@ -846,6 +865,7 @@
 			]
 			description: [
 				"Ela não cria nada. Ela troca."
+				"Antes, conclua: «As Estrelas e a Melhor Máquina»"
 			]
 			icon: {
 				Count: 1b
@@ -899,6 +919,7 @@
 				"{image:ecos:textures/gui/quests/ilse.png width:200 height:112 align:center}"
 				"Ilse está dentro da máquina que girava o silêncio."
 				"E o Ouvinte está com ela."
+				"Antes, conclua: «Mesa de Transmutação» (Caminho — A Alquimia Proibida)"
 			]
 			icon: {
 				Count: 1b
@@ -951,6 +972,7 @@
 			description: [
 				"O Artefato pede os quatro fragmentos."
 				"Outras torres guardam outros Guardiões Pálidos."
+				"Antes, conclua: «Fui Eu», «O Fragmento da Floresta» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "05845395E627C56E"
 			rewards: [
@@ -986,6 +1008,7 @@
 			]
 			description: [
 				"O Cego sempre volta quando o sculk grita."
+				"Antes, conclua: «Fui Eu», «O Fragmento das Profundezas» (Ato II — Ecos Arcanos)"
 			]
 			id: "589BC7554396757F"
 			rewards: [
@@ -1021,6 +1044,7 @@
 			]
 			description: [
 				"Outra masmorra de ouro, outra Solenne."
+				"Antes, conclua: «Fui Eu», «O Fragmento dos Céus» (Ato III — Os Céus Partidos)"
 			]
 			id: "3D2343886CC27AF3"
 			rewards: [
@@ -1056,6 +1080,7 @@
 			description: [
 				"A Pedra gastou um. Chame Ignaz outra vez."
 				"Cinzas novas: brasas morrendo dos Berserkers das fortalezas do Nether."
+				"Antes, conclua: «A Pedra Filosofal»"
 			]
 			id: "2DD9E04CC6482FE8"
 			rewards: [
@@ -1091,6 +1116,7 @@
 			]
 			description: [
 				"Mana condensada em pedra."
+				"Antes, conclua: «Fui Eu», «O Livro do Arquimago» (Caminho — A Fonte)"
 			]
 			id: "5F22AF616BFCECEA"
 			rewards: [
@@ -1126,6 +1152,7 @@
 			]
 			description: [
 				"Para que os espíritos ouçam o Artefato."
+				"Antes, conclua: «Fui Eu», «Mestre do Pentáculo» (Caminho — Os que Servem)"
 			]
 			id: "6EE9A0F06AF8A9FB"
 			rewards: [
@@ -1164,6 +1191,7 @@
 			description: [
 				"Os quatro juntos, nas suas mãos."
 				"O silêncio pesa nas quatro direções."
+				"Antes, conclua: «A Floresta, de Novo», «As Profundezas, de Novo», «Os Céus, de Novo», «As Estrelas, de Novo»"
 			]
 			icon: {
 				Count: 1b
@@ -1234,6 +1262,7 @@
 			description: [
 				"Quatro fragmentos e a argamassa."
 				"Leve-o ao círculo de giz e chame o Arauto pelo nome."
+				"Antes, conclua: «Os Quatro Fragmentos», «Gerador de Campo ZPM», «Bloco de Fonte», «Gema dos Espíritos»"
 			]
 			icon: {
 				Count: 1b
@@ -1306,6 +1335,7 @@
 			]
 			description: [
 				"Leve tudo o que construiu até o círculo."
+				"Antes, conclua: «Fui Eu», «Trilhos de Aurend» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "027815B30EBE94FC"
 			rewards: [
@@ -1336,6 +1366,7 @@
 			]
 			description: [
 				"Guarde o que restar do mundo de Aurend."
+				"Antes, conclua: «Fui Eu», «A Rede Que Lembra» (Caminho — A Rede Que Lembra)"
 			]
 			id: "5B9A92A9409FC419"
 			rewards: [
@@ -1366,6 +1397,7 @@
 			]
 			description: [
 				"Feche a porta. Ou abra a sua."
+				"Antes, conclua: «O Artefato do Selo», «Dentro do Arauto»"
 			]
 			icon: {
 				Count: 1b

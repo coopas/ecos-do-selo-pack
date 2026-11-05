@@ -23,6 +23,7 @@
 				"{image:ecos:textures/gui/quests/ato3.png width:200 height:112 align:center}"
 				"As ilhas não flutuam."
 				"Elas foram arrancadas."
+				"Antes, conclua: «O Eco Responde» (Ato II — Ecos Arcanos)"
 			]
 			icon: {
 				Count: 1b
@@ -74,6 +75,7 @@
 			]
 			description: [
 				"O portal do céu é feito de luz presa em pedra."
+				"Antes, conclua: «Olhe Para Cima»"
 			]
 			id: "4CA52A99CE75BE0A"
 			rewards: [
@@ -112,6 +114,7 @@
 			description: [
 				"A floresta e a profundeza, unidas por luz."
 				"Sem ela no bolso, o céu te devolve ao chão."
+				"Antes, conclua: «Pedra de Luz», «O Fragmento da Floresta» (Ato I — Ferrugem e Engrenagens), «O Fragmento das Profundezas» (Ato II — Ecos Arcanos), «Emissor MV» (Ato II — Ecos Arcanos)"
 			]
 			icon: {
 				Count: 1b
@@ -169,6 +172,7 @@
 			description: [
 				"Um quadro de pedra de luz e um balde de água."
 				"Do outro lado, o chão é nuvem."
+				"Antes, conclua: «A Chave Celeste»"
 			]
 			icon: {
 				Count: 1b
@@ -216,6 +220,7 @@
 			]
 			description: [
 				"Árvores que crescem sobre o nada."
+				"Antes, conclua: «O Aether»"
 			]
 			id: "5FDC9D6912BCAA83"
 			rewards: [
@@ -250,6 +255,7 @@
 			]
 			description: [
 				"A pedra das ilhas."
+				"Antes, conclua: «O Aether»"
 			]
 			id: "34D5BAE60A757371"
 			rewards: [
@@ -284,6 +290,7 @@
 			]
 			description: [
 				"Combustível e cura."
+				"Antes, conclua: «Pedra Sagrada»"
 			]
 			id: "3FC8F59060B22649"
 			rewards: [
@@ -318,6 +325,7 @@
 			]
 			description: [
 				"Uma gema que fica mais forte quanto mais gasta."
+				"Antes, conclua: «Pedra Sagrada»"
 			]
 			id: "2658A610C4BFA432"
 			rewards: [
@@ -352,6 +360,7 @@
 			]
 			description: [
 				"Para quebrar o que vem depois."
+				"Antes, conclua: «Zanita»"
 			]
 			id: "1FE5B4BAC7BAFFB1"
 			rewards: [
@@ -387,6 +396,7 @@
 			]
 			description: [
 				"Encante itens com ambrósio."
+				"Antes, conclua: «Ambrósio», «Zanita»"
 			]
 			id: "1202B78353A761E8"
 			rewards: [
@@ -421,6 +431,7 @@
 			]
 			description: [
 				"Gelo e vida, movidos a ambrósio."
+				"Antes, conclua: «Ambrósio»"
 			]
 			id: "53D3AA2EA1033DF0"
 			rewards: [
@@ -464,6 +475,7 @@
 			]
 			description: [
 				"Nuvens que seguram seu peso."
+				"Antes, conclua: «O Aether»"
 			]
 			id: "632D6F51350E9C0C"
 			rewards: [
@@ -508,6 +520,7 @@
 			description: [
 				"Cair daqui é cair para sempre."
 				"Pede quatro nuvens douradas: raras, só entre as alturas 96 e 128."
+				"Antes, conclua: «Nuvens Sólidas»"
 			]
 			id: "204CBEF1487DB4EB"
 			rewards: [
@@ -542,6 +555,7 @@
 			]
 			description: [
 				"Aurend gostava de adornos úteis."
+				"Antes, conclua: «Zanita»"
 			]
 			id: "5B484A919662BFC2"
 			rewards: [
@@ -576,6 +590,7 @@
 			]
 			description: [
 				"Gelatinas que engolem quem chega perto."
+				"Antes, conclua: «O Aether»"
 			]
 			id: "1C16F7E6E2750C55"
 			rewards: [
@@ -612,6 +627,7 @@
 				"Um bloco que se move quando você não olha."
 				"Ele guarda a masmorra de bronze."
 				"Só uma picareta o fere."
+				"Antes, conclua: «Picareta de Zanita»"
 			]
 			icon: {
 				Count: 1b
@@ -660,6 +676,7 @@
 			]
 			description: [
 				"Abre o tesouro do Deslizador."
+				"Antes, conclua: «O Deslizador»"
 			]
 			id: "2B8B12C2B16A57B9"
 			rewards: [
@@ -695,6 +712,7 @@
 			]
 			description: [
 				"Um minério que cai para cima."
+				"Antes, conclua: «Picareta de Zanita», «Altar»"
 			]
 			id: "62E5FCBEA70ADC21"
 			rewards: [
@@ -738,6 +756,7 @@
 			]
 			description: [
 				"Puxe blocos sem quebrá-los."
+				"Antes, conclua: «Gravitita»"
 			]
 			id: "2448AE0FB22966CB"
 			rewards: [
@@ -773,6 +792,7 @@
 			description: [
 				"Guerreiras que testam quem chega ao templo de prata."
 				"Cada uma vencida deixa uma medalha. A Rainha só luta com dez."
+				"Antes, conclua: «O Deslizador»"
 			]
 			id: "7D2BC31DA9E0724A"
 			rewards: [
@@ -807,6 +827,7 @@
 			]
 			description: [
 				"Ela só luta com quem provou valor."
+				"Antes, conclua: «As Valquírias»"
 			]
 			icon: {
 				Count: 1b
@@ -855,6 +876,7 @@
 			]
 			description: [
 				"Abre o tesouro da Rainha."
+				"Antes, conclua: «A Rainha Valquíria»"
 			]
 			id: "22E370D59306B499"
 			rewards: [
@@ -894,6 +916,7 @@
 				"Ela prometeu que nenhuma vela se apagaria."
 				"Ela ainda vive. As velas também."
 				"Só o frio a fere: rebata os cristais de gelo dela e golpeie enquanto estiver congelada."
+				"Antes, conclua: «A Rainha Valquíria», «Picareta de Gravitita», «Livro de Ouro» (Caminho — Pergaminhos e Runas)"
 			]
 			icon: {
 				Count: 1b
@@ -959,6 +982,7 @@
 			]
 			description: [
 				"Abre o tesouro de Solenne."
+				"Antes, conclua: «Solenne, a Chama Votiva»"
 			]
 			id: "191BFE923D163BEC"
 			rewards: [
@@ -994,6 +1018,7 @@
 			description: [
 				"O terceiro pedaço do Selo."
 				"Ele não pesa para baixo. Empurra para cima."
+				"Antes, conclua: «Solenne, a Chama Votiva»"
 			]
 			icon: {
 				Count: 1b
@@ -1052,6 +1077,7 @@
 				"Um de manhã eterna, outro de crepúsculo eterno."
 				"O isqueiro sai de outro Fragmento das Profundezas (o Cego sempre deixa um) ou do Porteiro, por esmeraldas."
 				"Mas o fogo do Porteiro não abre o que a chave tranca: sem a Chave Celeste, nenhum portal te aceita."
+				"Antes, conclua: «A Chave Celeste»"
 			]
 			icon: {
 				Count: 1b
@@ -1108,6 +1134,7 @@
 			description: [
 				"Neve e luz sem fim. Moldura de tijolos de pedra-turquesa, acesa pelo isqueiro."
 				"Toda casa do Porteiro guarda uma moldura pronta, de um dos dois céus; procure outra casa para o outro."
+				"Antes, conclua: «Os Outros Dois Céus»"
 			]
 			icon: {
 				Count: 1b
@@ -1155,6 +1182,7 @@
 			]
 			description: [
 				"Um céu que nunca termina de amanhecer. Moldura de tijolos de pedra-lunar, acesa pelo isqueiro."
+				"Antes, conclua: «Os Outros Dois Céus»"
 			]
 			icon: {
 				Count: 1b
@@ -1203,6 +1231,7 @@
 			]
 			description: [
 				"Uma de cada céu."
+				"Antes, conclua: «Everbright», «Everdawn»"
 			]
 			id: "0F2950DD81F75F95"
 			rewards: [
@@ -1247,6 +1276,7 @@
 			description: [
 				"A pedra do Everbright."
 				"Sem toque de seda ela cai como pedregulho; o forno devolve a pedra."
+				"Antes, conclua: «Everbright»"
 			]
 			id: "4C320ED45EFF7BC8"
 			rewards: [
@@ -1282,6 +1312,7 @@
 			description: [
 				"Um metal quente como o horizonte."
 				"Só nasce na pedra-lunar do Everdawn."
+				"Antes, conclua: «Everdawn»"
 			]
 			id: "213F02B345CE22E7"
 			rewards: [
@@ -1316,6 +1347,7 @@
 			]
 			description: [
 				"Uma forja que não precisa de carvão."
+				"Antes, conclua: «Horizonita»"
 			]
 			id: "05BF2E8462665D37"
 			rewards: [
@@ -1352,6 +1384,7 @@
 				"Gemas vermelhas, cortantes."
 				"Aqui, picaretas de fora (de ferro para cima) mal arranham e não colhem minério."
 				"Use uma de pedra ou as do próprio céu."
+				"Antes, conclua: «Everbright»"
 			]
 			id: "652B73B7B228C8B1"
 			rewards: [
@@ -1395,6 +1428,7 @@
 			]
 			description: [
 				"Pedra azul que lembra água parada."
+				"Antes, conclua: «Piropo»"
 			]
 			id: "4B4351E8C52B25F7"
 			rewards: [
@@ -1439,6 +1473,7 @@
 			description: [
 				"Um metal que mente sobre o próprio peso."
 				"Só nasce na pedra-turquesa do Everbright."
+				"Antes, conclua: «Everbright»"
 			]
 			id: "76E5ECC8494D91EB"
 			rewards: [
@@ -1474,6 +1509,7 @@
 			description: [
 				"Leve como ar. Faz baldes que não pesam."
 				"Só nasce na pedra-turquesa do Everbright."
+				"Antes, conclua: «Everbright»"
 			]
 			id: "72D0E0366B8D1D44"
 			rewards: [
@@ -1509,6 +1545,7 @@
 			description: [
 				"Brilha mesmo no escuro do crepúsculo."
 				"O minério solta lascas; quatro lascas fazem uma pedra."
+				"Antes, conclua: «Everdawn»"
 			]
 			id: "56F5C7064DFEE97B"
 			rewards: [
@@ -1545,6 +1582,7 @@
 			description: [
 				"As gemas mais fundas dos céus."
 				"Só a picareta de aquita (ou melhor) as arranca."
+				"Antes, conclua: «Aquita», «Falsita»"
 			]
 			id: "4C1CB04196A87EAF"
 			rewards: [
@@ -1590,6 +1628,7 @@
 				"Ele chama coisas de longe. Uma vez, chamou algo grande demais."
 				"Mora no topo da Masmorra Ofuscante do Everbright (a do Everdawn é de outro feiticeiro); a pedra-chave pede quatro chaves dos baús de lá."
 				"Golpeie quando ele parar para conjurar."
+				"Antes, conclua: «Diopsídio e Charoíta»"
 			]
 			icon: {
 				Count: 1b
@@ -1640,6 +1679,7 @@
 				"Uma árvore que aprendeu a lutar."
 				"Guarda a Masmorra da Natureza do Everbright; quatro chaves dos baús abrem a pedra-chave."
 				"Derrube uma das paredes dele com machado e acerte-o de longe enquanto ele esmaga o chão."
+				"Antes, conclua: «Diopsídio e Charoíta»"
 			]
 			icon: {
 				Count: 1b
@@ -1689,6 +1729,7 @@
 			description: [
 				"O que sobra dos que ele chamou."
 				"Também caem dos espíritos de gelo e dos polargeists."
+				"Antes, conclua: «O Invocador»"
 			]
 			id: "7F83E3195756D907"
 			rewards: [
@@ -1724,6 +1765,7 @@
 			]
 			description: [
 				"Leve sua rede até as ilhas. Aurend guardava tudo lá em cima."
+				"Antes, conclua: «O Aether», «O Controlador» (Caminho — A Rede Que Lembra)"
 			]
 			id: "087A86502D3BC154"
 			rewards: [
@@ -1754,6 +1796,7 @@
 			]
 			description: [
 				"O metal das naves, forjado sob o sol eterno."
+				"Antes, conclua: «Solenne, a Chama Votiva», «Titânio» (Caminho — Alta Tensão)"
 			]
 			id: "71802257DFB66771"
 			rewards: [
@@ -1787,6 +1830,7 @@
 			description: [
 				"Três fragmentos."
 				"O som que o Selo abafa não vem das profundezas. Vem das estrelas."
+				"Antes, conclua: «O Fragmento dos Céus», «O Invocador», «A Era da Extrema Tensão» (Caminho — Alta Tensão), «A Rede Que Lembra» (Caminho — A Rede Que Lembra)"
 			]
 			icon: {
 				Count: 1b

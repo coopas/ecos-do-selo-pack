@@ -23,6 +23,7 @@
 				"{image:ecos:textures/gui/quests/ato2.png width:200 height:112 align:center}"
 				"Máquinas não bastaram para Aurend."
 				"Eles também aprenderam a ouvir."
+				"Antes, conclua: «Ferrugem Vencida» (Ato I — Ferrugem e Engrenagens)"
 			]
 			icon: {
 				Count: 1b
@@ -66,6 +67,7 @@
 			description: [
 				"Fonte, runa e pentáculo."
 				"Três jeitos de dizer a mesma palavra."
+				"Antes, conclua: «O Conhecimento Proibido», «Gemas de Fonte» (Caminho — A Fonte), «Mesa de Inscrição» (Caminho — Pergaminhos e Runas), «Giz Branco» (Caminho — Os que Servem)"
 			]
 			id: "5CFE176E5BB23506"
 			rewards: [
@@ -111,6 +113,7 @@
 			description: [
 				"O Fragmento da Floresta, uma gema de fonte e uma bomba LV."
 				"Juntos, abrem o chão."
+				"Antes, conclua: «O Conhecimento Proibido», «O Fragmento da Floresta» (Ato I — Ferrugem e Engrenagens), «Gemas de Fonte» (Caminho — A Fonte), «Bomba e Pistão LV» (Caminho — Vapor e Corrente)"
 			]
 			id: "0763CF975856C52E"
 			rewards: [
@@ -158,6 +161,7 @@
 			description: [
 				"Um coração de pedra que bate devagar."
 				"Acenda um portal de pedra-de-profundeza com ele."
+				"Antes, conclua: «A Escada Para Baixo»"
 			]
 			icon: {
 				Count: 1b
@@ -198,6 +202,7 @@
 			description: [
 				"Aqui embaixo, ninguém nunca viu o sol."
 				"As plantas brilham para não esquecer como é a luz."
+				"Antes, conclua: «O Catalisador»"
 			]
 			icon: {
 				Count: 1b
@@ -245,6 +250,7 @@
 			]
 			description: [
 				"A pedra do fundo do mundo."
+				"Antes, conclua: «O Jardim de Baixo»"
 			]
 			id: "105D395FB683FDEC"
 			rewards: [
@@ -279,6 +285,7 @@
 			]
 			description: [
 				"Árvores que respiram fumaça."
+				"Antes, conclua: «O Jardim de Baixo»"
 			]
 			id: "60D8506DDF47F4F2"
 			rewards: [
@@ -313,6 +320,7 @@
 			]
 			description: [
 				"Feijões e bagas que crescem sem sol."
+				"Antes, conclua: «O Jardim de Baixo»"
 			]
 			id: "1E098B0BD03665D6"
 			rewards: [
@@ -356,6 +364,7 @@
 			]
 			description: [
 				"Luz que nasce do chão."
+				"Antes, conclua: «O Jardim de Baixo»"
 			]
 			id: "1CC25AC4E291EEFC"
 			rewards: [
@@ -391,6 +400,7 @@
 			description: [
 				"Feitas com os estilhaços utéricos do fundo."
 				"Eles caem dos podres: rotlings, rotwalkers e rotbeasts."
+				"Antes, conclua: «Bulbos de Vala»"
 			]
 			id: "1B693F69CCD654BB"
 			rewards: [
@@ -425,6 +435,7 @@
 			]
 			description: [
 				"Um metal pesado e opaco. Os Confluentes o usavam em portões."
+				"Antes, conclua: «Pedra-de-Profundeza»"
 			]
 			id: "041E63F6BC23C674"
 			rewards: [
@@ -462,6 +473,7 @@
 			]
 			description: [
 				"Lenta, mas não perdoa."
+				"Antes, conclua: «Cloggrum»"
 			]
 			id: "4AB066F28C84A0F1"
 			rewards: [
@@ -496,6 +508,7 @@
 			]
 			description: [
 				"Proteção para as profundezas."
+				"Antes, conclua: «Cloggrum»"
 			]
 			id: "78ADC9344DC9A8BA"
 			rewards: [
@@ -530,6 +543,7 @@
 			]
 			description: [
 				"Cristais vermelhos que vibram perto de criaturas corrompidas."
+				"Antes, conclua: «O Jardim de Baixo»"
 			]
 			id: "7A67ECE156DA5DE7"
 			rewards: [
@@ -565,6 +579,7 @@
 			description: [
 				"Metal que congela o que toca."
 				"O minério fica na shiverstone, a pedra gelada do Undergarden."
+				"Antes, conclua: «Cloggrum»"
 			]
 			id: "4CEEC8AB8A1E1738"
 			rewards: [
@@ -599,6 +614,7 @@
 			]
 			description: [
 				"Fria por dentro e por fora."
+				"Antes, conclua: «Aço-Gelo»"
 			]
 			id: "789D0DF69CB34FE4"
 			rewards: [
@@ -635,6 +651,7 @@
 			description: [
 				"Uma estátua que ainda guarda as catacumbas."
 				"Ninguém lembra mais o que ela protege."
+				"Antes, conclua: «Couraça de Cloggrum», «Cristal de Utério»"
 			]
 			id: "56554FB61657D0ED"
 			rewards: [
@@ -680,6 +697,7 @@
 			description: [
 				"Forjado por gente cujo nome sumiu."
 				"O guardião deixa de 4 a 16 pepitas; nove fazem um lingote."
+				"Antes, conclua: «O Guardião Esquecido»"
 			]
 			id: "4C16EC0C377EE6C4"
 			rewards: [
@@ -716,6 +734,7 @@
 			description: [
 				"As Cidades Antigas não são ruínas de outro povo."
 				"São Aurend. Sempre foram."
+				"Antes, conclua: «O Jardim de Baixo», «Três Escolas»"
 			]
 			icon: {
 				Count: 1b
@@ -768,6 +787,7 @@
 			description: [
 				"Um tapete vivo que escuta cada passo."
 				"Sculk só sai inteiro com Toque Suave: encantamento, ou o glifo Extrair do Ars junto do Quebrar."
+				"Antes, conclua: «As Cidades de Aurend»"
 			]
 			id: "18CB62FF3CDB70EC"
 			rewards: [
@@ -803,6 +823,7 @@
 			description: [
 				"Pegue um sensor sem acordar o que dorme."
 				"Também pede Toque Suave."
+				"Antes, conclua: «Sculk»"
 			]
 			id: "0AF13E2FE6A13B11"
 			rewards: [
@@ -838,6 +859,7 @@
 			description: [
 				"Onde algo morre, o sculk floresce."
 				"Também pede Toque Suave."
+				"Antes, conclua: «Sculk»"
 			]
 			id: "0C606643D691F8A4"
 			rewards: [
@@ -874,6 +896,7 @@
 				"Pedaços de som que ficaram presos."
 				"Ilse dizia que dá para ouvir vozes dentro deles."
 				"Procure nos baús das Cidades Antigas."
+				"Antes, conclua: «As Cidades de Aurend»"
 			]
 			icon: {
 				Count: 1b
@@ -912,6 +935,7 @@
 			]
 			description: [
 				"Aponta para onde você morreu pela última vez."
+				"Antes, conclua: «Fragmentos de Eco»"
 			]
 			id: "0662CDD1B994704D"
 			rewards: [
@@ -947,6 +971,7 @@
 			]
 			description: [
 				"Ouve só o que você quer ouvir."
+				"Antes, conclua: «Sensores», «Fragmentos de Eco»"
 			]
 			id: "5584E6FFF8B183C2"
 			rewards: [
@@ -985,6 +1010,7 @@
 				"{image:ecos:textures/gui/quests/o_cego.png width:200 height:112 align:center}"
 				"Ele não vê. Ele não precisa."
 				"Cada passo seu é uma palavra que ele entende."
+				"Antes, conclua: «Fragmentos de Eco», «Catalisador de Sculk», «Livro de Ferro» (Caminho — Pergaminhos e Runas)"
 			]
 			icon: {
 				Count: 1b
@@ -1051,6 +1077,7 @@
 			description: [
 				"O segundo pedaço do Selo."
 				"Está frio, e ainda vibra."
+				"Antes, conclua: «O Cego Que Ouve»"
 			]
 			icon: {
 				Count: 1b
@@ -1107,6 +1134,7 @@
 			]
 			description: [
 				"O que o Cego guardava no peito."
+				"Antes, conclua: «O Cego Que Ouve»"
 			]
 			id: "63DFE2DADC4684FB"
 			rewards: [
@@ -1142,6 +1170,7 @@
 			description: [
 				"Use o coração num portal de sculk numa Cidade Antiga."
 				"Do outro lado, o eco nunca para."
+				"Antes, conclua: «Coração das Profundezas»"
 			]
 			icon: {
 				Count: 1b
@@ -1189,6 +1218,7 @@
 			]
 			description: [
 				"Árvores que cresceram ouvindo."
+				"Antes, conclua: «O Outro Lado»"
 			]
 			id: "597E8D9BDC9E0BF2"
 			rewards: [
@@ -1224,6 +1254,7 @@
 			description: [
 				"O que sobra quando o eco vai embora."
 				"Sanguessugas e snappers de sculk deixam cair; os baús dos templos antigos também."
+				"Antes, conclua: «O Outro Lado»"
 			]
 			id: "29FCCD933FC5F101"
 			rewards: [
@@ -1259,6 +1290,7 @@
 			description: [
 				"Um mineral que repete tudo o que ouve."
 				"Não se minera: cai das gosmas (sludge) do Outro Lado."
+				"Antes, conclua: «O Outro Lado»"
 			]
 			id: "606CEFC916131BAF"
 			rewards: [
@@ -1295,6 +1327,7 @@
 			description: [
 				"Eco preso em metal, para durar."
 				"Cada um leva 4 carapaças do Cego e 4 membranas de phantom."
+				"Antes, conclua: «Carapaça do Cego», «O Outro Lado»"
 			]
 			id: "02F2A9370F73872B"
 			rewards: [
@@ -1329,6 +1362,7 @@
 			]
 			description: [
 				"A casca dele. Ainda morna."
+				"Antes, conclua: «O Cego Que Ouve»"
 			]
 			id: "30B614E5849517C7"
 			rewards: [
@@ -1364,6 +1398,7 @@
 			]
 			description: [
 				"Para ir além do aço, é preciso mais calor."
+				"Antes, conclua: «O Conhecimento Proibido», «A Era da Corrente» (Caminho — Vapor e Corrente)"
 			]
 			icon: {
 				Count: 1b
@@ -1403,6 +1438,7 @@
 			]
 			description: [
 				"Dezesseis bobinas aquecem o forno."
+				"Antes, conclua: «Alto-Forno Elétrico»"
 			]
 			id: "018EE1FA7EDF76F3"
 			rewards: [
@@ -1438,6 +1474,7 @@
 			description: [
 				"Leve e forte. O metal da média voltagem."
 				"Eletrolise pó de safira (veio fundo, y -40 a 0) ou de rubi (veio de redstone)."
+				"Antes, conclua: «Bobinas de Cuproníquel»"
 			]
 			icon: {
 				Count: 1b
@@ -1492,6 +1529,7 @@
 			]
 			description: [
 				"Reator químico, eletrolisador e centrífuga."
+				"Antes, conclua: «Alto-Forno Elétrico»"
 			]
 			id: "7F0B9C8F1F3B54CE"
 			rewards: [
@@ -1547,6 +1585,7 @@
 				"O lingote pede bobinas mais quentes que as de cuproníquel. Aqui, o caminho é a lâmina:"
 				"pó de silício (eletrólise de areia) com arseneto de gálio vira monocristal no alto-forno; corte em lâminas."
 				"Gálio: subproduto da esfalerita (veio de enxofre do Nether). Arsênio: realgar moído na centrífuga."
+				"Antes, conclua: «Química LV»"
 			]
 			id: "2DE6B6E5660EF87A"
 			rewards: [
@@ -1583,6 +1622,7 @@
 			description: [
 				"Indutor, capacitor e diodo."
 				"O capacitor leva folha de alumínio. Indutor e capacitor pedem polietileno: etileno (etanol com ácido sulfúrico) e oxigênio no reator químico."
+				"Antes, conclua: «Silício», «Alumínio»"
 			]
 			id: "584200AF8EE66089"
 			rewards: [
@@ -1635,6 +1675,7 @@
 			]
 			description: [
 				"Média voltagem: as máquinas crescem."
+				"Antes, conclua: «Alumínio»"
 			]
 			id: "07A0216AB2D4EDF7"
 			rewards: [
@@ -1669,6 +1710,7 @@
 			]
 			description: [
 				"Mais força, mais velocidade."
+				"Antes, conclua: «Casco MV»"
 			]
 			id: "6C57FEFEAAAB86E9"
 			rewards: [
@@ -1704,6 +1746,7 @@
 			]
 			description: [
 				"Aurend pensava mais rápido do que você."
+				"Antes, conclua: «Componentes Finos», «Casco MV»"
 			]
 			icon: {
 				Count: 1b
@@ -1757,6 +1800,7 @@
 			description: [
 				"Também é parte da Chave Celeste."
 				"A esmeralda impecável sai do peneirador: minério purificado de esmeralda (veio de berílio do Nether, y 5 a 30)."
+				"Antes, conclua: «Circuito Eletrônico Bom», «Motor MV»"
 			]
 			id: "1111F3F552161AE3"
 			rewards: [
@@ -1792,6 +1836,7 @@
 			]
 			description: [
 				"Uma mão que não cansa."
+				"Antes, conclua: «Circuito Eletrônico Bom», «Motor MV»"
 			]
 			id: "1616FA87D3E4FAC3"
 			rewards: [
@@ -1831,6 +1876,7 @@
 			description: [
 				"Dois fragmentos. O Selo pesa mais em suas mãos."
 				"E lá em cima, o céu começa a rachar."
+				"Antes, conclua: «O Fragmento das Profundezas», «Emissor MV», «Braço Robótico MV», «Aparato de Encantamento» (Caminho — A Fonte), «Um Foliot Vinculado» (Caminho — Os que Servem)"
 			]
 			icon: {
 				Count: 1b

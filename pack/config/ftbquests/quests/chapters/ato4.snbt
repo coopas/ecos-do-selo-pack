@@ -23,6 +23,7 @@
 				"{image:ecos:textures/gui/quests/ato4.png width:200 height:112 align:center}"
 				"Toda noite, o mesmo som, um pouco mais perto."
 				"Aurend construiu foguetes para calá-lo."
+				"Antes, conclua: «O Silêncio Empurra Para Cima» (Ato III — Os Céus Partidos)"
 			]
 			icon: {
 				Count: 1b
@@ -76,6 +77,7 @@
 				"O metal mais teimoso do mundo."
 				"Scheelita e tungstato: veio do End (y 20 a 60). Banho químico com ácido clorídrico, depois eletrolisadora EV."
 				"O pó funde a 3600 K (bobinas de nicromo) e sai quente: esfrie no congelador a vácuo."
+				"Antes, conclua: «O Som Mais Perto»"
 			]
 			id: "20962B29BEC81D62"
 			rewards: [
@@ -114,6 +116,7 @@
 			description: [
 				"A liga da Insana Voltagem."
 				"Misturador EV (tungstênio e aço) e 3000 K no alto-forno."
+				"Antes, conclua: «Tungstênio»"
 			]
 			icon: {
 				Count: 1b
@@ -170,6 +173,7 @@
 				"Rutênio, tungstênio e molibdênio. Mais calor."
 				"Molibdênio: veio raro do Nether (y 20 a 50). Rutênio: do Platinum Group Sludge (minério purificado de calcopirita"
 				"ou pentlandita com ácido nítrico, depois centrífuga com água-régia). As bobinas dão 4500 K."
+				"Antes, conclua: «Aço de Tungstênio»"
 			]
 			id: "4521D6EB73C98E0B"
 			rewards: [
@@ -205,6 +209,7 @@
 			description: [
 				"Insana voltagem."
 				"Leva cabo de platina: veio de sheldonita no End (y 5 a 50). O minério bruto vira lingote na fornalha."
+				"Antes, conclua: «Bobinas de RTM»"
 			]
 			id: "37EC086C30CDD440"
 			rewards: [
@@ -239,6 +244,7 @@
 			]
 			description: [
 				"Um motor que pesa mais que você."
+				"Antes, conclua: «Casco IV»"
 			]
 			id: "3428767E7299C6AD"
 			rewards: [
@@ -274,6 +280,7 @@
 			description: [
 				"Componentes cada vez menores."
 				"Montadora (assembler) IV, 3840 EU/t: fio fino de HSS-G, folha de vanádio-gálio (4500 K) e polibenzimidazol (reator químico IV)."
+				"Antes, conclua: «HSS-G»"
 			]
 			id: "502DD15A9BAFC0B2"
 			rewards: [
@@ -309,6 +316,7 @@
 			description: [
 				"Monte circuitos mais finos."
 				"Pede circuitos IV: o mainframe de microprocessador sai da montadora de circuitos HV (480 EU/t, na sala limpa)."
+				"Antes, conclua: «O Som Mais Perto»"
 			]
 			id: "01A4DA49124F70CC"
 			rewards: [
@@ -346,6 +354,7 @@
 			description: [
 				"E mais finos ainda."
 				"Pede emissor e braço IV e circuitos LuV: o mainframe nano sai da montadora de circuitos EV (1920 EU/t, na sala limpa)."
+				"Antes, conclua: «Montadora de Circuitos EV», «Emissor IV», «Braço Robótico IV»"
 			]
 			id: "11B8AA4E5B51C0D1"
 			rewards: [
@@ -382,6 +391,7 @@
 			description: [
 				"Pensa em duas coisas ao mesmo tempo. Como Ilse."
 				"2400 EU/t: só a montadora de circuitos IV aguenta."
+				"Antes, conclua: «Montadora de Circuitos IV», «SMD Avançado»"
 			]
 			icon: {
 				Count: 1b
@@ -435,6 +445,7 @@
 				"Luz que corta metal."
 				"Hastes de irídio: o Platinum Group Sludge dá a mistura de metais raros, que vira irídio no reator químico grande"
 				"(7680 EU/t). O irídio funde a 4500 K. Estrela quântica: estrela do Nether no banho químico com radônio."
+				"Antes, conclua: «Casco IV»"
 			]
 			id: "5FA4860F03BD7396"
 			rewards: [
@@ -469,6 +480,7 @@
 			]
 			description: [
 				"Precisão de relojoeiro, força de guindaste."
+				"Antes, conclua: «Motor IV»"
 			]
 			id: "0092331F3CDA6B3B"
 			rewards: [
@@ -504,6 +516,7 @@
 			description: [
 				"Um campo forte o bastante para segurar algo grande."
 				"O fio de samário-ferro-arsênio funde a 5200 K: bobinas de HSS-G."
+				"Antes, conclua: «Processador Quântico»"
 			]
 			id: "4775B419FE97E0AD"
 			rewards: [
@@ -541,6 +554,7 @@
 				"Engenharia é a única oração que funciona no vácuo."
 				"Os itens entram em ordem, um por barramento de entrada (os fluidos também)."
 				"Peças LuV pedem pesquisa: escaneie a peça IV com um Data Stick (scanner EV ou IV) e ponha o stick num Data Access Hatch."
+				"Antes, conclua: «Montadora de Circuitos IV»"
 			]
 			icon: {
 				Count: 1b
@@ -609,6 +623,7 @@
 			]
 			description: [
 				"Uma fábrica dentro da fábrica."
+				"Antes, conclua: «Braço Robótico IV»"
 			]
 			id: "7C4123E87BA8C8CF"
 			rewards: [
@@ -643,6 +658,7 @@
 			]
 			description: [
 				"Gire tudo de uma vez."
+				"Antes, conclua: «Motor IV»"
 			]
 			id: "1FA1662304CD07A9"
 			rewards: [
@@ -678,6 +694,7 @@
 			description: [
 				"Bombeie fluidos do fundo do mundo."
 				"A plataforma avançada: casco e bomba EV, engrenagens de carboneto de tungstênio (3058 K)."
+				"Antes, conclua: «Tungstênio»"
 			]
 			id: "6CD2545B7E0882D2"
 			rewards: [
@@ -713,6 +730,7 @@
 			description: [
 				"Cave chunks inteiros."
 				"Leva engrenagens de tungstênio."
+				"Antes, conclua: «Tungstênio»"
 			]
 			id: "5DC7055CBE8C2853"
 			rewards: [
@@ -747,6 +765,7 @@
 			]
 			description: [
 				"Energia para a era espacial."
+				"Antes, conclua: «O Som Mais Perto»"
 			]
 			id: "267E71920F5725D2"
 			rewards: [
@@ -781,6 +800,7 @@
 			]
 			description: [
 				"Uma bateria que parece uma joia."
+				"Antes, conclua: «Montadora de Circuitos IV»"
 			]
 			id: "5A29146BA4EDBD10"
 			rewards: [
@@ -816,6 +836,7 @@
 			description: [
 				"Guarde energia de uma cidade inteira."
 				"Leva circuitos LuV e o casco de subestação, que pede armação de irídio."
+				"Antes, conclua: «Cristal de Lapotron»"
 			]
 			id: "59C74B5D7D9DF7DE"
 			rewards: [
@@ -852,6 +873,7 @@
 				"O metal dos cascos LuV."
 				"Paládio da sheldonita ou do Platinum Group Sludge; ródio da mistura de metais inertes do mesmo lodo."
 				"Misturador IV e 4500 K no alto-forno (7680 EU/t)."
+				"Antes, conclua: «HSS-G»"
 			]
 			id: "5F4B7E4C13719047"
 			rewards: [
@@ -890,6 +912,7 @@
 			description: [
 				"Aço rápido, para bobinas mais quentes."
 				"Funde a 4200 K: o nicromo não chega lá, só as bobinas de RTM. As bobinas de HSS-G saem da montadora (assembler) IV e dão 5400 K."
+				"Antes, conclua: «Casco IV»"
 			]
 			id: "499913AEB3FD9688"
 			rewards: [
@@ -938,6 +961,7 @@
 			description: [
 				"Ludicrous Voltage. Até o nome é absurdo."
 				"Cabo de nióbio-titânio: misturador IV e 4500 K."
+				"Antes, conclua: «Paládio Banhado em Ródio», «A Linha de Montagem»"
 			]
 			icon: {
 				Count: 1b
@@ -990,6 +1014,7 @@
 			description: [
 				"Feito na linha de montagem."
 				"HSS-S funde a 5000 K e o samário magnético a 5400 K: bobinas de HSS-G. Pesquise o motor IV no scanner antes."
+				"Antes, conclua: «Casco LuV»"
 			]
 			id: "1E205253D9667FDB"
 			rewards: [
@@ -1025,6 +1050,7 @@
 			description: [
 				"Alguém de Aurend chegou a Marte antes de você."
 				"Ilse reconhece os sinos."
+				"Antes, conclua: «Marte» (Caminho — Os Sinos no Céu)"
 			]
 			icon: {
 				Count: 1b
@@ -1076,6 +1102,7 @@
 			description: [
 				"No fundo do Nether há uma arena que ainda queima."
 				"Um altar de fogo espera cinzas ardentes."
+				"Antes, conclua: «O Som Mais Perto»"
 			]
 			icon: {
 				Count: 1b
@@ -1106,6 +1133,7 @@
 			description: [
 				"Caem dos Revenants em chamas que guardam a arena."
 				"Brasas morrendo (4 fazem 1 cinza) caem dos Berserkers das fortalezas, que só despertam depois que alguém vence Ignaz."
+				"Antes, conclua: «A Forja do Nether»"
 			]
 			id: "5A6597C24B29CF97"
 			rewards: [
@@ -1144,6 +1172,7 @@
 				"{image:ecos:textures/gui/quests/ignaz.png width:200 height:112 align:center}"
 				"Ele funde até hoje, sem saber para quem."
 				"Mate-o com piedade. Ele está cansado."
+				"Antes, conclua: «Cinzas Ardentes», «Livro de Diamante» (Caminho — Pergaminhos e Runas), «O Livro do Arquimago» (Caminho — A Fonte)"
 			]
 			icon: {
 				Count: 1b
@@ -1209,6 +1238,7 @@
 			]
 			description: [
 				"O metal que Ignaz deixou para trás."
+				"Antes, conclua: «Ignaz, o Fundidor»"
 			]
 			id: "1D5CBA097F4E2186"
 			rewards: [
@@ -1244,6 +1274,7 @@
 			description: [
 				"O quarto pedaço do Selo."
 				"Queima sem fogo."
+				"Antes, conclua: «Ignaz, o Fundidor»"
 			]
 			icon: {
 				Count: 1b
@@ -1284,6 +1315,7 @@
 			description: [
 				"Quatro fragmentos. Falta o que os unia."
 				"Você sabe o que é. Ilse sabe o que é."
+				"Antes, conclua: «O Fragmento das Estrelas»"
 			]
 			icon: {
 				Count: 1b
@@ -1335,6 +1367,7 @@
 			]
 			description: [
 				"Leve a rede para a Lua. Aurend fazia isso."
+				"Antes, conclua: «A Rede Que Lembra» (Caminho — A Rede Que Lembra), «A Lua» (Caminho — Os Sinos no Céu)"
 			]
 			id: "3B4EFD12F9632E7B"
 			rewards: [
@@ -1366,6 +1399,7 @@
 			description: [
 				"Um familiar te acompanha até a Lua."
 				"Ele não respira. Não precisa."
+				"Antes, conclua: «Mestre do Pentáculo» (Caminho — Os que Servem), «A Lua» (Caminho — Os Sinos no Céu)"
 			]
 			id: "35DBE3FF421FB660"
 			rewards: [
@@ -1399,6 +1433,7 @@
 			description: [
 				"Quatro fragmentos nas mãos."
 				"As estrelas é que estão dentro dele."
+				"Antes, conclua: «A Argamassa», «Motor LuV», «Glacio» (Caminho — Os Sinos no Céu), «Subestação de Energia»"
 			]
 			icon: {
 				Count: 1b

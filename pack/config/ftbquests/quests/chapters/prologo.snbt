@@ -74,6 +74,7 @@
 			description: [
 				"As árvores daqui crescem desviando de algo."
 				"Qualquer tronco serve."
+				"Antes, conclua: «O Despertar»"
 			]
 			id: "4552131B5B86F670"
 			rewards: [
@@ -128,6 +129,7 @@
 			]
 			description: [
 				"Madeira trabalhada lembra que você ainda tem mãos."
+				"Antes, conclua: «Árvores Tortas»"
 			]
 			id: "0E83B34BEC713029"
 			rewards: [
@@ -170,6 +172,7 @@
 			]
 			description: [
 				"Uma bancada de trabalho é o começo de tudo."
+				"Antes, conclua: «Tábuas»"
 			]
 			id: "55949ECDE7D7BC77"
 			rewards: [
@@ -205,6 +208,7 @@
 			description: [
 				"Este livro se reescreve conforme você avança."
 				"Ninguém em Aurend sabia quem o escrevia."
+				"Antes, conclua: «Mãos à Obra»"
 			]
 			id: "1B30AF5E3529C008"
 			rewards: [
@@ -235,6 +239,7 @@
 			description: [
 				"Abra o inventário e use o JEI (tecla R/U) para ver receitas."
 				"Até os Confluentes anotavam tudo."
+				"Antes, conclua: «O Livro que Responde»"
 			]
 			id: "3C7320410AAD851E"
 			rewards: [
@@ -260,6 +265,7 @@
 			]
 			description: [
 				"Cave. A pedra daqui é mais escura do que deveria."
+				"Antes, conclua: «Mãos à Obra»"
 			]
 			id: "2D696F3422C997B1"
 			rewards: [
@@ -294,6 +300,7 @@
 			]
 			description: [
 				"Uma picareta de pedra. Humilde, mas sua."
+				"Antes, conclua: «Pedra Fria»"
 			]
 			id: "0A9D713559C32AF2"
 			rewards: [
@@ -329,6 +336,7 @@
 			description: [
 				"Segure a tecla do FTB Ultimine (padrão: `) para quebrar um veio inteiro."
 				"Economiza noites."
+				"Antes, conclua: «Primeira Ferramenta»"
 			]
 			id: "6408DE4648BD826E"
 			rewards: [
@@ -354,6 +362,7 @@
 			]
 			description: [
 				"O fogo aqui demora a acender. Como se escutasse."
+				"Antes, conclua: «Pedra Fria»"
 			]
 			id: "65F6C50B0425D91B"
 			rewards: [
@@ -389,6 +398,7 @@
 			description: [
 				"Carvão do veio de carvão (y 10 a 140): o minério bruto vai à fornalha."
 				"Carvão vegetal, aqui, só sai do forno de coque do GregTech."
+				"Antes, conclua: «Fogo Contido»"
 			]
 			id: "310AA3BEE035453D"
 			rewards: [
@@ -426,6 +436,7 @@
 			]
 			description: [
 				"Os mortos daqui odeiam a luz."
+				"Antes, conclua: «Combustível»"
 			]
 			id: "3BD883EE6AF2365A"
 			rewards: [
@@ -460,6 +471,7 @@
 			]
 			description: [
 				"Qualquer cama serve. A noite aqui é longa."
+				"Antes, conclua: «Tábuas»"
 			]
 			icon: {
 				Count: 1b
@@ -530,6 +542,7 @@
 			]
 			description: [
 				"Um baú. O mundo leva o que fica no chão."
+				"Antes, conclua: «Tábuas»"
 			]
 			id: "3B57B4A34DC11F53"
 			rewards: [
@@ -568,6 +581,7 @@
 			description: [
 				"Ao morrer, seus itens ficam numa tumba no local."
 				"Volte lá. Ninguém mais pode abri-la."
+				"Antes, conclua: «Um Lugar para Dormir»"
 			]
 			id: "27C8673F78707885"
 			rewards: [
@@ -594,6 +608,7 @@
 			description: [
 				"Aqui o ferro vem disfarçado: hematita, magnetita, limonita, pirita."
 				"Qualquer uma derrete em ferro na fornalha."
+				"Antes, conclua: «Primeira Ferramenta»"
 			]
 			id: "0396222AD85BF798"
 			rewards: [
@@ -632,6 +647,7 @@
 			]
 			description: [
 				"Derreta o ferro. Ele ainda lembra de ser engrenagem."
+				"Antes, conclua: «Ferro Bruto», «Fogo Contido»"
 			]
 			id: "25CFDEF4C125AB6E"
 			rewards: [
@@ -669,6 +685,7 @@
 			]
 			description: [
 				"Agora a pedra cede."
+				"Antes, conclua: «Lingotes»"
 			]
 			id: "2E750308942DCE2F"
 			rewards: [
@@ -703,6 +720,7 @@
 			]
 			description: [
 				"As noites ficam mais duras a cada dia que passa."
+				"Antes, conclua: «Lingotes»"
 			]
 			id: "3C15E09CFEAD31E1"
 			rewards: [
@@ -737,6 +755,7 @@
 			]
 			description: [
 				"Algumas flechas daqui não erram."
+				"Antes, conclua: «Lingotes»"
 			]
 			id: "5E7B8362CB69834E"
 			rewards: [
@@ -773,6 +792,7 @@
 				"Água apaga fogo. Lava apaga o resto."
 				"Aqui o balde é do GregTech: três chapas de ferro e o martelo do GregTech (ferramenta)."
 				"Chapa = martelo + dois lingotes. Veja no JEI."
+				"Antes, conclua: «Lingotes»"
 			]
 			id: "3CF154EC0E39A69A"
 			rewards: [
@@ -807,6 +827,7 @@
 			]
 			description: [
 				"Fome é o primeiro inimigo."
+				"Antes, conclua: «Mãos à Obra»"
 			]
 			id: "7880C8E3C2D396DC"
 			rewards: [
@@ -841,6 +862,7 @@
 			]
 			description: [
 				"Plante. O solo ainda responde."
+				"Antes, conclua: «Pão de Cada Dia»"
 			]
 			id: "262E4CA8A9D31297"
 			rewards: [
@@ -878,6 +900,7 @@
 				"A receita daqui pede liga de andesito: andesito e pepitas de ferro ou de zinco."
 				"Lingote de zinco (minério do Create) vira 9 pepitas à mão; ou derreta uma pá de ferro."
 				"Sem paciência? A banca do eco vende mochila por 8 ecos."
+				"Antes, conclua: «Guardar o que Sobrou»"
 			]
 			id: "25383A7A9F297BF8"
 			rewards: [
@@ -914,6 +937,7 @@
 				"O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho."
 				"Opcional: a bússola pede redstone, que aqui mora fundo:"
 				"veio de redstone no deepslate (y -65 a -10) ou, mais tarde, no Nether."
+				"Antes, conclua: «Lingotes»"
 			]
 			id: "73534827338C81F9"
 			rewards: [
@@ -949,6 +973,7 @@
 			description: [
 				"Diamantes. Os Confluentes os usavam como rolamentos."
 				"Opcional: aqui eles moram no fundo do deepslate (y -55 a -30), junto da grafita e do carvão."
+				"Antes, conclua: «Ferro na Mão»"
 			]
 			id: "5BE14EC2E28E8A76"
 			rewards: [
@@ -989,6 +1014,7 @@
 				"Opcional: pede 2 diamantes e 4 obsidianas; obsidiana só cede à picareta de diamante ou de aço."
 				"Sem pressa: os diamantes também se compram na banca a partir do Ato I."
 				"O papel do livro: cana na prensa do Create, ou pó de papel (pilão) e água."
+				"Antes, conclua: «Pedras que Brilham»"
 			]
 			id: "5670724EE7F5E85B"
 			rewards: [
@@ -1024,6 +1050,7 @@
 			description: [
 				"Cristais de som endurecido. São a moeda daqui."
 				"Junte cinco."
+				"Antes, conclua: «Um Lugar para Dormir»"
 			]
 			icon: {
 				Count: 1b
@@ -1075,6 +1102,7 @@
 			]
 			description: [
 				"Há uma banca que aceita ecos. Veja o capítulo da loja."
+				"Antes, conclua: «Fragmentos de Eco»"
 			]
 			id: "1D15FE73D2EC2EE1"
 			rewards: [
@@ -1115,6 +1143,7 @@
 			description: [
 				"Você sobreviveu aos primeiros dias."
 				"Mas à noite, quando tudo se cala, algo responde."
+				"Antes, conclua: «Veios Inteiros», «Luz Contra o Silêncio», «Se Você Morrer», «Ferro na Mão», «Couraça», «Escudo», «Balde», «Lavoura», «Mochila», «A Banca do Eco», «Saber o que se Faz»"
 			]
 			icon: {
 				Count: 1b

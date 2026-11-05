@@ -24,6 +24,7 @@
 			description: [
 				"Pede um Fragmento dos Céus, braço e emissor EV e titânio."
 				"Outra masmorra de ouro guarda outra Solenne."
+				"Antes, conclua: «O Som Mais Perto» (Ato IV — Além do Véu), «O Fragmento dos Céus» (Ato III — Os Céus Partidos), «A Era da Extrema Tensão» (Caminho — Alta Tensão)"
 			]
 			icon: {
 				Count: 1b
@@ -64,6 +65,7 @@
 			description: [
 				"Placas de aço e dois tanques de aço."
 				"A quest pede a placa do Ad Astra: prense lingote de aço na prensa do Create ou no compressor do Ad Astra."
+				"Antes, conclua: «A Bancada da NASA»"
 			]
 			id: "4095B161C2109F1C"
 			rewards: [
@@ -107,6 +109,7 @@
 			]
 			description: [
 				"Todo foguete precisa de uma ponta e quatro aletas."
+				"Antes, conclua: «Aço Para Foguetes»"
 			]
 			id: "24132D83227A208C"
 			rewards: [
@@ -150,6 +153,7 @@
 			]
 			description: [
 				"O coração do primeiro foguete."
+				"Antes, conclua: «Aço Para Foguetes»"
 			]
 			id: "6D238414742D35CB"
 			rewards: [
@@ -195,6 +199,7 @@
 			description: [
 				"Petróleo vira combustível de foguete."
 				"Diesel e biodiesel (do GregTech ou do Create) também enchem o tanque."
+				"Antes, conclua: «A Bancada da NASA», «Torre de Destilação» (Caminho — Alta Tensão)"
 			]
 			id: "2978E293D89A015A"
 			rewards: [
@@ -230,6 +235,7 @@
 			description: [
 				"No vácuo, o corpo é só uma ideia."
 				"Vista as quatro peças (capacete, traje, calças e botas): sem o conjunto, o frio da Lua e de Marte mata."
+				"Antes, conclua: «A Bancada da NASA»"
 			]
 			id: "6B46B48E14414713"
 			rewards: [
@@ -274,6 +280,7 @@
 			description: [
 				"Encha o traje antes de sair."
 				"O carregador faz oxigênio de água."
+				"Antes, conclua: «Traje Espacial»"
 			]
 			id: "3F85B0E333769D7B"
 			rewards: [
@@ -308,6 +315,7 @@
 			]
 			description: [
 				"Onde o foguete espera."
+				"Antes, conclua: «A Bancada da NASA»"
 			]
 			id: "4A6D179B4D489E8C"
 			rewards: [
@@ -345,6 +353,7 @@
 			]
 			description: [
 				"Os foguetes de Aurend voltaram. Os pilotos, não."
+				"Antes, conclua: «Ponta e Aletas», «Motor de Aço», «Refinaria de Combustível», «Plataforma de Lançamento»"
 			]
 			icon: {
 				Count: 1b
@@ -397,6 +406,7 @@
 			]
 			description: [
 				"Daqui, o mundo parece pequeno o bastante para esquecer."
+				"Antes, conclua: «Foguete T1», «Carregador de Oxigênio»"
 			]
 			id: "6D08D6C92EFCB350"
 			rewards: [
@@ -428,6 +438,7 @@
 			]
 			description: [
 				"A Lua não é morta. Está prendendo a respiração."
+				"Antes, conclua: «Foguete T1», «Carregador de Oxigênio»"
 			]
 			icon: {
 				Count: 1b
@@ -475,6 +486,7 @@
 			]
 			description: [
 				"Sim, é queijo. Não pergunte."
+				"Antes, conclua: «A Lua»"
 			]
 			id: "21C23DC98C8108EB"
 			rewards: [
@@ -509,6 +521,7 @@
 			]
 			description: [
 				"O metal da Lua."
+				"Antes, conclua: «A Lua»"
 			]
 			id: "30A9D2CEA95CB821"
 			rewards: [
@@ -543,6 +556,7 @@
 			]
 			description: [
 				"Blocos e tanque de desh, motor de desh."
+				"Antes, conclua: «Desh»"
 			]
 			id: "55AD60583A298B0C"
 			rewards: [
@@ -599,6 +613,7 @@
 			description: [
 				"Sinos de cobre enterrados na poeira vermelha."
 				"São nossos."
+				"Antes, conclua: «Foguete T2»"
 			]
 			icon: {
 				Count: 1b
@@ -646,6 +661,7 @@
 			]
 			description: [
 				"O metal de Marte."
+				"Antes, conclua: «Marte»"
 			]
 			id: "42B84D997EB382AE"
 			rewards: [
@@ -680,6 +696,7 @@
 			]
 			description: [
 				"Motor de ostrum, para mais longe."
+				"Antes, conclua: «Ostrum»"
 			]
 			id: "0CC464ED59F5F4EF"
 			rewards: [
@@ -736,6 +753,7 @@
 			description: [
 				"Vênus derrete o traje comum. Mercúrio também."
 				"Acima de 70 °C só o conjunto de netherita protege: as quatro peças. O traje leva peitoral de netherita e placas de ostrum."
+				"Antes, conclua: «Foguete T3»"
 			]
 			id: "52F4F08410A8C662"
 			rewards: [
@@ -770,6 +788,7 @@
 			]
 			description: [
 				"Chuva de ácido, céu de fogo."
+				"Antes, conclua: «Traje de Netherita»"
 			]
 			id: "07FAFA3416281C58"
 			rewards: [
@@ -801,6 +820,7 @@
 			description: [
 				"Perto demais do sol."
 				"167 °C: vá com o traje de netherita completo (ou resistência ao fogo)."
+				"Antes, conclua: «Traje de Netherita»"
 			]
 			id: "4EBC5897639DA078"
 			rewards: [
@@ -831,6 +851,7 @@
 			]
 			description: [
 				"O metal que guarda o calor de Vênus."
+				"Antes, conclua: «Vênus»"
 			]
 			id: "7D3A6C36A9EFA45E"
 			rewards: [
@@ -865,6 +886,7 @@
 			]
 			description: [
 				"O último foguete. O mais longe que Aurend chegou."
+				"Antes, conclua: «Calorita»"
 			]
 			id: "22ABE371AB78DF72"
 			rewards: [
@@ -921,6 +943,7 @@
 			description: [
 				"Um planeta em outra estrela."
 				"O som dos sinos é mais alto aqui."
+				"Antes, conclua: «Foguete T4»"
 			]
 			icon: {
 				Count: 1b
@@ -968,6 +991,7 @@
 			]
 			description: [
 				"Faça o chão puxar como em casa."
+				"Antes, conclua: «Marte»"
 			]
 			id: "15BCDE6B695D8A05"
 			rewards: [
@@ -1002,6 +1026,7 @@
 			]
 			description: [
 				"Uma base onde se respira sem capacete."
+				"Antes, conclua: «A Lua»"
 			]
 			id: "6C6C26D5AC801B7B"
 			rewards: [

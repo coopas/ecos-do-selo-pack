@@ -23,6 +23,7 @@
 				"{image:ecos:textures/gui/quests/ato1.png width:200 height:112 align:center}"
 				"Vapor e mana, eixo e runa."
 				"As máquinas de Aurend esperam por alguém que as lembre."
+				"Antes, conclua: «Algo Está Ouvindo» (Prólogo — O Despertar)"
 			]
 			icon: {
 				Count: 1b
@@ -76,6 +77,7 @@
 			]
 			description: [
 				"Engrenagem e bronze. Dois caminhos, uma só ciência."
+				"Antes, conclua: «A Ciência Perdida», «A Primeira Engrenagem» (Caminho — Engrenagens de Aurend), «Bronze» (Caminho — Vapor e Corrente)"
 			]
 			id: "5CFDACFE2DECB558"
 			rewards: [
@@ -118,6 +120,7 @@
 			description: [
 				"A cada dia que passa, os mobs ficam mais fortes."
 				"Prepare-se antes de ficar para trás."
+				"Antes, conclua: «A Ciência Perdida»"
 			]
 			id: "4C5CB6B1ED7CD454"
 			rewards: [
@@ -146,6 +149,7 @@
 				"Obsidiana e fogo: uma porta para baixo."
 				"Obsidiana: picareta de aço do GregTech (ou de diamante), ou lave magma com ventilador do Create."
 				"O isqueiro daqui também é de aço: engrenagem e mola pequenas de aço com sílex."
+				"Antes, conclua: «A Ciência Perdida», «Aço» (Caminho — Vapor e Corrente)"
 			]
 			id: "538F4DEB1FD0C1F1"
 			rewards: [
@@ -189,6 +193,7 @@
 			]
 			description: [
 				"O Nether ainda queima. Ninguém apagou o fogo de Aurend."
+				"Antes, conclua: «Pedra de Lava Fria»"
 			]
 			icon: {
 				Count: 1b
@@ -224,6 +229,7 @@
 			description: [
 				"Cristais que vibram quando tocados."
 				"Veio de quartzo do Nether, entre y 40 e 80."
+				"Antes, conclua: «O Andar de Baixo»"
 			]
 			id: "5196F73D407D6130"
 			rewards: [
@@ -258,6 +264,7 @@
 			]
 			description: [
 				"Cresce em fortalezas abandonadas."
+				"Antes, conclua: «O Andar de Baixo»"
 			]
 			id: "6BD2C8BE8EDEEDFC"
 			rewards: [
@@ -292,6 +299,7 @@
 			]
 			description: [
 				"Blazes guardam as fortalezas. Seu fogo aquece a bacia do Create."
+				"Antes, conclua: «O Andar de Baixo»"
 			]
 			id: "5BA180480F705C08"
 			rewards: [
@@ -326,6 +334,7 @@
 			]
 			description: [
 				"Ouro do Nether ou da superfície, tanto faz."
+				"Antes, conclua: «O Andar de Baixo»"
 			]
 			id: "0604B1959451B910"
 			rewards: [
@@ -363,6 +372,7 @@
 			]
 			description: [
 				"Endermen carregam pérolas que lembram onde estiveram."
+				"Antes, conclua: «Noites Mais Fortes»"
 			]
 			id: "66343539B5689052"
 			rewards: [
@@ -398,6 +408,7 @@
 			description: [
 				"Moa o minério antes de derreter: cada um rende mais."
 				"O macerador a vapor serve; as rodas trituradoras do Create também."
+				"Antes, conclua: «Macerador a Vapor» (Caminho — Vapor e Corrente)"
 			]
 			id: "59A5E37C708D5158"
 			rewards: [
@@ -435,6 +446,7 @@
 			]
 			description: [
 				"Aço para as máquinas que virão."
+				"Antes, conclua: «Aço» (Caminho — Vapor e Corrente)"
 			]
 			id: "268DD39316468189"
 			rewards: [
@@ -473,6 +485,7 @@
 			description: [
 				"Há uma floresta que não fica em lugar nenhum."
 				"Ilse fala dela como quem fala de um túmulo."
+				"Antes, conclua: «As Máquinas Lembram»"
 			]
 			id: "736E1A3A1BFA3AED"
 			rewards: [
@@ -519,6 +532,7 @@
 			]
 			description: [
 				"Qualquer muda. A floresta precisa reconhecer vida."
+				"Antes, conclua: «A Floresta que Não Fica»"
 			]
 			id: "68C8AB49D4BCD2B0"
 			rewards: [
@@ -556,6 +570,7 @@
 			]
 			description: [
 				"O portal pede flores em volta da água."
+				"Antes, conclua: «A Floresta que Não Fica»"
 			]
 			id: "02C323756C92851D"
 			rewards: [
@@ -596,6 +611,7 @@
 			description: [
 				"Precisão de Aurend e semente viva: mecanismo, latão, mudas e um diamante."
 				"Só ela abre o caminho. Jogar diamante no lago não serve mais."
+				"Antes, conclua: «Sementes Vivas», «Mecanismo de Precisão» (Caminho — Engrenagens de Aurend), «Latão» (Caminho — Engrenagens de Aurend)"
 			]
 			icon: {
 				Count: 1b
@@ -654,6 +670,7 @@
 			description: [
 				"Faça um lago 2×2 cercado de flores."
 				"Jogue a Chave Crepuscular na água."
+				"Antes, conclua: «A Chave Crepuscular», «Flores para o Lago»"
 			]
 			id: "2C316AAB687934F2"
 			rewards: [
@@ -680,6 +697,7 @@
 			description: [
 				"Aqui é sempre fim de tarde."
 				"As árvores lembram de você antes de você chegar."
+				"Antes, conclua: «A Floresta que Não Fica»"
 			]
 			icon: {
 				Count: 1b
@@ -727,6 +745,7 @@
 			]
 			description: [
 				"Raízes que se mexem quando você não olha."
+				"Antes, conclua: «Crepúsculo Eterno»"
 			]
 			id: "659B127364A8C9F7"
 			rewards: [
@@ -761,6 +780,7 @@
 			]
 			description: [
 				"Pendem das cavernas como lanternas."
+				"Antes, conclua: «Crepúsculo Eterno»"
 			]
 			id: "206DE3EFAFB0DD31"
 			rewards: [
@@ -795,6 +815,7 @@
 			]
 			description: [
 				"Os corvos daqui guardam segredos."
+				"Antes, conclua: «Crepúsculo Eterno»"
 			]
 			id: "641D33A2412F1776"
 			rewards: [
@@ -833,6 +854,7 @@
 				"Um mapa que mostra o que a floresta esconde."
 				"O foco do mapa leva pó de glowstone, do teto do Nether."
 				"Papel: cana na prensa do Create (a bancada não faz mais papel)."
+				"Antes, conclua: «Raiz Viva», «Frutos que Brilham», «Penas de Corvo»"
 			]
 			id: "21E1D95F3DEA17E5"
 			rewards: [
@@ -870,6 +892,7 @@
 				"Raiz viva, pepita de ouro e ferro bruto de verdade:"
 				"o minério de ferro comum, que mora no veio de cobre (y -40 a 10)."
 				"Pepita de ouro: derreta uma pá de ouro na fornalha (lingote não vira pepita à mão)."
+				"Antes, conclua: «Raiz Viva»"
 			]
 			id: "732FF55941EFFB56"
 			rewards: [
@@ -905,6 +928,7 @@
 			description: [
 				"Folhas tão duras quanto lâminas."
 				"Achadas em baús das colinas ocas e do labirinto."
+				"Antes, conclua: «Crepúsculo Eterno»"
 			]
 			id: "47D8195DEA9457E9"
 			rewards: [
@@ -939,6 +963,7 @@
 			]
 			description: [
 				"Um pátio cercado de sebes. Algo se enrola lá dentro."
+				"Antes, conclua: «Mapa Mágico»"
 			]
 			id: "245E5E0BADE6C1CA"
 			rewards: [
@@ -964,6 +989,7 @@
 			]
 			description: [
 				"A primeira guardiã da floresta. Rápida, cega de raiva."
+				"Antes, conclua: «O Pátio da Serpente»"
 			]
 			icon: {
 				Count: 1b
@@ -1012,6 +1038,7 @@
 			]
 			description: [
 				"Escamas que ainda se mexem."
+				"Antes, conclua: «A Naga»"
 			]
 			id: "0041824819281A4E"
 			rewards: [
@@ -1046,6 +1073,7 @@
 			]
 			description: [
 				"Proteção feita da própria guardiã."
+				"Antes, conclua: «Escamas da Naga»"
 			]
 			id: "630EECEC9B95FF47"
 			rewards: [
@@ -1080,6 +1108,7 @@
 			]
 			description: [
 				"Para lembrar que ela caiu."
+				"Antes, conclua: «A Naga»"
 			]
 			id: "41D3BA5BD80557AA"
 			rewards: [
@@ -1114,6 +1143,7 @@
 			]
 			description: [
 				"Encontrado em ruínas. Transforma criaturas."
+				"Antes, conclua: «A Naga»"
 			]
 			id: "47463331291D8745"
 			rewards: [
@@ -1149,6 +1179,7 @@
 			description: [
 				"Um amuleto que recusa a morte uma vez."
 				"Aparece em baús da floresta."
+				"Antes, conclua: «A Naga»"
 			]
 			id: "21AB5673805A1F66"
 			rewards: [
@@ -1185,6 +1216,7 @@
 			]
 			description: [
 				"Uma torre de pedra branca. Os cristais lá dentro não refletem nada."
+				"Antes, conclua: «A Naga», «Ferro-Madeira», «Folha de Aço»"
 			]
 			id: "3B05B4D39EC90752"
 			rewards: [
@@ -1212,6 +1244,7 @@
 				"{image:ecos:textures/gui/quests/morvane.png width:200 height:112 align:center}"
 				"Ele escutou a floresta tempo demais."
 				"Não acredite em tudo o que ele disser."
+				"Antes, conclua: «A Torre Pálida»"
 			]
 			icon: {
 				Count: 1b
@@ -1277,6 +1310,7 @@
 			]
 			description: [
 				"Uma coroa de ossos pálidos."
+				"Antes, conclua: «Morvane, o Guardião Pálido»"
 			]
 			id: "0BEA62CE57B47FF0"
 			rewards: [
@@ -1312,6 +1346,7 @@
 			description: [
 				"O primeiro pedaço do Selo."
 				"Pesa mais do que deveria."
+				"Antes, conclua: «Morvane, o Guardião Pálido»"
 			]
 			icon: {
 				Count: 1b
@@ -1369,6 +1404,7 @@
 			description: [
 				"O Fragmento da Floresta abre o caminho para baixo."
 				"No Ato II, ele vira parte do Catalisador."
+				"Antes, conclua: «O Fragmento da Floresta»"
 			]
 			id: "48C3BE5AEC5F352A"
 			rewards: [
@@ -1395,6 +1431,7 @@
 			]
 			description: [
 				"Leve uma caldeira para a Twilight. As árvores se afastam do vapor."
+				"Antes, conclua: «Caldeira a Vapor» (Caminho — Vapor e Corrente), «Crepúsculo Eterno»"
 			]
 			id: "3BE3DF40A56833A6"
 			rewards: [
@@ -1425,6 +1462,7 @@
 			]
 			description: [
 				"Trilhos de Aurend levam carga até o portal."
+				"Antes, conclua: «Trilhos de Aurend» (Caminho — Engrenagens de Aurend), «Crepúsculo Eterno»"
 			]
 			id: "77555E4954A2739E"
 			rewards: [
@@ -1454,6 +1492,7 @@
 			]
 			description: [
 				"O alto-forno come coque sem parar."
+				"Antes, conclua: «Coque» (Caminho — Vapor e Corrente)"
 			]
 			id: "34284E80D6478EAB"
 			rewards: [
@@ -1488,6 +1527,7 @@
 			]
 			description: [
 				"Toda máquina a vapor pede bronze."
+				"Antes, conclua: «Bronze» (Caminho — Vapor e Corrente)"
 			]
 			id: "395CAD2C99167F66"
 			rewards: [
@@ -1525,6 +1565,7 @@
 			]
 			description: [
 				"Latão para os mecanismos finos."
+				"Antes, conclua: «Latão» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "18F97B1387403190"
 			rewards: [
@@ -1562,6 +1603,7 @@
 			]
 			description: [
 				"Mais circuitos, mais máquinas."
+				"Antes, conclua: «Circuito Básico» (Caminho — Vapor e Corrente)"
 			]
 			id: "686AE461E0AC6051"
 			rewards: [
@@ -1598,6 +1640,7 @@
 			description: [
 				"A floresta está calada. A corrente corre de novo."
 				"Mas embaixo da terra, algo continua acordado."
+				"Antes, conclua: «O Fragmento da Floresta», «A Era da Corrente» (Caminho — Vapor e Corrente)"
 			]
 			icon: {
 				Count: 1b

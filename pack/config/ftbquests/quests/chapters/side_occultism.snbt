@@ -21,6 +21,7 @@
 			]
 			description: [
 				"Uma flor que mostra o que os olhos não veem."
+				"Antes, conclua: «Ferrugem Vencida» (Ato I — Ferrugem e Engrenagens)"
 			]
 			icon: {
 				Count: 1b
@@ -60,6 +61,7 @@
 			]
 			description: [
 				"Ocultistas não desperdiçam nada."
+				"Antes, conclua: «Sementes de Datura»"
 			]
 			id: "5D2D713F1544A4A9"
 			rewards: [
@@ -95,6 +97,7 @@
 			description: [
 				"Gordura animal, base para as velas dos pentáculos."
 				"Mate porcos, vacas ou ovelhas com a faca."
+				"Antes, conclua: «Faca de Açougueiro»"
 			]
 			id: "328F84D4DA34E824"
 			rewards: [
@@ -130,6 +133,7 @@
 			]
 			description: [
 				"Pedra de outro mundo e latão do Create. Aurend misturava tudo."
+				"Antes, conclua: «Pedra de Outro Mundo», «Latão» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "679EA94D2D6CBCBA"
 			rewards: [
@@ -164,6 +168,7 @@
 			]
 			description: [
 				"O centro de todo ritual."
+				"Antes, conclua: «Tigela Sacrificial»"
 			]
 			id: "01A7F33C8EB9A78D"
 			rewards: [
@@ -201,6 +206,7 @@
 				"Giz impuro: pedra de outro mundo assada na fornalha e cinzas de tora de outro mundo no fogo espiritual."
 				"A tora: muda de carvalho no fogo espiritual vira muda de outro mundo; corte a árvore sob o Terceiro Olho (coma o fruto de datura)."
 				"Depois, purifique o giz no fogo espiritual."
+				"Antes, conclua: «Pedra de Outro Mundo»"
 			]
 			id: "46370BFBC3FBED09"
 			rewards: [
@@ -253,6 +259,7 @@
 			description: [
 				"Com eles você vê minérios que não existem para os outros."
 				"As lentes infundidas saem de um ritual com o foliot (pentáculo de giz branco e dourado)."
+				"Antes, conclua: «Giz Dourado»"
 			]
 			id: "7BA69E0E68364464"
 			rewards: [
@@ -287,6 +294,7 @@
 			]
 			description: [
 				"Ela aponta para o que está escondido."
+				"Antes, conclua: «Gema Sintonizada»"
 			]
 			id: "0FB122B758F830B4"
 			rewards: [
@@ -322,6 +330,7 @@
 			description: [
 				"Pedra que só existe quando é olhada do jeito certo."
 				"Jogue andesito no fogo espiritual."
+				"Antes, conclua: «Fogo Espiritual»"
 			]
 			id: "4C3F7314E4111016"
 			rewards: [
@@ -357,6 +366,7 @@
 			description: [
 				"Espíritos não gostam de prata. Ainda assim, precisam dela."
 				"Veio de galena do GregTech (y -15 a 45) ou o minério de prata do Occultism."
+				"Antes, conclua: «Sementes de Datura»"
 			]
 			id: "5CDFCEBDC36C737C"
 			rewards: [
@@ -396,6 +406,7 @@
 			description: [
 				"Uma gema que ouve espíritos."
 				"Diamantes jogados no fogo espiritual."
+				"Antes, conclua: «Giz Branco», «Tigela Dourada»"
 			]
 			id: "03240576CD0B1809"
 			rewards: [
@@ -431,6 +442,7 @@
 			description: [
 				"Fogo que queima do outro lado."
 				"Jogue datura no chão e acenda com isqueiro; itens jogados nele se transmutam."
+				"Antes, conclua: «Sementes de Datura»"
 			]
 			id: "2FF25458F69734E3"
 			rewards: [
@@ -460,6 +472,7 @@
 			]
 			description: [
 				"Luz que só os espíritos veem bem."
+				"Antes, conclua: «Fogo Espiritual»"
 			]
 			id: "03263A1D4689691F"
 			rewards: [
@@ -495,6 +508,7 @@
 			description: [
 				"O nome de um espírito, preso em papel."
 				"Tinta purificada, pena desperta e livro tabu: tinta preta, pena e livro, todos no fogo espiritual."
+				"Antes, conclua: «Gema Sintonizada»"
 			]
 			id: "599339FC38991F62"
 			rewards: [
@@ -530,6 +544,7 @@
 			description: [
 				"O espírito mais fraco. Mas ele aceita servir."
 				"Junte o livro ao Dicionário dos Espíritos na bancada; o dicionário não se gasta."
+				"Antes, conclua: «Livro de Vínculo»"
 			]
 			id: "7CD72555BD67895F"
 			rewards: [
@@ -565,6 +580,7 @@
 			description: [
 				"Um foliot que cava por você, dentro de uma bolsa dimensional."
 				"Ritual do foliot com lâmpada mágica (prata e iésnio), picareta de iésnio, ferro bruto e cascalho."
+				"Antes, conclua: «Picareta de Iésnio»"
 			]
 			id: "40B596C9D381932B"
 			rewards: [
@@ -600,6 +616,7 @@
 			]
 			description: [
 				"Para espíritos mais exigentes."
+				"Antes, conclua: «Um Foliot Vinculado», «Gemas de Fonte» (Caminho — A Fonte)"
 			]
 			id: "7EECB0C0CEE2CA6D"
 			rewards: [
@@ -634,6 +651,7 @@
 			]
 			description: [
 				"Um djinni sabe mais do que diz."
+				"Antes, conclua: «Giz Dourado»"
 			]
 			id: "120C316A55649298"
 			rewards: [
@@ -670,6 +688,7 @@
 			description: [
 				"Um metal que só se vê com os óculos."
 				"No Nether, parece netherrack: veja com os óculos e quebre com a picareta infundida."
+				"Antes, conclua: «Picareta Infundida», «Óculos do Outro Mundo»"
 			]
 			id: "774C96877571D7E3"
 			rewards: [
@@ -705,6 +724,7 @@
 			description: [
 				"Uma picareta que alcança o outro mundo."
 				"Ritual do djinni: o pentáculo leva giz roxo."
+				"Antes, conclua: «Giz Roxo»"
 			]
 			id: "0273FC36A9B8620B"
 			rewards: [
@@ -739,6 +759,7 @@
 			]
 			description: [
 				"Minera o que a infundida não alcança."
+				"Antes, conclua: «Iésnio»"
 			]
 			id: "2C2866E244F85734"
 			rewards: [
@@ -775,6 +796,7 @@
 				"Pentáculos de invocação."
 				"Pó de pedra do Fim: invoque um foliot triturador (pentáculo de giz branco) e jogue pedra do Fim perto dele."
 				"Pó de obsidiana: macerador do GregTech ou rodas trituradoras."
+				"Antes, conclua: «Livro do Djinni»"
 			]
 			id: "4D84903DAEE12A8F"
 			rewards: [
@@ -809,6 +831,7 @@
 			]
 			description: [
 				"O coração de um armazém que não ocupa espaço."
+				"Antes, conclua: «Iésnio»"
 			]
 			id: "0DA6A21651109FD4"
 			rewards: [
@@ -843,6 +866,7 @@
 			]
 			description: [
 				"Guarde tudo do outro lado."
+				"Antes, conclua: «Matriz Dimensional»"
 			]
 			id: "239D6FA89E1D4CFE"
 			rewards: [
@@ -886,6 +910,7 @@
 			]
 			description: [
 				"Um familiar te acompanha. Não pergunte o nome dele."
+				"Antes, conclua: «Giz Roxo»"
 			]
 			id: "187E512914636B84"
 			rewards: [
@@ -922,6 +947,7 @@
 				"Para os espíritos perigosos."
 				"Essência de afrit: o afrit selvagem a deixa ao morrer. O ritual começa com o livro do afrit vinculado,"
 				"num pentáculo de giz branco e roxo com caveiras de esqueleto e de esqueleto wither; sacrifique uma vaca."
+				"Antes, conclua: «O Afrit»"
 			]
 			id: "7561DD39B06C1276"
 			rewards: [
@@ -957,6 +983,7 @@
 			description: [
 				"Um espírito de fogo e orgulho."
 				"Vincule o livro no Dicionário dos Espíritos: é ele que abre o ritual do afrit selvagem."
+				"Antes, conclua: «Giz Roxo»"
 			]
 			id: "6523E1B8ECF806AA"
 			rewards: [
@@ -1006,6 +1033,7 @@
 			description: [
 				"Quatro gizes, quatro círculos."
 				"Um dia, um deles vai chamar o Arauto."
+				"Antes, conclua: «Giz Vermelho», «Controlador de Armazenamento», «Anel de Familiar»"
 			]
 			icon: {
 				Count: 1b

@@ -22,6 +22,7 @@
 			description: [
 				"Meteoritos guardam cristais de certus."
 				"Uma bússola carregada no carregador (ferro e cobre, girado a manivela) aponta o mais perto."
+				"Antes, conclua: «O Eco Responde» (Ato II — Ecos Arcanos)"
 			]
 			icon: {
 				Count: 1b
@@ -61,6 +62,7 @@
 			]
 			description: [
 				"Cristais que guardam informação como a pedra guarda calor."
+				"Antes, conclua: «Pedras Que Caíram»"
 			]
 			id: "07F1EB75D51A6B7C"
 			rewards: [
@@ -99,6 +101,7 @@
 			description: [
 				"Um bloco de quartzo que cresce sozinho. Leve um para casa."
 				"O impecável do meteorito, quebrado com picareta, cai como defeituoso."
+				"Antes, conclua: «Quartzo Certus»"
 			]
 			id: "33F1D54D48B45E6E"
 			rewards: [
@@ -134,6 +137,7 @@
 			description: [
 				"Energia transforma certus em cristal carregado."
 				"Sem energia ainda? Uma manivela em cima dele resolve."
+				"Antes, conclua: «Quartzo Certus»"
 			]
 			id: "7346935E51033470"
 			rewards: [
@@ -177,6 +181,7 @@
 			]
 			description: [
 				"Certus carregado, redstone e quartzo na água."
+				"Antes, conclua: «O Carregador»"
 			]
 			id: "61FBD0C901E75CED"
 			rewards: [
@@ -216,6 +221,7 @@
 			description: [
 				"Pede um pistão LV do GregTech."
 				"A rede de Aurend corria sobre máquinas."
+				"Antes, conclua: «Quartzo Certus», «Bomba e Pistão LV» (Caminho — Vapor e Corrente)"
 			]
 			icon: {
 				Count: 1b
@@ -256,6 +262,7 @@
 			description: [
 				"O primeiro molde da rede."
 				"As quatro prensas saem do Cubo Misterioso, no centro do meteorito. Sem toque de seda: com ele, cai só o cubo."
+				"Antes, conclua: «A Prensa»"
 			]
 			id: "45406AC334162D1B"
 			rewards: [
@@ -303,6 +310,7 @@
 			]
 			description: [
 				"Lógico, de cálculo e de engenharia."
+				"Antes, conclua: «Silício Impresso», «Cristal Fluix»"
 			]
 			id: "336BC093555598BC"
 			rewards: [
@@ -355,6 +363,7 @@
 			]
 			description: [
 				"Fios que carregam itens como se fossem pensamentos."
+				"Antes, conclua: «Cristal Fluix»"
 			]
 			id: "4A8B99F4C2B1E3BB"
 			rewards: [
@@ -390,6 +399,7 @@
 			description: [
 				"Converte a energia das suas máquinas para a rede."
 				"Basta encostar nele um cabo do GregTech."
+				"Antes, conclua: «Cabos de Fluix»"
 			]
 			id: "528A15FFE03D96A6"
 			rewards: [
@@ -427,6 +437,7 @@
 			description: [
 				"Pede um braço robótico MV."
 				"O coração da rede: tudo passa por ele."
+				"Antes, conclua: «Três Processadores», «Aceitador de Energia», «Braço Robótico MV» (Ato II — Ecos Arcanos)"
 			]
 			icon: {
 				Count: 1b
@@ -478,6 +489,7 @@
 			]
 			description: [
 				"Onde as células moram."
+				"Antes, conclua: «O Controlador»"
 			]
 			id: "60B20AC8C4E60B20"
 			rewards: [
@@ -512,6 +524,7 @@
 			]
 			description: [
 				"Uma janela para tudo o que você guardou."
+				"Antes, conclua: «O Controlador»"
 			]
 			id: "7258BB445A5A6FAD"
 			rewards: [
@@ -546,6 +559,7 @@
 			]
 			description: [
 				"A primeira memória da rede."
+				"Antes, conclua: «Unidade de Armazenamento»"
 			]
 			id: "17E1D6B21E865F7B"
 			rewards: [
@@ -580,6 +594,7 @@
 			]
 			description: [
 				"Mais espaço."
+				"Antes, conclua: «Célula 1k»"
 			]
 			id: "3D185E4A40AEF5E7"
 			rewards: [
@@ -614,6 +629,7 @@
 			]
 			description: [
 				"Uma biblioteca inteira."
+				"Antes, conclua: «Célula 4k»"
 			]
 			id: "3940FA0FD147BE96"
 			rewards: [
@@ -648,6 +664,7 @@
 			]
 			description: [
 				"Importe e exporte sem tocar em nada."
+				"Antes, conclua: «O Controlador»"
 			]
 			id: "5EAE5C0D2D6B9FB5"
 			rewards: [
@@ -700,6 +717,7 @@
 			]
 			description: [
 				"Crie direto da rede."
+				"Antes, conclua: «Terminal»"
 			]
 			id: "2013809C1D7A1A49"
 			rewards: [
@@ -734,6 +752,7 @@
 			]
 			description: [
 				"Ensine a rede a criar sozinha."
+				"Antes, conclua: «Terminal de Criação»"
 			]
 			id: "53DC73A51AF5E33D"
 			rewards: [
@@ -777,6 +796,7 @@
 			]
 			description: [
 				"Uma bancada que trabalha sem mãos."
+				"Antes, conclua: «Padrões»"
 			]
 			id: "2C3936DD8904EC3E"
 			rewards: [
@@ -820,6 +840,7 @@
 			]
 			description: [
 				"A rede passa a planejar."
+				"Antes, conclua: «Montador Molecular»"
 			]
 			id: "0D51F2F3BF0484BE"
 			rewards: [
@@ -864,6 +885,7 @@
 			]
 			description: [
 				"Leve a rede no bolso."
+				"Antes, conclua: «Terminal», «Célula 4k»"
 			]
 			id: "5340D771FE4C6F6E"
 			rewards: [
@@ -902,6 +924,7 @@
 			description: [
 				"Aurend guardava tudo assim."
 				"Até o que deveria ter esquecido."
+				"Antes, conclua: «CPU de Criação», «Célula 16k», «Barramentos», «Terminal Sem Fio»"
 			]
 			icon: {
 				Count: 1b

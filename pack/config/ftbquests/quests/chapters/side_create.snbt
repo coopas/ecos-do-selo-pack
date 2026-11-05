@@ -23,6 +23,7 @@
 				"Andesito e ferro: a liga que movia Aurend."
 				"Mais fácil com zinco: lingote de zinco vira 9 pepitas à mão e serve no lugar do ferro."
 				"Pepitas de ferro: serra do GregTech, ou derreta uma pá de ferro na fornalha."
+				"Antes, conclua: «Lingotes» (Prólogo — O Despertar)"
 			]
 			icon: {
 				Count: 1b
@@ -62,6 +63,7 @@
 			]
 			description: [
 				"Toda força começa girando."
+				"Antes, conclua: «Liga de Andesito»"
 			]
 			id: "6537293187BC0DCE"
 			rewards: [
@@ -96,6 +98,7 @@
 			]
 			description: [
 				"Engrenagens transmitem o giro. E o silêncio."
+				"Antes, conclua: «Eixo»"
 			]
 			id: "2BB6A1E58AAABE2A"
 			rewards: [
@@ -147,6 +150,7 @@
 			]
 			description: [
 				"Grande e pequena trocam velocidade por força."
+				"Antes, conclua: «A Primeira Engrenagem»"
 			]
 			id: "7878208019894910"
 			rewards: [
@@ -181,6 +185,7 @@
 			]
 			description: [
 				"Água corrente, força constante."
+				"Antes, conclua: «A Primeira Engrenagem»"
 			]
 			id: "1272ADF45F717D47"
 			rewards: [
@@ -215,6 +220,7 @@
 			]
 			description: [
 				"Rolamento de moinho e velas: o vento também trabalha."
+				"Antes, conclua: «Engrenagem Grande»"
 			]
 			id: "67FC6989E2E1E1B0"
 			rewards: [
@@ -262,6 +268,7 @@
 				"Veja estresse e rotação com os óculos."
 				"Aqui a areia não vira vidro na fornalha: pó de vidro no fundidor de ligas"
 				"do GregTech, com molde de bloco (de aço). A chapa de ouro sai do martelo."
+				"Antes, conclua: «A Primeira Engrenagem», «Fundidor de Ligas a Vapor» (Caminho — Vapor e Corrente), «Aço» (Caminho — Vapor e Corrente)"
 			]
 			id: "3AD381CAF52EF738"
 			rewards: [
@@ -297,6 +304,7 @@
 			description: [
 				"Gire, desmonte, ajuste."
 				"Chapas de ouro: martelo do GregTech e dois lingotes."
+				"Antes, conclua: «A Primeira Engrenagem»"
 			]
 			id: "2FE0E16380AC783D"
 			rewards: [
@@ -331,6 +339,7 @@
 			]
 			description: [
 				"Mude a direção do giro."
+				"Antes, conclua: «Engrenagem Grande»"
 			]
 			id: "1E8F1F1339572113"
 			rewards: [
@@ -365,6 +374,7 @@
 			]
 			description: [
 				"Esteiras levam itens sem mãos."
+				"Antes, conclua: «Eixo»"
 			]
 			id: "1473ADCD0FF2C78A"
 			rewards: [
@@ -399,6 +409,7 @@
 			]
 			description: [
 				"Moer é o primeiro passo para multiplicar minério."
+				"Antes, conclua: «Roda de Água»"
 			]
 			id: "4246EE9437D05F92"
 			rewards: [
@@ -437,6 +448,7 @@
 				"Prense lingotes em chapas."
 				"Ela pede um bloco de ferro, e aqui lingote não vira bloco na bancada:"
 				"compacte no compressor a vapor do GregTech."
+				"Antes, conclua: «Roda de Água», «Caixa de Engrenagens», «Compressor a Vapor» (Caminho — Vapor e Corrente)"
 			]
 			id: "550B9A5AAB235931"
 			rewards: [
@@ -471,6 +483,7 @@
 			]
 			description: [
 				"Chapas. O esqueleto de qualquer máquina."
+				"Antes, conclua: «Prensa Mecânica»"
 			]
 			id: "18B35E3145DA8813"
 			rewards: [
@@ -505,6 +518,7 @@
 			]
 			description: [
 				"Misture o que não se mistura."
+				"Antes, conclua: «Prensa Mecânica»"
 			]
 			id: "15BBFE01306B3D3B"
 			rewards: [
@@ -548,6 +562,7 @@
 			]
 			description: [
 				"Vento sobre água lava; sobre fogo, cozinha."
+				"Antes, conclua: «Caixa de Engrenagens»"
 			]
 			id: "4109E51EFC57ADB5"
 			rewards: [
@@ -582,6 +597,7 @@
 			]
 			description: [
 				"Um lugar para as máquinas trabalharem."
+				"Antes, conclua: «Esteira»"
 			]
 			id: "18F7F2960346FFEB"
 			rewards: [
@@ -616,6 +632,7 @@
 			]
 			description: [
 				"Pegue e solte itens nas esteiras."
+				"Antes, conclua: «Esteira»"
 			]
 			id: "7361BB52A603356C"
 			rewards: [
@@ -659,6 +676,7 @@
 			]
 			description: [
 				"Pedra para sempre, sem picareta."
+				"Antes, conclua: «Chapas de Ferro»"
 			]
 			id: "3A6C48799352A651"
 			rewards: [
@@ -693,6 +711,7 @@
 			]
 			description: [
 				"Corte troncos em tábuas, sem fim."
+				"Antes, conclua: «Chapas de Ferro»"
 			]
 			id: "67CFAC7F2A43BE41"
 			rewards: [
@@ -728,6 +747,7 @@
 			description: [
 				"Um metal que Aurend usava no lugar do ouro."
 				"O minério de zinco do Create ainda brota no Overworld."
+				"Antes, conclua: «Ferro na Mão» (Prólogo — O Despertar)"
 			]
 			id: "300958F98DE1B773"
 			rewards: [
@@ -767,6 +787,7 @@
 			description: [
 				"Capture um blaze com o Queimador Vazio."
 				"Fogo vivo aquece a bacia. Netherrack e blazes, só no Nether."
+				"Antes, conclua: «Misturador e Bacia», «O Andar de Baixo» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "063672E4C3E067CD"
 			rewards: [
@@ -812,6 +833,7 @@
 			description: [
 				"Cobre e zinco, misturados com calor: o misturador pede o queimador aceso."
 				"Antes do Nether: 3 pós de cobre e 1 de zinco (pilão do GregTech), na fornalha."
+				"Antes, conclua: «Zinco», «Misturador e Bacia»"
 			]
 			icon: {
 				Count: 1b
@@ -853,6 +875,7 @@
 			]
 			description: [
 				"O revestimento das máquinas finas."
+				"Antes, conclua: «Latão»"
 			]
 			id: "6766E2322F14357C"
 			rewards: [
@@ -889,6 +912,7 @@
 			description: [
 				"Uma pequena luz que controla grandes máquinas."
 				"Quartzo rosa: quartzo do Nether e 8 de redstone, polido na lixa."
+				"Antes, conclua: «Latão», «Quartzo» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "55FEE44615029307"
 			rewards: [
@@ -923,6 +947,7 @@
 			]
 			description: [
 				"Uma mão que nunca cansa."
+				"Antes, conclua: «Válvula Eletrônica»"
 			]
 			id: "2F7E461EB9F81983"
 			rewards: [
@@ -959,6 +984,7 @@
 			description: [
 				"A montagem em sequência: prensa, aplicador e paciência."
 				"Sem ele, a floresta não se abre."
+				"Antes, conclua: «Aplicador Mecânico», «Invólucro de Latão»"
 			]
 			icon: {
 				Count: 1b
@@ -1014,6 +1040,7 @@
 				"A receita daqui pede gemas de fonte da Ars Nouveau (6 para 9 montadores)."
 				"Tábuas de archwood (árvores mágicas do Overworld), ouro e liga de andesito"
 				"fazem a Câmara de Imbuição; ametista nela vira gema de fonte."
+				"Antes, conclua: «Válvula Eletrônica», «Invólucro de Latão»"
 			]
 			id: "4F329F50CE4C69EC"
 			rewards: [
@@ -1049,6 +1076,7 @@
 			description: [
 				"Minério vira pó, pó vira lingote em dobro."
 				"Cascalho moído às vezes solta redstone."
+				"Antes, conclua: «Montador Mecânico»"
 			]
 			id: "5B4F5D477D2FC3E2"
 			rewards: [
@@ -1083,6 +1111,7 @@
 			]
 			description: [
 				"Ele escolhe sozinho de onde pegar e onde soltar."
+				"Antes, conclua: «Mecanismo de Precisão»"
 			]
 			id: "13295D1B147A6A73"
 			rewards: [
@@ -1117,6 +1146,7 @@
 			]
 			description: [
 				"Líquidos também se movem por engrenagens."
+				"Antes, conclua: «Chapas de Ferro»"
 			]
 			id: "777328CE766F3F5E"
 			rewards: [
@@ -1171,6 +1201,7 @@
 			description: [
 				"Vapor de Aurend, de novo girando o mundo."
 				"Cada motor pede um bloco de cobre: compressor a vapor do GregTech."
+				"Antes, conclua: «Canos, Bomba e Tanque», «Queimador de Blaze»"
 			]
 			id: "23E2955E42132CDE"
 			rewards: [
@@ -1218,6 +1249,7 @@
 			description: [
 				"Velocímetro e medidor de estresse."
 				"O velocímetro leva uma bússola (redstone do veio fundo ou do Nether)."
+				"Antes, conclua: «Óculos do Engenheiro»"
 			]
 			id: "3937502C51A08829"
 			rewards: [
@@ -1262,6 +1294,7 @@
 			description: [
 				"Mesa e canhão de esquemas imprimem construções (.nbt)."
 				"Coloque esquemas em schematics/. A Litematica (M) projeta."
+				"Antes, conclua: «Mecanismo de Precisão»"
 			]
 			id: "073516F0B31377D0"
 			rewards: [
@@ -1317,6 +1350,7 @@
 				"Os trens de Aurend voltam a correr."
 				"Trilho sai da montagem em sequência (aplicador e prensa)."
 				"A estação pede bússola e invólucro de trem: latão com chapa de obsidiana (GregTech)."
+				"Antes, conclua: «Motor a Vapor», «Aplicador Mecânico»"
 			]
 			id: "63F1DEC986A71F87"
 			rewards: [
@@ -1376,6 +1410,7 @@
 				"A caldeira do Create também alimenta as máquinas do GregTech."
 				"Encoste num tanque de caldeira com queimador: 6 mB/t de vapor por nível."
 				"Gasta a água da caldeira. Com motor a vapor ou apito do Create, a Saída fica muda."
+				"Antes, conclua: «Canos, Bomba e Tanque», «Queimador de Blaze»"
 			]
 			id: "4FB1357AE4E9719E"
 			rewards: [
@@ -1413,6 +1448,7 @@
 				"Fogo líquido gira mais que vapor."
 				"Queima diesel ou gasolina, do próprio mod (Create: Diesel Generators) ou do GregTech."
 				"Leva isqueiro (aço), bloco de latão, tanque e laje de pedra-negra polida (Nether)."
+				"Antes, conclua: «Invólucro de Latão», «O Andar de Baixo» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "44F4B9089C587067"
 			rewards: [
@@ -1449,6 +1485,7 @@
 				"As rodas moem o minério bruto do GregTech em minério triturado."
 				"O ventilador sobre água o lava em minério purificado."
 				"Rende menos que as máquinas do GregTech: é o atalho sem energia elétrica."
+				"Antes, conclua: «Rodas Trituradoras»"
 			]
 			id: "350924021EF75473"
 			rewards: [

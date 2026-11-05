@@ -21,6 +21,7 @@
 			]
 			description: [
 				"Magia é música, e este livro é sua primeira partitura."
+				"Antes, conclua: «Ferrugem Vencida» (Ato I — Ferrugem e Engrenagens)"
 			]
 			icon: {
 				Count: 1b
@@ -79,6 +80,7 @@
 				"Árvores de archwood crescem onde a fonte é forte."
 				"Aqui não há floresta de archwood: as árvores nascem soltas e raras, em qualquer bioma."
 				"Guarde as mudas que as folhas soltam."
+				"Antes, conclua: «O Livro do Aprendiz»"
 			]
 			id: "138BE1AB47F022AF"
 			rewards: [
@@ -116,6 +118,7 @@
 			]
 			description: [
 				"Madeira que guarda mana."
+				"Antes, conclua: «Madeira Arcana»"
 			]
 			id: "3E755EB76BAF07A1"
 			rewards: [
@@ -154,6 +157,7 @@
 			description: [
 				"Inscreva glifos no seu livro."
 				"Cada glifo pede alguns itens e experiência."
+				"Antes, conclua: «Tábuas de Archwood»"
 			]
 			id: "4A7C1090571E0870"
 			rewards: [
@@ -189,6 +193,7 @@
 			]
 			description: [
 				"Pede liga de andesito: Aurend misturava tudo."
+				"Antes, conclua: «Tábuas de Archwood», «Liga de Andesito» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "70E2C4D64C2270B6"
 			rewards: [
@@ -225,6 +230,7 @@
 				"Ametista (ou lápis-lazúli) mergulhada em mana."
 				"A câmara junta fonte sozinha, devagar; jarros de fonte por perto aceleram."
 				"Também abre o caminho para o Undergarden."
+				"Antes, conclua: «Câmara de Imbuição»"
 			]
 			icon: {
 				Count: 1b
@@ -264,6 +270,7 @@
 			]
 			description: [
 				"Guarde mana como quem guarda água."
+				"Antes, conclua: «Gemas de Fonte»"
 			]
 			id: "65C8838C014075FF"
 			rewards: [
@@ -298,6 +305,7 @@
 			]
 			description: [
 				"Plantas crescendo geram fonte."
+				"Antes, conclua: «Jarro de Fonte»"
 			]
 			id: "42B99261A58C3083"
 			rewards: [
@@ -332,6 +340,7 @@
 			]
 			description: [
 				"Fogo queimando também gera fonte."
+				"Antes, conclua: «Jarro de Fonte»"
 			]
 			id: "68CE1BBD5885122C"
 			rewards: [
@@ -366,6 +375,7 @@
 			]
 			description: [
 				"A forma mais simples de lançar um feitiço."
+				"Antes, conclua: «Mesa do Escriba»"
 			]
 			id: "1C77F090719FAA43"
 			rewards: [
@@ -400,6 +410,7 @@
 			]
 			description: [
 				"Feitiços que agem onde você toca."
+				"Antes, conclua: «Mesa do Escriba»"
 			]
 			id: "20CAA2E85C5212EB"
 			rewards: [
@@ -434,6 +445,7 @@
 			]
 			description: [
 				"Magia também minera."
+				"Antes, conclua: «Glifo: Toque»"
 			]
 			id: "4F8ED2D793738A4D"
 			rewards: [
@@ -470,6 +482,7 @@
 			description: [
 				"O primeiro feitiço de combate."
 				"Pede essência de terra e três espadas de ferro."
+				"Antes, conclua: «Glifo: Projétil», «Essências»"
 			]
 			id: "6D7E4DF824119D06"
 			rewards: [
@@ -505,6 +518,7 @@
 			description: [
 				"Mais forte. Mais alto. Mais ouvido."
 				"Pede uma picareta de diamante."
+				"Antes, conclua: «Glifo: Ferir»"
 			]
 			id: "5A0F1AD0FF8AB949"
 			rewards: [
@@ -539,6 +553,7 @@
 			]
 			description: [
 				"Luz mágica contra o escuro."
+				"Antes, conclua: «Glifo: Projétil»"
 			]
 			id: "5BB3CC36FB8C2201"
 			rewards: [
@@ -575,6 +590,7 @@
 			description: [
 				"Magia que fecha feridas."
 				"Pede essência de abjuração, melancias reluzentes e uma maçã dourada."
+				"Antes, conclua: «Glifo: Toque», «Essências»"
 			]
 			id: "6E87A011813ADB98"
 			rewards: [
@@ -611,6 +627,7 @@
 				"A câmara destila essências de fogo, abjuração e manipulação."
 				"Uma gema de fonte na câmara; os outros ingredientes em pedestais arcanos colados a ela."
 				"Cada essência gasta muita fonte: ponha jarros cheios por perto."
+				"Antes, conclua: «Pedestais Arcanos»"
 			]
 			id: "30303AD17F22B8CF"
 			rewards: [
@@ -664,6 +681,7 @@
 			description: [
 				"Criaturas da floresta selvagem. Seus restos são reagentes."
 				"Saem à noite dos covis de wilden nas florestas; o Defensor (espinho) só nos biomas frios."
+				"Antes, conclua: «O Livro do Aprendiz»"
 			]
 			id: "1D47418567BDC827"
 			rewards: [
@@ -718,6 +736,7 @@
 			description: [
 				"Mais páginas, mais glifos."
 				"Pede o livro novato, obsidiana, 3 diamantes, 2 blocos de quartzo e 2 varas de blaze."
+				"Antes, conclua: «Os Wilden», «Gemas de Fonte»"
 			]
 			id: "6D1D9092BF22B345"
 			rewards: [
@@ -764,6 +783,7 @@
 			]
 			description: [
 				"Rodeie o núcleo com pedestais."
+				"Antes, conclua: «Gemas de Fonte»"
 			]
 			id: "2652E73A164C1D64"
 			rewards: [
@@ -798,6 +818,7 @@
 			]
 			description: [
 				"O altar dos arcanistas de Aurend."
+				"Antes, conclua: «Essências»"
 			]
 			id: "656BB2D858B153F2"
 			rewards: [
@@ -842,6 +863,7 @@
 			]
 			description: [
 				"Uma luz que nunca se apaga."
+				"Antes, conclua: «Aparato de Encantamento»"
 			]
 			id: "43DC2ABEFCFD34D5"
 			rewards: [
@@ -877,6 +899,7 @@
 			description: [
 				"Flutuar sobre o Undergarden."
 				"A essência de ar leva pena, asa de wilden e flecha nos pedestais."
+				"Antes, conclua: «Aparato de Encantamento»"
 			]
 			id: "631205B9F4B9FBE7"
 			rewards: [
@@ -911,6 +934,7 @@
 			]
 			description: [
 				"Mais mana para quem toca alto."
+				"Antes, conclua: «Aparato de Encantamento»"
 			]
 			id: "696C11EB0017061B"
 			rewards: [
@@ -946,6 +970,7 @@
 			description: [
 				"Dê uma pepita de ouro a um starbuncle selvagem: ele some e deixa um token."
 				"No aparato, o token e 4 lingotes de ouro viram o amuleto. Ele carrega itens para você."
+				"Antes, conclua: «Aparato de Encantamento»"
 			]
 			id: "4E702F1EBC01FE4B"
 			rewards: [
@@ -981,6 +1006,7 @@
 			]
 			description: [
 				"Waystones exigem gema de fonte: viajar também é magia."
+				"Antes, conclua: «Gemas de Fonte», «Liga de Andesito» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "56599B9C4E618B26"
 			rewards: [
@@ -1016,6 +1042,7 @@
 			description: [
 				"Roupas que carregam glifos."
 				"A fibra vem da magebloom: as sementes saem do aparato (gemas de fonte e uma semente)."
+				"Antes, conclua: «Aparato de Encantamento»"
 			]
 			id: "3DD3A77927A3DB47"
 			rewards: [
@@ -1054,6 +1081,7 @@
 				"Toque baixo. Sempre baixo."
 				"Pede estrela do Nether (Wither), totem da imortalidade (evocadores) e o tributo wilden,"
 				"que cai da Quimera invocada pelo ritual de Invocar Wilden (com chifre, asa e espinho)."
+				"Antes, conclua: «Aparato de Encantamento», «Livro do Aprendiz Avançado»"
 			]
 			icon: {
 				Count: 1b

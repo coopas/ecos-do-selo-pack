@@ -21,6 +21,7 @@
 			]
 			description: [
 				"Uma voltagem nova, uma linha de máquinas nova."
+				"Antes, conclua: «Casco MV» (Ato II — Ecos Arcanos)"
 			]
 			icon: {
 				Count: 1b
@@ -55,6 +56,7 @@
 			]
 			description: [
 				"Mais subprodutos por minério."
+				"Antes, conclua: «Mais Voltagem»"
 			]
 			id: "480D7A7FDD1183EC"
 			rewards: [
@@ -89,6 +91,7 @@
 			]
 			description: [
 				"Água limpa o pó e revela o que estava escondido."
+				"Antes, conclua: «Mais Voltagem»"
 			]
 			id: "1264CD903D3146E3"
 			rewards: [
@@ -123,6 +126,7 @@
 			]
 			description: [
 				"Calor separa o que a água não separou."
+				"Antes, conclua: «Lavadora de Minério»"
 			]
 			id: "007AF4C9B109DE75"
 			rewards: [
@@ -157,6 +161,7 @@
 			]
 			description: [
 				"Mergulhe o minério em ácido."
+				"Antes, conclua: «Lavadora de Minério»"
 			]
 			id: "2525C9A5C8747F74"
 			rewards: [
@@ -191,6 +196,7 @@
 			]
 			description: [
 				"Reações mais rápidas."
+				"Antes, conclua: «Mais Voltagem»"
 			]
 			id: "3C420E452991D5C4"
 			rewards: [
@@ -225,6 +231,7 @@
 			]
 			description: [
 				"O primeiro plástico. Aurend embrulhava tudo nele."
+				"Antes, conclua: «Reator Químico MV»"
 			]
 			icon: {
 				Count: 1b
@@ -279,6 +286,7 @@
 			]
 			description: [
 				"Madeira e carvão viram gases úteis."
+				"Antes, conclua: «Mais Voltagem»"
 			]
 			id: "7452DEEC31FF3367"
 			rewards: [
@@ -314,6 +322,7 @@
 			description: [
 				"Separe o petróleo em mil coisas."
 				"Pede quatro circuitos EV: a estação de trabalho, montada dentro da sala limpa."
+				"Antes, conclua: «Sala Limpa»"
 			]
 			id: "320F3BBB1E6BB300"
 			rewards: [
@@ -348,6 +357,7 @@
 			]
 			description: [
 				"Quebre moléculas grandes em pequenas."
+				"Antes, conclua: «Torre de Destilação»"
 			]
 			id: "45A038A74326EBA4"
 			rewards: [
@@ -382,6 +392,7 @@
 			]
 			description: [
 				"Queime o gás de madeira (ou de carvão) que a pirólise solta."
+				"Antes, conclua: «Forno de Pirólise»"
 			]
 			id: "3F10FA70C7418A12"
 			rewards: [
@@ -416,6 +427,7 @@
 			]
 			description: [
 				"Luz que escreve em cristal."
+				"Antes, conclua: «Mais Voltagem»"
 			]
 			id: "2FD08345A18467D6"
 			rewards: [
@@ -452,6 +464,7 @@
 				"Mais calor para o alto-forno."
 				"O lingote pede 480 EU/t: com duas escotilhas de energia MV o alto-forno roda receitas HV."
 				"Ele sai quente; esfrie no banho químico com água."
+				"Antes, conclua: «Banho Químico»"
 			]
 			id: "4135848180A1AFF7"
 			rewards: [
@@ -487,6 +500,7 @@
 			description: [
 				"Não enferruja. Nunca."
 				"Também 480 EU/t no alto-forno, com as duas escotilhas MV."
+				"Antes, conclua: «Bobinas de Kanthal»"
 			]
 			icon: {
 				Count: 1b
@@ -542,6 +556,7 @@
 			]
 			description: [
 				"Alta voltagem."
+				"Antes, conclua: «Aço Inoxidável», «Polietileno»"
 			]
 			id: "2EBA76DAA7D05C80"
 			rewards: [
@@ -576,6 +591,7 @@
 			]
 			description: [
 				"O motor da alta tensão."
+				"Antes, conclua: «Casco HV»"
 			]
 			id: "4DE2CC7B35A822DE"
 			rewards: [
@@ -610,6 +626,7 @@
 			]
 			description: [
 				"Um cristal só, puro, para cortar em lâminas."
+				"Antes, conclua: «Bobinas de Kanthal»"
 			]
 			id: "0DDDF4134C827922"
 			rewards: [
@@ -644,6 +661,7 @@
 			]
 			description: [
 				"A base dos circuitos avançados."
+				"Antes, conclua: «Polietileno»"
 			]
 			id: "7F0CB2474259A8DA"
 			rewards: [
@@ -680,6 +698,7 @@
 			description: [
 				"Monte circuitos sem errar uma solda."
 				"Pede dois circuitos EV: a estação de trabalho, montada dentro da sala limpa."
+				"Antes, conclua: «Escotilha de Energia HV», «Emissor HV»"
 			]
 			id: "5673BD23150D24B1"
 			rewards: [
@@ -716,6 +735,7 @@
 			description: [
 				"Um pensamento do tamanho de uma unha."
 				"Sai da montadora de circuitos MV, que leva dois circuitos HV."
+				"Antes, conclua: «Circuito Integrado Avançado», «Placa de Circuito de Plástico»"
 			]
 			id: "6168813CAC00B0B5"
 			rewards: [
@@ -753,6 +773,7 @@
 				"O circuito da alta tensão."
 				"Sai da montadora de circuitos LV (ela leva dois circuitos MV), com chips ILC e RAM do gravador."
 				"O transistor pede placa de silício: o lingote sai do alto-forno a 2273 K, com bobinas de kanthal."
+				"Antes, conclua: «Monocristal de Silício», «Gravador a Laser»"
 			]
 			icon: {
 				Count: 1b
@@ -804,6 +825,7 @@
 			]
 			description: [
 				"Uma luz mais forte."
+				"Antes, conclua: «Circuito Integrado Avançado»"
 			]
 			id: "6C3450C699EA1C82"
 			rewards: [
@@ -841,6 +863,7 @@
 				"Um campo invisível, como o Selo."
 				"O fio supercondutor pede 3300 K: bobinas de nicromo. O olho quântico é um olho de ender banhado em radônio,"
 				"que o reator grande tira de plutônio e urânio do End."
+				"Antes, conclua: «Bobinas de Nicromo», «Reator Químico Grande»"
 			]
 			id: "6839F0B805BF3150"
 			rewards: [
@@ -877,6 +900,7 @@
 			description: [
 				"O calor que vem depois do titânio."
 				"O lingote pede 1920 EU/t (duas escotilhas HV no alto-forno) e sai quente: só o congelador a vácuo esfria."
+				"Antes, conclua: «Congelador a Vácuo», «Escotilha de Energia HV»"
 			]
 			id: "76F660B4641967AB"
 			rewards: [
@@ -912,6 +936,7 @@
 			description: [
 				"Cozinhe em massa."
 				"Pede três circuitos HV."
+				"Antes, conclua: «Circuito Integrado Avançado»"
 			]
 			id: "5763DA191BCB4A61"
 			rewards: [
@@ -947,6 +972,7 @@
 			description: [
 				"Esfrie lingotes quentes demais para tocar."
 				"Pede três circuitos EV: a estação de trabalho, montada dentro da sala limpa."
+				"Antes, conclua: «Sala Limpa»"
 			]
 			id: "02C93324FCEF7ABA"
 			rewards: [
@@ -983,6 +1009,7 @@
 			description: [
 				"Circuitos finos não suportam poeira."
 				"Com a montadora MV dentro dela, a estação de trabalho (circuito EV) fica possível."
+				"Antes, conclua: «Motor HV», «Microprocessador»"
 			]
 			id: "7411626F2F0248E0"
 			rewards: [
@@ -1018,6 +1045,7 @@
 			description: [
 				"Química em escala industrial."
 				"Leva canos grandes de PTFE e quatro circuitos HV."
+				"Antes, conclua: «PTFE»"
 			]
 			id: "0E9FA3DF1BFC242A"
 			rewards: [
@@ -1052,6 +1080,7 @@
 			]
 			description: [
 				"Um plástico mais resistente."
+				"Antes, conclua: «Reator Químico Grande»"
 			]
 			id: "6D0DB1C96A7839CB"
 			rewards: [
@@ -1087,6 +1116,7 @@
 			description: [
 				"Nada gruda nele."
 				"O tetrafluoretileno (clorofórmio e ácido fluorídrico) pede 240 EU/t: um reator químico HV."
+				"Antes, conclua: «Sala Limpa»"
 			]
 			id: "2CC3C02EB62D4C13"
 			rewards: [
@@ -1122,6 +1152,7 @@
 			description: [
 				"Pressione até virar gema."
 				"Pede três circuitos HV."
+				"Antes, conclua: «Circuito Integrado Avançado»"
 			]
 			id: "3D28381FBA3A8A9B"
 			rewards: [
@@ -1157,6 +1188,7 @@
 			]
 			description: [
 				"Mais gás, mais corrente."
+				"Antes, conclua: «Turbina a Gás MV», «Sala Limpa»"
 			]
 			id: "4BF15E1D2E7514C8"
 			rewards: [
@@ -1191,6 +1223,7 @@
 			]
 			description: [
 				"Guarde a alta tensão."
+				"Antes, conclua: «Casco HV»"
 			]
 			id: "391064FE54A70009"
 			rewards: [
@@ -1226,6 +1259,7 @@
 			description: [
 				"Alimente multiblocos em alta tensão."
 				"Montada a 480 EU/t (montadora HV), com chip LPIC cortado dentro da sala limpa e sódio-potássio (reator químico, 30 EU/t)."
+				"Antes, conclua: «Sala Limpa»"
 			]
 			id: "5B35F978F4F65FA1"
 			rewards: [
@@ -1260,6 +1294,7 @@
 			]
 			description: [
 				"Uma máquina que cava por você."
+				"Antes, conclua: «Sala Limpa»"
 			]
 			id: "32138F355C9C2A19"
 			rewards: [
@@ -1295,6 +1330,7 @@
 			description: [
 				"O metal das naves. Aurend olhava para cima."
 				"O kanthal já aquece o bastante; o lingote sai quente e só o congelador a vácuo esfria."
+				"Antes, conclua: «Congelador a Vácuo»"
 			]
 			icon: {
 				Count: 1b
@@ -1349,6 +1385,7 @@
 			]
 			description: [
 				"Extrema voltagem."
+				"Antes, conclua: «Titânio»"
 			]
 			id: "538290BD00840C93"
 			rewards: [
@@ -1383,6 +1420,7 @@
 			]
 			description: [
 				"Rápido como um pensamento."
+				"Antes, conclua: «Casco EV»"
 			]
 			id: "5DCADBCAAFB7BC55"
 			rewards: [
@@ -1419,6 +1457,7 @@
 			description: [
 				"Circuitos que só se veem no microscópio."
 				"A lâmina nano pede 1920 EU/t no reator grande (duas escotilhas HV), dentro da sala limpa."
+				"Antes, conclua: «Montadora de Circuitos HV», «Reator Químico Grande»"
 			]
 			id: "02D8BBC9D945596E"
 			rewards: [
@@ -1454,6 +1493,7 @@
 			]
 			description: [
 				"Também é parte da Bancada da NASA."
+				"Antes, conclua: «Motor EV», «Nanoprocessador»"
 			]
 			id: "23F53B04682CA0E5"
 			rewards: [
@@ -1489,6 +1529,7 @@
 			]
 			description: [
 				"Uma mão que monta foguetes."
+				"Antes, conclua: «Motor EV», «Nanoprocessador»"
 			]
 			id: "5602E440E458D2A0"
 			rewards: [
@@ -1526,6 +1567,7 @@
 			description: [
 				"As máquinas de Aurend nunca chegaram tão longe."
 				"Ou chegaram, e foram embora."
+				"Antes, conclua: «Emissor EV», «Braço Robótico EV», «Gerador de Campo HV»"
 			]
 			icon: {
 				Count: 1b

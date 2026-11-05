@@ -22,6 +22,7 @@
 			description: [
 				"Pó que brilha em ruínas e em magos caídos."
 				"Os magos de Aurend a chamavam de sobra do silêncio."
+				"Antes, conclua: «Ferrugem Vencida» (Ato I — Ferrugem e Engrenagens)"
 			]
 			icon: {
 				Count: 1b
@@ -62,6 +63,7 @@
 			]
 			description: [
 				"Pede uma placa de aço do GregTech. A magia se apoia na máquina."
+				"Antes, conclua: «Essência Arcana», «Aço» (Caminho — Vapor e Corrente)"
 			]
 			id: "1FC9B61516AB0B9D"
 			rewards: [
@@ -96,6 +98,7 @@
 			]
 			description: [
 				"Um livro simples, poucos espaços."
+				"Antes, conclua: «Mesa de Inscrição»"
 			]
 			id: "05D8981FF583777A"
 			rewards: [
@@ -130,6 +133,7 @@
 			]
 			description: [
 				"Pergaminhos de feitiço aparecem em ruínas. Inscreva-os no livro."
+				"Antes, conclua: «Essência Arcana»"
 			]
 			id: "63B93BEB5730228F"
 			rewards: [
@@ -165,6 +169,7 @@
 			description: [
 				"Crie seus próprios pergaminhos."
 				"A obsidiana chorona vem de bastiões, de portais em ruínas ou da troca com piglins."
+				"Antes, conclua: «Mesa de Inscrição»"
 			]
 			id: "7F493C84F09E679B"
 			rewards: [
@@ -199,6 +204,7 @@
 			]
 			description: [
 				"Para exibir o que você aprendeu."
+				"Antes, conclua: «Mesa de Inscrição»"
 			]
 			id: "006FBB5154268C71"
 			rewards: [
@@ -235,6 +241,7 @@
 				"Tintas e poções, misturadas em fogo baixo."
 				"Pede essência de cinzas: dos Cavaleiros Ancestrais (Cidadela e Posto da Legião, no Nether) e dos túmulos do Posto."
 				"O Eco de Tyros também solta, mas só vem se chamado na runa da Cidadela com o Convocador de Almas Cinosas."
+				"Antes, conclua: «Mesa de Inscrição»"
 			]
 			id: "726D372C9690B602"
 			rewards: [
@@ -269,6 +276,7 @@
 			]
 			description: [
 				"Mais páginas, mais feitiços."
+				"Antes, conclua: «Livro de Cobre»"
 			]
 			id: "7C42FC541D8FD555"
 			rewards: [
@@ -304,6 +312,7 @@
 			description: [
 				"Pedra pronta para receber uma escola de magia."
 				"Não tem receita: procure em baús de catacumbas, da Cidadela do Nether, de fortalezas e bibliotecas."
+				"Antes, conclua: «Mesa de Inscrição»"
 			]
 			id: "7EA77CB540D9AC54"
 			rewards: [
@@ -339,6 +348,7 @@
 			description: [
 				"A escola do fogo."
 				"Varas de blaze em volta de uma runa vazia. Piromantes, nas suas torres, deixam runas de fogo."
+				"Antes, conclua: «Runa Vazia»"
 			]
 			id: "601CD3A2C6BCE68C"
 			rewards: [
@@ -374,6 +384,7 @@
 			description: [
 				"A escola do gelo."
 				"Ossos congelados caem dos strays; criomantes deixam runas de gelo."
+				"Antes, conclua: «Runa Vazia»"
 			]
 			id: "03C0DDBC43DF6606"
 			rewards: [
@@ -409,6 +420,7 @@
 			description: [
 				"A escola da luz."
 				"A pérola divina é um lingote de ouro com uma ametista."
+				"Antes, conclua: «Runa Vazia»"
 			]
 			id: "26E11A8565EEC301"
 			rewards: [
@@ -443,6 +455,7 @@
 			]
 			description: [
 				"A escola do vazio."
+				"Antes, conclua: «Runa Vazia»"
 			]
 			id: "4D33498F2A728654"
 			rewards: [
@@ -478,6 +491,7 @@
 			description: [
 				"Um metal que só aparece muito fundo (y -63 a -38)."
 				"Só cede a picareta de netherita: detritos ancestrais do Nether, e o molde de melhoria dos bastiões."
+				"Antes, conclua: «Essência Arcana»"
 			]
 			id: "5A87C3A5D1D04BB2"
 			rewards: [
@@ -513,6 +527,7 @@
 			description: [
 				"Refine o mitril. Ele quase não pesa."
 				"No alto-forno o minério bruto vira sucata; quatro sucatas fazem um lingote."
+				"Antes, conclua: «Mitril»"
 			]
 			id: "221969A82F098527"
 			rewards: [
@@ -549,6 +564,7 @@
 				"Aprimore armaduras com o poder de uma escola."
 				"Pede 4 essências de cinzas (Cidadela e Posto da Legião, no Nether)"
 				"e 4 lingotes arcanos (8 essências arcanas cada)."
+				"Antes, conclua: «Lingote de Mitril»"
 			]
 			id: "324B284C2CE17C0C"
 			rewards: [
@@ -585,6 +601,7 @@
 			description: [
 				"Mais força para feitiços de fogo."
 				"Oito runas de fogo: caçar piromantes rende mais que abrir baús."
+				"Antes, conclua: «Orbe de Aprimoramento», «Runa de Fogo»"
 			]
 			id: "2C9DB2035BABBCD5"
 			rewards: [
@@ -620,6 +637,7 @@
 			description: [
 				"Mais mana para tudo."
 				"Oito runas arcanas, cada uma sobre uma runa vazia: guarde as que achar."
+				"Antes, conclua: «Orbe de Aprimoramento»"
 			]
 			id: "71928D8630DEDF61"
 			rewards: [
@@ -654,6 +672,7 @@
 			]
 			description: [
 				"Una feitiços a armas e aprimore livros."
+				"Antes, conclua: «Lingote de Mitril»"
 			]
 			id: "4D83276C595E3E40"
 			rewards: [
@@ -688,6 +707,7 @@
 			]
 			description: [
 				"Tecido que guarda mana nas fibras."
+				"Antes, conclua: «Essência Arcana»"
 			]
 			id: "189A16C8514D7506"
 			rewards: [
@@ -724,6 +744,7 @@
 			description: [
 				"Para quem conversa com o fogo."
 				"O peitoral de mago (8 tecidos mágicos) com uma runa de fogo e essência arcana."
+				"Antes, conclua: «Tecido Mágico», «Runa de Fogo»"
 			]
 			id: "6C7633E497BB5F3F"
 			rewards: [
@@ -758,6 +779,7 @@
 			]
 			description: [
 				"Um anel que respira mana."
+				"Antes, conclua: «Lingote de Mitril»"
 			]
 			id: "07BCBD99D38C6B72"
 			rewards: [
@@ -793,6 +815,7 @@
 			description: [
 				"Um livro digno de um arquimago."
 				"O couro vem dos hoglins do Nether."
+				"Antes, conclua: «Livro de Ferro»"
 			]
 			id: "56D335F7D074C394"
 			rewards: [
@@ -841,6 +864,7 @@
 			description: [
 				"O livro dos magos que ainda moravam em Aurend."
 				"Pede couro de hoglin, tecido mágico, diamantes e um livro encantado."
+				"Antes, conclua: «Livro de Ouro», «Bigorna Arcana»"
 			]
 			icon: {
 				Count: 1b

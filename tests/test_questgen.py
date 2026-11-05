@@ -44,6 +44,17 @@ def test_deps_resolve_local_and_cross_chapter():
     assert questgen.quest_id("a/x") in text and questgen.quest_id("b/y") in text
 
 
+def test_cross_chapter_deps_are_named_in_description():
+    """O FTB não desenha a linha de dependência entre capítulos: sem o aviso, a quest parece travada à toa."""
+    a = questgen.Chapter.from_dict({"chapter": "a", "title": "Caminho A", "icon": "minecraft:stone", "group": "atos",
+                                    "act": 0, "quests": [q("x", title="Engrenagem")]})
+    b = chapter([q("y", title="Bronze", deps=["a/x"]), q("z", deps=["y", "a/x"]), q("w")], slug="b")
+    text = questgen.build([a, b], {})["chapters/b.snbt"]
+    assert '"Antes, conclua: «Engrenagem» (Caminho A)"' in text
+    assert '"Antes, conclua: «Bronze», «Engrenagem» (Caminho A)"' in text   # mesmo capítulo vai sem o nome dele
+    assert text.count("Antes, conclua") == 2                                 # w não tem dependência
+
+
 def test_unknown_dep_raises():
     with pytest.raises(questgen.QuestError):
         questgen.build([chapter([q("y", deps=["nada"])])], {})

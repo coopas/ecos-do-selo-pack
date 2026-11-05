@@ -23,6 +23,7 @@
 				"Aprenda um item e ele vira número."
 				"Ilse aprendeu Aurend inteira assim."
 				"As peças do GregTech não têm EMC: não dá para aprendê-las."
+				"Antes, conclua: «A Pedra Filosofal» (Ato V — A Heresia)"
 			]
 			icon: {
 				Count: 1b
@@ -62,6 +63,7 @@
 			]
 			description: [
 				"Reparam o que a alquimia gasta."
+				"Antes, conclua: «A Pedra Filosofal» (Ato V — A Heresia)"
 			]
 			id: "5D59D14578F8D0D6"
 			rewards: [
@@ -114,6 +116,7 @@
 			]
 			description: [
 				"Combustível que nunca existiu na natureza."
+				"Antes, conclua: «A Pedra Filosofal» (Ato V — A Heresia)"
 			]
 			id: "39E1F7916C93D660"
 			rewards: [
@@ -157,6 +160,7 @@
 			]
 			description: [
 				"Queima por muito mais tempo do que deveria."
+				"Antes, conclua: «Carvão Alquímico»"
 			]
 			id: "5E0C5328D66CB0B4"
 			rewards: [
@@ -192,6 +196,7 @@
 			description: [
 				"Luz vira EMC. Devagar."
 				"Leva bloco de diamante (só sai do compressor do GregTech) e glowstone."
+				"Antes, conclua: «Mesa de Transmutação»"
 			]
 			id: "0A85D91E17A901CD"
 			rewards: [
@@ -226,6 +231,7 @@
 			]
 			description: [
 				"Junte o que os coletores juntaram."
+				"Antes, conclua: «Coletor de Energia»"
 			]
 			id: "36B5B81406C932FF"
 			rewards: [
@@ -261,6 +267,7 @@
 			description: [
 				"Uma bateria de EMC."
 				"Oito combustíveis de Möbius em volta de um diamante."
+				"Antes, conclua: «Carvão Alquímico»"
 			]
 			id: "498F936C53531A8D"
 			rewards: [
@@ -297,6 +304,7 @@
 			description: [
 				"Copia o que você colocar dentro. A que preço?"
 				"Um baú alquímico no meio, diamantes e obsidiana em volta."
+				"Antes, conclua: «Relé de Antimatéria», «Baú Alquímico»"
 			]
 			id: "7853F29590AB6401"
 			rewards: [
@@ -331,6 +339,7 @@
 			]
 			description: [
 				"Um baú que não pertence a este mundo."
+				"Antes, conclua: «Pós de Covalência»"
 			]
 			id: "70A9E60D3230AE4C"
 			rewards: [
@@ -365,6 +374,7 @@
 			]
 			description: [
 				"O baú no bolso. Qualquer cor."
+				"Antes, conclua: «Baú Alquímico»"
 			]
 			id: "3175552E9E9A600B"
 			rewards: [
@@ -404,6 +414,7 @@
 			description: [
 				"O que sobra quando a luz desiste."
 				"Oito aeternalis em volta de um bloco de diamante."
+				"Antes, conclua: «Combustível Aeternalis», «Condensador de Energia»"
 			]
 			icon: {
 				Count: 1b
@@ -455,6 +466,7 @@
 			]
 			description: [
 				"Quebra tudo. Quase tudo."
+				"Antes, conclua: «Matéria Escura»"
 			]
 			id: "1F71515C93A86724"
 			rewards: [
@@ -489,6 +501,7 @@
 			]
 			description: [
 				"Mais luz, mais EMC."
+				"Antes, conclua: «Matéria Escura»"
 			]
 			id: "746873B2DC7325CF"
 			rewards: [
@@ -523,6 +536,7 @@
 			]
 			description: [
 				"Ainda mais densa. Ainda mais errada."
+				"Antes, conclua: «Coletor MK2»"
 			]
 			icon: {
 				Count: 1b
@@ -574,6 +588,7 @@
 			]
 			description: [
 				"Guarda e teleporta, no mesmo dedo."
+				"Antes, conclua: «Matéria Vermelha»"
 			]
 			id: "66B3DB267E713BCF"
 			rewards: [
@@ -608,6 +623,7 @@
 			]
 			description: [
 				"Acelera o mundo ao redor."
+				"Antes, conclua: «Matéria Escura»"
 			]
 			id: "19D97C1DA56E590F"
 			rewards: [
@@ -643,6 +659,7 @@
 			description: [
 				"A mesa, no bolso."
 				"Quatro blocos de matéria escura (16 matérias) em volta da mesa."
+				"Antes, conclua: «Matéria Escura»"
 			]
 			id: "2405EBC065BBC996"
 			rewards: [
@@ -679,6 +696,7 @@
 			description: [
 				"Conte o que perdeu a cada troca."
 				"Ilse parou de contar."
+				"Antes, conclua: «Anel do Vazio», «Relógio do Tempo Fluente»"
 			]
 			icon: {
 				Count: 1b

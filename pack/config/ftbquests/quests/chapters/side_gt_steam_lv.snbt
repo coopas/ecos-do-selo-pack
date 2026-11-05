@@ -22,6 +22,7 @@
 			description: [
 				"Há árvores que sangram resina."
 				"Os Confluentes as plantavam perto das oficinas."
+				"Antes, conclua: «Lingotes» (Prólogo — O Despertar)"
 			]
 			icon: {
 				Count: 1b
@@ -62,6 +63,7 @@
 			description: [
 				"Resina: a matéria-prima da borracha."
 				"Seringueiras às vezes soltam resina ao quebrar; bola de slime derrete em resina."
+				"Antes, conclua: «Árvores que Sangram»"
 			]
 			id: "322AA6F7177A070B"
 			rewards: [
@@ -96,6 +98,7 @@
 			]
 			description: [
 				"Martelo, chave e lima: no GregTech, ferramentas viram ingredientes."
+				"Antes, conclua: «Lingotes» (Prólogo — O Despertar)"
 			]
 			icon: {
 				Count: 1b
@@ -152,6 +155,7 @@
 			]
 			description: [
 				"Serra, chave de fenda, alicate e pilão."
+				"Antes, conclua: «Ferramentas do Ofício»"
 			]
 			id: "2D91A802A8D702AA"
 			rewards: [
@@ -213,6 +217,7 @@
 			]
 			description: [
 				"O metal que conduz. Aurend era toda fiada em cobre."
+				"Antes, conclua: «Ferro na Mão» (Prólogo — O Despertar)"
 			]
 			id: "1467B2C3F3ED0F32"
 			rewards: [
@@ -250,6 +255,7 @@
 			]
 			description: [
 				"Mole, mas indispensável."
+				"Antes, conclua: «Ferro na Mão» (Prólogo — O Despertar)"
 			]
 			id: "00CBFADA64B60352"
 			rewards: [
@@ -289,6 +295,7 @@
 			]
 			description: [
 				"Três de cobre, um de estanho. A primeira liga da era do vapor."
+				"Antes, conclua: «Cobre», «Estanho», «Mais Ferramentas»"
 			]
 			icon: {
 				Count: 1b
@@ -330,6 +337,7 @@
 			]
 			description: [
 				"Argila e areia moldadas em tijolos resistentes."
+				"Antes, conclua: «Ferramentas do Ofício»"
 			]
 			id: "5CAEEE4123B872EF"
 			rewards: [
@@ -364,6 +372,7 @@
 			]
 			description: [
 				"Um forno de várias peças. Monte a estrutura 3×3×3."
+				"Antes, conclua: «Tijolos de Coque»"
 			]
 			id: "252D603078189971"
 			rewards: [
@@ -398,6 +407,7 @@
 			]
 			description: [
 				"Carvão purificado: queima mais quente e por mais tempo."
+				"Antes, conclua: «Forno de Coque»"
 			]
 			id: "44F5BA504FFC19E1"
 			rewards: [
@@ -432,6 +442,7 @@
 			]
 			description: [
 				"O forno de coque também solta creosoto. Trate a madeira."
+				"Antes, conclua: «Forno de Coque»"
 			]
 			id: "588DDA3B2A7F4A7F"
 			rewards: [
@@ -468,6 +479,7 @@
 			description: [
 				"Para conter um fogo ainda maior."
 				"Pó de argila e de tijolo (pilão), compactado no compressor a vapor, e fornalha."
+				"Antes, conclua: «Tijolos de Coque», «Compressor a Vapor»"
 			]
 			id: "668995E91AA5DDB8"
 			rewards: [
@@ -503,6 +515,7 @@
 			]
 			description: [
 				"Ferro e coque, horas de espera, e aço."
+				"Antes, conclua: «Tijolos Refratários», «Coque»"
 			]
 			id: "566E404A524131BD"
 			rewards: [
@@ -537,6 +550,7 @@
 			]
 			description: [
 				"O primeiro aço de verdade em séculos."
+				"Antes, conclua: «Alto-Forno Primitivo»"
 			]
 			icon: {
 				Count: 1b
@@ -593,6 +607,7 @@
 				"Ferro martelado até perder as impurezas."
 				"Pepita de ferro na fornalha vira pepita de ferro forjado;"
 				"o compressor a vapor junta nove num lingote. A alta pressão e o casco LV pedem."
+				"Antes, conclua: «Compressor a Vapor»"
 			]
 			id: "7F8A656586D183AE"
 			rewards: [
@@ -630,6 +645,7 @@
 			]
 			description: [
 				"Todas as máquinas a vapor nascem em bronze."
+				"Antes, conclua: «Bronze»"
 			]
 			id: "4C4AE65DF85224A8"
 			rewards: [
@@ -664,6 +680,7 @@
 			]
 			description: [
 				"Carvão em cima, água embaixo, vapor no meio."
+				"Antes, conclua: «Casco de Bronze»"
 			]
 			icon: {
 				Count: 1b
@@ -703,6 +720,7 @@
 			description: [
 				"Minério em pó: mais lingotes por minério."
 				"Pede 2 diamantes (veio fundo, y -55 a -30, ou a banca) e pistões (redstone)."
+				"Antes, conclua: «Caldeira a Vapor»"
 			]
 			id: "7A30AF6952A3DB71"
 			rewards: [
@@ -738,6 +756,7 @@
 			description: [
 				"Comprima pó em placas e blocos. Aqui só máquina faz bloco de lingotes."
 				"Os pistões pedem redstone: veio fundo no deepslate (y -65 a -10)."
+				"Antes, conclua: «Caldeira a Vapor»"
 			]
 			id: "59057F7C59625F28"
 			rewards: [
@@ -773,6 +792,7 @@
 			description: [
 				"Golpes que nenhum braço aguenta."
 				"Leva uma bigorna, e a bigorna daqui pede 5 blocos de ferro: compressor a vapor."
+				"Antes, conclua: «Ferro Forjado»"
 			]
 			id: "3341B7B4373BA09C"
 			rewards: [
@@ -808,6 +828,7 @@
 			description: [
 				"Ligas sem bater pó à mão."
 				"Também faz vidro: pó de vidro com molde de bloco (molde vazio = chapas de aço)."
+				"Antes, conclua: «Caldeira a Vapor»"
 			]
 			id: "5C06B8BDC6D30E29"
 			rewards: [
@@ -843,6 +864,7 @@
 			description: [
 				"Extraia borracha da resina."
 				"Leva um vidro, que aqui só sai do fundidor de ligas."
+				"Antes, conclua: «Caldeira a Vapor»"
 			]
 			id: "2491E2C3EEEFA3B4"
 			rewards: [
@@ -877,6 +899,7 @@
 			]
 			description: [
 				"Cozinha sem carvão na boca do forno."
+				"Antes, conclua: «Caldeira a Vapor»"
 			]
 			id: "56ACB37DE9C29382"
 			rewards: [
@@ -912,6 +935,7 @@
 			]
 			description: [
 				"Aço segura o vapor que o bronze não segura."
+				"Antes, conclua: «Aço», «Macerador a Vapor»"
 			]
 			id: "059CBB7EFBFDEADF"
 			rewards: [
@@ -959,6 +983,7 @@
 				"Placas de borracha isolam os fios."
 				"Borracha crua (resina no extrator) e enxofre viram barra no fundidor de ligas."
 				"Enxofre: veio do Nether (y 10 a 30). Prense a barra (Create) ou use molde de chapa."
+				"Antes, conclua: «Resina Pegajosa», «Extrator a Vapor», «O Andar de Baixo» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "2389D82AA56FE6BA"
 			rewards: [
@@ -994,6 +1019,7 @@
 			description: [
 				"Vidro soprado, frágil e essencial."
 				"Pó de vidro com molde de bola (de aço), no fundidor de ligas."
+				"Antes, conclua: «Fundidor de Ligas a Vapor»"
 			]
 			id: "29B32DE68510D2A0"
 			rewards: [
@@ -1030,6 +1056,7 @@
 			description: [
 				"A primeira lógica de Aurend era luz presa no vidro."
 				"Tubo de vidro, fio de cobre e parafusos de aço."
+				"Antes, conclua: «Tubo de Vidro», «Borracha»"
 			]
 			id: "39C87C5C6AD7F7BF"
 			rewards: [
@@ -1065,6 +1092,7 @@
 			description: [
 				"Segura a corrente para ela não queimar tudo."
 				"Leva papel: cana na prensa do Create (a bancada não faz mais papel)."
+				"Antes, conclua: «Borracha»"
 			]
 			id: "26FFA54C2C3695BF"
 			rewards: [
@@ -1100,6 +1128,7 @@
 			description: [
 				"Cobre e redstone: o metal que lembra eletricidade."
 				"Redstone: veio fundo (y -65 a -10) ou veio do Nether (y 5 a 40)."
+				"Antes, conclua: «Fundidor de Ligas a Vapor»"
 			]
 			id: "08BAA2CBAC004C68"
 			rewards: [
@@ -1138,6 +1167,7 @@
 			]
 			description: [
 				"Fio de liga vermelha e cabo de estanho isolado."
+				"Antes, conclua: «Liga Vermelha», «Borracha»"
 			]
 			id: "08C5B2FE54B221EB"
 			rewards: [
@@ -1183,6 +1213,7 @@
 			]
 			description: [
 				"Seu primeiro circuito. Aurend pensava assim."
+				"Antes, conclua: «Válvula Termiônica», «Resistor», «Fios e Cabos»"
 			]
 			icon: {
 				Count: 1b
@@ -1234,6 +1265,7 @@
 			]
 			description: [
 				"Baixa voltagem. O começo da eletricidade."
+				"Antes, conclua: «Fios e Cabos»"
 			]
 			id: "653209CB151DAECF"
 			rewards: [
@@ -1268,6 +1300,7 @@
 			]
 			description: [
 				"O coração de quase toda máquina."
+				"Antes, conclua: «Casco LV»"
 			]
 			id: "12B6F7B99A52C9CC"
 			rewards: [
@@ -1302,6 +1335,7 @@
 			]
 			description: [
 				"Mover líquidos, empurrar blocos."
+				"Antes, conclua: «Motor Elétrico LV»"
 			]
 			id: "5F668FC49FD2F7F8"
 			rewards: [
@@ -1346,6 +1380,7 @@
 			]
 			description: [
 				"O vapor das caldeiras vira corrente."
+				"Antes, conclua: «Casco LV», «Alta Pressão»"
 			]
 			id: "266EACDED2D8A66A"
 			rewards: [
@@ -1382,6 +1417,7 @@
 			description: [
 				"Macerador e fornalha elétricos."
 				"O macerador LV pede um diamante."
+				"Antes, conclua: «Motor Elétrico LV», «Circuito Básico»"
 			]
 			id: "02F4BD6EC6452232"
 			rewards: [
@@ -1425,6 +1461,7 @@
 			]
 			description: [
 				"Trefiladora, dobradeira e montadora."
+				"Antes, conclua: «Primeiras Máquinas LV»"
 			]
 			id: "4A0E849F2FC068D9"
 			rewards: [
@@ -1489,6 +1526,7 @@
 			]
 			description: [
 				"Um buffer de baterias segura a energia para a noite."
+				"Antes, conclua: «Turbina a Vapor LV»"
 			]
 			id: "5124E8EDE0B47D6D"
 			rewards: [
@@ -1526,6 +1564,7 @@
 			description: [
 				"Vapor e corrente. A ciência perdida está de volta."
 				"Agora as máquinas de Aurend podem girar de novo."
+				"Antes, conclua: «Oficina LV», «Bomba e Pistão LV», «Armazenar Corrente»"
 			]
 			icon: {
 				Count: 1b
@@ -1580,6 +1619,7 @@
 				"O vapor das caldeiras de bronze volta a girar eixos."
 				"Vapor do GregTech por cano: 32 RPM, até 1920 SU queimando 80 mB/t."
 				"Ele queima vapor mesmo sem nada ligado no eixo."
+				"Antes, conclua: «Caldeira a Vapor», «Eixo» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "07734A8ABCA9784C"
 			rewards: [
@@ -1618,6 +1658,7 @@
 				"Rotação do Create vira corrente, na face oposta ao eixo."
 				"ULV: 8 EU/t a partir de 64 RPM (metade a 32 RPM), pedindo 2048 SU."
 				"Leva fio de cobre, eixo do Create e casco ULV (ferro forjado e cabo de liga vermelha)."
+				"Antes, conclua: «Ferro Forjado», «Fios e Cabos», «Eixo» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "75F79B1487A0A061"
 			rewards: [
@@ -1655,6 +1696,7 @@
 				"32 EU/t a 64 RPM, mas pede 8192 SU: força de verdade."
 				"Motor a vapor do Create em caldeira com blaze (16384 SU): ≈ 64 EU/t. Com Motores do Eco, 5 ou mais."
 				"Cuidado: dínamo LV encostado em máquina ULV explode."
+				"Antes, conclua: «Motor Elétrico LV», «Eixo» (Caminho — Engrenagens de Aurend)"
 			]
 			id: "26BFD3ED2A43CE14"
 			rewards: [

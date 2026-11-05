@@ -22,6 +22,7 @@
 			description: [
 				"Alguém deixou uma banca montada entre as ruínas."
 				"Ela aceita ecos. Só ecos."
+				"Antes, conclua: «O Despertar» (Prólogo — O Despertar)"
 			]
 			id: "3451E5FF5CC72396"
 			rewards: [
@@ -48,6 +49,7 @@
 			]
 			description: [
 				"Carne seca de um tempo melhor."
+				"Antes, conclua: «A Banca do Eco»"
 			]
 			id: "3B3324D9D05BD410"
 			rewards: [
@@ -84,6 +86,7 @@
 			]
 			description: [
 				"Ferro de Aurend, ainda sem ferrugem."
+				"Antes, conclua: «A Banca do Eco»"
 			]
 			id: "27FDC6B0B04F2B98"
 			rewards: [
@@ -120,6 +123,7 @@
 			]
 			description: [
 				"Para quem vai longe."
+				"Antes, conclua: «A Banca do Eco»"
 			]
 			id: "7976E7D310087572"
 			rewards: [
@@ -157,6 +161,7 @@
 			]
 			description: [
 				"Lembranças que não são suas."
+				"Antes, conclua: «A Banca do Eco», «A Ciência Perdida» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "6AC317DC993F9AE4"
 			rewards: [
@@ -194,6 +199,7 @@
 			]
 			description: [
 				"Pedras que já foram engrenagens."
+				"Antes, conclua: «A Banca do Eco», «A Ciência Perdida» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "3E946415D6ABF97C"
 			rewards: [
@@ -231,6 +237,7 @@
 			]
 			description: [
 				"O que tem dentro? A banca não diz."
+				"Antes, conclua: «A Banca do Eco», «A Ciência Perdida» (Ato I — Ferrugem e Engrenagens)"
 			]
 			id: "32DCAB2C09F521A2"
 			rewards: [
@@ -271,6 +278,7 @@
 			]
 			description: [
 				"Mana cristalizado, ainda morno."
+				"Antes, conclua: «A Banca do Eco», «O Conhecimento Proibido» (Ato II — Ecos Arcanos)"
 			]
 			id: "699AC79C37FACA0F"
 			rewards: [
@@ -308,6 +316,7 @@
 			]
 			description: [
 				"Elas ainda lembram para onde ir."
+				"Antes, conclua: «A Banca do Eco», «O Conhecimento Proibido» (Ato II — Ecos Arcanos)"
 			]
 			id: "28C51B9EE17620BD"
 			rewards: [
@@ -345,6 +354,7 @@
 			]
 			description: [
 				"Alguém morreu para que você não morra."
+				"Antes, conclua: «A Banca do Eco», «Olhe Para Cima» (Ato III — Os Céus Partidos)"
 			]
 			id: "1AE855D3FC14162D"
 			rewards: [
@@ -382,6 +392,7 @@
 			]
 			description: [
 				"Do fundo das forjas de Ignaz."
+				"Antes, conclua: «A Banca do Eco», «Olhe Para Cima» (Ato III — Os Céus Partidos)"
 			]
 			id: "7773CA685799F914"
 			rewards: [
@@ -419,6 +430,7 @@
 			]
 			description: [
 				"Pesada. Algo se mexe lá dentro."
+				"Antes, conclua: «A Banca do Eco», «Olhe Para Cima» (Ato III — Os Céus Partidos)"
 			]
 			id: "03AECB4EF34CBB19"
 			rewards: [
@@ -459,6 +471,7 @@
 			]
 			description: [
 				"Brilha sem fazer barulho."
+				"Antes, conclua: «A Banca do Eco», «O Som Mais Perto» (Ato IV — Além do Véu)"
 			]
 			id: "3DD85A1E4A54622F"
 			rewards: [
@@ -496,6 +509,7 @@
 			]
 			description: [
 				"O metal que nem a Ruptura derreteu."
+				"Antes, conclua: «A Banca do Eco», «Fui Eu» (Ato V — A Heresia)"
 			]
 			id: "59567A446B0C6344"
 			rewards: [
@@ -533,6 +547,7 @@
 			]
 			description: [
 				"A banca hesita antes de entregar."
+				"Antes, conclua: «A Banca do Eco», «Fui Eu» (Ato V — A Heresia)"
 			]
 			id: "7AF1FEFEE85CD17E"
 			rewards: [
