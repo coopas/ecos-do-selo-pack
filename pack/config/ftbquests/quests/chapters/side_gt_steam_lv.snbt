@@ -1612,11 +1612,12 @@
 			dependencies: [
 				"7F8A656586D183AE"
 				"08C5B2FE54B221EB"
+				"6537293187BC0DCE"
 			]
 			description: [
 				"Rotação do Create vira corrente, na face oposta ao eixo."
 				"ULV: 8 EU/t a partir de 64 RPM (metade a 32 RPM), pedindo 2048 SU."
-				"O casco ULV leva ferro forjado e cabo de liga vermelha."
+				"Leva fio de cobre, eixo do Create e casco ULV (ferro forjado e cabo de liga vermelha)."
 			]
 			id: "75F79B1487A0A061"
 			rewards: [
@@ -1648,6 +1649,7 @@
 		{
 			dependencies: [
 				"12B6F7B99A52C9CC"
+				"6537293187BC0DCE"
 			]
 			description: [
 				"32 EU/t a 64 RPM, mas pede 8192 SU: força de verdade."

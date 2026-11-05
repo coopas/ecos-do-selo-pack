@@ -99,9 +99,9 @@ quests:
   - {slug: motor_vapor_eco, title: "Motor a Vapor do Eco", deps: [caldeira, side_create/eixo],
      desc: ["O vapor das caldeiras de bronze volta a girar eixos.", "Vapor do GregTech por cano: 32 RPM, até 1920 SU queimando 80 mB/t.", "Ele queima vapor mesmo sem nada ligado no eixo."],
      tasks: [{item: ecosmaquinas:motor_vapor}], rewards: [{coins: 3}]}
-  - {slug: dinamo_ulv, title: "Dínamo Cinético ULV", deps: [ferro_forjado, fios],
-     desc: ["Rotação do Create vira corrente, na face oposta ao eixo.", "ULV: 8 EU/t a partir de 64 RPM (metade a 32 RPM), pedindo 2048 SU.", "O casco ULV leva ferro forjado e cabo de liga vermelha."],
+  - {slug: dinamo_ulv, title: "Dínamo Cinético ULV", deps: [ferro_forjado, fios, side_create/eixo],
+     desc: ["Rotação do Create vira corrente, na face oposta ao eixo.", "ULV: 8 EU/t a partir de 64 RPM (metade a 32 RPM), pedindo 2048 SU.", "Leva fio de cobre, eixo do Create e casco ULV (ferro forjado e cabo de liga vermelha)."],
      tasks: [{item: ecosmaquinas:dinamo_cinetico_ulv}], rewards: [{coins: 3}]}
-  - {slug: dinamo_lv, title: "Dínamo Cinético LV", deps: [motor_lv],
+  - {slug: dinamo_lv, title: "Dínamo Cinético LV", deps: [motor_lv, side_create/eixo],
      desc: ["32 EU/t a 64 RPM, mas pede 8192 SU: força de verdade.", "Motor a vapor do Create em caldeira com blaze (16384 SU): ≈ 64 EU/t. Com Motores do Eco, 5 ou mais.", "Cuidado: dínamo LV encostado em máquina ULV explode."],
      tasks: [{item: ecosmaquinas:dinamo_cinetico_lv}], rewards: [{coins: 4}]}
