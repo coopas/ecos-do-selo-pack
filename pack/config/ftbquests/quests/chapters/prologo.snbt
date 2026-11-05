@@ -941,6 +941,7 @@
 			]
 			description: [
 				"Diamantes. Os Confluentes os usavam como rolamentos."
+				"Opcional: aqui eles moram no fundo do deepslate, junto da grafita e do carvão."
 			]
 			id: "5BE14EC2E28E8A76"
 			rewards: [
@@ -970,7 +971,7 @@
 			]
 			title: "Pedras que Brilham"
 			x: 13.5d
-			y: 0.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -978,6 +979,7 @@
 			]
 			description: [
 				"A mesa de encantamento fala uma língua que você quase entende."
+				"Opcional: sem pressa, os diamantes também se compram na banca a partir do Ato I."
 			]
 			id: "5670724EE7F5E85B"
 			rewards: [
@@ -1098,7 +1100,6 @@
 				"3CF154EC0E39A69A"
 				"262E4CA8A9D31297"
 				"25383A7A9F297BF8"
-				"5670724EE7F5E85B"
 				"1D15FE73D2EC2EE1"
 				"3C7320410AAD851E"
 			]
@@ -1147,8 +1148,8 @@
 				}
 			]
 			title: "Algo Está Ouvindo"
-			x: 16.5d
-			y: 0.0d
+			x: 13.5d
+			y: 0.75d
 		}
 	]
 	title: "Prólogo — O Despertar"
