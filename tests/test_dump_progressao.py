@@ -98,3 +98,15 @@ def test_inputs_filled_all_mods():
     ars = [r for r in todas if r["type"].startswith("ars_nouveau:")]
     assert ars
     assert sum(map(vazia, ars)) < 0.1 * len(ars), [r["id"] for r in ars if vazia(r)][:20]
+
+
+@pytest.mark.ingame
+def test_gt_vein_errors_empty():
+    import json
+    p = BUILD / "registry_dump.json"
+    if not p.exists():
+        pytest.skip("sem build/registry_dump.json (rode o boot dev)")
+    d = json.loads(p.read_text(encoding="utf-8"))
+    if "gt_vein_errors" not in d:
+        pytest.skip("dump sem gt_vein_errors (dump antigo)")
+    assert d["gt_vein_errors"] == []

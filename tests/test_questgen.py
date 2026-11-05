@@ -176,3 +176,14 @@ def test_legacy_id_keeps_old_ids():
     assert questgen.kill_tasks([moved])["minecraft:warden"] == [questgen.quest_id("a/x#t1")]
     assert questgen.kill_tasks([old])["minecraft:warden"] == [questgen.quest_id("a/x#t1")]
     assert questgen.quest_id("a/x") in old_files["chapters/a.snbt"]
+
+
+def test_published_ids_still_generated():
+    """Todo id publicado (quest/task/reward/capítulo/tabela) continua sendo gerado; sumir = jogadores perdem progresso."""
+    import re
+    published = {ln.strip() for ln in (Path(__file__).parent / "fixtures" / "published_ids.txt").read_text(encoding="utf-8").splitlines() if ln.strip()}
+    built = questgen.build(questgen.load_sources(), questgen.load_tables())
+    now = set()
+    for text in built.values():
+        now |= set(re.findall(r'\bid: "?([0-9A-F]{16})"?', text))
+    assert sorted(published - now) == []

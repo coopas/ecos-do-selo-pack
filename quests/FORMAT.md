@@ -18,3 +18,4 @@ Descoberto no jar (nomes de campo via `javap -v`) e **provado em jogo** pelo `qu
 - Task `kill`: `entity`, `value: NL` · `dimension`: `dimension` · `checkmark`.
 - Recompensas: `item` (`item`, `count`), `xp_levels`, `loot` (`table_id: <long>`).
 - **Ordem de carga:** o FTB Quests carrega as quests DEPOIS de `ServerEvents.loaded` (log "Loaded N chapter groups, X chapters, Y quests").
+- **Ids publicados:** `tests/fixtures/published_ids.txt` guarda os ids de quest/task/reward já entregues; remover uma linha dali faz os jogadores perderem progresso e precisa constar no relatório ("Perde progresso").

@@ -216,6 +216,10 @@ minecraft:the_end:
   - minecraft:dragon_head
   - minecraft:dragon_egg
   - {id: minecraft:dragon_breath, needs: [minecraft:glass_bottle]}
+  # Pó de pedra do End: occultism:crushing/end_stone_dust (#forge:end_stones -> #forge:dusts/end_stone, único membro
+  # occultism:crushed_end_stone), feito por um foliot triturador invocado no pentáculo summon_foliot
+  # (giz branco, tigela de sacrifício dourada, velas). O dump traz essa receita com saída barrier (tag), então é natural.
+  - {id: occultism:crushed_end_stone, needs: [occultism:golden_sacrificial_bowl, occultism:chalk_white]}
 
 twilightforest:twilight_forest:
   - twilightforest:twilight_oak_log

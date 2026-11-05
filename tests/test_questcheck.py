@@ -271,6 +271,8 @@ def test_real_pack_progress_runs():
     findings = questcheck.main_progress()
     assert time.time() - t < 120
     assert findings and all(f.level in ("erro", "aviso") for f in findings)
+    # a jornada do pack real não pode ter nenhum erro (avisos são esperados)
+    assert [str(f) for f in findings if f.level == "erro"] == []
 
 
 def test_real_progression_quests_exist():
