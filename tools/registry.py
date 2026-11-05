@@ -17,6 +17,9 @@ class Registry:
     block_tags: dict[str, set[str]] = field(default_factory=dict)
     dimensions: set[str] = field(default_factory=set)
     fluid_tags: dict[str, set[str]] = field(default_factory=dict)
+    pickaxe_tiers: dict[str, int] = field(default_factory=dict)  # 0 madeira/ouro, 1 pedra, 2 ferro, 3 diamante, 4 netherite
+    block_tiers: dict[str, int] = field(default_factory=dict)  # nível mínimo de picareta (tags needs_*_tool)
+    gt_veins: list[dict] = field(default_factory=list)  # {id, dims, min_y, max_y, weight, materials}
 
     def has_item(self, id_: str) -> bool:
         return id_ in self.items
@@ -52,4 +55,5 @@ def load(path: Path | str) -> Registry:
                     {k: set(v) for k, v in d["item_tags"].items()},
                     {k: set(v) for k, v in d.get("block_tags", {}).items()},
                     set(d.get("dimensions", [])),
-                    {k: set(v) for k, v in d.get("fluid_tags", {}).items()})
+                    {k: set(v) for k, v in d.get("fluid_tags", {}).items()},
+                    d.get("pickaxe_tiers", {}), d.get("block_tiers", {}), d.get("gt_veins", []))

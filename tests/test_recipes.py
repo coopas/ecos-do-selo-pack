@@ -53,3 +53,23 @@ def test_real_dump_reads_record_recipes():
         found = rec.for_output(f"ad_astra:tier_{tier}_rocket")
         assert found, f"foguete T{tier} sem receita no dump"
         assert any(r["inputs"] for r in found), f"foguete T{tier} sem ingredientes"
+
+
+def test_old_dump_gets_defaults_for_new_fields():
+    r = recipes.load(DUMP).by_id("minecraft:white_bed")
+    assert r["fluid_inputs"] == [] and r["fluid_outputs"] == []
+    assert r["eut"] == 0 and r["ebf_temp"] == 0
+
+
+def test_fluid_producers(tmp_path):
+    import json
+    p = tmp_path / "d.json"
+    p.write_text(json.dumps({"recipes": [
+        {"id": "gtceu:distillery/x", "type": "gtceu:distillery", "outputs": [], "inputs": [],
+         "fluid_inputs": [["minecraft:water"]], "fluid_outputs": ["gtceu:distilled_water"], "eut": 16, "ebf_temp": 0},
+        {"id": "minecraft:stick", "type": "minecraft:crafting_shaped", "outputs": ["minecraft:stick"], "inputs": []},
+    ]}))
+    rec = recipes.load(p)
+    assert [r["id"] for r in rec.fluid_producers("gtceu:distilled_water")] == ["gtceu:distillery/x"]
+    assert rec.fluid_producers("minecraft:lava") == []
+    assert rec.by_id("gtceu:distillery/x")["eut"] == 16

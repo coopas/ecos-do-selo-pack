@@ -4,20 +4,32 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 
+# Campos opcionais por receita: fluid_inputs (slots de alternativas), fluid_outputs, eut (EU/t de entrada), ebf_temp.
+_DEFAULTS = {"fluid_inputs": [], "fluid_outputs": [], "eut": 0, "ebf_temp": 0}
+
+
 @dataclass
 class Recipes:
     all: list[dict] = field(default_factory=list)
 
     def __post_init__(self):
         self._by_out: dict[str, list[dict]] = {}
+        self._by_fluid_out: dict[str, list[dict]] = {}
         self._by_id: dict[str, dict] = {}
         for r in self.all:
+            for k, v in _DEFAULTS.items():  # dumps antigos (fixtures) não têm os campos do GregTech
+                r.setdefault(k, type(v)())
             self._by_id[r["id"]] = r
             for o in r["outputs"]:
                 self._by_out.setdefault(o, []).append(r)
+            for f in r["fluid_outputs"]:
+                self._by_fluid_out.setdefault(f, []).append(r)
 
     def for_output(self, item_id: str) -> list[dict]:
         return self._by_out.get(item_id, [])
+
+    def fluid_producers(self, fluid_id: str) -> list[dict]:
+        return self._by_fluid_out.get(fluid_id, [])
 
     def by_id(self, recipe_id: str) -> dict | None:
         return self._by_id.get(recipe_id)
