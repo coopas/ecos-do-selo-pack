@@ -49,7 +49,7 @@
 			]
 			title: "O Círculo de Giz"
 			x: 0.0d
-			y: -0.75d
+			y: -1.5d
 		}
 		{
 			dependencies: [

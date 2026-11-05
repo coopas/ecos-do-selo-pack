@@ -66,7 +66,7 @@
 			]
 			title: "Olhe Para Cima"
 			x: 0.0d
-			y: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -100,7 +100,7 @@
 			]
 			title: "Pedra de Luz"
 			x: 1.5d
-			y: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -160,7 +160,7 @@
 			]
 			title: "A Chave Celeste"
 			x: 3.0d
-			y: 0.0d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -208,7 +208,7 @@
 			]
 			title: "O Aether"
 			x: 4.5d
-			y: -0.75d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -242,7 +242,7 @@
 			]
 			title: "Raiz do Céu"
 			x: 6.0d
-			y: -4.5d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -276,7 +276,7 @@
 			]
 			title: "Pedra Sagrada"
 			x: 6.0d
-			y: -3.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -310,7 +310,7 @@
 			]
 			title: "Ambrósio"
 			x: 7.5d
-			y: -6.75d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -344,7 +344,7 @@
 			]
 			title: "Zanita"
 			x: 7.5d
-			y: -5.25d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -378,7 +378,7 @@
 			]
 			title: "Picareta de Zanita"
 			x: 9.0d
-			y: -3.75d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -413,7 +413,7 @@
 			]
 			title: "Altar"
 			x: 9.0d
-			y: -2.25d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -456,7 +456,7 @@
 			]
 			title: "Congelador e Incubadora"
 			x: 9.0d
-			y: -0.75d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -499,7 +499,7 @@
 			]
 			title: "Nuvens Sólidas"
 			x: 6.0d
-			y: -1.5d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -533,7 +533,7 @@
 			]
 			title: "Paraquedas Dourado"
 			x: 7.5d
-			y: -3.75d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -567,7 +567,7 @@
 			]
 			title: "Anel de Zanita"
 			x: 9.0d
-			y: 0.75d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -601,7 +601,7 @@
 			]
 			title: "Os Swets"
 			x: 6.0d
-			y: 0.0d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -650,7 +650,7 @@
 			]
 			title: "O Deslizador"
 			x: 10.5d
-			y: -1.5d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -684,7 +684,7 @@
 			]
 			title: "Chave de Bronze"
 			x: 12.0d
-			y: -3.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -728,7 +728,7 @@
 			]
 			title: "Gravitita"
 			x: 10.5d
-			y: 0.0d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -761,8 +761,8 @@
 				}
 			]
 			title: "Picareta de Gravitita"
-			x: 12.0d
-			y: -1.5d
+			x: 13.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -796,7 +796,7 @@
 			]
 			title: "As Valquírias"
 			x: 12.0d
-			y: 0.0d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -844,7 +844,7 @@
 			]
 			title: "A Rainha Valquíria"
 			x: 13.5d
-			y: -0.75d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -878,7 +878,7 @@
 			]
 			title: "Chave de Prata"
 			x: 15.0d
-			y: -0.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -947,7 +947,7 @@
 			]
 			title: "Solenne, a Chama Votiva"
 			x: 15.0d
-			y: 0.75d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -981,7 +981,7 @@
 			]
 			title: "Chave de Ouro"
 			x: 16.5d
-			y: -1.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -1038,7 +1038,7 @@
 			]
 			title: "O Fragmento dos Céus"
 			x: 16.5d
-			y: 0.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1095,7 +1095,7 @@
 			]
 			title: "Os Outros Dois Céus"
 			x: 4.5d
-			y: 0.75d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1142,7 +1142,7 @@
 			]
 			title: "Everbright"
 			x: 6.0d
-			y: 1.5d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -1189,7 +1189,7 @@
 			]
 			title: "Everdawn"
 			x: 6.0d
-			y: 3.0d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1233,7 +1233,7 @@
 			]
 			title: "Madeiras dos Céus"
 			x: 7.5d
-			y: -2.25d
+			y: 6.75d
 		}
 		{
 			dependencies: [
@@ -1267,7 +1267,7 @@
 			]
 			title: "Pedra Turquesa"
 			x: 7.5d
-			y: -0.75d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -1301,7 +1301,7 @@
 			]
 			title: "Horizonita"
 			x: 7.5d
-			y: 0.75d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -1335,7 +1335,7 @@
 			]
 			title: "Forja do Horizonte"
 			x: 9.0d
-			y: 2.25d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -1378,7 +1378,7 @@
 			]
 			title: "Piropo"
 			x: 7.5d
-			y: 2.25d
+			y: 5.25d
 		}
 		{
 			dependencies: [
@@ -1421,7 +1421,7 @@
 			]
 			title: "Aquita"
 			x: 9.0d
-			y: 3.75d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1454,8 +1454,8 @@
 				}
 			]
 			title: "Falsita"
-			x: 7.5d
-			y: 3.75d
+			x: 9.0d
+			y: 10.25d
 		}
 		{
 			dependencies: [
@@ -1489,7 +1489,7 @@
 			]
 			title: "Vêntio"
 			x: 7.5d
-			y: 5.25d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -1523,7 +1523,7 @@
 			]
 			title: "Pedra da Lua"
 			x: 7.5d
-			y: 6.75d
+			y: 10.25d
 		}
 		{
 			dependencies: [
@@ -1567,7 +1567,7 @@
 			]
 			title: "Diopsídio e Charoíta"
 			x: 10.5d
-			y: 1.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1615,7 +1615,7 @@
 			]
 			title: "O Invocador"
 			x: 12.0d
-			y: 1.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -1663,7 +1663,7 @@
 			]
 			title: "O Esmagador Estelar"
 			x: 12.0d
-			y: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1697,7 +1697,7 @@
 			]
 			title: "Fragmentos de Alma"
 			x: 13.5d
-			y: 0.75d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -1727,7 +1727,7 @@
 			]
 			title: "A Rede no Céu"
 			x: 6.0d
-			y: 4.5d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -1757,7 +1757,7 @@
 			]
 			title: "Titânio Sob o Sol"
 			x: 16.5d
-			y: 1.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -1811,8 +1811,8 @@
 				}
 			]
 			title: "O Silêncio Empurra Para Cima"
-			x: 18.0d
-			y: 0.0d
+			x: 19.5d
+			y: 2.5d
 		}
 	]
 	title: "Ato III — Os Céus Partidos"

@@ -108,8 +108,9 @@ def test_auto_layout_by_dependency_depth():
         quest.pop("x", None)
         quest.pop("y", None)
     pos = questgen.layout(c)
-    assert pos["a"][0] < pos["b"][0] == pos["c"][0] < pos["d"][0]
-    assert pos["b"][1] != pos["c"][1]
+    # coluna = profundidade local (GRID por coluna); y contínuo, irmãos separados por pelo menos uma quest
+    assert [pos[s][0] for s in "abcd"] == [0, questgen.GRID, questgen.GRID, 2 * questgen.GRID]
+    assert abs(pos["b"][1] - pos["c"][1]) >= 1.4
 
 
 def test_explicit_position_wins():

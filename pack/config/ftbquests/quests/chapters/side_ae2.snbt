@@ -344,7 +344,7 @@
 			]
 			title: "Três Processadores"
 			x: 6.0d
-			y: -0.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -378,7 +378,7 @@
 			]
 			title: "Cabos de Fluix"
 			x: 6.0d
-			y: 0.75d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -412,7 +412,7 @@
 			]
 			title: "Aceitador de Energia"
 			x: 7.5d
-			y: 0.0d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -466,7 +466,7 @@
 			]
 			title: "O Controlador"
 			x: 9.0d
-			y: 0.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -500,7 +500,7 @@
 			]
 			title: "Unidade de Armazenamento"
 			x: 10.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -534,7 +534,7 @@
 			]
 			title: "Terminal"
 			x: 10.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -568,7 +568,7 @@
 			]
 			title: "Célula 1k"
 			x: 12.0d
-			y: -0.75d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -601,8 +601,8 @@
 				}
 			]
 			title: "Célula 4k"
-			x: 13.5d
-			y: -0.75d
+			x: 15.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -635,8 +635,8 @@
 				}
 			]
 			title: "Célula 16k"
-			x: 15.0d
-			y: -1.5d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -687,8 +687,8 @@
 				}
 			]
 			title: "Barramentos"
-			x: 10.5d
-			y: 1.5d
+			x: 16.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -722,7 +722,7 @@
 			]
 			title: "Terminal de Criação"
 			x: 12.0d
-			y: 0.75d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -765,7 +765,7 @@
 			]
 			title: "Padrões"
 			x: 13.5d
-			y: 0.75d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -808,7 +808,7 @@
 			]
 			title: "Montador Molecular"
 			x: 15.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -851,7 +851,7 @@
 			]
 			title: "CPU de Criação"
 			x: 16.5d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -885,7 +885,7 @@
 				}
 			]
 			title: "Terminal Sem Fio"
-			x: 15.0d
+			x: 16.5d
 			y: 1.5d
 		}
 		{
@@ -936,7 +936,7 @@
 			]
 			title: "A Rede Que Lembra"
 			x: 18.0d
-			y: 0.0d
+			y: 0.75d
 		}
 	]
 	title: "Caminho — A Rede Que Lembra"
