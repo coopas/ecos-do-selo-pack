@@ -22,10 +22,21 @@ VARIANTS = ROOT / "quests" / "variant_tags.yaml"
 
 
 def _flatten(naturals: dict, reg) -> set[str]:
+    """naturals.yaml por dimensão: entrada "<item>", "#tag", "fluid:<id>" (ignorada) ou {id, needs, tier} (usa o id).
+    Os minérios do GregTech saíram do arquivo: entram aqui os itens dos veios (gt_veins), sem trava de dimensão/nível."""
     out = set()
-    for items in naturals.values():
-        for i in items or []:
+    for entries in naturals.values():
+        for e in entries or []:
+            i = e["id"] if isinstance(e, dict) else e
+            if i.startswith("fluid:"):
+                continue
             out |= reg.tag_items(i) if i.startswith("#") else {i}
+    for v in reg.gt_veins:
+        for m in v["materials"]:
+            for prefix in ("raw_materials", "gems", "dusts"):
+                if reg.tag_items(f"forge:{prefix}/{m}"):
+                    out |= reg.tag_items(f"forge:{prefix}/{m}")
+                    break
     return out
 
 

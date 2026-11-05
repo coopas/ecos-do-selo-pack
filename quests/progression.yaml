@@ -1,0 +1,193 @@
+# Dados de progressão para o motor de fecho (tools/closure.py) e o verificador de quests.
+# As fontes do mundo ficam em naturals.yaml; os minérios do GregTech vêm dos veios do dump (gt_veins).
+
+# Dimensão -> quest ("capitulo/slug") que a libera. O Overworld está sempre aberto.
+# Regra: a quest de visitar a dimensão (task `dimension:`) — quem depende dela já esteve lá. Aether e Blue Skies
+# exigem a Chave Celeste no inventário (pack/kubejs/ecos/travel.json), então abrem pela quest da chave.
+# O End não tem quest nem trava: abre junto com o Nether (olhos do fim = pérola + pó de blaze).
+# As órbitas abrem com o planeta (o foguete passa por elas). Pocket dimension e spatial storage não têm fontes.
+dimension_unlocks:
+  minecraft:the_nether: ato1/nether
+  minecraft:the_end: ato1/nether
+  twilightforest:twilight_forest: ato1/twilight
+  undergarden:undergarden: ato2/undergarden
+  deeperdarker:otherside: ato2/otherside
+  aether:the_aether: ato3/chave
+  blue_skies:everbright: ato3/chave
+  blue_skies:everdawn: ato3/chave
+  ad_astra:earth_orbit: side_space/orbita
+  ad_astra:moon: side_space/lua
+  ad_astra:moon_orbit: side_space/lua
+  ad_astra:mars: side_space/marte
+  ad_astra:mars_orbit: side_space/marte
+  ad_astra:venus: side_space/venus
+  ad_astra:venus_orbit: side_space/venus
+  ad_astra:mercury: side_space/mercurio
+  ad_astra:mercury_orbit: side_space/mercurio
+  ad_astra:glacio: side_space/glacio
+  ad_astra:glacio_orbit: side_space/glacio
+
+# Tipos de receita sempre disponíveis (bancada, à mão, no mundo). Aceita curinga (fnmatch).
+manual_types:
+  - minecraft:crafting_*
+  - minecraft:smithing_transform
+  - minecraft:smithing_trim
+  - kubejs:*
+  - gtceu:crafting_*
+  - blue_skies:*                       # ferramentas do Blue Skies (bancada)
+  - tombstone:disableable_shaped
+  - tombstone:disableable_shapeless
+  - tombstone:enchanted_grave_key
+  - sophisticatedbackpacks:*
+  - sophisticatedcore:*
+  - projecte:*                          # bancada com a Pedra Filosofal / estrelas de Klein
+  - occultism:crafting_special_book_binding
+  - twilightforest:magic_map_cloning_recipe
+  - twilightforest:maze_map_cloning_recipe
+  - twilightforest:moonworm_queen_repair_recipe
+  - twilightforest:transformation_powder  # usar o pó no mob
+  - ars_nouveau:armor_upgrade
+  - ars_nouveau:book_upgrade
+  - ars_nouveau:dye
+  - ars_nouveau:potion_flask
+  - ars_nouveau:budding_conversion      # no mundo
+  - aether:placement_conversion         # no mundo
+  - aether:swet_ball_conversion         # no mundo
+  - aether:swet_banner
+  - ae2:facade
+  - ae2:transform                       # itens jogados na água / explosão
+  - create:item_application             # clique com o item no bloco
+  - create:item_copying
+  - create:sandpaper_polishing
+  - create:toolbox_dyeing
+
+# Tipos que não produzem item de verdade (proibições, munição, trocas fixas, loot).
+ignored_types:
+  - aether:block_placement_ban
+  - aether:item_placement_ban
+  - ae2:matter_cannon
+  - ars_nouveau:caster_tome
+  - ars_nouveau:dispel_entity
+  - tombstone:receptacle_capturable_type
+  - gtceu:steam_boiler                  # combustível de caldeira
+  - gtceu:large_boiler
+  - gtceu:combustion_generator          # combustível de gerador (só EU)
+  - gtceu:gas_turbine
+  - gtceu:steam_turbine
+  - gtceu:plasma_generator
+
+# Tipo -> itens da máquina (um basta). Tipos gtceu:<x> sem entrada aqui resolvem por nome (ver closure.py).
+# A rotação do Create e a energia do Ad Astra/AE2 não são modeladas: basta ter a máquina.
+machines:
+  minecraft:smelting: [minecraft:furnace, gtceu:lp_steam_furnace, gtceu:hp_steam_furnace]
+  minecraft:blasting: [minecraft:blast_furnace]
+  minecraft:smoking: [minecraft:smoker]
+  minecraft:campfire_cooking: [minecraft:campfire, minecraft:soul_campfire]
+  minecraft:stonecutting: [minecraft:stonecutter]
+  create:compacting: [create:mechanical_press]
+  create:crushing: [create:crushing_wheel]
+  create:cutting: [create:mechanical_saw]
+  create:deploying: [create:deployer]
+  create:emptying: [create:item_drain]
+  create:filling: [create:spout]
+  create:haunting: [create:encased_fan]
+  create:splashing: [create:encased_fan]
+  create:mechanical_crafting: [create:mechanical_crafter]
+  create:milling: [create:millstone]
+  create:mixing: [create:mechanical_mixer]
+  create:pressing: [create:mechanical_press]
+  create:sequenced_assembly: [create:deployer]
+  createdieselgenerators:basin_fermenting: [create:basin]
+  createdieselgenerators:bulk_fermenting: [createdieselgenerators:bulk_fermenter]
+  createdieselgenerators:casting: [createdieselgenerators:mold]
+  createdieselgenerators:compression_molding: [createdieselgenerators:mold]
+  createdieselgenerators:distillation: [createdieselgenerators:distillation_controller]
+  createdieselgenerators:hammering: [createdieselgenerators:hammer]
+  createdieselgenerators:wire_cutting: [createdieselgenerators:wire_cutters]
+  ad_astra:alloying: [ad_astra:etrionic_blast_furnace]
+  ad_astra:compressing: [ad_astra:compressor]
+  ad_astra:cryo_freezing: [ad_astra:cryo_freezer]
+  ad_astra:nasa_workbench: [ad_astra:nasa_workbench]
+  ad_astra:oxygen_loading: [ad_astra:oxygen_loader]
+  ad_astra:refining: [ad_astra:fuel_refinery]
+  ad_astra:space_station_recipe: [ad_astra:tier_1_rocket]
+  ae2:charger: [ae2:charger]
+  ae2:entropy: [ae2:entropy_manipulator]
+  ae2:inscriber: [ae2:inscriber]
+  aether:enchanting: [aether:altar]
+  aether:ambrosium_enchanting: [aether:altar]
+  aether:freezing: [aether:freezer]
+  aether:accessory_freezable: [aether:freezer]
+  aether:icestone_freezable: [aether:freezer]
+  aether:incubation: [aether:incubator]
+  ars_nouveau:crush: [ars_nouveau:novice_spell_book]
+  ars_nouveau:enchanting_apparatus: [ars_nouveau:enchanting_apparatus]
+  ars_nouveau:enchantment: [ars_nouveau:enchanting_apparatus]
+  ars_nouveau:reactive_enchantment: [ars_nouveau:enchanting_apparatus]
+  ars_nouveau:glyph: [ars_nouveau:scribes_table]
+  ars_nouveau:spell_write: [ars_nouveau:scribes_table]
+  ars_nouveau:imbuement: [ars_nouveau:imbuement_chamber]
+  ars_nouveau:scry_ritual: [ars_nouveau:ritual_brazier]
+  ars_nouveau:summon_ritual: [ars_nouveau:ritual_brazier]
+  cataclysm:amethyst_bless: [cataclysm:altar_of_amethyst]
+  cataclysm:weapon_fusion: [cataclysm:mechanical_fusion_anvil]
+  irons_spellbooks:alchemist_cauldron_brew: [irons_spellbooks:alchemist_cauldron]
+  irons_spellbooks:alchemist_cauldron_empty: [irons_spellbooks:alchemist_cauldron]
+  irons_spellbooks:alchemist_cauldron_fill: [irons_spellbooks:alchemist_cauldron]
+  occultism:crushing: [occultism:golden_sacrificial_bowl]   # espírito triturador invocado em ritual
+  occultism:ritual: [occultism:golden_sacrificial_bowl]
+  occultism:spirit_trade: [occultism:golden_sacrificial_bowl]
+  occultism:miner: [occultism:dimensional_mineshaft]
+  occultism:spirit_fire: [minecraft:flint_and_steel]        # fogo espiritual aceso sobre o item
+  twilightforest:crumble_horn: [twilightforest:crumble_horn]
+  twilightforest:uncrafting: [twilightforest:uncrafting_table]
+  waystones:warp_plate: [waystones:warp_plate]
+  # GregTech cujo nome da máquina não bate com o tipo
+  gtceu:rock_breaker: [gtceu:lp_steam_rock_crusher, gtceu:hp_steam_rock_crusher, gtceu:lv_rock_crusher,
+                       gtceu:mv_rock_crusher, gtceu:hv_rock_crusher, gtceu:ev_rock_crusher]
+
+# Lido do jar (gtceu-1.20.1-7.5.3, SimpleSteamMachine.recipeModifier): a máquina a vapor recusa receita com
+# RecipeHelper.getRecipeEUtTier(recipe) > LV (1); LP e HP só mudam a duração (LP x2). Logo o teto é V[LV] = 32.
+steam_max_eut: {lp: 32, hp: 32}
+
+# Fontes de EU: máquina elétrica do GregTech só conta no fecho com uma destas alcançada.
+eu_sources:
+  - ecosmaquinas:dinamo_cinetico_ulv
+  - ecosmaquinas:dinamo_cinetico_lv
+  - gtceu:lv_steam_turbine
+  - gtceu:mv_steam_turbine
+  - gtceu:hv_steam_turbine
+  - gtceu:lv_combustion
+  - gtceu:mv_combustion
+  - gtceu:hv_combustion
+  - gtceu:lv_gas_turbine
+  - gtceu:mv_gas_turbine
+  - gtceu:hv_gas_turbine
+  - gtceu:ulv_solar_panel
+  - gtceu:lv_solar_panel
+  - gtceu:mv_solar_panel
+  - gtceu:hv_solar_panel
+  - gtceu:ev_solar_panel
+  - gtceu:iv_solar_panel
+  - gtceu:luv_solar_panel
+  - gtceu:zpm_solar_panel
+  - gtceu:uv_solar_panel
+  - gtceu:steam_large_turbine
+  - gtceu:gas_large_turbine
+  - gtceu:plasma_large_turbine
+  - gtceu:large_combustion_engine
+  - gtceu:extreme_combustion_engine
+
+# Bobina -> temperatura (CoilBlock$CoilType do jar). Receita com ebf_temp só entra com bobina >= ela.
+coils:
+  gtceu:cupronickel_coil_block: 1800
+  gtceu:kanthal_coil_block: 2700
+  gtceu:nichrome_coil_block: 3600
+  gtceu:rtm_alloy_coil_block: 4500
+  gtceu:hssg_coil_block: 5400
+  gtceu:naquadah_coil_block: 7200
+  gtceu:trinium_coil_block: 9001
+  gtceu:tritanium_coil_block: 10800
+
+# Veio com max_y < 0 antes deste ato vira aviso "difícil cedo demais" (diamante no fundo do deepslate).
+deep_ok_from_act: 1

@@ -1,25 +1,69 @@
-# Itens obtidos SEM receita (mundo, mobs, loot). O validador aceita um item de task se ele tem receita no dump,
-# está aqui, é drop de chefe (boss_drops.json) ou é recompensa de uma quest anterior. "#tag" expande a tag inteira.
-terreno:
+# Fontes do mundo (sem receita): terreno, plantas, mobs, loot e minérios que NÃO são do GregTech.
+# Formato: chave = dimensão (minecraft:overworld, minecraft:the_nether, …) ou `qualquer` (vale em toda dimensão
+# aberta); valor = lista de entradas, cada uma:
+#   "<item>"              item que se pega direto no mundo
+#   "#tag"                todos os itens da tag
+#   "fluid:<id>"          fluido que se pega no mundo (fluid:#tag também vale)
+#   {id: ..., needs: [itens, um basta], tier: 0..4}
+#                         só conta com um dos itens de `needs` no fecho e/ou picareta de nível >= tier
+#                         (0 madeira/ouro, 1 pedra, 2 ferro, 3 diamante, 4 netherite; nível do bloco = block_tiers)
+# Os minérios do GregTech (inclusive ferro, ouro, cobre, carvão, diamante, redstone, lapis, esmeralda e quartzo,
+# que o GT tira do worldgen vanilla) NÃO entram aqui: vêm dos veios do dump (gt_veins) com o nível de picareta dos
+# blocos de minério (tools/closure.py). A dimensão só abre com a quest de progression.yaml (dimension_unlocks).
+qualquer:
+  - fluid:minecraft:water
+  - irons_spellbooks:arcane_essence      # loot de estruturas e mobs do Iron's
+  - irons_spellbooks:scroll              # loot
+  - ecos:eco_do_arauto                   # morte do Arauto do Eco (40_ecos_final_boss.js)
+  - {id: ecos:selo_restaurado, needs: [ecos:eco_do_arauto]}   # usar o Eco do Arauto
+  - {id: ecos:poder_absorvido, needs: [ecos:eco_do_arauto]}   # usar o Eco do Arauto agachado
+
+minecraft:overworld:
+  # terreno
   - minecraft:dirt
   - minecraft:grass_block
   - minecraft:sand
   - minecraft:red_sand
   - minecraft:gravel
-  - minecraft:clay_ball
-  - minecraft:cobblestone
-  - minecraft:cobbled_deepslate
-  - minecraft:stone
-  - minecraft:deepslate
-  - minecraft:netherrack
-  - minecraft:obsidian
   - minecraft:flint
-  - minecraft:ice
+  - minecraft:clay_ball
   - minecraft:snowball
-  - minecraft:end_stone
-plantas:
-  - "#minecraft:logs"
-  - "#minecraft:saplings"
+  - minecraft:ice
+  - minecraft:moss_block
+  - minecraft:mud
+  - {id: minecraft:cobblestone, tier: 0}
+  - {id: minecraft:stone, tier: 0}
+  - {id: minecraft:cobbled_deepslate, tier: 0}
+  - {id: minecraft:deepslate, tier: 0}
+  - {id: minecraft:andesite, tier: 0}
+  - {id: minecraft:diorite, tier: 0}
+  - {id: minecraft:granite, tier: 0}
+  - {id: minecraft:calcite, tier: 0}
+  - {id: minecraft:tuff, tier: 0}
+  - {id: minecraft:dripstone_block, tier: 0}
+  - {id: minecraft:pointed_dripstone, tier: 0}
+  - {id: gtceu:marble, tier: 0}          # bolhas de pedra do GT (stone_blob)
+  - {id: gtceu:red_granite, tier: 0}
+  - {id: minecraft:obsidian, tier: 3}    # lava + água; picareta de diamante
+  - {id: minecraft:amethyst_shard, tier: 0}   # geodos
+  - fluid:minecraft:lava
+  # plantas
+  - "#minecraft:oak_logs"
+  - "#minecraft:birch_logs"
+  - "#minecraft:spruce_logs"
+  - "#minecraft:jungle_logs"
+  - "#minecraft:acacia_logs"
+  - "#minecraft:dark_oak_logs"
+  - "#minecraft:mangrove_logs"
+  - "#minecraft:cherry_logs"
+  - minecraft:oak_sapling
+  - minecraft:birch_sapling
+  - minecraft:spruce_sapling
+  - minecraft:jungle_sapling
+  - minecraft:acacia_sapling
+  - minecraft:dark_oak_sapling
+  - minecraft:mangrove_propagule
+  - minecraft:cherry_sapling
   - "#minecraft:leaves"
   - "#minecraft:flowers"
   - minecraft:wheat_seeds
@@ -32,27 +76,26 @@ plantas:
   - minecraft:beetroot
   - minecraft:apple
   - minecraft:sweet_berries
+  - minecraft:glow_berries
+  - minecraft:cocoa_beans
   - minecraft:kelp
+  - minecraft:seagrass
+  - minecraft:lily_pad
   - minecraft:bamboo
   - minecraft:cactus
   - minecraft:vine
   - minecraft:red_mushroom
   - minecraft:brown_mushroom
-  - minecraft:nether_wart
-  - minecraft:chorus_fruit
-minerios:
-  - "#forge:raw_materials"
-  - "#forge:ores"
-  - "#forge:gems"
-  - minecraft:coal
-  - minecraft:diamond
-  - minecraft:emerald
-  - minecraft:redstone
-  - minecraft:lapis_lazuli
-  - minecraft:quartz
-  - minecraft:amethyst_shard
-  - minecraft:ancient_debris
-mob_drops:
+  - minecraft:honeycomb
+  - {id: minecraft:honey_bottle, needs: [minecraft:glass_bottle]}
+  - gtceu:rubber_log                     # seringueira (worldgen do GT)
+  - gtceu:rubber_sapling
+  - gtceu:sticky_resin                   # extraída da seringueira
+  - "#forge:logs/archwood"               # Ars Nouveau
+  - ars_nouveau:magebloom
+  - occultism:datura_seeds
+  - occultism:datura
+  # mobs (vale também para os mesmos mobs em outras dimensões)
   - minecraft:rotten_flesh
   - minecraft:bone
   - minecraft:string
@@ -60,146 +103,261 @@ mob_drops:
   - minecraft:gunpowder
   - minecraft:ender_pearl
   - minecraft:leather
+  - minecraft:rabbit_hide
+  - minecraft:rabbit_foot
   - minecraft:feather
   - minecraft:egg
   - minecraft:beef
   - minecraft:porkchop
   - minecraft:chicken
   - minecraft:mutton
+  - minecraft:rabbit
   - minecraft:cod
   - minecraft:salmon
+  - minecraft:tropical_fish
+  - minecraft:pufferfish
   - minecraft:ink_sac
+  - minecraft:glow_ink_sac
   - minecraft:slime_ball
-  - minecraft:blaze_rod
-  - minecraft:ghast_tear
-  - minecraft:magma_cream
   - minecraft:phantom_membrane
-  - minecraft:wither_skeleton_skull
-  - minecraft:nether_star
-  - minecraft:echo_shard
-  - minecraft:shulker_shell
-  - minecraft:dragon_breath
   - minecraft:white_wool
-  - deeperdarker:heart_of_the_deep
-  - deeperdarker:warden_carapace         # drop do Warden (Deeper and Darker)
-baldes:
+  - minecraft:prismarine_shard
+  - minecraft:prismarine_crystals
+  - minecraft:nautilus_shell
+  - minecraft:scute
   - minecraft:water_bucket
   - minecraft:lava_bucket
-  - minecraft:milk_bucket
-twilight:
-  - twilightforest:naga_scale        # drop da Naga
-  - twilightforest:naga_trophy
-  - twilightforest:lich_trophy
-  - twilightforest:liveroot          # raízes da Twilight
-  - twilightforest:torchberries
-  - twilightforest:raven_feather
-  - twilightforest:transformation_powder   # loot da Twilight
-  - twilightforest:charm_of_life_1
-  - "#minecraft:saplings"
-gregtech_mundo:
-  - gtceu:rubber_log                 # seringueira (worldgen do GT)
-  - gtceu:rubber_sapling
-  - gtceu:sticky_resin               # extraída da seringueira
-create_mundo:
-  - create:blaze_burner              # blaze capturado com o Queimador Vazio
-  - create:raw_zinc
-magia_mundo:
-  - irons_spellbooks:arcane_essence      # loot de estruturas e mobs do Iron's
-  - occultism:datura_seeds
-  - occultism:datura
-  - occultism:iesnium_ore_natural        # Otherworld (visto com óculos)
-  - occultism:otherstone_natural
-  - ars_nouveau:magebloom
-  - "#forge:logs/archwood"
-profundezas:
-  - minecraft:sculk
-  - minecraft:sculk_sensor
-  - minecraft:sculk_catalyst
-  - minecraft:sculk_shrieker
-  - deeperdarker:resonarium
-  - deeperdarker:echo_log
-  - deeperdarker:heart_of_the_deep
-  - deeperdarker:warden_carapace         # drop do Warden (Deeper and Darker)
-magia_criaturas:
+  - {id: minecraft:milk_bucket, needs: [minecraft:bucket]}
   - ars_nouveau:wilden_horn              # drops dos Wilden
   - ars_nouveau:wilden_spike
   - ars_nouveau:wilden_wing
   - ars_nouveau:starbuncle_charm         # criaturas capturadas
   - ars_nouveau:whirlisprig_charm
   - ars_nouveau:wixie_charm
-  - irons_spellbooks:raw_mithril         # minério de mitril
-  - irons_spellbooks:arcane_debris
-  - irons_spellbooks:scroll              # loot
-  - occultism:tallow                     # faca de açougueiro
-undergarden_mundo:
-  - undergarden:gloomgourd
-  - undergarden:ditchbulb
+  - {id: occultism:tallow, needs: [occultism:butcher_knife]}
+  # Deep Dark (cidades antigas)
+  - minecraft:sculk
+  - minecraft:sculk_vein
+  - minecraft:sculk_sensor
+  - minecraft:sculk_catalyst
+  - minecraft:sculk_shrieker
+  - minecraft:echo_shard
+  - deeperdarker:heart_of_the_deep       # Warden (Deeper and Darker)
+  - deeperdarker:warden_carapace
+  # minérios e cristais que não são do GregTech
+  - {id: create:raw_zinc, tier: 2}       # minério de zinco do Create
+  - {id: occultism:raw_silver, tier: 0}  # minério de prata do Occultism
+  - {id: irons_spellbooks:raw_mithril, tier: 4}
+  - {id: irons_spellbooks:arcane_debris, tier: 4}
+  - ae2:certus_quartz_crystal            # brotos de certus nos meteoritos
+  - ae2:flawed_budding_quartz
+  - {id: ae2:sky_stone_block, tier: 2}
+  # Otherworld do Occultism (visto com os óculos ou com o Sonho do Demônio)
+  - {id: occultism:iesnium_ore_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
+  - {id: occultism:otherstone_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
+  - {id: occultism:otherworld_log_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
+  - fluid:gtceu:oil                      # brotos de petróleo do GT
+  - {id: fluid:createdieselgenerators:crude_oil, needs: [createdieselgenerators:pumpjack_head]}
+
+minecraft:the_nether:
+  - {id: minecraft:netherrack, tier: 0}
+  - {id: minecraft:basalt, tier: 0}
+  - {id: minecraft:blackstone, tier: 0}
+  - minecraft:soul_sand
+  - minecraft:soul_soil
+  - minecraft:gravel
+  - minecraft:glowstone_dust
+  - {id: minecraft:magma_block, tier: 0}
+  - "#minecraft:crimson_stems"
+  - "#minecraft:warped_stems"
+  - minecraft:crimson_fungus
+  - minecraft:warped_fungus
+  - minecraft:shroomlight
+  - minecraft:nether_wart
+  - fluid:minecraft:lava
+  - minecraft:lava_bucket
+  - {id: minecraft:ancient_debris, tier: 3}  # o GT não tira o ancient debris do worldgen
+  - {id: minecraft:crying_obsidian, tier: 3}
+  - minecraft:gold_nugget                # piglins zumbis
+  - minecraft:blaze_rod
+  - minecraft:ghast_tear
+  - minecraft:magma_cream
+  - minecraft:wither_skeleton_skull
+  - {id: minecraft:nether_star, needs: [minecraft:wither_skeleton_skull]}
+  - minecraft:wither_rose
+  - {id: create:blaze_burner, needs: [create:empty_blaze_burner]}  # blaze capturado
+  - cataclysm:burning_ashes              # drop do Ignited Revenant; também craftável de dying_ember
+  - cataclysm:ignitium_ingot             # drop do Ignis
+  - cataclysm:altar_of_fire              # Arena Ardente
+
+minecraft:the_end:
+  - {id: minecraft:end_stone, tier: 0}
+  - minecraft:chorus_fruit
+  - minecraft:chorus_flower
+  - minecraft:shulker_shell
+  - minecraft:elytra
+  - minecraft:dragon_head
+  - minecraft:dragon_egg
+  - {id: minecraft:dragon_breath, needs: [minecraft:glass_bottle]}
+
+twilightforest:twilight_forest:
+  - twilightforest:twilight_oak_log
+  - twilightforest:canopy_log
+  - twilightforest:mangrove_log
+  - twilightforest:dark_log
+  - twilightforest:twilight_oak_sapling
+  - twilightforest:canopy_sapling
+  - twilightforest:mangrove_sapling
+  - twilightforest:darkwood_sapling
+  - twilightforest:rainbow_oak_sapling
+  - twilightforest:hollow_oak_sapling
+  - twilightforest:liveroot              # raízes da Twilight
+  - twilightforest:root_strand
+  - twilightforest:torchberries
+  - twilightforest:raven_feather
+  - twilightforest:arctic_fur
+  - twilightforest:naga_scale            # drop da Naga
+  - twilightforest:naga_trophy
+  - twilightforest:lich_trophy
+  - twilightforest:transformation_powder # loot da Twilight
+  - twilightforest:charm_of_life_1
+
+undergarden:undergarden:
+  - {id: undergarden:depthrock, tier: 0}
+  - {id: undergarden:shiverstone, tier: 0}
   - undergarden:smogstem_log
   - undergarden:wigglewood_log
-  - undergarden:depthrock
+  - undergarden:grongle_log
+  - undergarden:smogstem_sapling
+  - undergarden:wigglewood_sapling
+  - undergarden:grongle_sapling
+  - undergarden:gloomgourd
+  - undergarden:ditchbulb
   - undergarden:underbeans               # arbusto de underbean
   - undergarden:blisterberry             # arbusto de blisterberry
-otherside_mundo:
+  - undergarden:blood_mushroom
+  - undergarden:indigo_mushroom
+  - undergarden:ink_mushroom
+  - undergarden:veil_mushroom
+  - undergarden:brute_tusk
+  - undergarden:masticator_scales
+  - minecraft:coal                       # minérios de depthrock/shiverstone (não são do GT)
+  - {id: minecraft:raw_iron, tier: 1}
+  - {id: minecraft:raw_gold, tier: 2}
+  - {id: minecraft:diamond, tier: 2}
+  - {id: undergarden:raw_cloggrum, tier: 1}
+  - {id: undergarden:raw_froststeel, tier: 2}
+  - {id: undergarden:utherium_crystal, tier: 2}
+  - {id: undergarden:regalium_crystal, tier: 2}
+
+deeperdarker:otherside:
+  - deeperdarker:echo_log
+  - deeperdarker:resonarium
   - deeperdarker:sculk_bone
   - deeperdarker:soul_dust
   - deeperdarker:soul_crystal
-aether_mundo:
+  - {id: deeperdarker:gloomslate, tier: 0}
+  - {id: deeperdarker:sculk_stone, tier: 0}
+  - minecraft:coal                       # minérios de gloomslate/sculk stone (não são do GT)
+  - {id: minecraft:raw_copper, tier: 1}
+  - {id: minecraft:raw_iron, tier: 1}
+  - {id: minecraft:lapis_lazuli, tier: 1}
+  - {id: minecraft:raw_gold, tier: 2}
+  - {id: minecraft:redstone, tier: 2}
+  - {id: minecraft:emerald, tier: 2}
+  - {id: minecraft:diamond, tier: 2}
+
+aether:the_aether:
   - aether:skyroot_log
-  - aether:holystone
-  - aether:ambrosium_shard
-  - aether:zanite_gemstone
-  - aether:gravitite_ore
+  - aether:golden_oak_log
+  - aether:skyroot_sapling
+  - aether:golden_oak_sapling
+  - {id: aether:holystone, tier: 0}
+  - aether:quicksoil
+  - {id: aether:icestone, tier: 0}
+  - aether:golden_amber
+  - aether:aechor_petal
+  - aether:blue_aercloud
+  - aether:cold_aercloud
+  - aether:golden_aercloud
+  - {id: aether:ambrosium_shard, tier: 0}
+  - {id: aether:zanite_gemstone, tier: 1}
+  - {id: aether:gravitite_ore, tier: 2}
   - aether:aerogel                       # lava + ar do Aether
   - aether:swet_ball                     # drop dos Swets
   - aether:victory_medal                 # drop das Valquírias
   - aether:bronze_dungeon_key            # drop do Slider
   - aether:silver_dungeon_key            # drop da Rainha Valquíria
   - aether:gold_dungeon_key              # drop do Sun Spirit
-  - aether:blue_aercloud
-  - aether:cold_aercloud
-  - aether:golden_aercloud
-blue_skies_mundo:
-  - blue_skies:lunar_log
+
+# Blue Skies: os minérios de gema existem nas duas dimensões (variantes everbright_/everdawn_); falsite,
+# horizonite e ventium foram postos nas duas por simplificação (abrem pela mesma quest).
+blue_skies:everbright:
   - blue_skies:bluebright_log
   - blue_skies:starlit_log
   - blue_skies:frostbright_log
-  - blue_skies:dusk_log
   - blue_skies:maple_log
-  - blue_skies:turquoise_stone
-  - blue_skies:lunar_stone
-  - blue_skies:raw_horizonite
-  - blue_skies:pyrope_gem
-  - blue_skies:aquite
-  - blue_skies:diopside_gem
-  - blue_skies:charoite
-  - blue_skies:moonstone
-  - blue_skies:raw_falsite
-  - blue_skies:raw_ventium
+  - {id: blue_skies:turquoise_stone, tier: 0}
+  - {id: blue_skies:pyrope_gem, tier: 1}
+  - {id: blue_skies:aquite, tier: 1}
+  - {id: blue_skies:diopside_gem, tier: 2}
+  - {id: blue_skies:charoite, tier: 2}
+  - {id: blue_skies:moonstone, tier: 0}
+  - {id: minecraft:emerald, tier: 2}
+  - {id: blue_skies:raw_falsite, tier: 1}
+  - {id: blue_skies:raw_horizonite, tier: 1}
+  - {id: blue_skies:raw_ventium, tier: 1}
   - blue_skies:soul_fragment
   - blue_skies:summoner_trophy           # drop do Invocador
   - blue_skies:starlit_crusher_trophy    # drop do Esmagador Estelar
   - blue_skies:loot_bag_summoner
   - blue_skies:loot_bag_starlit_crusher
-ae2_mundo:
-  - ae2:certus_quartz_crystal            # brotos de certus em meteoritos
-  - ae2:sky_stone_block
-  - ae2:flawed_budding_quartz
-  - ae2:meteorite_compass
-espaco_mundo:
-  - ad_astra:raw_desh                    # Lua
-  - ad_astra:cheese                      # Lua
-  - ad_astra:ice_shard
+
+blue_skies:everdawn:
+  - blue_skies:lunar_log
+  - blue_skies:dusk_log
+  - blue_skies:maple_log
+  - {id: blue_skies:lunar_stone, tier: 0}
+  - {id: blue_skies:pyrope_gem, tier: 1}
+  - {id: blue_skies:aquite, tier: 1}
+  - {id: blue_skies:diopside_gem, tier: 2}
+  - {id: blue_skies:charoite, tier: 2}
+  - {id: blue_skies:moonstone, tier: 0}
+  - {id: minecraft:emerald, tier: 2}
+  - {id: blue_skies:raw_falsite, tier: 1}
+  - {id: blue_skies:raw_horizonite, tier: 1}
+  - {id: blue_skies:raw_ventium, tier: 1}
+  - blue_skies:soul_fragment
+
+# Ad Astra: os planetas não têm veios do GT; os minérios são os do próprio mod (sem tag de nível no dump -> 0).
+ad_astra:moon:
+  - {id: ad_astra:raw_desh, tier: 0}
+  - {id: ad_astra:cheese, tier: 0}
+  - {id: ad_astra:ice_shard, tier: 0}
+  - {id: minecraft:raw_iron, tier: 0}
   - ad_astra:moon_sand
-  - ad_astra:raw_ostrum                  # Marte
+  - {id: ad_astra:moon_stone, tier: 0}
+ad_astra:mars:
+  - {id: ad_astra:raw_ostrum, tier: 0}
+  - {id: minecraft:diamond, tier: 2}
+  - {id: minecraft:raw_iron, tier: 0}
+  - {id: ad_astra:ice_shard, tier: 0}
   - ad_astra:mars_sand
-  - ad_astra:raw_calorite                # Vênus
+  - {id: ad_astra:mars_stone, tier: 0}
+ad_astra:venus:
+  - {id: ad_astra:raw_calorite, tier: 0}
+  - {id: minecraft:coal, tier: 0}
+  - {id: minecraft:diamond, tier: 0}
+  - {id: minecraft:raw_gold, tier: 2}
   - ad_astra:venus_sand
-  - ad_astra:glacio_stone
-cataclysm_mundo:
-  - cataclysm:burning_ashes              # drop do Ignited Revenant; também craftável de dying_ember
-  - cataclysm:ignitium_ingot             # drop do Ignis
-  - cataclysm:altar_of_fire              # Arena Ardente, no Nether
-final:
-  - ecos:eco_do_arauto                   # morte do Arauto do Eco (40_ecos_final_boss.js)
-  - ecos:selo_restaurado                 # usar o Eco do Arauto
-  - ecos:poder_absorvido                 # usar o Eco do Arauto agachado
+  - {id: ad_astra:venus_stone, tier: 0}
+ad_astra:mercury:
+  - {id: minecraft:raw_iron, tier: 0}
+  - {id: ad_astra:mercury_stone, tier: 0}
+ad_astra:glacio:
+  - {id: minecraft:coal, tier: 0}
+  - {id: minecraft:raw_copper, tier: 0}
+  - {id: minecraft:raw_iron, tier: 0}
+  - {id: minecraft:lapis_lazuli, tier: 2}
+  - {id: ad_astra:ice_shard, tier: 0}
+  - {id: ad_astra:glacio_stone, tier: 0}
