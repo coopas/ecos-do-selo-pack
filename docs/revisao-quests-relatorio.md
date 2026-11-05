@@ -1,11 +1,15 @@
 # Revisão das quests — relatório de mudanças
 
-Revisão quest por quest, na ordem do jogador (Task 6 de `docs/superpowers/specs/2026-11-04-revisao-quests-design.md`).
-Fontes conferidas no dump de receitas/registro do jogo (`build/recipe_dump.json`, `build/registry_dump.json`).
+Revisamos as 511 quests, capítulo por capítulo, na ordem em que o jogador as encontra (Task 6 de `docs/superpowers/specs/2026-11-04-revisao-quests-design.md`).
+Em cada uma, primeiro o verificador (`tools/questcheck.py`) mostra se o item dá para fazer com o que o jogador já tem; depois lemos a quest como o jogador: se o pedido cabe no ato, se a mecânica escondida aparece e se a descrição diz onde achar.
+Os fatos foram conferidos no dump de receitas e registro do jogo (`build/recipe_dump.json`, `build/registry_dump.json`) e nos jars dos mods.
+Ninguém perde progresso, salvo o que estiver listado em "Perde progresso" logo abaixo.
 
 ## Perde progresso
 
-Nenhuma quest.
+Nenhuma quest: nenhuma foi removida, nenhum slug mudou e nada foi movido sem `legacy_id`.
+
+Movidas com `legacy_id` (progresso mantido): `ato4/campo_luv` → `ato5/campo_luv` (`legacy_id: ato4/campo_luv`).
 
 ## Prólogo (`00_prologo`)
 
@@ -43,7 +47,7 @@ Revisadas sem mudança: 35 quests.
 
 | quest | problema | correção |
 |---|---|---|
-| `side_create/liga` | Liga de andesito pede pepitas; as de ferro só a serra do GregTech corta do lingote. | Descrição aponta o atalho: lingote de zinco vira 9 pepitas à mão e a liga aceita zinco. |
+| `side_create/liga` | Liga de andesito pede pepitas, e o lingote de ferro não vira pepita à mão: só a serra do GregTech corta, ou se derrete uma pá de ferro (`minecraft:iron_nugget_from_smelting`). A descrição dizia que as pepitas "só" saíam da serra. | Descrição aponta o atalho (lingote de zinco vira 9 pepitas à mão e a liga aceita zinco) e os dois caminhos da pepita de ferro. |
 | `side_create/oculos` | Óculos pedem vidro; aqui o vidro só sai do fundidor de ligas do GregTech com molde de bloco (molde = chapas de aço). | Dependências novas em `side_gt_steam_lv/ligas_vapor` e `side_gt_steam_lv/aco` (entre capítulos) e descrição. |
 | `side_create/chave_inglesa` | Chapas de ouro antes da prensa: só com o martelo do GregTech. | Descrição diz isso. |
 | `side_create/prensa` | A prensa pede bloco de ferro, que só sai de máquina (compressor a vapor). Abria antes do jogador ter como fazer. | Dependência nova em `side_gt_steam_lv/compressor_vapor` (entre capítulos) e descrição. |
@@ -127,7 +131,7 @@ Revisadas sem mudança: 14 quests.
 
 ## Caminho — Pergaminhos e Runas (`22_side_irons`)
 
-Conferido no jar do Iron's Spellbooks (receitas, tabelas de loot, guia). A runa vazia não tem receita: só sai de baú. A essência de cinzas só vem do Nether: Cavaleiros Antigos e o chefe Eco de Tyros (`fire_boss`), recompensa do spawner da Cidadela e baús de sepultura do Posto da Legião (`burial_loot`). O minério de mitril está em `forge:needs_netherite_tool`.
+Conferido no jar do Iron's Spellbooks (receitas, tabelas de loot, guia). A runa vazia não tem receita: só sai de baú. A essência de cinzas só vem do Nether: Cavaleiros Ancestrais (`citadel_keeper`, na Cidadela e no Posto da Legião, as duas estruturas nos biomas de bastião), recompensa do spawner da Cidadela, baús de sepultura do Posto da Legião (`burial_loot`) e o chefe Eco de Tyros (`fire_boss`). Tyros não fica parado na Cidadela: ele só aparece quando alguém usa o Convocador de Almas Cinosas (essência de cinzas, sucata de netherita e fragmento de eco) perto da Runa de Alma Cinosa da Cidadela (`CinderousSoulcallerItem`). O minério de mitril está em `forge:needs_netherite_tool`.
 
 | quest | problema | correção |
 |---|---|---|
@@ -135,7 +139,7 @@ Conferido no jar do Iron's Spellbooks (receitas, tabelas de loot, guia). A runa 
 | `side_irons/lingote_mitril` | Bruto vira sucata no alto-forno; 4 sucatas = 1 lingote. | Descrição. |
 | `side_irons/livro_ouro` | Dependia de `lingote_mitril`, mas a receita não usa mitril (ouro, essência arcana, couro de hoglin). Isso prendia `ato3/solenne` à picareta de netherita. | Dependência em `lingote_mitril` removida; descrição diz de onde vem o couro. |
 | `side_irons/livro_diamante` | Couro de hoglin, tecido mágico, diamantes, livro encantado. | Descrição. |
-| `side_irons/caldeirao` | Pede essência de cinzas (Cidadela e Posto da Legião, no Nether). | Descrição com as fontes. |
+| `side_irons/caldeirao` | Pede essência de cinzas (Cidadela e Posto da Legião, no Nether). A descrição punha o Eco de Tyros "na Cidadela", como se ele estivesse lá esperando. | Descrição com as fontes: Cavaleiros Ancestrais e túmulos do Posto; Tyros só vem chamado na runa da Cidadela com o Convocador de Almas Cinosas. |
 | `side_irons/orbe` | Pede 4 essências de cinzas e 4 lingotes arcanos (8 essências arcanas cada). | Descrição. |
 | `side_irons/runa_vazia` | Sem receita; só em baús (catacumbas, Cidadela, fortalezas, bibliotecas). | Descrição. |
 | `side_irons/runa_fogo`, `runa_gelo`, `runa_sagrada` | Os focos (vara de blaze; osso congelado, dos strays; pérola divina, ouro + ametista) não eram ditos. | Descrições. Piromantes e criomantes deixam runas da sua escola (guia do mod; o drop está no código das entidades). |
@@ -257,7 +261,7 @@ O verificador deixa todo o Ato IV em LuV e não modela bobina com bônus de tens
 | `ato4/mineradora_grande` | Leva engrenagens de tungstênio, mas abria no início do ato. | Dependência trocada de `inicio` para `tungstenio`; descrição. |
 | `ato4/tungstenio` | Não dizia onde nem como. | Descrição: scheelita/tungstato no End (y 20 a 60), ácido túngstico no banho químico e na eletrolisadora EV, 3600 K com nicromo, sai quente. |
 | `ato4/aco_tungstenio`, `bobina_rtm` | Sem dica. | Descrições: misturador EV e 3000 K; molibdênio no veio raro do Nether (y 20 a 50) e rutênio do Platinum Group Sludge. |
-| `ato4/casco_iv` | Leva cabo de platina, e nada dizia onde achar platina (veio de sheldonita no End, y 5 a 50). | Descrição. Dependência trocada de `aco_tungstenio` para `bobina_rtm` (vem antes de qualquer forma; serve para o desenho do capítulo ficar sem cruzamentos). |
+| `ato4/casco_iv` | Leva cabo de platina, e nada dizia onde achar platina (veio de sheldonita no End, y 5 a 50). | Descrição. Dependência trocada de `aco_tungstenio` para `bobina_rtm`. A receita do casco não pede as bobinas, mas as filhas dele pedem (`hssg` e `emissor_iv` fundem a 4200–4500 K); afrouxar o casco obrigaria a pôr `bobina_rtm` nas filhas, com mais linhas, para ganhar só o casco e o motor IV um pouco antes. Ficou. |
 | `ato4/hssg` | Funde a 4200 K: só bobinas de RTM. A bobina de HSS-G sai na montadora IV. Dependia só do aço de tungstênio. | Dependência trocada para `casco_iv` (que vem depois de `bobina_rtm`); descrição. |
 | `ato4/smd_avancado` | Fio fino de HSS-G, folha de vanádio-gálio (4500 K) e polibenzimidazol (reator químico a 7680 EU/t), na montadora IV. Dependia só do casco IV. | Dependência trocada para `hssg`; descrição. |
 | `ato4/emissor_iv` | Vinha depois do processador quântico, que não usa. Leva irídio, que pede bobinas de RTM e tensão IV. | Dependência trocada de `quantico` para `casco_iv`; a descrição diz de onde vêm o irídio e a estrela quântica. |
@@ -269,13 +273,13 @@ O verificador deixa todo o Ato IV em LuV e não modela bobina com bônus de tens
 | `ato4/rodio` | Ródio-paládio pede misturador IV e 4500 K, e o ródio sai do Platinum Group Sludge. Dependia só do aço de tungstênio. | Dependência trocada para `hssg` (vem depois de RTM e do casco IV); descrição. |
 | `ato4/casco_luv`, `motor_luv` | O cabo de nióbio-titânio pede 4500 K; o motor LuV pede HSS-S e samário magnético (bobinas de HSS-G) e pesquisa do motor IV. | Descrições (`motor_luv` passa por `rodio` → `hssg`). |
 | `ato4/montadora_grande`, `centrifuga_grande` | Levam braço/motor IV, mas dependiam só do casco IV. | Dependências trocadas para `braco_iv` e `motor_iv`. |
-| `ato4/lapotron`, `subestacao` | A subestação leva circuitos LuV (montadora EV) e armação de irídio, mas dependia só do lapotron. | `lapotron` passa a depender de `montadora_iv` (o cristal só pede circuito HV; a montadora IV já passa pela EV e pelo irídio); descrição em `subestacao`. |
+| `ato4/lapotron`, `subestacao` | A subestação leva circuitos LuV (montadora EV) e armação de irídio, mas dependia só do lapotron. | `lapotron` passa a depender de `montadora_iv` (o cristal só pede circuito HV; a montadora IV já passa pela EV e pelo irídio); descrição em `subestacao`. O lapotron fica mais tarde do que a receita pede (gema de lapotron e circuito HV a 1920 EU/t), mas afrouxá-lo obrigaria a `subestacao` a ganhar dependência própria no irídio. Ficou. |
 | `ato4/cinzas` | "Se juntam de brasas morrendo": as brasas só caem dos Berserkers das fortalezas, e eles só nascem depois que Ignis é vencido uma vez (`Ignited_Berserker_Entity`: `isIgnisDefeatedOnce`). Antes disso as cinzas vêm só dos Revenants que a própria arena gera. | Descrição. |
 | `ato4/campo_luv` | Ver Ato V: o fio de ITBTC pede bobinas de naquadah. | Mudada na revisão do Ato V. |
 
 Conferido sem mudança: Ignis deixa 3 lingotes de ignítio (`loot_tables/entities/ignis.json`, 3 rolagens), então `ignitio` sai de uma luta. `ignaz` continua pedindo `side_irons/livro_diamante`, que passa pelo lingote de mitril (minério de nível 4); no Ato IV há picaretas de nível 4 de sobra (ressonarium e de warden do Ato II, gravitita e valquíria do Aether, picaretas de aço de tungstênio e de carboneto de tungstênio do GregTech, netherita), então a dependência fica. O `fragmento`, `argamassa`, `sinos`, `rede_estrelas` e `espiritos_vacuo` estão certos.
 
-Revisadas sem mudança: 13 quests.
+Revisadas sem mudança: 11 quests.
 
 ## Caminho — Os Sinos no Céu (`41_side_space`)
 
@@ -306,14 +310,14 @@ Conferido no dump e no jar do GregTech 7.5.3 (`FusionLoader`, `ComponentRecipes`
 
 | quest | problema | correção |
 |---|---|---|
-| `ato5/campo_luv` (era `ato4/campo_luv`) | Pede bobinas de naquadah (fio de ITBTC a 6000 K) e um emissor LuV, que são do Ato V. | Movida para o Ato V com `legacy_id: ato4/campo_luv` (o progresso fica). Depende de `bobina_naquadah` e `montadora_luv` (que passa pelo emissor LuV); descrição. `ato4/fim_ato4` passa a depender de `motor_luv`, e `receita_pedra` passa a depender de `campo_luv` (antes `inicio`, `ato4/campo_luv`). |
+| `ato5/campo_luv` (era `ato4/campo_luv`) | Pede bobinas de naquadah (fio de ITBTC a 6000 K) e um emissor LuV, que são do Ato V. Os circuitos LuV saem da montadora EV ou IV (mainframe nano a 1920 EU/t, computador quântico a 2400 EU/t), e a pesquisa no scanner gasta um gerador de campo IV. | Movida para o Ato V com `legacy_id: ato4/campo_luv` (o progresso fica). Depende de `bobina_naquadah`, `emissor_luv` e `ato4/campo_iv` (entre capítulos). Antes dependia da montadora de circuitos LuV, que a receita não pede, e isso segurava a Pedra Filosofal (e todo o ProjectE) atrás dela. Descrição com os circuitos LuV. `ato4/fim_ato4` passa a depender de `motor_luv`, e `receita_pedra` passa a depender de `campo_luv` (antes `inicio`, `ato4/campo_luv`). |
 | `ato5/bobina_naquadah` | Dependia da liga de naquadah, mas é a liga que pede a bobina. A descrição dizia "o alto-forno mais quente de todos", mas trínio e tritânio são mais quentes. | Dependências trocadas de `liga_naquadah` para `naquadah`, `iridio` (folha de ósmio); descrição. |
 | `ato5/liga_naquadah` | Funde a 7200 K e leva ósmirídio e trínio. A descrição dizia "para bobinas que derretem tungstênio", o que é falso. | Dependências trocadas de `naquadah` para `bobina_naquadah`, `osmiridio`; descrição (é o metal dos cascos ZPM). |
-| `ato5/fusao` | Dependia do processador de cristal, mas é o cristal que pede o európio do reator. | Dependências trocadas de `cristal`, `bobina_naquadah` para `liga_naquadah` (trínio e ósmirídio) e `campo_luv` (que vem antes de qualquer forma; deixa o desenho sem cruzamentos); a descrição dá os componentes e a pesquisa. |
-| `ato5/cristal` | Pede európio. | Dependência trocada de `montadora_luv` para `fusao` (que já passa pela montadora LuV); a descrição explica o európio e as 15 escotilhas LuV. |
+| `ato5/fusao` | Dependia do processador de cristal, mas é o cristal que pede o európio do reator. O MK1 leva gerador de campo IV, não LuV. | Dependências trocadas de `cristal`, `bobina_naquadah` para `liga_naquadah` (trínio e ósmirídio) e `ato4/campo_iv` (entre capítulos); a descrição dá os componentes, o gerador IV e a pesquisa. |
+| `ato5/cristal` | Pede európio e a montadora de circuitos LuV (9600 EU/t). | Dependência trocada de `montadora_luv` para `fusao`; a descrição explica o európio e as 15 escotilhas LuV e cita a Montadora de Circuitos LuV. Depender também de `montadora_luv` cruzava linhas no desenho (testado: 1 cruzamento em todas as variantes), então a montadora ficou só na descrição. |
 | `ato5/modulo_energia` | Linha de montagem a 100000 EU/t, európio, trínio, gerador de campo LuV e pesquisa na Research Station. Dependia só do cristal. | Dependência trocada para `emissor_zpm` (primeira quest com a Research Station); descrição. |
 | `ato5/casco_zpm` | Leva chapas de liga de naquadah. Dependia de `osmiridio`, `fusao`. | Dependência trocada para `fusao` (que passa pela liga); descrição. |
-| `ato5/emissor_zpm`, `campo_zpm` | Pedem a Research Station, que não aparecia em lugar nenhum. O gerador também pede bobinas de trínio. | Descrições. |
+| `ato5/emissor_zpm`, `campo_zpm` | Pedem a Research Station, que não aparecia em lugar nenhum. A Research Station e o HPCA levam gerador de campo LuV e fio duplo de urânio-ródio-dinaquadida (9000 K: bobinas de trínio). | Descrições: o emissor (a primeira quest com a Research Station) diz do gerador LuV e do fio; o gerador ZPM repete as bobinas de trínio. `emissor_zpm` ganha a dependência `campo_luv`. |
 | `ato5/motor_zpm`, `emissor_luv`, `braco_luv`, `montadora_luv` | Nada falava de pesquisa nem dos circuitos ZPM. | Descrições. |
 | `ato5/naquadah` | "Aurend o trouxe das estrelas" mandava o jogador procurar nos planetas, mas o veio fica no End (y 10 a 90, com plutônio, minério de nível 3). Funde a 5000 K (HSS-G). | Descrição (a frase da lore ficou). |
 | `ato5/platina`, `iridio`, `osmiridio` | Sem dica. A descrição do ósmirídio dizia "a liga dos cascos ZPM", mas o casco é de liga de naquadah; o ósmirídio vai no motor ZPM. | Descrições; o ósmio pede alto-forno em LuV (`blast_osmium`, 30720 EU/t). |
@@ -353,3 +357,22 @@ Conferido em `kubejs/data/ecos/recipes/ritual_entidade.json` (pentáculo `occult
 Conferido sem mudança: `chamado`, `arauto` (a tag `ecos:prova_arauto` aceita o Eco e os dois desfechos), `selar` e `absorver` (clique direito / agachado + clique direito no Eco). Os dois desfechos ficaram como estavam.
 
 Revisadas sem mudança: 4 quests.
+
+## A Banca do Eco (`90_loja`)
+
+Conferido como jogador em cada tier: o preço contra o que se ganha até o ato (`test_coin_budget_per_act`; o Prólogo dá 42 ecos e o Ato I, com os dois caminhos, mais 311), as dependências de cada tier (`ato<N>/inicio`) e se algum item vendido (ou sorteado nas caixas) pula uma trava de `kubejs/ecos/recipes.json` ou de `travel.json`. Nenhum item de trava é vendido (`test_shop_never_sells_gates`). Os itens que entram em receitas de trava não bastam sozinhos:
+- O diamante (tier 1) entra na Chave Crepuscular, que é do próprio Ato I e ainda pede mecanismo de precisão e latão.
+- As gemas de fonte (tier 2) entram no catalisador do Undergarden, que pede bomba LV e Fragmento da Floresta.
+- O lingote de ferro só é um atalho de mineração.
+
+A Caixa Rara (tier 1) pode sortear gemas de fonte e pérolas antes do Ato II. As quests do Prólogo e do Ato I já dão a mesma caixa (e a Épica), então isso foi desenho, não brecha. A estrela do Nether (tier 4) e o totem (tier 3) seguem pedidos por `side_ars/arquimago`, do Ato II, com outro caminho (Wither, evocadores). As pérolas ficam no tier 2 para não esvaziar `ato1/perolas`. O texto do Prólogo bate com a banca: a mochila custa 8 ecos (tier 0) e os diamantes se compram a partir do Ato I (`loja/diamantes` depende de `ato1/inicio`).
+
+Nenhuma mudança. As posições (roda de raio 4, horário por tier) continuam com 0 cruzamentos.
+
+Revisadas sem mudança: 15 quests.
+
+## Avisos que ficaram
+
+O `questcheck` termina com "estrutural: OK; jornada: 1 erros, 3 avisos". Nenhum deles é problema para o jogador:
+- `prologo/mapa`, `prologo/diamante` e `prologo/encantamento` (aviso: veio fundo, y < 0, no Prólogo). As três são opcionais, e a descrição de cada uma diz onde achar (redstone, diamante y -55 a -30, obsidiana e papel). A banca vende diamantes a partir do Ato I.
+- `side_occultism/giz_roxo` (erro). É uma lacuna do dump: a moagem do Occultism com saída em tag aparece como `minecraft:barrier`. O caminho foi conferido à mão no jar: o foliot triturador mói pedra do End em pó, e o End abre com o Nether. A quest dá para fazer, e a descrição explica o caminho. O erro some quando o dump ler essas saídas.
