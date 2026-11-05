@@ -20,7 +20,7 @@ from pathlib import Path
 LIMITES: dict[str, tuple[int, int, int, float]] = {
     "side_gt_steam_lv": (2, 0, 0, 10.5),  # não planar (planar sem ligas_vapor->liga_vermelha)
     "ato2": (1, 0, 0, 10.5),              # não planar (planar sem inicio->alto_forno_eletrico)
-    "side_gt_mv_ev": (5, 0, 0, 10.5),     # não planar (planar sem titanio->casco_ev e inox->reator_grande)
+    "side_gt_mv_ev": (5, 0, 0, 10.5),     # o que questgen.layout atinge com a árvore HV->sala limpa->EV (revista na task 6c)
     "ato4": (1, 0, 0, 10.5),              # não planar (planar sem fragmento->argamassa)
     # fim_prologo (11 pais) tem de ficar à direita do ramo picareta_ferro->diamante->encantamento; o caminho
     # livro_quests->jei->fim_prologo contorna o ramo do ferro por cima e jei->fim_prologo (~16.1) passa de MAX_EDGE

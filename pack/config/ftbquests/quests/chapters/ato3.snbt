@@ -66,7 +66,7 @@
 			]
 			title: "Olhe Para Cima"
 			x: 0.0d
-			y: 3.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -100,7 +100,7 @@
 			]
 			title: "Pedra de Luz"
 			x: 1.5d
-			y: 3.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -160,7 +160,7 @@
 			]
 			title: "A Chave Celeste"
 			x: 3.0d
-			y: 3.25d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -208,7 +208,7 @@
 			]
 			title: "O Aether"
 			x: 4.5d
-			y: 0.75d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -242,7 +242,7 @@
 			]
 			title: "Raiz do Céu"
 			x: 6.0d
-			y: -3.25d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -276,7 +276,7 @@
 			]
 			title: "Pedra Sagrada"
 			x: 6.0d
-			y: -1.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -310,7 +310,7 @@
 			]
 			title: "Ambrósio"
 			x: 7.5d
-			y: -2.75d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -344,7 +344,7 @@
 			]
 			title: "Zanita"
 			x: 7.5d
-			y: -1.25d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -378,7 +378,7 @@
 			]
 			title: "Picareta de Zanita"
 			x: 9.0d
-			y: -1.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -413,7 +413,7 @@
 			]
 			title: "Altar"
 			x: 9.0d
-			y: -2.75d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -456,7 +456,7 @@
 			]
 			title: "Congelador e Incubadora"
 			x: 9.0d
-			y: -4.25d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -499,7 +499,7 @@
 			]
 			title: "Nuvens Sólidas"
 			x: 6.0d
-			y: 0.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -507,6 +507,7 @@
 			]
 			description: [
 				"Cair daqui é cair para sempre."
+				"Pede quatro nuvens douradas: raras, só entre as alturas 96 e 128."
 			]
 			id: "204CBEF1487DB4EB"
 			rewards: [
@@ -533,7 +534,7 @@
 			]
 			title: "Paraquedas Dourado"
 			x: 7.5d
-			y: 0.25d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -567,7 +568,7 @@
 			]
 			title: "Anel de Zanita"
 			x: 9.0d
-			y: 0.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -601,7 +602,7 @@
 			]
 			title: "Os Swets"
 			x: 6.0d
-			y: 1.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -610,6 +611,7 @@
 			description: [
 				"Um bloco que se move quando você não olha."
 				"Ele guarda a masmorra de bronze."
+				"Só uma picareta o fere."
 			]
 			icon: {
 				Count: 1b
@@ -650,7 +652,7 @@
 			]
 			title: "O Deslizador"
 			x: 10.5d
-			y: -0.75d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -684,7 +686,7 @@
 			]
 			title: "Chave de Bronze"
 			x: 12.0d
-			y: -1.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -728,7 +730,7 @@
 			]
 			title: "Gravitita"
 			x: 10.5d
-			y: -2.25d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -762,14 +764,15 @@
 			]
 			title: "Picareta de Gravitita"
 			x: 13.5d
-			y: -2.0d
+			y: -2.25d
 		}
 		{
 			dependencies: [
 				"09A794340D49D417"
 			]
 			description: [
-				"Guerreiras que testam quem chega ao templo."
+				"Guerreiras que testam quem chega ao templo de prata."
+				"Cada uma vencida deixa uma medalha. A Rainha só luta com dez."
 			]
 			id: "7D2BC31DA9E0724A"
 			rewards: [
@@ -796,7 +799,7 @@
 			]
 			title: "As Valquírias"
 			x: 12.0d
-			y: 0.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -844,7 +847,7 @@
 			]
 			title: "A Rainha Valquíria"
 			x: 13.5d
-			y: -0.5d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -878,7 +881,7 @@
 			]
 			title: "Chave de Prata"
 			x: 15.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -890,6 +893,7 @@
 				"{image:ecos:textures/gui/quests/solenne.png width:200 height:112 align:center}"
 				"Ela prometeu que nenhuma vela se apagaria."
 				"Ela ainda vive. As velas também."
+				"Só o frio a fere: rebata os cristais de gelo dela e golpeie enquanto estiver congelada."
 			]
 			icon: {
 				Count: 1b
@@ -947,7 +951,7 @@
 			]
 			title: "Solenne, a Chama Votiva"
 			x: 15.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -981,7 +985,7 @@
 			]
 			title: "Chave de Ouro"
 			x: 16.5d
-			y: -2.25d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -1038,7 +1042,7 @@
 			]
 			title: "O Fragmento dos Céus"
 			x: 16.5d
-			y: -0.75d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -1046,8 +1050,8 @@
 			]
 			description: [
 				"Um de manhã eterna, outro de crepúsculo eterno."
-				"O fogo do porteiro não abre o que a chave tranca."
-				"O isqueiro pede outro Fragmento das Profundezas: o Cego sempre deixa um."
+				"O isqueiro sai de outro Fragmento das Profundezas (o Cego sempre deixa um) ou do Porteiro, por esmeraldas."
+				"Mas o fogo do Porteiro não abre o que a chave tranca: sem a Chave Celeste, nenhum portal te aceita."
 			]
 			icon: {
 				Count: 1b
@@ -1095,14 +1099,15 @@
 			]
 			title: "Os Outros Dois Céus"
 			x: 4.5d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"1078C3332EF0DB79"
 			]
 			description: [
-				"Neve e luz sem fim. Um portal de pedra-de-neve aceso pelo isqueiro."
+				"Neve e luz sem fim. Moldura de tijolos de pedra-turquesa, acesa pelo isqueiro."
+				"Toda casa do Porteiro guarda uma moldura pronta, de um dos dois céus; procure outra casa para o outro."
 			]
 			icon: {
 				Count: 1b
@@ -1142,14 +1147,14 @@
 			]
 			title: "Everbright"
 			x: 6.0d
-			y: 4.75d
+			y: 5.0d
 		}
 		{
 			dependencies: [
 				"1078C3332EF0DB79"
 			]
 			description: [
-				"Um céu que nunca termina de amanhecer."
+				"Um céu que nunca termina de amanhecer. Moldura de tijolos de pedra-lunar, acesa pelo isqueiro."
 			]
 			icon: {
 				Count: 1b
@@ -1189,7 +1194,7 @@
 			]
 			title: "Everdawn"
 			x: 6.0d
-			y: 8.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1233,7 +1238,7 @@
 			]
 			title: "Madeiras dos Céus"
 			x: 7.5d
-			y: 6.75d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -1241,6 +1246,7 @@
 			]
 			description: [
 				"A pedra do Everbright."
+				"Sem toque de seda ela cai como pedregulho; o forno devolve a pedra."
 			]
 			id: "4C320ED45EFF7BC8"
 			rewards: [
@@ -1267,14 +1273,15 @@
 			]
 			title: "Pedra Turquesa"
 			x: 7.5d
-			y: 2.25d
+			y: 1.25d
 		}
 		{
 			dependencies: [
-				"1E22ABC5CFCCDD27"
+				"0DAA0FE245D8B5A2"
 			]
 			description: [
 				"Um metal quente como o horizonte."
+				"Só nasce na pedra-lunar do Everdawn."
 			]
 			id: "213F02B345CE22E7"
 			rewards: [
@@ -1301,7 +1308,7 @@
 			]
 			title: "Horizonita"
 			x: 7.5d
-			y: 3.75d
+			y: 7.75d
 		}
 		{
 			dependencies: [
@@ -1335,7 +1342,7 @@
 			]
 			title: "Forja do Horizonte"
 			x: 9.0d
-			y: 3.75d
+			y: 7.75d
 		}
 		{
 			dependencies: [
@@ -1343,6 +1350,8 @@
 			]
 			description: [
 				"Gemas vermelhas, cortantes."
+				"Aqui, picaretas de fora (de ferro para cima) mal arranham e não colhem minério."
+				"Use uma de pedra ou as do próprio céu."
 			]
 			id: "652B73B7B228C8B1"
 			rewards: [
@@ -1378,7 +1387,7 @@
 			]
 			title: "Piropo"
 			x: 7.5d
-			y: 5.25d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -1421,14 +1430,15 @@
 			]
 			title: "Aquita"
 			x: 9.0d
-			y: 6.0d
+			y: 3.75d
 		}
 		{
 			dependencies: [
-				"0DAA0FE245D8B5A2"
+				"1E22ABC5CFCCDD27"
 			]
 			description: [
 				"Um metal que mente sobre o próprio peso."
+				"Só nasce na pedra-turquesa do Everbright."
 			]
 			id: "76E5ECC8494D91EB"
 			rewards: [
@@ -1455,14 +1465,15 @@
 			]
 			title: "Falsita"
 			x: 9.0d
-			y: 10.25d
+			y: 6.0d
 		}
 		{
 			dependencies: [
-				"0DAA0FE245D8B5A2"
+				"1E22ABC5CFCCDD27"
 			]
 			description: [
 				"Leve como ar. Faz baldes que não pesam."
+				"Só nasce na pedra-turquesa do Everbright."
 			]
 			id: "72D0E0366B8D1D44"
 			rewards: [
@@ -1489,7 +1500,7 @@
 			]
 			title: "Vêntio"
 			x: 7.5d
-			y: 8.5d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -1497,6 +1508,7 @@
 			]
 			description: [
 				"Brilha mesmo no escuro do crepúsculo."
+				"O minério solta lascas; quatro lascas fazem uma pedra."
 			]
 			id: "56F5C7064DFEE97B"
 			rewards: [
@@ -1523,7 +1535,7 @@
 			]
 			title: "Pedra da Lua"
 			x: 7.5d
-			y: 10.25d
+			y: 9.25d
 		}
 		{
 			dependencies: [
@@ -1532,6 +1544,7 @@
 			]
 			description: [
 				"As gemas mais fundas dos céus."
+				"Só a picareta de aquita (ou melhor) as arranca."
 			]
 			id: "4C1CB04196A87EAF"
 			rewards: [
@@ -1567,7 +1580,7 @@
 			]
 			title: "Diopsídio e Charoíta"
 			x: 10.5d
-			y: 7.0d
+			y: 4.25d
 		}
 		{
 			dependencies: [
@@ -1575,6 +1588,8 @@
 			]
 			description: [
 				"Ele chama coisas de longe. Uma vez, chamou algo grande demais."
+				"Mora no topo da Masmorra Ofuscante do Everbright; a pedra-chave pede quatro chaves dos baús de lá."
+				"Golpeie quando ele parar para conjurar."
 			]
 			icon: {
 				Count: 1b
@@ -1615,7 +1630,7 @@
 			]
 			title: "O Invocador"
 			x: 12.0d
-			y: 5.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1623,6 +1638,8 @@
 			]
 			description: [
 				"Uma árvore que aprendeu a lutar."
+				"Guarda a Masmorra da Natureza do Everbright; quatro chaves dos baús abrem a pedra-chave."
+				"Derrube uma das paredes dele com machado e acerte-o de longe enquanto ele esmaga o chão."
 			]
 			icon: {
 				Count: 1b
@@ -1663,7 +1680,7 @@
 			]
 			title: "O Esmagador Estelar"
 			x: 12.0d
-			y: 7.0d
+			y: 4.25d
 		}
 		{
 			dependencies: [
@@ -1671,6 +1688,7 @@
 			]
 			description: [
 				"O que sobra dos que ele chamou."
+				"Também caem dos espíritos de gelo e dos polargeists."
 			]
 			id: "7F83E3195756D907"
 			rewards: [
@@ -1697,7 +1715,7 @@
 			]
 			title: "Fragmentos de Alma"
 			x: 13.5d
-			y: 3.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1727,7 +1745,7 @@
 			]
 			title: "A Rede no Céu"
 			x: 6.0d
-			y: 3.25d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1757,7 +1775,7 @@
 			]
 			title: "Titânio Sob o Sol"
 			x: 16.5d
-			y: 0.75d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -1811,8 +1829,8 @@
 				}
 			]
 			title: "O Silêncio Empurra Para Cima"
-			x: 19.5d
-			y: 2.5d
+			x: 18.0d
+			y: 0.75d
 		}
 	]
 	title: "Ato III — Os Céus Partidos"

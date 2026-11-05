@@ -21,7 +21,7 @@
 			]
 			description: [
 				"Meteoritos guardam cristais de certus."
-				"Use uma bússola de meteorito para achar um."
+				"Uma bússola carregada no carregador (ferro e cobre, girado a manivela) aponta o mais perto."
 			]
 			icon: {
 				Count: 1b
@@ -98,6 +98,7 @@
 			]
 			description: [
 				"Um bloco de quartzo que cresce sozinho. Leve um para casa."
+				"O impecável do meteorito, quebrado com picareta, cai como defeituoso."
 			]
 			id: "33F1D54D48B45E6E"
 			rewards: [
@@ -132,6 +133,7 @@
 			]
 			description: [
 				"Energia transforma certus em cristal carregado."
+				"Sem energia ainda? Uma manivela em cima dele resolve."
 			]
 			id: "7346935E51033470"
 			rewards: [
@@ -253,6 +255,7 @@
 			]
 			description: [
 				"O primeiro molde da rede."
+				"As quatro prensas saem do Cubo Misterioso, no centro do meteorito."
 			]
 			id: "45406AC334162D1B"
 			rewards: [
@@ -386,6 +389,7 @@
 			]
 			description: [
 				"Converte a energia das suas máquinas para a rede."
+				"Basta encostar nele um cabo do GregTech."
 			]
 			id: "528A15FFE03D96A6"
 			rewards: [

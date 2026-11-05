@@ -30,14 +30,14 @@ quests:
      tasks: [{item: aether:freezer}, {item: aether:incubator}], rewards: [{coins: 3}]}
   - {slug: nuvens, title: "Nuvens Sólidas", deps: [aether], desc: ["Nuvens que seguram seu peso."],
      tasks: [{item: aether:cold_aercloud, count: 8}, {item: aether:blue_aercloud, count: 4}], rewards: [{coins: 2}]}
-  - {slug: paraquedas, title: "Paraquedas Dourado", deps: [nuvens], desc: ["Cair daqui é cair para sempre."],
+  - {slug: paraquedas, title: "Paraquedas Dourado", deps: [nuvens], desc: ["Cair daqui é cair para sempre.", "Pede quatro nuvens douradas: raras, só entre as alturas 96 e 128."],
      tasks: [{item: aether:golden_parachute}], rewards: [{coins: 2}]}
   - {slug: anel_zanita, title: "Anel de Zanita", deps: [zanita], desc: ["Aurend gostava de adornos úteis."],
      tasks: [{item: aether:zanite_ring}], rewards: [{coins: 3}]}
   - {slug: swets, title: "Os Swets", deps: [aether], desc: ["Gelatinas que engolem quem chega perto."],
      tasks: [{item: aether:swet_ball, count: 8}], rewards: [{coins: 2}]}
   - {slug: slider, title: "O Deslizador", deps: [picareta_zanita], shape: gear, icon: aether:bronze_dungeon_key,
-     desc: ["Um bloco que se move quando você não olha.", "Ele guarda a masmorra de bronze."], tasks: [{kill: aether:slider}],
+     desc: ["Um bloco que se move quando você não olha.", "Ele guarda a masmorra de bronze.", "Só uma picareta o fere."], tasks: [{kill: aether:slider}],
      rewards: [{crate: rara}, {coins: 6}]}
   - {slug: chave_bronze, title: "Chave de Bronze", deps: [slider], desc: ["Abre o tesouro do Deslizador."],
      tasks: [{item: aether:bronze_dungeon_key}], rewards: [{coins: 3}]}
@@ -45,14 +45,15 @@ quests:
      tasks: [{item: aether:gravitite_ore, count: 8}, {item: aether:enchanted_gravitite, count: 4}], rewards: [{coins: 4}]}
   - {slug: picareta_gravitita, title: "Picareta de Gravitita", deps: [gravitita], desc: ["Puxe blocos sem quebrá-los."],
      tasks: [{item: aether:gravitite_pickaxe}], rewards: [{coins: 3}]}
-  - {slug: valquirias, title: "As Valquírias", deps: [slider], desc: ["Guerreiras que testam quem chega ao templo."],
+  - {slug: valquirias, title: "As Valquírias", deps: [slider], desc: ["Guerreiras que testam quem chega ao templo de prata.", "Cada uma vencida deixa uma medalha. A Rainha só luta com dez."],
      tasks: [{item: aether:victory_medal, count: 10}], rewards: [{coins: 4}]}
   - {slug: rainha, title: "A Rainha Valquíria", deps: [valquirias], shape: gear, icon: aether:silver_dungeon_key,
      desc: ["Ela só luta com quem provou valor."], tasks: [{kill: aether:valkyrie_queen}], rewards: [{crate: epica}, {coins: 8}]}
   - {slug: chave_prata, title: "Chave de Prata", deps: [rainha], desc: ["Abre o tesouro da Rainha."],
      tasks: [{item: aether:silver_dungeon_key}], rewards: [{coins: 3}]}
   - {slug: solenne, image: "ecos:textures/gui/quests/solenne.png", title: "Solenne, a Chama Votiva", deps: [rainha, picareta_gravitita, side_irons/livro_ouro], shape: gear,
-     icon: aether:gold_dungeon_key, desc: ["Ela prometeu que nenhuma vela se apagaria.", "Ela ainda vive. As velas também."],
+     icon: aether:gold_dungeon_key, desc: ["Ela prometeu que nenhuma vela se apagaria.", "Ela ainda vive. As velas também.",
+            "Só o frio a fere: rebata os cristais de gelo dela e golpeie enquanto estiver congelada."],
      tasks: [{kill: aether:sun_spirit}], rewards: [{page: 20}, {crate: epica}, {coins: 12}]}
   - {slug: chave_ouro, title: "Chave de Ouro", deps: [solenne], desc: ["Abre o tesouro de Solenne."],
      tasks: [{item: aether:gold_dungeon_key}], rewards: [{coins: 4}]}
@@ -60,40 +61,46 @@ quests:
      desc: ["O terceiro pedaço do Selo.", "Ele não pesa para baixo. Empurra para cima."], tasks: [{item: ecos:fragmento_selo_ceus}],
      rewards: [{page: 21}, {coins: 12}]}
   - {slug: outros_ceus, title: "Os Outros Dois Céus", deps: [chave], icon: blue_skies:zeal_lighter,
-     desc: ["Um de manhã eterna, outro de crepúsculo eterno.", "O fogo do porteiro não abre o que a chave tranca.", "O isqueiro pede outro Fragmento das Profundezas: o Cego sempre deixa um."],
+     desc: ["Um de manhã eterna, outro de crepúsculo eterno.", "O isqueiro sai de outro Fragmento das Profundezas (o Cego sempre deixa um) ou do Porteiro, por esmeraldas.",
+            "Mas o fogo do Porteiro não abre o que a chave tranca: sem a Chave Celeste, nenhum portal te aceita."],
      tasks: [{item: blue_skies:zeal_lighter}], rewards: [{page: 19}, {coins: 4}]}
   - {slug: everbright, title: "Everbright", deps: [outros_ceus], shape: gear, icon: blue_skies:turquoise_stone,
-     desc: ["Neve e luz sem fim. Um portal de pedra-de-neve aceso pelo isqueiro."], tasks: [{dimension: blue_skies:everbright}],
+     desc: ["Neve e luz sem fim. Moldura de tijolos de pedra-turquesa, acesa pelo isqueiro.",
+            "Toda casa do Porteiro guarda uma moldura pronta, de um dos dois céus; procure outra casa para o outro."], tasks: [{dimension: blue_skies:everbright}],
      rewards: [{crate: rara}, {coins: 5}]}
   - {slug: everdawn, title: "Everdawn", deps: [outros_ceus], shape: gear, icon: blue_skies:lunar_stone,
-     desc: ["Um céu que nunca termina de amanhecer."], tasks: [{dimension: blue_skies:everdawn}], rewards: [{crate: rara}, {coins: 5}]}
+     desc: ["Um céu que nunca termina de amanhecer. Moldura de tijolos de pedra-lunar, acesa pelo isqueiro."], tasks: [{dimension: blue_skies:everdawn}], rewards: [{crate: rara}, {coins: 5}]}
   - {slug: madeiras_ceu, title: "Madeiras dos Céus", deps: [everbright, everdawn], allow_exact: "cada céu tem sua árvore",
      desc: ["Uma de cada céu."], tasks: [{item: blue_skies:bluebright_log, count: 8}, {item: blue_skies:lunar_log, count: 8}],
      rewards: [{coins: 2}]}
-  - {slug: turquesa, title: "Pedra Turquesa", deps: [everbright], desc: ["A pedra do Everbright."],
+  - {slug: turquesa, title: "Pedra Turquesa", deps: [everbright], desc: ["A pedra do Everbright.", "Sem toque de seda ela cai como pedregulho; o forno devolve a pedra."],
      tasks: [{item: blue_skies:turquoise_stone, count: 64}], rewards: [{coins: 1}]}
-  - {slug: horizonita, title: "Horizonita", deps: [everbright], desc: ["Um metal quente como o horizonte."],
+  - {slug: horizonita, title: "Horizonita", deps: [everdawn], desc: ["Um metal quente como o horizonte.", "Só nasce na pedra-lunar do Everdawn."],
      tasks: [{item: blue_skies:horizonite_ingot, count: 8}], rewards: [{coins: 3}]}
   - {slug: forja_horizonte, title: "Forja do Horizonte", deps: [horizonita], desc: ["Uma forja que não precisa de carvão."],
      tasks: [{item: blue_skies:horizonite_forge}], rewards: [{coins: 3}]}
-  - {slug: piropo, title: "Piropo", deps: [everbright], desc: ["Gemas vermelhas, cortantes."],
+  - {slug: piropo, title: "Piropo", deps: [everbright], desc: ["Gemas vermelhas, cortantes.", "Aqui, picaretas de fora (de ferro para cima) mal arranham e não colhem minério.",
+            "Use uma de pedra ou as do próprio céu."],
      tasks: [{item: blue_skies:pyrope_gem, count: 8}, {item: blue_skies:pyrope_sword}], rewards: [{coins: 3}]}
   - {slug: aquita, title: "Aquita", deps: [piropo], desc: ["Pedra azul que lembra água parada."],
      tasks: [{item: blue_skies:aquite, count: 8}, {item: blue_skies:aquite_chestplate}], rewards: [{coins: 3}]}
-  - {slug: falsita, title: "Falsita", deps: [everdawn], desc: ["Um metal que mente sobre o próprio peso."],
+  - {slug: falsita, title: "Falsita", deps: [everbright], desc: ["Um metal que mente sobre o próprio peso.", "Só nasce na pedra-turquesa do Everbright."],
      tasks: [{item: blue_skies:falsite_ingot, count: 8}], rewards: [{coins: 3}]}
-  - {slug: ventio, title: "Vêntio", deps: [everdawn], desc: ["Leve como ar. Faz baldes que não pesam."],
+  - {slug: ventio, title: "Vêntio", deps: [everbright], desc: ["Leve como ar. Faz baldes que não pesam.", "Só nasce na pedra-turquesa do Everbright."],
      tasks: [{item: blue_skies:ventium_ingot, count: 8}], rewards: [{coins: 3}]}
-  - {slug: pedra_lua, title: "Pedra da Lua", deps: [everdawn], desc: ["Brilha mesmo no escuro do crepúsculo."],
+  - {slug: pedra_lua, title: "Pedra da Lua", deps: [everdawn], desc: ["Brilha mesmo no escuro do crepúsculo.", "O minério solta lascas; quatro lascas fazem uma pedra."],
      tasks: [{item: blue_skies:moonstone, count: 8}], rewards: [{coins: 3}]}
-  - {slug: diopsidio, title: "Diopsídio e Charoíta", deps: [aquita, falsita], desc: ["As gemas mais fundas dos céus."],
+  - {slug: diopsidio, title: "Diopsídio e Charoíta", deps: [aquita, falsita], desc: ["As gemas mais fundas dos céus.", "Só a picareta de aquita (ou melhor) as arranca."],
      tasks: [{item: blue_skies:diopside_gem, count: 4}, {item: blue_skies:charoite, count: 4}], rewards: [{coins: 4}]}
   - {slug: invocador, title: "O Invocador", deps: [diopsidio], shape: gear, icon: blue_skies:summoner_trophy,
-     desc: ["Ele chama coisas de longe. Uma vez, chamou algo grande demais."], tasks: [{kill: blue_skies:summoner}],
+     desc: ["Ele chama coisas de longe. Uma vez, chamou algo grande demais.",
+            "Mora no topo da Masmorra Ofuscante do Everbright; a pedra-chave pede quatro chaves dos baús de lá.",
+            "Golpeie quando ele parar para conjurar."], tasks: [{kill: blue_skies:summoner}],
      rewards: [{crate: epica}, {coins: 8}]}
   - {slug: esmagador, title: "O Esmagador Estelar", deps: [diopsidio], shape: gear, icon: blue_skies:starlit_crusher_trophy,
-     desc: ["Uma árvore que aprendeu a lutar."], tasks: [{kill: blue_skies:starlit_crusher}], rewards: [{crate: epica}, {coins: 8}]}
-  - {slug: almas, title: "Fragmentos de Alma", deps: [invocador], desc: ["O que sobra dos que ele chamou."],
+     desc: ["Uma árvore que aprendeu a lutar.", "Guarda a Masmorra da Natureza do Everbright; quatro chaves dos baús abrem a pedra-chave.",
+            "Derrube uma das paredes dele com machado e acerte-o de longe enquanto ele esmaga o chão."], tasks: [{kill: blue_skies:starlit_crusher}], rewards: [{crate: epica}, {coins: 8}]}
+  - {slug: almas, title: "Fragmentos de Alma", deps: [invocador], desc: ["O que sobra dos que ele chamou.", "Também caem dos espíritos de gelo e dos polargeists."],
      tasks: [{item: blue_skies:soul_fragment, count: 4}], rewards: [{coins: 3}]}
   - {slug: rede_ceu, title: "A Rede no Céu", deps: [aether, side_ae2/controlador],
      desc: ["Leve sua rede até as ilhas. Aurend guardava tudo lá em cima."], tasks: [{checkmark: true}], rewards: [{coins: 4}]}

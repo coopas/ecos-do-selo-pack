@@ -47,7 +47,7 @@
 			]
 			title: "Mais Voltagem"
 			x: 0.0d
-			y: -1.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -81,7 +81,7 @@
 			]
 			title: "Macerador MV"
 			x: 1.5d
-			y: -1.0d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -114,8 +114,8 @@
 				}
 			]
 			title: "Lavadora de Minério"
-			x: 3.0d
-			y: -4.0d
+			x: 1.5d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -148,8 +148,8 @@
 				}
 			]
 			title: "Centrífuga Térmica"
-			x: 4.5d
-			y: -5.5d
+			x: 3.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -182,8 +182,8 @@
 				}
 			]
 			title: "Banho Químico"
-			x: 4.5d
-			y: -4.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -216,8 +216,8 @@
 				}
 			]
 			title: "Reator Químico MV"
-			x: 3.0d
-			y: 6.25d
+			x: 1.5d
+			y: -4.75d
 		}
 		{
 			dependencies: [
@@ -270,8 +270,8 @@
 				}
 			]
 			title: "Polietileno"
-			x: 4.5d
-			y: 0.25d
+			x: 6.0d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -305,15 +305,15 @@
 			]
 			title: "Forno de Pirólise"
 			x: 1.5d
-			y: 6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
-				"7452DEEC31FF3367"
-				"3C420E452991D5C4"
+				"7411626F2F0248E0"
 			]
 			description: [
 				"Separe o petróleo em mil coisas."
+				"Pede quatro circuitos EV: a estação de trabalho, montada dentro da sala limpa."
 			]
 			id: "320F3BBB1E6BB300"
 			rewards: [
@@ -339,8 +339,8 @@
 				}
 			]
 			title: "Torre de Destilação"
-			x: 4.5d
-			y: 8.5d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -373,15 +373,15 @@
 				}
 			]
 			title: "Unidade de Craqueamento"
-			x: 6.0d
-			y: 9.75d
+			x: 13.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
-				"320F3BBB1E6BB300"
+				"7452DEEC31FF3367"
 			]
 			description: [
-				"Queime o que a refinaria sobra."
+				"Queime o gás de madeira (ou de carvão) que a pirólise solta."
 			]
 			id: "3F10FA70C7418A12"
 			rewards: [
@@ -407,8 +407,8 @@
 				}
 			]
 			title: "Turbina a Gás MV"
-			x: 7.5d
-			y: 9.5d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -442,14 +442,16 @@
 			]
 			title: "Gravador a Laser"
 			x: 4.5d
-			y: -7.5d
+			y: -14.0d
 		}
 		{
 			dependencies: [
-				"52433F8D4CA697D6"
+				"2525C9A5C8747F74"
 			]
 			description: [
 				"Mais calor para o alto-forno."
+				"O lingote pede 480 EU/t: com duas escotilhas de energia MV o alto-forno roda receitas HV."
+				"Ele sai quente; esfrie no banho químico com água."
 			]
 			id: "4135848180A1AFF7"
 			rewards: [
@@ -475,8 +477,8 @@
 				}
 			]
 			title: "Bobinas de Kanthal"
-			x: 3.0d
-			y: 1.25d
+			x: 4.5d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -484,6 +486,7 @@
 			]
 			description: [
 				"Não enferruja. Nunca."
+				"Também 480 EU/t no alto-forno, com as duas escotilhas MV."
 			]
 			icon: {
 				Count: 1b
@@ -529,8 +532,8 @@
 				}
 			]
 			title: "Aço Inoxidável"
-			x: 4.5d
-			y: 3.25d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -564,8 +567,8 @@
 				}
 			]
 			title: "Casco HV"
-			x: 6.0d
-			y: -1.25d
+			x: 7.5d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -598,8 +601,8 @@
 				}
 			]
 			title: "Motor HV"
-			x: 7.5d
-			y: -3.25d
+			x: 9.0d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -633,7 +636,7 @@
 			]
 			title: "Monocristal de Silício"
 			x: 6.0d
-			y: -4.75d
+			y: -6.25d
 		}
 		{
 			dependencies: [
@@ -666,15 +669,17 @@
 				}
 			]
 			title: "Placa de Circuito de Plástico"
-			x: 6.0d
-			y: -3.0d
+			x: 7.5d
+			y: -3.75d
 		}
 		{
 			dependencies: [
-				"4DE2CC7B35A822DE"
+				"5B35F978F4F65FA1"
+				"6C3450C699EA1C82"
 			]
 			description: [
 				"Monte circuitos sem errar uma solda."
+				"Pede dois circuitos EV: a estação de trabalho, montada dentro da sala limpa."
 			]
 			id: "5673BD23150D24B1"
 			rewards: [
@@ -700,17 +705,17 @@
 				}
 			]
 			title: "Montadora de Circuitos HV"
-			x: 9.0d
-			y: -4.5d
+			x: 15.0d
+			y: -6.25d
 		}
 		{
 			dependencies: [
-				"0DDDF4134C827922"
-				"2FD08345A18467D6"
+				"2A81AB63F1340C62"
 				"7F0CB2474259A8DA"
 			]
 			description: [
 				"Um pensamento do tamanho de uma unha."
+				"Sai da montadora de circuitos MV, que leva dois circuitos HV."
 			]
 			id: "6168813CAC00B0B5"
 			rewards: [
@@ -736,16 +741,18 @@
 				}
 			]
 			title: "Microprocessador"
-			x: 7.5d
-			y: -5.75d
+			x: 9.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
-				"6168813CAC00B0B5"
-				"5673BD23150D24B1"
+				"0DDDF4134C827922"
+				"2FD08345A18467D6"
 			]
 			description: [
 				"O circuito da alta tensão."
+				"Sai da montadora de circuitos LV (ela leva dois circuitos MV), com chips ILC e RAM do gravador."
+				"O transistor pede placa de silício: o lingote sai do alto-forno a 2273 K, com bobinas de kanthal."
 			]
 			icon: {
 				Count: 1b
@@ -788,8 +795,8 @@
 				}
 			]
 			title: "Circuito Integrado Avançado"
-			x: 10.5d
-			y: -4.75d
+			x: 7.5d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -823,14 +830,17 @@
 			]
 			title: "Emissor HV"
 			x: 12.0d
-			y: -4.0d
+			y: -10.75d
 		}
 		{
 			dependencies: [
-				"6C3450C699EA1C82"
+				"76F660B4641967AB"
+				"0E9FA3DF1BFC242A"
 			]
 			description: [
 				"Um campo invisível, como o Selo."
+				"O fio supercondutor pede 3300 K: bobinas de nicromo. O olho quântico é um olho de ender banhado em radônio,"
+				"que o reator grande tira de plutônio e urânio do End."
 			]
 			id: "6839F0B805BF3150"
 			rewards: [
@@ -856,15 +866,17 @@
 				}
 			]
 			title: "Gerador de Campo HV"
-			x: 13.5d
+			x: 18.0d
 			y: -3.25d
 		}
 		{
 			dependencies: [
-				"58B582486F8B57DE"
+				"02C93324FCEF7ABA"
+				"5B35F978F4F65FA1"
 			]
 			description: [
-				"Calor para o titânio."
+				"O calor que vem depois do titânio."
+				"O lingote pede 1920 EU/t (duas escotilhas HV no alto-forno) e sai quente: só o congelador a vácuo esfria."
 			]
 			id: "76F660B4641967AB"
 			rewards: [
@@ -890,15 +902,16 @@
 				}
 			]
 			title: "Bobinas de Nicromo"
-			x: 7.5d
-			y: 3.5d
+			x: 13.5d
+			y: -3.75d
 		}
 		{
 			dependencies: [
-				"4135848180A1AFF7"
+				"2A81AB63F1340C62"
 			]
 			description: [
 				"Cozinhe em massa."
+				"Pede três circuitos HV."
 			]
 			id: "5763DA191BCB4A61"
 			rewards: [
@@ -924,15 +937,16 @@
 				}
 			]
 			title: "Multi-Fornalha"
-			x: 4.5d
-			y: 5.25d
+			x: 9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
-				"58B582486F8B57DE"
+				"7411626F2F0248E0"
 			]
 			description: [
 				"Esfrie lingotes quentes demais para tocar."
+				"Pede três circuitos EV: a estação de trabalho, montada dentro da sala limpa."
 			]
 			id: "02C93324FCEF7ABA"
 			rewards: [
@@ -958,15 +972,17 @@
 				}
 			]
 			title: "Congelador a Vácuo"
-			x: 6.0d
-			y: 2.5d
+			x: 12.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
-				"2EBA76DAA7D05C80"
+				"4DE2CC7B35A822DE"
+				"6168813CAC00B0B5"
 			]
 			description: [
 				"Circuitos finos não suportam poeira."
+				"Com a montadora MV dentro dela, a estação de trabalho (circuito EV) fica possível."
 			]
 			id: "7411626F2F0248E0"
 			rewards: [
@@ -993,15 +1009,15 @@
 			]
 			title: "Sala Limpa"
 			x: 10.5d
-			y: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
-				"58B582486F8B57DE"
-				"3C420E452991D5C4"
+				"2CC3C02EB62D4C13"
 			]
 			description: [
 				"Química em escala industrial."
+				"Leva canos grandes de PTFE e quatro circuitos HV."
 			]
 			id: "0E9FA3DF1BFC242A"
 			rewards: [
@@ -1027,8 +1043,8 @@
 				}
 			]
 			title: "Reator Químico Grande"
-			x: 6.0d
-			y: 5.75d
+			x: 13.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1061,15 +1077,16 @@
 				}
 			]
 			title: "PVC"
-			x: 7.5d
-			y: 7.25d
+			x: 15.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
-				"0E9FA3DF1BFC242A"
+				"7411626F2F0248E0"
 			]
 			description: [
 				"Nada gruda nele."
+				"O tetrafluoretileno (clorofórmio e ácido fluorídrico) pede 240 EU/t: um reator químico HV."
 			]
 			id: "2CC3C02EB62D4C13"
 			rewards: [
@@ -1095,15 +1112,16 @@
 				}
 			]
 			title: "PTFE"
-			x: 7.5d
-			y: 5.75d
+			x: 12.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
-				"58B582486F8B57DE"
+				"2A81AB63F1340C62"
 			]
 			description: [
 				"Pressione até virar gema."
+				"Pede três circuitos HV."
 			]
 			id: "3D28381FBA3A8A9B"
 			rewards: [
@@ -1129,13 +1147,13 @@
 				}
 			]
 			title: "Compressor de Implosão"
-			x: 6.0d
-			y: 1.0d
+			x: 9.0d
+			y: -8.25d
 		}
 		{
 			dependencies: [
 				"3F10FA70C7418A12"
-				"2EBA76DAA7D05C80"
+				"7411626F2F0248E0"
 			]
 			description: [
 				"Mais gás, mais corrente."
@@ -1164,8 +1182,8 @@
 				}
 			]
 			title: "Turbina a Gás HV"
-			x: 9.0d
-			y: 5.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1198,15 +1216,16 @@
 				}
 			]
 			title: "Buffer de Baterias HV"
-			x: 7.5d
-			y: -1.75d
+			x: 9.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
-				"2EBA76DAA7D05C80"
+				"7411626F2F0248E0"
 			]
 			description: [
 				"Alimente multiblocos em alta tensão."
+				"Montada a 480 EU/t (montadora HV), com chip LPIC cortado dentro da sala limpa e sódio-potássio."
 			]
 			id: "5B35F978F4F65FA1"
 			rewards: [
@@ -1232,12 +1251,12 @@
 				}
 			]
 			title: "Escotilha de Energia HV"
-			x: 7.5d
-			y: 0.25d
+			x: 12.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"4DE2CC7B35A822DE"
+				"7411626F2F0248E0"
 			]
 			description: [
 				"Uma máquina que cava por você."
@@ -1266,17 +1285,16 @@
 				}
 			]
 			title: "Mineradora HV"
-			x: 9.0d
-			y: -3.0d
+			x: 12.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
-				"76F660B4641967AB"
 				"02C93324FCEF7ABA"
-				"5B35F978F4F65FA1"
 			]
 			description: [
 				"O metal das naves. Aurend olhava para cima."
+				"O kanthal já aquece o bastante; o lingote sai quente e só o congelador a vácuo esfria."
 			]
 			icon: {
 				Count: 1b
@@ -1322,8 +1340,8 @@
 				}
 			]
 			title: "Titânio"
-			x: 9.0d
-			y: 1.75d
+			x: 13.5d
+			y: -6.5d
 		}
 		{
 			dependencies: [
@@ -1356,8 +1374,8 @@
 				}
 			]
 			title: "Casco EV"
-			x: 10.5d
-			y: 1.0d
+			x: 15.0d
+			y: -7.75d
 		}
 		{
 			dependencies: [
@@ -1390,16 +1408,17 @@
 				}
 			]
 			title: "Motor EV"
-			x: 12.0d
-			y: -0.25d
+			x: 16.5d
+			y: -6.75d
 		}
 		{
 			dependencies: [
-				"2A81AB63F1340C62"
-				"7411626F2F0248E0"
+				"5673BD23150D24B1"
+				"0E9FA3DF1BFC242A"
 			]
 			description: [
 				"Circuitos que só se veem no microscópio."
+				"A lâmina nano pede 1920 EU/t no reator grande (duas escotilhas HV), dentro da sala limpa."
 			]
 			id: "02D8BBC9D945596E"
 			rewards: [
@@ -1425,8 +1444,8 @@
 				}
 			]
 			title: "Nanoprocessador"
-			x: 12.0d
-			y: -1.75d
+			x: 16.5d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -1460,8 +1479,8 @@
 				}
 			]
 			title: "Emissor EV"
-			x: 13.5d
-			y: -0.25d
+			x: 18.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -1495,8 +1514,8 @@
 				}
 			]
 			title: "Braço Robótico EV"
-			x: 13.5d
-			y: -1.75d
+			x: 18.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1549,8 +1568,8 @@
 				}
 			]
 			title: "A Era da Extrema Tensão"
-			x: 15.0d
-			y: -1.75d
+			x: 19.5d
+			y: -5.25d
 		}
 	]
 	title: "Caminho — Alta Tensão"

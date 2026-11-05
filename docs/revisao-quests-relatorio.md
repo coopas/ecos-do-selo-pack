@@ -168,3 +168,76 @@ Conferido no jar do Occultism 1.158 (receitas, rituais, pentáculos do Dicionár
 | `side_occultism/prata` | Não dizia onde. | Descrição: veio de galena ou minério de prata do Occultism. |
 
 Revisadas sem mudança: 11 quests.
+
+## Ato III (`30_ato3`)
+
+Conferido nos jars do Aether 1.5.2 e do Blue Skies 1.3.31 (worldgen, loot, tags, código dos chefes e das ferramentas). Dois fatos escondidos pesam aqui. Primeiro: no Everbright e no Everdawn, as picaretas de fora (de ferro para cima, inclusive as do GregTech e do Aether) quebram devagar e colhem como madeira (`PlayerHooks.isBreakingNerfed`); as vanilla de pedra, ouro e madeira escapam. Segundo: a falsita e o vêntio só nascem na pedra-turquesa (Everbright) e a horizonita só na pedra-lunar (Everdawn), o contrário do que as quests mostravam.
+
+| quest | problema | correção |
+|---|---|---|
+| `ato3/horizonita` | Pendurada no Everbright, mas o minério só gera na pedra-lunar do Everdawn (`ore_everdawn_horizonite`). A forja ainda leva pedregulho lunar. | Dependência trocada de `everbright` para `everdawn`; a descrição diz onde nasce. |
+| `ato3/falsita`, `ventio` | Penduradas no Everdawn, mas só geram na pedra-turquesa do Everbright (`ore_everbright_falsite`, `ore_everbright_ventium`). | Dependência trocada de `everdawn` para `everbright`; descrição. |
+| `ato3/everbright` | A descrição dizia "portal de pedra-de-neve", mas a moldura é de tijolos de pedra-turquesa. Também não dizia como achar a primeira moldura. | Descrição corrigida: tijolos de pedra-turquesa. Toda casa do Porteiro tem uma moldura pronta, de um dos dois céus (12 tijolos; o processador `swap_portal` troca lunar por turquesa). |
+| `ato3/everdawn` | Não dizia de que é a moldura. | Descrição: tijolos de pedra-lunar. |
+| `ato3/outros_ceus` | Dizia que o isqueiro pede outro Fragmento das Profundezas, mas o Porteiro também vende o isqueiro por esmeraldas (`zeal_lighter_cost`). | A descrição dá os dois caminhos e lembra que, sem a Chave Celeste, nenhum portal aceita. |
+| `ato3/piropo` | As picaretas de fora não colhem minério nos dois céus, e nada avisava. | Descrição: usar picareta de pedra ou as do próprio céu. |
+| `ato3/diopsidio` | Diopsídio e charoíta pedem picareta de nível 2. Lá dentro, só a de aquita (ou melhor) serve. | Descrição. |
+| `ato3/turquesa` | Sem toque de seda, a pedra cai como pedregulho (`blocks/turquoise_stone`). | Descrição: o forno devolve a pedra. |
+| `ato3/pedra_lua` | O minério solta lascas, não a pedra. | Descrição: quatro lascas fazem uma pedra. |
+| `ato3/invocador` | Nada disso era dito: ele mora no topo da Masmorra Ofuscante, a pedra-chave pede quatro chaves dos baús da masmorra, e ele só fica vulnerável quando conjura. | Descrição. |
+| `ato3/esmagador` | Fica na Masmorra da Natureza (Everbright), com a mesma regra das quatro chaves. Só fica vulnerável depois de perder uma parede. | Descrição. |
+| `ato3/almas` | O fragmento de alma não vem só da bolsa do Invocador: também cai de espíritos de gelo e de polargeists. | Descrição. |
+| `ato3/solenne` | Mecânica escondida: o Espírito do Sol é imune a tudo que não seja frio até ser congelado pelos próprios cristais de gelo (`SunSpirit.isInvulnerableTo`). | Descrição: rebater os cristais de gelo e golpear enquanto ele está congelado. |
+| `ato3/slider` | Só toma dano de picareta (`aether:slider_damaging_items`). | Descrição. |
+| `ato3/valquirias` | A Rainha só luta com 10 medalhas, e cada valquíria deixa uma. | Descrição. |
+| `ato3/paraquedas` | O paraquedas dourado leva 4 nuvens douradas, que são raras (1 em 75 chunks, y 96 a 128). A quest anterior só pede as frias e as azuis. | Descrição. |
+
+Revisadas sem mudança: 27 quests.
+
+## Caminho — A Rede Que Lembra (`31_side_ae2`)
+
+Conferido no jar do AE2 15.4.12 e na config (`spawnPressesInMeteorites: true`). A energia do GregTech entra na rede pelo cabo (`nativeEUToFE: true`).
+
+| quest | problema | correção |
+|---|---|---|
+| `side_ae2/meteorito` | Mandava usar a bússola de meteorito, que é uma bússola carregada no carregador, e o carregador é uma quest posterior. | Descrição: o carregador leva só ferro e cobre e funciona com manivela, então dá para fazer antes. |
+| `side_ae2/silicio` | As prensas só existem no Cubo Misterioso do meteorito, e nada avisava. | Descrição. |
+| `side_ae2/brotos` | Não dizia que o bloco brotante impecável, quebrado, cai como defeituoso (o item da quest). | Descrição. |
+| `side_ae2/carregador` | No começo não há energia para ele. | Descrição: manivela em cima. |
+| `side_ae2/aceitador` | Não dizia como ligar a energia do GregTech. | Descrição: basta encostar um cabo do GregTech. |
+
+Revisadas sem mudança: 18 quests.
+
+## Caminho — Alta Tensão (`32_side_gt_mv_ev`)
+
+O verificador não modela sala limpa nem a voltagem real de cada momento (o teto do Ato III é EV para tudo), e a ordem das quests não seguia o GregTech. Conferi os fatos no dump e no jar do GregTech 7.5.3 (as receitas com `.cleanroom(CLEANROOM)` em `CircuitRecipes`):
+- Kanthal (1800 K) e aço inox (1700 K) pedem 480 EU/t. Com duas escotilhas de energia MV o alto-forno roda receitas HV (`getMaxVoltage`: mais de uma escotilha do tier mais alto dá tier+1).
+- Todo circuito EV pede sala limpa (estação de trabalho, nano e quântico). O congelador a vácuo leva 3 circuitos EV, a torre de destilação 4 e a montadora de circuitos HV 2. Mesmo assim, o congelador vinha logo depois do inox.
+- A montadora de circuitos LV leva circuitos MV, e a MV leva circuitos HV. O circuito integrado avançado (HV, 30 EU/t) sai da LV; o microprocessador (60 EU/t) só sai da MV. Mas a quest do circuito avançado dependia do microprocessador e da montadora HV, a ordem contrária.
+- A sala limpa leva 2 motores HV e 1 circuito HV. A multi-fornalha, o compressor de implosão, o reator grande e a turbina HV também levam circuitos HV.
+- O reator grande leva canos de PTFE, e o PTFE pede reator químico HV (240 EU/t). As quests estavam na ordem contrária.
+- O titânio (1941 K) já sai com bobinas de kanthal. O nicromo pede 2700 K e 1920 EU/t (duas escotilhas HV). Os dois lingotes saem quentes, e só o congelador a vácuo esfria. O fio supercondutor do gerador de campo HV pede 3300 K (bobinas de nicromo). O olho quântico pede radônio, que sai do reator grande a partir de plutônio e urânio do End.
+
+| quest | problema | correção |
+|---|---|---|
+| `side_gt_mv_ev/kanthal` | Pede 480 EU/t sem dizer como, e o lingote sai quente. | Dependência trocada de `inicio` para `banho`. A descrição explica as duas escotilhas MV e o banho químico. |
+| `side_gt_mv_ev/inox` | Pede 480 EU/t sem dizer como. | Descrição. |
+| `side_gt_mv_ev/circuito_avancado` | Dependia do microprocessador e da montadora HV, que vêm depois dele. | Dependências trocadas para `boule`, `gravador`. Descrição: montadora LV, chips do gravador, silício a 2273 K. |
+| `side_gt_mv_ev/microprocessador` | A montadora MV pede circuitos HV. | Dependências trocadas de `boule`, `gravador` para `circuito_avancado` (mantém `placa_plastico`); descrição. |
+| `side_gt_mv_ev/sala_limpa` | Pede motores e circuito HV. A partir dela os circuitos EV ficam possíveis. | Dependência trocada de `casco_hv` para `motor_hv`, `microprocessador`; descrição. |
+| `side_gt_mv_ev/congelador` | Leva 3 circuitos EV, mas dependia só do inox. | Dependência trocada de `inox` para `sala_limpa`; descrição. |
+| `side_gt_mv_ev/destilaria` | Leva 4 circuitos EV e bombas HV, mas dependia da pirólise e do reator MV. | Dependência trocada para `sala_limpa`; descrição. |
+| `side_gt_mv_ev/montadora_circuito` | Leva 2 circuitos EV e um emissor HV, mas dependia só do motor HV. | Dependência trocada de `motor_hv` para `escotilha`, `emissor_hv`; descrição. |
+| `side_gt_mv_ev/escotilha` | É montada a 480 EU/t com chip LPIC, e esse chip só é cortado na sala limpa. | Dependência trocada de `casco_hv` para `sala_limpa`; descrição. |
+| `side_gt_mv_ev/titanio` | Dependia do nicromo, mas o kanthal basta. Precisa do congelador a vácuo. | Dependências trocadas de `nicromo`, `congelador`, `escotilha` para só `congelador`; descrição. |
+| `side_gt_mv_ev/nicromo` | A descrição dizia "calor para o titânio", o que é falso. Pede 1920 EU/t e o congelador. | Dependência trocada de `inox` para `congelador`, `escotilha`; descrição. |
+| `side_gt_mv_ev/campo_hv` | O fio supercondutor pede bobinas de nicromo, e o olho quântico pede radônio. | Dependência trocada de `emissor_hv` para `nicromo`, `reator_grande`; descrição. |
+| `side_gt_mv_ev/ptfe`, `reator_grande` | Estavam em ordem contrária: o reator grande leva canos de PTFE. | `ptfe` passa a depender de `sala_limpa` (antes `reator_grande`). `reator_grande` passa a depender de `ptfe` (antes `inox`, `reator_mv`). Descrições. |
+| `side_gt_mv_ev/nano` | A lâmina nano pede 1920 EU/t e sala limpa, e o nano sai da montadora HV. | Dependências trocadas de `circuito_avancado`, `sala_limpa` para `montadora_circuito`, `reator_grande`; descrição. |
+| `side_gt_mv_ev/multi_fornalha`, `implosao` | Levam 3 circuitos HV, mas dependiam do kanthal ou do inox. | Dependência trocada para `circuito_avancado`; descrição. |
+| `side_gt_mv_ev/turbina_hv`, `mineradora` | Levam circuitos e motores HV. | Dependências trocadas para `sala_limpa` (`turbina_hv` mantém `turbina_gas`). |
+| `side_gt_mv_ev/turbina_gas` | Dependia da torre de destilação (EV), mas a turbina MV queima o gás de madeira e de carvão da pirólise. | Dependência trocada de `destilaria` para `pirolise`; descrição. |
+
+O `LIMITES` de `side_gt_mv_ev` no `layoutcheck` continua em 5 cruzamentos; só o comentário foi atualizado.
+
+Revisadas sem mudança: 22 quests.

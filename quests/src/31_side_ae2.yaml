@@ -5,26 +5,26 @@ group: caminhos
 act: 3
 quests:
   - {slug: meteorito, title: "Pedras Que Caíram", deps: [ato2/fim_ato2], shape: gear, icon: ae2:sky_stone_block,
-     desc: ["Meteoritos guardam cristais de certus.", "Use uma bússola de meteorito para achar um."], tasks: [{item: ae2:sky_stone_block, count: 16}],
+     desc: ["Meteoritos guardam cristais de certus.", "Uma bússola carregada no carregador (ferro e cobre, girado a manivela) aponta o mais perto."], tasks: [{item: ae2:sky_stone_block, count: 16}],
      rewards: [{coins: 3}]}
   - {slug: certus, title: "Quartzo Certus", deps: [meteorito], desc: ["Cristais que guardam informação como a pedra guarda calor."],
      tasks: [{tag: forge:gems/certus_quartz, count: 16}], rewards: [{coins: 2}]}
-  - {slug: brotos, title: "Brotos de Quartzo", deps: [certus], desc: ["Um bloco de quartzo que cresce sozinho. Leve um para casa."],
+  - {slug: brotos, title: "Brotos de Quartzo", deps: [certus], desc: ["Um bloco de quartzo que cresce sozinho. Leve um para casa.", "O impecável do meteorito, quebrado com picareta, cai como defeituoso."],
      tasks: [{item: ae2:flawed_budding_quartz}], rewards: [{coins: 3}]}
-  - {slug: carregador, title: "O Carregador", deps: [certus], desc: ["Energia transforma certus em cristal carregado."],
+  - {slug: carregador, title: "O Carregador", deps: [certus], desc: ["Energia transforma certus em cristal carregado.", "Sem energia ainda? Uma manivela em cima dele resolve."],
      tasks: [{item: ae2:charger}, {item: ae2:charged_certus_quartz_crystal, count: 4}], rewards: [{coins: 3}]}
   - {slug: fluix, title: "Cristal Fluix", deps: [carregador], desc: ["Certus carregado, redstone e quartzo na água."],
      tasks: [{tag: forge:gems/fluix, count: 16}], rewards: [{coins: 3}]}
   - {slug: prensa, title: "A Prensa", deps: [certus, side_gt_steam_lv/bomba_pistao], shape: gear, icon: ae2:inscriber,
      desc: ["Pede um pistão LV do GregTech.", "A rede de Aurend corria sobre máquinas."], tasks: [{item: ae2:inscriber}], rewards: [{coins: 4}]}
-  - {slug: silicio, title: "Silício Impresso", deps: [prensa], desc: ["O primeiro molde da rede."],
+  - {slug: silicio, title: "Silício Impresso", deps: [prensa], desc: ["O primeiro molde da rede.", "As quatro prensas saem do Cubo Misterioso, no centro do meteorito."],
      tasks: [{tag: forge:silicon, count: 8}, {item: ae2:printed_silicon, count: 4}], rewards: [{coins: 2}]}
   - {slug: processadores, title: "Três Processadores", deps: [silicio, fluix], desc: ["Lógico, de cálculo e de engenharia."],
      tasks: [{item: ae2:logic_processor, count: 4}, {item: ae2:calculation_processor, count: 4}, {item: ae2:engineering_processor, count: 4}],
      rewards: [{coins: 5}]}
   - {slug: cabos, title: "Cabos de Fluix", deps: [fluix], desc: ["Fios que carregam itens como se fossem pensamentos."],
      tasks: [{item: ae2:fluix_glass_cable, count: 32}], rewards: [{coins: 2}]}
-  - {slug: aceitador, title: "Aceitador de Energia", deps: [cabos], desc: ["Converte a energia das suas máquinas para a rede."],
+  - {slug: aceitador, title: "Aceitador de Energia", deps: [cabos], desc: ["Converte a energia das suas máquinas para a rede.", "Basta encostar nele um cabo do GregTech."],
      tasks: [{item: ae2:energy_acceptor}], rewards: [{coins: 2}]}
   - {slug: controlador, title: "O Controlador", deps: [processadores, aceitador, ato2/braco_mv], shape: gear, icon: ae2:controller,
      desc: ["Pede um braço robótico MV.", "O coração da rede: tudo passa por ele."], tasks: [{item: ae2:controller}],

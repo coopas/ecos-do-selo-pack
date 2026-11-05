@@ -21,18 +21,21 @@ quests:
      rewards: [{crate: comum}, {coins: 4}]}
   - {slug: pirolise, title: "Forno de Pirólise", deps: [inicio], desc: ["Madeira e carvão viram gases úteis."],
      tasks: [{item: gtceu:pyrolyse_oven}], rewards: [{coins: 4}]}
-  - {slug: destilaria, title: "Torre de Destilação", deps: [pirolise, reator_mv], desc: ["Separe o petróleo em mil coisas."],
+  - {slug: destilaria, title: "Torre de Destilação", deps: [sala_limpa], desc: ["Separe o petróleo em mil coisas.",
+            "Pede quatro circuitos EV: a estação de trabalho, montada dentro da sala limpa."],
      tasks: [{item: gtceu:distillation_tower}], rewards: [{coins: 5}]}
   - {slug: craqueador, title: "Unidade de Craqueamento", deps: [destilaria], desc: ["Quebre moléculas grandes em pequenas."],
      tasks: [{item: gtceu:cracker}], rewards: [{coins: 4}]}
-  - {slug: turbina_gas, title: "Turbina a Gás MV", deps: [destilaria], desc: ["Queime o que a refinaria sobra."],
+  - {slug: turbina_gas, title: "Turbina a Gás MV", deps: [pirolise], desc: ["Queime o gás de madeira (ou de carvão) que a pirólise solta."],
      tasks: [{item: gtceu:mv_gas_turbine}], rewards: [{coins: 3}]}
   - {slug: gravador, title: "Gravador a Laser", deps: [inicio], desc: ["Luz que escreve em cristal."],
      tasks: [{item: gtceu:mv_laser_engraver}], rewards: [{coins: 4}]}
-  - {slug: kanthal, title: "Bobinas de Kanthal", deps: [inicio], desc: ["Mais calor para o alto-forno."],
+  - {slug: kanthal, title: "Bobinas de Kanthal", deps: [banho], desc: ["Mais calor para o alto-forno.",
+            "O lingote pede 480 EU/t: com duas escotilhas de energia MV o alto-forno roda receitas HV.",
+            "Ele sai quente; esfrie no banho químico com água."],
      tasks: [{item: gtceu:kanthal_coil_block, count: 16}], rewards: [{coins: 4}]}
   - {slug: inox, title: "Aço Inoxidável", deps: [kanthal], shape: gear, icon: gtceu:stainless_steel_ingot,
-     desc: ["Não enferruja. Nunca."], tasks: [{tag: forge:ingots/stainless_steel, count: 32}], rewards: [{crate: rara}, {coins: 5}]}
+     desc: ["Não enferruja. Nunca.", "Também 480 EU/t no alto-forno, com as duas escotilhas MV."], tasks: [{tag: forge:ingots/stainless_steel, count: 32}], rewards: [{crate: rara}, {coins: 5}]}
   - {slug: casco_hv, title: "Casco HV", deps: [inox, polietileno], desc: ["Alta voltagem."],
      tasks: [{item: gtceu:hv_machine_hull, count: 2}], rewards: [{coins: 4}]}
   - {slug: motor_hv, title: "Motor HV", deps: [casco_hv], desc: ["O motor da alta tensão."],
@@ -41,49 +44,61 @@ quests:
      tasks: [{item: gtceu:silicon_boule}], rewards: [{coins: 4}]}
   - {slug: placa_plastico, title: "Placa de Circuito de Plástico", deps: [polietileno], desc: ["A base dos circuitos avançados."],
      tasks: [{item: gtceu:plastic_printed_circuit_board, count: 8}], rewards: [{coins: 3}]}
-  - {slug: montadora_circuito, title: "Montadora de Circuitos HV", deps: [motor_hv], desc: ["Monte circuitos sem errar uma solda."],
+  - {slug: montadora_circuito, title: "Montadora de Circuitos HV", deps: [escotilha, emissor_hv], desc: ["Monte circuitos sem errar uma solda.",
+            "Pede dois circuitos EV: a estação de trabalho, montada dentro da sala limpa."],
      tasks: [{item: gtceu:hv_circuit_assembler}], rewards: [{coins: 5}]}
-  - {slug: microprocessador, title: "Microprocessador", deps: [boule, gravador, placa_plastico], desc: ["Um pensamento do tamanho de uma unha."],
+  - {slug: microprocessador, title: "Microprocessador", deps: [circuito_avancado, placa_plastico], desc: ["Um pensamento do tamanho de uma unha.",
+            "Sai da montadora de circuitos MV, que leva dois circuitos HV."],
      tasks: [{item: gtceu:micro_processor, count: 8}], rewards: [{coins: 4}]}
-  - {slug: circuito_avancado, title: "Circuito Integrado Avançado", deps: [microprocessador, montadora_circuito], shape: gear,
-     icon: gtceu:advanced_integrated_circuit, desc: ["O circuito da alta tensão."],
+  - {slug: circuito_avancado, title: "Circuito Integrado Avançado", deps: [boule, gravador], shape: gear,
+     icon: gtceu:advanced_integrated_circuit, desc: ["O circuito da alta tensão.",
+            "Sai da montadora de circuitos LV (ela leva dois circuitos MV), com chips ILC e RAM do gravador.",
+            "O transistor pede placa de silício: o lingote sai do alto-forno a 2273 K, com bobinas de kanthal."],
      tasks: [{item: gtceu:advanced_integrated_circuit, count: 4}], rewards: [{crate: rara}, {coins: 6}]}
   - {slug: emissor_hv, title: "Emissor HV", deps: [circuito_avancado], desc: ["Uma luz mais forte."],
      tasks: [{item: gtceu:hv_emitter, count: 2}], rewards: [{coins: 4}]}
-  - {slug: campo_hv, title: "Gerador de Campo HV", deps: [emissor_hv], desc: ["Um campo invisível, como o Selo."],
+  - {slug: campo_hv, title: "Gerador de Campo HV", deps: [nicromo, reator_grande], desc: ["Um campo invisível, como o Selo.",
+            "O fio supercondutor pede 3300 K: bobinas de nicromo. O olho quântico é um olho de ender banhado em radônio,",
+            "que o reator grande tira de plutônio e urânio do End."],
      tasks: [{item: gtceu:hv_field_generator}], rewards: [{coins: 5}]}
-  - {slug: nicromo, title: "Bobinas de Nicromo", deps: [inox], desc: ["Calor para o titânio."],
+  - {slug: nicromo, title: "Bobinas de Nicromo", deps: [congelador, escotilha], desc: ["O calor que vem depois do titânio.",
+            "O lingote pede 1920 EU/t (duas escotilhas HV no alto-forno) e sai quente: só o congelador a vácuo esfria."],
      tasks: [{item: gtceu:nichrome_coil_block, count: 16}], rewards: [{coins: 5}]}
-  - {slug: multi_fornalha, title: "Multi-Fornalha", deps: [kanthal], desc: ["Cozinhe em massa."],
+  - {slug: multi_fornalha, title: "Multi-Fornalha", deps: [circuito_avancado], desc: ["Cozinhe em massa.", "Pede três circuitos HV."],
      tasks: [{item: gtceu:multi_smelter}], rewards: [{coins: 4}]}
-  - {slug: congelador, title: "Congelador a Vácuo", deps: [inox], desc: ["Esfrie lingotes quentes demais para tocar."],
+  - {slug: congelador, title: "Congelador a Vácuo", deps: [sala_limpa], desc: ["Esfrie lingotes quentes demais para tocar.",
+            "Pede três circuitos EV: a estação de trabalho, montada dentro da sala limpa."],
      tasks: [{item: gtceu:vacuum_freezer}], rewards: [{coins: 5}]}
-  - {slug: sala_limpa, title: "Sala Limpa", deps: [casco_hv], desc: ["Circuitos finos não suportam poeira."],
+  - {slug: sala_limpa, title: "Sala Limpa", deps: [motor_hv, microprocessador], desc: ["Circuitos finos não suportam poeira.",
+            "Com a montadora MV dentro dela, a estação de trabalho (circuito EV) fica possível."],
      tasks: [{item: gtceu:cleanroom}], rewards: [{coins: 5}]}
-  - {slug: reator_grande, title: "Reator Químico Grande", deps: [inox, reator_mv], desc: ["Química em escala industrial."],
+  - {slug: reator_grande, title: "Reator Químico Grande", deps: [ptfe], desc: ["Química em escala industrial.", "Leva canos grandes de PTFE e quatro circuitos HV."],
      tasks: [{item: gtceu:large_chemical_reactor}], rewards: [{coins: 5}]}
   - {slug: pvc, title: "PVC", deps: [reator_grande], desc: ["Um plástico mais resistente."],
      tasks: [{item: gtceu:polyvinyl_chloride_plate, count: 16}], rewards: [{coins: 3}]}
-  - {slug: ptfe, title: "PTFE", deps: [reator_grande], desc: ["Nada gruda nele."],
+  - {slug: ptfe, title: "PTFE", deps: [sala_limpa], desc: ["Nada gruda nele.",
+            "O tetrafluoretileno (clorofórmio e ácido fluorídrico) pede 240 EU/t: um reator químico HV."],
      tasks: [{item: gtceu:polytetrafluoroethylene_plate, count: 16}], rewards: [{coins: 4}]}
-  - {slug: implosao, title: "Compressor de Implosão", deps: [inox], desc: ["Pressione até virar gema."],
+  - {slug: implosao, title: "Compressor de Implosão", deps: [circuito_avancado], desc: ["Pressione até virar gema.", "Pede três circuitos HV."],
      tasks: [{item: gtceu:implosion_compressor}], rewards: [{coins: 4}]}
-  - {slug: turbina_hv, title: "Turbina a Gás HV", deps: [turbina_gas, casco_hv], desc: ["Mais gás, mais corrente."],
+  - {slug: turbina_hv, title: "Turbina a Gás HV", deps: [turbina_gas, sala_limpa], desc: ["Mais gás, mais corrente."],
      tasks: [{item: gtceu:hv_gas_turbine}], rewards: [{coins: 4}]}
   - {slug: bateria_hv, title: "Buffer de Baterias HV", deps: [casco_hv], desc: ["Guarde a alta tensão."],
      tasks: [{item: gtceu:hv_battery_buffer_4x}], rewards: [{coins: 3}]}
-  - {slug: escotilha, title: "Escotilha de Energia HV", deps: [casco_hv], desc: ["Alimente multiblocos em alta tensão."],
+  - {slug: escotilha, title: "Escotilha de Energia HV", deps: [sala_limpa], desc: ["Alimente multiblocos em alta tensão.",
+            "Montada a 480 EU/t (montadora HV), com chip LPIC cortado dentro da sala limpa e sódio-potássio."],
      tasks: [{item: gtceu:hv_energy_input_hatch, count: 2}], rewards: [{coins: 3}]}
-  - {slug: mineradora, title: "Mineradora HV", deps: [motor_hv], desc: ["Uma máquina que cava por você."],
+  - {slug: mineradora, title: "Mineradora HV", deps: [sala_limpa], desc: ["Uma máquina que cava por você."],
      tasks: [{item: gtceu:hv_miner}], rewards: [{coins: 4}]}
-  - {slug: titanio, title: "Titânio", deps: [nicromo, congelador, escotilha], shape: gear, icon: gtceu:titanium_ingot,
-     desc: ["O metal das naves. Aurend olhava para cima."], tasks: [{tag: forge:ingots/titanium, count: 32}],
+  - {slug: titanio, title: "Titânio", deps: [congelador], shape: gear, icon: gtceu:titanium_ingot,
+     desc: ["O metal das naves. Aurend olhava para cima.", "O kanthal já aquece o bastante; o lingote sai quente e só o congelador a vácuo esfria."], tasks: [{tag: forge:ingots/titanium, count: 32}],
      rewards: [{crate: epica}, {coins: 8}]}
   - {slug: casco_ev, title: "Casco EV", deps: [titanio], desc: ["Extrema voltagem."],
      tasks: [{item: gtceu:ev_machine_hull, count: 2}], rewards: [{coins: 5}]}
   - {slug: motor_ev, title: "Motor EV", deps: [casco_ev], desc: ["Rápido como um pensamento."],
      tasks: [{item: gtceu:ev_electric_motor, count: 4}], rewards: [{coins: 5}]}
-  - {slug: nano, title: "Nanoprocessador", deps: [circuito_avancado, sala_limpa], desc: ["Circuitos que só se veem no microscópio."],
+  - {slug: nano, title: "Nanoprocessador", deps: [montadora_circuito, reator_grande], desc: ["Circuitos que só se veem no microscópio.",
+            "A lâmina nano pede 1920 EU/t no reator grande (duas escotilhas HV), dentro da sala limpa."],
      tasks: [{item: gtceu:nano_processor, count: 4}], rewards: [{coins: 6}]}
   - {slug: emissor_ev, title: "Emissor EV", deps: [motor_ev, nano], desc: ["Também é parte da Bancada da NASA."],
      tasks: [{item: gtceu:ev_emitter, count: 2}], rewards: [{coins: 5}]}
