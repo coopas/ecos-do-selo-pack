@@ -55,7 +55,7 @@
 			]
 			title: "A Bancada da NASA"
 			x: 0.0d
-			y: 0.5d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -98,7 +98,7 @@
 			]
 			title: "Aço Para Foguetes"
 			x: 1.5d
-			y: -0.25d
+			y: 10.25d
 		}
 		{
 			dependencies: [
@@ -141,7 +141,7 @@
 			]
 			title: "Ponta e Aletas"
 			x: 3.0d
-			y: -1.25d
+			y: 9.25d
 		}
 		{
 			dependencies: [
@@ -184,7 +184,7 @@
 			]
 			title: "Motor de Aço"
 			x: 3.0d
-			y: 0.25d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -219,7 +219,7 @@
 			]
 			title: "Refinaria de Combustível"
 			x: 3.0d
-			y: 1.75d
+			y: 12.25d
 		}
 		{
 			dependencies: [
@@ -262,7 +262,7 @@
 			]
 			title: "Traje Espacial"
 			x: 1.5d
-			y: -1.75d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -296,7 +296,7 @@
 			]
 			title: "Carregador de Oxigênio"
 			x: 4.5d
-			y: -2.25d
+			y: 7.75d
 		}
 		{
 			dependencies: [
@@ -330,7 +330,7 @@
 			]
 			title: "Plataforma de Lançamento"
 			x: 3.0d
-			y: 3.25d
+			y: 13.75d
 		}
 		{
 			dependencies: [
@@ -384,7 +384,7 @@
 			]
 			title: "Foguete T1"
 			x: 4.5d
-			y: 0.5d
+			y: 11.25d
 		}
 		{
 			dependencies: [
@@ -415,7 +415,7 @@
 			]
 			title: "Órbita"
 			x: 6.0d
-			y: -1.25d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -462,8 +462,8 @@
 				}
 			]
 			title: "A Lua"
-			x: 6.0d
-			y: 0.25d
+			x: 7.5d
+			y: 8.25d
 		}
 		{
 			dependencies: [
@@ -496,8 +496,8 @@
 				}
 			]
 			title: "Queijo da Lua"
-			x: 7.5d
-			y: -1.5d
+			x: 9.0d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -530,8 +530,8 @@
 				}
 			]
 			title: "Desh"
-			x: 7.5d
-			y: 0.0d
+			x: 9.0d
+			y: 7.75d
 		}
 		{
 			dependencies: [
@@ -585,8 +585,8 @@
 				}
 			]
 			title: "Foguete T2"
-			x: 9.0d
-			y: -0.5d
+			x: 10.5d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -633,8 +633,8 @@
 				}
 			]
 			title: "Marte"
-			x: 10.5d
-			y: -0.75d
+			x: 12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -667,8 +667,8 @@
 				}
 			]
 			title: "Ostrum"
-			x: 12.0d
-			y: -1.5d
+			x: 13.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -722,8 +722,8 @@
 				}
 			]
 			title: "Foguete T3"
-			x: 13.5d
-			y: -1.5d
+			x: 15.0d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -756,8 +756,8 @@
 				}
 			]
 			title: "Traje de Netherita"
-			x: 15.0d
-			y: -2.25d
+			x: 16.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -786,8 +786,8 @@
 				}
 			]
 			title: "Vênus"
-			x: 16.5d
-			y: -2.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -816,8 +816,8 @@
 				}
 			]
 			title: "Mercúrio"
-			x: 15.0d
-			y: -0.75d
+			x: 16.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -850,8 +850,8 @@
 				}
 			]
 			title: "Calorita"
-			x: 18.0d
-			y: -1.75d
+			x: 19.5d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -905,8 +905,8 @@
 				}
 			]
 			title: "Foguete T4"
-			x: 19.5d
-			y: -1.5d
+			x: 21.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -953,8 +953,8 @@
 				}
 			]
 			title: "Glacio"
-			x: 21.0d
-			y: -1.5d
+			x: 22.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -987,8 +987,8 @@
 				}
 			]
 			title: "Normalizador de Gravidade"
-			x: 12.0d
-			y: 0.0d
+			x: 13.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -1021,8 +1021,8 @@
 				}
 			]
 			title: "Distribuidor de Oxigênio"
-			x: 7.5d
-			y: 1.5d
+			x: 9.0d
+			y: 9.25d
 		}
 	]
 	title: "Caminho — Os Sinos no Céu"

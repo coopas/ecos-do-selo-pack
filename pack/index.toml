@@ -18,7 +18,7 @@ hash = "57c07eca77c69311811ed50ded3dd8ad28d560432ee0ed4d49b21b39a23d245c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato2.snbt"
-hash = "a3ec4a8c827e3384de3c8c18533043c45f525d1e5fb8a362ca764d0a90fb2781"
+hash = "1adffc057555290d56ae635769c3142e791da391ff45e426e04858a091377afe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato3.snbt"
@@ -54,11 +54,11 @@ hash = "9e170bbea90e4308c4d6059b180260e0471f307e4b25d7343db838332199c78b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_create.snbt"
-hash = "5a484986851b756798dcc64407dd77b9a5d314e2fa2c6197a065140df6f2bcc0"
+hash = "64299f97ac8732b479a66ee1acf242047a0fc5797f43b5f87897cabb668c9cf8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_mv_ev.snbt"
-hash = "108dc17da5422d1cad6e6a0d7c9b38aba38ce0fdf49d50d6545ed971c7802b30"
+hash = "87e2e6703a9cee1fca1cf5d043633070efdd4277364c6df7e7aa29479bba74bc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_steam_lv.snbt"
@@ -78,7 +78,7 @@ hash = "618803afee30618e2181846d9bde10a925a6f8dacdcdd05c1dfe0f1c0467020f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_space.snbt"
-hash = "5a76c9d46077d55c51209e9e7cefdcfb4d97233f51975dc1d7bc3582d5b0a11b"
+hash = "5a76d5d7fd616d03ba51c12132b7b11d5990bba68532f43f0231c564afc4fe9f"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

@@ -12,20 +12,19 @@ import sys
 from pathlib import Path
 
 
-# Capítulo -> (cruzamentos, linhas sobre quest, linhas longas) tolerados, com o motivo. Linha sobre quest: zero em todos.
+# Capítulo -> (cruzamentos, linhas sobre quest, linhas longas, comprimento máximo de linha) tolerados, com o motivo.
+# Sem entrada: (0, 0, 0, MAX_EDGE). Linha sobre quest: zero em todos.
 # Os quatro não planares: nenhum desenho, com qualquer posição, zera os cruzamentos (é preciso tirar 1-2 arestas para o
 # grafo ficar planar), e o livro ainda exige ler da esquerda para a direita. Valor = o que questgen.layout atingiu;
 # baixar se o layout melhorar.
-LIMITES: dict[str, tuple[int, int, int]] = {
-    "side_gt_steam_lv": (2, 0, 0),  # não planar (planar sem ligas_vapor->liga_vermelha)
-    "ato2": (2, 0, 0),              # não planar (planar sem inicio->alto_forno_eletrico)
-    "side_gt_mv_ev": (6, 0, 0),     # não planar (planar sem titanio->casco_ev e inox->reator_grande)
-    "ato4": (1, 0, 0),              # não planar (planar sem fragmento->argamassa)
-    # planar, mas zerar exige o K2,2 foguete1/oxigenio -> orbita/lua com orbita ~11 colunas à direita (linhas de 20)
-    "side_space": (1, 0, 0),
+LIMITES: dict[str, tuple[int, int, int, float]] = {
+    "side_gt_steam_lv": (2, 0, 0, 10.5),  # não planar (planar sem ligas_vapor->liga_vermelha)
+    "ato2": (1, 0, 0, 10.5),              # não planar (planar sem inicio->alto_forno_eletrico)
+    "side_gt_mv_ev": (5, 0, 0, 10.5),     # não planar (planar sem titanio->casco_ev e inox->reator_grande)
+    "ato4": (1, 0, 0, 10.5),              # não planar (planar sem fragmento->argamassa)
     # fim_prologo (11 pais) tem de ficar à direita do ramo picareta_ferro->diamante->encantamento; o caminho
-    # livro_quests->jei->fim_prologo contorna o ramo do ferro por cima e uma das duas linhas passa de MAX_EDGE
-    "prologo": (0, 0, 1),
+    # livro_quests->jei->fim_prologo contorna o ramo do ferro por cima e jei->fim_prologo (~16.1) passa de MAX_EDGE
+    "prologo": (0, 0, 1, 16.5),
 }
 
 
@@ -102,6 +101,14 @@ def long_edges(c, pos, max_len: float = MAX_EDGE) -> int:
     return sum(1 for a, b in edges(c) if edge_length(pos[a], pos[b]) > max_len)
 
 
+def max_edge_length(c, pos) -> float:
+    return max((edge_length(pos[a], pos[b]) for a, b in edges(c)), default=0.0)
+
+
+def limits(slug: str) -> tuple[int, int, int, float]:
+    return LIMITES.get(slug, (0, 0, 0, MAX_EDGE))
+
+
 def draw(c, pos, path: Path, scale: int = 40) -> None:
     from PIL import Image, ImageDraw
     xs = [p[0] for p in pos.values()] or [0]
@@ -138,8 +145,8 @@ def main(argv=None) -> int:
         ys = [p[1] for p in pos.values()]
         print(f"{c.slug:20} quests={len(c.quests):3} arestas={len(edges(c)):3} cruzamentos={x:3} "
               f"linhas_sobre_quest={o:3} linhas_longas={n:3} tamanho={max(xs) - min(xs):.1f}x{max(ys) - min(ys):.1f}")
-        lim = LIMITES.get(c.slug, (0, 0, 0))
-        bad += x > lim[0] or o > lim[1] or n > lim[2]
+        lim = limits(c.slug)
+        bad += x > lim[0] or o > lim[1] or n > lim[2] or max_edge_length(c, pos) > lim[3]
         if a.png:
             draw(c, pos, a.png / f"{c.slug}.png")
     return 1 if bad else 0

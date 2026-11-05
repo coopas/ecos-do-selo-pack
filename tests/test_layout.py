@@ -4,9 +4,6 @@ import pytest
 import layoutcheck
 import questgen
 
-LIMITES = layoutcheck.LIMITES  # capítulos que não zeram, com o motivo (em tools/layoutcheck.py)
-
-
 def chapter(quests, slug="cap"):
     return questgen.Chapter.from_dict({"chapter": slug, "title": "T", "icon": "minecraft:stone", "group": "atos",
                                        "act": 0, "quests": quests})
@@ -58,10 +55,11 @@ def test_layout_long_edge_does_not_cross_quest():
 @pytest.mark.parametrize("c", questgen.load_sources(), ids=lambda c: c.slug)
 def test_all_chapters_clean(c):
     pos = questgen.layout(c)
-    lim = LIMITES.get(c.slug, (0, 0, 0))
+    lim = layoutcheck.limits(c.slug)
     assert layoutcheck.crossings(c, pos) <= lim[0]
     assert layoutcheck.lines_over_quests(c, pos) <= lim[1]
     assert layoutcheck.long_edges(c, pos) <= lim[2]
+    assert layoutcheck.max_edge_length(c, pos) <= lim[3]
 
 
 @pytest.mark.parametrize("c", [c for c in questgen.load_sources() if not any("x" in q for q in c.quests)],
@@ -85,6 +83,8 @@ def test_long_edges_counter():
     pos = {"a": (0, 0), "b": (3, 0), "c": (12, 0)}
     assert layoutcheck.long_edges(c, pos, max_len=10.5) == 1
     assert layoutcheck.long_edges(c, pos, max_len=12) == 0
+    assert layoutcheck.max_edge_length(c, pos) == 12
+    assert layoutcheck.limits("sem_entrada") == (0, 0, 0, layoutcheck.MAX_EDGE)
 
 
 def test_no_redundant_local_dependency():

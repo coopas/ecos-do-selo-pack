@@ -398,6 +398,23 @@ def _relayer(slugs, local, children, col, seed):
                     break
             if best[0] == 0:
                 break
+        if improved or best[0] == 0:
+            continue
+        # sem folga (filhos colados): desloca a quest e todos os descendentes uma coluna para a direita
+        for s in slugs:
+            if not local[s] or col[s] + 1 > start[s] + RELAYER_MAX:
+                continue
+            block, todo = {s}, [s]
+            while todo:
+                for c in children[todo.pop()]:
+                    if c not in block:
+                        block.add(c)
+                        todo.append(c)
+            c2 = {t: col[t] + (t in block) for t in slugs}
+            r = _order(slugs, local, c2, seed, restarts=6)
+            if r[0] < best[0]:
+                col, best, improved = c2, r, True
+                break
     return col, best
 
 
@@ -636,7 +653,7 @@ def _repair(seed, slugs, local, children, pos, fixed, iters=6000, patience=4000)
                     moved = True
                     continue
             s0 = pull(v)
-            want =sum(P[edges[i][1] if edges[i][0] == v else edges[i][0]][1] for i in inc[v]) / len(inc[v])
+            want = sum(P[edges[i][1] if edges[i][0] == v else edges[i][0]][1] for i in inc[v]) / len(inc[v])
             step = max(-1.5, min(1.5, want - old[1]))
             for st in (step, step / 2, _STEP if step > 0 else -_STEP):
                 ny = round((old[1] + st) / _STEP) * _STEP
