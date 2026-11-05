@@ -37,7 +37,7 @@ quests:
   - {slug: montadora_luv, title: "Montadora de Circuitos LuV", deps: [emissor_luv, braco_luv], desc: ["Circuitos de cristal.",
        "Pede circuitos ZPM: o mainframe quântico sai da montadora de circuitos IV (7680 EU/t, na sala limpa)."],
      tasks: [{item: gtceu:luv_circuit_assembler}], rewards: [{coins: 6}]}
-  - {slug: cristal, title: "Processador de Cristal", deps: [fusao], shape: gear, icon: gtceu:crystal_processor,
+  - {slug: cristal, title: "Processador de Cristal", deps: [fusao, montadora_luv], shape: gear, icon: gtceu:crystal_processor,
      desc: ["Um pensamento preso em cristal, como o eco preso no fragmento.",
        "O chip de cristal cru pede európio na autoclave, e o európio só sai do reator de fusão.",
        "Acender o európio pede 150M EU no reator: 15 escotilhas de energia LuV (10M cada).",

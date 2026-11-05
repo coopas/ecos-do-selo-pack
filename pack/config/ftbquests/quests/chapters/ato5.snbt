@@ -66,7 +66,7 @@
 			]
 			title: "Fui Eu"
 			x: 0.0d
-			y: -2.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -116,7 +116,7 @@
 			]
 			title: "Platina e Paládio"
 			x: 1.5d
-			y: -7.25d
+			y: 6.75d
 		}
 		{
 			dependencies: [
@@ -167,7 +167,7 @@
 			]
 			title: "Irídio e Ósmio"
 			x: 3.0d
-			y: -10.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -205,7 +205,7 @@
 			]
 			title: "Ósmirídio"
 			x: 6.0d
-			y: -9.75d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -262,7 +262,7 @@
 			]
 			title: "Naquadah"
 			x: 3.0d
-			y: -8.5d
+			y: 8.25d
 		}
 		{
 			dependencies: [
@@ -302,7 +302,7 @@
 			]
 			title: "Liga de Naquadah"
 			x: 7.5d
-			y: -8.5d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -338,7 +338,7 @@
 			]
 			title: "Bobinas de Naquadah"
 			x: 6.0d
-			y: -8.25d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -373,7 +373,7 @@
 			]
 			title: "Emissor LuV"
 			x: 3.0d
-			y: -6.75d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -408,7 +408,7 @@
 			]
 			title: "Braço Robótico LuV"
 			x: 3.0d
-			y: -4.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -444,11 +444,12 @@
 			]
 			title: "Montadora de Circuitos LuV"
 			x: 4.5d
-			y: -5.75d
+			y: 6.75d
 		}
 		{
 			dependencies: [
 				"32753FABD87AB783"
+				"5254D1171441BFC0"
 			]
 			description: [
 				"Um pensamento preso em cristal, como o eco preso no fragmento."
@@ -498,7 +499,7 @@
 			]
 			title: "Processador de Cristal"
 			x: 10.5d
-			y: -7.5d
+			y: 9.25d
 		}
 		{
 			dependencies: [
@@ -534,7 +535,7 @@
 			]
 			title: "Módulo de Energia"
 			x: 15.0d
-			y: -3.25d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -589,7 +590,7 @@
 			]
 			title: "Reator de Fusão"
 			x: 9.0d
-			y: -7.25d
+			y: 9.75d
 		}
 		{
 			dependencies: [
@@ -624,7 +625,7 @@
 			]
 			title: "Casco ZPM"
 			x: 10.5d
-			y: -6.0d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -659,7 +660,7 @@
 			]
 			title: "Motor ZPM"
 			x: 12.0d
-			y: -4.75d
+			y: 8.25d
 		}
 		{
 			dependencies: [
@@ -697,7 +698,7 @@
 			]
 			title: "Emissor ZPM"
 			x: 13.5d
-			y: -3.25d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -751,7 +752,7 @@
 			]
 			title: "Gerador de Campo ZPM"
 			x: 15.0d
-			y: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -789,7 +790,7 @@
 			]
 			title: "Gerador de Campo LuV"
 			x: 7.5d
-			y: -6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -837,7 +838,7 @@
 			]
 			title: "As Estrelas e a Melhor Máquina"
 			x: 9.0d
-			y: -4.5d
+			y: 5.25d
 		}
 		{
 			dependencies: [
@@ -888,7 +889,7 @@
 			]
 			title: "A Pedra Filosofal"
 			x: 10.5d
-			y: -3.25d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -940,7 +941,7 @@
 			]
 			title: "Dentro do Arauto"
 			x: 16.5d
-			y: -0.5d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -976,7 +977,7 @@
 			]
 			title: "A Floresta, de Novo"
 			x: 6.0d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1011,7 +1012,7 @@
 			]
 			title: "As Profundezas, de Novo"
 			x: 6.0d
-			y: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1045,8 +1046,8 @@
 				}
 			]
 			title: "Os Céus, de Novo"
-			x: 6.0d
-			y: 0.0d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1081,7 +1082,7 @@
 			]
 			title: "As Estrelas, de Novo"
 			x: 12.0d
-			y: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -1116,7 +1117,7 @@
 			]
 			title: "Bloco de Fonte"
 			x: 7.5d
-			y: 1.75d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -1151,7 +1152,7 @@
 			]
 			title: "Gema dos Espíritos"
 			x: 7.5d
-			y: 3.25d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -1221,7 +1222,7 @@
 			]
 			title: "Os Quatro Fragmentos"
 			x: 13.5d
-			y: -0.75d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1296,7 +1297,7 @@
 			]
 			title: "O Artefato do Selo"
 			x: 16.5d
-			y: 1.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1326,7 +1327,7 @@
 			]
 			title: "O Último Trem"
 			x: 1.5d
-			y: -0.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1355,8 +1356,8 @@
 				}
 			]
 			title: "A Última Rede"
-			x: 1.5d
-			y: 2.0d
+			x: 3.0d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -1408,7 +1409,7 @@
 			]
 			title: "A Porta"
 			x: 18.0d
-			y: 0.25d
+			y: -1.5d
 		}
 	]
 	title: "Ato V — A Heresia"

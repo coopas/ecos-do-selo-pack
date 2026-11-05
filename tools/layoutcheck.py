@@ -26,6 +26,7 @@ LIMITES: dict[str, tuple[int, int, int, float]] = {
     # fim_prologo (11 pais) tem de ficar à direita do ramo picareta_ferro->diamante->encantamento; o caminho
     # livro_quests->jei->fim_prologo contorna o ramo do ferro por cima e jei->fim_prologo (~16.1) passa de MAX_EDGE
     "prologo": (0, 0, 1, 16.5),
+    "ato5": (1, 0, 0, 10.5),  # cristal pede a montadora LuV; com a dep fica 1 cruzamento
 }
 
 
