@@ -42,7 +42,7 @@ hash = "05b12b7b9f39c1635c40ab7a6623c445821ac365fc5ba80651bb58db6a82eefd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
-hash = "314c58e45b75a51921d97ebe11f972562c10951d684fc9d90907efbc3fcd02a1"
+hash = "32881fefd9cba3859ef97d6bfaf90e9767d7849c1cde0bdcdd0849f7db32690d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_ae2.snbt"

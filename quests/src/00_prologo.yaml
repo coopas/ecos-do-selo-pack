@@ -29,7 +29,7 @@ quests:
      tasks: [{checkmark: true}], rewards: [{xp_levels: 1}]}
   - {slug: fornalha, title: "Fogo Contido", deps: [pedra], desc: ["O fogo aqui demora a acender. Como se escutasse."],
      tasks: [{item: minecraft:furnace}], rewards: [{coins: 1}]}
-  - {slug: carvao, title: "Combustível", deps: [fornalha], desc: ["Carvão ou carvão vegetal."],
+  - {slug: carvao, title: "Combustível", deps: [fornalha], desc: ["Carvão do veio de carvão (y 10 a 140): o minério bruto vai à fornalha.", "Carvão vegetal, aqui, só sai do forno de coque do GregTech."],
      tasks: [{tag: minecraft:coals, count: 16}], rewards: [{coins: 1}]}
   - {slug: tochas, title: "Luz Contra o Silêncio", deps: [carvao], desc: ["Os mortos daqui odeiam a luz."],
      tasks: [{item: minecraft:torch, count: 32}], rewards: [{coins: 1}]}
@@ -52,20 +52,22 @@ quests:
      tasks: [{item: minecraft:iron_chestplate}], rewards: [{coins: 2}]}
   - {slug: escudo, title: "Escudo", deps: [ferro], desc: ["Algumas flechas daqui não erram."],
      tasks: [{item: minecraft:shield}], rewards: [{coins: 1}]}
-  - {slug: balde, title: "Balde", deps: [ferro], desc: ["Água apaga fogo. Lava apaga o resto."],
+  - {slug: balde, title: "Balde", deps: [ferro],
+     desc: ["Água apaga fogo. Lava apaga o resto.", "Aqui o balde é do GregTech: três chapas de ferro e um martelo de forja.", "Chapa = martelo + dois lingotes. Veja no JEI."],
      tasks: [{item: minecraft:bucket}], rewards: [{coins: 1}]}
   - {slug: comida, title: "Pão de Cada Dia", deps: [bancada], desc: ["Fome é o primeiro inimigo."],
      tasks: [{item: minecraft:bread, count: 16}], rewards: [{coins: 1}]}
   - {slug: lavoura, title: "Lavoura", deps: [comida], desc: ["Plante. O solo ainda responde."],
      tasks: [{item: minecraft:wheat, count: 32}], rewards: [{coins: 1}]}
-  - {slug: mochila, title: "Mochila", deps: [bau], desc: ["Uma mochila leva mais do que os bolsos."],
+  - {slug: mochila, title: "Mochila", deps: [bau],
+     desc: ["Uma mochila leva mais do que os bolsos.", "A receita daqui pede liga de andesito: andesito e pepitas de ferro.", "Pepita: derreta uma pá de ferro na fornalha (ou corte o lingote com a serra do GregTech)."],
      tasks: [{item: sophisticatedbackpacks:backpack}], rewards: [{coins: 2}]}
   - {slug: mapa, title: "Onde Estou?", deps: [ferro],
-     desc: ["O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho.", "Opcional: a bússola pede redstone, que aqui mora fundo."],
+     desc: ["O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho.", "Opcional: a bússola pede redstone, que aqui mora fundo:", "veio de redstone no deepslate (y -65 a -10) ou, mais tarde, no Nether."],
      tasks: [{item: minecraft:compass}], rewards: [{coins: 1}]}
-  - {slug: diamante, title: "Pedras que Brilham", deps: [picareta_ferro], desc: ["Diamantes. Os Confluentes os usavam como rolamentos.", "Opcional: aqui eles moram no fundo do deepslate, junto da grafita e do carvão."],
+  - {slug: diamante, title: "Pedras que Brilham", deps: [picareta_ferro], desc: ["Diamantes. Os Confluentes os usavam como rolamentos.", "Opcional: aqui eles moram no fundo do deepslate (y -55 a -30), junto da grafita e do carvão."],
      tasks: [{tag: forge:gems/diamond, count: 3}], rewards: [{coins: 3}]}
-  - {slug: encantamento, title: "Palavras Antigas", deps: [diamante], desc: ["A mesa de encantamento fala uma língua que você quase entende.", "Opcional: sem pressa, os diamantes também se compram na banca a partir do Ato I."],
+  - {slug: encantamento, title: "Palavras Antigas", deps: [diamante], desc: ["A mesa de encantamento fala uma língua que você quase entende.", "Opcional: pede 2 diamantes e 4 obsidianas; obsidiana só cede à picareta de diamante ou de aço.", "Sem pressa: os diamantes também se compram na banca a partir do Ato I.", "O papel do livro: cana na prensa do Create, ou pó de papel (pilão) e água."],
      tasks: [{item: minecraft:enchanting_table}], rewards: [{coins: 2}]}
   - {slug: ecos, title: "Fragmentos de Eco", deps: [abrigo], icon: ecos:fragmento_eco,
      desc: ["Cristais de som endurecido. São a moeda daqui.", "Junte cinco."],

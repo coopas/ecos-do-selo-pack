@@ -387,7 +387,8 @@
 				"65F6C50B0425D91B"
 			]
 			description: [
-				"Carvão ou carvão vegetal."
+				"Carvão do veio de carvão (y 10 a 140): o minério bruto vai à fornalha."
+				"Carvão vegetal, aqui, só sai do forno de coque do GregTech."
 			]
 			id: "310AA3BEE035453D"
 			rewards: [
@@ -770,6 +771,8 @@
 			]
 			description: [
 				"Água apaga fogo. Lava apaga o resto."
+				"Aqui o balde é do GregTech: três chapas de ferro e um martelo de forja."
+				"Chapa = martelo + dois lingotes. Veja no JEI."
 			]
 			id: "3CF154EC0E39A69A"
 			rewards: [
@@ -872,6 +875,8 @@
 			]
 			description: [
 				"Uma mochila leva mais do que os bolsos."
+				"A receita daqui pede liga de andesito: andesito e pepitas de ferro."
+				"Pepita: derreta uma pá de ferro na fornalha (ou corte o lingote com a serra do GregTech)."
 			]
 			id: "25383A7A9F297BF8"
 			rewards: [
@@ -906,7 +911,8 @@
 			]
 			description: [
 				"O minimapa (tecla Y) e o mapa-múndi (tecla M) marcam seu caminho."
-				"Opcional: a bússola pede redstone, que aqui mora fundo."
+				"Opcional: a bússola pede redstone, que aqui mora fundo:"
+				"veio de redstone no deepslate (y -65 a -10) ou, mais tarde, no Nether."
 			]
 			id: "73534827338C81F9"
 			rewards: [
@@ -941,7 +947,7 @@
 			]
 			description: [
 				"Diamantes. Os Confluentes os usavam como rolamentos."
-				"Opcional: aqui eles moram no fundo do deepslate, junto da grafita e do carvão."
+				"Opcional: aqui eles moram no fundo do deepslate (y -55 a -30), junto da grafita e do carvão."
 			]
 			id: "5BE14EC2E28E8A76"
 			rewards: [
@@ -979,7 +985,9 @@
 			]
 			description: [
 				"A mesa de encantamento fala uma língua que você quase entende."
-				"Opcional: sem pressa, os diamantes também se compram na banca a partir do Ato I."
+				"Opcional: pede 2 diamantes e 4 obsidianas; obsidiana só cede à picareta de diamante ou de aço."
+				"Sem pressa: os diamantes também se compram na banca a partir do Ato I."
+				"O papel do livro: cana na prensa do Create, ou pó de papel (pilão) e água."
 			]
 			id: "5670724EE7F5E85B"
 			rewards: [
