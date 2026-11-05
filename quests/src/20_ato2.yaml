@@ -96,7 +96,7 @@ quests:
             "pó de silício (eletrólise de areia) com arseneto de gálio vira monocristal no alto-forno; corte em lâminas.",
             "Gálio: subproduto da esfalerita (veio de enxofre do Nether). Arsênio: realgar moído na centrífuga."],
      tasks: [{item: gtceu:silicon_wafer, count: 16}], rewards: [{coins: 3}]}
-  - {slug: componentes, title: "Componentes Finos", deps: [silicio], desc: ["Indutor, capacitor e diodo.", "Indutor e capacitor pedem polietileno: etileno (etanol com ácido sulfúrico) e oxigênio no reator químico."],
+  - {slug: componentes, title: "Componentes Finos", deps: [silicio, aluminio], desc: ["Indutor, capacitor e diodo.", "O capacitor leva folha de alumínio. Indutor e capacitor pedem polietileno: etileno (etanol com ácido sulfúrico) e oxigênio no reator químico."],
      tasks: [{item: gtceu:inductor, count: 8}, {item: gtceu:capacitor, count: 8}, {item: gtceu:diode, count: 8}], rewards: [{coins: 4}]}
   - {slug: casco_mv, title: "Casco MV", deps: [aluminio], desc: ["Média voltagem: as máquinas crescem."],
      tasks: [{item: gtceu:mv_machine_hull, count: 2}], rewards: [{coins: 4}]}

@@ -18,7 +18,7 @@ quests:
      tasks: [{item: irons_spellbooks:scroll_forge}], rewards: [{coins: 3}]}
   - {slug: pedestal, title: "Pedestal", deps: [mesa], desc: ["Para exibir o que você aprendeu."],
      tasks: [{item: irons_spellbooks:pedestal}], rewards: [{coins: 1}]}
-  - {slug: caldeirao, title: "Caldeirão do Alquimista", deps: [mesa], desc: ["Tintas e poções, misturadas em fogo baixo.", "Pede essência de cinzas: cai dos Cavaleiros Antigos, na Cidadela e no Posto da Legião do Nether."],
+  - {slug: caldeirao, title: "Caldeirão do Alquimista", deps: [mesa], desc: ["Tintas e poções, misturadas em fogo baixo.", "Pede essência de cinzas: dos Cavaleiros Antigos e do eco de Tyros, na Cidadela do Nether,", "e dos baús do Posto da Legião."],
      tasks: [{item: irons_spellbooks:alchemist_cauldron}], rewards: [{coins: 3}]}
   - {slug: livro_ferro, title: "Livro de Ferro", deps: [livro_cobre], desc: ["Mais páginas, mais feitiços."],
      tasks: [{item: irons_spellbooks:iron_spell_book}], rewards: [{coins: 3}]}
@@ -36,7 +36,7 @@ quests:
      tasks: [{item: irons_spellbooks:raw_mithril, count: 4}], rewards: [{coins: 3}]}
   - {slug: lingote_mitril, title: "Lingote de Mitril", deps: [mitril], desc: ["Refine o mitril. Ele quase não pesa.", "No alto-forno o minério bruto vira sucata; quatro sucatas fazem um lingote."],
      tasks: [{item: irons_spellbooks:mithril_ingot, count: 2}], rewards: [{coins: 3}]}
-  - {slug: orbe, title: "Orbe de Aprimoramento", deps: [lingote_mitril], desc: ["Aprimore armaduras com o poder de uma escola.", "Pede 4 essências de cinzas, dos Cavaleiros Antigos do Nether."],
+  - {slug: orbe, title: "Orbe de Aprimoramento", deps: [lingote_mitril], desc: ["Aprimore armaduras com o poder de uma escola.", "Pede 4 essências de cinzas (Cidadela e Posto da Legião, no Nether)", "e 4 lingotes arcanos (8 essências arcanas cada)."],
      tasks: [{item: irons_spellbooks:upgrade_orb}], rewards: [{coins: 3}]}
   - {slug: orbe_fogo, title: "Orbe do Fogo", deps: [orbe, runa_fogo], desc: ["Mais força para feitiços de fogo.", "Oito runas de fogo: caçar piromantes rende mais que abrir baús."],
      tasks: [{item: irons_spellbooks:fire_upgrade_orb}], rewards: [{coins: 3}]}

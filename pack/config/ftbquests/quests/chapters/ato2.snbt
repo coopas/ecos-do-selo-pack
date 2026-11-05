@@ -54,7 +54,7 @@
 			]
 			title: "O Conhecimento Proibido"
 			x: 0.0d
-			y: 1.0d
+			y: -5.25d
 		}
 		{
 			dependencies: [
@@ -99,7 +99,7 @@
 			]
 			title: "Três Escolas"
 			x: 4.5d
-			y: 1.75d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -149,7 +149,7 @@
 			]
 			title: "A Escada Para Baixo"
 			x: 1.5d
-			y: 3.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -189,7 +189,7 @@
 			]
 			title: "O Catalisador"
 			x: 3.0d
-			y: 5.0d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -237,7 +237,7 @@
 			]
 			title: "O Jardim de Baixo"
 			x: 4.5d
-			y: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -271,7 +271,7 @@
 			]
 			title: "Pedra-de-Profundeza"
 			x: 6.0d
-			y: 8.25d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -305,7 +305,7 @@
 			]
 			title: "Madeira de Fumaça"
 			x: 6.0d
-			y: 4.75d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -348,7 +348,7 @@
 			]
 			title: "Frutos do Escuro"
 			x: 6.0d
-			y: 9.75d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -382,7 +382,7 @@
 			]
 			title: "Bulbos de Vala"
 			x: 6.0d
-			y: 6.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -417,7 +417,7 @@
 			]
 			title: "Tochas de Cristal"
 			x: 7.5d
-			y: 6.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -454,7 +454,7 @@
 			]
 			title: "Cloggrum"
 			x: 7.5d
-			y: 9.5d
+			y: 5.25d
 		}
 		{
 			dependencies: [
@@ -488,7 +488,7 @@
 			]
 			title: "Lâmina Pesada"
 			x: 9.0d
-			y: 11.5d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -522,7 +522,7 @@
 			]
 			title: "Couraça de Cloggrum"
 			x: 9.0d
-			y: 8.5d
+			y: 4.25d
 		}
 		{
 			dependencies: [
@@ -556,7 +556,7 @@
 			]
 			title: "Cristal de Utério"
 			x: 9.0d
-			y: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -591,7 +591,7 @@
 			]
 			title: "Aço-Gelo"
 			x: 9.0d
-			y: 10.0d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -625,7 +625,7 @@
 			]
 			title: "Couraça de Aço-Gelo"
 			x: 10.5d
-			y: 10.0d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -671,7 +671,7 @@
 			]
 			title: "O Guardião Esquecido"
 			x: 10.5d
-			y: 7.75d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -706,7 +706,7 @@
 			]
 			title: "Metal Esquecido"
 			x: 12.0d
-			y: 7.75d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -759,7 +759,7 @@
 			]
 			title: "As Cidades de Aurend"
 			x: 6.0d
-			y: 2.5d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -794,7 +794,7 @@
 			]
 			title: "Sculk"
 			x: 7.5d
-			y: -0.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -829,7 +829,7 @@
 			]
 			title: "Sensores"
 			x: 9.0d
-			y: 0.0d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -863,8 +863,8 @@
 				}
 			]
 			title: "Catalisador de Sculk"
-			x: 10.5d
-			y: -1.0d
+			x: 9.0d
+			y: -6.25d
 		}
 		{
 			dependencies: [
@@ -904,7 +904,7 @@
 			]
 			title: "Fragmentos de Eco"
 			x: 7.5d
-			y: 2.75d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -938,7 +938,7 @@
 			]
 			title: "Bússola da Recuperação"
 			x: 9.0d
-			y: 1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -973,7 +973,7 @@
 			]
 			title: "Sensor Calibrado"
 			x: 10.5d
-			y: 1.75d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -1042,7 +1042,7 @@
 			]
 			title: "O Cego Que Ouve"
 			x: 12.0d
-			y: 2.5d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -1099,7 +1099,7 @@
 			]
 			title: "O Fragmento das Profundezas"
 			x: 13.5d
-			y: 0.0d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -1133,7 +1133,7 @@
 			]
 			title: "Coração das Profundezas"
 			x: 13.5d
-			y: 2.25d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -1181,7 +1181,7 @@
 			]
 			title: "O Outro Lado"
 			x: 15.0d
-			y: 1.75d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1215,7 +1215,7 @@
 			]
 			title: "Madeira de Eco"
 			x: 16.5d
-			y: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1249,8 +1249,8 @@
 				}
 			]
 			title: "Pó de Alma"
-			x: 16.5d
-			y: 2.0d
+			x: 18.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1285,7 +1285,7 @@
 			]
 			title: "Ressonário"
 			x: 16.5d
-			y: 0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1321,7 +1321,7 @@
 			]
 			title: "Eco Reforçado"
 			x: 16.5d
-			y: -1.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -1355,7 +1355,7 @@
 			]
 			title: "Carapaça do Cego"
 			x: 15.0d
-			y: 0.25d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1395,7 +1395,7 @@
 			]
 			title: "Alto-Forno Elétrico"
 			x: 1.5d
-			y: -1.25d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -1429,7 +1429,7 @@
 			]
 			title: "Bobinas de Cuproníquel"
 			x: 3.0d
-			y: -3.0d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -1484,7 +1484,7 @@
 			]
 			title: "Alumínio"
 			x: 4.5d
-			y: -3.5d
+			y: -12.5d
 		}
 		{
 			dependencies: [
@@ -1536,7 +1536,7 @@
 			]
 			title: "Química LV"
 			x: 3.0d
-			y: -1.5d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -1573,15 +1573,16 @@
 			]
 			title: "Silício"
 			x: 4.5d
-			y: -2.0d
+			y: -10.75d
 		}
 		{
 			dependencies: [
 				"2DE6B6E5660EF87A"
+				"372598F23FB8DBB2"
 			]
 			description: [
 				"Indutor, capacitor e diodo."
-				"Indutor e capacitor pedem polietileno: etileno (etanol com ácido sulfúrico) e oxigênio no reator químico."
+				"O capacitor leva folha de alumínio. Indutor e capacitor pedem polietileno: etileno (etanol com ácido sulfúrico) e oxigênio no reator químico."
 			]
 			id: "584200AF8EE66089"
 			rewards: [
@@ -1625,8 +1626,8 @@
 				}
 			]
 			title: "Componentes Finos"
-			x: 9.0d
-			y: -2.75d
+			x: 6.0d
+			y: -12.25d
 		}
 		{
 			dependencies: [
@@ -1660,7 +1661,7 @@
 			]
 			title: "Casco MV"
 			x: 9.0d
-			y: -4.25d
+			y: -14.5d
 		}
 		{
 			dependencies: [
@@ -1694,7 +1695,7 @@
 			]
 			title: "Motor MV"
 			x: 10.5d
-			y: -4.5d
+			y: -15.5d
 		}
 		{
 			dependencies: [
@@ -1746,7 +1747,7 @@
 			]
 			title: "Circuito Eletrônico Bom"
 			x: 10.5d
-			y: -3.0d
+			y: -14.0d
 		}
 		{
 			dependencies: [
@@ -1782,7 +1783,7 @@
 			]
 			title: "Emissor MV"
 			x: 12.0d
-			y: -3.5d
+			y: -13.5d
 		}
 		{
 			dependencies: [
@@ -1817,7 +1818,7 @@
 			]
 			title: "Braço Robótico MV"
 			x: 12.0d
-			y: -5.0d
+			y: -15.0d
 		}
 		{
 			dependencies: [
@@ -1873,7 +1874,7 @@
 			]
 			title: "O Eco Responde"
 			x: 15.0d
-			y: -2.25d
+			y: -10.5d
 		}
 	]
 	title: "Ato II — Ecos Arcanos"

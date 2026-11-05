@@ -199,7 +199,7 @@
 			description: [
 				"Desenhe o primeiro pentáculo."
 				"Giz impuro: pedra de outro mundo assada na fornalha e cinzas de tora de outro mundo no fogo espiritual."
-				"A tora: muda de carvalho no fogo vira muda de outro mundo; corte a árvore sob o Terceiro Olho (coma o fruto de datura)."
+				"A tora: muda de carvalho no fogo espiritual vira muda de outro mundo; corte a árvore sob o Terceiro Olho (coma o fruto de datura)."
 				"Depois, purifique o giz no fogo espiritual."
 			]
 			id: "46370BFBC3FBED09"
@@ -916,11 +916,12 @@
 		}
 		{
 			dependencies: [
-				"4D84903DAEE12A8F"
+				"6523E1B8ECF806AA"
 			]
 			description: [
 				"Para os espíritos perigosos."
-				"Essência de afrit: o afrit selvagem do ritual (pentáculo com caveiras) a deixa ao morrer."
+				"Essência de afrit: o afrit selvagem a deixa ao morrer. O ritual começa com o livro do afrit vinculado,"
+				"num pentáculo de giz branco e roxo com caveiras de esqueleto e de esqueleto wither; sacrifique uma vaca."
 			]
 			id: "7561DD39B06C1276"
 			rewards: [
@@ -946,15 +947,16 @@
 				}
 			]
 			title: "Giz Vermelho"
-			x: 16.5d
-			y: 7.0d
+			x: 21.0d
+			y: 7.25d
 		}
 		{
 			dependencies: [
-				"7561DD39B06C1276"
+				"4D84903DAEE12A8F"
 			]
 			description: [
 				"Um espírito de fogo e orgulho."
+				"Vincule o livro no Dicionário dos Espíritos: é ele que abre o ritual do afrit selvagem."
 			]
 			id: "6523E1B8ECF806AA"
 			rewards: [
@@ -992,12 +994,12 @@
 				}
 			]
 			title: "O Afrit"
-			x: 21.0d
-			y: 7.25d
+			x: 16.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
-				"6523E1B8ECF806AA"
+				"7561DD39B06C1276"
 				"239D6FA89E1D4CFE"
 				"187E512914636B84"
 			]

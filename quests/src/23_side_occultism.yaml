@@ -17,7 +17,7 @@ quests:
      tasks: [{item: occultism:golden_sacrificial_bowl}], rewards: [{coins: 3}]}
   - {slug: giz_branco, title: "Giz Branco", deps: [pedra_outra],
      desc: ["Desenhe o primeiro pentáculo.", "Giz impuro: pedra de outro mundo assada na fornalha e cinzas de tora de outro mundo no fogo espiritual.",
-            "A tora: muda de carvalho no fogo vira muda de outro mundo; corte a árvore sob o Terceiro Olho (coma o fruto de datura).",
+            "A tora: muda de carvalho no fogo espiritual vira muda de outro mundo; corte a árvore sob o Terceiro Olho (coma o fruto de datura).",
             "Depois, purifique o giz no fogo espiritual."],
      tasks: [{item: occultism:chalk_white}], rewards: [{page: 12}, {coins: 3}]}
   - {slug: oculos, title: "Óculos do Outro Mundo", deps: [giz_dourado],
@@ -63,10 +63,12 @@ quests:
      tasks: [{item: occultism:storage_controller}, {item: occultism:storage_stabilizer_tier1, count: 2}], rewards: [{coins: 5}]}
   - {slug: anel_familiar, title: "Anel de Familiar", deps: [giz_roxo], desc: ["Um familiar te acompanha. Não pergunte o nome dele."],
      tasks: [{item: occultism:familiar_ring}], rewards: [{coins: 4}]}
-  - {slug: giz_vermelho, title: "Giz Vermelho", deps: [giz_roxo], desc: ["Para os espíritos perigosos.", "Essência de afrit: o afrit selvagem do ritual (pentáculo com caveiras) a deixa ao morrer."],
+  - {slug: giz_vermelho, title: "Giz Vermelho", deps: [afrit],
+     desc: ["Para os espíritos perigosos.", "Essência de afrit: o afrit selvagem a deixa ao morrer. O ritual começa com o livro do afrit vinculado,",
+            "num pentáculo de giz branco e roxo com caveiras de esqueleto e de esqueleto wither; sacrifique uma vaca."],
      tasks: [{item: occultism:chalk_red}], rewards: [{coins: 4}]}
-  - {slug: afrit, title: "O Afrit", deps: [giz_vermelho], desc: ["Um espírito de fogo e orgulho."],
+  - {slug: afrit, title: "O Afrit", deps: [giz_roxo], desc: ["Um espírito de fogo e orgulho.", "Vincule o livro no Dicionário dos Espíritos: é ele que abre o ritual do afrit selvagem."],
      tasks: [{item: occultism:book_of_binding_afrit}], rewards: [{crate: comum}, {coins: 5}]}
-  - {slug: mestre_ocultista, title: "Mestre do Pentáculo", deps: [afrit, armazem, anel_familiar], shape: gear, icon: occultism:chalk_red,
+  - {slug: mestre_ocultista, title: "Mestre do Pentáculo", deps: [giz_vermelho, armazem, anel_familiar], shape: gear, icon: occultism:chalk_red,
      desc: ["Quatro gizes, quatro círculos.", "Um dia, um deles vai chamar o Arauto."], tasks: [{checkmark: true}],
      rewards: [{crate: epica}, {coins: 8}]}

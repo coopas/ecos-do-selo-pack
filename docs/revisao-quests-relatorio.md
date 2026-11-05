@@ -88,7 +88,7 @@ Contexto conferido no dump: o lingote de silício do GregTech sai do alto-forno 
 | quest | problema | correção |
 |---|---|---|
 | `ato2/silicio` | **Aviso do `questcheck`**: lingote de silício pede bobinas acima do Ato II (MV). | Task trocada (slug mantido) por 16 lâminas de silício (`gtceu:silicon_wafer`): monocristal no alto-forno a 1784 K (cuproníquel serve, 120 EU/t) e cortador. Descrição dá o caminho (pó de silício da areia, arseneto de gálio, de onde vêm gálio e arsênio). Aviso zerado. |
-| `ato2/componentes` | **Aviso do `questcheck`**: o transistor leva chapa de silício (HV). | Transistor trocado por indutor (anel de aço, fio fino de cobre, polietileno; 120 EU/t). Descrição diz de onde vem o polietileno. Aviso zerado. |
+| `ato2/componentes` | **Aviso do `questcheck`**: o transistor leva chapa de silício (HV). O capacitor leva folha de alumínio, que não estava nos ancestrais. | Transistor trocado por indutor (anel de aço, fio fino de cobre, polietileno; 120 EU/t). Dependência nova em `aluminio`. Descrição diz da folha de alumínio e de onde vem o polietileno. Aviso zerado. |
 | `ato2/aluminio` | Não dizia de onde vem o alumínio. | Descrição: eletrólise de safira (veio fundo) ou rubi (veio de redstone). |
 | `ato2/emissor_mv` | O emissor MV leva esmeralda impecável, que só sai do peneirador (o gravador a laser é HV). | Descrição: minério purificado de esmeralda no peneirador, veio de berílio do Nether (y 5 a 30). |
 | `ato2/froststeel` | Não dizia onde está o minério. | Descrição: na shiverstone. |
@@ -127,7 +127,7 @@ Revisadas sem mudança: 14 quests.
 
 ## Caminho — Pergaminhos e Runas (`22_side_irons`)
 
-Conferido no jar do Iron's Spellbooks (receitas, tabelas de loot, guia). A runa vazia não tem receita: só sai de baú. A essência de cinzas só cai dos Cavaleiros Antigos (Cidadela e Posto da Legião, estruturas do Nether). O minério de mitril está em `forge:needs_netherite_tool`.
+Conferido no jar do Iron's Spellbooks (receitas, tabelas de loot, guia). A runa vazia não tem receita: só sai de baú. A essência de cinzas só vem do Nether: Cavaleiros Antigos e o chefe Eco de Tyros (`fire_boss`), recompensa do spawner da Cidadela e baús de sepultura do Posto da Legião (`burial_loot`). O minério de mitril está em `forge:needs_netherite_tool`.
 
 | quest | problema | correção |
 |---|---|---|
@@ -135,8 +135,8 @@ Conferido no jar do Iron's Spellbooks (receitas, tabelas de loot, guia). A runa 
 | `side_irons/lingote_mitril` | Bruto vira sucata no alto-forno; 4 sucatas = 1 lingote. | Descrição. |
 | `side_irons/livro_ouro` | Dependia de `lingote_mitril`, mas a receita não usa mitril (ouro, essência arcana, couro de hoglin). Isso prendia `ato3/solenne` à picareta de netherita. | Dependência em `lingote_mitril` removida; descrição diz de onde vem o couro. |
 | `side_irons/livro_diamante` | Couro de hoglin, tecido mágico, diamantes, livro encantado. | Descrição. |
-| `side_irons/caldeirao` | Pede essência de cinzas (Cavaleiros Antigos, Nether). | Descrição. |
-| `side_irons/orbe` | Pede 4 essências de cinzas. | Descrição. |
+| `side_irons/caldeirao` | Pede essência de cinzas (Cidadela e Posto da Legião, no Nether). | Descrição com as fontes. |
+| `side_irons/orbe` | Pede 4 essências de cinzas e 4 lingotes arcanos (8 essências arcanas cada). | Descrição. |
 | `side_irons/runa_vazia` | Sem receita; só em baús (catacumbas, Cidadela, fortalezas, bibliotecas). | Descrição. |
 | `side_irons/runa_fogo`, `runa_gelo`, `runa_sagrada` | Os focos (vara de blaze; osso congelado, dos strays; pérola divina, ouro + ametista) não eram ditos. | Descrições. Piromantes e criomantes deixam runas da sua escola (guia do mod; o drop está no código das entidades). |
 | `side_irons/orbe_fogo`, `orbe_mana` | Cada um leva 8 runas (8 runas vazias de baú). São folhas: nada depende delas. | Descrição avisa e aponta o atalho (piromantes). Quantidade mantida, por ser o próprio item. |
@@ -163,7 +163,8 @@ Conferido no jar do Occultism 1.158 (receitas, rituais, pentáculos do Dicionár
 | `side_occultism/iesnio` | Precisa dos óculos (para ver) e da picareta infundida (para quebrar). | Dependências trocadas de `djinni` para `picareta_infundida` e `oculos`; descrição. |
 | `side_occultism/minerador` | O minerador sai de ritual com lâmpada mágica (leva iésnio) e picareta de iésnio, mas dependia só do foliot. | Dependência trocada para `picareta_iesnio`; descrição. |
 | `side_occultism/giz_roxo` | **Erro do `questcheck`**, lacuna do dump: a moagem do Occultism com saída em tag virou `minecraft:barrier`. No jar, `occultism:crushing/end_stone_dust` mói `#forge:end_stones` em `#forge:dusts/end_stone` (= `occultism:crushed_end_stone`), feito pelo foliot triturador (`summon_foliot_crusher`, pentáculo só de giz branco, que vem antes). O pó de obsidiana sai do macerador do GregTech ou das rodas do Create. O Fim abre com o Nether (`ato1/nether`). Dá para fazer neste ponto. | Quest mantida; descrição dá o caminho. **O erro continua no `questcheck` até o dump ler saídas em tag da moagem do Occultism.** |
-| `side_occultism/giz_vermelho` | A essência de afrit só cai do afrit selvagem, invocado por ritual com caveiras. | Descrição. |
+| `side_occultism/giz_vermelho` | A essência de afrit só cai do afrit selvagem. O ritual (`summon_wild_afrit`) começa com o livro do afrit vinculado e pede pentáculo de giz branco e roxo com caveiras de esqueleto e de esqueleto wither, mais uma vaca. A quest do livro (`afrit`) vinha **depois** do giz: ordem impossível. | Ordem trocada: `afrit` depende de `giz_roxo`, `giz_vermelho` depende de `afrit`, e `mestre_ocultista` passa a depender de `giz_vermelho` em vez de `afrit`. Descrição com o ritual. |
+| `side_occultism/afrit` | Ver acima. O livro precisa ser vinculado no Dicionário para abrir o ritual. | Dependência trocada de `giz_vermelho` para `giz_roxo`; descrição. |
 | `side_occultism/prata` | Não dizia onde. | Descrição: veio de galena ou minério de prata do Occultism. |
 
-Revisadas sem mudança: 13 quests.
+Revisadas sem mudança: 11 quests.
