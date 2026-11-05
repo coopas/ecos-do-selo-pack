@@ -53,7 +53,7 @@
 			]
 			title: "Essência Arcana"
 			x: 0.0d
-			y: 16.5d
+			y: 12.75d
 		}
 		{
 			dependencies: [
@@ -88,7 +88,7 @@
 			]
 			title: "Mesa de Inscrição"
 			x: 1.5d
-			y: 16.25d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -122,7 +122,7 @@
 			]
 			title: "Livro de Cobre"
 			x: 3.0d
-			y: 17.5d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -156,7 +156,7 @@
 			]
 			title: "Pergaminhos Encontrados"
 			x: 1.5d
-			y: 14.75d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -164,6 +164,7 @@
 			]
 			description: [
 				"Crie seus próprios pergaminhos."
+				"A obsidiana chorona vem de bastiões, de portais em ruínas ou da troca com piglins."
 			]
 			id: "7F493C84F09E679B"
 			rewards: [
@@ -190,7 +191,7 @@
 			]
 			title: "Forja de Pergaminhos"
 			x: 4.5d
-			y: 13.25d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -224,7 +225,7 @@
 			]
 			title: "Pedestal"
 			x: 3.0d
-			y: 16.0d
+			y: 13.25d
 		}
 		{
 			dependencies: [
@@ -232,6 +233,7 @@
 			]
 			description: [
 				"Tintas e poções, misturadas em fogo baixo."
+				"Pede essência de cinzas: cai dos Cavaleiros Antigos, na Cidadela e no Posto da Legião do Nether."
 			]
 			id: "726D372C9690B602"
 			rewards: [
@@ -258,7 +260,7 @@
 			]
 			title: "Caldeirão do Alquimista"
 			x: 3.0d
-			y: 13.75d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -292,7 +294,7 @@
 			]
 			title: "Livro de Ferro"
 			x: 4.5d
-			y: 14.75d
+			y: 10.25d
 		}
 		{
 			dependencies: [
@@ -300,6 +302,7 @@
 			]
 			description: [
 				"Pedra pronta para receber uma escola de magia."
+				"Não tem receita: procure em baús de catacumbas, da Cidadela do Nether, de fortalezas e bibliotecas."
 			]
 			id: "7EA77CB540D9AC54"
 			rewards: [
@@ -326,7 +329,7 @@
 			]
 			title: "Runa Vazia"
 			x: 3.0d
-			y: 19.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -334,6 +337,7 @@
 			]
 			description: [
 				"A escola do fogo."
+				"Varas de blaze em volta de uma runa vazia. Piromantes, nas suas torres, deixam runas de fogo."
 			]
 			id: "601CD3A2C6BCE68C"
 			rewards: [
@@ -360,7 +364,7 @@
 			]
 			title: "Runa de Fogo"
 			x: 4.5d
-			y: 16.75d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -368,6 +372,7 @@
 			]
 			description: [
 				"A escola do gelo."
+				"Ossos congelados caem dos strays; criomantes deixam runas de gelo."
 			]
 			id: "03C0DDBC43DF6606"
 			rewards: [
@@ -394,7 +399,7 @@
 			]
 			title: "Runa de Gelo"
 			x: 4.5d
-			y: 20.0d
+			y: 18.25d
 		}
 		{
 			dependencies: [
@@ -402,6 +407,7 @@
 			]
 			description: [
 				"A escola da luz."
+				"A pérola divina é um lingote de ouro com uma ametista."
 			]
 			id: "26E11A8565EEC301"
 			rewards: [
@@ -428,7 +434,7 @@
 			]
 			title: "Runa Sagrada"
 			x: 4.5d
-			y: 18.5d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -461,15 +467,16 @@
 				}
 			]
 			title: "Runa do Fim"
-			x: 6.0d
-			y: 19.0d
+			x: 4.5d
+			y: 15.0d
 		}
 		{
 			dependencies: [
 				"6EBEA948615C81F4"
 			]
 			description: [
-				"Um metal que só aparece muito fundo."
+				"Um metal que só aparece muito fundo (y -63 a -38)."
+				"Só cede a picareta de netherita: detritos ancestrais do Nether, e o molde de melhoria dos bastiões."
 			]
 			id: "5A87C3A5D1D04BB2"
 			rewards: [
@@ -496,7 +503,7 @@
 			]
 			title: "Mitril"
 			x: 1.5d
-			y: 12.75d
+			y: 8.75d
 		}
 		{
 			dependencies: [
@@ -504,6 +511,7 @@
 			]
 			description: [
 				"Refine o mitril. Ele quase não pesa."
+				"No alto-forno o minério bruto vira sucata; quatro sucatas fazem um lingote."
 			]
 			id: "221969A82F098527"
 			rewards: [
@@ -530,7 +538,7 @@
 			]
 			title: "Lingote de Mitril"
 			x: 3.0d
-			y: 10.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -538,6 +546,7 @@
 			]
 			description: [
 				"Aprimore armaduras com o poder de uma escola."
+				"Pede 4 essências de cinzas, dos Cavaleiros Antigos do Nether."
 			]
 			id: "324B284C2CE17C0C"
 			rewards: [
@@ -564,7 +573,7 @@
 			]
 			title: "Orbe de Aprimoramento"
 			x: 4.5d
-			y: 8.25d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -573,6 +582,7 @@
 			]
 			description: [
 				"Mais força para feitiços de fogo."
+				"Oito runas de fogo: caçar piromantes rende mais que abrir baús."
 			]
 			id: "2C9DB2035BABBCD5"
 			rewards: [
@@ -599,7 +609,7 @@
 			]
 			title: "Orbe do Fogo"
 			x: 9.0d
-			y: 11.75d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -607,6 +617,7 @@
 			]
 			description: [
 				"Mais mana para tudo."
+				"Oito runas arcanas, cada uma sobre uma runa vazia: guarde as que achar."
 			]
 			id: "71928D8630DEDF61"
 			rewards: [
@@ -633,7 +644,7 @@
 			]
 			title: "Orbe de Mana"
 			x: 6.0d
-			y: 8.25d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -667,7 +678,7 @@
 			]
 			title: "Bigorna Arcana"
 			x: 6.0d
-			y: 10.75d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -701,7 +712,7 @@
 			]
 			title: "Tecido Mágico"
 			x: 4.5d
-			y: 23.0d
+			y: 19.75d
 		}
 		{
 			dependencies: [
@@ -710,6 +721,7 @@
 			]
 			description: [
 				"Para quem conversa com o fogo."
+				"O peitoral de mago (8 tecidos mágicos) com uma runa de fogo e essência arcana."
 			]
 			id: "6C7633E497BB5F3F"
 			rewards: [
@@ -735,8 +747,8 @@
 				}
 			]
 			title: "Vestes do Piromante"
-			x: 7.5d
-			y: 19.25d
+			x: 6.0d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -770,15 +782,15 @@
 			]
 			title: "Anel de Mana"
 			x: 4.5d
-			y: 9.75d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"7C42FC541D8FD555"
-				"221969A82F098527"
 			]
 			description: [
 				"Um livro digno de um arquimago."
+				"O couro vem dos hoglins do Nether."
 			]
 			id: "56D335F7D074C394"
 			rewards: [
@@ -817,7 +829,7 @@
 			]
 			title: "Livro de Ouro"
 			x: 6.0d
-			y: 12.25d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -826,6 +838,7 @@
 			]
 			description: [
 				"O livro dos magos que ainda moravam em Aurend."
+				"Pede couro de hoglin, tecido mágico, diamantes e um livro encantado."
 			]
 			icon: {
 				Count: 1b
@@ -869,7 +882,7 @@
 			]
 			title: "Livro de Diamante"
 			x: 7.5d
-			y: 11.5d
+			y: 8.0d
 		}
 	]
 	title: "Caminho — Pergaminhos e Runas"

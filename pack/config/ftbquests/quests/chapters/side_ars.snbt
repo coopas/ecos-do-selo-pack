@@ -69,7 +69,7 @@
 			]
 			title: "O Livro do Aprendiz"
 			x: 0.0d
-			y: 5.25d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -77,6 +77,8 @@
 			]
 			description: [
 				"Árvores de archwood crescem onde a fonte é forte."
+				"Aqui não há floresta de archwood: as árvores nascem soltas e raras, em qualquer bioma."
+				"Guarde as mudas que as folhas soltam."
 			]
 			id: "138BE1AB47F022AF"
 			rewards: [
@@ -106,7 +108,7 @@
 			]
 			title: "Madeira Arcana"
 			x: 1.5d
-			y: 3.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -143,7 +145,7 @@
 			]
 			title: "Tábuas de Archwood"
 			x: 3.0d
-			y: 2.5d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -151,6 +153,7 @@
 			]
 			description: [
 				"Inscreva glifos no seu livro."
+				"Cada glifo pede alguns itens e experiência."
 			]
 			id: "4A7C1090571E0870"
 			rewards: [
@@ -177,7 +180,7 @@
 			]
 			title: "Mesa do Escriba"
 			x: 4.5d
-			y: 0.25d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -212,14 +215,15 @@
 			]
 			title: "Câmara de Imbuição"
 			x: 4.5d
-			y: 3.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"70E2C4D64C2270B6"
 			]
 			description: [
-				"Ametista mergulhada em mana."
+				"Ametista (ou lápis-lazúli) mergulhada em mana."
+				"A câmara junta fonte sozinha, devagar; jarros de fonte por perto aceleram."
 				"Também abre o caminho para o Undergarden."
 			]
 			icon: {
@@ -252,7 +256,7 @@
 			]
 			title: "Gemas de Fonte"
 			x: 6.0d
-			y: 5.0d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -286,7 +290,7 @@
 			]
 			title: "Jarro de Fonte"
 			x: 7.5d
-			y: 2.25d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -320,7 +324,7 @@
 			]
 			title: "Elo Agronômico"
 			x: 9.0d
-			y: 2.0d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -354,7 +358,7 @@
 			]
 			title: "Elo Vulcânico"
 			x: 9.0d
-			y: 3.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -387,8 +391,8 @@
 				}
 			]
 			title: "Glifo: Projétil"
-			x: 6.0d
-			y: -2.0d
+			x: 7.5d
+			y: -7.25d
 		}
 		{
 			dependencies: [
@@ -422,7 +426,7 @@
 			]
 			title: "Glifo: Toque"
 			x: 6.0d
-			y: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -456,14 +460,16 @@
 			]
 			title: "Glifo: Quebrar"
 			x: 7.5d
-			y: -0.75d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"1C77F090719FAA43"
+				"30303AD17F22B8CF"
 			]
 			description: [
 				"O primeiro feitiço de combate."
+				"Pede essência de terra e três espadas de ferro."
 			]
 			id: "6D7E4DF824119D06"
 			rewards: [
@@ -489,8 +495,8 @@
 				}
 			]
 			title: "Glifo: Ferir"
-			x: 7.5d
-			y: -3.75d
+			x: 12.0d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -498,6 +504,7 @@
 			]
 			description: [
 				"Mais forte. Mais alto. Mais ouvido."
+				"Pede uma picareta de diamante."
 			]
 			id: "5A0F1AD0FF8AB949"
 			rewards: [
@@ -523,8 +530,8 @@
 				}
 			]
 			title: "Glifo: Amplificar"
-			x: 9.0d
-			y: -3.75d
+			x: 13.5d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -557,15 +564,17 @@
 				}
 			]
 			title: "Glifo: Luz"
-			x: 7.5d
-			y: -2.25d
+			x: 9.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
 				"20CAA2E85C5212EB"
+				"30303AD17F22B8CF"
 			]
 			description: [
 				"Magia que fecha feridas."
+				"Pede essência de abjuração, melancias reluzentes e uma maçã dourada."
 			]
 			id: "6E87A011813ADB98"
 			rewards: [
@@ -591,15 +600,17 @@
 				}
 			]
 			title: "Glifo: Curar"
-			x: 7.5d
-			y: 0.75d
+			x: 10.5d
+			y: -4.25d
 		}
 		{
 			dependencies: [
-				"0FC08236B408EDF0"
+				"2652E73A164C1D64"
 			]
 			description: [
 				"A câmara destila essências de fogo, abjuração e manipulação."
+				"Uma gema de fonte na câmara; os outros ingredientes em pedestais arcanos colados a ela."
+				"Cada essência gasta muita fonte: ponha jarros cheios por perto."
 			]
 			id: "30303AD17F22B8CF"
 			rewards: [
@@ -643,8 +654,8 @@
 				}
 			]
 			title: "Essências"
-			x: 7.5d
-			y: 3.75d
+			x: 9.0d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -652,6 +663,7 @@
 			]
 			description: [
 				"Criaturas da floresta selvagem. Seus restos são reagentes."
+				"Saem à noite dos covis de wilden nas florestas; o Defensor (espinho) só nos biomas frios."
 			]
 			id: "1D47418567BDC827"
 			rewards: [
@@ -696,7 +708,7 @@
 			]
 			title: "Os Wilden"
 			x: 4.5d
-			y: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -705,6 +717,7 @@
 			]
 			description: [
 				"Mais páginas, mais glifos."
+				"Pede o livro novato, obsidiana, 3 diamantes, 2 blocos de quartzo e 2 varas de blaze."
 			]
 			id: "6D1D9092BF22B345"
 			rewards: [
@@ -743,7 +756,7 @@
 			]
 			title: "Livro do Aprendiz Avançado"
 			x: 7.5d
-			y: 8.75d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -777,11 +790,10 @@
 			]
 			title: "Pedestais Arcanos"
 			x: 7.5d
-			y: 5.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
-				"2652E73A164C1D64"
 				"30303AD17F22B8CF"
 			]
 			description: [
@@ -821,8 +833,8 @@
 				}
 			]
 			title: "Aparato de Encantamento"
-			x: 9.0d
-			y: 5.0d
+			x: 10.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -855,8 +867,8 @@
 				}
 			]
 			title: "Jarro de Luz"
-			x: 10.5d
-			y: 2.25d
+			x: 12.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -864,6 +876,7 @@
 			]
 			description: [
 				"Flutuar sobre o Undergarden."
+				"A essência de ar leva pena, asa de wilden e flecha nos pedestais."
 			]
 			id: "631205B9F4B9FBE7"
 			rewards: [
@@ -889,8 +902,8 @@
 				}
 			]
 			title: "Cinto de Levitação"
-			x: 10.5d
-			y: 3.75d
+			x: 12.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -923,15 +936,16 @@
 				}
 			]
 			title: "Anel de Potencial"
-			x: 10.5d
-			y: 5.25d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
-				"6D1D9092BF22B345"
+				"656BB2D858B153F2"
 			]
 			description: [
-				"Dê uma pepita de ouro a um starbuncle. Ele carrega itens para você."
+				"Dê uma pepita de ouro a um starbuncle selvagem: ele some e deixa um token."
+				"No aparato, o token e 4 lingotes de ouro viram o amuleto. Ele carrega itens para você."
 			]
 			id: "4E702F1EBC01FE4B"
 			rewards: [
@@ -957,8 +971,8 @@
 				}
 			]
 			title: "Um Starbuncle"
-			x: 9.0d
-			y: 9.5d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -993,7 +1007,7 @@
 			]
 			title: "Pedra-Portal"
 			x: 7.5d
-			y: 6.75d
+			y: 2.25d
 		}
 		{
 			dependencies: [
@@ -1001,6 +1015,7 @@
 			]
 			description: [
 				"Roupas que carregam glifos."
+				"A fibra vem da magebloom: as sementes saem do aparato (gemas de fonte e uma semente)."
 			]
 			id: "3DD3A77927A3DB47"
 			rewards: [
@@ -1026,8 +1041,8 @@
 				}
 			]
 			title: "Túnica Arcana"
-			x: 10.5d
-			y: 6.75d
+			x: 12.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1037,6 +1052,8 @@
 			description: [
 				"Todos os glifos que Aurend conheceu."
 				"Toque baixo. Sempre baixo."
+				"Pede estrela do Nether (Wither), totem da imortalidade (evocadores) e o tributo wilden,"
+				"que cai da Quimera invocada pelo ritual de Invocar Wilden (com chifre, asa e espinho)."
 			]
 			icon: {
 				Count: 1b
@@ -1079,8 +1096,8 @@
 				}
 			]
 			title: "O Livro do Arquimago"
-			x: 10.5d
-			y: 8.75d
+			x: 12.0d
+			y: 6.0d
 		}
 	]
 	title: "Caminho — A Fonte"

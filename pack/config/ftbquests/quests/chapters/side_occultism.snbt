@@ -52,7 +52,7 @@
 			]
 			title: "Sementes de Datura"
 			x: 0.0d
-			y: -1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -86,14 +86,15 @@
 			]
 			title: "Faca de Açougueiro"
 			x: 1.5d
-			y: -2.75d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"5D2D713F1544A4A9"
 			]
 			description: [
-				"Gordura animal, base para velas e giz."
+				"Gordura animal, base para as velas dos pentáculos."
+				"Mate porcos, vacas ou ovelhas com a faca."
 			]
 			id: "328F84D4DA34E824"
 			rewards: [
@@ -120,7 +121,7 @@
 			]
 			title: "Sebo"
 			x: 3.0d
-			y: -2.75d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -155,7 +156,7 @@
 			]
 			title: "Tigela Sacrificial"
 			x: 4.5d
-			y: 0.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -189,14 +190,17 @@
 			]
 			title: "Tigela Dourada"
 			x: 6.0d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
-				"328F84D4DA34E824"
+				"4C3F7314E4111016"
 			]
 			description: [
 				"Desenhe o primeiro pentáculo."
+				"Giz impuro: pedra de outro mundo assada na fornalha e cinzas de tora de outro mundo no fogo espiritual."
+				"A tora: muda de carvalho no fogo vira muda de outro mundo; corte a árvore sob o Terceiro Olho (coma o fruto de datura)."
+				"Depois, purifique o giz no fogo espiritual."
 			]
 			id: "46370BFBC3FBED09"
 			rewards: [
@@ -239,15 +243,16 @@
 				}
 			]
 			title: "Giz Branco"
-			x: 4.5d
-			y: -2.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
-				"5BD9F3E14A814792"
+				"7EECB0C0CEE2CA6D"
 			]
 			description: [
 				"Com eles você vê minérios que não existem para os outros."
+				"As lentes infundidas saem de um ritual com o foliot (pentáculo de giz branco e dourado)."
 			]
 			id: "7BA69E0E68364464"
 			rewards: [
@@ -273,12 +278,12 @@
 				}
 			]
 			title: "Óculos do Outro Mundo"
-			x: 1.5d
-			y: -1.25d
+			x: 16.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
-				"7BA69E0E68364464"
+				"03240576CD0B1809"
 			]
 			description: [
 				"Ela aponta para o que está escondido."
@@ -307,15 +312,16 @@
 				}
 			]
 			title: "Varinha de Adivinhação"
-			x: 3.0d
-			y: -1.25d
+			x: 9.0d
+			y: 1.25d
 		}
 		{
 			dependencies: [
-				"7BA69E0E68364464"
+				"2FF25458F69734E3"
 			]
 			description: [
 				"Pedra que só existe quando é olhada do jeito certo."
+				"Jogue andesito no fogo espiritual."
 			]
 			id: "4C3F7314E4111016"
 			rewards: [
@@ -342,7 +348,7 @@
 			]
 			title: "Pedra de Outro Mundo"
 			x: 3.0d
-			y: 0.25d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -350,6 +356,7 @@
 			]
 			description: [
 				"Espíritos não gostam de prata. Ainda assim, precisam dela."
+				"Veio de galena do GregTech (y -15 a 45) ou o minério de prata do Occultism."
 			]
 			id: "5CDFCEBDC36C737C"
 			rewards: [
@@ -379,7 +386,7 @@
 			]
 			title: "Prata"
 			x: 1.5d
-			y: 0.25d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -388,6 +395,7 @@
 			]
 			description: [
 				"Uma gema que ouve espíritos."
+				"Diamantes jogados no fogo espiritual."
 			]
 			id: "03240576CD0B1809"
 			rewards: [
@@ -414,15 +422,15 @@
 			]
 			title: "Gema Sintonizada"
 			x: 7.5d
-			y: -0.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"46370BFBC3FBED09"
+				"5BD9F3E14A814792"
 			]
 			description: [
 				"Fogo que queima do outro lado."
-				"Acenda datura no chão e jogue itens nele para transmutá-los."
+				"Jogue datura no chão e acenda com isqueiro; itens jogados nele se transmutam."
 			]
 			id: "2FF25458F69734E3"
 			rewards: [
@@ -443,8 +451,8 @@
 				}
 			]
 			title: "Fogo Espiritual"
-			x: 6.0d
-			y: -2.25d
+			x: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -477,8 +485,8 @@
 				}
 			]
 			title: "Lanterna Espiritual"
-			x: 7.5d
-			y: -2.25d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -486,6 +494,7 @@
 			]
 			description: [
 				"O nome de um espírito, preso em papel."
+				"Tinta purificada, pena desperta e livro tabu: tinta preta, pena e livro, todos no fogo espiritual."
 			]
 			id: "599339FC38991F62"
 			rewards: [
@@ -512,7 +521,7 @@
 			]
 			title: "Livro de Vínculo"
 			x: 9.0d
-			y: -1.25d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -520,6 +529,7 @@
 			]
 			description: [
 				"O espírito mais fraco. Mas ele aceita servir."
+				"Junte o livro ao Dicionário dos Espíritos na bancada; o dicionário não se gasta."
 			]
 			id: "7CD72555BD67895F"
 			rewards: [
@@ -546,14 +556,15 @@
 			]
 			title: "Um Foliot Vinculado"
 			x: 10.5d
-			y: -0.25d
+			y: 3.75d
 		}
 		{
 			dependencies: [
-				"7CD72555BD67895F"
+				"2C2866E244F85734"
 			]
 			description: [
 				"Um foliot que cava por você, dentro de uma bolsa dimensional."
+				"Ritual do foliot com lâmpada mágica (prata e iésnio), picareta de iésnio, ferro bruto e cascalho."
 			]
 			id: "40B596C9D381932B"
 			rewards: [
@@ -579,8 +590,8 @@
 				}
 			]
 			title: "Minerador Espiritual"
-			x: 12.0d
-			y: -0.5d
+			x: 21.0d
+			y: 4.25d
 		}
 		{
 			dependencies: [
@@ -615,7 +626,7 @@
 			]
 			title: "Giz Dourado"
 			x: 12.0d
-			y: 1.0d
+			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -649,14 +660,16 @@
 			]
 			title: "Livro do Djinni"
 			x: 13.5d
-			y: 1.25d
+			y: 6.25d
 		}
 		{
 			dependencies: [
-				"120C316A55649298"
+				"0273FC36A9B8620B"
+				"7BA69E0E68364464"
 			]
 			description: [
 				"Um metal que só se vê com os óculos."
+				"No Nether, parece netherrack: veja com os óculos e quebre com a picareta infundida."
 			]
 			id: "774C96877571D7E3"
 			rewards: [
@@ -682,15 +695,16 @@
 				}
 			]
 			title: "Iésnio"
-			x: 15.0d
-			y: 0.25d
+			x: 18.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
-				"03240576CD0B1809"
+				"4D84903DAEE12A8F"
 			]
 			description: [
 				"Uma picareta que alcança o outro mundo."
+				"Ritual do djinni: o pentáculo leva giz roxo."
 			]
 			id: "0273FC36A9B8620B"
 			rewards: [
@@ -716,8 +730,8 @@
 				}
 			]
 			title: "Picareta Infundida"
-			x: 9.0d
-			y: 0.25d
+			x: 16.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -750,8 +764,8 @@
 				}
 			]
 			title: "Picareta de Iésnio"
-			x: 16.5d
-			y: -1.0d
+			x: 19.5d
+			y: 4.25d
 		}
 		{
 			dependencies: [
@@ -759,6 +773,8 @@
 			]
 			description: [
 				"Pentáculos de invocação."
+				"Pó de pedra do Fim: invoque um foliot triturador (pentáculo de giz branco) e jogue pedra do Fim perto dele."
+				"Pó de obsidiana: macerador do GregTech ou rodas trituradoras."
 			]
 			id: "4D84903DAEE12A8F"
 			rewards: [
@@ -785,7 +801,7 @@
 			]
 			title: "Giz Roxo"
 			x: 15.0d
-			y: 2.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -818,8 +834,8 @@
 				}
 			]
 			title: "Matriz Dimensional"
-			x: 16.5d
-			y: 0.5d
+			x: 19.5d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -861,8 +877,8 @@
 				}
 			]
 			title: "Controlador de Armazenamento"
-			x: 18.0d
-			y: 0.5d
+			x: 21.0d
+			y: 5.75d
 		}
 		{
 			dependencies: [
@@ -895,8 +911,8 @@
 				}
 			]
 			title: "Anel de Familiar"
-			x: 18.0d
-			y: 3.5d
+			x: 19.5d
+			y: 8.25d
 		}
 		{
 			dependencies: [
@@ -904,6 +920,7 @@
 			]
 			description: [
 				"Para os espíritos perigosos."
+				"Essência de afrit: o afrit selvagem do ritual (pentáculo com caveiras) a deixa ao morrer."
 			]
 			id: "7561DD39B06C1276"
 			rewards: [
@@ -930,7 +947,7 @@
 			]
 			title: "Giz Vermelho"
 			x: 16.5d
-			y: 2.25d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -975,8 +992,8 @@
 				}
 			]
 			title: "O Afrit"
-			x: 18.0d
-			y: 2.0d
+			x: 21.0d
+			y: 7.25d
 		}
 		{
 			dependencies: [
@@ -1024,8 +1041,8 @@
 				}
 			]
 			title: "Mestre do Pentáculo"
-			x: 19.5d
-			y: 2.0d
+			x: 22.5d
+			y: 7.75d
 		}
 	]
 	title: "Caminho — Os que Servem"

@@ -8,46 +8,54 @@ quests:
      desc: ["Uma flor que mostra o que os olhos não veem."], tasks: [{item: occultism:datura_seeds, count: 4}], rewards: [{coins: 2}]}
   - {slug: faca, title: "Faca de Açougueiro", deps: [datura], desc: ["Ocultistas não desperdiçam nada."],
      tasks: [{item: occultism:butcher_knife}], rewards: [{coins: 2}]}
-  - {slug: sebo, title: "Sebo", deps: [faca], desc: ["Gordura animal, base para velas e giz."],
+  - {slug: sebo, title: "Sebo", deps: [faca], desc: ["Gordura animal, base para as velas dos pentáculos.", "Mate porcos, vacas ou ovelhas com a faca."],
      tasks: [{item: occultism:tallow, count: 8}], rewards: [{coins: 1}]}
   - {slug: tigela, title: "Tigela Sacrificial", deps: [pedra_outra, side_create/latao],
      desc: ["Pedra de outro mundo e latão do Create. Aurend misturava tudo."], tasks: [{item: occultism:sacrificial_bowl, count: 4}],
      rewards: [{coins: 2}]}
   - {slug: tigela_dourada, title: "Tigela Dourada", deps: [tigela], desc: ["O centro de todo ritual."],
      tasks: [{item: occultism:golden_sacrificial_bowl}], rewards: [{coins: 3}]}
-  - {slug: giz_branco, title: "Giz Branco", deps: [sebo], desc: ["Desenhe o primeiro pentáculo."],
+  - {slug: giz_branco, title: "Giz Branco", deps: [pedra_outra],
+     desc: ["Desenhe o primeiro pentáculo.", "Giz impuro: pedra de outro mundo assada na fornalha e cinzas de tora de outro mundo no fogo espiritual.",
+            "A tora: muda de carvalho no fogo vira muda de outro mundo; corte a árvore sob o Terceiro Olho (coma o fruto de datura).",
+            "Depois, purifique o giz no fogo espiritual."],
      tasks: [{item: occultism:chalk_white}], rewards: [{page: 12}, {coins: 3}]}
-  - {slug: oculos, title: "Óculos do Outro Mundo", deps: [datura], desc: ["Com eles você vê minérios que não existem para os outros."],
+  - {slug: oculos, title: "Óculos do Outro Mundo", deps: [giz_dourado],
+     desc: ["Com eles você vê minérios que não existem para os outros.", "As lentes infundidas saem de um ritual com o foliot (pentáculo de giz branco e dourado)."],
      tasks: [{item: occultism:otherworld_goggles}], rewards: [{coins: 3}]}
-  - {slug: varinha, title: "Varinha de Adivinhação", deps: [oculos], desc: ["Ela aponta para o que está escondido."],
+  - {slug: varinha, title: "Varinha de Adivinhação", deps: [gema_espiritual], desc: ["Ela aponta para o que está escondido."],
      tasks: [{item: occultism:divination_rod}], rewards: [{coins: 2}]}
-  - {slug: pedra_outra, title: "Pedra de Outro Mundo", deps: [oculos], desc: ["Pedra que só existe quando é olhada do jeito certo."],
+  - {slug: pedra_outra, title: "Pedra de Outro Mundo", deps: [fogo_espiritual], desc: ["Pedra que só existe quando é olhada do jeito certo.", "Jogue andesito no fogo espiritual."],
      tasks: [{item: occultism:otherstone, count: 32}], rewards: [{coins: 2}]}
-  - {slug: prata, title: "Prata", deps: [datura], desc: ["Espíritos não gostam de prata. Ainda assim, precisam dela."],
+  - {slug: prata, title: "Prata", deps: [datura], desc: ["Espíritos não gostam de prata. Ainda assim, precisam dela.", "Veio de galena do GregTech (y -15 a 45) ou o minério de prata do Occultism."],
      tasks: [{tag: forge:ingots/silver, count: 16}], rewards: [{coins: 2}]}
-  - {slug: gema_espiritual, title: "Gema Sintonizada", deps: [giz_branco, tigela_dourada], desc: ["Uma gema que ouve espíritos."],
+  - {slug: gema_espiritual, title: "Gema Sintonizada", deps: [giz_branco, tigela_dourada], desc: ["Uma gema que ouve espíritos.", "Diamantes jogados no fogo espiritual."],
      tasks: [{item: occultism:spirit_attuned_gem, count: 4}], rewards: [{coins: 3}]}
-  - {slug: fogo_espiritual, title: "Fogo Espiritual", deps: [giz_branco], desc: ["Fogo que queima do outro lado.", "Acenda datura no chão e jogue itens nele para transmutá-los."],
+  - {slug: fogo_espiritual, title: "Fogo Espiritual", deps: [datura], desc: ["Fogo que queima do outro lado.", "Jogue datura no chão e acenda com isqueiro; itens jogados nele se transmutam."],
      tasks: [{checkmark: true}], rewards: [{coins: 2}]}
   - {slug: lanterna, title: "Lanterna Espiritual", deps: [fogo_espiritual], desc: ["Luz que só os espíritos veem bem."],
      tasks: [{item: occultism:spirit_lantern}], rewards: [{coins: 1}]}
-  - {slug: livro_vinculo, title: "Livro de Vínculo", deps: [gema_espiritual], desc: ["O nome de um espírito, preso em papel."],
+  - {slug: livro_vinculo, title: "Livro de Vínculo", deps: [gema_espiritual], desc: ["O nome de um espírito, preso em papel.", "Tinta purificada, pena desperta e livro tabu: tinta preta, pena e livro, todos no fogo espiritual."],
      tasks: [{item: occultism:book_of_binding_foliot}], rewards: [{coins: 3}]}
-  - {slug: foliot, title: "Um Foliot Vinculado", deps: [livro_vinculo], desc: ["O espírito mais fraco. Mas ele aceita servir."],
+  - {slug: foliot, title: "Um Foliot Vinculado", deps: [livro_vinculo], desc: ["O espírito mais fraco. Mas ele aceita servir.", "Junte o livro ao Dicionário dos Espíritos na bancada; o dicionário não se gasta."],
      tasks: [{item: occultism:book_of_binding_bound_foliot}], rewards: [{coins: 3}]}
-  - {slug: minerador, title: "Minerador Espiritual", deps: [foliot], desc: ["Um foliot que cava por você, dentro de uma bolsa dimensional."],
+  - {slug: minerador, title: "Minerador Espiritual", deps: [picareta_iesnio],
+     desc: ["Um foliot que cava por você, dentro de uma bolsa dimensional.", "Ritual do foliot com lâmpada mágica (prata e iésnio), picareta de iésnio, ferro bruto e cascalho."],
      tasks: [{item: occultism:miner_foliot_unspecialized}], rewards: [{coins: 4}]}
   - {slug: giz_dourado, title: "Giz Dourado", deps: [foliot, side_ars/gema_fonte], desc: ["Para espíritos mais exigentes."],
      tasks: [{item: occultism:chalk_gold}], rewards: [{coins: 3}]}
   - {slug: djinni, title: "Livro do Djinni", deps: [giz_dourado], desc: ["Um djinni sabe mais do que diz."],
      tasks: [{item: occultism:book_of_binding_djinni}], rewards: [{coins: 4}]}
-  - {slug: iesnio, title: "Iésnio", deps: [djinni], desc: ["Um metal que só se vê com os óculos."],
+  - {slug: iesnio, title: "Iésnio", deps: [picareta_infundida, oculos],
+     desc: ["Um metal que só se vê com os óculos.", "No Nether, parece netherrack: veja com os óculos e quebre com a picareta infundida."],
      tasks: [{item: occultism:iesnium_ingot, count: 8}], rewards: [{coins: 4}]}
-  - {slug: picareta_infundida, title: "Picareta Infundida", deps: [gema_espiritual], desc: ["Uma picareta que alcança o outro mundo."],
+  - {slug: picareta_infundida, title: "Picareta Infundida", deps: [giz_roxo],
+     desc: ["Uma picareta que alcança o outro mundo.", "Ritual do djinni: o pentáculo leva giz roxo."],
      tasks: [{item: occultism:infused_pickaxe}], rewards: [{coins: 3}]}
   - {slug: picareta_iesnio, title: "Picareta de Iésnio", deps: [iesnio], desc: ["Minera o que a infundida não alcança."],
      tasks: [{item: occultism:iesnium_pickaxe}], rewards: [{coins: 4}]}
-  - {slug: giz_roxo, title: "Giz Roxo", deps: [djinni], desc: ["Pentáculos de invocação."],
+  - {slug: giz_roxo, title: "Giz Roxo", deps: [djinni], desc: ["Pentáculos de invocação.", "Pó de pedra do Fim: invoque um foliot triturador (pentáculo de giz branco) e jogue pedra do Fim perto dele.",
+            "Pó de obsidiana: macerador do GregTech ou rodas trituradoras."],
      tasks: [{item: occultism:chalk_purple}], rewards: [{coins: 3}]}
   - {slug: matriz, title: "Matriz Dimensional", deps: [iesnio], desc: ["O coração de um armazém que não ocupa espaço."],
      tasks: [{item: occultism:dimensional_matrix}], rewards: [{coins: 4}]}
@@ -55,7 +63,7 @@ quests:
      tasks: [{item: occultism:storage_controller}, {item: occultism:storage_stabilizer_tier1, count: 2}], rewards: [{coins: 5}]}
   - {slug: anel_familiar, title: "Anel de Familiar", deps: [giz_roxo], desc: ["Um familiar te acompanha. Não pergunte o nome dele."],
      tasks: [{item: occultism:familiar_ring}], rewards: [{coins: 4}]}
-  - {slug: giz_vermelho, title: "Giz Vermelho", deps: [giz_roxo], desc: ["Para os espíritos perigosos."],
+  - {slug: giz_vermelho, title: "Giz Vermelho", deps: [giz_roxo], desc: ["Para os espíritos perigosos.", "Essência de afrit: o afrit selvagem do ritual (pentáculo com caveiras) a deixa ao morrer."],
      tasks: [{item: occultism:chalk_red}], rewards: [{coins: 4}]}
   - {slug: afrit, title: "O Afrit", deps: [giz_vermelho], desc: ["Um espírito de fogo e orgulho."],
      tasks: [{item: occultism:book_of_binding_afrit}], rewards: [{crate: comum}, {coins: 5}]}

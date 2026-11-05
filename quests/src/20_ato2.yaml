@@ -27,8 +27,8 @@ quests:
      tasks: [{item: undergarden:underbeans, count: 8}, {item: undergarden:blisterberry, count: 8}], rewards: [{coins: 2}]}
   - {slug: ditchbulb, title: "Bulbos de Vala", deps: [undergarden], desc: ["Luz que nasce do chão."],
      tasks: [{item: undergarden:ditchbulb, count: 8}], rewards: [{coins: 1}]}
-  - {slug: tocha_fragmento, title: "Tochas de Cristal", deps: [ditchbulb], desc: ["Feitas com os cristais do fundo."],
-     tasks: [{item: undergarden:shard_torch, count: 16}], rewards: [{coins: 1}]}
+  - {slug: tocha_fragmento, title: "Tochas de Cristal", deps: [ditchbulb], desc: ["Feitas com os estilhaços utéricos do fundo.", "Eles caem dos podres: rotlings, rotwalkers e rotbeasts."],
+     tasks: [{item: undergarden:shard_torch, count: 8}], rewards: [{coins: 1}]}
   - {slug: cloggrum, title: "Cloggrum", deps: [pedra_funda], desc: ["Um metal pesado e opaco. Os Confluentes o usavam em portões."],
      tasks: [{tag: forge:ingots/cloggrum, count: 16}], rewards: [{coins: 3}]}
   - {slug: espada_cloggrum, title: "Lâmina Pesada", deps: [cloggrum], desc: ["Lenta, mas não perdoa."],
@@ -37,26 +37,26 @@ quests:
      tasks: [{item: undergarden:cloggrum_chestplate}], rewards: [{coins: 2}]}
   - {slug: utherio, title: "Cristal de Utério", deps: [undergarden], desc: ["Cristais vermelhos que vibram perto de criaturas corrompidas."],
      tasks: [{item: undergarden:utherium_crystal, count: 8}], rewards: [{coins: 3}]}
-  - {slug: froststeel, title: "Aço-Gelo", deps: [cloggrum], desc: ["Metal que congela o que toca."],
+  - {slug: froststeel, title: "Aço-Gelo", deps: [cloggrum], desc: ["Metal que congela o que toca.", "O minério fica na shiverstone, a pedra gelada do Undergarden."],
      tasks: [{item: undergarden:froststeel_ingot, count: 8}], rewards: [{coins: 3}]}
   - {slug: couraca_froststeel, title: "Couraça de Aço-Gelo", deps: [froststeel], desc: ["Fria por dentro e por fora."],
      tasks: [{item: undergarden:froststeel_chestplate}], rewards: [{coins: 3}]}
   - {slug: guardiao_esquecido, title: "O Guardião Esquecido", deps: [couraca_cloggrum, utherio], shape: gear,
      desc: ["Uma estátua que ainda guarda as catacumbas.", "Ninguém lembra mais o que ela protege."],
      tasks: [{kill: undergarden:forgotten_guardian}], rewards: [{crate: epica}, {coins: 6}]}
-  - {slug: lingote_esquecido, title: "Metal Esquecido", deps: [guardiao_esquecido], desc: ["Forjado por gente cujo nome sumiu."],
-     tasks: [{item: undergarden:forgotten_ingot, count: 2}], rewards: [{coins: 4}]}
+  - {slug: lingote_esquecido, title: "Metal Esquecido", deps: [guardiao_esquecido], desc: ["Forjado por gente cujo nome sumiu.", "O guardião deixa de 4 a 16 pepitas; nove fazem um lingote."],
+     tasks: [{item: undergarden:forgotten_ingot}], rewards: [{coins: 4}]}
   - {slug: cidades_antigas, title: "As Cidades de Aurend", deps: [undergarden, tres_escolas], shape: gear, icon: minecraft:sculk_catalyst,
      desc: ["As Cidades Antigas não são ruínas de outro povo.", "São Aurend. Sempre foram."], tasks: [{checkmark: true}],
      rewards: [{page: 14}, {coins: 4}]}
-  - {slug: sculk, title: "Sculk", deps: [cidades_antigas], desc: ["Um tapete vivo que escuta cada passo."],
+  - {slug: sculk, title: "Sculk", deps: [cidades_antigas], desc: ["Um tapete vivo que escuta cada passo.", "Sculk só sai inteiro com Toque Suave: encantamento, ou o glifo Extrair do Ars junto do Quebrar."],
      tasks: [{item: minecraft:sculk, count: 32}], rewards: [{coins: 2}]}
-  - {slug: sensor, title: "Sensores", deps: [sculk], desc: ["Pegue um sensor sem acordar o que dorme."],
+  - {slug: sensor, title: "Sensores", deps: [sculk], desc: ["Pegue um sensor sem acordar o que dorme.", "Também pede Toque Suave."],
      tasks: [{item: minecraft:sculk_sensor, count: 2}], rewards: [{coins: 2}]}
-  - {slug: catalisador_sculk, title: "Catalisador de Sculk", deps: [sculk], desc: ["Onde algo morre, o sculk floresce."],
+  - {slug: catalisador_sculk, title: "Catalisador de Sculk", deps: [sculk], desc: ["Onde algo morre, o sculk floresce.", "Também pede Toque Suave."],
      tasks: [{item: minecraft:sculk_catalyst}], rewards: [{coins: 3}]}
   - {slug: eco, title: "Fragmentos de Eco", deps: [cidades_antigas], icon: minecraft:echo_shard,
-     desc: ["Pedaços de som que ficaram presos.", "Ilse dizia que dá para ouvir vozes dentro deles."],
+     desc: ["Pedaços de som que ficaram presos.", "Ilse dizia que dá para ouvir vozes dentro deles.", "Procure nos baús das Cidades Antigas."],
      tasks: [{item: minecraft:echo_shard, count: 8}], rewards: [{coins: 4}]}
   - {slug: bussola, title: "Bússola da Recuperação", deps: [eco], desc: ["Aponta para onde você morreu pela última vez."],
      tasks: [{item: minecraft:recovery_compass}], rewards: [{coins: 3}]}
@@ -75,12 +75,12 @@ quests:
      tasks: [{dimension: deeperdarker:otherside}], rewards: [{crate: rara}, {coins: 6}]}
   - {slug: madeira_eco, title: "Madeira de Eco", deps: [otherside], desc: ["Árvores que cresceram ouvindo."],
      tasks: [{item: deeperdarker:echo_log, count: 16}], rewards: [{coins: 2}]}
-  - {slug: po_alma, title: "Pó de Alma", deps: [otherside], desc: ["O que sobra quando o eco vai embora."],
+  - {slug: po_alma, title: "Pó de Alma", deps: [otherside], desc: ["O que sobra quando o eco vai embora.", "Sanguessugas e snappers de sculk deixam cair; os baús dos templos antigos também."],
      tasks: [{item: deeperdarker:soul_dust, count: 8}], rewards: [{coins: 2}]}
-  - {slug: ressonario, title: "Ressonário", deps: [otherside], desc: ["Um mineral que repete tudo o que ouve."],
+  - {slug: ressonario, title: "Ressonário", deps: [otherside], desc: ["Um mineral que repete tudo o que ouve.", "Não se minera: cai das gosmas (sludge) do Outro Lado."],
      tasks: [{item: deeperdarker:resonarium, count: 8}], rewards: [{coins: 4}]}
-  - {slug: eco_reforcado, title: "Eco Reforçado", deps: [carapaca, otherside], desc: ["Eco preso em metal, para durar."],
-     tasks: [{item: deeperdarker:reinforced_echo_shard, count: 2}], rewards: [{coins: 5}]}
+  - {slug: eco_reforcado, title: "Eco Reforçado", deps: [carapaca, otherside], desc: ["Eco preso em metal, para durar.", "Cada um leva 4 carapaças do Cego e 4 membranas de phantom."],
+     tasks: [{item: deeperdarker:reinforced_echo_shard}], rewards: [{coins: 5}]}
   - {slug: carapaca, title: "Carapaça do Cego", deps: [o_cego], desc: ["A casca dele. Ainda morna."],
      tasks: [{item: deeperdarker:warden_carapace, count: 2}], rewards: [{coins: 4}]}
   - {slug: alto_forno_eletrico, title: "Alto-Forno Elétrico", deps: [inicio, side_gt_steam_lv/era_lv], shape: gear, icon: gtceu:electric_blast_furnace,
@@ -88,14 +88,16 @@ quests:
   - {slug: bobina, title: "Bobinas de Cuproníquel", deps: [alto_forno_eletrico], desc: ["Dezesseis bobinas aquecem o forno."],
      tasks: [{item: gtceu:cupronickel_coil_block, count: 16}], rewards: [{coins: 4}]}
   - {slug: aluminio, title: "Alumínio", deps: [bobina], shape: gear, icon: gtceu:aluminium_ingot,
-     desc: ["Leve e forte. O metal da média voltagem."], tasks: [{tag: forge:ingots/aluminium, count: 32}],
+     desc: ["Leve e forte. O metal da média voltagem.", "Eletrolise pó de safira (veio fundo, y -40 a 0) ou de rubi (veio de redstone)."], tasks: [{tag: forge:ingots/aluminium, count: 32}],
      rewards: [{crate: rara}, {coins: 5}]}
   - {slug: quimica, title: "Química LV", deps: [alto_forno_eletrico], desc: ["Reator químico, eletrolisador e centrífuga."],
      tasks: [{item: gtceu:lv_chemical_reactor}, {item: gtceu:lv_electrolyzer}, {item: gtceu:lv_centrifuge}], rewards: [{coins: 5}]}
-  - {slug: silicio, title: "Silício", deps: [quimica], desc: ["A pedra que pensa."],
-     tasks: [{tag: forge:ingots/silicon, count: 16}], rewards: [{coins: 3}]}
-  - {slug: componentes, title: "Componentes Finos", deps: [silicio], desc: ["Transistor, capacitor e diodo."],
-     tasks: [{item: gtceu:transistor, count: 8}, {item: gtceu:capacitor, count: 8}, {item: gtceu:diode, count: 8}], rewards: [{coins: 4}]}
+  - {slug: silicio, title: "Silício", deps: [quimica], desc: ["A pedra que pensa.", "O lingote pede bobinas mais quentes que as de cuproníquel. Aqui, o caminho é a lâmina:",
+            "pó de silício (eletrólise de areia) com arseneto de gálio vira monocristal no alto-forno; corte em lâminas.",
+            "Gálio: subproduto da esfalerita (veio de enxofre do Nether). Arsênio: realgar moído na centrífuga."],
+     tasks: [{item: gtceu:silicon_wafer, count: 16}], rewards: [{coins: 3}]}
+  - {slug: componentes, title: "Componentes Finos", deps: [silicio], desc: ["Indutor, capacitor e diodo.", "Indutor e capacitor pedem polietileno: etileno (etanol com ácido sulfúrico) e oxigênio no reator químico."],
+     tasks: [{item: gtceu:inductor, count: 8}, {item: gtceu:capacitor, count: 8}, {item: gtceu:diode, count: 8}], rewards: [{coins: 4}]}
   - {slug: casco_mv, title: "Casco MV", deps: [aluminio], desc: ["Média voltagem: as máquinas crescem."],
      tasks: [{item: gtceu:mv_machine_hull, count: 2}], rewards: [{coins: 4}]}
   - {slug: motor_mv, title: "Motor MV", deps: [casco_mv], desc: ["Mais força, mais velocidade."],
@@ -103,7 +105,7 @@ quests:
   - {slug: circuito_bom, title: "Circuito Eletrônico Bom", deps: [componentes, casco_mv], shape: gear, icon: gtceu:good_electronic_circuit,
      desc: ["Aurend pensava mais rápido do que você."], tasks: [{item: gtceu:good_electronic_circuit, count: 4}],
      rewards: [{crate: rara}, {coins: 5}]}
-  - {slug: emissor_mv, title: "Emissor MV", deps: [circuito_bom, motor_mv], desc: ["Também é parte da Chave Celeste."],
+  - {slug: emissor_mv, title: "Emissor MV", deps: [circuito_bom, motor_mv], desc: ["Também é parte da Chave Celeste.", "A esmeralda impecável sai do peneirador: minério purificado de esmeralda (veio de berílio do Nether, y 5 a 30)."],
      tasks: [{item: gtceu:mv_emitter, count: 2}], rewards: [{coins: 5}]}
   - {slug: braco_mv, title: "Braço Robótico MV", deps: [circuito_bom, motor_mv], desc: ["Uma mão que não cansa."],
      tasks: [{item: gtceu:mv_robot_arm}], rewards: [{coins: 5}]}

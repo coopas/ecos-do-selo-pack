@@ -389,7 +389,8 @@
 				"1CC25AC4E291EEFC"
 			]
 			description: [
-				"Feitas com os cristais do fundo."
+				"Feitas com os estilhaços utéricos do fundo."
+				"Eles caem dos podres: rotlings, rotwalkers e rotbeasts."
 			]
 			id: "1B693F69CCD654BB"
 			rewards: [
@@ -405,7 +406,7 @@
 			]
 			tasks: [
 				{
-					count: 16L
+					count: 8L
 					id: "2947B924F262C65F"
 					item: {
 						Count: 1b
@@ -563,6 +564,7 @@
 			]
 			description: [
 				"Metal que congela o que toca."
+				"O minério fica na shiverstone, a pedra gelada do Undergarden."
 			]
 			id: "4CEEC8AB8A1E1738"
 			rewards: [
@@ -677,6 +679,7 @@
 			]
 			description: [
 				"Forjado por gente cujo nome sumiu."
+				"O guardião deixa de 4 a 16 pepitas; nove fazem um lingote."
 			]
 			id: "4C16EC0C377EE6C4"
 			rewards: [
@@ -692,7 +695,7 @@
 			]
 			tasks: [
 				{
-					count: 2L
+					count: 1L
 					id: "1DDB04D7C59F7E94"
 					item: {
 						Count: 1b
@@ -764,6 +767,7 @@
 			]
 			description: [
 				"Um tapete vivo que escuta cada passo."
+				"Sculk só sai inteiro com Toque Suave: encantamento, ou o glifo Extrair do Ars junto do Quebrar."
 			]
 			id: "18CB62FF3CDB70EC"
 			rewards: [
@@ -798,6 +802,7 @@
 			]
 			description: [
 				"Pegue um sensor sem acordar o que dorme."
+				"Também pede Toque Suave."
 			]
 			id: "0AF13E2FE6A13B11"
 			rewards: [
@@ -832,6 +837,7 @@
 			]
 			description: [
 				"Onde algo morre, o sculk floresce."
+				"Também pede Toque Suave."
 			]
 			id: "0C606643D691F8A4"
 			rewards: [
@@ -867,6 +873,7 @@
 			description: [
 				"Pedaços de som que ficaram presos."
 				"Ilse dizia que dá para ouvir vozes dentro deles."
+				"Procure nos baús das Cidades Antigas."
 			]
 			icon: {
 				Count: 1b
@@ -1216,6 +1223,7 @@
 			]
 			description: [
 				"O que sobra quando o eco vai embora."
+				"Sanguessugas e snappers de sculk deixam cair; os baús dos templos antigos também."
 			]
 			id: "29FCCD933FC5F101"
 			rewards: [
@@ -1250,6 +1258,7 @@
 			]
 			description: [
 				"Um mineral que repete tudo o que ouve."
+				"Não se minera: cai das gosmas (sludge) do Outro Lado."
 			]
 			id: "606CEFC916131BAF"
 			rewards: [
@@ -1285,6 +1294,7 @@
 			]
 			description: [
 				"Eco preso em metal, para durar."
+				"Cada um leva 4 carapaças do Cego e 4 membranas de phantom."
 			]
 			id: "02F2A9370F73872B"
 			rewards: [
@@ -1300,7 +1310,7 @@
 			]
 			tasks: [
 				{
-					count: 2L
+					count: 1L
 					id: "51A0E1A7E1366D7A"
 					item: {
 						Count: 1b
@@ -1427,6 +1437,7 @@
 			]
 			description: [
 				"Leve e forte. O metal da média voltagem."
+				"Eletrolise pó de safira (veio fundo, y -40 a 0) ou de rubi (veio de redstone)."
 			]
 			icon: {
 				Count: 1b
@@ -1533,6 +1544,9 @@
 			]
 			description: [
 				"A pedra que pensa."
+				"O lingote pede bobinas mais quentes que as de cuproníquel. Aqui, o caminho é a lâmina:"
+				"pó de silício (eletrólise de areia) com arseneto de gálio vira monocristal no alto-forno; corte em lâminas."
+				"Gálio: subproduto da esfalerita (veio de enxofre do Nether). Arsênio: realgar moído na centrífuga."
 			]
 			id: "2DE6B6E5660EF87A"
 			rewards: [
@@ -1552,10 +1566,7 @@
 					id: "563E70101C7C331D"
 					item: {
 						Count: 1b
-						id: "ftbfiltersystem:smart_filter"
-						tag: {
-							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(forge:ingots/silicon)"
-						}
+						id: "gtceu:silicon_wafer"
 					}
 					type: "item"
 				}
@@ -1569,7 +1580,8 @@
 				"2DE6B6E5660EF87A"
 			]
 			description: [
-				"Transistor, capacitor e diodo."
+				"Indutor, capacitor e diodo."
+				"Indutor e capacitor pedem polietileno: etileno (etanol com ácido sulfúrico) e oxigênio no reator químico."
 			]
 			id: "584200AF8EE66089"
 			rewards: [
@@ -1589,7 +1601,7 @@
 					id: "068E9FA19EE6128F"
 					item: {
 						Count: 1b
-						id: "gtceu:transistor"
+						id: "gtceu:inductor"
 					}
 					type: "item"
 				}
@@ -1743,6 +1755,7 @@
 			]
 			description: [
 				"Também é parte da Chave Celeste."
+				"A esmeralda impecável sai do peneirador: minério purificado de esmeralda (veio de berílio do Nether, y 5 a 30)."
 			]
 			id: "1111F3F552161AE3"
 			rewards: [
