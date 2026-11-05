@@ -12,11 +12,12 @@ quests:
   - {slug: noites, title: "Noites Mais Fortes", deps: [inicio],
      desc: ["A cada dia que passa, os mobs ficam mais fortes.", "Prepare-se antes de ficar para trás."],
      tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
-  - {slug: obsidiana, title: "Pedra de Lava Fria", deps: [inicio], desc: ["Obsidiana e fogo: uma porta para baixo."],
+  - {slug: obsidiana, title: "Pedra de Lava Fria", deps: [inicio, side_gt_steam_lv/aco],
+     desc: ["Obsidiana e fogo: uma porta para baixo.", "Obsidiana só cede à picareta de aço do GregTech (ou de diamante).", "O isqueiro daqui também é de aço: engrenagem e mola pequenas de aço com sílex."],
      tasks: [{item: minecraft:obsidian, count: 10}, {item: minecraft:flint_and_steel}], rewards: [{coins: 2}]}
   - {slug: nether, title: "O Andar de Baixo", deps: [obsidiana], icon: minecraft:netherrack,
      desc: ["O Nether ainda queima. Ninguém apagou o fogo de Aurend."], tasks: [{dimension: minecraft:the_nether}], rewards: [{coins: 3}]}
-  - {slug: quartzo, title: "Quartzo", deps: [nether], desc: ["Cristais que vibram quando tocados."],
+  - {slug: quartzo, title: "Quartzo", deps: [nether], desc: ["Cristais que vibram quando tocados.", "Veio de quartzo do Nether, entre y 40 e 80."],
      tasks: [{item: minecraft:quartz, count: 16}], rewards: [{coins: 1}]}
   - {slug: verruga, title: "Verruga do Nether", deps: [nether], desc: ["Cresce em fortalezas abandonadas."],
      tasks: [{item: minecraft:nether_wart, count: 8}], rewards: [{coins: 1}]}
@@ -26,8 +27,8 @@ quests:
      tasks: [{tag: forge:ingots/gold, count: 16}], rewards: [{coins: 2}]}
   - {slug: perolas, title: "Pérolas do Fim", deps: [noites], desc: ["Endermen carregam pérolas que lembram onde estiveram."],
      tasks: [{item: minecraft:ender_pearl, count: 4}], rewards: [{coins: 2}]}
-  - {slug: ferro_em_massa, title: "Ferro em Dobro", deps: [side_create/rodas_trituradoras],
-     desc: ["Com as rodas trituradoras, cada minério rende mais."], tasks: [{tag: forge:ingots/iron, count: 128}], rewards: [{coins: 4}]}
+  - {slug: ferro_em_massa, title: "Ferro em Dobro", deps: [side_gt_steam_lv/macerador_vapor],
+     desc: ["Moa o minério antes de derreter: cada um rende mais.", "O macerador a vapor serve; as rodas trituradoras do Create também."], tasks: [{tag: forge:ingots/iron, count: 128}], rewards: [{coins: 4}]}
   - {slug: estoque_aco, title: "Estoque de Aço", deps: [side_gt_steam_lv/aco], desc: ["Aço para as máquinas que virão."],
      tasks: [{tag: forge:ingots/steel, count: 64}], rewards: [{coins: 4}]}
   - {slug: floresta_selada, title: "A Floresta que Não Fica", deps: [maquinas_lembram],
@@ -38,7 +39,7 @@ quests:
   - {slug: flores, title: "Flores para o Lago", deps: [floresta_selada], desc: ["O portal pede flores em volta da água."],
      tasks: [{tag: minecraft:small_flowers, count: 12}], rewards: [{coins: 1}]}
   - {slug: chave, title: "A Chave Crepuscular", deps: [mudas, side_create/mecanismo, side_create/latao], shape: gear,
-     icon: ecos:chave_crepuscular, desc: ["Precisão de Aurend e semente viva.", "Só ela abre o caminho. O diamante não serve mais."],
+     icon: ecos:chave_crepuscular, desc: ["Precisão de Aurend e semente viva: mecanismo, latão, mudas e um diamante.", "Só ela abre o caminho. Jogar diamante no lago não serve mais."],
      tasks: [{item: ecos:chave_crepuscular}], rewards: [{page: 8}, {coins: 5}]}
   - {slug: portal, title: "O Lago e as Flores", deps: [chave, flores],
      desc: ["Faça um lago 2×2 cercado de flores.", "Jogue a Chave Crepuscular na água."], tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}
@@ -51,11 +52,13 @@ quests:
      tasks: [{item: twilightforest:torchberries, count: 8}], rewards: [{coins: 1}]}
   - {slug: corvo, title: "Penas de Corvo", deps: [twilight], desc: ["Os corvos daqui guardam segredos."],
      tasks: [{item: twilightforest:raven_feather, count: 4}], rewards: [{coins: 1}]}
-  - {slug: mapa_magico, title: "Mapa Mágico", deps: [raizviva, torchberries, corvo], desc: ["Um mapa que mostra o que a floresta esconde."],
+  - {slug: mapa_magico, title: "Mapa Mágico", deps: [raizviva, torchberries, corvo],
+     desc: ["Um mapa que mostra o que a floresta esconde.", "O foco do mapa leva pó de glowstone, do teto do Nether.", "Papel: cana na prensa do Create (a bancada não faz mais papel)."],
      tasks: [{item: twilightforest:magic_map}], rewards: [{coins: 3}]}
-  - {slug: ferro_madeira, title: "Ferro-Madeira", deps: [raizviva], desc: ["Madeira que aprendeu a ser metal."],
+  - {slug: ferro_madeira, title: "Ferro-Madeira", deps: [raizviva],
+     desc: ["Madeira que aprendeu a ser metal.", "Raiz viva, pepita de ouro e ferro bruto de verdade:", "o minério de ferro comum, que mora no veio de cobre (y -40 a 10)."],
      tasks: [{item: twilightforest:ironwood_ingot, count: 8}], rewards: [{coins: 2}]}
-  - {slug: folha_aco, title: "Folha de Aço", deps: [twilight], desc: ["Folhas tão duras quanto lâminas."],
+  - {slug: folha_aco, title: "Folha de Aço", deps: [twilight], desc: ["Folhas tão duras quanto lâminas.", "Achadas em baús das colinas ocas e do labirinto."],
      tasks: [{item: twilightforest:steeleaf_ingot, count: 8}], rewards: [{coins: 2}]}
   - {slug: arena_naga, title: "O Pátio da Serpente", deps: [mapa_magico], desc: ["Um pátio cercado de sebes. Algo se enrola lá dentro."],
      tasks: [{checkmark: true}], rewards: [{xp_levels: 1}]}
@@ -70,7 +73,7 @@ quests:
      tasks: [{item: twilightforest:naga_trophy}], rewards: [{coins: 2}]}
   - {slug: po_transformacao, title: "Pó de Transformação", deps: [naga], desc: ["Encontrado em ruínas. Transforma criaturas."],
      tasks: [{item: twilightforest:transformation_powder, count: 4}], rewards: [{coins: 2}]}
-  - {slug: amuleto, title: "Amuleto da Vida", deps: [naga], desc: ["Um amuleto que recusa a morte uma vez."],
+  - {slug: amuleto, title: "Amuleto da Vida", deps: [naga], desc: ["Um amuleto que recusa a morte uma vez.", "Aparece em baús da floresta."],
      tasks: [{item: twilightforest:charm_of_life_1}], rewards: [{coins: 3}]}
   - {slug: torre_lich, title: "A Torre Pálida", deps: [naga, ferro_madeira, folha_aco],
      desc: ["Uma torre de pedra branca. Os cristais lá dentro não refletem nada."], tasks: [{checkmark: true}], rewards: [{xp_levels: 2}]}

@@ -140,9 +140,12 @@
 		{
 			dependencies: [
 				"5DAFCE8F2DC010F7"
+				"4BB930D6A6439C1E"
 			]
 			description: [
 				"Obsidiana e fogo: uma porta para baixo."
+				"Obsidiana só cede à picareta de aço do GregTech (ou de diamante)."
+				"O isqueiro daqui também é de aço: engrenagem e mola pequenas de aço com sílex."
 			]
 			id: "538F4DEB1FD0C1F1"
 			rewards: [
@@ -220,6 +223,7 @@
 			]
 			description: [
 				"Cristais que vibram quando tocados."
+				"Veio de quartzo do Nether, entre y 40 e 80."
 			]
 			id: "5196F73D407D6130"
 			rewards: [
@@ -389,10 +393,11 @@
 		}
 		{
 			dependencies: [
-				"5B4F5D477D2FC3E2"
+				"7A30AF6952A3DB71"
 			]
 			description: [
-				"Com as rodas trituradoras, cada minério rende mais."
+				"Moa o minério antes de derreter: cada um rende mais."
+				"O macerador a vapor serve; as rodas trituradoras do Create também."
 			]
 			id: "59A5E37C708D5158"
 			rewards: [
@@ -589,8 +594,8 @@
 				"6E250F6F5A1780D8"
 			]
 			description: [
-				"Precisão de Aurend e semente viva."
-				"Só ela abre o caminho. O diamante não serve mais."
+				"Precisão de Aurend e semente viva: mecanismo, latão, mudas e um diamante."
+				"Só ela abre o caminho. Jogar diamante no lago não serve mais."
 			]
 			icon: {
 				Count: 1b
@@ -826,6 +831,8 @@
 			]
 			description: [
 				"Um mapa que mostra o que a floresta esconde."
+				"O foco do mapa leva pó de glowstone, do teto do Nether."
+				"Papel: cana na prensa do Create (a bancada não faz mais papel)."
 			]
 			id: "21E1D95F3DEA17E5"
 			rewards: [
@@ -860,6 +867,8 @@
 			]
 			description: [
 				"Madeira que aprendeu a ser metal."
+				"Raiz viva, pepita de ouro e ferro bruto de verdade:"
+				"o minério de ferro comum, que mora no veio de cobre (y -40 a 10)."
 			]
 			id: "732FF55941EFFB56"
 			rewards: [
@@ -894,6 +903,7 @@
 			]
 			description: [
 				"Folhas tão duras quanto lâminas."
+				"Achadas em baús das colinas ocas e do labirinto."
 			]
 			id: "47D8195DEA9457E9"
 			rewards: [
@@ -1137,6 +1147,7 @@
 			]
 			description: [
 				"Um amuleto que recusa a morte uma vez."
+				"Aparece em baús da floresta."
 			]
 			id: "21AB5673805A1F66"
 			rewards: [

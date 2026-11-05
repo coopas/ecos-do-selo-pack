@@ -5,7 +5,7 @@ group: caminhos
 act: 1
 quests:
   - {slug: liga, title: "Liga de Andesito", deps: [prologo/ferro], icon: create:andesite_alloy, shape: gear,
-     desc: ["Andesito e ferro: a liga que movia Aurend."], tasks: [{item: create:andesite_alloy, count: 16}], rewards: [{coins: 2}]}
+     desc: ["Andesito e ferro: a liga que movia Aurend.", "Pepitas de ferro: corte o lingote com a serra do GregTech."], tasks: [{item: create:andesite_alloy, count: 16}], rewards: [{coins: 2}]}
   - {slug: eixo, title: "Eixo", deps: [liga], desc: ["Toda força começa girando."], tasks: [{item: create:shaft, count: 8}], rewards: [{coins: 1}]}
   - {slug: engrenagem, title: "A Primeira Engrenagem", deps: [eixo], desc: ["Engrenagens transmitem o giro. E o silêncio."],
      tasks: [{item: create:cogwheel, count: 8}], rewards: [{page: 6}, {coins: 2}]}
@@ -15,9 +15,10 @@ quests:
      tasks: [{item: create:water_wheel, count: 2}], rewards: [{coins: 2}]}
   - {slug: moinho_vento, title: "Moinho de Vento", deps: [engrenagem_grande], desc: ["Rolamento de moinho e velas: o vento também trabalha."],
      tasks: [{item: create:windmill_bearing}, {item: create:white_sail, count: 8}], rewards: [{coins: 3}]}
-  - {slug: oculos, title: "Óculos do Engenheiro", deps: [engrenagem], desc: ["Veja estresse e rotação com os óculos."],
+  - {slug: oculos, title: "Óculos do Engenheiro", deps: [engrenagem, side_gt_steam_lv/ligas_vapor, side_gt_steam_lv/aco],
+     desc: ["Veja estresse e rotação com os óculos.", "Aqui a areia não vira vidro na fornalha: pó de vidro no fundidor de ligas", "do GregTech, com molde de bloco (de aço). A chapa de ouro sai do martelo."],
      tasks: [{item: create:goggles}], rewards: [{coins: 1}]}
-  - {slug: chave_inglesa, title: "Chave Inglesa", deps: [engrenagem], desc: ["Gire, desmonte, ajuste."],
+  - {slug: chave_inglesa, title: "Chave Inglesa", deps: [engrenagem], desc: ["Gire, desmonte, ajuste.", "Chapas de ouro: martelo do GregTech e dois lingotes."],
      tasks: [{item: create:wrench}], rewards: [{coins: 1}]}
   - {slug: caixa_engrenagens, title: "Caixa de Engrenagens", deps: [engrenagem_grande], desc: ["Mude a direção do giro."],
      tasks: [{item: create:gearbox}], rewards: [{coins: 1}]}
@@ -25,7 +26,8 @@ quests:
      tasks: [{item: create:belt_connector, count: 4}], rewards: [{coins: 2}]}
   - {slug: mo, title: "Mó", deps: [roda_agua], desc: ["Moer é o primeiro passo para multiplicar minério."],
      tasks: [{item: create:millstone}], rewards: [{coins: 2}]}
-  - {slug: prensa, title: "Prensa Mecânica", deps: [roda_agua, caixa_engrenagens], desc: ["Prense lingotes em chapas."],
+  - {slug: prensa, title: "Prensa Mecânica", deps: [roda_agua, caixa_engrenagens, side_gt_steam_lv/compressor_vapor],
+     desc: ["Prense lingotes em chapas.", "Ela pede um bloco de ferro, e aqui lingote não vira bloco na bancada:", "compacte no compressor a vapor do GregTech."],
      tasks: [{item: create:mechanical_press}], rewards: [{coins: 3}]}
   - {slug: chapa_ferro, title: "Chapas de Ferro", deps: [prensa], desc: ["Chapas. O esqueleto de qualquer máquina."],
      tasks: [{item: create:iron_sheet, count: 16}], rewards: [{coins: 2}]}
@@ -41,36 +43,41 @@ quests:
      tasks: [{item: create:mechanical_drill}], rewards: [{coins: 2}]}
   - {slug: serra, title: "Serra Mecânica", deps: [chapa_ferro], desc: ["Corte troncos em tábuas, sem fim."],
      tasks: [{item: create:mechanical_saw}], rewards: [{coins: 2}]}
-  - {slug: zinco, title: "Zinco", deps: [prologo/picareta_ferro], desc: ["Um metal que Aurend usava no lugar do ouro."],
+  - {slug: zinco, title: "Zinco", deps: [prologo/picareta_ferro], desc: ["Um metal que Aurend usava no lugar do ouro.", "O minério de zinco do Create ainda brota no Overworld."],
      tasks: [{tag: forge:ingots/zinc, count: 16}], rewards: [{coins: 2}]}
-  - {slug: queimador, title: "Queimador de Blaze", deps: [misturador],
-     desc: ["Capture um blaze com o Queimador Vazio.", "Fogo vivo aquece a bacia."],
+  - {slug: queimador, title: "Queimador de Blaze", deps: [misturador, ato1/nether],
+     desc: ["Capture um blaze com o Queimador Vazio.", "Fogo vivo aquece a bacia. Netherrack e blazes, só no Nether."],
      tasks: [{item: create:empty_blaze_burner}, {item: create:blaze_burner}], rewards: [{coins: 4}]}
   - {slug: latao, title: "Latão", deps: [zinco, misturador], icon: create:brass_ingot,
-     desc: ["Cobre e zinco, misturados com calor."], tasks: [{tag: forge:ingots/brass, count: 16}], rewards: [{coins: 3}]}
+     desc: ["Cobre e zinco, misturados com calor: o misturador pede o queimador aceso.", "Antes do Nether: 3 pós de cobre e 1 de zinco (pilão do GregTech), na fornalha."], tasks: [{tag: forge:ingots/brass, count: 16}], rewards: [{coins: 3}]}
   - {slug: involucro_latao, title: "Invólucro de Latão", deps: [latao], desc: ["O revestimento das máquinas finas."],
      tasks: [{item: create:brass_casing, count: 8}], rewards: [{coins: 2}]}
-  - {slug: valvula, title: "Válvula Eletrônica", deps: [latao], desc: ["Uma pequena luz que controla grandes máquinas."],
-     tasks: [{item: create:electron_tube, count: 8}], rewards: [{coins: 2}]}
+  - {slug: valvula, title: "Válvula Eletrônica", deps: [latao, ato1/quartzo],
+     desc: ["Uma pequena luz que controla grandes máquinas.", "Quartzo rosa: quartzo do Nether e 8 de redstone, polido na lixa."],
+     tasks: [{item: create:electron_tube, count: 4}], rewards: [{coins: 2}]}
   - {slug: aplicador, title: "Aplicador Mecânico", deps: [valvula], desc: ["Uma mão que nunca cansa."],
      tasks: [{item: create:deployer}], rewards: [{coins: 3}]}
   - {slug: mecanismo, title: "Mecanismo de Precisão", deps: [aplicador, involucro_latao], shape: gear, icon: create:precision_mechanism,
      desc: ["A montagem em sequência: prensa, aplicador e paciência.", "Sem ele, a floresta não se abre."],
      tasks: [{item: create:precision_mechanism, count: 2}], rewards: [{crate: rara}, {coins: 5}]}
-  - {slug: montador, title: "Montador Mecânico", deps: [valvula, involucro_latao], desc: ["Receitas grandes demais para uma bancada."],
+  - {slug: montador, title: "Montador Mecânico", deps: [valvula, involucro_latao],
+     desc: ["Receitas grandes demais para uma bancada.", "A receita daqui pede gemas de fonte da Ars Nouveau:", "ametista na Câmara de Imbuição (veja o Caminho da Fonte)."],
      tasks: [{item: create:mechanical_crafter, count: 9}], rewards: [{coins: 3}]}
-  - {slug: rodas_trituradoras, title: "Rodas Trituradoras", deps: [montador], desc: ["Minério vira pó, pó vira lingote em dobro."],
+  - {slug: rodas_trituradoras, title: "Rodas Trituradoras", deps: [montador],
+     desc: ["Minério vira pó, pó vira lingote em dobro.", "Cascalho moído às vezes solta redstone."],
      tasks: [{item: create:crushing_wheel, count: 2}], rewards: [{coins: 4}]}
   - {slug: braco, title: "Braço Mecânico", deps: [mecanismo], desc: ["Ele escolhe sozinho de onde pegar e onde soltar."],
      tasks: [{item: create:mechanical_arm}], rewards: [{coins: 3}]}
   - {slug: fluidos, title: "Canos, Bomba e Tanque", deps: [chapa_ferro], desc: ["Líquidos também se movem por engrenagens."],
      tasks: [{item: create:fluid_pipe, count: 16}, {item: create:mechanical_pump}, {item: create:fluid_tank, count: 4}], rewards: [{coins: 3}]}
-  - {slug: motor_vapor, title: "Motor a Vapor", deps: [fluidos, queimador], desc: ["Vapor de Aurend, de novo girando o mundo."],
+  - {slug: motor_vapor, title: "Motor a Vapor", deps: [fluidos, queimador],
+     desc: ["Vapor de Aurend, de novo girando o mundo.", "Cada motor pede um bloco de cobre: compressor a vapor do GregTech."],
      tasks: [{item: create:steam_engine, count: 3}], rewards: [{crate: comum}, {coins: 4}]}
-  - {slug: medidores, title: "Medir Antes de Quebrar", deps: [oculos], desc: ["Velocímetro e medidor de estresse."],
+  - {slug: medidores, title: "Medir Antes de Quebrar", deps: [oculos], desc: ["Velocímetro e medidor de estresse.", "O velocímetro leva uma bússola (redstone do veio fundo ou do Nether)."],
      tasks: [{item: create:speedometer}, {item: create:stressometer}], rewards: [{coins: 2}]}
   - {slug: esquemas, title: "Construções Lembradas", deps: [mecanismo],
      desc: ["Mesa e canhão de esquemas imprimem construções (.nbt).", "Coloque esquemas em schematics/. A Litematica (M) projeta."],
      tasks: [{item: create:schematic_table}, {item: create:schematicannon}, {item: create:empty_schematic, count: 4}], rewards: [{coins: 4}]}
-  - {slug: trilhos, title: "Trilhos de Aurend", deps: [motor_vapor], shape: gear, desc: ["Os trens de Aurend voltam a correr."],
+  - {slug: trilhos, title: "Trilhos de Aurend", deps: [motor_vapor, aplicador], shape: gear,
+     desc: ["Os trens de Aurend voltam a correr.", "Trilho sai da montagem em sequência (aplicador e prensa).", "A estação pede bússola e invólucro de trem: latão com chapa de obsidiana (GregTech)."],
      tasks: [{item: create:track, count: 64}, {item: create:track_station}], rewards: [{crate: rara}, {coins: 5}]}

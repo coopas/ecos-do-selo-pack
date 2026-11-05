@@ -53,7 +53,7 @@
 			]
 			title: "Árvores que Sangram"
 			x: 3.0d
-			y: 11.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -61,6 +61,7 @@
 			]
 			description: [
 				"Resina: a matéria-prima da borracha."
+				"Seringueiras às vezes soltam resina ao quebrar; bola de slime derrete em resina."
 			]
 			id: "322AA6F7177A070B"
 			rewards: [
@@ -87,7 +88,7 @@
 			]
 			title: "Resina Pegajosa"
 			x: 4.5d
-			y: 11.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -143,7 +144,7 @@
 			]
 			title: "Ferramentas do Ofício"
 			x: 0.0d
-			y: -3.75d
+			y: -6.75d
 		}
 		{
 			dependencies: [
@@ -204,7 +205,7 @@
 			]
 			title: "Mais Ferramentas"
 			x: 1.5d
-			y: -2.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -241,7 +242,7 @@
 			]
 			title: "Cobre"
 			x: 0.0d
-			y: -0.5d
+			y: -3.25d
 		}
 		{
 			dependencies: [
@@ -278,7 +279,7 @@
 			]
 			title: "Estanho"
 			x: 0.0d
-			y: 1.0d
+			y: -4.75d
 		}
 		{
 			dependencies: [
@@ -321,7 +322,7 @@
 			]
 			title: "Bronze"
 			x: 3.0d
-			y: -0.5d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -355,7 +356,7 @@
 			]
 			title: "Tijolos de Coque"
 			x: 1.5d
-			y: -5.25d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -389,7 +390,7 @@
 			]
 			title: "Forno de Coque"
 			x: 3.0d
-			y: -5.25d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -422,8 +423,8 @@
 				}
 			]
 			title: "Coque"
-			x: 4.5d
-			y: -6.5d
+			x: 9.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -457,14 +458,16 @@
 			]
 			title: "Madeira Tratada"
 			x: 4.5d
-			y: -5.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
 				"5CAEEE4123B872EF"
+				"59057F7C59625F28"
 			]
 			description: [
 				"Para conter um fogo ainda maior."
+				"Pó de argila e de tijolo (pilão), compactado no compressor a vapor, e fornalha."
 			]
 			id: "668995E91AA5DDB8"
 			rewards: [
@@ -490,7 +493,7 @@
 				}
 			]
 			title: "Tijolos Refratários"
-			x: 3.0d
+			x: 9.0d
 			y: -6.75d
 		}
 		{
@@ -525,8 +528,8 @@
 				}
 			]
 			title: "Alto-Forno Primitivo"
-			x: 6.0d
-			y: -7.75d
+			x: 10.5d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -579,8 +582,8 @@
 				}
 			]
 			title: "Aço"
-			x: 7.5d
-			y: -8.0d
+			x: 12.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -588,6 +591,8 @@
 			]
 			description: [
 				"Ferro martelado até perder as impurezas."
+				"Pepita de ferro na fornalha vira pepita de ferro forjado; o fundidor de ligas,"
+				"com molde de lingote (de aço), junta nove num lingote. A alta pressão e o casco LV pedem."
 			]
 			id: "7F8A656586D183AE"
 			rewards: [
@@ -617,7 +622,7 @@
 			]
 			title: "Ferro Forjado"
 			x: 3.0d
-			y: -2.0d
+			y: -5.75d
 		}
 		{
 			dependencies: [
@@ -651,7 +656,7 @@
 			]
 			title: "Casco de Bronze"
 			x: 4.5d
-			y: 0.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -689,7 +694,7 @@
 			]
 			title: "Caldeira a Vapor"
 			x: 6.0d
-			y: 0.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -697,6 +702,7 @@
 			]
 			description: [
 				"Minério em pó: mais lingotes por minério."
+				"Pede 2 diamantes (veio fundo, y -55 a -30, ou a banca) e pistões (redstone)."
 			]
 			id: "7A30AF6952A3DB71"
 			rewards: [
@@ -722,15 +728,16 @@
 				}
 			]
 			title: "Macerador a Vapor"
-			x: 7.5d
-			y: -4.0d
+			x: 10.5d
+			y: -3.25d
 		}
 		{
 			dependencies: [
 				"085EAD29072E640C"
 			]
 			description: [
-				"Comprima pó em placas e blocos."
+				"Comprima pó em placas e blocos. Aqui só máquina faz bloco de lingotes."
+				"Os pistões pedem redstone: veio fundo no deepslate (y -65 a -10)."
 			]
 			id: "59057F7C59625F28"
 			rewards: [
@@ -757,7 +764,7 @@
 			]
 			title: "Compressor a Vapor"
 			x: 7.5d
-			y: -1.75d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -791,7 +798,7 @@
 			]
 			title: "Martelo de Forja a Vapor"
 			x: 7.5d
-			y: 2.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -799,6 +806,7 @@
 			]
 			description: [
 				"Ligas sem bater pó à mão."
+				"Também faz vidro: pó de vidro com molde de bloco (molde vazio = chapas de aço)."
 			]
 			id: "5C06B8BDC6D30E29"
 			rewards: [
@@ -825,7 +833,7 @@
 			]
 			title: "Fundidor de Ligas a Vapor"
 			x: 7.5d
-			y: -0.25d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -833,6 +841,7 @@
 			]
 			description: [
 				"Extraia borracha da resina."
+				"Leva um vidro, que aqui só sai do fundidor de ligas."
 			]
 			id: "2491E2C3EEEFA3B4"
 			rewards: [
@@ -859,7 +868,7 @@
 			]
 			title: "Extrator a Vapor"
 			x: 7.5d
-			y: 1.25d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -893,7 +902,7 @@
 			]
 			title: "Fornalha a Vapor"
 			x: 7.5d
-			y: 5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -936,16 +945,19 @@
 				}
 			]
 			title: "Alta Pressão"
-			x: 9.0d
-			y: -4.75d
+			x: 13.5d
+			y: -3.75d
 		}
 		{
 			dependencies: [
 				"322AA6F7177A070B"
 				"2491E2C3EEEFA3B4"
+				"2A1D007290D432B0"
 			]
 			description: [
 				"Placas de borracha isolam os fios."
+				"Borracha crua (resina no extrator) e enxofre viram barra no fundidor de ligas."
+				"Enxofre: veio do Nether (y 10 a 30). Prense a barra (Create) ou use molde de chapa."
 			]
 			id: "2389D82AA56FE6BA"
 			rewards: [
@@ -972,7 +984,7 @@
 			]
 			title: "Borracha"
 			x: 9.0d
-			y: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -980,6 +992,7 @@
 			]
 			description: [
 				"Vidro soprado, frágil e essencial."
+				"Pó de vidro com molde de bola (de aço), no fundidor de ligas."
 			]
 			id: "29B32DE68510D2A0"
 			rewards: [
@@ -1006,7 +1019,7 @@
 			]
 			title: "Tubo de Vidro"
 			x: 9.0d
-			y: 1.75d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1015,6 +1028,7 @@
 			]
 			description: [
 				"A primeira lógica de Aurend era luz presa no vidro."
+				"Tubo de vidro, fio de cobre e parafusos de aço."
 			]
 			id: "39C87C5C6AD7F7BF"
 			rewards: [
@@ -1041,7 +1055,7 @@
 			]
 			title: "Válvula Termiônica"
 			x: 10.5d
-			y: 2.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1049,6 +1063,7 @@
 			]
 			description: [
 				"Segura a corrente para ela não queimar tudo."
+				"Leva papel: cana na prensa do Create (a bancada não faz mais papel)."
 			]
 			id: "26FFA54C2C3695BF"
 			rewards: [
@@ -1074,8 +1089,8 @@
 				}
 			]
 			title: "Resistor"
-			x: 12.0d
-			y: 3.25d
+			x: 10.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -1083,6 +1098,7 @@
 			]
 			description: [
 				"Cobre e redstone: o metal que lembra eletricidade."
+				"Redstone: veio fundo (y -65 a -10) ou veio do Nether (y 5 a 40)."
 			]
 			id: "08BAA2CBAC004C68"
 			rewards: [
@@ -1112,7 +1128,7 @@
 			]
 			title: "Liga Vermelha"
 			x: 9.0d
-			y: 0.25d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -1156,7 +1172,7 @@
 			]
 			title: "Fios e Cabos"
 			x: 10.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1208,12 +1224,11 @@
 				}
 			]
 			title: "Circuito Básico"
-			x: 13.5d
-			y: 2.0d
+			x: 12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"4BB930D6A6439C1E"
 				"08C5B2FE54B221EB"
 			]
 			description: [
@@ -1244,7 +1259,7 @@
 			]
 			title: "Casco LV"
 			x: 12.0d
-			y: -2.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1278,7 +1293,7 @@
 			]
 			title: "Motor Elétrico LV"
 			x: 13.5d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1321,7 +1336,7 @@
 			]
 			title: "Bomba e Pistão LV"
 			x: 16.5d
-			y: -0.5d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -1355,8 +1370,8 @@
 				}
 			]
 			title: "Turbina a Vapor LV"
-			x: 13.5d
-			y: -2.75d
+			x: 15.0d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -1365,6 +1380,7 @@
 			]
 			description: [
 				"Macerador e fornalha elétricos."
+				"O macerador LV pede um diamante."
 			]
 			id: "02F4BD6EC6452232"
 			rewards: [
@@ -1464,7 +1480,7 @@
 			]
 			title: "Oficina LV"
 			x: 16.5d
-			y: 1.0d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -1498,7 +1514,7 @@
 			]
 			title: "Armazenar Corrente"
 			x: 16.5d
-			y: -2.0d
+			y: -1.75d
 		}
 		{
 			dependencies: [
@@ -1552,7 +1568,7 @@
 			]
 			title: "A Era da Corrente"
 			x: 18.0d
-			y: -0.5d
+			y: -0.25d
 		}
 	]
 	title: "Caminho — Vapor e Corrente"

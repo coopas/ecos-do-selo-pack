@@ -21,6 +21,7 @@
 			]
 			description: [
 				"Andesito e ferro: a liga que movia Aurend."
+				"Pepitas de ferro: corte o lingote com a serra do GregTech."
 			]
 			icon: {
 				Count: 1b
@@ -52,7 +53,7 @@
 			]
 			title: "Liga de Andesito"
 			x: 0.0d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -86,7 +87,7 @@
 			]
 			title: "Eixo"
 			x: 1.5d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -137,7 +138,7 @@
 			]
 			title: "A Primeira Engrenagem"
 			x: 3.0d
-			y: -0.75d
+			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -171,7 +172,7 @@
 			]
 			title: "Engrenagem Grande"
 			x: 4.5d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -205,7 +206,7 @@
 			]
 			title: "Roda de Água"
 			x: 4.5d
-			y: -2.25d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -248,14 +249,18 @@
 			]
 			title: "Moinho de Vento"
 			x: 6.0d
-			y: -4.25d
+			y: -5.25d
 		}
 		{
 			dependencies: [
 				"2BB6A1E58AAABE2A"
+				"5C06B8BDC6D30E29"
+				"4BB930D6A6439C1E"
 			]
 			description: [
 				"Veja estresse e rotação com os óculos."
+				"Aqui a areia não vira vidro na fornalha: pó de vidro no fundidor de ligas"
+				"do GregTech, com molde de bloco (de aço). A chapa de ouro sai do martelo."
 			]
 			id: "3AD381CAF52EF738"
 			rewards: [
@@ -282,7 +287,7 @@
 			]
 			title: "Óculos do Engenheiro"
 			x: 4.5d
-			y: -0.25d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -290,6 +295,7 @@
 			]
 			description: [
 				"Gire, desmonte, ajuste."
+				"Chapas de ouro: martelo do GregTech e dois lingotes."
 			]
 			id: "2FE0E16380AC783D"
 			rewards: [
@@ -316,7 +322,7 @@
 			]
 			title: "Chave Inglesa"
 			x: 4.5d
-			y: 1.25d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -350,7 +356,7 @@
 			]
 			title: "Caixa de Engrenagens"
 			x: 6.0d
-			y: -2.75d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -384,7 +390,7 @@
 			]
 			title: "Esteira"
 			x: 3.0d
-			y: 2.75d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -418,15 +424,18 @@
 			]
 			title: "Mó"
 			x: 6.0d
-			y: -1.0d
+			y: -2.25d
 		}
 		{
 			dependencies: [
 				"1272ADF45F717D47"
 				"1E8F1F1339572113"
+				"59057F7C59625F28"
 			]
 			description: [
 				"Prense lingotes em chapas."
+				"Ela pede um bloco de ferro, e aqui lingote não vira bloco na bancada:"
+				"compacte no compressor a vapor do GregTech."
 			]
 			id: "550B9A5AAB235931"
 			rewards: [
@@ -453,7 +462,7 @@
 			]
 			title: "Prensa Mecânica"
 			x: 7.5d
-			y: -1.25d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -487,7 +496,7 @@
 			]
 			title: "Chapas de Ferro"
 			x: 9.0d
-			y: -1.75d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -530,7 +539,7 @@
 			]
 			title: "Misturador e Bacia"
 			x: 9.0d
-			y: 1.0d
+			y: -0.25d
 		}
 		{
 			dependencies: [
@@ -564,7 +573,7 @@
 			]
 			title: "Ventilador Encapsulado"
 			x: 7.5d
-			y: -2.75d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -598,7 +607,7 @@
 			]
 			title: "Depósito"
 			x: 4.5d
-			y: 2.75d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -641,7 +650,7 @@
 			]
 			title: "Funil e Calha"
 			x: 4.5d
-			y: 4.25d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -675,7 +684,7 @@
 			]
 			title: "Furadeira Mecânica"
 			x: 10.5d
-			y: -3.25d
+			y: -4.25d
 		}
 		{
 			dependencies: [
@@ -709,7 +718,7 @@
 			]
 			title: "Serra Mecânica"
 			x: 10.5d
-			y: -1.75d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -717,6 +726,7 @@
 			]
 			description: [
 				"Um metal que Aurend usava no lugar do ouro."
+				"O minério de zinco do Create ainda brota no Overworld."
 			]
 			id: "300958F98DE1B773"
 			rewards: [
@@ -746,15 +756,16 @@
 			]
 			title: "Zinco"
 			x: 9.0d
-			y: 2.75d
+			y: 1.75d
 		}
 		{
 			dependencies: [
 				"15BBFE01306B3D3B"
+				"2A1D007290D432B0"
 			]
 			description: [
 				"Capture um blaze com o Queimador Vazio."
-				"Fogo vivo aquece a bacia."
+				"Fogo vivo aquece a bacia. Netherrack e blazes, só no Nether."
 			]
 			id: "063672E4C3E067CD"
 			rewards: [
@@ -790,7 +801,7 @@
 			]
 			title: "Queimador de Blaze"
 			x: 10.5d
-			y: 1.25d
+			y: 0.25d
 		}
 		{
 			dependencies: [
@@ -798,7 +809,8 @@
 				"15BBFE01306B3D3B"
 			]
 			description: [
-				"Cobre e zinco, misturados com calor."
+				"Cobre e zinco, misturados com calor: o misturador pede o queimador aceso."
+				"Antes do Nether: 3 pós de cobre e 1 de zinco (pilão do GregTech), na fornalha."
 			]
 			icon: {
 				Count: 1b
@@ -832,7 +844,7 @@
 			]
 			title: "Latão"
 			x: 10.5d
-			y: 2.75d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -866,14 +878,16 @@
 			]
 			title: "Invólucro de Latão"
 			x: 12.0d
-			y: 2.0d
+			y: 2.25d
 		}
 		{
 			dependencies: [
 				"6E250F6F5A1780D8"
+				"5196F73D407D6130"
 			]
 			description: [
 				"Uma pequena luz que controla grandes máquinas."
+				"Quartzo rosa: quartzo do Nether e 8 de redstone, polido na lixa."
 			]
 			id: "55FEE44615029307"
 			rewards: [
@@ -889,7 +903,7 @@
 			]
 			tasks: [
 				{
-					count: 8L
+					count: 4L
 					id: "1B8152E5AF43A836"
 					item: {
 						Count: 1b
@@ -900,7 +914,7 @@
 			]
 			title: "Válvula Eletrônica"
 			x: 12.0d
-			y: 3.5d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -934,7 +948,7 @@
 			]
 			title: "Aplicador Mecânico"
 			x: 15.0d
-			y: 3.75d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -987,7 +1001,7 @@
 			]
 			title: "Mecanismo de Precisão"
 			x: 16.5d
-			y: 0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -996,6 +1010,8 @@
 			]
 			description: [
 				"Receitas grandes demais para uma bancada."
+				"A receita daqui pede gemas de fonte da Ars Nouveau:"
+				"ametista na Câmara de Imbuição (veja o Caminho da Fonte)."
 			]
 			id: "4F329F50CE4C69EC"
 			rewards: [
@@ -1022,7 +1038,7 @@
 			]
 			title: "Montador Mecânico"
 			x: 13.5d
-			y: 2.5d
+			y: 1.75d
 		}
 		{
 			dependencies: [
@@ -1030,6 +1046,7 @@
 			]
 			description: [
 				"Minério vira pó, pó vira lingote em dobro."
+				"Cascalho moído às vezes solta redstone."
 			]
 			id: "5B4F5D477D2FC3E2"
 			rewards: [
@@ -1089,8 +1106,8 @@
 				}
 			]
 			title: "Braço Mecânico"
-			x: 19.5d
-			y: 0.0d
+			x: 18.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1142,7 +1159,7 @@
 			]
 			title: "Canos, Bomba e Tanque"
 			x: 10.5d
-			y: -0.25d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -1151,6 +1168,7 @@
 			]
 			description: [
 				"Vapor de Aurend, de novo girando o mundo."
+				"Cada motor pede um bloco de cobre: compressor a vapor do GregTech."
 			]
 			id: "23E2955E42132CDE"
 			rewards: [
@@ -1189,7 +1207,7 @@
 			]
 			title: "Motor a Vapor"
 			x: 12.0d
-			y: 0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1197,6 +1215,7 @@
 			]
 			description: [
 				"Velocímetro e medidor de estresse."
+				"O velocímetro leva uma bússola (redstone do veio fundo ou do Nether)."
 			]
 			id: "3937502C51A08829"
 			rewards: [
@@ -1232,7 +1251,7 @@
 			]
 			title: "Medir Antes de Quebrar"
 			x: 6.0d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1285,14 +1304,17 @@
 			]
 			title: "Construções Lembradas"
 			x: 18.0d
-			y: 1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
 				"23E2955E42132CDE"
+				"2F7E461EB9F81983"
 			]
 			description: [
 				"Os trens de Aurend voltam a correr."
+				"Trilho sai da montagem em sequência (aplicador e prensa)."
+				"A estação pede bússola e invólucro de trem: latão com chapa de obsidiana (GregTech)."
 			]
 			id: "63F1DEC986A71F87"
 			rewards: [
@@ -1340,8 +1362,8 @@
 				}
 			]
 			title: "Trilhos de Aurend"
-			x: 13.5d
-			y: 0.5d
+			x: 16.5d
+			y: -0.25d
 		}
 	]
 	title: "Caminho — Engrenagens de Aurend"
