@@ -66,7 +66,7 @@
 			]
 			title: "O Som Mais Perto"
 			x: 0.0d
-			y: -2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -74,6 +74,8 @@
 			]
 			description: [
 				"O metal mais teimoso do mundo."
+				"Scheelita e tungstato: veio do End (y 20 a 60). Banho químico com ácido clorídrico, depois eletrolisadora EV."
+				"O pó funde a 3600 K (bobinas de nicromo) e sai quente: esfrie no congelador a vácuo."
 			]
 			id: "20962B29BEC81D62"
 			rewards: [
@@ -102,8 +104,8 @@
 				}
 			]
 			title: "Tungstênio"
-			x: 3.0d
-			y: -4.25d
+			x: 1.5d
+			y: 5.25d
 		}
 		{
 			dependencies: [
@@ -111,6 +113,7 @@
 			]
 			description: [
 				"A liga da Insana Voltagem."
+				"Misturador EV (tungstênio e aço) e 3000 K no alto-forno."
 			]
 			icon: {
 				Count: 1b
@@ -156,8 +159,8 @@
 				}
 			]
 			title: "Aço de Tungstênio"
-			x: 4.5d
-			y: -1.75d
+			x: 3.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -165,6 +168,8 @@
 			]
 			description: [
 				"Rutênio, tungstênio e molibdênio. Mais calor."
+				"Molibdênio: veio raro do Nether (y 20 a 50). Rutênio: do Platinum Group Sludge (minério purificado de calcopirita"
+				"ou pentlandita com ácido nítrico, depois centrífuga com água-régia). As bobinas dão 4500 K."
 			]
 			id: "4521D6EB73C98E0B"
 			rewards: [
@@ -190,15 +195,16 @@
 				}
 			]
 			title: "Bobinas de RTM"
-			x: 9.0d
-			y: 1.0d
+			x: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: [
-				"5A0DE326E2FFC83E"
+				"4521D6EB73C98E0B"
 			]
 			description: [
 				"Insana voltagem."
+				"Leva cabo de platina: veio de sheldonita no End (y 5 a 50). O minério bruto vira lingote na fornalha."
 			]
 			id: "37EC086C30CDD440"
 			rewards: [
@@ -225,7 +231,7 @@
 			]
 			title: "Casco IV"
 			x: 6.0d
-			y: -2.0d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -259,14 +265,15 @@
 			]
 			title: "Motor IV"
 			x: 7.5d
-			y: -3.75d
+			y: 3.5d
 		}
 		{
 			dependencies: [
-				"37EC086C30CDD440"
+				"499913AEB3FD9688"
 			]
 			description: [
 				"Componentes cada vez menores."
+				"Montadora (assembler) IV, 3840 EU/t: fio fino de HSS-G, folha de vanádio-gálio (4500 K) e polibenzimidazol (reator químico IV)."
 			]
 			id: "502DD15A9BAFC0B2"
 			rewards: [
@@ -292,8 +299,8 @@
 				}
 			]
 			title: "SMD Avançado"
-			x: 9.0d
-			y: -1.0d
+			x: 10.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -301,6 +308,7 @@
 			]
 			description: [
 				"Monte circuitos mais finos."
+				"Pede circuitos IV: o mainframe de microprocessador sai da montadora de circuitos HV (480 EU/t, na sala limpa)."
 			]
 			id: "01A4DA49124F70CC"
 			rewards: [
@@ -326,16 +334,18 @@
 				}
 			]
 			title: "Montadora de Circuitos EV"
-			x: 3.0d
-			y: -6.0d
+			x: 4.5d
+			y: 8.75d
 		}
 		{
 			dependencies: [
 				"01A4DA49124F70CC"
-				"3428767E7299C6AD"
+				"5FA4860F03BD7396"
+				"0092331F3CDA6B3B"
 			]
 			description: [
 				"E mais finos ainda."
+				"Pede emissor e braço IV e circuitos LuV: o mainframe nano sai da montadora de circuitos EV (1920 EU/t, na sala limpa)."
 			]
 			id: "11B8AA4E5B51C0D1"
 			rewards: [
@@ -361,8 +371,8 @@
 				}
 			]
 			title: "Montadora de Circuitos IV"
-			x: 9.0d
-			y: -4.0d
+			x: 10.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -371,6 +381,7 @@
 			]
 			description: [
 				"Pensa em duas coisas ao mesmo tempo. Como Ilse."
+				"2400 EU/t: só a montadora de circuitos IV aguenta."
 			]
 			icon: {
 				Count: 1b
@@ -413,15 +424,17 @@
 				}
 			]
 			title: "Processador Quântico"
-			x: 10.5d
-			y: -2.0d
+			x: 12.0d
+			y: 3.25d
 		}
 		{
 			dependencies: [
-				"07A10DA118625290"
+				"37EC086C30CDD440"
 			]
 			description: [
 				"Luz que corta metal."
+				"Hastes de irídio: o Platinum Group Sludge dá a mistura de metais raros, que vira irídio no reator químico grande"
+				"(7680 EU/t). O irídio funde a 4500 K. Estrela quântica: estrela do Nether no banho químico com radônio."
 			]
 			id: "5FA4860F03BD7396"
 			rewards: [
@@ -447,12 +460,12 @@
 				}
 			]
 			title: "Emissor IV"
-			x: 12.0d
-			y: -2.25d
+			x: 9.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
-				"07A10DA118625290"
+				"3428767E7299C6AD"
 			]
 			description: [
 				"Precisão de relojoeiro, força de guindaste."
@@ -481,15 +494,16 @@
 				}
 			]
 			title: "Braço Robótico IV"
-			x: 12.0d
-			y: -0.75d
+			x: 9.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
-				"5FA4860F03BD7396"
+				"07A10DA118625290"
 			]
 			description: [
 				"Um campo forte o bastante para segurar algo grande."
+				"O fio de samário-ferro-arsênio funde a 5200 K: bobinas de HSS-G."
 			]
 			id: "4775B419FE97E0AD"
 			rewards: [
@@ -515,18 +529,18 @@
 				}
 			]
 			title: "Gerador de Campo IV"
-			x: 16.5d
-			y: -1.0d
+			x: 13.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
-				"0092331F3CDA6B3B"
-				"5FA4860F03BD7396"
-				"4521D6EB73C98E0B"
+				"11B8AA4E5B51C0D1"
 			]
 			description: [
 				"Máquinas maiores que casas."
 				"Engenharia é a única oração que funciona no vácuo."
+				"Os itens entram em ordem, um por barramento de entrada (os fluidos também)."
+				"Peças LuV pedem pesquisa: escaneie a peça IV com um Data Stick (scanner EV ou IV) e ponha o stick num Data Access Hatch."
 			]
 			icon: {
 				Count: 1b
@@ -586,12 +600,12 @@
 				}
 			]
 			title: "A Linha de Montagem"
-			x: 13.5d
-			y: -0.5d
+			x: 12.0d
+			y: 4.75d
 		}
 		{
 			dependencies: [
-				"37EC086C30CDD440"
+				"0092331F3CDA6B3B"
 			]
 			description: [
 				"Uma fábrica dentro da fábrica."
@@ -620,12 +634,12 @@
 				}
 			]
 			title: "Montadora Grande"
-			x: 7.5d
-			y: -2.25d
+			x: 10.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
-				"37EC086C30CDD440"
+				"3428767E7299C6AD"
 			]
 			description: [
 				"Gire tudo de uma vez."
@@ -654,15 +668,16 @@
 				}
 			]
 			title: "Centrífuga Grande"
-			x: 7.5d
-			y: -0.75d
+			x: 9.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
-				"381B0CB7049598AF"
+				"20962B29BEC81D62"
 			]
 			description: [
 				"Bombeie fluidos do fundo do mundo."
+				"A plataforma avançada: casco e bomba EV, engrenagens de carboneto de tungstênio (3058 K)."
 			]
 			id: "6CD2545B7E0882D2"
 			rewards: [
@@ -682,21 +697,22 @@
 					id: "1851264A5DEFB11D"
 					item: {
 						Count: 1b
-						id: "gtceu:ev_fluid_drilling_rig"
+						id: "gtceu:hv_fluid_drilling_rig"
 					}
 					type: "item"
 				}
 			]
 			title: "Plataforma de Perfuração"
-			x: 1.5d
-			y: -2.5d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
-				"381B0CB7049598AF"
+				"20962B29BEC81D62"
 			]
 			description: [
 				"Cave chunks inteiros."
+				"Leva engrenagens de tungstênio."
 			]
 			id: "5DC7055CBE8C2853"
 			rewards: [
@@ -722,8 +738,8 @@
 				}
 			]
 			title: "Mineradora Grande EV"
-			x: 1.5d
-			y: -0.5d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -757,11 +773,11 @@
 			]
 			title: "Turbina a Gás Grande"
 			x: 1.5d
-			y: 1.5d
+			y: 2.25d
 		}
 		{
 			dependencies: [
-				"37EC086C30CDD440"
+				"11B8AA4E5B51C0D1"
 			]
 			description: [
 				"Uma bateria que parece uma joia."
@@ -790,8 +806,8 @@
 				}
 			]
 			title: "Cristal de Lapotron"
-			x: 7.5d
-			y: -5.75d
+			x: 12.0d
+			y: 6.25d
 		}
 		{
 			dependencies: [
@@ -799,6 +815,7 @@
 			]
 			description: [
 				"Guarde energia de uma cidade inteira."
+				"Leva circuitos LuV e o casco de subestação, que pede armação de irídio."
 			]
 			id: "59C74B5D7D9DF7DE"
 			rewards: [
@@ -824,15 +841,17 @@
 				}
 			]
 			title: "Subestação de Energia"
-			x: 12.0d
-			y: -4.25d
+			x: 16.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
-				"5A0DE326E2FFC83E"
+				"499913AEB3FD9688"
 			]
 			description: [
 				"O metal dos cascos LuV."
+				"Paládio da sheldonita ou do Platinum Group Sludge; ródio da mistura de metais inertes do mesmo lodo."
+				"Misturador IV e 4500 K no alto-forno (7680 EU/t)."
 			]
 			id: "5F4B7E4C13719047"
 			rewards: [
@@ -861,15 +880,16 @@
 				}
 			]
 			title: "Paládio Banhado em Ródio"
-			x: 9.0d
-			y: 2.5d
+			x: 12.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
-				"5A0DE326E2FFC83E"
+				"37EC086C30CDD440"
 			]
 			description: [
 				"Aço rápido, para bobinas mais quentes."
+				"Funde a 4200 K: o nicromo não chega lá, só as bobinas de RTM. As bobinas de HSS-G saem da montadora (assembler) IV e dão 5400 K."
 			]
 			id: "499913AEB3FD9688"
 			rewards: [
@@ -907,8 +927,8 @@
 				}
 			]
 			title: "HSS-G"
-			x: 6.0d
-			y: -4.0d
+			x: 9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -917,6 +937,7 @@
 			]
 			description: [
 				"Ludicrous Voltage. Até o nome é absurdo."
+				"Cabo de nióbio-titânio: misturador IV e 4500 K."
 			]
 			icon: {
 				Count: 1b
@@ -959,8 +980,8 @@
 				}
 			]
 			title: "Casco LuV"
-			x: 15.0d
-			y: 0.5d
+			x: 13.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -968,6 +989,7 @@
 			]
 			description: [
 				"Feito na linha de montagem."
+				"HSS-S funde a 5000 K e o samário magnético a 5400 K: bobinas de HSS-G. Pesquise o motor IV no scanner antes."
 			]
 			id: "1E205253D9667FDB"
 			rewards: [
@@ -993,43 +1015,8 @@
 				}
 			]
 			title: "Motor LuV"
-			x: 16.5d
-			y: 0.5d
-		}
-		{
-			dependencies: [
-				"1E205253D9667FDB"
-				"4775B419FE97E0AD"
-			]
-			description: [
-				"Faz parte da Pedra Filosofal."
-			]
-			id: "58A5FA59878BA1AF"
-			rewards: [
-				{
-					count: 8
-					id: "3AAAB4F0E2C619D9"
-					item: {
-						Count: 1b
-						id: "ecos:fragmento_eco"
-					}
-					type: "item"
-				}
-			]
-			tasks: [
-				{
-					count: 1L
-					id: "1C5E2D8065955906"
-					item: {
-						Count: 1b
-						id: "gtceu:luv_field_generator"
-					}
-					type: "item"
-				}
-			]
-			title: "Gerador de Campo LuV"
-			x: 18.0d
-			y: -0.25d
+			x: 15.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1080,7 +1067,7 @@
 			]
 			title: "Os Sinos São Nossos"
 			x: 0.0d
-			y: -9.75d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1109,15 +1096,51 @@
 				}
 			]
 			title: "A Forja do Nether"
-			x: 3.0d
-			y: -0.5d
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: [
+				"1E205253D9667FDB"
+				"4775B419FE97E0AD"
+			]
+			description: [
+				"Faz parte da Pedra Filosofal."
+			]
+			id: "58A5FA59878BA1AF"
+			rewards: [
+				{
+					count: 8
+					id: "3AAAB4F0E2C619D9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1C5E2D8065955906"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_field_generator"
+					}
+					type: "item"
+				}
+			]
+			title: "Gerador de Campo LuV"
+			x: 16.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"5DF2D041099B4BC7"
 			]
 			description: [
-				"Caem dos Revenants em chamas, ou se juntam de brasas morrendo."
+				"Caem dos Revenants em chamas que guardam a arena."
+				"Brasas morrendo (4 fazem 1 cinza) caem dos Berserkers das fortalezas, que só despertam depois que alguém vence Ignaz."
 			]
 			id: "5A6597C24B29CF97"
 			rewards: [
@@ -1143,8 +1166,8 @@
 				}
 			]
 			title: "Cinzas Ardentes"
-			x: 4.5d
-			y: 1.5d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -1212,8 +1235,8 @@
 				}
 			]
 			title: "Ignaz, o Fundidor"
-			x: 6.0d
-			y: 3.25d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1246,8 +1269,8 @@
 				}
 			]
 			title: "Ignítio"
-			x: 7.5d
-			y: 5.0d
+			x: 6.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1286,8 +1309,8 @@
 				}
 			]
 			title: "O Fragmento das Estrelas"
-			x: 7.5d
-			y: 3.5d
+			x: 6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -1337,8 +1360,8 @@
 				}
 			]
 			title: "A Argamassa"
-			x: 12.0d
-			y: 3.75d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1368,7 +1391,7 @@
 			]
 			title: "Uma Rede Entre Mundos"
 			x: 0.0d
-			y: -8.25d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1399,7 +1422,7 @@
 			]
 			title: "Espíritos no Vácuo"
 			x: 0.0d
-			y: 2.75d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -1453,8 +1476,8 @@
 				}
 			]
 			title: "Além do Véu"
-			x: 19.5d
-			y: -0.25d
+			x: 18.0d
+			y: 1.5d
 		}
 	]
 	title: "Ato IV — Além do Véu"

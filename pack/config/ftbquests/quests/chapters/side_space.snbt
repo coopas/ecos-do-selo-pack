@@ -62,7 +62,8 @@
 				"5A0D08BE5F08F9E8"
 			]
 			description: [
-				"Placas de aço e um tanque de aço."
+				"Placas de aço e dois tanques de aço."
+				"A quest pede a placa do Ad Astra: prense lingote de aço na prensa do Create ou no compressor do Ad Astra."
 			]
 			id: "4095B161C2109F1C"
 			rewards: [
@@ -105,7 +106,7 @@
 				"4095B161C2109F1C"
 			]
 			description: [
-				"Todo foguete precisa de uma ponta e três aletas."
+				"Todo foguete precisa de uma ponta e quatro aletas."
 			]
 			id: "24132D83227A208C"
 			rewards: [
@@ -193,6 +194,7 @@
 			]
 			description: [
 				"Petróleo vira combustível de foguete."
+				"Diesel e biodiesel (do GregTech ou do Create) também enchem o tanque."
 			]
 			id: "2978E293D89A015A"
 			rewards: [
@@ -227,6 +229,7 @@
 			]
 			description: [
 				"No vácuo, o corpo é só uma ideia."
+				"Vista as quatro peças (capacete, traje, calças e botas): sem o conjunto, o frio da Lua e de Marte mata."
 			]
 			id: "6B46B48E14414713"
 			rewards: [
@@ -270,6 +273,7 @@
 			]
 			description: [
 				"Encha o traje antes de sair."
+				"O carregador faz oxigênio de água."
 			]
 			id: "3F85B0E333769D7B"
 			rewards: [
@@ -723,14 +727,15 @@
 			]
 			title: "Foguete T3"
 			x: 15.0d
-			y: 1.25d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"0CC464ED59F5F4EF"
 			]
 			description: [
-				"Vênus derrete o traje comum."
+				"Vênus derrete o traje comum. Mercúrio também."
+				"Acima de 70 °C só o conjunto de netherita protege: as quatro peças. O traje leva peitoral de netherita e placas de ostrum."
 			]
 			id: "52F4F08410A8C662"
 			rewards: [
@@ -757,7 +762,7 @@
 			]
 			title: "Traje de Netherita"
 			x: 16.5d
-			y: 0.0d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -787,14 +792,15 @@
 			]
 			title: "Vênus"
 			x: 18.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
-				"0CC464ED59F5F4EF"
+				"52F4F08410A8C662"
 			]
 			description: [
 				"Perto demais do sol."
+				"167 °C: vá com o traje de netherita completo (ou resistência ao fogo)."
 			]
 			id: "4EBC5897639DA078"
 			rewards: [
@@ -816,8 +822,8 @@
 				}
 			]
 			title: "Mercúrio"
-			x: 16.5d
-			y: 1.5d
+			x: 18.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -851,7 +857,7 @@
 			]
 			title: "Calorita"
 			x: 19.5d
-			y: -0.25d
+			y: -0.5d
 		}
 		{
 			dependencies: [

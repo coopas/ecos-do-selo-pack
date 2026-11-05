@@ -26,7 +26,7 @@ hash = "7153f9880f8ec25e27a6a47f9e6c3eaddff8216ea88062a1304f3b4cd688aaab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato4.snbt"
-hash = "a026d74cc1a2e3d7f90dde82b791b4df5f15f4cb46d9a447ddde557a79e2f2ca"
+hash = "e0623bbd066212367d8df48c3a877773b1a63a98068e27b3a8b7ad360b21152c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato5.snbt"
@@ -78,7 +78,7 @@ hash = "618803afee30618e2181846d9bde10a925a6f8dacdcdd05c1dfe0f1c0467020f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_space.snbt"
-hash = "5a76d5d7fd616d03ba51c12132b7b11d5990bba68532f43f0231c564afc4fe9f"
+hash = "5da67041797a2419564c9bc623cccccf981535112b7c7b71ccf855d4aff74f56"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

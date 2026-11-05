@@ -7,17 +7,19 @@ quests:
   - {slug: bancada, title: "A Bancada da NASA", deps: [ato4/inicio, ato3/fragmento, side_gt_mv_ev/era_ev], shape: gear, icon: ad_astra:nasa_workbench,
      desc: ["Pede um Fragmento dos Céus, braço e emissor EV e titânio.", "Outra masmorra de ouro guarda outra Solenne."],
      tasks: [{item: ad_astra:nasa_workbench}], rewards: [{coins: 6}]}
-  - {slug: aco_espacial, title: "Aço Para Foguetes", deps: [bancada], desc: ["Placas de aço e um tanque de aço."],
+  - {slug: aco_espacial, title: "Aço Para Foguetes", deps: [bancada], desc: ["Placas de aço e dois tanques de aço.",
+       "A quest pede a placa do Ad Astra: prense lingote de aço na prensa do Create ou no compressor do Ad Astra."],
      tasks: [{item: ad_astra:steel_plate, count: 16}, {item: ad_astra:steel_tank, count: 2}], rewards: [{coins: 3}]}
-  - {slug: pecas, title: "Ponta e Aletas", deps: [aco_espacial], desc: ["Todo foguete precisa de uma ponta e três aletas."],
+  - {slug: pecas, title: "Ponta e Aletas", deps: [aco_espacial], desc: ["Todo foguete precisa de uma ponta e quatro aletas."],
      tasks: [{item: ad_astra:rocket_nose_cone}, {item: ad_astra:rocket_fin, count: 4}], rewards: [{coins: 3}]}
   - {slug: motor, title: "Motor de Aço", deps: [aco_espacial], desc: ["O coração do primeiro foguete."],
      tasks: [{item: ad_astra:engine_frame}, {item: ad_astra:steel_engine}], rewards: [{coins: 3}]}
-  - {slug: refinaria, title: "Refinaria de Combustível", deps: [bancada, side_gt_mv_ev/destilaria], desc: ["Petróleo vira combustível de foguete."],
+  - {slug: refinaria, title: "Refinaria de Combustível", deps: [bancada, side_gt_mv_ev/destilaria], desc: ["Petróleo vira combustível de foguete.", "Diesel e biodiesel (do GregTech ou do Create) também enchem o tanque."],
      tasks: [{item: ad_astra:fuel_refinery}], rewards: [{coins: 4}]}
-  - {slug: traje, title: "Traje Espacial", deps: [bancada], desc: ["No vácuo, o corpo é só uma ideia."],
+  - {slug: traje, title: "Traje Espacial", deps: [bancada], desc: ["No vácuo, o corpo é só uma ideia.",
+       "Vista as quatro peças (capacete, traje, calças e botas): sem o conjunto, o frio da Lua e de Marte mata."],
      tasks: [{item: ad_astra:space_suit}, {item: ad_astra:oxygen_gear}], rewards: [{coins: 4}]}
-  - {slug: oxigenio, title: "Carregador de Oxigênio", deps: [traje], desc: ["Encha o traje antes de sair."],
+  - {slug: oxigenio, title: "Carregador de Oxigênio", deps: [traje], desc: ["Encha o traje antes de sair.", "O carregador faz oxigênio de água."],
      tasks: [{item: ad_astra:oxygen_loader}], rewards: [{coins: 3}]}
   - {slug: plataforma, title: "Plataforma de Lançamento", deps: [bancada], desc: ["Onde o foguete espera."],
      tasks: [{item: ad_astra:launch_pad}], rewards: [{coins: 2}]}
@@ -40,11 +42,13 @@ quests:
      tasks: [{item: ad_astra:ostrum_ingot, count: 16}], rewards: [{coins: 4}]}
   - {slug: foguete3, title: "Foguete T3", deps: [ostrum], desc: ["Motor de ostrum, para mais longe."],
      tasks: [{item: ad_astra:ostrum_engine}, {item: ad_astra:tier_3_rocket}], rewards: [{crate: rara}, {coins: 6}]}
-  - {slug: traje_netherite, title: "Traje de Netherita", deps: [foguete3], desc: ["Vênus derrete o traje comum."],
+  - {slug: traje_netherite, title: "Traje de Netherita", deps: [foguete3], desc: ["Vênus derrete o traje comum. Mercúrio também.",
+       "Acima de 70 °C só o conjunto de netherita protege: as quatro peças. O traje leva peitoral de netherita e placas de ostrum."],
      tasks: [{item: ad_astra:netherite_space_suit}], rewards: [{coins: 5}]}
   - {slug: venus, title: "Vênus", deps: [traje_netherite], desc: ["Chuva de ácido, céu de fogo."],
      tasks: [{dimension: ad_astra:venus}], rewards: [{coins: 6}]}
-  - {slug: mercurio, title: "Mercúrio", deps: [foguete3], desc: ["Perto demais do sol."],
+  - {slug: mercurio, title: "Mercúrio", deps: [traje_netherite], desc: ["Perto demais do sol.",
+       "167 °C: vá com o traje de netherita completo (ou resistência ao fogo)."],
      tasks: [{dimension: ad_astra:mercury}], rewards: [{coins: 6}]}
   - {slug: calorita, title: "Calorita", deps: [venus], desc: ["O metal que guarda o calor de Vênus."],
      tasks: [{item: ad_astra:calorite_ingot, count: 16}], rewards: [{coins: 4}]}

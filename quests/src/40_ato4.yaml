@@ -7,66 +7,87 @@ quests:
   - {slug: inicio, image: "ecos:textures/gui/quests/ato4.png", title: "O Som Mais Perto", deps: [ato3/fim_ato3], shape: gear, icon: minecraft:bell,
      desc: ["Toda noite, o mesmo som, um pouco mais perto.", "Aurend construiu foguetes para calá-lo."], tasks: [{checkmark: true}],
      rewards: [{page: 22}, {coins: 4}]}
-  - {slug: tungstenio, title: "Tungstênio", deps: [inicio], desc: ["O metal mais teimoso do mundo."],
+  - {slug: tungstenio, title: "Tungstênio", deps: [inicio], desc: ["O metal mais teimoso do mundo.",
+       "Scheelita e tungstato: veio do End (y 20 a 60). Banho químico com ácido clorídrico, depois eletrolisadora EV.",
+       "O pó funde a 3600 K (bobinas de nicromo) e sai quente: esfrie no congelador a vácuo."],
      tasks: [{tag: forge:ingots/tungsten, count: 16}], rewards: [{coins: 5}]}
   - {slug: aco_tungstenio, title: "Aço de Tungstênio", deps: [tungstenio], shape: gear, icon: gtceu:tungsten_steel_ingot,
-     desc: ["A liga da Insana Voltagem."], tasks: [{tag: forge:ingots/tungsten_steel, count: 32}], rewards: [{crate: rara}, {coins: 6}]}
-  - {slug: bobina_rtm, title: "Bobinas de RTM", deps: [aco_tungstenio], desc: ["Rutênio, tungstênio e molibdênio. Mais calor."],
+     desc: ["A liga da Insana Voltagem.", "Misturador EV (tungstênio e aço) e 3000 K no alto-forno."], tasks: [{tag: forge:ingots/tungsten_steel, count: 32}], rewards: [{crate: rara}, {coins: 6}]}
+  - {slug: bobina_rtm, title: "Bobinas de RTM", deps: [aco_tungstenio], desc: ["Rutênio, tungstênio e molibdênio. Mais calor.",
+       "Molibdênio: veio raro do Nether (y 20 a 50). Rutênio: do Platinum Group Sludge (minério purificado de calcopirita",
+       "ou pentlandita com ácido nítrico, depois centrífuga com água-régia). As bobinas dão 4500 K."],
      tasks: [{item: gtceu:rtm_alloy_coil_block, count: 16}], rewards: [{coins: 5}]}
-  - {slug: casco_iv, title: "Casco IV", deps: [aco_tungstenio], desc: ["Insana voltagem."],
+  - {slug: casco_iv, title: "Casco IV", deps: [bobina_rtm], desc: ["Insana voltagem.",
+       "Leva cabo de platina: veio de sheldonita no End (y 5 a 50). O minério bruto vira lingote na fornalha."],
      tasks: [{item: gtceu:iv_machine_hull, count: 2}], rewards: [{coins: 5}]}
   - {slug: motor_iv, title: "Motor IV", deps: [casco_iv], desc: ["Um motor que pesa mais que você."],
      tasks: [{item: gtceu:iv_electric_motor, count: 4}], rewards: [{coins: 5}]}
-  - {slug: smd_avancado, title: "SMD Avançado", deps: [casco_iv], desc: ["Componentes cada vez menores."],
+  - {slug: smd_avancado, title: "SMD Avançado", deps: [hssg], desc: ["Componentes cada vez menores.",
+       "Montadora (assembler) IV, 3840 EU/t: fio fino de HSS-G, folha de vanádio-gálio (4500 K) e polibenzimidazol (reator químico IV)."],
      tasks: [{item: gtceu:advanced_smd_transistor, count: 16}], rewards: [{coins: 5}]}
-  - {slug: montadora_ev, title: "Montadora de Circuitos EV", deps: [inicio], desc: ["Monte circuitos mais finos."],
+  - {slug: montadora_ev, title: "Montadora de Circuitos EV", deps: [inicio], desc: ["Monte circuitos mais finos.",
+       "Pede circuitos IV: o mainframe de microprocessador sai da montadora de circuitos HV (480 EU/t, na sala limpa)."],
      tasks: [{item: gtceu:ev_circuit_assembler}], rewards: [{coins: 5}]}
-  - {slug: montadora_iv, title: "Montadora de Circuitos IV", deps: [montadora_ev, motor_iv], desc: ["E mais finos ainda."],
+  - {slug: montadora_iv, title: "Montadora de Circuitos IV", deps: [montadora_ev, emissor_iv, braco_iv], desc: ["E mais finos ainda.",
+       "Pede emissor e braço IV e circuitos LuV: o mainframe nano sai da montadora de circuitos EV (1920 EU/t, na sala limpa)."],
      tasks: [{item: gtceu:iv_circuit_assembler}], rewards: [{coins: 6}]}
   - {slug: quantico, title: "Processador Quântico", deps: [montadora_iv, smd_avancado], shape: gear, icon: gtceu:quantum_processor,
-     desc: ["Pensa em duas coisas ao mesmo tempo. Como Ilse."], tasks: [{item: gtceu:quantum_processor, count: 4}],
+     desc: ["Pensa em duas coisas ao mesmo tempo. Como Ilse.", "2400 EU/t: só a montadora de circuitos IV aguenta."], tasks: [{item: gtceu:quantum_processor, count: 4}],
      rewards: [{crate: rara}, {coins: 6}]}
-  - {slug: emissor_iv, title: "Emissor IV", deps: [quantico], desc: ["Luz que corta metal."],
+  - {slug: emissor_iv, title: "Emissor IV", deps: [casco_iv], desc: ["Luz que corta metal.",
+       "Hastes de irídio: o Platinum Group Sludge dá a mistura de metais raros, que vira irídio no reator químico grande",
+       "(7680 EU/t). O irídio funde a 4500 K. Estrela quântica: estrela do Nether no banho químico com radônio."],
      tasks: [{item: gtceu:iv_emitter, count: 2}], rewards: [{coins: 5}]}
-  - {slug: braco_iv, title: "Braço Robótico IV", deps: [quantico], desc: ["Precisão de relojoeiro, força de guindaste."],
+  - {slug: braco_iv, title: "Braço Robótico IV", deps: [motor_iv], desc: ["Precisão de relojoeiro, força de guindaste."],
      tasks: [{item: gtceu:iv_robot_arm, count: 2}], rewards: [{coins: 5}]}
-  - {slug: campo_iv, title: "Gerador de Campo IV", deps: [emissor_iv], desc: ["Um campo forte o bastante para segurar algo grande."],
+  - {slug: campo_iv, title: "Gerador de Campo IV", deps: [quantico], desc: ["Um campo forte o bastante para segurar algo grande.",
+       "O fio de samário-ferro-arsênio funde a 5200 K: bobinas de HSS-G."],
      tasks: [{item: gtceu:iv_field_generator}], rewards: [{coins: 6}]}
-  - {slug: linha_montagem, title: "A Linha de Montagem", deps: [braco_iv, emissor_iv, bobina_rtm], shape: gear, icon: gtceu:assembly_line,
-     desc: ["Máquinas maiores que casas.", "Engenharia é a única oração que funciona no vácuo."], tasks: [{item: gtceu:assembly_line}],
+  - {slug: linha_montagem, title: "A Linha de Montagem", deps: [montadora_iv], shape: gear, icon: gtceu:assembly_line,
+     desc: ["Máquinas maiores que casas.", "Engenharia é a única oração que funciona no vácuo.",
+       "Os itens entram em ordem, um por barramento de entrada (os fluidos também).",
+       "Peças LuV pedem pesquisa: escaneie a peça IV com um Data Stick (scanner EV ou IV) e ponha o stick num Data Access Hatch."],
+     tasks: [{item: gtceu:assembly_line}],
      rewards: [{page: 23}, {crate: epica}, {coins: 10}]}
-  - {slug: montadora_grande, title: "Montadora Grande", deps: [casco_iv], desc: ["Uma fábrica dentro da fábrica."],
+  - {slug: montadora_grande, title: "Montadora Grande", deps: [braco_iv], desc: ["Uma fábrica dentro da fábrica."],
      tasks: [{item: gtceu:large_assembler}], rewards: [{coins: 5}]}
-  - {slug: centrifuga_grande, title: "Centrífuga Grande", deps: [casco_iv], desc: ["Gire tudo de uma vez."],
+  - {slug: centrifuga_grande, title: "Centrífuga Grande", deps: [motor_iv], desc: ["Gire tudo de uma vez."],
      tasks: [{item: gtceu:large_centrifuge}], rewards: [{coins: 5}]}
-  - {slug: perfuratriz, title: "Plataforma de Perfuração", deps: [inicio], desc: ["Bombeie fluidos do fundo do mundo."],
-     tasks: [{item: gtceu:ev_fluid_drilling_rig}], rewards: [{coins: 5}]}
-  - {slug: mineradora_grande, title: "Mineradora Grande EV", deps: [inicio], desc: ["Cave chunks inteiros."],
+  - {slug: perfuratriz, title: "Plataforma de Perfuração", deps: [tungstenio], desc: ["Bombeie fluidos do fundo do mundo.",
+       "A plataforma avançada: casco e bomba EV, engrenagens de carboneto de tungstênio (3058 K)."],
+     tasks: [{item: gtceu:hv_fluid_drilling_rig}], rewards: [{coins: 5}]}
+  - {slug: mineradora_grande, title: "Mineradora Grande EV", deps: [tungstenio], desc: ["Cave chunks inteiros.", "Leva engrenagens de tungstênio."],
      tasks: [{item: gtceu:ev_large_miner}], rewards: [{coins: 5}]}
   - {slug: turbina_grande, title: "Turbina a Gás Grande", deps: [inicio], desc: ["Energia para a era espacial."],
      tasks: [{item: gtceu:gas_large_turbine}], rewards: [{coins: 6}]}
-  - {slug: lapotron, title: "Cristal de Lapotron", deps: [casco_iv], desc: ["Uma bateria que parece uma joia."],
+  - {slug: lapotron, title: "Cristal de Lapotron", deps: [montadora_iv], desc: ["Uma bateria que parece uma joia."],
      tasks: [{item: gtceu:lapotron_crystal, count: 4}], rewards: [{coins: 5}]}
-  - {slug: subestacao, title: "Subestação de Energia", deps: [lapotron], desc: ["Guarde energia de uma cidade inteira."],
+  - {slug: subestacao, title: "Subestação de Energia", deps: [lapotron], desc: ["Guarde energia de uma cidade inteira.",
+       "Leva circuitos LuV e o casco de subestação, que pede armação de irídio."],
      tasks: [{item: gtceu:power_substation}], rewards: [{coins: 6}]}
-  - {slug: rodio, title: "Paládio Banhado em Ródio", deps: [aco_tungstenio], desc: ["O metal dos cascos LuV."],
+  - {slug: rodio, title: "Paládio Banhado em Ródio", deps: [hssg], desc: ["O metal dos cascos LuV.",
+       "Paládio da sheldonita ou do Platinum Group Sludge; ródio da mistura de metais inertes do mesmo lodo.",
+       "Misturador IV e 4500 K no alto-forno (7680 EU/t)."],
      tasks: [{tag: forge:ingots/rhodium_plated_palladium, count: 16}], rewards: [{coins: 6}]}
-  - {slug: hssg, title: "HSS-G", deps: [aco_tungstenio], desc: ["Aço rápido, para bobinas mais quentes."],
+  - {slug: hssg, title: "HSS-G", deps: [casco_iv], desc: ["Aço rápido, para bobinas mais quentes.",
+       "Funde a 4200 K: o nicromo não chega lá, só as bobinas de RTM. As bobinas de HSS-G saem da montadora (assembler) IV e dão 5400 K."],
      tasks: [{tag: forge:ingots/hssg, count: 16}, {item: gtceu:hssg_coil_block, count: 16}], rewards: [{coins: 6}]}
   - {slug: casco_luv, title: "Casco LuV", deps: [rodio, linha_montagem], shape: gear, icon: gtceu:luv_machine_hull,
-     desc: ["Ludicrous Voltage. Até o nome é absurdo."], tasks: [{item: gtceu:luv_machine_hull, count: 2}],
+     desc: ["Ludicrous Voltage. Até o nome é absurdo.", "Cabo de nióbio-titânio: misturador IV e 4500 K."], tasks: [{item: gtceu:luv_machine_hull, count: 2}],
      rewards: [{crate: epica}, {coins: 10}]}
-  - {slug: motor_luv, title: "Motor LuV", deps: [casco_luv], desc: ["Feito na linha de montagem."],
+  - {slug: motor_luv, title: "Motor LuV", deps: [casco_luv], desc: ["Feito na linha de montagem.",
+       "HSS-S funde a 5000 K e o samário magnético a 5400 K: bobinas de HSS-G. Pesquise o motor IV no scanner antes."],
      tasks: [{item: gtceu:luv_electric_motor, count: 4}], rewards: [{coins: 6}]}
-  - {slug: campo_luv, title: "Gerador de Campo LuV", deps: [motor_luv, campo_iv], desc: ["Faz parte da Pedra Filosofal."],
-     tasks: [{item: gtceu:luv_field_generator}], rewards: [{coins: 8}]}
   - {slug: sinos, title: "Os Sinos São Nossos", deps: [side_space/marte], icon: minecraft:bell,
      desc: ["Alguém de Aurend chegou a Marte antes de você.", "Ilse reconhece os sinos."], tasks: [{checkmark: true}],
      rewards: [{page: 24}, {coins: 5}]}
   - {slug: forja_nether, title: "A Forja do Nether", deps: [inicio], icon: cataclysm:altar_of_fire,
      desc: ["No fundo do Nether há uma arena que ainda queima.", "Um altar de fogo espera cinzas ardentes."], tasks: [{checkmark: true}],
      rewards: [{xp_levels: 3}]}
-  - {slug: cinzas, title: "Cinzas Ardentes", deps: [forja_nether], desc: ["Caem dos Revenants em chamas, ou se juntam de brasas morrendo."],
+  - {slug: campo_luv, title: "Gerador de Campo LuV", deps: [motor_luv, campo_iv], desc: ["Faz parte da Pedra Filosofal."],
+     tasks: [{item: gtceu:luv_field_generator}], rewards: [{coins: 8}]}
+  - {slug: cinzas, title: "Cinzas Ardentes", deps: [forja_nether], desc: ["Caem dos Revenants em chamas que guardam a arena.",
+       "Brasas morrendo (4 fazem 1 cinza) caem dos Berserkers das fortalezas, que só despertam depois que alguém vence Ignaz."],
      tasks: [{item: cataclysm:burning_ashes}], rewards: [{coins: 4}]}
   - {slug: ignaz, image: "ecos:textures/gui/quests/ignaz.png", title: "Ignaz, o Fundidor", deps: [cinzas, side_irons/livro_diamante, side_ars/arquimago], shape: gear, icon: cataclysm:ignitium_ingot,
      desc: ["Ele funde até hoje, sem saber para quem.", "Mate-o com piedade. Ele está cansado."], tasks: [{kill: cataclysm:ignis}],

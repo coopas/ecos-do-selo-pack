@@ -241,3 +241,56 @@ O verificador não modela sala limpa nem a voltagem real de cada momento (o teto
 O `LIMITES` de `side_gt_mv_ev` no `layoutcheck` continua em 5 cruzamentos; só os comentários foram atualizados (a planaridade do grafo novo não foi testada).
 
 Revisadas sem mudança: 22 quests.
+
+## Ato IV (`40_ato4`)
+
+O verificador deixa todo o Ato IV em LuV e não modela bobina com bônus de tensão, pesquisa da linha de montagem nem sala limpa, então conferi tudo no dump e no jar do GregTech 7.5.3. Os fatos que mudaram a ordem:
+- O alto-forno soma 100 K por tier acima de MV à bobina (`GTRecipeModifiers.ebfOverclock`). Com isso o tungstênio (3600 K, EV) sai com nicromo, mas HSS-G (4200 K), vanádio-gálio (4500 K), irídio (4500 K), ródio-paládio (4500 K) e nióbio-titânio (4500 K) pedem bobinas de RTM, e HSS-S (5000 K), samário magnético (5400 K) e samário-ferro-arsênio (5200 K) pedem HSS-G.
+- O emissor IV leva hastes de irídio e estrela quântica; o braço IV leva motor e pistão IV. Nenhum dos dois precisa do processador quântico, mas as quests vinham depois dele. Já a montadora de circuitos IV leva emissor e braço IV e circuitos LuV, e o processador quântico (2400 EU/t) só sai na montadora IV.
+- A montadora de circuitos EV pede circuitos IV (mainframe de microprocessador, 480 EU/t, na montadora HV) e a IV pede circuitos LuV (mainframe nano, 1920 EU/t, na montadora EV).
+- A mistura de metais raros (irídio e ósmio) só se separa no reator químico grande a 7680 EU/t (`rarest_metal_mixture_separation`). O Platinum Group Sludge sai de minério purificado de calcopirita, pentlandita, bornita, cooperita, calcocita ou tetraedrita com ácido nítrico.
+- `gtceu.yaml`: `enableResearch: true`, `orderedAssemblyLineItems` e `orderedAssemblyLineFluids`. As peças LuV pedem pesquisa no scanner (`ComponentRecipes`: `scannerResearch`) com Data Stick no Data Access Hatch.
+
+| quest | problema | correção |
+|---|---|---|
+| `ato4/perfuratriz` | A plataforma de perfuração EV leva casco, motor e bomba LuV e engrenagens de ósmirídio, montada a 30720 EU/t: era LuV logo no começo do ato. | Task trocada para `gtceu:hv_fluid_drilling_rig` (casco, motor e bomba EV, engrenagens de carboneto de tungstênio, 1920 EU/t). Dependência trocada de `inicio` para `tungstenio`; descrição. |
+| `ato4/mineradora_grande` | Leva engrenagens de tungstênio, mas abria no início do ato. | Dependência trocada de `inicio` para `tungstenio`; descrição. |
+| `ato4/tungstenio` | Não dizia onde nem como. | Descrição: scheelita/tungstato no End (y 20 a 60), ácido túngstico no banho químico e na eletrolisadora EV, 3600 K com nicromo, sai quente. |
+| `ato4/aco_tungstenio`, `bobina_rtm` | Sem dica. | Descrições: misturador EV e 3000 K; molibdênio no veio raro do Nether (y 20 a 50) e rutênio do Platinum Group Sludge. |
+| `ato4/casco_iv` | Leva cabo de platina, e nada dizia onde achar platina (veio de sheldonita no End, y 5 a 50). | Descrição. Dependência trocada de `aco_tungstenio` para `bobina_rtm` (vem antes de qualquer forma; serve para o desenho do capítulo ficar sem cruzamentos). |
+| `ato4/hssg` | Funde a 4200 K: só bobinas de RTM. A bobina de HSS-G sai na montadora IV. Dependia só do aço de tungstênio. | Dependência trocada para `casco_iv` (que vem depois de `bobina_rtm`); descrição. |
+| `ato4/smd_avancado` | Fio fino de HSS-G, folha de vanádio-gálio (4500 K) e polibenzimidazol (reator químico a 7680 EU/t), na montadora IV. Dependia só do casco IV. | Dependência trocada para `hssg`; descrição. |
+| `ato4/emissor_iv` | Vinha depois do processador quântico, que não usa. Leva irídio, que pede bobinas de RTM e tensão IV. | Dependência trocada de `quantico` para `casco_iv`; a descrição diz de onde vêm o irídio e a estrela quântica. |
+| `ato4/braco_iv` | Vinha depois do processador quântico, que não usa. | Dependência trocada de `quantico` para `motor_iv`. |
+| `ato4/montadora_iv` | Leva emissor e braço IV, que vinham depois dela. | Dependências trocadas de `montadora_ev`, `motor_iv` para `montadora_ev`, `emissor_iv`, `braco_iv`; descrição. |
+| `ato4/montadora_ev`, `quantico` | Os circuitos de cada montadora não estavam escritos. | Descrições. |
+| `ato4/campo_iv` | O fio de samário-ferro-arsênio pede bobinas de HSS-G. | Dependência trocada de `emissor_iv` para `quantico` (que já passa por `emissor_iv` e `hssg`); descrição. |
+| `ato4/linha_montagem` | Nada falava de pesquisa nem da ordem das entradas, e a quest dependia de `bobina_rtm`, que já vinha pelo emissor. | Dependência trocada para `montadora_iv` (já passa por braço e emissor IV); a descrição explica a entrada em ordem e o Data Stick no Data Access Hatch. |
+| `ato4/rodio` | Ródio-paládio pede misturador IV e 4500 K, e o ródio sai do Platinum Group Sludge. Dependia só do aço de tungstênio. | Dependência trocada para `hssg` (vem depois de RTM e do casco IV); descrição. |
+| `ato4/casco_luv`, `motor_luv` | O cabo de nióbio-titânio pede 4500 K; o motor LuV pede HSS-S e samário magnético (bobinas de HSS-G) e pesquisa do motor IV. | Descrições (`motor_luv` passa por `rodio` → `hssg`). |
+| `ato4/montadora_grande`, `centrifuga_grande` | Levam braço/motor IV, mas dependiam só do casco IV. | Dependências trocadas para `braco_iv` e `motor_iv`. |
+| `ato4/lapotron`, `subestacao` | A subestação leva circuitos LuV (montadora EV) e armação de irídio, mas dependia só do lapotron. | `lapotron` passa a depender de `montadora_iv` (o cristal só pede circuito HV; a montadora IV já passa pela EV e pelo irídio); descrição em `subestacao`. |
+| `ato4/cinzas` | "Se juntam de brasas morrendo": as brasas só caem dos Berserkers das fortalezas, e eles só nascem depois que Ignis é vencido uma vez (`Ignited_Berserker_Entity`: `isIgnisDefeatedOnce`). Antes disso as cinzas vêm só dos Revenants que a própria arena gera. | Descrição. |
+| `ato4/campo_luv` | Ver Ato V: o fio de ITBTC pede bobinas de naquadah. | Mudada na revisão do Ato V. |
+
+Conferido sem mudança: Ignis deixa 3 lingotes de ignítio (`loot_tables/entities/ignis.json`, 3 rolagens), então `ignitio` sai de uma luta. `ignaz` continua pedindo `side_irons/livro_diamante`, que passa pelo lingote de mitril (minério de nível 4); no Ato IV há picaretas de nível 4 de sobra (ressonarium e de warden do Ato II, gravitita e valquíria do Aether, picaretas de aço de tungstênio e de carboneto de tungstênio do GregTech, netherita), então a dependência fica. O `fragmento`, `argamassa`, `sinos`, `rede_estrelas` e `espiritos_vacuo` estão certos.
+
+Revisadas sem mudança: 13 quests.
+
+## Caminho — Os Sinos no Céu (`41_side_space`)
+
+Conferido no jar do Ad Astra 1.15.21. Os planetas (`data/ad_astra/planets`): Lua −173 °C, Marte −65 °C, Vênus 464 °C, Mercúrio 167 °C. `TemperatureApiImpl`: abaixo de −50 °C só o conjunto completo de traje espacial protege; acima de 70 °C só o conjunto de netherita (ou o efeito de resistência ao fogo). O combustível do foguete aceita a tag `ad_astra:fuel`, que inclui o diesel e o biodiesel do GregTech e do Create.
+
+| quest | problema | correção |
+|---|---|---|
+| `side_space/mercurio` | Mercúrio está a 167 °C e queima quem não usa o traje de netherita, mas a quest abria só com o foguete T3. | Dependência trocada de `foguete3` para `traje_netherite`; descrição. |
+| `side_space/traje_netherite` | Não dizia que são as quatro peças, nem que Mercúrio também queima. | Descrição: conjunto completo, peitoral de netherita e placas de ostrum. |
+| `side_space/traje` | A quest pede só o peitoral; sem as quatro peças o frio da Lua e de Marte mata. | Descrição. |
+| `side_space/pecas` | Dizia "três aletas"; o foguete leva quatro (a task já pedia 4). | Descrição. |
+| `side_space/aco_espacial` | Dizia "um tanque" (o foguete leva dois e a task pede 2). A task pede a placa do Ad Astra, e a do GregTech não conta. | Descrição: dois tanques, e a placa sai na prensa do Create ou no compressor do Ad Astra. |
+| `side_space/refinaria` | Não dizia que diesel e biodiesel também servem de combustível. | Descrição. |
+| `side_space/oxigenio` | Não dizia de onde vem o oxigênio. | Descrição: o carregador faz oxigênio de água. |
+
+Conferido sem mudança: os tiers dos foguetes (T1 Lua, T2 Marte, T3 Vênus e Mercúrio, T4 Glacio), os minérios de cada planeta (desh e queijo na Lua, ostrum em Marte, calorita em Vênus, todos com receita de fornalha), as receitas dos foguetes (ponta, 6 blocos, 4 aletas, 2 tanques, motor) e a bancada da NASA (Fragmento dos Céus, emissor e braço EV, placas de titânio).
+
+Revisadas sem mudança: 18 quests.
