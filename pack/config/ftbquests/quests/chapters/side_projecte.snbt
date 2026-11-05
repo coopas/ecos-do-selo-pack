@@ -22,6 +22,7 @@
 			description: [
 				"Aprenda um item e ele vira número."
 				"Ilse aprendeu Aurend inteira assim."
+				"As peças do GregTech não têm EMC: não dá para aprendê-las."
 			]
 			icon: {
 				Count: 1b
@@ -53,7 +54,7 @@
 			]
 			title: "Mesa de Transmutação"
 			x: 0.0d
-			y: 13.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -105,7 +106,7 @@
 			]
 			title: "Pós de Covalência"
 			x: 0.0d
-			y: 17.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -147,8 +148,8 @@
 				}
 			]
 			title: "Carvão Alquímico"
-			x: 3.0d
-			y: 11.25d
+			x: 0.0d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -182,7 +183,7 @@
 			]
 			title: "Combustível Aeternalis"
 			x: 4.5d
-			y: 13.25d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -190,6 +191,7 @@
 			]
 			description: [
 				"Luz vira EMC. Devagar."
+				"Leva bloco de diamante (só sai do compressor do GregTech) e glowstone."
 			]
 			id: "0A85D91E17A901CD"
 			rewards: [
@@ -216,7 +218,7 @@
 			]
 			title: "Coletor de Energia"
 			x: 1.5d
-			y: 13.0d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -250,14 +252,15 @@
 			]
 			title: "Relé de Antimatéria"
 			x: 3.0d
-			y: 12.75d
+			y: 9.25d
 		}
 		{
 			dependencies: [
-				"6DB440EEB917AE4B"
+				"39E1F7916C93D660"
 			]
 			description: [
 				"Uma bateria de EMC."
+				"Oito combustíveis de Möbius em volta de um diamante."
 			]
 			id: "498F936C53531A8D"
 			rewards: [
@@ -283,16 +286,17 @@
 				}
 			]
 			title: "Estrela de Klein"
-			x: 3.0d
-			y: 14.25d
+			x: 1.5d
+			y: 13.25d
 		}
 		{
 			dependencies: [
 				"36B5B81406C932FF"
-				"498F936C53531A8D"
+				"70A9E60D3230AE4C"
 			]
 			description: [
 				"Copia o que você colocar dentro. A que preço?"
+				"Um baú alquímico no meio, diamantes e obsidiana em volta."
 			]
 			id: "7853F29590AB6401"
 			rewards: [
@@ -319,7 +323,7 @@
 			]
 			title: "Condensador de Energia"
 			x: 4.5d
-			y: 14.75d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -353,7 +357,7 @@
 			]
 			title: "Baú Alquímico"
 			x: 1.5d
-			y: 17.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -390,7 +394,7 @@
 			]
 			title: "Bolsa Alquímica"
 			x: 3.0d
-			y: 17.0d
+			y: 10.75d
 		}
 		{
 			dependencies: [
@@ -399,6 +403,7 @@
 			]
 			description: [
 				"O que sobra quando a luz desiste."
+				"Oito aeternalis em volta de um bloco de diamante."
 			]
 			icon: {
 				Count: 1b
@@ -442,7 +447,7 @@
 			]
 			title: "Matéria Escura"
 			x: 6.0d
-			y: 15.25d
+			y: 13.25d
 		}
 		{
 			dependencies: [
@@ -476,7 +481,7 @@
 			]
 			title: "Picareta de Matéria Escura"
 			x: 7.5d
-			y: 10.75d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -561,7 +566,7 @@
 			]
 			title: "Matéria Vermelha"
 			x: 9.0d
-			y: 13.25d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -595,7 +600,7 @@
 			]
 			title: "Anel do Vazio"
 			x: 10.5d
-			y: 13.75d
+			y: 13.25d
 		}
 		{
 			dependencies: [
@@ -629,7 +634,7 @@
 			]
 			title: "Relógio do Tempo Fluente"
 			x: 10.5d
-			y: 15.25d
+			y: 14.75d
 		}
 		{
 			dependencies: [
@@ -637,6 +642,7 @@
 			]
 			description: [
 				"A mesa, no bolso."
+				"Quatro blocos de matéria escura (16 matérias) em volta da mesa."
 			]
 			id: "2405EBC065BBC996"
 			rewards: [
@@ -711,7 +717,7 @@
 			]
 			title: "O Preço"
 			x: 12.0d
-			y: 14.5d
+			y: 14.0d
 		}
 	]
 	title: "Caminho — A Alquimia Proibida"

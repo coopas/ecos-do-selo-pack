@@ -14,15 +14,15 @@ from pathlib import Path
 
 # Capítulo -> (cruzamentos, linhas sobre quest, linhas longas, comprimento máximo de linha) tolerados, com o motivo.
 # Sem entrada: (0, 0, 0, MAX_EDGE). Linha sobre quest: zero em todos.
-# side_gt_steam_lv, ato2 e ato4 não são planares: nenhum desenho, com qualquer posição, zera os cruzamentos (é preciso
-# tirar 1-2 arestas para o grafo ficar planar), e o livro ainda exige ler da esquerda para a direita. side_gt_mv_ev não
+# side_gt_steam_lv e ato2 não são planares: nenhum desenho, com qualquer posição, zera os cruzamentos (é preciso
+# tirar 1-2 arestas para o grafo ficar planar), e o livro ainda exige ler da esquerda para a direita. O ato4 ficou
+# planar com as dependências da revisão da task 6d (0 cruzamentos) e saiu da lista. side_gt_mv_ev não
 # teve a planaridade testada depois da revisão da task 6c: 5 é o que questgen.layout atingiu com a leitura da
 # esquerda para a direita. Valor = o que questgen.layout atingiu; baixar se o layout melhorar.
 LIMITES: dict[str, tuple[int, int, int, float]] = {
     "side_gt_steam_lv": (2, 0, 0, 10.5),  # não planar (planar sem ligas_vapor->liga_vermelha)
     "ato2": (1, 0, 0, 10.5),              # não planar (planar sem inicio->alto_forno_eletrico)
     "side_gt_mv_ev": (5, 0, 0, 10.5),     # árvore HV->sala limpa->EV (task 6c): 54 arestas, 5 = o que o layout atinge
-    "ato4": (1, 0, 0, 10.5),              # não planar (planar sem fragmento->argamassa)
     # fim_prologo (11 pais) tem de ficar à direita do ramo picareta_ferro->diamante->encantamento; o caminho
     # livro_quests->jei->fim_prologo contorna o ramo do ferro por cima e jei->fim_prologo (~16.1) passa de MAX_EDGE
     "prologo": (0, 0, 1, 16.5),

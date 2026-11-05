@@ -84,8 +84,6 @@ quests:
   - {slug: forja_nether, title: "A Forja do Nether", deps: [inicio], icon: cataclysm:altar_of_fire,
      desc: ["No fundo do Nether há uma arena que ainda queima.", "Um altar de fogo espera cinzas ardentes."], tasks: [{checkmark: true}],
      rewards: [{xp_levels: 3}]}
-  - {slug: campo_luv, title: "Gerador de Campo LuV", deps: [motor_luv, campo_iv], desc: ["Faz parte da Pedra Filosofal."],
-     tasks: [{item: gtceu:luv_field_generator}], rewards: [{coins: 8}]}
   - {slug: cinzas, title: "Cinzas Ardentes", deps: [forja_nether], desc: ["Caem dos Revenants em chamas que guardam a arena.",
        "Brasas morrendo (4 fazem 1 cinza) caem dos Berserkers das fortalezas, que só despertam depois que alguém vence Ignaz."],
      tasks: [{item: cataclysm:burning_ashes}], rewards: [{coins: 4}]}
@@ -104,6 +102,6 @@ quests:
      desc: ["Leve a rede para a Lua. Aurend fazia isso."], tasks: [{checkmark: true}], rewards: [{coins: 5}]}
   - {slug: espiritos_vacuo, title: "Espíritos no Vácuo", deps: [side_occultism/mestre_ocultista, side_space/lua],
      desc: ["Um familiar te acompanha até a Lua.", "Ele não respira. Não precisa."], tasks: [{checkmark: true}], rewards: [{coins: 5}]}
-  - {slug: fim_ato4, title: "Além do Véu", deps: [argamassa, campo_luv, side_space/glacio, subestacao], shape: gear,
+  - {slug: fim_ato4, title: "Além do Véu", deps: [argamassa, motor_luv, side_space/glacio, subestacao], shape: gear,
      icon: ecos:fragmento_selo_estrelas, desc: ["Quatro fragmentos nas mãos.", "As estrelas é que estão dentro dele."],
      tasks: [{checkmark: true}], rewards: [{crate: lendaria}, {coins: 16}, {xp_levels: 6}]}

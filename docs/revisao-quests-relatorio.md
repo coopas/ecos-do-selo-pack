@@ -294,3 +294,62 @@ Conferido no jar do Ad Astra 1.15.21. Os planetas (`data/ad_astra/planets`): Lua
 Conferido sem mudança: os tiers dos foguetes (T1 Lua, T2 Marte, T3 Vênus e Mercúrio, T4 Glacio), os minérios de cada planeta (desh e queijo na Lua, ostrum em Marte, calorita em Vênus, todos com receita de fornalha), as receitas dos foguetes (ponta, 6 blocos, 4 aletas, 2 tanques, motor) e a bancada da NASA (Fragmento dos Céus, emissor e braço EV, placas de titânio).
 
 Revisadas sem mudança: 18 quests.
+
+## Ato V (`50_ato5`)
+
+Conferido no dump e no jar do GregTech 7.5.3 (`FusionLoader`, `ComponentRecipes`, `BatteryRecipes`, `FusionReactorMachine`). Os fatos que mudaram a ordem:
+- O fio de ITBTC funde a 6000 K. Nem HSS-G com bônus de LuV chega (5400 + 400), então o gerador de campo LuV, que estava no Ato IV, pede bobinas de naquadah, que eram do Ato V. Ele é a peça da Pedra Filosofal.
+- A bobina de naquadah leva fio de naquadah e folha de ósmio (`coil_naquadah`). A liga de naquadah (naquadah, ósmirídio e trínio) funde a 7200 K, ou seja, já pede a bobina. As quests estavam na ordem contrária (naquadah → liga → bobina).
+- O európio só sai do reator de fusão (neodímio + hidrogênio, `fusionStartEU` 150 000 000). O MK1 guarda 10M EU por escotilha de energia LuV (`calculateEnergyStorageFactor`). O chip de cristal cru pede európio na autoclave (as outras rotas são de wetware). Mesmo assim, o processador de cristal vinha antes do reator de fusão.
+- O reator de fusão MK1 leva circuitos ZPM (o mainframe quântico sai na montadora IV), ósmirídio, plutônio-241, bobinas supercondutoras (ITBTC e trínio) e pesquisa do fio de ITBTC no scanner.
+- O emissor e o gerador de campo ZPM e o módulo de energia pedem `stationResearch`: Research Station com computação de um HPCA. As duas máquinas são montadas na linha de montagem a 100000 EU/t (duas escotilhas LuV dão ZPM). O fio de urânio-ródio-dinaquadida funde a 9000 K, e só a bobina de trínio chega lá.
+
+| quest | problema | correção |
+|---|---|---|
+| `ato5/campo_luv` (era `ato4/campo_luv`) | Pede bobinas de naquadah (fio de ITBTC a 6000 K) e um emissor LuV, que são do Ato V. | Movida para o Ato V com `legacy_id: ato4/campo_luv` (o progresso fica). Depende de `bobina_naquadah` e `montadora_luv` (que passa pelo emissor LuV); descrição. `ato4/fim_ato4` passa a depender de `motor_luv`, e `receita_pedra` passa a depender de `campo_luv` (antes `inicio`, `ato4/campo_luv`). |
+| `ato5/bobina_naquadah` | Dependia da liga de naquadah, mas é a liga que pede a bobina. A descrição dizia "o alto-forno mais quente de todos", mas trínio e tritânio são mais quentes. | Dependências trocadas de `liga_naquadah` para `naquadah`, `iridio` (folha de ósmio); descrição. |
+| `ato5/liga_naquadah` | Funde a 7200 K e leva ósmirídio e trínio. A descrição dizia "para bobinas que derretem tungstênio", o que é falso. | Dependências trocadas de `naquadah` para `bobina_naquadah`, `osmiridio`; descrição (é o metal dos cascos ZPM). |
+| `ato5/fusao` | Dependia do processador de cristal, mas é o cristal que pede o európio do reator. | Dependências trocadas de `cristal`, `bobina_naquadah` para `liga_naquadah` (trínio e ósmirídio) e `campo_luv` (que vem antes de qualquer forma; deixa o desenho sem cruzamentos); a descrição dá os componentes e a pesquisa. |
+| `ato5/cristal` | Pede európio. | Dependência trocada de `montadora_luv` para `fusao` (que já passa pela montadora LuV); a descrição explica o európio e as 15 escotilhas LuV. |
+| `ato5/modulo_energia` | Linha de montagem a 100000 EU/t, európio, trínio, gerador de campo LuV e pesquisa na Research Station. Dependia só do cristal. | Dependência trocada para `emissor_zpm` (primeira quest com a Research Station); descrição. |
+| `ato5/casco_zpm` | Leva chapas de liga de naquadah. Dependia de `osmiridio`, `fusao`. | Dependência trocada para `fusao` (que passa pela liga); descrição. |
+| `ato5/emissor_zpm`, `campo_zpm` | Pedem a Research Station, que não aparecia em lugar nenhum. O gerador também pede bobinas de trínio. | Descrições. |
+| `ato5/motor_zpm`, `emissor_luv`, `braco_luv`, `montadora_luv` | Nada falava de pesquisa nem dos circuitos ZPM. | Descrições. |
+| `ato5/naquadah` | "Aurend o trouxe das estrelas" mandava o jogador procurar nos planetas, mas o veio fica no End (y 10 a 90, com plutônio, minério de nível 3). Funde a 5000 K (HSS-G). | Descrição (a frase da lore ficou). |
+| `ato5/platina`, `iridio`, `osmiridio` | Sem dica. A descrição do ósmirídio dizia "a liga dos cascos ZPM", mas o casco é de liga de naquadah; o ósmirídio vai no motor ZPM. | Descrições; o ósmio pede alto-forno em LuV (`blast_osmium`, 30720 EU/t). |
+| `ato5/artefato` | Pede os quatro fragmentos, mas não dependia de `quatro` (que era uma folha solta). | Dependência trocada de `pedra` para `quatro` (que passa por `estrelas_de_novo` → `pedra`). |
+| `ato5/estrelas_de_novo` | Chamar Ignis de novo pede outra cinza ardente, e a quest não dizia de onde. | Descrição: brasas dos Berserkers, que nascem nas fortalezas depois da primeira vitória. |
+
+Conferido sem mudança: a receita da Pedra (7 diamantes, Fragmento das Estrelas, gerador de campo LuV), a do Artefato (quatro fragmentos, bloco de fonte, Pedra, gerador de campo ZPM, gema dos espíritos), os chefes repetíveis (outras torres do Lich, o Warden pelo shrieker, outra masmorra de ouro, o altar de fogo), `bloco_fonte` (4 gemas de fonte), `gema_espiritos` (diamante no fogo espiritual), os checkmarks e o `o_arauto`.
+
+Revisadas sem mudança: 12 quests.
+
+O `ato4` saiu do `LIMITES` do `layoutcheck`: com as dependências novas o capítulo fica com 0 cruzamentos.
+
+## Caminho — A Alquimia Proibida (`51_side_projecte`)
+
+Conferido no dump (receitas do ProjectE e as do pack em `kubejs/ecos/recipes.json`) e no `emc_gtceu_nonzero` do dump do registro, que está vazio.
+
+| quest | problema | correção |
+|---|---|---|
+| `side_projecte/klein` | A estrela de Klein Ein leva 8 combustíveis de Möbius e um diamante, mas dependia só da mesa. | Dependência trocada de `mesa` para `carvao`; descrição. |
+| `side_projecte/condensador` | O condensador leva um baú alquímico (e diamantes e obsidiana), não a estrela de Klein. | Dependências trocadas de `rele`, `klein` para `rele`, `bau_alquimico`; descrição. |
+| `side_projecte/coletor`, `materia_escura` | Levam bloco de diamante, que só sai do compressor do GregTech (a receita da bancada sumiu). | Descrições. |
+| `side_projecte/tablete` | Leva 4 blocos de matéria escura (16), e a quest anterior pede 8. | Descrição. |
+| `side_projecte/mesa` | Nada dizia que as peças do GregTech não têm EMC. | Descrição. |
+
+Conferido sem mudança: os pós de covalência, os combustíveis alquímicos, a bolsa, a picareta, o coletor MK2, a matéria vermelha, o anel do vazio (banda do buraco negro, gema da densidade eterna e 2 matérias vermelhas) e o relógio.
+
+Revisadas sem mudança: 12 quests.
+
+## O Eco Final (`60_final`)
+
+Conferido em `kubejs/data/ecos/recipes/ritual_entidade.json` (pentáculo `occultism:summon_wild_greater_spirit`, ativação com o Artefato, 2 fragmentos de eco + sino + eco reforçado), no multibloco do pentáculo (giz branco e roxo, 4 crânios de esqueleto, tigela dourada), nos scripts `40_ecos_final_boss.js` e `ecos_final_boss_damage.js` e em `tests/test_final_boss.py`. O ritual aplica o NBT por cima do salvamento da entidade (`SummonRitual.applyEntityNbt`), então o Arauto nasce ativo.
+
+| quest | problema | correção |
+|---|---|---|
+| `final/circulo` | Dizia "na tigela", mas os ingredientes vão nas tigelas de sacrifício e o Artefato vai na dourada. O sino não tem receita (só nas vilas) e os crânios de esqueleto são difíceis sem o ritual do esqueleto possuído. | Descrição. |
+
+Conferido sem mudança: `chamado`, `arauto` (a tag `ecos:prova_arauto` aceita o Eco e os dois desfechos), `selar` e `absorver` (clique direito / agachado + clique direito no Eco). Os dois desfechos ficaram como estavam.
+
+Revisadas sem mudança: 4 quests.

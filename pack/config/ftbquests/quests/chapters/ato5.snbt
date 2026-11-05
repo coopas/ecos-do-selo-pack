@@ -66,7 +66,7 @@
 			]
 			title: "Fui Eu"
 			x: 0.0d
-			y: -1.5d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -74,6 +74,7 @@
 			]
 			description: [
 				"Metais nobres para a ultimíssima voltagem."
+				"Veio de sheldonita no End (y 5 a 50), ou o Platinum Group Sludge na centrífuga com água-régia."
 			]
 			id: "7F2E52E7C032ECE7"
 			rewards: [
@@ -114,8 +115,8 @@
 				}
 			]
 			title: "Platina e Paládio"
-			x: 1.5d
-			y: -7.25d
+			x: 3.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -123,6 +124,8 @@
 			]
 			description: [
 				"Os metais mais densos que a terra guarda."
+				"Saem da mistura de metais raros do Platinum Group Sludge (reator químico grande, 7680 EU/t)."
+				"Os dois fundem a 4500 K; o ósmio pede alto-forno em LuV (30720 EU/t)."
 			]
 			id: "11B10EA9A673A0FE"
 			rewards: [
@@ -164,14 +167,15 @@
 			]
 			title: "Irídio e Ósmio"
 			x: 4.5d
-			y: -9.5d
+			y: -10.0d
 		}
 		{
 			dependencies: [
 				"11B10EA9A673A0FE"
 			]
 			description: [
-				"A liga dos cascos ZPM."
+				"A liga dos motores ZPM."
+				"Misturador LuV e 4500 K no alto-forno em LuV."
 			]
 			id: "5EACB867BEBBD634"
 			rewards: [
@@ -200,8 +204,8 @@
 				}
 			]
 			title: "Ósmirídio"
-			x: 7.5d
-			y: -9.75d
+			x: 6.0d
+			y: -9.5d
 		}
 		{
 			dependencies: [
@@ -210,6 +214,8 @@
 			description: [
 				"Um metal que não deveria existir neste mundo."
 				"Aurend o trouxe das estrelas."
+				"Hoje ele está no End: veio de naquadah (y 10 a 90), junto do plutônio. Picareta de diamante."
+				"Funde a 5000 K (bobinas de HSS-G) e sai quente."
 			]
 			icon: {
 				Count: 1b
@@ -255,15 +261,18 @@
 				}
 			]
 			title: "Naquadah"
-			x: 3.0d
-			y: -7.5d
+			x: 4.5d
+			y: -8.5d
 		}
 		{
 			dependencies: [
-				"4CD1F28B5FA8AD23"
+				"24A8CF6845FE0120"
+				"5EACB867BEBBD634"
 			]
 			description: [
-				"Para bobinas que derretem tungstênio."
+				"O metal dos cascos ZPM."
+				"Naquadah, ósmirídio e trínio; funde a 7200 K, só com bobinas de naquadah."
+				"Trínio: do processamento da naquadah enriquecida (centrífuga), também a 7200 K."
 			]
 			id: "708B799A406F9163"
 			rewards: [
@@ -292,15 +301,17 @@
 				}
 			]
 			title: "Liga de Naquadah"
-			x: 4.5d
-			y: -8.0d
+			x: 7.5d
+			y: -7.75d
 		}
 		{
 			dependencies: [
-				"708B799A406F9163"
+				"4CD1F28B5FA8AD23"
+				"11B10EA9A673A0FE"
 			]
 			description: [
-				"O alto-forno mais quente de todos."
+				"Um alto-forno a 7200 K."
+				"Fio duplo de naquadah e folha de ósmio, na montadora (assembler) LuV, 30720 EU/t."
 			]
 			id: "24A8CF6845FE0120"
 			rewards: [
@@ -327,7 +338,7 @@
 			]
 			title: "Bobinas de Naquadah"
 			x: 6.0d
-			y: -8.25d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -335,6 +346,7 @@
 			]
 			description: [
 				"Luz quase sólida."
+				"Linha de montagem. Pesquise o emissor IV no scanner IV (Data Stick no Data Access Hatch)."
 			]
 			id: "2781A8FE911CB16E"
 			rewards: [
@@ -361,7 +373,7 @@
 			]
 			title: "Emissor LuV"
 			x: 3.0d
-			y: -5.75d
+			y: -4.5d
 		}
 		{
 			dependencies: [
@@ -369,6 +381,7 @@
 			]
 			description: [
 				"Monta o que você não consegue ver."
+				"Linha de montagem. Pesquise o braço IV no scanner (Data Stick no Data Access Hatch)."
 			]
 			id: "5D36CF61BA5CEDB6"
 			rewards: [
@@ -395,7 +408,7 @@
 			]
 			title: "Braço Robótico LuV"
 			x: 3.0d
-			y: -4.25d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -404,6 +417,7 @@
 			]
 			description: [
 				"Circuitos de cristal."
+				"Pede circuitos ZPM: o mainframe quântico sai da montadora de circuitos IV (7680 EU/t, na sala limpa)."
 			]
 			id: "5254D1171441BFC0"
 			rewards: [
@@ -430,14 +444,17 @@
 			]
 			title: "Montadora de Circuitos LuV"
 			x: 4.5d
-			y: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
-				"5254D1171441BFC0"
+				"32753FABD87AB783"
 			]
 			description: [
 				"Um pensamento preso em cristal, como o eco preso no fragmento."
+				"O chip de cristal cru pede európio na autoclave, e o európio só sai do reator de fusão."
+				"Acender o európio pede 150M EU no reator: 15 escotilhas de energia LuV (10M cada)."
+				"Depois: 5000 K no alto-forno, gravador e montadora de circuitos LuV (9600 EU/t), tudo na sala limpa."
 			]
 			icon: {
 				Count: 1b
@@ -480,15 +497,17 @@
 				}
 			]
 			title: "Processador de Cristal"
-			x: 6.0d
-			y: -6.75d
+			x: 10.5d
+			y: -5.75d
 		}
 		{
 			dependencies: [
-				"311B4677495DEB8D"
+				"19674956243B3BC2"
 			]
 			description: [
 				"Guarde energia de um continente."
+				"Linha de montagem em ZPM (100000 EU/t), com európio, trínio e um gerador de campo LuV."
+				"Pesquise o aglomerado de orbes lapotrônicos na Research Station."
 			]
 			id: "5CCC3C4D0B0A3585"
 			rewards: [
@@ -514,17 +533,19 @@
 				}
 			]
 			title: "Módulo de Energia"
-			x: 7.5d
-			y: -6.75d
+			x: 15.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
-				"311B4677495DEB8D"
-				"24A8CF6845FE0120"
+				"708B799A406F9163"
+				"58A5FA59878BA1AF"
 			]
 			description: [
 				"Uma estrela dentro de uma caixa."
 				"Aurend fazia isso para não ouvir o céu."
+				"Pesquise o fio de ITBTC no scanner IV. Pede circuitos ZPM, ósmirídio, plutônio-241 (centrífuga do plutônio do End)"
+				"e bobinas supercondutoras (ITBTC e trínio). Neodímio e hidrogênio fundidos nele dão o európio."
 			]
 			icon: {
 				Count: 1b
@@ -567,16 +588,16 @@
 				}
 			]
 			title: "Reator de Fusão"
-			x: 7.5d
-			y: -8.25d
+			x: 9.0d
+			y: -5.75d
 		}
 		{
 			dependencies: [
-				"5EACB867BEBBD634"
 				"32753FABD87AB783"
 			]
 			description: [
 				"Zero Point Module. O fim da escada."
+				"Chapas de liga de naquadah, cabo de vanádio-gálio e polibenzimidazol."
 			]
 			id: "13EB4FC30E41451C"
 			rewards: [
@@ -602,8 +623,8 @@
 				}
 			]
 			title: "Casco ZPM"
-			x: 9.0d
-			y: -8.25d
+			x: 10.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -611,6 +632,7 @@
 			]
 			description: [
 				"Feito na linha de montagem, com fusão."
+				"O fio de európio vem do reator. Pesquise o motor LuV no scanner IV."
 			]
 			id: "1F3DE6F80277F5B9"
 			rewards: [
@@ -636,8 +658,8 @@
 				}
 			]
 			title: "Motor ZPM"
-			x: 10.5d
-			y: -6.5d
+			x: 12.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -645,6 +667,8 @@
 			]
 			description: [
 				"Uma luz que atravessa o Selo."
+				"O scanner não basta: pesquise o emissor LuV na Research Station, com computação de um HPCA (cabo óptico)."
+				"As duas saem da linha de montagem a 100000 EU/t: duas escotilhas de energia LuV dão ZPM. O Data Orb vai no Data Access Hatch."
 			]
 			id: "19674956243B3BC2"
 			rewards: [
@@ -670,8 +694,8 @@
 				}
 			]
 			title: "Emissor ZPM"
-			x: 12.0d
-			y: -4.5d
+			x: 13.5d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -680,6 +704,8 @@
 			description: [
 				"O campo mais forte que Aurend construiu."
 				"Ele vai segurar o Artefato inteiro."
+				"Pesquise o gerador LuV na Research Station. O fio de urânio-ródio-dinaquadida funde a 9000 K:"
+				"bobinas de trínio, feitas na montadora (assembler) ZPM."
 			]
 			icon: {
 				Count: 1b
@@ -722,12 +748,48 @@
 				}
 			]
 			title: "Gerador de Campo ZPM"
-			x: 13.5d
-			y: -2.25d
+			x: 15.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"510678CE973F7EEE"
+				"24A8CF6845FE0120"
+				"5254D1171441BFC0"
+			]
+			description: [
+				"Faz parte da Pedra Filosofal."
+				"Linha de montagem: emissor LuV, estrela quântica, HSS-S e fio de ITBTC."
+				"O ITBTC funde a 6000 K, só com bobinas de naquadah. Pesquise o gerador IV no scanner IV."
+			]
+			id: "58A5FA59878BA1AF"
+			rewards: [
+				{
+					count: 8
+					id: "3AAAB4F0E2C619D9"
+					item: {
+						Count: 1b
+						id: "ecos:fragmento_eco"
+					}
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 1L
+					id: "1C5E2D8065955906"
+					item: {
+						Count: 1b
+						id: "gtceu:luv_field_generator"
+					}
+					type: "item"
+				}
+			]
+			title: "Gerador de Campo LuV"
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
 				"58A5FA59878BA1AF"
 				"1A6F45F683CB29FE"
 			]
@@ -771,8 +833,8 @@
 				}
 			]
 			title: "As Estrelas e a Melhor Máquina"
-			x: 3.0d
-			y: -2.25d
+			x: 9.0d
+			y: -3.75d
 		}
 		{
 			dependencies: [
@@ -822,8 +884,8 @@
 				}
 			]
 			title: "A Pedra Filosofal"
-			x: 6.0d
-			y: -2.75d
+			x: 10.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -874,8 +936,8 @@
 				}
 			]
 			title: "Dentro do Arauto"
-			x: 15.0d
-			y: -1.5d
+			x: 16.5d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -910,8 +972,8 @@
 				}
 			]
 			title: "A Floresta, de Novo"
-			x: 4.5d
-			y: -1.0d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -946,7 +1008,7 @@
 			]
 			title: "As Profundezas, de Novo"
 			x: 6.0d
-			y: 0.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -981,7 +1043,7 @@
 			]
 			title: "Os Céus, de Novo"
 			x: 6.0d
-			y: 1.75d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -989,6 +1051,7 @@
 			]
 			description: [
 				"A Pedra gastou um. Chame Ignaz outra vez."
+				"Cinzas novas: brasas morrendo dos Berserkers das fortalezas do Nether."
 			]
 			id: "2DD9E04CC6482FE8"
 			rewards: [
@@ -1014,8 +1077,8 @@
 				}
 			]
 			title: "As Estrelas, de Novo"
-			x: 7.5d
-			y: -1.5d
+			x: 12.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1049,7 +1112,7 @@
 				}
 			]
 			title: "Bloco de Fonte"
-			x: 6.0d
+			x: 7.5d
 			y: 3.25d
 		}
 		{
@@ -1084,7 +1147,7 @@
 				}
 			]
 			title: "Gema dos Espíritos"
-			x: 6.0d
+			x: 7.5d
 			y: 4.75d
 		}
 		{
@@ -1154,12 +1217,12 @@
 				}
 			]
 			title: "Os Quatro Fragmentos"
-			x: 9.0d
-			y: -0.25d
+			x: 13.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
-				"276DC4514394B5DD"
+				"4274E0686517CD6C"
 				"1FA0F2DB04E1EFBC"
 				"5F22AF616BFCECEA"
 				"6EE9A0F06AF8A9FB"
@@ -1229,8 +1292,8 @@
 				}
 			]
 			title: "O Artefato do Selo"
-			x: 15.0d
-			y: 0.0d
+			x: 16.5d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1260,7 +1323,7 @@
 			]
 			title: "O Último Trem"
 			x: 1.5d
-			y: 4.0d
+			y: 1.25d
 		}
 		{
 			dependencies: [
@@ -1290,7 +1353,7 @@
 			]
 			title: "A Última Rede"
 			x: 1.5d
-			y: 1.25d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -1341,8 +1404,8 @@
 				}
 			]
 			title: "A Porta"
-			x: 16.5d
-			y: -0.75d
+			x: 18.0d
+			y: 2.0d
 		}
 	]
 	title: "Ato V — A Heresia"

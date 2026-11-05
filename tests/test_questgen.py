@@ -59,7 +59,7 @@ def test_ftbquests_loaded_counts():
     assert len(d["quests"]) == sum(len(c.quests) for c in chapters)
     for c in chapters:
         for quest in c.quests:
-            loaded = d["quests"][questgen.quest_id(f"{c.slug}/{quest['slug']}")]
+            loaded = d["quests"][questgen.quest_id(questgen.id_base(c.slug, quest))]
             assert quest["title"] in loaded["quest"]
             assert len(loaded["tasks"]) == len(quest.get("tasks", []))
             assert len(loaded["rewards"]) == len(quest.get("rewards", []))
@@ -72,7 +72,7 @@ def test_tasks_and_rewards_roundtrip():
     d = json.loads(p.read_text(encoding="utf-8"))
     for c in questgen.load_sources():
         for quest in c.quests:
-            loaded = d["quests"][questgen.quest_id(f"{c.slug}/{quest['slug']}")]
+            loaded = d["quests"][questgen.quest_id(questgen.id_base(c.slug, quest))]
             for src, got in zip(quest.get("tasks", []), loaded["tasks"]):
                 if "item" in src:
                     assert src["item"] in got["data"], got

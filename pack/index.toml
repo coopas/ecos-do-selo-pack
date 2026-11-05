@@ -26,15 +26,15 @@ hash = "7153f9880f8ec25e27a6a47f9e6c3eaddff8216ea88062a1304f3b4cd688aaab"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato4.snbt"
-hash = "e0623bbd066212367d8df48c3a877773b1a63a98068e27b3a8b7ad360b21152c"
+hash = "5fbb6d4bbed49cc061db809c443a237948bbfe2f4aab829ff7cc0eefab410274"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato5.snbt"
-hash = "08d5d623debc4425e2d6e434f1c5534a11d61bc2903038e1efb506bd7cacc7d2"
+hash = "72314402352b0ffd764e01a808b27422c9724e5c5f10ef7f31b94532ea2abaa0"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/final.snbt"
-hash = "a12e1df114911c4bd7bc1de7dbfd9a4fa4df01a75e970d3b2a0bfc8bb6bee0e5"
+hash = "886db698cf67bfac76356cf61d1c9794662162b362a6c7287fc0723a203f4984"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/loja.snbt"
@@ -74,7 +74,7 @@ hash = "5e11a3f821e8153202e21fe09c651475bf24a96dc0d9894b5e4fb7317a6bf466"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_projecte.snbt"
-hash = "618803afee30618e2181846d9bde10a925a6f8dacdcdd05c1dfe0f1c0467020f"
+hash = "1330f2872da5d5d975c3be9df858fe86aa309b0a9f09686005ef907d6e643983"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_space.snbt"
