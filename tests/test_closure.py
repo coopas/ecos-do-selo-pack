@@ -80,8 +80,10 @@ def test_gt_recipe_needs_machine_tier():
 def test_machine_must_be_reached():
     recs = [rcp("x:smelt", "minecraft:smelting", ["x:ingot"], [["x:raw"]])]
     assert "x:ingot" not in run({"x:raw"}, recs).items
-    furnace = rcp("x:furnace", "minecraft:crafting_shaped", ["minecraft:furnace"], [["x:cobble"]])
-    r = run({"x:raw", "x:cobble"}, recs + [furnace])
+    # a fornalha só chega depois (raw -> cobble -> furnace): a receita fica bloqueada e é reavaliada
+    later = [rcp("x:cobble", "minecraft:crafting_shaped", ["x:cobble"], [["x:raw"]]),
+             rcp("x:furnace", "minecraft:crafting_shaped", ["minecraft:furnace"], [["x:cobble"]])]
+    r = run({"x:raw"}, recs + later)
     assert "x:ingot" in r.items
     assert "x:smelt" in r.why("x:ingot")
 
@@ -201,3 +203,17 @@ def test_real_reach_is_fast_and_sane():
     assert time.perf_counter() - t < 2.0
     assert {"minecraft:crafting_table", "minecraft:furnace", "minecraft:iron_ingot"} <= r.items
     assert "minecraft:obsidian" not in r.items or "minecraft:diamond_pickaxe" in r.items
+
+
+def test_real_oil_sprout_is_raw_oil():
+    """O broto de petróleo do GT (raw_oil_sprout) põe gtceu:oil_medium; gtceu:oil só sai da sonda (não modelada)."""
+    p, _, g = _real()
+    srcs = [s for s in closure.build_sources(p, g) if s.dim in ("minecraft:overworld", closure.ANY)]
+    natural_fluids = {f for s in srcs for f in s.fluids}
+    assert "gtceu:oil_medium" in natural_fluids and "gtceu:oil" not in natural_fluids
+
+
+def test_real_final_boss_drop_not_natural():
+    p, rec, g = _real()
+    r = closure.reach(set(), set(g.dimensions), p, rec, g)
+    assert not {"ecos:eco_do_arauto", "ecos:selo_restaurado", "ecos:poder_absorvido"} & r.items

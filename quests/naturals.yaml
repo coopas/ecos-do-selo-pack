@@ -14,7 +14,8 @@ qualquer:
   - fluid:minecraft:water
   - irons_spellbooks:arcane_essence      # loot de estruturas e mobs do Iron's
   - irons_spellbooks:scroll              # loot
-  - ecos:eco_do_arauto                   # morte do Arauto do Eco (40_ecos_final_boss.js)
+  # O Eco do Arauto (morte do chefe final, 40_ecos_final_boss.js) NÃO é natural: drop de chefe entra pela seed
+  # (tasks de kill ancestrais). Só os itens de usar o Eco ficam aqui, travados por ele.
   - {id: ecos:selo_restaurado, needs: [ecos:eco_do_arauto]}   # usar o Eco do Arauto
   - {id: ecos:poder_absorvido, needs: [ecos:eco_do_arauto]}   # usar o Eco do Arauto agachado
 
@@ -156,7 +157,7 @@ minecraft:overworld:
   - {id: occultism:iesnium_ore_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
   - {id: occultism:otherstone_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
   - {id: occultism:otherworld_log_natural, needs: [occultism:otherworld_goggles, occultism:datura]}
-  - fluid:gtceu:oil                      # brotos de petróleo do GT
+  - fluid:gtceu:oil_medium               # brotos de petróleo do GT (raw_oil_sprout: óleo bruto); gtceu:oil só pela sonda, não modelada
   - {id: fluid:createdieselgenerators:crude_oil, needs: [createdieselgenerators:pumpjack_head]}
 
 minecraft:the_nether:
