@@ -14,71 +14,71 @@ hash = "4e97c3c14365097666dda0fb39294bf5517877de45bde79b9d7c11b0c8558092"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato1.snbt"
-hash = "57dfefaeffac28d178e33172412b7ed4a9253f247c4aa97a56ccb915336801c6"
+hash = "9eaae220066e014103995210c9ab198b0c46ebcdc4caf545c7303182b1f34591"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato2.snbt"
-hash = "6c32d09bdf1fb3800c496de5e6fa5a533946293bd73d2a842f637ad3cd215ed7"
+hash = "a0069f2949f1092cf15d766fa9bbe9ad787afd7174e9f27ad4077991f314b4f4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato3.snbt"
-hash = "7153f9880f8ec25e27a6a47f9e6c3eaddff8216ea88062a1304f3b4cd688aaab"
+hash = "66d7bfa4bed6a25042558ab538e7f50293e1222d89fb6e4c27d461cae556e095"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato4.snbt"
-hash = "5fbb6d4bbed49cc061db809c443a237948bbfe2f4aab829ff7cc0eefab410274"
+hash = "d859a4fc4f01076b45bb8c01c1d11db0d92c285a471fe4bb4ddd0dada6da1be7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato5.snbt"
-hash = "e13ce9515b6b7ccc95d9db38d57bb4a5e9eaf6fc9c277ee63a70f0be7b47c1c3"
+hash = "dadd8bc5ec9ed59ee45c6879c82ca5a198f87db2ecb65d31bc78c5cc341da7d9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/final.snbt"
-hash = "886db698cf67bfac76356cf61d1c9794662162b362a6c7287fc0723a203f4984"
+hash = "115c3248b17a2b08a8e1a27f382ec3a4e66e3db967a02b66454e4cdb8e599f2f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/loja.snbt"
-hash = "05b12b7b9f39c1635c40ab7a6623c445821ac365fc5ba80651bb58db6a82eefd"
+hash = "c2e516b1f2a2f7a0e90df1a6138168a0e2c82e9d21b969ac120fd46fc7acb239"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/prologo.snbt"
-hash = "6b8fe2d8dba3f3baf104106dc837723e13e546adfed3361bbe356bd854a16917"
+hash = "a722ac9cdbb7348cce222cb61308e3819a37609778843f02d704142a4e0b6497"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_ae2.snbt"
-hash = "03fad8f11e9816c22a86ff4ea5c458fcab8be8a64762e59d3743e61c5d8bb4fb"
+hash = "381a3b3f8ffb97c7b8ea106a5ea36062e04f3f70e606854c93a19761bf212c77"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_ars.snbt"
-hash = "ea77285747c37a5d580e300809474c049f6240789b67a211f5f1fb91c038432e"
+hash = "11f06232d13fe3dab932026e3061cc552ca8200758fcd578aa118a39bdeaba25"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_create.snbt"
-hash = "5e3b226d807c7326a2bd46deab68ea238ef7701a6f7c38b3c3faa30f83c40a2d"
+hash = "2288075f99a35d77f6b4c34c22cc749551764af752268f95259d72464e35b44d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_mv_ev.snbt"
-hash = "3db60a87a38d39b8a25d6b5dc0e41b0501224a9592bf945e0b67becbe3bdeb18"
+hash = "eb4ada1afe6dc069c7c29b09845c37bbcb2140e3c4fcdc5eda0ba6300995ed14"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_gt_steam_lv.snbt"
-hash = "117e3dc292a913410dbabdb6ed57c461bd71ec563d053c0c61c822698c4a18aa"
+hash = "52ce63db7ae66e80be61ea2ce646479350b65ccb03972a1871536a1d9f68593d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_irons.snbt"
-hash = "2d15ec0522b674f123b91548a305fa285c59cfaa5c2b6e9edcd0470319efedf4"
+hash = "1911c9f132f44ae179e1b9cd724a65499473abc4d6c04bc40d7a4dabfcb883f9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_occultism.snbt"
-hash = "5e11a3f821e8153202e21fe09c651475bf24a96dc0d9894b5e4fb7317a6bf466"
+hash = "255ac06ba9a5a9061b21dba7a5871219e4f27ddc1dfa7c47f420c663a4ba0515"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_projecte.snbt"
-hash = "1330f2872da5d5d975c3be9df858fe86aa309b0a9f09686005ef907d6e643983"
+hash = "23068b2e5b13184f73bb8bd62c87453d4d2651f22b4e323ebb39ff25b5fad084"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/side_space.snbt"
-hash = "5da67041797a2419564c9bc623cccccf981535112b7c7b71ccf855d4aff74f56"
+hash = "26b35cf23c46b2468869096494d12bb22a472ec187ab97ae55e8894b9e68cd76"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -119,7 +119,7 @@ preserve = true
 
 [[files]]
 file = "defaultconfigs/ftbchunks/ftbchunks-world.snbt"
-hash = "9f2c0329b624f5072f2a82b3f0a05fed56604ca7491af76023740b75de58ed06"
+hash = "ebee63dff2f9a198d529e27a084d3b61ca5ccd78bd3a77609cba6851b53aca28"
 
 [[files]]
 file = "defaultconfigs/ftbultimine/ftbultimine-server.snbt"
@@ -517,6 +517,11 @@ hash = "5e86d34887cab92c3a394f2ab4248ea04fa517dc45361c40c2f9ca0423aa71b1"
 metafile = true
 
 [[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "b6d2215e49c74bf767c9fb5cd5104de159ce9e6417815ef5d921497f7525a06e"
+metafile = true
+
+[[files]]
 file = "mods/drippy-loading-screen.pw.toml"
 hash = "b87f518f4a80d0012e9e4b5c684ba7bf22fb5a4e67af1db266a8b4d39612ca4a"
 metafile = true
@@ -645,6 +650,11 @@ hash = "86e25155cac281814d58ad5f582a0195d713bebd7d69ead8e06f3ecaface10f2"
 metafile = true
 
 [[files]]
+file = "mods/just-zoom.pw.toml"
+hash = "49dabc9e42cf7247b1f6c0bfccb7a225c6f8d77f8baa1a58699dd355c7ca22ef"
+metafile = true
+
+[[files]]
 file = "mods/konkrete.pw.toml"
 hash = "90a70141bcec839b6a1aa647c91f97bb7b33b6b9e6ce6b3b18a4113aa7dff636"
 metafile = true
@@ -672,6 +682,11 @@ metafile = true
 [[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "f3b6b7cd660a91a34a4e18010c9eaacaeb7ff306cadfee14431fa25a15b041ec"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "1df09df44e212e986f8a83781f36df78f964eacf4bc0bfb401729e49f2d8274a"
 metafile = true
 
 [[files]]
@@ -782,6 +797,11 @@ metafile = true
 [[files]]
 file = "mods/the-undergarden.pw.toml"
 hash = "af051b3e89ff3b361c468cb5a5a0ec1d6ac8e73f9035df4d53b0f12c0f3c623b"
+metafile = true
+
+[[files]]
+file = "mods/trashslot.pw.toml"
+hash = "7fb7caff84ee189efdb4b14c5bed87933c578ebf661aa0ca25a55029e4aa1155"
 metafile = true
 
 [[files]]

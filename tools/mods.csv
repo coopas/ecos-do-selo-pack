@@ -54,3 +54,7 @@ irons_lib,mr,irons-lib,both,lib
 playeranimator,mr,playeranimator,both,lib
 createdieselgenerators,mr,create-diesel-generators,both,core
 cosmetica,mr,cosmetica,client,qol
+trashslot,mr,trashslot,both,qol
+justzoom,mr,just-zoom,client,qol
+distanthorizons,mr,distanthorizons,client,visual
+lootr,mr,lootr,both,qol
