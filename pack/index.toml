@@ -487,6 +487,11 @@ hash = "1c13027e001351c56add29c050f40f3bfd6ec3523f1b9ebec9e99e0d0dab310d"
 metafile = true
 
 [[files]]
+file = "mods/cosmetica.pw.toml"
+hash = "69a64ce1e4b20c0b1f31e189ba8b9ca4bfe0468cffe9e7c5a1675779e6cc6f38"
+metafile = true
+
+[[files]]
 file = "mods/create-diesel-generators.pw.toml"
 hash = "a2f1254c52f3ed1efcaf0e260de426819416d0e35c840e9e8f9cb9c0fabcf4d0"
 metafile = true

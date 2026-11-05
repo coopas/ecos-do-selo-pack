@@ -53,3 +53,4 @@ mafglib,mr,mafglib,client,build
 irons_lib,mr,irons-lib,both,lib
 playeranimator,mr,playeranimator,both,lib
 createdieselgenerators,mr,create-diesel-generators,both,core
+cosmetica,mr,cosmetica,client,qol
