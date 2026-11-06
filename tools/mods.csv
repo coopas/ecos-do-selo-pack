@@ -29,7 +29,6 @@ curios,mr,curios,both,qol
 clumps,mr,clumps,both,qol
 xaerominimap,mr,xaeros-minimap,both,qol
 xaeroworldmap,mr,xaeros-world-map,both,qol
-inventoryprofilesnext,mr,inventory-profiles-next,client,qol
 mousetweaks,mr,mouse-tweaks,client,qol
 controlling,mr,controlling,client,qol
 modernfix,mr,modernfix,both,perf
@@ -56,5 +55,6 @@ createdieselgenerators,mr,create-diesel-generators,both,core
 cosmetica,mr,cosmetica,client,qol
 trashslot,mr,trashslot,both,qol
 justzoom,mr,just-zoom,client,qol
+fullbrightnesstoggle,mr,full-brightness-toggle,client,qol
 distanthorizons,mr,distanthorizons,client,visual
 lootr,mr,lootr,both,qol

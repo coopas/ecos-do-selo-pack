@@ -6,7 +6,7 @@ license = "MIT"
 modId = "ecosbridge"
 version = "1.0.0"
 displayName = "Ecos do Selo — ponte FTB Filter System"
-description = "Faz as tasks do FTB Quests aceitarem os smart filters do FTB Filter System."
+description = "Faz as tasks do FTB Quests aceitarem os smart filters do FTB Filter System e tira o fullbright do G."
 
 [[dependencies.ecosbridge]]
 modId = "ftbquests"

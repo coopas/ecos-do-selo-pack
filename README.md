@@ -22,6 +22,8 @@ Atualizações do pack são baixadas sozinhas toda vez que você abre o jogo.
 - **Mapa:** Xaero's Minimap + World Map. O FTB Chunks fica só para reivindicar e manter chunks carregados
   (o minimapa dele vem desligado; o mapa dele ainda abre para clicar nos chunks).
 - **Zoom:** Just Zoom (tecla em *Opções → Controles*).
+- **Fullbright:** Full Brightness Toggle. Aperte **J** para ligar/desligar o brilho máximo (troque a tecla em
+  *Opções → Controles*). Com shaders ligados pode não ter efeito.
 - **Distant Horizons:** mostra terreno muito além da distância de renderização, só no cliente.
   Se pesar no seu PC, diminua a qualidade no botão dele em *Opções → Vídeo*.
 - **Lixeira no inventário:** Trash Slot (o espaço de lixo fica ao lado do inventário).

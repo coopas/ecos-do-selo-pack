@@ -477,6 +477,11 @@ hash = "1339de8f4cab5df9d953ce0bc0bc07b5a35e7aba65fb92191539b98eb40fbf8e"
 metafile = true
 
 [[files]]
+file = "mods/collective.pw.toml"
+hash = "6bac9f4e04051760cfa675cd4a356dca8a1f3351cd8198c4f0aceda831b06963"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "ae0a3a2ada91088822989239b896b1ab0e4b870537bdcf46b2c7c0a5eea46e1f"
 metafile = true
@@ -528,7 +533,7 @@ metafile = true
 
 [[files]]
 file = "mods/ecosbridge-1.0.0.jar"
-hash = "eb85430e20ac0dd2b66d63f02729ff2fcaacc2dacaba1d6dbed49cfd9e669072"
+hash = "71fd751a7be15390a9c88b5a9e5e9fb8c4194b689d0ae29b185f6902a6cfe716"
 
 [[files]]
 file = "mods/ecosmaquinas-1.0.0.jar"
@@ -605,6 +610,11 @@ hash = "8ae23ded710bac9ecc45065b744be98c0e07e80220e11b0c652b4b57d134d907"
 metafile = true
 
 [[files]]
+file = "mods/full-brightness-toggle.pw.toml"
+hash = "06be2fbf79decce6db5a25dff92fea995e74555ba7d730a6878c422e52559fbb"
+metafile = true
+
+[[files]]
 file = "mods/geckolib.pw.toml"
 hash = "7ffae05c3b8101588b231db8116c34b36a77a0c6e6d7e6af867ae1c5b47e4d10"
 metafile = true
@@ -622,11 +632,6 @@ metafile = true
 [[files]]
 file = "mods/improved-mobs.pw.toml"
 hash = "e9a17e417f86571a05d2473dd24e6c8750c99085ce81670e5b470f704cfe6083"
-metafile = true
-
-[[files]]
-file = "mods/inventory-profiles-next.pw.toml"
-hash = "b7facebae830c6ebdc630ccbb87bff02ba19d2c340e084109941efef19143876"
 metafile = true
 
 [[files]]
@@ -660,11 +665,6 @@ hash = "90a70141bcec839b6a1aa647c91f97bb7b33b6b9e6ce6b3b18a4113aa7dff636"
 metafile = true
 
 [[files]]
-file = "mods/kotlin-for-forge.pw.toml"
-hash = "70a4ecd9d0c04ad20aeb976c1ee28933ce48a0a1f43df42deafaeb2ad7235297"
-metafile = true
-
-[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "645ac59bea5dbfa39e5c34c1e278d4e10b6bb08f3fc90b0572c5c08cc193495c"
 metafile = true
@@ -672,11 +672,6 @@ metafile = true
 [[files]]
 file = "mods/l_enders-cataclysm.pw.toml"
 hash = "0829a25fc7316e6fec629d470853b6f40c92c46d159bde23a457118ffba87590"
-metafile = true
-
-[[files]]
-file = "mods/libipn.pw.toml"
-hash = "5a98133891a72e041e37bc235e86d495e488387f1628fc1377e6b5169dfbb8bd"
 metafile = true
 
 [[files]]

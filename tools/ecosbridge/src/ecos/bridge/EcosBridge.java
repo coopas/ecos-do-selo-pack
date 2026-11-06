@@ -6,7 +6,9 @@ import dev.ftb.mods.ftbquests.api.ItemFilterAdapter;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -16,6 +18,7 @@ import org.slf4j.LoggerFactory;
  * Ecos do Selo: liga os smart filters do FTB Filter System às tasks do FTB Quests.
  * O FTB Quests 2001.4 só casa itens com filtros via ItemFilterAdapter registrado, e o FTB Filter System 20.0.1
  * não registra nenhum. Feito em Java (não KubeJS) porque o livro de quests chama isso no thread de render.
+ * No cliente também tira o Full Brightness Toggle do G (ver ClientKeys).
  */
 @Mod("ecosbridge")
 public final class EcosBridge {
@@ -23,6 +26,9 @@ public final class EcosBridge {
 
     public EcosBridge() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientKeys::setup);
+        }
     }
 
     private void setup(FMLCommonSetupEvent event) {
